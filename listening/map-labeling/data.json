@@ -7,7 +7,7 @@
       "You see a map or plan with some locations already labeled",
       "Several locations are numbered but unnamed",
       "You listen to a monologue (usually a tour guide or orientation speaker)",
-      "You match each numbered location to the correct label from a list of options"
+      "Three sub-types: (1) Choose the correct letter — identify where places are on a map, (2) Choose the correct label from a word list (more words than gaps), (3) Write up to three words to label places"
     ],
     "tips": [
       "Read all the labels and look at the map BEFORE the audio plays",
@@ -15,7 +15,9 @@
       "Follow the speaker's route — don't jump ahead on the map",
       "Listen for direction words: left, right, straight, past, opposite",
       "Watch out for distractors — the speaker may mention a place then correct themselves",
-      "The questions follow the order of the audio — if you miss one, move on"
+      "The questions follow the order of the audio — if you miss one, move on",
+      "Maps can show streets, building layouts (indoor), or parks/camps — not just roads. Predict what kind of vocabulary you'll hear based on the map type",
+      "During preparation time, study the map and try to predict the direction language you'll hear for each gap"
     ]
   },
   "visualVocab": [
@@ -33,7 +35,9 @@
     {"term": "in front of", "vi": "phía trước", "example": "There's a car park in front of the building.", "svg": "in-front-of"},
     {"term": "behind", "vi": "phía sau", "example": "The garden is behind the main building.", "svg": "behind"},
     {"term": "at the corner of", "vi": "ở góc của", "example": "The pharmacy is at the corner of High Street.", "svg": "corner"},
-    {"term": "cross the road", "vi": "băng qua đường", "example": "Cross the road and it's on your right.", "svg": "cross-road"}
+    {"term": "cross the road", "vi": "băng qua đường", "example": "Cross the road and it's on your right.", "svg": "cross-road"},
+    {"term": "crossroads", "vi": "ngã tư", "example": "Turn right at the crossroads.", "svg": "crossroads"},
+    {"term": "zebra crossing", "vi": "vạch sang đường", "example": "The shop is just past the zebra crossing.", "svg": "zebra-crossing"}
   ],
   "vocabulary": [
     {"w": "opposite", "p": "preposition", "vi": "đối diện", "en": "On the other side of something; directly facing.", "ex": "\"The café is opposite the library.\"", "cat": "place"},
@@ -52,6 +56,12 @@
     {"w": "in the middle of", "p": "phrase", "vi": "ở giữa", "en": "At the central point of an area.", "ex": "\"There's a pond in the middle of the park.\"", "cat": "place"},
     {"w": "on the left-hand side", "p": "phrase", "vi": "ở phía bên trái", "en": "On the left when facing forward.", "ex": "\"The reception is on the left-hand side.\"", "cat": "place"},
     {"w": "on the right-hand side", "p": "phrase", "vi": "ở phía bên phải", "en": "On the right when facing forward.", "ex": "\"You'll see the café on the right-hand side.\"", "cat": "place"},
+    {"w": "park", "p": "noun", "vi": "công viên", "en": "A public green area in a town for recreation.", "ex": "\"The park is on the left after the roundabout.\"", "cat": "place"},
+    {"w": "river", "p": "noun", "vi": "sông", "en": "A large natural flow of water through a landscape.", "ex": "\"Cross the river using the footbridge.\"", "cat": "place"},
+    {"w": "pond", "p": "noun", "vi": "ao, hồ nhỏ", "en": "A small body of still water, often in a park.", "ex": "\"There's a pond in the middle of the park.\"", "cat": "place"},
+    {"w": "crossroads", "p": "noun", "vi": "ngã tư", "en": "A place where two roads cross each other.", "ex": "\"Turn right at the crossroads.\"", "cat": "place"},
+    {"w": "zebra crossing", "p": "noun", "vi": "vạch sang đường", "en": "A marked area on a road for pedestrians to cross safely.", "ex": "\"The shop is just past the zebra crossing.\"", "cat": "place"},
+    {"w": "surgery", "p": "noun", "vi": "phòng khám (Anh-Anh)", "en": "A doctor's office (British English — very common in IELTS listening).", "ex": "\"Go past the surgery on your left.\"", "cat": "place"},
 
     {"w": "turn left", "p": "verb phrase", "vi": "rẽ trái", "en": "Change direction to the left.", "ex": "\"Turn left at the traffic lights.\"", "cat": "movement"},
     {"w": "turn right", "p": "verb phrase", "vi": "rẽ phải", "en": "Change direction to the right.", "ex": "\"Turn right after the supermarket.\"", "cat": "movement"},
@@ -64,6 +74,7 @@
     {"w": "walk along", "p": "verb phrase", "vi": "đi dọc theo", "en": "Move in a line beside or following something.", "ex": "\"Walk along the river until you see the café.\"", "cat": "movement"},
     {"w": "take the first turning", "p": "verb phrase", "vi": "rẽ ở ngã rẽ đầu tiên", "en": "Turn at the first available road or path.", "ex": "\"Take the first turning on your left.\"", "cat": "movement"},
     {"w": "continue", "p": "verb", "vi": "tiếp tục", "en": "Keep going in the same direction.", "ex": "\"Continue past the shops and you'll see it.\"", "cat": "movement"},
+    {"w": "take a sharp left", "p": "verb phrase", "vi": "rẽ gấp sang trái", "en": "Make a sudden, tight turn to the left.", "ex": "\"Take a sharp left after the traffic lights.\"", "cat": "movement"},
 
     {"w": "entrance", "p": "noun", "vi": "lối vào", "en": "A door, gate, or opening for going in.", "ex": "\"The main entrance is on Park Street.\"", "cat": "location"},
     {"w": "exit", "p": "noun", "vi": "lối ra", "en": "A way out of a building or area.", "ex": "\"The emergency exit is at the back.\"", "cat": "location"},
@@ -194,6 +205,27 @@
       "usage": "Compass-based direction, common in outdoor map descriptions.",
       "example": "Head north along the main road for about 200 metres.",
       "cat": "direction"
+    },
+    {
+      "phrase": "You can also go that way, but it's quicker to...",
+      "vi": "Bạn cũng có thể đi lối đó, nhưng nhanh hơn nếu...",
+      "usage": "DISTRACTOR — the speaker mentions an alternative route but then gives the preferred one. The SECOND route is the answer.",
+      "example": "You can also go straight on here, past the surgery, but it's quicker to drive down Main Street.",
+      "cat": "distractor"
+    },
+    {
+      "phrase": "Instead of turning left, you need to turn right.",
+      "vi": "Thay vì rẽ trái, bạn cần rẽ phải.",
+      "usage": "DISTRACTOR — the speaker reverses a direction. Listen carefully — the corrected direction is the answer.",
+      "example": "Instead of turning left at the park, turn right with the pond on your left.",
+      "cat": "distractor"
+    },
+    {
+      "phrase": "That's on the right; there are shops on the left.",
+      "vi": "Nó ở bên phải; có các cửa hàng bên trái.",
+      "usage": "DISTRACTOR — the speaker mentions both left and right. Focus on which side the TARGET location is on, not the other landmarks.",
+      "example": "The house is the second one after the bridge. That's on the right — there are shops on the left.",
+      "cat": "distractor"
     }
   ],
   "fillBlanks": [
@@ -208,6 +240,10 @@
     {"s": "Take the second ___ at the roundabout.", "a": "exit", "h": "lối ra"},
     {"s": "There's a fountain ___ ___ ___ the entrance.", "a": "in front of", "h": "phía trước"},
     {"s": "___ straight ahead and it's the third building.", "a": "Go", "h": "đi thẳng"},
-    {"s": "The pharmacy is ___ the corner of High Street.", "a": "at", "h": "ở (góc đường)"}
+    {"s": "The pharmacy is ___ the corner of High Street.", "a": "at", "h": "ở (góc đường)"},
+    {"s": "There's a ___ in the middle of the park.", "a": "pond", "h": "ao, hồ nhỏ"},
+    {"s": "Turn right at the ___.", "a": "crossroads", "h": "ngã tư"},
+    {"s": "The shop is just past the ___ ___.", "a": "zebra crossing", "h": "vạch sang đường"},
+    {"s": "Go past the ___ on your left — that's the doctor's office.", "a": "surgery", "h": "phòng khám (Anh-Anh)"}
   ]
 }

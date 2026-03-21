@@ -1,21 +1,29 @@
-# 🇻🇳 IELTS General Training — Luyện thi IELTS 6.0–6.5
+# IELTS General Training — Study for IELTS 5.5–6.0
 
 Interactive IELTS General Training practice — all 4 skills with Vietnamese translations, vocabulary, quizzes, and exam tips. Completely free.
 
-🌐 **Live:** `https://<your-username>.github.io/ielts/`
+🌐 **Live:** https://minhvuongrbs.github.io/ielts/
 
 ## Skills
 
 | Skill | Content | Status |
 |-------|---------|--------|
 | 📖 **Reading** | Passages with vocab, translations, section-matching questions | ✅ 1 lesson |
+| 🎧 **Listening** | Question type guides, directional vocab, visual diagrams | ✅ 1 lesson |
 | ✍️ **Writing** | Task 1 letters, Task 2 essays, structures & templates | 🔜 Coming |
-| 🎧 **Listening** | Section strategies, form completion, vocab | 🔜 Coming |
 | 🗣️ **Speaking** | Part 1/2/3 topics, cue card strategy, sample answers | 🔜 Coming |
+
+## Lessons
+
+- **Reading:** What is Happiness? (Section 3 — 28 vocab, 7 IELTS questions, 4 quiz types)
+- **Listening:** Map & Plan Labeling (Section 2 — 49 vocab, 15 visual cards, 3 quiz types)
 
 ## Features
 
 - 🇻🇳 Vietnamese translations (toggle on/off)
+- 🔊 Audio pronunciation (Web Speech API) + IPA transcription
+- 🗺️ Visual vocabulary with SVG diagrams (listening)
+- 💬 Useful phrases with examples (tap to reveal usage)
 - 🃏 Flashcard with shuffle
 - ✏️ Fill-in-the-blank with Vietnamese hints
 - 🔗 Word-matching game (EN ↔ VI)
@@ -25,19 +33,26 @@ Interactive IELTS General Training practice — all 4 skills with Vietnamese tra
 ## Project Structure
 
 ```
-ielts/
-├── index.html                    ← Homepage
+ielts-hub/
+├── index.html                           ← Homepage
+├── CLAUDE.md                            ← Claude Code context
 ├── reading/
-│   ├── happiness/index.html      ← Lesson: What is Happiness?
-│   └── lesson-2/index.html       ← (future)
-├── writing/
-│   ├── formal-letter/index.html  ← (future)
-│   └── opinion-essay/index.html  ← (future)
+│   ├── index.html                       ← Reading lesson hub
+│   └── happiness/
+│       ├── index.html                   ← Lesson: What is Happiness?
+│       └── data.json                    ← Lesson content data
 ├── listening/
-│   └── section-1/index.html      ← (future)
+│   ├── index.html                       ← Listening lesson hub
+│   └── map-labeling/
+│       ├── index.html                   ← Lesson: Map & Plan Labeling
+│       └── data.json                    ← Lesson content data
+├── writing/
+│   └── index.html                       ← Coming soon
 ├── speaking/
-│   ├── part-1/index.html         ← (future)
-│   └── part-2/index.html         ← (future)
+│   └── index.html                       ← Coming soon
+├── docs/
+│   ├── IELTS_Reading_and_Writing_General_ielts.pdf
+│   └── Mindset for IELTS Level 1 Student_s Book.pdf
 ├── README.md
 └── LICENSE
 ```
@@ -45,32 +60,33 @@ ielts/
 ## How to Add a New Lesson
 
 1. Pick a skill folder: `reading/`, `writing/`, `listening/`, or `speaking/`
-2. Create a subfolder: `mkdir reading/my-lesson`
-3. Add `index.html` (copy from `reading/happiness/` as template)
-4. Update content, vocab, and questions
-5. Add a lesson card in root `index.html`
-6. `git push` — auto-deploys
+2. Create a subfolder: `mkdir listening/new-lesson`
+3. Create `data.json` with vocabulary, phrases, and quiz content
+4. Create `index.html` (copy from an existing lesson as template)
+5. Update the skill hub page (e.g., `listening/index.html`) — add a lesson card
+6. Update root `index.html` — change "coming soon" card to active link
+7. `git push` — auto-deploys to GitHub Pages
 
-## Local Preview
+## Local Development
 
 ```bash
-git clone https://github.com/<your-username>/ielts.git
-cd ielts
-python3 -m http.server 8000
-# Open http://localhost:8000
+git clone https://github.com/<your-username>/ielts-hub.git
+cd ielts-hub
+python3 -m http.server 8080
+# Open http://localhost:8080
 ```
 
 ## Deploy to GitHub Pages
 
 1. Push to GitHub
-2. **Settings → Pages → Branch: `main` / `/ (root)` → Save**
-3. Live at `https://<your-username>.github.io/ielts/`
+2. **Settings → Pages → Branch: `master` / `/ (root)` → Save**
+3. All paths are relative — works automatically on GitHub Pages
 
 ## Target
 
 - **Exam:** IELTS General Training
-- **Band:** 6.0–6.5
-- **Language:** English + Vietnamese (🇻🇳)
+- **Band:** 5.5–6.0
+- **Language:** English (primary) + Vietnamese (🇻🇳)
 
 ## License
 
