@@ -1,0 +1,213 @@
+{
+  "intro": {
+    "title": "Map & Plan Labeling",
+    "subtitle": "IELTS Listening — Section 2 — Question Type",
+    "description": "In this question type, you listen to a description of a place (a campus, town, building, park, etc.) and label locations on a map or plan. The speaker gives directions using prepositions, movement verbs, and landmarks.",
+    "format": [
+      "You see a map or plan with some locations already labeled",
+      "Several locations are numbered but unnamed",
+      "You listen to a monologue (usually a tour guide or orientation speaker)",
+      "You match each numbered location to the correct label from a list of options"
+    ],
+    "tips": [
+      "Read all the labels and look at the map BEFORE the audio plays",
+      "Identify the starting point — the speaker usually says 'You are here' or 'Start at the entrance'",
+      "Follow the speaker's route — don't jump ahead on the map",
+      "Listen for direction words: left, right, straight, past, opposite",
+      "Watch out for distractors — the speaker may mention a place then correct themselves",
+      "The questions follow the order of the audio — if you miss one, move on"
+    ]
+  },
+  "visualVocab": [
+    {"term": "turn left", "vi": "rẽ trái", "example": "Turn left at the junction.", "svg": "turn-left"},
+    {"term": "turn right", "vi": "rẽ phải", "example": "Turn right after the bank.", "svg": "turn-right"},
+    {"term": "go straight on", "vi": "đi thẳng", "example": "Go straight on past the park.", "svg": "go-straight"},
+    {"term": "go past", "vi": "đi qua", "example": "Go past the library on your left.", "svg": "go-past"},
+    {"term": "next to", "vi": "bên cạnh", "example": "The café is next to the bookshop.", "svg": "next-to"},
+    {"term": "opposite", "vi": "đối diện", "example": "The bank is opposite the post office.", "svg": "opposite"},
+    {"term": "roundabout", "vi": "vòng xuyến", "example": "Take the second exit at the roundabout.", "svg": "roundabout"},
+    {"term": "take the second left", "vi": "rẽ trái ở ngã rẽ thứ hai", "example": "Take the second left after the bridge.", "svg": "second-left"},
+    {"term": "take the second right", "vi": "rẽ phải ở ngã rẽ thứ hai", "example": "Take the second right and it's on your left.", "svg": "second-right"},
+    {"term": "traffic lights", "vi": "đèn giao thông", "example": "Turn right at the traffic lights.", "svg": "traffic-lights"},
+    {"term": "between", "vi": "ở giữa", "example": "The shop is between the bank and the café.", "svg": "between"},
+    {"term": "in front of", "vi": "phía trước", "example": "There's a car park in front of the building.", "svg": "in-front-of"},
+    {"term": "behind", "vi": "phía sau", "example": "The garden is behind the main building.", "svg": "behind"},
+    {"term": "at the corner of", "vi": "ở góc của", "example": "The pharmacy is at the corner of High Street.", "svg": "corner"},
+    {"term": "cross the road", "vi": "băng qua đường", "example": "Cross the road and it's on your right.", "svg": "cross-road"}
+  ],
+  "vocabulary": [
+    {"w": "opposite", "p": "preposition", "vi": "đối diện", "en": "On the other side of something; directly facing.", "ex": "\"The café is opposite the library.\"", "cat": "place"},
+    {"w": "between", "p": "preposition", "vi": "ở giữa (hai vật)", "en": "In the space separating two things.", "ex": "\"The shop is between the bank and the post office.\"", "cat": "place"},
+    {"w": "next to", "p": "preposition", "vi": "bên cạnh", "en": "Immediately beside; right next to.", "ex": "\"The gym is next to the swimming pool.\"", "cat": "place"},
+    {"w": "behind", "p": "preposition", "vi": "phía sau", "en": "At the back of something.", "ex": "\"The car park is behind the main building.\"", "cat": "place"},
+    {"w": "in front of", "p": "preposition", "vi": "phía trước", "en": "Directly before or ahead of something.", "ex": "\"There is a fountain in front of the entrance.\"", "cat": "place"},
+    {"w": "beside", "p": "preposition", "vi": "bên cạnh", "en": "At the side of; next to.", "ex": "\"The new café is beside the old bookshop.\"", "cat": "place"},
+    {"w": "beyond", "p": "preposition", "vi": "ở phía bên kia", "en": "On the far side of; past.", "ex": "\"The sports field is beyond the car park.\"", "cat": "place"},
+    {"w": "alongside", "p": "preposition", "vi": "dọc theo, bên cạnh", "en": "Close beside; along the side of.", "ex": "\"There's a path alongside the river.\"", "cat": "place"},
+    {"w": "across from", "p": "preposition", "vi": "đối diện, bên kia", "en": "On the opposite side from.", "ex": "\"The pharmacy is across from the bus stop.\"", "cat": "place"},
+    {"w": "near", "p": "preposition", "vi": "gần", "en": "Not far away from; close to.", "ex": "\"The toilets are near the main entrance.\"", "cat": "place"},
+    {"w": "close to", "p": "preposition", "vi": "gần với", "en": "Not far from; a short distance away.", "ex": "\"The information desk is close to the entrance.\"", "cat": "place"},
+    {"w": "at the corner of", "p": "phrase", "vi": "ở góc của", "en": "Where two streets or walls meet.", "ex": "\"The pharmacy is at the corner of High Street and Park Road.\"", "cat": "place"},
+    {"w": "on the edge of", "p": "phrase", "vi": "ở rìa của", "en": "At the outer boundary of an area.", "ex": "\"The park is on the edge of the town centre.\"", "cat": "place"},
+    {"w": "in the middle of", "p": "phrase", "vi": "ở giữa", "en": "At the central point of an area.", "ex": "\"There's a pond in the middle of the park.\"", "cat": "place"},
+    {"w": "on the left-hand side", "p": "phrase", "vi": "ở phía bên trái", "en": "On the left when facing forward.", "ex": "\"The reception is on the left-hand side.\"", "cat": "place"},
+    {"w": "on the right-hand side", "p": "phrase", "vi": "ở phía bên phải", "en": "On the right when facing forward.", "ex": "\"You'll see the café on the right-hand side.\"", "cat": "place"},
+
+    {"w": "turn left", "p": "verb phrase", "vi": "rẽ trái", "en": "Change direction to the left.", "ex": "\"Turn left at the traffic lights.\"", "cat": "movement"},
+    {"w": "turn right", "p": "verb phrase", "vi": "rẽ phải", "en": "Change direction to the right.", "ex": "\"Turn right after the supermarket.\"", "cat": "movement"},
+    {"w": "go straight", "p": "verb phrase", "vi": "đi thẳng", "en": "Continue forward without turning.", "ex": "\"Go straight until you reach the roundabout.\"", "cat": "movement"},
+    {"w": "go past", "p": "verb phrase", "vi": "đi qua (không dừng)", "en": "Move beyond something without stopping.", "ex": "\"Go past the library and it's on your right.\"", "cat": "movement"},
+    {"w": "pass through", "p": "verb phrase", "vi": "đi xuyên qua", "en": "Go through an area or entrance.", "ex": "\"Pass through the gate and into the courtyard.\"", "cat": "movement"},
+    {"w": "carry on", "p": "verb phrase", "vi": "tiếp tục đi", "en": "Continue in the same direction.", "ex": "\"Carry on along the corridor.\"", "cat": "movement"},
+    {"w": "head towards", "p": "verb phrase", "vi": "đi về hướng", "en": "Move in the direction of something.", "ex": "\"Head towards the main building.\"", "cat": "movement"},
+    {"w": "cross", "p": "verb", "vi": "băng qua", "en": "Go from one side to the other.", "ex": "\"Cross the bridge and turn left.\"", "cat": "movement"},
+    {"w": "walk along", "p": "verb phrase", "vi": "đi dọc theo", "en": "Move in a line beside or following something.", "ex": "\"Walk along the river until you see the café.\"", "cat": "movement"},
+    {"w": "take the first turning", "p": "verb phrase", "vi": "rẽ ở ngã rẽ đầu tiên", "en": "Turn at the first available road or path.", "ex": "\"Take the first turning on your left.\"", "cat": "movement"},
+    {"w": "continue", "p": "verb", "vi": "tiếp tục", "en": "Keep going in the same direction.", "ex": "\"Continue past the shops and you'll see it.\"", "cat": "movement"},
+
+    {"w": "entrance", "p": "noun", "vi": "lối vào", "en": "A door, gate, or opening for going in.", "ex": "\"The main entrance is on Park Street.\"", "cat": "location"},
+    {"w": "exit", "p": "noun", "vi": "lối ra", "en": "A way out of a building or area.", "ex": "\"The emergency exit is at the back.\"", "cat": "location"},
+    {"w": "reception", "p": "noun", "vi": "quầy lễ tân", "en": "The area where visitors are greeted.", "ex": "\"Go to reception to collect your pass.\"", "cat": "location"},
+    {"w": "corridor", "p": "noun", "vi": "hành lang", "en": "A long passageway inside a building.", "ex": "\"Walk down the corridor to the last door.\"", "cat": "location"},
+    {"w": "junction", "p": "noun", "vi": "ngã tư, giao lộ", "en": "A point where two or more roads meet.", "ex": "\"Turn left at the junction.\"", "cat": "location"},
+    {"w": "intersection", "p": "noun", "vi": "giao lộ", "en": "A place where two roads cross each other.", "ex": "\"The café is just past the intersection.\"", "cat": "location"},
+    {"w": "roundabout", "p": "noun", "vi": "vòng xuyến, bùng binh", "en": "A circular junction where traffic flows in one direction.", "ex": "\"Take the second exit at the roundabout.\"", "cat": "location"},
+    {"w": "pedestrian walkway", "p": "noun", "vi": "đường đi bộ", "en": "A path designed only for people walking.", "ex": "\"Follow the pedestrian walkway to the lake.\"", "cat": "location"},
+    {"w": "car park", "p": "noun", "vi": "bãi đỗ xe", "en": "An area for parking cars.", "ex": "\"The car park is behind the shopping centre.\"", "cat": "location"},
+    {"w": "footpath", "p": "noun", "vi": "đường mòn đi bộ", "en": "A narrow path for walking.", "ex": "\"Take the footpath through the park.\"", "cat": "location"},
+    {"w": "main road", "p": "noun", "vi": "đường chính", "en": "The principal road through an area.", "ex": "\"The hotel faces the main road.\"", "cat": "location"},
+    {"w": "bridge", "p": "noun", "vi": "cầu", "en": "A structure built over a river or road.", "ex": "\"Cross the bridge and turn right.\"", "cat": "location"},
+    {"w": "traffic lights", "p": "noun", "vi": "đèn giao thông", "en": "Signals that control traffic flow at junctions.", "ex": "\"Turn right at the traffic lights.\"", "cat": "location"},
+    {"w": "dead end", "p": "noun", "vi": "đường cụt", "en": "A road with no exit at one end.", "ex": "\"Don't go down there — it's a dead end.\"", "cat": "location"},
+
+    {"w": "to the north", "p": "phrase", "vi": "về phía bắc", "en": "In the direction of north on a map.", "ex": "\"The lake is to the north of the campus.\"", "cat": "direction"},
+    {"w": "to the south", "p": "phrase", "vi": "về phía nam", "en": "In the direction of south on a map.", "ex": "\"The car park is to the south.\"", "cat": "direction"},
+    {"w": "to the east", "p": "phrase", "vi": "về phía đông", "en": "In the direction of east on a map.", "ex": "\"The sports hall is to the east of the library.\"", "cat": "direction"},
+    {"w": "to the west", "p": "phrase", "vi": "về phía tây", "en": "In the direction of west on a map.", "ex": "\"The main gate is to the west.\"", "cat": "direction"},
+    {"w": "straight ahead", "p": "phrase", "vi": "ngay phía trước", "en": "Directly in front of you.", "ex": "\"Go straight ahead and it's the third building.\"", "cat": "direction"},
+    {"w": "just past", "p": "phrase", "vi": "ngay sau khi đi qua", "en": "A short distance after passing something.", "ex": "\"The office is just past the reception desk.\"", "cat": "direction"},
+    {"w": "before you get to", "p": "phrase", "vi": "trước khi đến", "en": "Located at a point before reaching a landmark.", "ex": "\"The toilets are before you get to the stairs.\"", "cat": "direction"},
+    {"w": "at the end of", "p": "phrase", "vi": "ở cuối", "en": "At the furthest point of a path or corridor.", "ex": "\"The lab is at the end of the corridor.\"", "cat": "direction"}
+  ],
+  "usefulPhrases": [
+    {
+      "phrase": "It's on your left / right.",
+      "vi": "Nó ở bên trái / phải của bạn.",
+      "usage": "The most common way to indicate location during a tour or giving directions.",
+      "example": "Walk past the entrance and it's on your left.",
+      "cat": "direction"
+    },
+    {
+      "phrase": "If you look at the map, you'll see...",
+      "vi": "Nếu bạn nhìn vào bản đồ, bạn sẽ thấy...",
+      "usage": "Speaker introduces a location on a map. Signals that the answer is coming next.",
+      "example": "If you look at the map, you'll see the library is in the northeast corner.",
+      "cat": "direction"
+    },
+    {
+      "phrase": "You are here / We are here.",
+      "vi": "Bạn đang ở đây / Chúng ta đang ở đây.",
+      "usage": "Identifies the starting point on the map. Always listen for this first.",
+      "example": "You are here, at the main entrance on Park Road.",
+      "cat": "direction"
+    },
+    {
+      "phrase": "As you come in through the entrance...",
+      "vi": "Khi bạn đi vào qua lối vào...",
+      "usage": "Common opening phrase when giving directions inside a building.",
+      "example": "As you come in through the entrance, the reception desk is straight ahead.",
+      "cat": "direction"
+    },
+    {
+      "phrase": "On the far side of...",
+      "vi": "Ở phía bên kia của...",
+      "usage": "Indicates something is on the opposite side of an area.",
+      "example": "The tennis courts are on the far side of the sports centre.",
+      "cat": "direction"
+    },
+    {
+      "phrase": "Take the second exit at the roundabout.",
+      "vi": "Rẽ ở lối ra thứ hai tại vòng xuyến.",
+      "usage": "Common instruction for outdoor map directions involving a roundabout.",
+      "example": "At the roundabout, take the second exit onto Hill Road.",
+      "cat": "movement"
+    },
+    {
+      "phrase": "Follow the path / road until you reach...",
+      "vi": "Đi theo con đường cho đến khi bạn đến...",
+      "usage": "Instruction to keep going until reaching a landmark.",
+      "example": "Follow the path until you reach the lake.",
+      "cat": "movement"
+    },
+    {
+      "phrase": "It's the first / second building on the left / right.",
+      "vi": "Đó là tòa nhà đầu tiên / thứ hai bên trái / phải.",
+      "usage": "Pinpoints a specific building in a sequence.",
+      "example": "It's the second building on the right after the car park.",
+      "cat": "direction"
+    },
+    {
+      "phrase": "You'll come to a junction / crossroads.",
+      "vi": "Bạn sẽ đến một ngã tư / giao lộ.",
+      "usage": "Signals that a decision point is ahead.",
+      "example": "You'll come to a junction — turn left there.",
+      "cat": "movement"
+    },
+    {
+      "phrase": "Actually, no, I meant...",
+      "vi": "Thực ra, không, ý tôi là...",
+      "usage": "A self-correction — the speaker changes their answer. This is a DISTRACTOR signal. Listen for the corrected answer.",
+      "example": "The café is on the left — actually, no, I meant on the right.",
+      "cat": "distractor"
+    },
+    {
+      "phrase": "Sorry, let me start again.",
+      "vi": "Xin lỗi, để tôi nói lại.",
+      "usage": "Another distractor signal — the speaker restarts their direction. The SECOND answer is correct.",
+      "example": "Turn left at... sorry, let me start again. Turn right at the bank.",
+      "cat": "distractor"
+    },
+    {
+      "phrase": "Directly across from...",
+      "vi": "Ngay đối diện với...",
+      "usage": "Indicates something is exactly on the other side.",
+      "example": "The bookshop is directly across from the bus station.",
+      "cat": "direction"
+    },
+    {
+      "phrase": "You can't miss it.",
+      "vi": "Bạn không thể bỏ lỡ nó.",
+      "usage": "Speaker reassures that the location is easy to find. Often follows the key direction.",
+      "example": "It's the big red building on the corner — you can't miss it.",
+      "cat": "direction"
+    },
+    {
+      "phrase": "It's tucked away behind...",
+      "vi": "Nó nằm khuất phía sau...",
+      "usage": "Indicates something is hidden or not immediately visible behind another landmark.",
+      "example": "The garden café is tucked away behind the main hall.",
+      "cat": "direction"
+    },
+    {
+      "phrase": "Head north / south / east / west.",
+      "vi": "Đi về hướng bắc / nam / đông / tây.",
+      "usage": "Compass-based direction, common in outdoor map descriptions.",
+      "example": "Head north along the main road for about 200 metres.",
+      "cat": "direction"
+    }
+  ],
+  "fillBlanks": [
+    {"s": "The gym is ___ the swimming pool.", "a": "next to", "h": "bên cạnh"},
+    {"s": "The café is ___ the library — they face each other.", "a": "opposite", "h": "đối diện"},
+    {"s": "___ the road and the park is on your right.", "a": "Cross", "h": "băng qua"},
+    {"s": "The shop is ___ the bank and the post office.", "a": "between", "h": "ở giữa hai vật"},
+    {"s": "Go ___ the supermarket — don't stop there.", "a": "past", "h": "đi qua, không dừng lại"},
+    {"s": "The car park is ___ the main building — you can't see it from the front.", "a": "behind", "h": "phía sau"},
+    {"s": "Turn ___ at the traffic lights.", "a": "left", "h": "rẽ trái"},
+    {"s": "The office is at the ___ of the corridor.", "a": "end", "h": "ở cuối"},
+    {"s": "Take the second ___ at the roundabout.", "a": "exit", "h": "lối ra"},
+    {"s": "There's a fountain ___ ___ ___ the entrance.", "a": "in front of", "h": "phía trước"},
+    {"s": "___ straight ahead and it's the third building.", "a": "Go", "h": "đi thẳng"},
+    {"s": "The pharmacy is ___ the corner of High Street.", "a": "at", "h": "ở (góc đường)"}
+  ]
+}

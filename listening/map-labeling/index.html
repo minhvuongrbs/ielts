@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Listening — Map & Plan Labeling</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #faf6f0;
+  --text: #2c2416;
+  --accent: #c47a3b;
+  --accent-dark: #a35f22;
+  --accent-light: #f5dfc4;
+  --correct: #3a8a5c;
+  --correct-bg: #e8f5ed;
+  --wrong: #c44536;
+  --wrong-bg: #fde8e6;
+  --shadow: 0 2px 16px rgba(44,36,22,0.08);
+  --r: 12px;
+  --vi: #6b8cce;
+  --vi-bg: #eef3fb;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+
+/* Nav */
+.nav{display:flex;align-items:center;gap:16px;padding:10px 20px;background:#fff;box-shadow:0 1px 8px rgba(44,36,22,.06);position:sticky;top:0;z-index:100}
+.nav-brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--accent);text-decoration:none}
+.nav-links{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.nav-link{padding:6px 14px;border-radius:8px;font-size:.82rem;font-weight:600;color:#8a7a66;text-decoration:none;transition:.2s;white-space:nowrap}
+.nav-link:hover{background:var(--accent-light);color:var(--text)}
+.nav-link.active{background:var(--accent);color:#fff}
+.container{max-width:1200px;margin:0 auto;padding:20px 16px 80px}
+header{text-align:center;padding:32px 0 24px;border-bottom:2px solid var(--accent-light);margin-bottom:24px}
+header h1{font-family:'Fraunces',serif;font-weight:700;font-size:2.2rem;letter-spacing:-0.02em}
+header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
+
+.tabs{display:flex;gap:3px;background:#efe8de;border-radius:10px;padding:3px;margin-bottom:24px;overflow-x:auto}
+.tab-btn{flex:1;min-width:0;padding:9px 6px;border:none;background:0;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:.78rem;color:#8a7a66;border-radius:8px;cursor:pointer;transition:.25s;white-space:nowrap}
+.tab-btn.active{background:#fff;color:var(--text);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.tp{display:none}.tp.active{display:block}
+
+.card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:24px 28px;margin-bottom:16px}
+
+/* Guide */
+.guide-section{margin-bottom:24px}
+.guide-title{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--accent);margin-bottom:8px}
+.guide-list{padding-left:20px;font-size:.92rem}
+.guide-list li{margin-bottom:6px}
+.tip-card{background:var(--correct-bg);border-left:4px solid var(--correct);padding:14px 18px;border-radius:0 var(--r) var(--r) 0;margin-bottom:10px;font-size:.9rem}
+.tip-num{font-weight:700;color:var(--correct);margin-right:6px}
+
+/* Visual Vocab */
+.vv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.vv-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);text-align:center;cursor:pointer;transition:transform .2s,box-shadow .2s;overflow:hidden;border:2px solid transparent}
+.vv-card:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(44,36,22,.12)}
+.vv-card.open{border-color:var(--correct)}
+.vv-svg{height:120px;background:#fef3e6;display:flex;align-items:center;justify-content:center;padding:12px}
+.vv-svg svg{width:100%;height:100%;max-width:160px}
+.vv-body{padding:12px 14px}
+.vv-term{font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;margin-bottom:2px}
+.vv-tap{font-size:.75rem;color:var(--accent)}
+.vv-detail{display:none;padding:8px 14px 14px;border-top:1px solid var(--accent-light);font-size:.85rem;text-align:left}
+.vv-card.open .vv-detail{display:block}
+.vv-card.open .vv-tap{display:none}
+.vv-vi{color:var(--vi);font-weight:600;margin-bottom:4px}
+.vv-ex{font-style:italic;color:#6b5e4f}
+
+/* Vocab */
+.vf{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.fb{padding:6px 14px;border:2px solid #e0d6c8;border-radius:20px;background:#fff;font-size:.82rem;font-weight:600;cursor:pointer;transition:.2s;font-family:'Source Sans 3',sans-serif}
+.fb.active{border-color:var(--accent);background:var(--accent);color:#fff}
+.vg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.vc{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:18px 22px;cursor:pointer;transition:transform .2s,box-shadow .2s;border-left:4px solid var(--accent);position:relative}
+.vc:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(44,36,22,.12)}
+.vc.open{border-left-color:var(--correct)}
+.vw{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem}
+.vp{font-size:.78rem;color:#8a7a66;font-style:italic}
+.vtag{position:absolute;top:16px;right:16px;font-size:.7rem;font-weight:700;background:var(--accent-light);color:var(--accent-dark);padding:2px 8px;border-radius:10px}
+.vb{display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--accent-light);font-size:.9rem}
+.vc.open .vb{display:block}
+.vvi{color:var(--vi);font-weight:600;margin-bottom:4px}
+.ved{margin-bottom:6px}
+.vex{font-style:italic;font-size:.85rem;color:#6b5e4f}
+.vtap{font-size:.78rem;color:var(--accent);margin-top:4px}
+.vipa{font-size:.82rem;color:#888;font-style:italic;margin-left:2px}
+.audio-btn{background:none;border:none;cursor:pointer;font-size:1rem;padding:2px 6px;border-radius:6px;opacity:.5;transition:opacity .2s,background .2s;vertical-align:middle}
+.audio-btn:hover{opacity:1;background:var(--accent-light)}
+
+/* Phrases */
+.ph-grid{display:flex;flex-direction:column;gap:14px}
+.ph-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:20px 24px;border-left:4px solid var(--accent);cursor:pointer;transition:transform .2s,box-shadow .2s}
+.ph-card:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(44,36,22,.12)}
+.ph-card.open{border-left-color:var(--correct)}
+.ph-phrase{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;margin-bottom:2px}
+.ph-example-preview{font-size:.88rem;color:#1a5632;margin-top:6px;background:var(--correct-bg);padding:8px 14px;border-radius:8px;font-style:italic}
+.ph-tag{display:inline-block;font-size:.7rem;font-weight:700;background:var(--accent-light);color:var(--accent-dark);padding:2px 8px;border-radius:10px;margin-left:8px}
+.ph-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--accent-light);font-size:.9rem}
+.ph-card.open .ph-body{display:block}
+.ph-card.open .ph-tap{display:none}
+.ph-usage{font-size:.9rem;color:#6b5e4f;margin-bottom:8px}
+.ph-vi{font-size:.92rem;color:var(--vi);font-weight:600;font-style:italic}
+.ph-tap{font-size:.78rem;color:var(--accent);margin-top:6px}
+
+/* Quiz shared */
+.stabs{display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap}
+.stab{padding:7px 14px;border:2px solid #e0d6c8;border-radius:20px;background:#fff;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:.82rem;cursor:pointer;transition:.2s;color:#8a7a66}
+.stab.active{border-color:var(--accent);background:var(--accent);color:#fff}
+.sp{display:none}.sp.active{display:block}
+.qh{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px}
+.qt{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem}
+.qs{font-weight:600;font-size:.95rem}
+.sc{color:var(--correct)}
+.qn{font-family:'Fraunces',serif;font-weight:700;color:var(--accent);font-size:.85rem;margin-bottom:4px}
+.qtx{font-weight:600;font-size:.95rem;margin-bottom:10px}
+.ctrls{display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.btn{padding:10px 28px;border:none;border-radius:8px;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:.95rem;cursor:pointer;transition:.2s}
+.bp{background:var(--accent);color:#fff}.bp:hover{background:var(--accent-dark)}
+.bs{background:#efe8de;color:var(--text)}.bs:hover{background:#e4d9ca}
+.banner{text-align:center;padding:16px;border-radius:var(--r);font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;margin-bottom:16px;display:none}
+.banner.show{display:block}
+.exp{display:none;margin-top:10px;padding:10px 14px;border-radius:8px;font-size:.88rem;line-height:1.6}
+.exp.show{display:block}
+.exp.ce{background:var(--correct-bg);color:#1a5632}
+.exp.we{background:var(--wrong-bg);color:#8b2a1f}
+.card.correct{border-left:4px solid var(--correct);background:var(--correct-bg)}
+.card.wrong{border-left:4px solid var(--wrong);background:var(--wrong-bg)}
+
+/* Fill blank */
+.bi{display:inline-block;border:none;border-bottom:2px solid var(--accent);background:0;font-family:'Source Sans 3',sans-serif;font-size:.95rem;font-weight:600;color:var(--text);padding:2px 4px;width:140px;outline:0;transition:.2s}
+.bi:focus{border-bottom-color:var(--accent-dark)}
+.bi.ci{border-bottom-color:var(--correct);color:var(--correct)}
+.bi.wi{border-bottom-color:var(--wrong);color:var(--wrong)}
+
+/* Flashcard */
+.fcc{display:flex;flex-direction:column;align-items:center;gap:16px}
+.fc{width:100%;max-width:480px;min-height:260px;perspective:800px;cursor:pointer}
+.fci{position:relative;width:100%;min-height:260px;transition:transform .5s;transform-style:preserve-3d}
+.fc.flipped .fci{transform:rotateY(180deg)}
+.fcf,.fcb{position:absolute;inset:0;backface-visibility:hidden;border-radius:var(--r);box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center}
+.fcf{background:#fff}
+.fcb{background:var(--vi-bg);transform:rotateY(180deg)}
+.fcw{font-family:'Fraunces',serif;font-weight:700;font-size:1.8rem;margin-bottom:8px}
+.fcp{font-size:.85rem;color:#8a7a66;font-style:italic}
+.fch{font-size:.82rem;color:var(--accent);margin-top:12px}
+.fcvi{font-size:1rem;font-weight:600;color:var(--vi);margin-bottom:8px}
+.fcd{font-size:1.1rem;font-weight:600;margin-bottom:8px}
+.fce{font-size:.85rem;font-style:italic;color:#6b5e4f}
+.fcn{display:flex;gap:12px;align-items:center}
+.fcn .btn{padding:8px 20px}
+.fccnt{font-weight:600;font-size:.9rem;color:#8a7a66;min-width:60px;text-align:center}
+.fcpg{width:100%;max-width:480px;height:6px;background:#efe8de;border-radius:3px;overflow:hidden}
+.fcpgb{height:100%;background:var(--accent);border-radius:3px;transition:width .3s}
+
+/* Match */
+.mg{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:600px;margin:0 auto}
+.mi{padding:14px 16px;border:2px solid #e0d6c8;border-radius:8px;background:#fff;text-align:center;cursor:pointer;font-weight:600;font-size:.9rem;transition:.25s;user-select:none}
+.mi:hover{border-color:var(--accent);background:var(--accent-light)}
+.mi.sm{border-color:var(--accent);background:var(--accent);color:#fff}
+.mi.matched{border-color:var(--correct);background:var(--correct-bg);color:var(--correct);cursor:default;opacity:.8}
+.mi.wf{border-color:var(--wrong);background:var(--wrong-bg)}
+
+@media(max-width:600px){
+  .card{padding:18px 16px}header h1{font-size:1.7rem}
+  .vv-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+  .vv-svg{height:90px}
+  .fcf,.fcb{padding:24px 16px}.fcw{font-size:1.4rem}
+  .mg{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../" class="nav-brand">IELTS Hub</a>
+  <div class="nav-links">
+    <a href="../../" class="nav-link">Home</a>
+    <a href="../../reading/" class="nav-link">📖 Reading</a>
+    <a href="../../writing/" class="nav-link">✍️ Writing</a>
+    <a href="../" class="nav-link active">🎧 Listening</a>
+    <a href="../../speaking/" class="nav-link">🗣️ Speaking</a>
+  </div>
+</nav>
+<div class="container">
+  <header>
+    <h1>🗺️ Map & Plan Labeling</h1>
+    <div class="sub">IELTS Listening — Section 2 — Question Type</div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="guide">📖 Guide</button>
+    <button class="tab-btn" data-tab="visual">🗺️ Visual</button>
+    <button class="tab-btn" data-tab="vocab">📝 Vocab</button>
+    <button class="tab-btn" data-tab="phrases">💬 Phrases</button>
+    <button class="tab-btn" data-tab="quiz">❓ Quiz</button>
+  </div>
+
+  <div id="guide" class="tp active">
+    <div class="card">
+      <div class="guide-title">📋 What is Map & Plan Labeling?</div>
+      <p id="guide-desc" style="font-size:.92rem;margin-bottom:16px"></p>
+    </div>
+    <div class="card">
+      <div class="guide-title">📝 Exam Format</div>
+      <ul class="guide-list" id="guide-format"></ul>
+    </div>
+    <div class="card">
+      <div class="guide-title">💡 Tips & Strategies</div>
+      <div id="guide-tips"></div>
+    </div>
+  </div>
+
+  <div id="visual" class="tp">
+    <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.9rem">Tap a card to see the Vietnamese meaning and example sentence.</p>
+    <div class="vv-grid" id="vv-grid"></div>
+  </div>
+
+  <div id="vocab" class="tp">
+    <div class="vf" id="vocab-filter"></div>
+    <div class="vg" id="vocab-grid"></div>
+  </div>
+
+  <div id="phrases" class="tp">
+    <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.9rem">Common sentences you'll hear in map & plan labeling audio. Learn to recognize these patterns.</p>
+    <div class="ph-grid" id="phrases-grid"></div>
+  </div>
+
+  <div id="quiz" class="tp">
+    <div class="stabs">
+      <button class="stab active" data-sub="flashcard">🃏 Flashcard</button>
+      <button class="stab" data-sub="fillblank">✏️ Fill in Blank</button>
+      <button class="stab" data-sub="match">🔗 Matching</button>
+    </div>
+    <div id="flashcard" class="sp active">
+      <div class="fcc">
+        <div class="fcpg"><div class="fcpgb" id="fc-bar"></div></div>
+        <div class="fc" id="fc-card" onclick="flipCard()">
+          <div class="fci" id="fc-inner">
+            <div class="fcf"><div class="fcw" id="fc-word"></div><div class="fcp" id="fc-pos"></div><div class="fcp" id="fc-ipa" style="color:#888"></div><button class="audio-btn" id="fc-audio" onclick="event.stopPropagation();speak(document.getElementById('fc-word').textContent)" style="font-size:1.3rem;margin-top:6px">🔊</button><div class="fch">tap to flip</div></div>
+            <div class="fcb"><div class="fcd" id="fc-def"></div><div class="fcvi" id="fc-vi"></div><div class="fce" id="fc-ex"></div></div>
+          </div>
+        </div>
+        <div class="fcn">
+          <button class="btn bs" onclick="fcPrev()">← Previous</button>
+          <span class="fccnt" id="fc-cnt"></span>
+          <button class="btn bp" onclick="fcNext()">Next →</button>
+        </div>
+        <button class="btn bs" onclick="shuffleFC()" style="margin-top:4px">🔀 Shuffle</button>
+      </div>
+    </div>
+    <div id="fillblank" class="sp">
+      <div class="qh"><div class="qt">Fill in the blanks</div><div class="qs" id="fb-sc"></div></div>
+      <div id="fb-ctn"></div>
+      <div class="ctrls">
+        <button class="btn bp" id="fbc" onclick="checkFB()">Check</button>
+        <button class="btn bs" id="fbr" onclick="resetFB()" style="display:none">Redo</button>
+      </div>
+    </div>
+    <div id="match" class="sp">
+      <div class="qh"><div class="qt">Match words with Vietnamese meanings</div><div class="qs" id="m-sc"></div></div>
+      <p style="text-align:center;color:#8a7a66;margin-bottom:12px;font-size:.85rem">Select a word on the left, then select its meaning on the right</p>
+      <div class="mg" id="m-grid"></div>
+      <div class="ctrls" style="margin-top:16px"><button class="btn bs" onclick="resetMatch()">Play again</button></div>
+    </div>
+  </div>
+</div>
+
+<script>
+let INTRO={}, V=[], UP=[], FB=[], VV=[];
+
+// ======================== AUDIO & IPA ========================
+function speak(text){
+  if(!('speechSynthesis' in window))return;
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);
+  u.lang='en-US';u.rate=0.85;
+  speechSynthesis.speak(u);
+}
+
+const ipaCache={};
+
+function stemWord(w){
+  w=w.toLowerCase();
+  if(w.endsWith('ishes'))return w.slice(0,-2);
+  if(w.endsWith('ates'))return w.slice(0,-1);
+  if(w.endsWith('ies')&&w.length>4)return w.slice(0,-3)+'y';
+  if(w.endsWith('ving'))return w.slice(0,-4)+'ve';
+  if(w.endsWith('ming')&&w.length>5)return w.slice(0,-4)+'me';
+  if(w.endsWith('ning')&&w.length>5)return w.slice(0,-4)+'ne';
+  if(w.endsWith('ting')&&w.length>5)return w.slice(0,-4)+'te';
+  if(w.endsWith('ing')&&w.length>4)return w.slice(0,-3);
+  if(w.endsWith('tion'))return w;
+  if(w.endsWith('es')&&w.length>3)return w.slice(0,-1);
+  if(w.endsWith('ed')&&w.length>3)return w.slice(0,-2);
+  if(w.endsWith('s')&&w.length>3)return w.slice(0,-1);
+  return w;
+}
+
+async function tryFetchIPA(term){
+  try{
+    const r=await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(term)}`);
+    if(!r.ok)return '';
+    const d=await r.json();
+    return d[0]?.phonetic||d[0]?.phonetics?.find(p=>p.text)?.text||'';
+  }catch{return '';}
+}
+
+async function fetchIPA(word){
+  const key=word.toLowerCase().replace(/[^a-z]/g,'');
+  if(ipaCache[key]!==undefined)return ipaCache[key];
+  let ipa=await tryFetchIPA(word);
+  if(!ipa&&!word.includes(' ')){
+    const base=stemWord(word);
+    if(base!==word.toLowerCase())ipa=await tryFetchIPA(base);
+  }
+  ipaCache[key]=ipa;return ipa;
+}
+
+function getIPA(word){return ipaCache[word.toLowerCase().replace(/[^a-z]/g,'')]||'';}
+
+// ======================== SVG ILLUSTRATIONS ========================
+const SVG_MAP = {
+  'turn-left': `<svg viewBox="0 0 160 120"><rect x="60" y="10" width="40" height="100" rx="4" fill="#b8d8b8"/><path d="M80 90 L80 50 Q80 35 65 35 L30 35" stroke="#c44536" stroke-width="6" fill="none" marker-end="url(#ah)"/><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c44536"/></marker></defs></svg>`,
+  'turn-right': `<svg viewBox="0 0 160 120"><rect x="60" y="10" width="40" height="100" rx="4" fill="#b8d8b8"/><path d="M80 90 L80 50 Q80 35 95 35 L130 35" stroke="#c44536" stroke-width="6" fill="none" marker-end="url(#ah2)"/><defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c44536"/></marker></defs></svg>`,
+  'go-straight': `<svg viewBox="0 0 160 120"><rect x="60" y="10" width="40" height="100" rx="4" fill="#b8d8b8"/><path d="M80 100 L80 20" stroke="#c44536" stroke-width="6" fill="none" marker-end="url(#ah3)"/><defs><marker id="ah3" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,10 L5,0 L10,10 Z" fill="#c44536"/></marker></defs></svg>`,
+  'go-past': `<svg viewBox="0 0 160 120"><rect x="55" y="20" width="50" height="35" rx="4" fill="#d4c5a0" stroke="#b0a080" stroke-width="1.5"/><text x="80" y="42" text-anchor="middle" font-size="10" fill="#6b5e4f">SHOP</text><path d="M30 90 L30 40 L30 15" stroke="#c44536" stroke-width="5" fill="none" marker-end="url(#ah4)" stroke-dasharray="0"/><defs><marker id="ah4" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,10 L5,0 L10,10 Z" fill="#c44536"/></marker></defs></svg>`,
+  'next-to': `<svg viewBox="0 0 160 120"><rect x="20" y="30" width="50" height="50" rx="4" fill="#b8d8b8" stroke="#7ab87a" stroke-width="1.5"/><text x="45" y="59" text-anchor="middle" font-size="10" fill="#2c5e2c">A</text><rect x="90" y="30" width="50" height="50" rx="4" fill="#a8c8e8" stroke="#6090b0" stroke-width="1.5"/><text x="115" y="59" text-anchor="middle" font-size="10" fill="#2c4e6e">B</text><path d="M73 55 L87 55" stroke="#c47a3b" stroke-width="3" stroke-dasharray="4,3"/></svg>`,
+  'opposite': `<svg viewBox="0 0 160 120"><rect x="20" y="15" width="50" height="35" rx="4" fill="#b8d8b8" stroke="#7ab87a" stroke-width="1.5"/><text x="45" y="37" text-anchor="middle" font-size="10" fill="#2c5e2c">A</text><rect x="90" y="15" width="50" height="35" rx="4" fill="#a8c8e8" stroke="#6090b0" stroke-width="1.5"/><text x="115" y="37" text-anchor="middle" font-size="10" fill="#2c4e6e">B</text><rect x="10" y="55" width="140" height="16" rx="3" fill="#e0d6c8"/><text x="80" y="66" text-anchor="middle" font-size="8" fill="#8a7a66">ROAD</text><path d="M45 50 L45 72 M115 50 L115 72" stroke="#c44536" stroke-width="2" stroke-dasharray="3,2"/></svg>`,
+  'roundabout': `<svg viewBox="0 0 160 120"><circle cx="80" cy="55" r="30" fill="none" stroke="#b8d8b8" stroke-width="12"/><circle cx="80" cy="55" r="12" fill="#e8f5ed"/><path d="M80 110 L80 85" stroke="#c44536" stroke-width="5" fill="none"/><path d="M55 38 L30 20" stroke="#c44536" stroke-width="5" fill="none" marker-end="url(#ah5)"/><defs><marker id="ah5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c44536"/></marker></defs></svg>`,
+  'second-left': `<svg viewBox="0 0 160 120"><rect x="70" y="0" width="20" height="120" fill="#b8d8b8"/><rect x="0" y="30" width="70" height="14" fill="#d8e8d0"/><rect x="0" y="70" width="70" height="14" fill="#b8d8b8"/><circle cx="80" cy="100" r="4" fill="#c44536"/><path d="M80 96 L80 77 L20 77" stroke="#c44536" stroke-width="4" fill="none" marker-end="url(#ah6)"/><text x="35" y="28" text-anchor="middle" font-size="8" fill="#aaa">1st</text><text x="35" y="66" text-anchor="middle" font-size="9" fill="#c44536" font-weight="700">2nd</text><defs><marker id="ah6" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#c44536"/></marker></defs></svg>`,
+  'second-right': `<svg viewBox="0 0 160 120"><rect x="70" y="0" width="20" height="120" fill="#b8d8b8"/><rect x="90" y="30" width="70" height="14" fill="#d8e8d0"/><rect x="90" y="70" width="70" height="14" fill="#b8d8b8"/><circle cx="80" cy="100" r="4" fill="#c44536"/><path d="M80 96 L80 77 L140 77" stroke="#c44536" stroke-width="4" fill="none" marker-end="url(#ah7)"/><text x="125" y="28" text-anchor="middle" font-size="8" fill="#aaa">1st</text><text x="125" y="66" text-anchor="middle" font-size="9" fill="#c44536" font-weight="700">2nd</text><defs><marker id="ah7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c44536"/></marker></defs></svg>`,
+  'traffic-lights': `<svg viewBox="0 0 160 120"><rect x="60" y="10" width="40" height="95" rx="8" fill="#444"/><circle cx="80" cy="30" r="10" fill="#e44"/><circle cx="80" cy="55" r="10" fill="#ea2"/><circle cx="80" cy="80" r="10" fill="#4b4"/><rect x="76" y="105" width="8" height="10" fill="#666"/></svg>`,
+  'between': `<svg viewBox="0 0 160 120"><rect x="10" y="30" width="40" height="50" rx="4" fill="#d8e8d0" stroke="#a0c0a0" stroke-width="1.5"/><text x="30" y="59" text-anchor="middle" font-size="10" fill="#4a7a4a">A</text><rect x="60" y="30" width="40" height="50" rx="4" fill="#f5dfc4" stroke="#c47a3b" stroke-width="2"/><text x="80" y="59" text-anchor="middle" font-size="11" fill="#c47a3b" font-weight="700">?</text><rect x="110" y="30" width="40" height="50" rx="4" fill="#d0d8e8" stroke="#8090b0" stroke-width="1.5"/><text x="130" y="59" text-anchor="middle" font-size="10" fill="#4a5a7a">C</text></svg>`,
+  'in-front-of': `<svg viewBox="0 0 160 120"><rect x="40" y="15" width="80" height="45" rx="4" fill="#d4c5a0" stroke="#b0a080" stroke-width="1.5"/><text x="80" y="42" text-anchor="middle" font-size="10" fill="#6b5e4f">BUILDING</text><circle cx="80" cy="90" r="12" fill="#f5dfc4" stroke="#c47a3b" stroke-width="2"/><text x="80" y="94" text-anchor="middle" font-size="10" fill="#c47a3b" font-weight="700">★</text><path d="M80 78 L80 63" stroke="#c44536" stroke-width="3" marker-end="url(#ah8)"/><defs><marker id="ah8" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,10 L5,0 L10,10 Z" fill="#c44536"/></marker></defs></svg>`,
+  'behind': `<svg viewBox="0 0 160 120"><rect x="40" y="45" width="80" height="45" rx="4" fill="#d4c5a0" stroke="#b0a080" stroke-width="1.5"/><text x="80" y="72" text-anchor="middle" font-size="10" fill="#6b5e4f">BUILDING</text><circle cx="80" cy="22" r="12" fill="#f5dfc4" stroke="#c47a3b" stroke-width="2"/><text x="80" y="26" text-anchor="middle" font-size="10" fill="#c47a3b" font-weight="700">★</text><path d="M80 34 L80 42" stroke="#c44536" stroke-width="3" marker-end="url(#ah9)"/><text x="80" y="108" text-anchor="middle" font-size="9" fill="#aaa">FRONT</text><defs><marker id="ah9" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L5,10 L10,0 Z" fill="#c44536"/></marker></defs></svg>`,
+  'corner': `<svg viewBox="0 0 160 120"><rect x="10" y="85" width="140" height="14" rx="3" fill="#b8d8b8"/><rect x="120" y="10" width="14" height="90" rx="3" fill="#b8d8b8"/><circle cx="127" cy="85" r="14" fill="#f5dfc4" stroke="#c47a3b" stroke-width="2.5"/><text x="127" y="89" text-anchor="middle" font-size="10" fill="#c47a3b" font-weight="700">★</text><text x="65" y="82" text-anchor="middle" font-size="8" fill="#8a7a66">HIGH ST</text></svg>`,
+  'cross-road': `<svg viewBox="0 0 160 120"><rect x="10" y="48" width="140" height="20" rx="3" fill="#d8e8d0"/><text x="80" y="61" text-anchor="middle" font-size="8" fill="#8a7a66">ROAD</text><path d="M80 90 L80 40" stroke="#c44536" stroke-width="5" fill="none" stroke-dasharray="6,4" marker-end="url(#ah10)"/><circle cx="80" cy="95" r="5" fill="#c44536"/><defs><marker id="ah10" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,10 L5,0 L10,10 Z" fill="#c44536"/></marker></defs></svg>`
+};
+
+// ======================== LOAD DATA ========================
+fetch('./data.json')
+  .then(r=>r.json())
+  .then(data=>{
+    INTRO=data.intro;
+    V=data.vocabulary;
+    UP=data.usefulPhrases||[];
+    FB=data.fillBlanks||[];
+    VV=data.visualVocab||[];
+    init();
+    Promise.all(V.map(v=>fetchIPA(v.w))).then(()=>{renderVocab();renderFC();});
+  });
+
+function init(){
+  renderGuide();
+  renderVisualVocab();
+  renderVF();
+  renderVocab();
+  renderPhrases();
+  renderFC();
+  renderFB2();
+  renderMatch();
+}
+
+// ======================== TABS ========================
+document.querySelectorAll('.tab-btn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tab-btn').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.tp').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');document.getElementById(b.dataset.tab).classList.add('active');
+}));
+document.querySelectorAll('.stab').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.stab').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.sp').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');document.getElementById(b.dataset.sub).classList.add('active');
+}));
+
+// ======================== GUIDE ========================
+function renderGuide(){
+  document.getElementById('guide-desc').textContent=INTRO.description;
+  document.getElementById('guide-format').innerHTML=INTRO.format.map(f=>`<li>${f}</li>`).join('');
+  document.getElementById('guide-tips').innerHTML=INTRO.tips.map((t,i)=>`<div class="tip-card"><span class="tip-num">${i+1}.</span>${t}</div>`).join('');
+}
+
+// ======================== VISUAL VOCAB ========================
+function renderVisualVocab(){
+  document.getElementById('vv-grid').innerHTML=VV.map(v=>`
+    <div class="vv-card" onclick="this.classList.toggle('open')">
+      <div class="vv-svg">${SVG_MAP[v.svg]||''}</div>
+      <div class="vv-body">
+        <div class="vv-term">${v.term} <button class="audio-btn" onclick="event.stopPropagation();speak('${v.term.replace(/'/g,"\\'")}')">🔊</button></div>
+        <div class="vv-tap">tap to reveal</div>
+      </div>
+      <div class="vv-detail">
+        <div class="vv-vi">🇻🇳 ${v.vi}</div>
+        <div class="vv-ex">💡 ${v.example}</div>
+      </div>
+    </div>`).join('');
+}
+
+// ======================== VOCAB ========================
+const CAT_LABELS={place:'📍 Place',movement:'🚶 Movement',location:'🏛️ Location',direction:'🧭 Direction'};
+function renderVocab(f='all'){
+  const g=document.getElementById('vocab-grid');
+  const list=f==='all'?V:V.filter(v=>v.cat===f);
+  g.innerHTML=list.map(v=>{
+    const ipa=getIPA(v.w);
+    return `<div class="vc" onclick="this.classList.toggle('open')">
+      <div style="display:flex;align-items:baseline;gap:6px;flex-wrap:wrap">
+        <div class="vw">${v.w}</div><span class="vipa">${ipa}</span>
+        <button class="audio-btn" onclick="event.stopPropagation();speak('${v.w.replace(/'/g,"\\'")}')">🔊</button>
+      </div>
+      <div class="vp">${v.p}</div>
+      <span class="vtag">${CAT_LABELS[v.cat]||v.cat}</span><div class="vtap">tap to reveal</div>
+      <div class="vb"><div class="ved">${v.en}</div><div class="vvi">🇻🇳 ${v.vi}</div><div class="vex">${v.ex}</div></div>
+    </div>`;
+  }).join('');
+}
+function renderVF(){
+  const cats=['all',...new Set(V.map(v=>v.cat))];
+  document.getElementById('vocab-filter').innerHTML=cats.map(c=>`<button class="fb${c==='all'?' active':''}" onclick="fvocab('${c}',this)">${c==='all'?'All ('+V.length+')':CAT_LABELS[c]||c}</button>`).join('');
+}
+function fvocab(f,btn){document.querySelectorAll('.fb').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderVocab(f);}
+
+// ======================== PHRASES ========================
+function renderPhrases(){
+  if(!UP.length)return;
+  document.getElementById('phrases-grid').innerHTML=UP.map(p=>`
+    <div class="ph-card" onclick="this.classList.toggle('open')">
+      <div style="display:flex;align-items:baseline;flex-wrap:wrap;gap:4px">
+        <div class="ph-phrase">${p.phrase}</div>
+        <span class="ph-tag">${p.cat}</span>
+      </div>
+      <div class="ph-example-preview">💡 ${p.example} <button class="audio-btn" onclick="event.stopPropagation();speak(\`${p.example.replace(/`/g,'').replace(/'/g,"\\'")}\`)">🔊</button></div>
+      <div class="ph-tap">tap to see how to use</div>
+      <div class="ph-body">
+        <div class="ph-usage"><strong>When to use:</strong> ${p.usage}</div>
+        <div class="ph-vi">🇻🇳 ${p.vi}</div>
+      </div>
+    </div>`).join('');
+}
+
+// ======================== FLASHCARD ========================
+let fcL=[],fcI=0;
+function renderFC(){
+  if(!V.length)return;
+  if(!fcL.length)fcL=[...V];
+  const v=fcL[fcI];
+  document.getElementById('fc-word').textContent=v.w;
+  document.getElementById('fc-pos').textContent=v.p;
+  document.getElementById('fc-ipa').textContent=getIPA(v.w);
+  document.getElementById('fc-def').textContent=v.en;
+  document.getElementById('fc-vi').textContent='🇻🇳 '+v.vi;
+  document.getElementById('fc-ex').textContent=v.ex;
+  document.getElementById('fc-cnt').textContent=`${fcI+1} / ${fcL.length}`;
+  document.getElementById('fc-bar').style.width=((fcI+1)/fcL.length*100)+'%';
+  document.getElementById('fc-card').classList.remove('flipped');
+}
+function flipCard(){document.getElementById('fc-card').classList.toggle('flipped');}
+function fcNext(){fcI=(fcI+1)%fcL.length;renderFC();}
+function fcPrev(){fcI=(fcI-1+fcL.length)%fcL.length;renderFC();}
+function shuffleFC(){fcL=[...V];for(let i=fcL.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[fcL[i],fcL[j]]=[fcL[j],fcL[i]];}fcI=0;renderFC();}
+
+// ======================== FILL BLANK ========================
+function renderFB2(){
+  document.getElementById('fb-ctn').innerHTML=FB.map((q,i)=>{
+    const p=q.s.split('___');
+    return `<div class="card" id="fb-${i}"><div class="qn">${i+1}. <span style="font-size:.78rem;color:var(--vi)">(${q.h})</span></div>
+    <div class="qtx">${p[0]}<input class="bi" id="fbi-${i}" autocomplete="off" spellcheck="false">${p[1]||''}</div>
+    <div class="exp" id="fbe-${i}"></div></div>`;
+  }).join('');document.getElementById('fb-sc').textContent='';
+}
+function checkFB(){
+  let sc=0;FB.forEach((q,i)=>{
+    const inp=document.getElementById(`fbi-${i}`),c=document.getElementById(`fb-${i}`),e=document.getElementById(`fbe-${i}`);
+    const v=inp.value.trim().toLowerCase().replace(/[-\s]+/g,' '),a=q.a.toLowerCase().replace(/[-\s]+/g,' ');
+    const ok=v===a;if(ok)sc++;inp.disabled=true;inp.classList.add(ok?'ci':'wi');c.classList.add(ok?'correct':'wrong');
+    e.innerHTML=ok?'✅ Correct!':`❌ Answer: <strong>${q.a}</strong>`;e.classList.add('show',ok?'ce':'we');
+  });
+  document.getElementById('fb-sc').innerHTML=`<span class="sc">${sc}</span> / ${FB.length} correct`;
+  document.getElementById('fbc').style.display='none';document.getElementById('fbr').style.display='inline-block';
+}
+function resetFB(){renderFB2();document.getElementById('fbc').style.display='inline-block';document.getElementById('fbr').style.display='none';}
+
+// ======================== MATCH ========================
+let mP=[],mSel=null,mC=0;
+function renderMatch(){
+  if(!V.length)return;
+  const sh=[...V].sort(()=>Math.random()-.5).slice(0,6);
+  mP=sh.map((v,i)=>({id:i,w:v.w,vi:v.vi}));mC=0;mSel=null;
+  const L=[...mP].sort(()=>Math.random()-.5),R=[...mP].sort(()=>Math.random()-.5);
+  const g=document.getElementById('m-grid');g.innerHTML='';
+  L.forEach(p=>{const e=document.createElement('div');e.className='mi';e.dataset.id=p.id;e.dataset.side='l';e.textContent=p.w;e.onclick=()=>hMatch(e);g.appendChild(e);});
+  R.forEach(p=>{const e=document.createElement('div');e.className='mi';e.dataset.id=p.id;e.dataset.side='r';e.textContent=p.vi;e.onclick=()=>hMatch(e);g.appendChild(e);});
+  document.getElementById('m-sc').textContent='';
+}
+function hMatch(el){
+  if(el.classList.contains('matched'))return;
+  if(!mSel){document.querySelectorAll('.mi').forEach(e=>e.classList.remove('sm'));el.classList.add('sm');mSel=el;return;}
+  if(el===mSel||el.dataset.side===mSel.dataset.side){document.querySelectorAll('.mi').forEach(e=>e.classList.remove('sm'));el.classList.add('sm');mSel=el;return;}
+  if(el.dataset.id===mSel.dataset.id){el.classList.add('matched');el.classList.remove('sm');mSel.classList.add('matched');mSel.classList.remove('sm');mC++;
+    if(mC===mP.length)document.getElementById('m-sc').innerHTML='<span class="sc">🎉 Complete!</span>';mSel=null;
+  }else{el.classList.add('wf');mSel.classList.add('wf');const s=mSel;
+    setTimeout(()=>{el.classList.remove('wf','sm');s.classList.remove('wf','sm');mSel=null;},500);
+  }
+}
+function resetMatch(){renderMatch();}
+</script>
+</body>
+</html>
