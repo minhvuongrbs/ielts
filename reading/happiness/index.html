@@ -314,16 +314,42 @@ function speak(text){
 }
 
 const ipaCache={};
+
+function stemWord(w){
+  w=w.toLowerCase();
+  if(w.endsWith('ishes'))return w.slice(0,-2);
+  if(w.endsWith('ates'))return w.slice(0,-1);
+  if(w.endsWith('ies')&&w.length>4)return w.slice(0,-3)+'y';
+  if(w.endsWith('ving'))return w.slice(0,-4)+'ve';
+  if(w.endsWith('ming')&&w.length>5)return w.slice(0,-4)+'me';
+  if(w.endsWith('ning')&&w.length>5)return w.slice(0,-4)+'ne';
+  if(w.endsWith('ting')&&w.length>5)return w.slice(0,-4)+'te';
+  if(w.endsWith('ing')&&w.length>4)return w.slice(0,-3);
+  if(w.endsWith('tion'))return w;
+  if(w.endsWith('es')&&w.length>3)return w.slice(0,-1);
+  if(w.endsWith('ed')&&w.length>3)return w.slice(0,-2);
+  if(w.endsWith('s')&&w.length>3)return w.slice(0,-1);
+  return w;
+}
+
+async function tryFetchIPA(term){
+  try{
+    const r=await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(term)}`);
+    if(!r.ok)return '';
+    const d=await r.json();
+    return d[0]?.phonetic||d[0]?.phonetics?.find(p=>p.text)?.text||'';
+  }catch{return '';}
+}
+
 async function fetchIPA(word){
   const key=word.toLowerCase().replace(/[^a-z]/g,'');
   if(ipaCache[key]!==undefined)return ipaCache[key];
-  try{
-    const r=await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
-    if(!r.ok){ipaCache[key]='';return '';}
-    const d=await r.json();
-    const ipa=d[0]?.phonetic||d[0]?.phonetics?.find(p=>p.text)?.text||'';
-    ipaCache[key]=ipa;return ipa;
-  }catch{ipaCache[key]='';return '';}
+  let ipa=await tryFetchIPA(word);
+  if(!ipa&&!word.includes(' ')){
+    const base=stemWord(word);
+    if(base!==word.toLowerCase())ipa=await tryFetchIPA(base);
+  }
+  ipaCache[key]=ipa;return ipa;
 }
 
 function getIPA(word){return ipaCache[word.toLowerCase().replace(/[^a-z]/g,'')]||'';}
