@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IELTS General Training — Luyện thi IELTS 6.0–6.5</title>
+<title>IELTS General Training — Study for IELTS 6.0–6.5</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -28,6 +28,14 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+
+/* Nav */
+.nav{display:flex;align-items:center;gap:16px;padding:10px 20px;background:#fff;box-shadow:0 1px 8px rgba(44,36,22,.06);position:sticky;top:0;z-index:100}
+.nav-brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--accent);text-decoration:none}
+.nav-links{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.nav-link{padding:6px 14px;border-radius:8px;font-size:.82rem;font-weight:600;color:#8a7a66;text-decoration:none;transition:.2s;white-space:nowrap}
+.nav-link:hover{background:var(--accent-light);color:var(--text)}
+.nav-link.active{background:var(--accent);color:#fff}
 
 /* Hero */
 .hero{text-align:center;padding:56px 20px 44px;background:linear-gradient(180deg,#fff8f0 0%,var(--bg) 100%)}
@@ -119,16 +127,27 @@ footer a{color:var(--accent);text-decoration:none}
 </head>
 <body>
 
+<nav class="nav">
+  <a href="/" class="nav-brand">IELTS Hub</a>
+  <div class="nav-links">
+    <a href="/" class="nav-link active">Home</a>
+    <a href="/reading/" class="nav-link">📖 Reading</a>
+    <a href="/writing/" class="nav-link">✍️ Writing</a>
+    <a href="/listening/" class="nav-link">🎧 Listening</a>
+    <a href="/speaking/" class="nav-link">🗣️ Speaking</a>
+  </div>
+</nav>
+
 <div class="hero">
   <div class="badge">General Training • Free & Open Source</div>
-  <h1>Luyện thi <span>IELTS</span></h1>
-  <p class="hero-sub">Reading, Writing, Listening, Speaking — bài học tương tác với từ vựng tiếng Việt, quiz, và mẹo thi. Hoàn toàn miễn phí.</p>
-  <div class="target">🎯 Mục tiêu: <span class="target-band">6.0 – 6.5</span></div>
+  <h1>Study for <span>IELTS</span></h1>
+  <p class="hero-sub">Reading, Writing, Listening, Speaking — interactive lessons with Vietnamese vocabulary, quizzes, and exam tips. Completely free.</p>
+  <div class="target">🎯 Target: <span class="target-band">6.0 – 6.5</span></div>
   <div class="stats">
-    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Kỹ năng</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Bài học</div></div>
-    <div class="stat"><div class="stat-num">28</div><div class="stat-label">Từ vựng</div></div>
-    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Loại quiz</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Skills</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Lessons</div></div>
+    <div class="stat"><div class="stat-num">28</div><div class="stat-label">Vocabulary</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Quiz types</div></div>
   </div>
 </div>
 
@@ -141,25 +160,25 @@ footer a{color:var(--accent);text-decoration:none}
       <h2>Reading</h2>
       <div class="skill-line"></div>
     </div>
-    <p class="skill-desc">Bài đọc General Training với từ vựng, bản dịch tiếng Việt, và câu hỏi IELTS thực tế. Luyện kỹ năng skimming, scanning, và paraphrasing.</p>
+    <p class="skill-desc">General Training reading passages with vocabulary, Vietnamese translations, and real IELTS questions. Practice skimming, scanning, and paraphrasing.</p>
     <div class="cards">
       <a href="./reading/happiness/" class="card">
         <div class="card-tags">
-          <span class="tag tag-new">Mới</span>
+          <span class="tag tag-new">New</span>
           <span class="tag tag-type">Section 3</span>
         </div>
         <div class="card-title">What is Happiness?</div>
-        <div class="card-desc">"Phương trình hạnh phúc" — 50% gen, 8–15% hoàn cảnh, 42% do bạn. 11 đoạn + câu hỏi ghép đoạn.</div>
+        <div class="card-desc">"The happiness equation" — 50% genes, 8–15% circumstances, 42% up to you. 11 paragraphs + paragraph matching questions.</div>
         <div class="card-meta">
-          <span>📝 28 từ vựng</span>
-          <span>❓ 7 câu IELTS</span>
-          <span>🃏 4 loại quiz</span>
+          <span>📝 28 vocabulary words</span>
+          <span>❓ 7 IELTS questions</span>
+          <span>🃏 4 quiz types</span>
         </div>
       </a>
       <div class="card soon">
         <div class="card-tags"><span class="tag tag-type">Section 2</span></div>
-        <div class="card-title">Sắp ra mắt</div>
-        <div class="card-desc">Bài đọc tiếp theo đang được xây dựng...</div>
+        <div class="card-title">Coming soon</div>
+        <div class="card-desc">Next reading lesson is being developed...</div>
         <div class="card-meta"><span>🔜 Coming soon</span></div>
       </div>
     </div>
@@ -172,18 +191,18 @@ footer a{color:var(--accent);text-decoration:none}
       <h2>Writing</h2>
       <div class="skill-line"></div>
     </div>
-    <p class="skill-desc">Task 1 (thư) và Task 2 (essay) cho General Training. Mẫu câu, cấu trúc bài, và từ vựng theo chủ đề.</p>
+    <p class="skill-desc">Task 1 (letter) and Task 2 (essay) for General Training. Sentence patterns, essay structures, and topic-based vocabulary.</p>
     <div class="cards">
       <div class="card soon">
         <div class="card-tags"><span class="tag tag-type">Task 1 — Letter</span></div>
         <div class="card-title">Formal vs Informal Letters</div>
-        <div class="card-desc">Phân biệt thư trang trọng và thân mật. Mẫu mở bài, thân bài, kết bài cho từng loại.</div>
+        <div class="card-desc">Distinguish formal from informal letters. Templates for opening, body, and closing for each type.</div>
         <div class="card-meta"><span>🔜 Coming soon</span></div>
       </div>
       <div class="card soon">
         <div class="card-tags"><span class="tag tag-type">Task 2 — Essay</span></div>
         <div class="card-title">Opinion Essay Structure</div>
-        <div class="card-desc">Cấu trúc bài luận quan điểm band 6.0+. Mẫu thesis statement, body paragraph, và linking words.</div>
+        <div class="card-desc">Opinion essay structure for band 6.0+. Thesis statement templates, body paragraphs, and linking words.</div>
         <div class="card-meta"><span>🔜 Coming soon</span></div>
       </div>
     </div>
@@ -196,18 +215,18 @@ footer a{color:var(--accent);text-decoration:none}
       <h2>Listening</h2>
       <div class="skill-line"></div>
     </div>
-    <p class="skill-desc">Luyện nghe theo từng Section (1–4). Từ vựng nghe, kỹ thuật dự đoán đáp án, và note-taking.</p>
+    <p class="skill-desc">Practice listening by section (1–4). Listening vocabulary, answer prediction techniques, and note-taking.</p>
     <div class="cards">
       <div class="card soon">
         <div class="card-tags"><span class="tag tag-type">Section 1</span></div>
         <div class="card-title">Form Completion — Booking & Registration</div>
-        <div class="card-desc">Luyện điền form: số điện thoại, địa chỉ, ngày tháng. Từ vựng thường gặp trong Section 1.</div>
+        <div class="card-desc">Practice form completion: phone numbers, addresses, dates. Common Section 1 vocabulary.</div>
         <div class="card-meta"><span>🔜 Coming soon</span></div>
       </div>
       <div class="card soon">
         <div class="card-tags"><span class="tag tag-type">Tips</span></div>
         <div class="card-title">Listening Strategies for Band 6.0</div>
-        <div class="card-desc">Kỹ thuật đọc trước câu hỏi, dự đoán đáp án, và xử lý distractors.</div>
+        <div class="card-desc">Techniques for pre-reading questions, predicting answers, and handling distractors.</div>
         <div class="card-meta"><span>🔜 Coming soon</span></div>
       </div>
     </div>
@@ -220,18 +239,18 @@ footer a{color:var(--accent);text-decoration:none}
       <h2>Speaking</h2>
       <div class="skill-line"></div>
     </div>
-    <p class="skill-desc">Part 1, 2, 3 — câu hỏi mẫu, từ vựng theo chủ đề, và cấu trúc trả lời để đạt band 6.0+.</p>
+    <p class="skill-desc">Part 1, 2, 3 — sample questions, topic vocabulary, and answer structures for band 6.0+.</p>
     <div class="cards">
       <div class="card soon">
         <div class="card-tags"><span class="tag tag-type">Part 1</span></div>
         <div class="card-title">Common Part 1 Topics</div>
-        <div class="card-desc">20 chủ đề thường gặp nhất: Work, Study, Hometown, Weather, Food... Mẫu trả lời + từ vựng.</div>
+        <div class="card-desc">20 most common topics: Work, Study, Hometown, Weather, Food... Sample answers + vocabulary.</div>
         <div class="card-meta"><span>🔜 Coming soon</span></div>
       </div>
       <div class="card soon">
         <div class="card-tags"><span class="tag tag-type">Part 2</span></div>
         <div class="card-title">Cue Card Strategy</div>
-        <div class="card-desc">Cách brainstorm trong 1 phút, cấu trúc 2 phút nói, và filler phrases tự nhiên.</div>
+        <div class="card-desc">How to brainstorm in 1 minute, structure a 2-minute talk, and use natural filler phrases.</div>
         <div class="card-meta"><span>🔜 Coming soon</span></div>
       </div>
     </div>
@@ -241,33 +260,33 @@ footer a{color:var(--accent);text-decoration:none}
   <div class="features">
     <div class="feat">
       <div class="feat-icon">🇻🇳</div>
-      <div class="feat-title">Tiếng Việt</div>
-      <div class="feat-desc">Bản dịch & giải thích song ngữ</div>
+      <div class="feat-title">Vietnamese</div>
+      <div class="feat-desc">Bilingual translations & explanations</div>
     </div>
     <div class="feat">
       <div class="feat-icon">🃏</div>
       <div class="feat-title">Flashcard</div>
-      <div class="feat-desc">Lật thẻ, trộn bài, học từ vựng</div>
+      <div class="feat-desc">Flip cards, shuffle, learn vocabulary</div>
     </div>
     <div class="feat">
       <div class="feat-icon">✏️</div>
-      <div class="feat-title">Điền từ</div>
-      <div class="feat-desc">Fill-in-the-blank với gợi ý</div>
+      <div class="feat-title">Fill in Blank</div>
+      <div class="feat-desc">Fill-in-the-blank with hints</div>
     </div>
     <div class="feat">
       <div class="feat-icon">🔗</div>
-      <div class="feat-title">Nối nghĩa</div>
+      <div class="feat-title">Matching</div>
       <div class="feat-desc">Match English ↔ Vietnamese</div>
     </div>
     <div class="feat">
       <div class="feat-icon">📋</div>
       <div class="feat-title">IELTS Questions</div>
-      <div class="feat-desc">Câu hỏi mô phỏng đề thi</div>
+      <div class="feat-desc">Exam-style practice questions</div>
     </div>
     <div class="feat">
       <div class="feat-icon">💡</div>
-      <div class="feat-title">Mẹo thi</div>
-      <div class="feat-desc">Tips & strategies cho từng dạng</div>
+      <div class="feat-title">Exam Tips</div>
+      <div class="feat-desc">Tips & strategies for each question type</div>
     </div>
   </div>
 
