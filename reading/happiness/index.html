@@ -76,6 +76,9 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 .ved{margin-bottom:6px}
 .vex{font-style:italic;font-size:.85rem;color:#6b5e4f}
 .vtap{font-size:.78rem;color:var(--accent);margin-top:4px}
+.vipa{font-size:.82rem;color:#888;font-style:italic;margin-left:2px}
+.audio-btn{background:none;border:none;cursor:pointer;font-size:1rem;padding:2px 6px;border-radius:6px;opacity:.5;transition:opacity .2s,background .2s;vertical-align:middle}
+.audio-btn:hover{opacity:1;background:var(--accent-light)}
 
 /* Quiz shared */
 .qh{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px}
@@ -228,7 +231,7 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
         <div class="fcpg"><div class="fcpgb" id="fc-bar"></div></div>
         <div class="fc" id="fc-card" onclick="flipCard()">
           <div class="fci" id="fc-inner">
-            <div class="fcf"><div class="fcw" id="fc-word"></div><div class="fcp" id="fc-pos"></div><div class="fch">tap to flip</div></div>
+            <div class="fcf"><div class="fcw" id="fc-word"></div><div class="fcp" id="fc-pos"></div><div class="fcp" id="fc-ipa" style="color:#888"></div><button class="audio-btn" id="fc-audio" onclick="event.stopPropagation();speak(document.getElementById('fc-word').textContent)" style="font-size:1.3rem;margin-top:6px">🔊</button><div class="fch">tap to flip</div></div>
             <div class="fcb"><div class="fcd" id="fc-def"></div><div class="fcvi" id="fc-vi"></div><div class="fce" id="fc-ex"></div></div>
           </div>
         </div>
@@ -301,6 +304,30 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 <script>
 let sections=[], V=[], IQ=[], FB=[], UP=[];
 
+// ======================== AUDIO & IPA ========================
+function speak(text){
+  if(!('speechSynthesis' in window))return;
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);
+  u.lang='en-US';u.rate=0.85;
+  speechSynthesis.speak(u);
+}
+
+const ipaCache={};
+async function fetchIPA(word){
+  const key=word.toLowerCase().replace(/[^a-z]/g,'');
+  if(ipaCache[key]!==undefined)return ipaCache[key];
+  try{
+    const r=await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
+    if(!r.ok){ipaCache[key]='';return '';}
+    const d=await r.json();
+    const ipa=d[0]?.phonetic||d[0]?.phonetics?.find(p=>p.text)?.text||'';
+    ipaCache[key]=ipa;return ipa;
+  }catch{ipaCache[key]='';return '';}
+}
+
+function getIPA(word){return ipaCache[word.toLowerCase().replace(/[^a-z]/g,'')]||'';}
+
 // Load data from JSON
 fetch('./data.json?v=2')
   .then(r=>r.json())
@@ -311,6 +338,8 @@ fetch('./data.json?v=2')
     FB=data.fillBlanks;
     UP=data.usefulPhrases||[];
     init();
+    // Fetch IPA for all vocab words, then re-render vocab & flashcard
+    Promise.all(V.map(v=>fetchIPA(v.w))).then(()=>{renderVocab();renderFC();});
   });
 
 function init(){
@@ -352,12 +381,18 @@ function toggleVI(){const show=document.getElementById('vi-toggle').checked;docu
 function renderVocab(f='all'){
   const g=document.getElementById('vocab-grid');
   const list=f==='all'?V:V.filter(v=>v.s===f);
-  g.innerHTML=list.map(v=>`
-    <div class="vc" onclick="this.classList.toggle('open')">
-      <div class="vw">${v.w}</div><div class="vp">${v.p}</div>
+  g.innerHTML=list.map(v=>{
+    const ipa=getIPA(v.w);
+    return `<div class="vc" onclick="this.classList.toggle('open')">
+      <div style="display:flex;align-items:baseline;gap:6px;flex-wrap:wrap">
+        <div class="vw">${v.w}</div><span class="vipa">${ipa}</span>
+        <button class="audio-btn" onclick="event.stopPropagation();speak('${v.w.replace(/'/g,"\\'")}')">🔊</button>
+      </div>
+      <div class="vp">${v.p}</div>
       <span class="vtag">${v.s}</span><div class="vtap">tap to reveal</div>
       <div class="vb"><div class="ved">${v.en}</div><div class="vvi">🇻🇳 ${v.vi}</div><div class="vex">${v.ex}</div></div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 }
 function renderVF(){
   const secs=['all',...new Set(V.map(v=>v.s))];
@@ -405,6 +440,7 @@ function renderFC(){
   const v=fcL[fcI];
   document.getElementById('fc-word').textContent=v.w;
   document.getElementById('fc-pos').textContent=v.p;
+  document.getElementById('fc-ipa').textContent=getIPA(v.w);
   document.getElementById('fc-def').textContent=v.en;
   document.getElementById('fc-vi').textContent='🇻🇳 '+v.vi;
   document.getElementById('fc-ex').textContent=v.ex;
@@ -471,7 +507,7 @@ function renderPhrases(){
         <div class="ph-phrase">${p.phrase}</div>
         <span class="ph-tag">${p.section}</span>
       </div>
-      <div class="ph-example-preview">💡 ${p.example}</div>
+      <div class="ph-example-preview">💡 ${p.example} <button class="audio-btn" onclick="event.stopPropagation();speak(\`${p.example.replace(/`/g,'').replace(/'/g,"\\'")}\`)">🔊</button></div>
       <div class="ph-tap">tap to see how to use</div>
       <div class="ph-body">
         <div class="ph-usage"><strong>When to use:</strong> ${p.usage}</div>
