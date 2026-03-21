@@ -64,5 +64,133 @@
     {"s": "External and more ___ factors don't matter as much.", "a": "superficial", "h": "hời hợt"},
     {"s": "They ___ the world in a different way.", "a": "interpret", "h": "diễn giải"},
     {"s": "It can contribute to a large ___ of your happiness.", "a": "proportion", "h": "tỷ lệ"}
+  ],
+  "usefulPhrases": [
+    {
+      "phrase": "X can mean different things to different people.",
+      "vi": "X có thể mang ý nghĩa khác nhau với mỗi người.",
+      "usage": "Introducing a topic that has many perspectives.",
+      "example": "Success can mean different things to different people.",
+      "section": "A"
+    },
+    {
+      "phrase": "For one person, it may mean X, whereas for someone else it may mean Y.",
+      "vi": "Với người này, nó có thể là X, trong khi với người khác nó có thể là Y.",
+      "usage": "Contrasting two different viewpoints or situations.",
+      "example": "For one person, it may mean earning a high salary, whereas for someone else it may mean having free time.",
+      "section": "A"
+    },
+    {
+      "phrase": "Research shows / Research suggests that…",
+      "vi": "Nghiên cứu cho thấy / Nghiên cứu gợi ý rằng…",
+      "usage": "Citing evidence to support an argument. Great for IELTS Writing Task 2.",
+      "example": "Research suggests that regular exercise improves mental health.",
+      "section": "A"
+    },
+    {
+      "phrase": "It isn't necessarily what you might have thought.",
+      "vi": "Nó không nhất thiết là những gì bạn nghĩ.",
+      "usage": "Challenging a common assumption.",
+      "example": "The answer to the problem isn't necessarily what you might have thought.",
+      "section": "A"
+    },
+    {
+      "phrase": "What makes X X?",
+      "vi": "Điều gì khiến X là X?",
+      "usage": "A rhetorical question to introduce analysis. Strong opening for essays or presentations.",
+      "example": "What makes a good leader a good leader?",
+      "section": "B"
+    },
+    {
+      "phrase": "…make a far greater contribution to X than Y.",
+      "vi": "…đóng góp lớn hơn nhiều cho X so với Y.",
+      "usage": "Comparing the importance of two factors.",
+      "example": "Soft skills make a far greater contribution to career success than technical knowledge alone.",
+      "section": "B"
+    },
+    {
+      "phrase": "That doesn't mean that… It just means that…",
+      "vi": "Điều đó không có nghĩa là… Chỉ là…",
+      "usage": "Clarifying a point to avoid misunderstanding.",
+      "example": "That doesn't mean that technology is bad. It just means that we need to use it wisely.",
+      "section": "C"
+    },
+    {
+      "phrase": "In fact, …",
+      "vi": "Thực tế, …",
+      "usage": "Adding a surprising or emphatic piece of evidence.",
+      "example": "In fact, most successful entrepreneurs failed multiple times before succeeding.",
+      "section": "C"
+    },
+    {
+      "phrase": "What distinguishes X is that…",
+      "vi": "Điều phân biệt X là…",
+      "usage": "Highlighting what makes something unique.",
+      "example": "What distinguishes great teachers is that they inspire curiosity.",
+      "section": "D"
+    },
+    {
+      "phrase": "This might seem obvious, but…",
+      "vi": "Điều này có vẻ hiển nhiên, nhưng…",
+      "usage": "Acknowledging something before presenting a deeper point.",
+      "example": "This might seem obvious, but many people still underestimate the value of sleep.",
+      "section": "E"
+    },
+    {
+      "phrase": "The implications are greater than you might think.",
+      "vi": "Những hệ quả lớn hơn bạn nghĩ.",
+      "usage": "Emphasizing that something has bigger consequences than expected.",
+      "example": "Climate change is accelerating — the implications are greater than you might think.",
+      "section": "E"
+    },
+    {
+      "phrase": "Not only X but also Y.",
+      "vi": "Không chỉ X mà còn Y.",
+      "usage": "Adding emphasis by listing multiple effects. Very useful in IELTS Writing.",
+      "example": "Exercise benefits not only your body but also your mind.",
+      "section": "E"
+    },
+    {
+      "phrase": "There is some evidence to support / suggest that…",
+      "vi": "Có bằng chứng cho thấy / gợi ý rằng…",
+      "usage": "Presenting evidence cautiously — good academic writing style.",
+      "example": "There is some evidence to suggest that bilingual children develop stronger problem-solving skills.",
+      "section": "F"
+    },
+    {
+      "phrase": "…rather than focusing on X.",
+      "vi": "…thay vì tập trung vào X.",
+      "usage": "Contrasting a better approach with a less helpful one.",
+      "example": "Try to learn from mistakes rather than focusing on failure.",
+      "section": "I"
+    },
+    {
+      "phrase": "Not at all.",
+      "vi": "Hoàn toàn không.",
+      "usage": "A strong, natural way to disagree or deny something.",
+      "example": "Does that mean we should give up? Not at all.",
+      "section": "J"
+    },
+    {
+      "phrase": "But overall it seems that it is X that…",
+      "vi": "Nhưng nhìn chung, dường như chính X là điều…",
+      "usage": "Summarizing a main conclusion. Great for essay conclusions.",
+      "example": "But overall it seems that it is consistent effort that leads to long-term success.",
+      "section": "K"
+    },
+    {
+      "phrase": "This is something that you can work on in your daily life.",
+      "vi": "Đây là điều bạn có thể rèn luyện mỗi ngày.",
+      "usage": "Encouraging action — a practical, motivational closing statement.",
+      "example": "Confidence is something that you can work on in your daily life.",
+      "section": "K"
+    },
+    {
+      "phrase": "It's up to you.",
+      "vi": "Tùy thuộc vào bạn.",
+      "usage": "A powerful closing that puts responsibility on the reader/listener.",
+      "example": "You have the tools and the knowledge. It's up to you.",
+      "section": "K"
+    }
   ]
 }
