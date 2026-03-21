@@ -154,14 +154,14 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 .ph-card:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(44,36,22,.12)}
 .ph-card.open{border-left-color:var(--correct)}
 .ph-phrase{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;margin-bottom:2px}
-.ph-vi{font-size:.88rem;color:var(--vi);font-style:italic}
+.ph-example-preview{font-size:.88rem;color:#1a5632;margin-top:6px;background:var(--correct-bg);padding:8px 14px;border-radius:8px;font-style:italic}
 .ph-tag{display:inline-block;font-size:.7rem;font-weight:700;background:var(--accent-light);color:var(--accent-dark);padding:2px 8px;border-radius:10px;margin-left:8px}
 .ph-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--accent-light);font-size:.9rem}
 .ph-card.open .ph-body{display:block}
-.ph-usage{margin-bottom:8px;color:#6b5e4f}
-.ph-usage strong{color:var(--text)}
-.ph-example{background:var(--correct-bg);padding:10px 14px;border-radius:8px;font-style:italic;color:#1a5632;margin-top:6px}
-.ph-tap{font-size:.78rem;color:var(--accent);margin-top:4px}
+.ph-card.open .ph-tap{display:none}
+.ph-usage{font-size:.9rem;color:#6b5e4f;margin-bottom:8px}
+.ph-vi{font-size:.92rem;color:var(--vi);font-weight:600;font-style:italic}
+.ph-tap{font-size:.78rem;color:var(--accent);margin-top:6px}
 
 @media(max-width:600px){
   .card{padding:18px 16px}header h1{font-size:1.7rem}.opts{flex-direction:column}.mg{grid-template-columns:1fr}
@@ -471,11 +471,11 @@ function renderPhrases(){
         <div class="ph-phrase">${p.phrase}</div>
         <span class="ph-tag">${p.section}</span>
       </div>
-      <div class="ph-vi">${p.vi}</div>
-      <div class="ph-tap">tap to see usage & example</div>
+      <div class="ph-example-preview">💡 ${p.example}</div>
+      <div class="ph-tap">tap to see how to use</div>
       <div class="ph-body">
         <div class="ph-usage"><strong>When to use:</strong> ${p.usage}</div>
-        <div class="ph-example">💡 ${p.example}</div>
+        <div class="ph-vi">🇻🇳 ${p.vi}</div>
       </div>
     </div>`).join('');
 }
