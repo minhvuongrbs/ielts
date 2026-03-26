@@ -192,5 +192,35 @@
       "example": "You have the tools and the knowledge. It's up to you.",
       "section": "K"
     }
-  ]
+  ],
+  "questionTypes": {
+    "active": [
+      {
+        "name": "Matching Information",
+        "icon": "🔗",
+        "description": "You are given a number of statements and must find which paragraph (A, B, C, etc.) contains that information. Tests your ability to locate specific details across a long passage.",
+        "tips": [
+          "Read all the statements first before looking at the passage",
+          "Underline key words in each statement",
+          "Skim each paragraph looking for paraphrased matches — the text won't use the exact same words",
+          "A paragraph may match more than one statement, or may not be used at all",
+          "Don't be tricked by single word matches — check the full meaning"
+        ],
+        "vi": "Bạn được cho các phát biểu và phải tìm đoạn văn nào chứa thông tin đó. Kiểm tra khả năng xác định vị trí thông tin cụ thể trong bài đọc dài."
+      }
+    ],
+    "allTypes": [
+      {"name": "Multiple Choice", "practiced": false},
+      {"name": "Matching Information", "practiced": true},
+      {"name": "Matching Headings", "practiced": false},
+      {"name": "Matching Features", "practiced": false},
+      {"name": "Matching Sentence Endings", "practiced": false},
+      {"name": "Sentence Completion", "practiced": false},
+      {"name": "Summary Completion", "practiced": false},
+      {"name": "Note / Table / Flow-chart Completion", "practiced": false},
+      {"name": "Short Answer Questions", "practiced": false},
+      {"name": "True / False / Not Given", "practiced": false},
+      {"name": "Yes / No / Not Given", "practiced": false}
+    ]
+  }
 }

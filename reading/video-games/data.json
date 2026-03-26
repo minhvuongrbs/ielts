@@ -304,5 +304,48 @@
         ]
       }
     ]
+  },
+  "questionTypes": {
+    "active": [
+      {
+        "name": "Multiple Choice",
+        "icon": "🔤",
+        "description": "Choose the correct answer from 4 options (A, B, C, or D). Tests your ability to recognise specific points in a passage or to understand the main idea.",
+        "tips": [
+          "Read the question stem carefully — identify key words",
+          "Find the matching paragraph first, then compare ALL options",
+          "Watch for qualifying words like 'always', 'never', 'not sure'",
+          "Eliminate distractors — options that are true but don't answer the question",
+          "Questions usually follow the order of the text"
+        ],
+        "vi": "Chọn đáp án đúng từ 4 lựa chọn (A, B, C hoặc D). Kiểm tra khả năng nhận ra các điểm cụ thể hoặc ý chính của đoạn văn."
+      },
+      {
+        "name": "Summary Completion",
+        "icon": "📝",
+        "description": "Complete a summary of the passage by filling in blanks with words taken from the text (no more than 2–3 words). Tests your understanding of the main ideas.",
+        "tips": [
+          "Read the whole summary first to understand the overall meaning",
+          "Identify what type of word is needed (noun, verb, adjective)",
+          "Find the relevant section of the passage — summaries usually follow text order",
+          "Copy words exactly from the text — don't change the form",
+          "Check the word limit — 'no more than two or three words'"
+        ],
+        "vi": "Hoàn thành bản tóm tắt bằng cách điền từ lấy từ bài đọc (không quá 2–3 từ). Kiểm tra khả năng hiểu ý chính."
+      }
+    ],
+    "allTypes": [
+      {"name": "Multiple Choice", "practiced": true},
+      {"name": "Matching Information", "practiced": false},
+      {"name": "Matching Headings", "practiced": false},
+      {"name": "Matching Features", "practiced": false},
+      {"name": "Matching Sentence Endings", "practiced": false},
+      {"name": "Sentence Completion", "practiced": false},
+      {"name": "Summary Completion", "practiced": true},
+      {"name": "Note / Table / Flow-chart Completion", "practiced": false},
+      {"name": "Short Answer Questions", "practiced": false},
+      {"name": "True / False / Not Given", "practiced": false},
+      {"name": "Yes / No / Not Given", "practiced": false}
+    ]
   }
 }

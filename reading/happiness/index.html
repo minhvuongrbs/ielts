@@ -166,6 +166,25 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 .ph-vi{font-size:.92rem;color:var(--vi);font-weight:600;font-style:italic}
 .ph-tap{font-size:.78rem;color:var(--accent);margin-top:6px}
 
+/* Question Type Info */
+.qt-info{background:#fdf6ee;border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px;margin-bottom:16px;cursor:pointer;transition:background .2s}
+.qt-info:hover{background:#faf0e2}
+.qt-info-header{display:flex;justify-content:space-between;align-items:center}
+.qt-info-type{font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;color:var(--accent)}
+.qt-info-toggle{color:var(--accent);transition:transform .25s;font-size:.8rem}
+.qt-info.open .qt-info-toggle{transform:rotate(180deg)}
+.qt-info-body{display:none;margin-top:12px;font-size:.88rem;line-height:1.6}
+.qt-info.open .qt-info-body{display:block}
+.qt-info-desc{margin-bottom:8px;color:#6b5e4f}
+.qt-info-vi{color:var(--vi);font-style:italic;font-size:.85rem;margin-bottom:10px}
+.qt-info-tips{padding-left:18px;color:var(--text);margin-bottom:12px}
+.qt-info-tips li{margin-bottom:4px}
+.qt-types-title{font-weight:700;font-size:.82rem;color:#8a7a66;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+.qt-checklist{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
+.qt-check-item{font-size:.82rem;padding:3px 0;color:#8a7a66}
+.qt-check-item.practiced{color:var(--correct);font-weight:600}
+.qt-check-item .qt-mark{display:inline-block;width:18px;text-align:center;margin-right:2px}
+
 @media(max-width:600px){
   .card{padding:18px 16px}header h1{font-size:1.7rem}.opts{flex-direction:column}.mg{grid-template-columns:1fr}
   .fcf,.fcb{padding:24px 16px}.fcw{font-size:1.4rem}
@@ -218,6 +237,7 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
       <button class="stab" data-sub="match">🔗 Matching</button>
     </div>
     <div id="ielts" class="sp active">
+      <div id="qt-info-ctn"></div>
       <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.88rem">The passage contains paragraphs A–K. Which paragraph contains the following information?</p>
       <div id="ielts-banner" class="banner"></div>
       <div id="ielts-ctn"></div>
@@ -302,7 +322,7 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 </div>
 
 <script>
-let sections=[], V=[], IQ=[], FB=[], UP=[];
+let sections=[], V=[], IQ=[], FB=[], UP=[], QT=null;
 
 // ======================== AUDIO & IPA ========================
 function speak(text){
@@ -363,6 +383,7 @@ fetch('./data.json?v=2')
     IQ=data.ieltsQuestions;
     FB=data.fillBlanks;
     UP=data.usefulPhrases||[];
+    QT=data.questionTypes||null;
     init();
     // Fetch IPA for all vocab words, then re-render vocab & flashcard
     Promise.all(V.map(v=>fetchIPA(v.w))).then(()=>{renderVocab();renderFC();});
@@ -377,6 +398,7 @@ function init(){
   renderFB2();
   renderMatch();
   renderPhrases();
+  if(QT) renderQTInfo();
 }
 
 // ======================== TABS ========================
@@ -540,6 +562,32 @@ function renderPhrases(){
         <div class="ph-vi">🇻🇳 ${p.vi}</div>
       </div>
     </div>`).join('');
+}
+
+// ======================== QUESTION TYPE INFO ========================
+function renderQTInfo(){
+  if(!QT)return;
+  const ctn=document.getElementById('qt-info-ctn');
+  if(!ctn)return;
+  let html='';
+  QT.active.forEach(qt=>{
+    html+=`<div class="qt-info open" onclick="this.classList.toggle('open')">
+      <div class="qt-info-header">
+        <span class="qt-info-type">${qt.icon} Question Type: ${qt.name}</span>
+        <span class="qt-info-toggle">▼</span>
+      </div>
+      <div class="qt-info-body">
+        <div class="qt-info-desc">${qt.description}</div>
+        <div class="qt-info-vi">🇻🇳 ${qt.vi}</div>
+        <ul class="qt-info-tips">${qt.tips.map(t=>'<li>'+t+'</li>').join('')}</ul>
+        <div class="qt-types-title">All IELTS Reading Question Types</div>
+        <div class="qt-checklist">${QT.allTypes.map(t=>
+          `<div class="qt-check-item${t.practiced?' practiced':''}"><span class="qt-mark">${t.practiced?'✅':'○'}</span>${t.name}</div>`
+        ).join('')}</div>
+      </div>
+    </div>`;
+  });
+  ctn.innerHTML=html;
 }
 </script>
 </body>
