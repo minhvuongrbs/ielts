@@ -166,8 +166,15 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 .ph-vi{font-size:.92rem;color:var(--vi);font-weight:600;font-style:italic}
 .ph-tap{font-size:.78rem;color:var(--accent);margin-top:6px}
 
+/* Passage split layout */
+.passage-split{display:flex;gap:20px;align-items:flex-start}
+.passage-left{flex:1;min-width:0}
+.passage-right{width:400px;flex-shrink:0;position:sticky;top:60px;max-height:calc(100vh - 80px);overflow-y:auto;scrollbar-width:thin}
+.passage-right::-webkit-scrollbar{width:5px}
+.passage-right::-webkit-scrollbar-thumb{background:#d4c5b0;border-radius:4px}
+
 /* Summary Questions (in passage tab) */
-.sq-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:24px 28px;margin-top:20px;border-top:3px solid var(--accent)}
+.sq-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:24px 28px;border-top:3px solid var(--accent)}
 .sq-title{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--accent);margin-bottom:4px}
 .sq-inst{font-size:.85rem;color:#8a7a66;margin-bottom:16px;font-style:italic}
 .sq-label{font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;margin:16px 0 8px;color:var(--text)}
@@ -184,6 +191,10 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 .sq-answer{display:none;font-size:.82rem;color:var(--correct);font-weight:600;margin-left:4px}
 .sq-answer.show{display:inline}
 
+@media(max-width:900px){
+  .passage-split{flex-direction:column}
+  .passage-right{width:100%;position:static;max-height:none;overflow-y:visible}
+}
 @media(max-width:600px){
   .card{padding:18px 16px}header h1{font-size:1.7rem}.mg{grid-template-columns:1fr}
   .fcf,.fcb{padding:24px 16px}.fcw{font-size:1.4rem}
@@ -223,8 +234,14 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
       <label>🇻🇳 Show Vietnamese translation</label>
       <label class="sw"><input type="checkbox" id="vi-toggle" onchange="toggleVI()"><span class="sld"></span></label>
     </div>
-    <div class="card" id="passage-card"></div>
-    <div class="sq-card" id="sq-card"></div>
+    <div class="passage-split">
+      <div class="passage-left">
+        <div class="card" id="passage-card"></div>
+      </div>
+      <div class="passage-right">
+        <div class="sq-card" id="sq-card"></div>
+      </div>
+    </div>
   </div>
 
   <div id="vocab" class="tp">
