@@ -1,0 +1,267 @@
+{
+  "sections": [
+    {"id": "A", "en": "After years of focusing on the bad — and there are still legitimate concerns, for instance, about the psychological effects of certain violent games — scientists are increasingly examining the potential benefits of video games. Their studies are revealing that a wide variety of games can boost mental function, improving everything from vision to memory. Still unclear is whether these gains are long-lasting and can be applied to non-game tasks. But video games, it seems, might actually be good for the brain.", "vi": "Sau nhiều năm tập trung vào mặt xấu — và vẫn còn những lo ngại chính đáng, ví dụ như tác động tâm lý của một số trò chơi bạo lực — các nhà khoa học ngày càng nghiên cứu những lợi ích tiềm năng của trò chơi điện tử. Nghiên cứu cho thấy nhiều loại trò chơi có thể tăng cường chức năng trí não, cải thiện mọi thứ từ thị lực đến trí nhớ. Điều chưa rõ là liệu những tiến bộ này có lâu dài và áp dụng được ngoài trò chơi hay không. Nhưng trò chơi điện tử dường như thực sự tốt cho não."},
+    {"id": "B", "en": "The very structure of video games makes them ideal tools for brain training.", "vi": "Chính cấu trúc của trò chơi điện tử khiến chúng trở thành công cụ lý tưởng để rèn luyện não bộ."},
+    {"id": "C", "en": "'Video games are hard,' said Eric Klopfer, the director of MIT's Education Arcade, which studies and develops educational video games. 'People don't like to play easy games, and games have figured out a way to encourage players to persist at solving challenging problems.'", "vi": "'Trò chơi điện tử rất khó,' Eric Klopfer, giám đốc Education Arcade của MIT, nơi nghiên cứu và phát triển trò chơi giáo dục, cho biết. 'Mọi người không thích chơi trò dễ, và các trò chơi đã tìm ra cách khuyến khích người chơi kiên trì giải quyết các vấn đề khó.'"},
+    {"id": "D", "en": "The games aren't just hard — they're adaptively hard. They tend to challenge people right at the edge of their abilities; as players get better and score more points, they move up to more demanding levels of play. This adaptive challenge is 'stunningly powerful' for learning, said John Gabrieli, a neuroscientist at MIT.", "vi": "Các trò chơi không chỉ khó — chúng khó một cách thích ứng. Chúng thường thách thức người chơi ngay ở giới hạn khả năng; khi người chơi giỏi hơn và ghi nhiều điểm hơn, họ chuyển lên các cấp độ khó hơn. Thử thách thích ứng này 'cực kỳ mạnh mẽ' cho việc học, theo John Gabrieli, nhà thần kinh học tại MIT."},
+    {"id": "E", "en": "Most games involve a huge number of mental tasks, and playing can boost any one of them. Fast-paced, action-packed video games have been shown, in separate studies, to boost visual acuity, spatial perception, and the ability to pick out objects in a scene. Complex, strategy-based games can improve other cognitive skills, including working memory and reasoning.", "vi": "Hầu hết các trò chơi đòi hỏi rất nhiều nhiệm vụ trí tuệ, và chơi game có thể tăng cường bất kỳ khả năng nào. Các trò chơi hành động nhanh đã được chứng minh là cải thiện thị lực, nhận thức không gian, và khả năng nhận diện vật thể. Các trò chơi chiến thuật phức tạp có thể cải thiện các kỹ năng nhận thức khác, bao gồm trí nhớ làm việc và lý luận."},
+    {"id": "F", "en": "These findings fit with scientists' increasing understanding of how malleable the human brain truly is. Researchers now know that learning and practicing a challenging task can actually change the brain.", "vi": "Những phát hiện này phù hợp với hiểu biết ngày càng tăng của các nhà khoa học về mức độ dẻo dai của não người. Các nhà nghiên cứu giờ biết rằng học và luyện tập một nhiệm vụ khó thực sự có thể thay đổi não bộ."},
+    {"id": "G", "en": "Richard Haier, a pediatric neurologist and professor emeritus at the School of Medicine at the University of California at Irvine, has shown in a pair of studies that the classic game Tetris, in which players have to rotate and direct rapidly falling blocks, alters the brain. In a paper published last month, Haier and his colleagues showed that after three months of Tetris practice, teenage girls not only played the game better, their brains became more efficient.", "vi": "Richard Haier, nhà thần kinh nhi khoa và giáo sư danh dự tại Đại học California, Irvine, đã chứng minh qua nghiên cứu rằng trò chơi Tetris làm thay đổi não bộ. Sau ba tháng luyện Tetris, các cô gái tuổi teen không chỉ chơi giỏi hơn mà não của họ còn hoạt động hiệu quả hơn."},
+    {"id": "H", "en": "A type of scan that illuminates brain activity showed that at the end of the three months, the girls' brains were working less hard to complete the game's challenges. What's more, parts of the cortex, the outer layer of their brains responsible for high-level functions, actually got thicker. Several of these regions are associated with visual spatial abilities, planning, and integration of sensory data.", "vi": "Quét não cho thấy sau ba tháng, não các cô gái hoạt động ít vất vả hơn để hoàn thành thử thách. Hơn nữa, các phần vỏ não — lớp ngoài chịu trách nhiệm các chức năng cao cấp — thực sự dày lên. Một số vùng này liên quan đến khả năng thị giác không gian, lập kế hoạch, và tích hợp dữ liệu giác quan."},
+    {"id": "I", "en": "The jury is still out on whether practising with these games helps people outside of the context of the game. In one promising 2008 study, however, senior citizens who started playing Rise of Nations, a strategic video game devoted to acquiring territory and nation building, improved on a wide range of cognitive abilities, performing better on subsequent tests of memory, reasoning, and multitasking. The tests were administered after eight weeks of training on the game. No follow-up testing was done to assess whether the gains would last.", "vi": "Vẫn chưa rõ liệu luyện tập game có giúp ích ngoài bối cảnh trò chơi không. Tuy nhiên, trong một nghiên cứu năm 2008, người cao tuổi chơi Rise of Nations đã cải thiện nhiều khả năng nhận thức, làm tốt hơn ở các bài kiểm tra trí nhớ, lý luận và đa nhiệm. Các bài kiểm tra được thực hiện sau tám tuần. Không có kiểm tra theo dõi để đánh giá liệu kết quả có kéo dài không."},
+    {"id": "J", "en": "Now that researchers know these off-the-shelf games can have wide-ranging benefits, they're trying to home in on the games' most important aspects, potentially allowing designers to create new games that specifically boost brain power.", "vi": "Giờ đây khi các nhà nghiên cứu biết các trò chơi thông thường có thể mang lại nhiều lợi ích, họ đang cố gắng tìm ra những khía cạnh quan trọng nhất, cho phép nhà thiết kế tạo ra trò chơi mới chuyên tăng cường sức mạnh não bộ."},
+    {"id": "K", "en": "Other researchers are hoping to use video games to encourage prosocial behaviors — actions designed to help others. ('Prosocial' behaviors are, in some ways, the opposite of 'antisocial' ones.) In June, an international team of researchers, including several from Iowa State University, reported that middle school students in Japan who played games in which characters helped or showed affection for others later engaged in more of these behaviors themselves. Researchers also found that US college students randomly assigned to play a prosocial game were subsequently kinder to a fellow research subject than students who played violent or neutral games.", "vi": "Các nhà nghiên cứu khác hy vọng dùng trò chơi để khuyến khích hành vi vì xã hội — hành động giúp đỡ người khác. ('Prosocial' theo nhiều cách là ngược lại với 'antisocial'.) Nghiên cứu cho thấy học sinh Nhật Bản chơi game có nhân vật giúp đỡ người khác sau đó cũng hành xử tương tự. Sinh viên Mỹ được giao chơi game prosocial sau đó tử tế hơn với bạn cùng nghiên cứu so với nhóm chơi game bạo lực hoặc trung tính."},
+    {"id": "L", "en": "Unlike, say, movies or books, video games don't just have content, they also have rules. A game is set up to reward certain actions and to punish others. This means they have immense potential to teach children ethics and values, said Scott Seider, an assistant professor of education at Boston University. (Of course, this is a double-edged sword. Games could reward negative, antisocial behavior just as easily as positive, prosocial behaviour.)", "vi": "Không giống phim hay sách, trò chơi điện tử không chỉ có nội dung mà còn có luật chơi. Trò chơi được thiết kế để thưởng một số hành động và phạt các hành động khác. Điều này có tiềm năng dạy trẻ em đạo đức và giá trị, nhưng cũng là 'con dao hai lưỡi' — game có thể thưởng hành vi tiêu cực dễ dàng như hành vi tích cực."},
+    {"id": "M", "en": "Some off-the-shelf games already contain strong prosocial themes; consider The Sims, for instance, or the classic Oregon Trail, which make players responsible for the well-being of other characters and feature characters who take care of one another. But Seider also hopes game developers consider the pro-social possibilities in developing new games. The challenge for the architects of future games will be figuring out how to wrap virtuous characteristics into an engaging package.", "vi": "Một số trò chơi phổ biến đã có chủ đề vì xã hội; ví dụ The Sims hoặc Oregon Trail, nơi người chơi chịu trách nhiệm về phúc lợi của nhân vật khác. Seider hy vọng các nhà phát triển game sẽ xem xét khả năng prosocial khi tạo game mới. Thách thức cho các nhà thiết kế game tương lai là tìm cách đưa các đặc tính đạo đức vào một gói hấp dẫn."}
+  ],
+  "vocabulary": [
+    {"w": "legitimate", "p": "adjective", "vi": "chính đáng, hợp lý", "en": "Reasonable and acceptable; having a valid basis.", "ex": "\"…there are still legitimate concerns…\"", "s": "A"},
+    {"w": "psychological", "p": "adjective", "vi": "thuộc tâm lý", "en": "Relating to the mind and mental processes.", "ex": "\"…the psychological effects of certain violent games…\"", "s": "A"},
+    {"w": "increasingly", "p": "adverb", "vi": "ngày càng", "en": "More and more; to a greater degree over time.", "ex": "\"…scientists are increasingly examining…\"", "s": "A"},
+    {"w": "potential", "p": "adjective", "vi": "tiềm năng, có thể xảy ra", "en": "Having the capacity to develop or happen in the future.", "ex": "\"…examining the potential benefits of video games.\"", "s": "A"},
+    {"w": "boost", "p": "verb", "vi": "tăng cường, thúc đẩy", "en": "To increase or improve something.", "ex": "\"…games can boost mental function…\"", "s": "A"},
+    {"w": "ideal", "p": "adjective", "vi": "lý tưởng, hoàn hảo", "en": "Most suitable; perfect for a purpose.", "ex": "\"…makes them ideal tools for brain training.\"", "s": "B"},
+    {"w": "persist", "p": "verb", "vi": "kiên trì, bền bỉ", "en": "To continue doing something despite difficulty.", "ex": "\"…encourage players to persist at solving challenging problems.\"", "s": "C"},
+    {"w": "adaptively", "p": "adverb", "vi": "một cách thích ứng", "en": "In a way that adjusts to changing conditions.", "ex": "\"…they're adaptively hard.\"", "s": "D"},
+    {"w": "demanding", "p": "adjective", "vi": "đòi hỏi cao, khó khăn", "en": "Requiring much skill, effort, or attention.", "ex": "\"…they move up to more demanding levels of play.\"", "s": "D"},
+    {"w": "stunningly", "p": "adverb", "vi": "cực kỳ, đáng kinh ngạc", "en": "Extremely; in a way that causes great surprise.", "ex": "\"This adaptive challenge is 'stunningly powerful' for learning.\"", "s": "D"},
+    {"w": "visual acuity", "p": "noun", "vi": "thị lực, độ sắc nét thị giác", "en": "Sharpness of vision; ability to see fine details.", "ex": "\"…to boost visual acuity, spatial perception…\"", "s": "E"},
+    {"w": "spatial perception", "p": "noun", "vi": "nhận thức không gian", "en": "The ability to understand the position and size of objects.", "ex": "\"…boost visual acuity, spatial perception…\"", "s": "E"},
+    {"w": "cognitive", "p": "adjective", "vi": "thuộc nhận thức", "en": "Relating to mental processes like thinking and reasoning.", "ex": "\"…improve other cognitive skills…\"", "s": "E"},
+    {"w": "malleable", "p": "adjective", "vi": "dẻo dai, dễ uốn nắn", "en": "Capable of being shaped or changed.", "ex": "\"…how malleable the human brain truly is.\"", "s": "F"},
+    {"w": "emeritus", "p": "adjective", "vi": "danh dự (sau khi nghỉ hưu)", "en": "Retired but retaining a title as an honour.", "ex": "\"…professor emeritus at the School of Medicine…\"", "s": "G"},
+    {"w": "efficient", "p": "adjective", "vi": "hiệu quả, năng suất", "en": "Achieving maximum results with minimum effort.", "ex": "\"…their brains became more efficient.\"", "s": "G"},
+    {"w": "cortex", "p": "noun", "vi": "vỏ não", "en": "The outer layer of the brain responsible for complex thinking.", "ex": "\"…parts of the cortex…actually got thicker.\"", "s": "H"},
+    {"w": "integration", "p": "noun", "vi": "sự tích hợp, kết hợp", "en": "The process of combining things into a unified whole.", "ex": "\"…planning, and integration of sensory data.\"", "s": "H"},
+    {"w": "administered", "p": "verb", "vi": "tổ chức, thực hiện (bài kiểm tra)", "en": "To organize and carry out (a test or procedure).", "ex": "\"The tests were administered after eight weeks…\"", "s": "I"},
+    {"w": "multitasking", "p": "noun", "vi": "đa nhiệm", "en": "The ability to do several things at the same time.", "ex": "\"…tests of memory, reasoning, and multitasking.\"", "s": "I"},
+    {"w": "prosocial", "p": "adjective", "vi": "vì xã hội, có lợi cho cộng đồng", "en": "Relating to behavior that benefits other people.", "ex": "\"…to encourage prosocial behaviors…\"", "s": "K"},
+    {"w": "antisocial", "p": "adjective", "vi": "chống đối xã hội, phản xã hội", "en": "Harmful or hostile to other people or society.", "ex": "\"…the opposite of 'antisocial' ones.\"", "s": "K"},
+    {"w": "subsequently", "p": "adverb", "vi": "sau đó, tiếp theo", "en": "After something else; following in time.", "ex": "\"…were subsequently kinder to a fellow research subject…\"", "s": "K"},
+    {"w": "immense", "p": "adjective", "vi": "to lớn, khổng lồ", "en": "Extremely large or great.", "ex": "\"…they have immense potential to teach children…\"", "s": "L"},
+    {"w": "double-edged sword", "p": "idiom", "vi": "con dao hai lưỡi", "en": "Something that has both advantages and disadvantages.", "ex": "\"…this is a double-edged sword.\"", "s": "L"},
+    {"w": "virtuous", "p": "adjective", "vi": "đạo đức, có phẩm hạnh", "en": "Having high moral standards; morally good.", "ex": "\"…how to wrap virtuous characteristics into an engaging package.\"", "s": "M"}
+  ],
+  "ieltsQuestions": [
+    {
+      "n": 35,
+      "t": "What are scientists not sure about in relation to video games?",
+      "options": [
+        {"v": "A", "t": "If games can improve mental abilities."},
+        {"v": "B", "t": "If violent games have negative effects on the brain."},
+        {"v": "C", "t": "If there will still be benefits when you are doing other activities."},
+        {"v": "D", "t": "If memory and vision are improved."}
+      ],
+      "a": "C",
+      "vi": "Đoạn A: \"Still unclear is whether these gains are long-lasting and can be applied to non-game tasks\" — chưa rõ lợi ích có áp dụng được ngoài trò chơi không.",
+      "en": "Section A: scientists are unsure whether gaming benefits transfer to non-game activities."
+    },
+    {
+      "n": 36,
+      "t": "How do video games encourage players to keep on playing?",
+      "options": [
+        {"v": "A", "t": "A player is rewarded with extra points."},
+        {"v": "B", "t": "The challenges get progressively harder."},
+        {"v": "C", "t": "The games become more powerful."},
+        {"v": "D", "t": "The games encourage competition."}
+      ],
+      "a": "B",
+      "vi": "Đoạn D: \"they're adaptively hard… as players get better, they move up to more demanding levels\" — thử thách tăng dần theo khả năng.",
+      "en": "Section D: games are 'adaptively hard' — difficulty increases as players improve."
+    },
+    {
+      "n": 37,
+      "t": "After three months of playing Tetris, teenage girls",
+      "options": [
+        {"v": "A", "t": "found the challenges easier"},
+        {"v": "B", "t": "were quicker at completing the tasks"},
+        {"v": "C", "t": "developed better vision"},
+        {"v": "D", "t": "got higher scores."}
+      ],
+      "a": "A",
+      "vi": "Đoạn H: \"the girls' brains were working less hard to complete the game's challenges\" — não hoạt động ít vất vả hơn → thử thách dễ hơn.",
+      "en": "Section H: their brains worked less hard — the challenges became easier for them."
+    },
+    {
+      "n": 38,
+      "t": "What social benefits can result from playing video games?",
+      "options": [
+        {"v": "A", "t": "increased honesty"},
+        {"v": "B", "t": "increased confidence"},
+        {"v": "C", "t": "increased caring"},
+        {"v": "D", "t": "increased interaction."}
+      ],
+      "a": "C",
+      "vi": "Đoạn K: học sinh chơi game có nhân vật giúp đỡ người khác → sau đó cũng tử tế hơn (\"kinder\", \"showed affection\").",
+      "en": "Section K: students who played prosocial games became kinder and showed more caring behaviors."
+    },
+    {
+      "n": 39,
+      "t": "Video games",
+      "options": [
+        {"v": "A", "t": "punish bad behaviour"},
+        {"v": "B", "t": "reward good behaviour"},
+        {"v": "C", "t": "might not always reward good behaviour"},
+        {"v": "D", "t": "do not consider moral outcomes."}
+      ],
+      "a": "C",
+      "vi": "Đoạn L: \"Games could reward negative, antisocial behavior just as easily as positive\" — game có thể thưởng cả hành vi xấu.",
+      "en": "Section L: games are a 'double-edged sword' — they can reward antisocial behavior too."
+    },
+    {
+      "n": 40,
+      "t": "An important goal for future game-makers is",
+      "options": [
+        {"v": "A", "t": "making interesting characters who do the right thing"},
+        {"v": "B", "t": "making games as interesting as possible"},
+        {"v": "C", "t": "making all games teach moral values"},
+        {"v": "D", "t": "making all games like The Sims."}
+      ],
+      "a": "A",
+      "vi": "Đoạn M: \"figuring out how to wrap virtuous characteristics into an engaging package\" — đưa đặc tính đạo đức vào gói hấp dẫn.",
+      "en": "Section M: the challenge is wrapping virtuous characteristics into engaging games."
+    }
+  ],
+  "fillBlanks": [
+    {"s": "Scientists are ___ examining the potential benefits of video games.", "a": "increasingly", "h": "ngày càng"},
+    {"s": "A wide variety of games can ___ mental function.", "a": "boost", "h": "tăng cường"},
+    {"s": "The structure of video games makes them ___ tools for brain training.", "a": "ideal", "h": "lý tưởng"},
+    {"s": "Games encourage players to ___ at solving challenging problems.", "a": "persist", "h": "kiên trì"},
+    {"s": "The games aren't just hard — they're ___ hard.", "a": "adaptively", "h": "thích ứng"},
+    {"s": "Strategy-based games can improve ___ skills like working memory.", "a": "cognitive", "h": "nhận thức"},
+    {"s": "Scientists are learning how ___ the human brain truly is.", "a": "malleable", "h": "dẻo dai"},
+    {"s": "After three months of practice, their brains became more ___.", "a": "efficient", "h": "hiệu quả"},
+    {"s": "Parts of the ___, the outer layer of the brain, actually got thicker.", "a": "cortex", "h": "vỏ não"},
+    {"s": "Researchers hope to use games to encourage ___ behaviors.", "a": "prosocial", "h": "vì xã hội"},
+    {"s": "This is a ___ — games can reward bad behavior too.", "a": "double-edged sword", "h": "con dao hai lưỡi"},
+    {"s": "The challenge is wrapping ___ characteristics into an engaging package.", "a": "virtuous", "h": "đạo đức"}
+  ],
+  "usefulPhrases": [
+    {
+      "phrase": "There are still legitimate concerns about…",
+      "vi": "Vẫn còn những lo ngại chính đáng về…",
+      "usage": "Acknowledging a valid opposing viewpoint before presenting your argument. Great for balanced IELTS essays.",
+      "example": "There are still legitimate concerns about the impact of social media on teenagers.",
+      "section": "A"
+    },
+    {
+      "phrase": "Scientists are increasingly examining / studying…",
+      "vi": "Các nhà khoa học ngày càng nghiên cứu / xem xét…",
+      "usage": "Introducing a growing trend in research. Shows academic awareness.",
+      "example": "Scientists are increasingly examining the link between sleep quality and productivity.",
+      "section": "A"
+    },
+    {
+      "phrase": "Their studies are revealing that…",
+      "vi": "Các nghiên cứu cho thấy rằng…",
+      "usage": "Presenting research findings as evidence.",
+      "example": "Their studies are revealing that regular exercise can reduce anxiety by up to 50%.",
+      "section": "A"
+    },
+    {
+      "phrase": "Still unclear is whether…",
+      "vi": "Điều chưa rõ là liệu…",
+      "usage": "Pointing out an unresolved question in research. Shows critical thinking.",
+      "example": "Still unclear is whether online learning is as effective as classroom learning.",
+      "section": "A"
+    },
+    {
+      "phrase": "X makes Y ideal for…",
+      "vi": "X khiến Y trở nên lý tưởng cho…",
+      "usage": "Explaining why something is well-suited for a purpose.",
+      "example": "Its interactive design makes the app ideal for language learning.",
+      "section": "B"
+    },
+    {
+      "phrase": "…have figured out a way to…",
+      "vi": "…đã tìm ra cách để…",
+      "usage": "Describing a solution or innovation.",
+      "example": "Researchers have figured out a way to recycle plastic more efficiently.",
+      "section": "C"
+    },
+    {
+      "phrase": "X have been shown, in separate studies, to…",
+      "vi": "X đã được chứng minh, qua các nghiên cứu riêng biệt, là…",
+      "usage": "Citing multiple sources of evidence. Strong academic writing.",
+      "example": "Green spaces have been shown, in separate studies, to reduce stress and improve mood.",
+      "section": "E"
+    },
+    {
+      "phrase": "These findings fit with…",
+      "vi": "Những phát hiện này phù hợp với…",
+      "usage": "Connecting new evidence to existing knowledge.",
+      "example": "These findings fit with earlier research on the benefits of outdoor play.",
+      "section": "F"
+    },
+    {
+      "phrase": "The jury is still out on whether…",
+      "vi": "Vẫn chưa có kết luận liệu…",
+      "usage": "Expressing that something is still undecided. Natural idiom for discussions.",
+      "example": "The jury is still out on whether artificial intelligence will create or destroy jobs.",
+      "section": "I"
+    },
+    {
+      "phrase": "…improved on a wide range of…",
+      "vi": "…cải thiện ở nhiều khía cạnh / lĩnh vực…",
+      "usage": "Describing broad improvement across multiple areas.",
+      "example": "Students who joined the program improved on a wide range of academic skills.",
+      "section": "I"
+    },
+    {
+      "phrase": "boost mental function / boost brain power",
+      "vi": "tăng cường chức năng trí não / sức mạnh não bộ",
+      "usage": "Collocation: verb + noun. Talking about cognitive improvement.",
+      "example": "Regular reading can boost mental function and improve concentration.",
+      "section": "A"
+    },
+    {
+      "phrase": "encourage prosocial behaviors",
+      "vi": "khuyến khích hành vi vì xã hội",
+      "usage": "Collocation: talking about positive social impact of an activity.",
+      "example": "Team sports encourage prosocial behaviors like cooperation and empathy.",
+      "section": "K"
+    },
+    {
+      "phrase": "have a physical effect on the body / brain",
+      "vi": "có tác động vật lý lên cơ thể / não bộ",
+      "usage": "Collocation: describing measurable physical changes.",
+      "example": "Meditation has been shown to have a physical effect on the brain, reducing cortisol levels.",
+      "section": "H"
+    },
+    {
+      "phrase": "apply (gains/skills) to non-game tasks",
+      "vi": "áp dụng (kết quả/kỹ năng) vào các nhiệm vụ ngoài trò chơi",
+      "usage": "Collocation: discussing whether skills transfer to real life.",
+      "example": "The question is whether problem-solving skills from puzzles can be applied to real-world tasks.",
+      "section": "A"
+    },
+    {
+      "phrase": "persist at solving challenging problems",
+      "vi": "kiên trì giải quyết các vấn đề khó",
+      "usage": "Collocation: describing determination and resilience.",
+      "example": "Successful students persist at solving challenging problems instead of giving up.",
+      "section": "C"
+    },
+    {
+      "phrase": "This is a double-edged sword.",
+      "vi": "Đây là con dao hai lưỡi.",
+      "usage": "A common idiom meaning something has both positive and negative aspects. Very useful in IELTS essays.",
+      "example": "Technology is a double-edged sword — it connects people but can also isolate them.",
+      "section": "L"
+    },
+    {
+      "phrase": "…reward certain actions and punish others.",
+      "vi": "…thưởng một số hành động và phạt các hành động khác.",
+      "usage": "Describing a system of incentives and consequences.",
+      "example": "Good education systems reward effort and punish dishonesty.",
+      "section": "L"
+    },
+    {
+      "phrase": "The challenge for X will be figuring out how to…",
+      "vi": "Thách thức cho X sẽ là tìm cách…",
+      "usage": "Identifying a future challenge. Good for conclusions in IELTS essays.",
+      "example": "The challenge for governments will be figuring out how to balance economic growth with environmental protection.",
+      "section": "M"
+    }
+  ]
+}
