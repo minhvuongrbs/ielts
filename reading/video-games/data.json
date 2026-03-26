@@ -263,5 +263,46 @@
       "example": "The challenge for governments will be figuring out how to balance economic growth with environmental protection.",
       "section": "M"
     }
-  ]
+  ],
+  "summaryQuestions": {
+    "instruction": "Complete the summary using no more than two or three words taken from the text.",
+    "groups": [
+      {
+        "label": "Main idea",
+        "items": [
+          {
+            "n": 35,
+            "parts": [
+              {"text": "Everyone has been concerned about the"},
+              {"blank": true, "a": ["negative", "bad"], "size": 14},
+              {"text": "effects of video games for some time, but now research is showing how games can"},
+              {"blank": true, "a": ["boost mental function"], "size": 20},
+              {"text": "."}
+            ],
+            "vi": "Đoạn A: 'focusing on the bad' → negative/bad; 'games can boost mental function'"
+          }
+        ]
+      },
+      {
+        "label": "Effects",
+        "items": [
+          {
+            "n": 37,
+            "parts": [
+              {"text": "The"},
+              {"blank": true, "a": ["very structure", "structure"], "size": 16},
+              {"text": "of video games make them ideal for exercising the brain. Video games encourage players to continue by making the games more"},
+              {"blank": true, "a": ["adaptive", "challenging", "demanding", "adaptively hard"], "size": 16},
+              {"text": ". Playing games has a physical effect on the body by making parts of the brain"},
+              {"blank": true, "a": ["more efficient", "thicker", "more efficient/thicker"], "size": 16},
+              {"text": ". Games can also have positive social effects. People who play games where characters show"},
+              {"blank": true, "a": ["affection"], "size": 12},
+              {"text": "to others tended to behave similarly."}
+            ],
+            "vi": "37: Đoạn B 'The very structure' | 38: Đoạn D 'adaptively hard / more demanding' | 39: Đoạn G-H 'more efficient / thicker' | 40: Đoạn K 'showed affection'"
+          }
+        ]
+      }
+    ]
+  }
 }

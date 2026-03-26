@@ -166,9 +166,30 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 .ph-vi{font-size:.92rem;color:var(--vi);font-weight:600;font-style:italic}
 .ph-tap{font-size:.78rem;color:var(--accent);margin-top:6px}
 
+/* Summary Questions (in passage tab) */
+.sq-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:24px 28px;margin-top:20px;border-top:3px solid var(--accent)}
+.sq-title{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--accent);margin-bottom:4px}
+.sq-inst{font-size:.85rem;color:#8a7a66;margin-bottom:16px;font-style:italic}
+.sq-label{font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;margin:16px 0 8px;color:var(--text)}
+.sq-sentence{font-size:.95rem;line-height:2.2;margin-bottom:12px}
+.sq-bi{display:inline-block;border:none;border-bottom:2px solid var(--accent);background:0;font-family:'Source Sans 3',sans-serif;font-size:.9rem;font-weight:600;color:var(--text);padding:2px 4px;min-width:100px;max-width:200px;width:auto;outline:0;transition:.2s;vertical-align:baseline}
+.sq-bi:focus{border-bottom-color:var(--accent-dark)}
+.sq-bi.ci{border-bottom-color:var(--correct);color:var(--correct);background:var(--correct-bg)}
+.sq-bi.wi{border-bottom-color:var(--wrong);color:var(--wrong);background:var(--wrong-bg)}
+.sq-num{display:inline-block;font-family:'Fraunces',serif;font-weight:700;color:#fff;background:var(--accent);width:24px;height:24px;line-height:24px;text-align:center;border-radius:50%;font-size:.75rem;margin-right:2px;vertical-align:baseline}
+.sq-exp{display:none;margin-top:6px;padding:8px 14px;border-radius:8px;font-size:.85rem;line-height:1.5;background:var(--vi-bg);color:var(--vi);font-style:italic}
+.sq-exp.show{display:block}
+.sq-score{font-weight:700;font-size:1rem;text-align:center;margin-top:12px}
+.sq-score.good{color:var(--correct)}.sq-score.mid{color:var(--accent)}.sq-score.bad{color:var(--wrong)}
+.sq-answer{display:none;font-size:.82rem;color:var(--correct);font-weight:600;margin-left:4px}
+.sq-answer.show{display:inline}
+
 @media(max-width:600px){
   .card{padding:18px 16px}header h1{font-size:1.7rem}.mg{grid-template-columns:1fr}
   .fcf,.fcb{padding:24px 16px}.fcw{font-size:1.4rem}
+  .sq-card{padding:18px 16px}
+  .sq-sentence{font-size:.88rem;line-height:2.4}
+  .sq-bi{min-width:80px;max-width:160px;font-size:.85rem}
 }
 </style>
 </head>
@@ -203,6 +224,7 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
       <label class="sw"><input type="checkbox" id="vi-toggle" onchange="toggleVI()"><span class="sld"></span></label>
     </div>
     <div class="card" id="passage-card"></div>
+    <div class="sq-card" id="sq-card"></div>
   </div>
 
   <div id="vocab" class="tp">
@@ -303,7 +325,7 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 </div>
 
 <script>
-let sections=[], V=[], IQ=[], FB=[], UP=[];
+let sections=[], V=[], IQ=[], FB=[], UP=[], SQ=null;
 
 // ======================== AUDIO & IPA ========================
 function speak(text){
@@ -364,6 +386,7 @@ fetch('./data.json?v=1')
     IQ=data.ieltsQuestions;
     FB=data.fillBlanks;
     UP=data.usefulPhrases||[];
+    SQ=data.summaryQuestions||null;
     init();
     Promise.all(V.map(v=>fetchIPA(v.w))).then(()=>{renderVocab();renderFC();});
   });
@@ -377,6 +400,7 @@ function init(){
   renderFB2();
   renderMatch();
   renderPhrases();
+  if(SQ) renderSummaryQ();
 }
 
 // ======================== TABS ========================
@@ -540,6 +564,79 @@ function renderPhrases(){
         <div class="ph-vi">🇻🇳 ${p.vi}</div>
       </div>
     </div>`).join('');
+}
+
+// ======================== SUMMARY QUESTIONS (Passage Tab) ========================
+let sqBlankCount=0;
+function renderSummaryQ(){
+  if(!SQ)return;
+  sqBlankCount=0;
+  let html=`<div class="sq-title">📝 Questions 35–40: Short answer summary</div>
+    <div class="sq-inst">${SQ.instruction}</div>`;
+  SQ.groups.forEach(g=>{
+    html+=`<div class="sq-label">${g.label}</div>`;
+    g.items.forEach(item=>{
+      html+=`<div class="sq-sentence" id="sq-item-${item.n}">`;
+      let blankIdx=0;
+      item.parts.forEach(part=>{
+        if(part.blank){
+          const qn=item.n+blankIdx;
+          html+=`<span class="sq-num">${qn}</span> <input type="text" class="sq-bi" id="sq-${qn}" data-answers='${JSON.stringify(part.a)}' placeholder="..." autocomplete="off" autocapitalize="off" spellcheck="false"> <span class="sq-answer" id="sq-ans-${qn}"></span> `;
+          blankIdx++;
+          sqBlankCount++;
+        }else{
+          html+=part.text+' ';
+        }
+      });
+      html+=`</div><div class="sq-exp" id="sq-exp-${item.n}">${item.vi}</div>`;
+    });
+  });
+  html+=`<div class="sq-score" id="sq-score"></div>
+    <div class="ctrls" style="margin-top:16px">
+      <button class="btn bp" id="sq-check" onclick="checkSummaryQ()">Check</button>
+      <button class="btn bs" id="sq-redo" onclick="resetSummaryQ()" style="display:none">Redo</button>
+    </div>`;
+  document.getElementById('sq-card').innerHTML=html;
+}
+
+function checkSummaryQ(){
+  let correct=0,total=0;
+  SQ.groups.forEach(g=>{
+    g.items.forEach(item=>{
+      let blankIdx=0;
+      item.parts.forEach(part=>{
+        if(part.blank){
+          total++;
+          const qn=item.n+blankIdx;
+          const input=document.getElementById(`sq-${qn}`);
+          const ansSpan=document.getElementById(`sq-ans-${qn}`);
+          const userVal=input.value.trim().toLowerCase();
+          const accepted=part.a.map(a=>a.toLowerCase());
+          const ok=accepted.some(a=>userVal===a);
+          input.classList.add(ok?'ci':'wi');
+          input.disabled=true;
+          if(ok){correct++;}
+          else{ansSpan.textContent='→ '+part.a[0];ansSpan.classList.add('show');}
+          blankIdx++;
+        }
+      });
+      document.getElementById(`sq-exp-${item.n}`).classList.add('show');
+    });
+  });
+  const sc=document.getElementById('sq-score');
+  sc.textContent=`${correct} / ${total} correct`;
+  sc.className='sq-score '+(correct>=total*0.7?'good':correct>=total*0.4?'mid':'bad');
+  document.getElementById('sq-check').style.display='none';
+  document.getElementById('sq-redo').style.display='';
+}
+
+function resetSummaryQ(){
+  document.querySelectorAll('.sq-bi').forEach(i=>{i.value='';i.disabled=false;i.classList.remove('ci','wi');});
+  document.querySelectorAll('.sq-answer').forEach(s=>{s.textContent='';s.classList.remove('show');});
+  document.querySelectorAll('.sq-exp').forEach(e=>e.classList.remove('show'));
+  document.getElementById('sq-score').textContent='';
+  document.getElementById('sq-check').style.display='';
+  document.getElementById('sq-redo').style.display='none';
 }
 </script>
 </body>
