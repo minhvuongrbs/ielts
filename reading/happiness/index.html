@@ -185,6 +185,18 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 .qt-check-item.practiced{color:var(--correct);font-weight:600}
 .qt-check-item .qt-mark{display:inline-block;width:18px;text-align:center;margin-right:2px}
 
+/* Passage split layout */
+.passage-split{display:flex;gap:20px;align-items:flex-start}
+.passage-left{flex:1;min-width:0}
+.passage-right{width:400px;flex-shrink:0;position:sticky;top:60px;max-height:calc(100vh - 80px);overflow-y:auto;scrollbar-width:thin}
+.passage-right::-webkit-scrollbar{width:5px}
+.passage-right::-webkit-scrollbar-thumb{background:#d4c5b0;border-radius:4px}
+.passage-right .card{border-top:3px solid var(--accent)}
+
+@media(max-width:900px){
+  .passage-split{flex-direction:column}
+  .passage-right{width:100%;position:static;max-height:none;overflow-y:visible}
+}
 @media(max-width:600px){
   .card{padding:18px 16px}header h1{font-size:1.7rem}.opts{flex-direction:column}.mg{grid-template-columns:1fr}
   .fcf,.fcb{padding:24px 16px}.fcw{font-size:1.4rem}
@@ -221,7 +233,23 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
       <label>🇻🇳 Show Vietnamese translation</label>
       <label class="sw"><input type="checkbox" id="vi-toggle" onchange="toggleVI()"><span class="sld"></span></label>
     </div>
-    <div class="card" id="passage-card"></div>
+    <div class="passage-split">
+      <div class="passage-left">
+        <div class="card" id="passage-card"></div>
+      </div>
+      <div class="passage-right">
+        <div class="card">
+          <div style="font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--accent);margin-bottom:4px">📝 Questions 28–34: Matching Information</div>
+          <p style="font-size:.85rem;color:#8a7a66;font-style:italic;margin-bottom:12px">Which paragraph contains the following information?</p>
+          <div id="passage-ielts-ctn"></div>
+          <div class="ctrls" style="margin-top:12px">
+            <button class="btn bp" id="pic" onclick="checkPassageIELTS()">Check</button>
+            <button class="btn bs" id="pir" onclick="resetPassageIELTS()" style="display:none">Redo</button>
+          </div>
+          <div id="passage-ielts-banner" class="banner" style="margin-top:12px"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="vocab" class="tp">
@@ -399,6 +427,7 @@ function init(){
   renderMatch();
   renderPhrases();
   if(QT) renderQTInfo();
+  renderPassageIELTS();
 }
 
 // ======================== TABS ========================
@@ -588,6 +617,42 @@ function renderQTInfo(){
     </div>`;
   });
   ctn.innerHTML=html;
+}
+
+// ======================== PASSAGE-SIDE IELTS ========================
+const pia={};
+function renderPassageIELTS(){
+  const ctn=document.getElementById('passage-ielts-ctn');
+  if(!ctn||!IQ.length)return;
+  ctn.innerHTML=IQ.map((q,i)=>`
+    <div style="margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--accent-light)" id="piq-${i}">
+      <div class="qn">Q${q.n}</div>
+      <div style="font-size:.88rem;font-weight:600;margin-bottom:6px">${q.t}</div>
+      <div class="opts" style="flex-direction:row;flex-wrap:wrap;gap:6px">${io.map(o=>`<button class="ob" style="padding:6px 12px;font-size:.82rem" data-pq="${i}" data-v="${o}" onclick="selPI(this)">${o}</button>`).join('')}</div>
+      <div class="exp" id="pie-${i}"></div>
+    </div>`).join('');
+}
+function selPI(b){const q=b.dataset.pq;document.querySelectorAll(`.ob[data-pq="${q}"]`).forEach(x=>x.classList.remove('sel'));b.classList.add('sel');pia[q]=b.dataset.v;}
+function checkPassageIELTS(){
+  let sc=0;IQ.forEach((q,i)=>{
+    const e=document.getElementById(`pie-${i}`);
+    document.querySelectorAll(`.ob[data-pq="${i}"]`).forEach(b=>{b.disabled=true;if(b.dataset.v===q.a)b.classList.add('ca');if(b.classList.contains('sel')&&b.dataset.v!==q.a)b.classList.add('wa');});
+    const ok=pia[i]===q.a;if(ok)sc++;
+    e.innerHTML=`<strong>${ok?'✅':'❌'} ${q.a}</strong> — ${q.en}<br><em style="color:var(--vi)">${q.vi}</em>`;
+    e.classList.add('show',ok?'ce':'we');
+  });
+  const b=document.getElementById('passage-ielts-banner');b.style.display='block';
+  b.style.background=sc>=5?'var(--correct-bg)':sc>=3?'var(--accent-light)':'var(--wrong-bg)';
+  b.style.color=sc>=5?'var(--correct)':sc>=3?'var(--accent)':'var(--wrong)';
+  b.textContent=`${sc} / ${IQ.length} correct`;b.classList.add('show');
+  document.getElementById('pic').style.display='none';document.getElementById('pir').style.display='inline-block';
+}
+function resetPassageIELTS(){
+  Object.keys(pia).forEach(k=>delete pia[k]);
+  document.querySelectorAll('#passage-ielts-ctn .ob').forEach(b=>{b.disabled=false;b.classList.remove('sel','ca','wa');});
+  document.querySelectorAll('#passage-ielts-ctn .exp').forEach(e=>{e.classList.remove('show','ce','we');e.innerHTML='';});
+  document.getElementById('passage-ielts-banner').style.display='none';
+  document.getElementById('pic').style.display='inline-block';document.getElementById('pir').style.display='none';
 }
 </script>
 </body>

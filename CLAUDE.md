@@ -129,3 +129,25 @@ speaking/index.html                 # Coming soon placeholder
 - For listening: include distractor awareness ("Actually, no, I meant...")
 - Target phrases learners can reuse in IELTS Writing & Speaking
 - IELTS target: 5.5–6.0 (General Training)
+
+## Design Principles
+- **Data-driven**: Structure around data and domain, not just HTML/CSS rendering. All content, question types, and metadata belong in `data.json` — HTML/JS reads and renders from data
+- **Reading passage layout**: Show IELTS questions next to the passage (side-by-side on desktop, stacked on mobile) so learners can read and answer simultaneously
+  - Use `.passage-split` flex container: `.passage-left` (flex:1) + `.passage-right` (sticky, 400px, scrollable)
+  - Breakpoint at 900px: stacks vertically on mobile
+  - Reference implementation: `reading/video-games/index.html`
+- **Question type metadata**: Each reading lesson includes `questionTypes` in `data.json` with active types (description, tips, Vietnamese) and a reference checklist of all 11 IELTS types
+
+## IELTS Reading Question Types (reference)
+When creating a new reading lesson, identify which question types it practices and include `questionTypes` in `data.json`:
+1. Multiple Choice — Choose A/B/C/D
+2. Matching Information — Match statements to paragraphs
+3. Matching Headings — Match headings to paragraphs
+4. Matching Features — Match features to a list
+5. Matching Sentence Endings — Complete sentence from list
+6. Sentence Completion — Fill in with words from text
+7. Summary Completion — Fill blanks in a summary
+8. Note / Table / Flow-chart Completion — Fill in structured info
+9. Short Answer Questions — Answer with words from text
+10. True / False / Not Given — Decide if statements match text
+11. Yes / No / Not Given — Decide if statements match writer's views
