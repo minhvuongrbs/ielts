@@ -9,6 +9,7 @@
     { label: 'Writing',      path: 'hubs/writing/',     key: 'writing',   icon: '✍️ ' },
     { label: 'Speaking',     path: 'hubs/speaking/',    key: 'speaking',  icon: '🗣️ ' },
     { label: 'Quiz',         path: 'hubs/quiz/',        key: 'quiz',      icon: '🧠 ' },
+    { label: 'Phrases',     path: 'hubs/phrases/',     key: 'phrases',   icon: '💬 ' },
     { label: 'Revision',     path: 'hubs/revision/',    key: 'revision',  icon: '📝 ' },
   ];
 

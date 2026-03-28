@@ -43,6 +43,7 @@ hubs/                               # ALL hub/index pages — organized by skill
   writing/index.html                # Coming soon placeholder
   speaking/index.html               # Coming soon placeholder
   quiz/index.html                   # Vocabulary quiz hub
+  phrases/index.html                # Phrases hub — browse & practice all phrases
   revision/index.html               # Revision hub — mock tests
 ```
 

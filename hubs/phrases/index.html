@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phrases — IELTS Useful Phrases</title>
+<link rel="stylesheet" href="../../shared/styles.css">
+<style>
+.container{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+
+/* Page hero */
+.page-hero{text-align:center;padding:40px 20px 28px}
+.page-hero .icon{font-size:2.4rem;margin-bottom:10px}
+.page-hero h1{font-family:'Fraunces',serif;font-weight:700;font-size:2rem;letter-spacing:-.02em;margin-bottom:6px}
+.page-hero p{font-size:.92rem;color:#8a7a66;max-width:480px;margin:0 auto}
+.phrase-count{font-size:.85rem;color:var(--accent);font-weight:600;margin-top:10px}
+
+/* Mode tabs */
+.mode-tabs{display:flex;gap:0;margin:0 0 20px;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.mode-tab{flex:1;padding:14px 12px;background:#fff;border:none;font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;cursor:pointer;transition:.2s;text-align:center;color:#8a7a66}
+.mode-tab:hover{background:#fdf8f3}
+.mode-tab.active{background:var(--accent);color:#fff}
+
+/* Filters */
+.filter-label{font-family:'Fraunces',serif;font-weight:700;font-size:.92rem;margin:20px 0 10px;color:var(--text)}
+.filter-row{display:flex;gap:8px;flex-wrap:wrap}
+.filter-btn{padding:8px 18px;border:2px solid #e8e0d4;border-radius:8px;background:#fff;font-size:.85rem;font-weight:600;cursor:pointer;transition:.2s}
+.filter-btn:hover{border-color:var(--accent)}
+.filter-btn.selected{border-color:var(--accent);background:var(--accent);color:#fff}
+
+/* Status bar */
+.status-bar{font-size:.82rem;color:#8a7a66;font-weight:600;margin:16px 0 12px}
+
+/* Phrase cards — reuse shared .ph-* classes, add hub-specific extras */
+.skill-badge{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 8px;border-radius:6px;margin-left:6px}
+.skill-badge.reading{background:var(--reading-bg);color:var(--reading)}
+.skill-badge.listening{background:var(--listening-bg);color:var(--listening)}
+.lesson-badge{font-size:.72rem;color:#8a7a66;margin-top:4px}
+
+/* ===== FLASHCARD MODE ===== */
+.fc-counter{text-align:center;font-size:.85rem;color:#8a7a66;font-weight:600;margin-bottom:14px}
+.fc-progress{width:100%;height:6px;background:#e8e0d4;border-radius:3px;margin-bottom:24px}
+.fc-progress-fill{height:100%;background:var(--accent);border-radius:3px;transition:width .3s}
+
+/* 3D flip card */
+.fc-wrap{perspective:800px;width:100%;max-width:520px;min-height:300px;margin:0 auto 20px;cursor:pointer}
+.fc-inner{position:relative;width:100%;min-height:300px;transition:transform .5s;transform-style:preserve-3d}
+.fc-wrap.flipped .fc-inner{transform:rotateY(180deg)}
+.fc-front,.fc-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:var(--r);box-shadow:var(--shadow);padding:32px 28px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.fc-front{background:#fff}
+.fc-back{background:#fdf8f3;transform:rotateY(180deg)}
+
+.fc-phrase{font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;line-height:1.4;margin-bottom:10px;color:var(--text)}
+.fc-cat{display:inline-block;font-size:.72rem;font-weight:700;background:var(--accent-light);color:var(--accent-dark);padding:3px 10px;border-radius:10px;margin-bottom:8px}
+.fc-lesson{font-size:.78rem;color:#8a7a66;margin-bottom:10px}
+.fc-audio{background:none;border:none;font-size:1.4rem;cursor:pointer;margin-bottom:6px}
+.fc-tap{font-size:.78rem;color:var(--accent);margin-top:8px}
+
+.fc-vi{font-size:1.05rem;color:var(--vi);font-style:italic;font-weight:600;margin-bottom:12px}
+.fc-usage{font-size:.88rem;color:#6b5e4f;margin-bottom:12px;line-height:1.5}
+.fc-example{font-size:.88rem;font-style:italic;color:#1a5632;background:var(--correct-bg);padding:10px 14px;border-radius:8px;line-height:1.5}
+
+/* Nav buttons */
+.fc-actions{display:flex;gap:12px;justify-content:center;margin-bottom:16px}
+.fc-btn{padding:12px 28px;border:none;border-radius:8px;font-weight:700;font-size:.9rem;cursor:pointer;transition:.2s}
+.fc-know{background:var(--correct);color:#fff}
+.fc-know:hover{background:#2e7349}
+.fc-learning{background:var(--wrong);color:#fff}
+.fc-learning:hover{background:#a33a2e}
+.fc-nav{display:flex;gap:10px;justify-content:center;align-items:center}
+.fc-nav button{padding:10px 20px;border:2px solid #e8e0d4;border-radius:8px;background:#fff;font-weight:600;font-size:.85rem;cursor:pointer;transition:.2s}
+.fc-nav button:hover{border-color:var(--accent)}
+.fc-shuffle{background:var(--accent-light) !important;border-color:var(--accent) !important;color:var(--accent)}
+
+/* Results */
+.fc-result{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:32px 24px;text-align:center;margin-top:20px}
+.fc-result-num{font-family:'Fraunces',serif;font-weight:700;font-size:2.4rem;color:var(--correct)}
+.fc-result-label{font-size:.92rem;color:#8a7a66;margin-top:4px}
+.fc-result-msg{font-family:'Fraunces',serif;font-size:1.1rem;margin-top:10px}
+.fc-result-actions{display:flex;gap:12px;justify-content:center;margin-top:20px}
+.fc-result-actions button{padding:12px 28px;border:none;border-radius:8px;font-weight:700;font-size:.9rem;cursor:pointer}
+
+@media(max-width:480px){
+  .page-hero h1{font-size:1.5rem}
+  .filter-btn{padding:6px 12px;font-size:.78rem}
+  .fc-phrase{font-size:1.1rem}
+  .fc-front,.fc-back{padding:24px 18px}
+}
+</style>
+</head>
+<body data-depth="2">
+<nav id="nav"></nav>
+<script src="../../shared/nav.js"></script>
+
+<div class="page-hero">
+  <div class="icon">💬</div>
+  <h1>Useful Phrases</h1>
+  <p>Browse and practice useful phrases from all lessons. Filter by skill, lesson, or category.</p>
+  <div class="phrase-count" id="phrase-count">Loading phrases...</div>
+</div>
+
+<div class="container">
+  <!-- Mode tabs -->
+  <div class="mode-tabs">
+    <button class="mode-tab active" onclick="setMode('browse')">📖 Browse</button>
+    <button class="mode-tab" onclick="setMode('flashcard')">🃏 Flashcards</button>
+  </div>
+
+  <!-- Filters -->
+  <div id="filters-area">
+    <div class="filter-label">Lesson</div>
+    <div class="filter-row" id="lesson-filter"></div>
+    <div class="filter-label">Category</div>
+    <div class="filter-row" id="cat-filter"></div>
+  </div>
+
+  <!-- ===== BROWSE MODE ===== -->
+  <div id="browse-mode">
+    <div class="status-bar" id="status-bar"></div>
+    <div class="ph-grid" id="phrases-grid"></div>
+  </div>
+
+  <!-- ===== FLASHCARD MODE ===== -->
+  <div id="fc-mode" style="display:none">
+    <div id="fc-area"></div>
+  </div>
+</div>
+
+<script>
+/* ======================== AUDIO ======================== */
+function speak(text){
+  if(!('speechSynthesis' in window))return;
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);
+  u.lang='en-US';u.rate=0.85;
+  speechSynthesis.speak(u);
+}
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+/* ======================== DATA LOADING ======================== */
+const LESSONS=[
+  {name:'Happiness',path:'../../sections/reading/happiness/data.json',skill:'reading'},
+  {name:'Video Games',path:'../../sections/reading/video-games/data.json',skill:'reading'},
+  {name:'Map Labeling',path:'../../sections/listening/map-labeling/data.json',skill:'listening'},
+  {name:'Form Completion',path:'../../sections/listening/form-completion/data.json',skill:'listening'},
+  {name:'Sentence Completion',path:'../../sections/listening/sentence-completion/data.json',skill:'listening'},
+];
+let allPhrases=[];
+
+async function loadData(){
+  const results=await Promise.all(LESSONS.map(async l=>{
+    try{const r=await fetch(l.path);return{...l,data:await r.json()};}catch{return{...l,data:null};}
+  }));
+  results.forEach(l=>{
+    if(!l.data)return;
+    (l.data.usefulPhrases||[]).forEach(p=>{
+      allPhrases.push({...p,_lesson:l.name,_skill:l.skill});
+    });
+  });
+  document.getElementById('phrase-count').textContent=`${allPhrases.length} phrases from ${LESSONS.length} lessons`;
+  buildLessonFilter();
+  buildCatFilter();
+  renderPhrases();
+}
+loadData();
+
+/* ======================== MODE SWITCH ======================== */
+let mode='browse';
+function setMode(m){
+  mode=m;
+  document.querySelectorAll('.mode-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelector(`.mode-tab:nth-child(${m==='browse'?1:2})`).classList.add('active');
+  document.getElementById('browse-mode').style.display=m==='browse'?'':'none';
+  document.getElementById('fc-mode').style.display=m==='flashcard'?'':'none';
+  if(m==='flashcard') startFC();
+}
+
+/* ======================== FILTER STATE ======================== */
+let fLesson='all', fCat='all';
+
+function setLesson(el){
+  document.querySelectorAll('#lesson-filter .filter-btn').forEach(b=>b.classList.remove('selected'));
+  el.classList.add('selected');
+  fLesson=el.dataset.f;
+  fCat='all';
+  buildCatFilter();renderPhrases();
+  if(mode==='flashcard') startFC();
+}
+function setCat(el){
+  document.querySelectorAll('#cat-filter .filter-btn').forEach(b=>b.classList.remove('selected'));
+  el.classList.add('selected');
+  fCat=el.dataset.f;
+  renderPhrases();
+  if(mode==='flashcard') startFC();
+}
+
+function getFiltered(){
+  return allPhrases.filter(p=>{
+    if(fLesson!=='all'&&p._lesson!==fLesson)return false;
+    if(fCat!=='all'&&p.cat!==fCat)return false;
+    return true;
+  });
+}
+
+function buildLessonFilter(){
+  const lessons=[...new Set(allPhrases.map(p=>p._lesson))].sort();
+  const row=document.getElementById('lesson-filter');
+  row.innerHTML='<button class="filter-btn selected" data-f="all" onclick="setLesson(this)">All</button>';
+  lessons.forEach(l=>{
+    const b=document.createElement('button');
+    b.className='filter-btn';b.dataset.f=l;b.textContent=l;
+    b.onclick=function(){setLesson(this);};
+    row.appendChild(b);
+  });
+}
+function buildCatFilter(){
+  const pool=fLesson==='all'?allPhrases:allPhrases.filter(p=>p._lesson===fLesson);
+  const cats=[...new Set(pool.map(p=>p.cat))].sort();
+  const row=document.getElementById('cat-filter');
+  row.innerHTML='<button class="filter-btn selected" data-f="all" onclick="setCat(this)">All</button>';
+  cats.forEach(c=>{
+    const b=document.createElement('button');
+    b.className='filter-btn';b.dataset.f=c;
+    b.textContent=c.charAt(0).toUpperCase()+c.slice(1);
+    b.onclick=function(){setCat(this);};
+    row.appendChild(b);
+  });
+}
+
+/* ======================== BROWSE RENDER ======================== */
+function renderPhrases(){
+  const phrases=getFiltered();
+  document.getElementById('status-bar').textContent=`Showing ${phrases.length} of ${allPhrases.length} phrases`;
+  document.getElementById('phrases-grid').innerHTML=phrases.map(p=>`
+    <div class="ph-card" onclick="this.classList.toggle('open')">
+      <div style="display:flex;align-items:baseline;flex-wrap:wrap;gap:4px">
+        <div class="ph-phrase">${p.phrase}</div>
+        <span class="ph-tag">${p.cat}</span>
+        <span class="skill-badge ${p._skill}">${p._skill}</span>
+      </div>
+      <div class="lesson-badge">${p._lesson}</div>
+      <div class="ph-example-preview">💡 ${p.example} <button class="audio-btn" onclick="event.stopPropagation();speak(\`${p.example.replace(/`/g,'').replace(/'/g,"\\'")}\`)">🔊</button></div>
+      <div class="ph-tap">tap to see how to use</div>
+      <div class="ph-body">
+        <div class="ph-usage"><strong>When to use:</strong> ${p.usage}</div>
+        <div class="ph-vi">🇻🇳 ${p.vi}</div>
+      </div>
+    </div>`).join('');
+}
+
+/* ======================== FLASHCARDS ======================== */
+let FC=[], fci=0, fcKnow=0;
+
+function startFC(){
+  FC=shuffle(getFiltered());
+  fci=0;fcKnow=0;
+  if(!FC.length){
+    document.getElementById('fc-area').innerHTML='<p style="text-align:center;color:#8a7a66;margin-top:40px">No phrases match your filters.</p>';
+    return;
+  }
+  renderFC();
+}
+
+function renderFC(){
+  const p=FC[fci];
+  const total=FC.length;
+  const safeExample=p.example.replace(/`/g,'').replace(/'/g,"\\'");
+
+  document.getElementById('fc-area').innerHTML=`
+    <div class="fc-counter">${fci+1} / ${total}</div>
+    <div class="fc-progress"><div class="fc-progress-fill" style="width:${(fci+1)/total*100}%"></div></div>
+
+    <div class="fc-wrap" id="fc-card" onclick="this.classList.toggle('flipped')">
+      <div class="fc-inner">
+        <div class="fc-front">
+          <div class="fc-cat">${p.cat}</div>
+          <div class="fc-phrase">${p.phrase}</div>
+          <div class="fc-lesson">${p._lesson} · ${p._skill}</div>
+          <button class="fc-audio" onclick="event.stopPropagation();speak('${safeExample}')">🔊</button>
+          <div class="fc-tap">tap to flip</div>
+        </div>
+        <div class="fc-back">
+          <div class="fc-vi">🇻🇳 ${p.vi}</div>
+          <div class="fc-usage">💡 ${p.usage}</div>
+          <div class="fc-example">"${p.example}"</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fc-actions">
+      <button class="fc-btn fc-learning" onclick="fcNext(false)">Still Learning</button>
+      <button class="fc-btn fc-know" onclick="fcNext(true)">Know It!</button>
+    </div>
+
+    <div class="fc-nav">
+      <button onclick="fcPrev()" ${fci===0?'disabled':''}>← Prev</button>
+      <button class="fc-shuffle" onclick="fcShuffle()">🔀 Shuffle</button>
+      <button onclick="fcNext(null)" ${fci===total-1?'disabled':''}>Next →</button>
+    </div>`;
+}
+
+function fcNext(know){
+  if(know===true) fcKnow++;
+  fci++;
+  if(fci>=FC.length){showFCResult();return;}
+  renderFC();
+}
+
+function fcPrev(){
+  if(fci>0){fci--;renderFC();}
+}
+
+function fcShuffle(){
+  FC=shuffle(FC);fci=0;fcKnow=0;renderFC();
+}
+
+function showFCResult(){
+  const total=FC.length;
+  const pct=Math.round(fcKnow/total*100);
+  document.getElementById('fc-area').innerHTML=`
+    <div class="fc-result">
+      <div class="fc-result-num">${fcKnow} / ${total}</div>
+      <div class="fc-result-label">phrases you know</div>
+      <div class="fc-result-msg">${pct>=80?'Great job!':pct>=50?'Good progress, keep going!':'Keep practicing — you\'ll get there!'}</div>
+      <div class="fc-result-actions">
+        <button class="fc-btn fc-know" onclick="startFC()">Start Over</button>
+        <button class="fc-btn" style="background:#e8e0d4;color:var(--text)" onclick="setMode('browse')">Browse Phrases</button>
+      </div>
+    </div>`;
+}
+</script>
+</body>
+</html>
