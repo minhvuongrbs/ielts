@@ -14,29 +14,21 @@
 .page-hero h1 span{color:var(--listening)}
 .page-hero p{font-size:.95rem;color:#8a7a66;max-width:540px;margin:0 auto}
 
-/* Section block */
-.sec-block{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:24px 24px 16px;margin-bottom:20px;border-top:4px solid var(--listening)}
-.sec-header{display:flex;align-items:baseline;gap:10px;margin-bottom:4px}
-.sec-num{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--listening)}
-.sec-title{font-family:'Fraunces',serif;font-weight:700;font-size:1rem}
-.sec-desc{font-size:.85rem;color:#8a7a66;margin-bottom:16px}
+/* Section block = one lesson */
+.sec-block{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:24px 26px;margin-bottom:16px;border-left:5px solid var(--listening);text-decoration:none;color:var(--text);display:block;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+a.sec-block:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+a.sec-block::after{content:'→';position:absolute;top:24px;right:24px;font-size:1.3rem;font-weight:700;color:var(--listening);transition:transform .25s}
+a.sec-block:hover::after{transform:translateX(4px)}
+.sec-block.soon{opacity:.5;pointer-events:none;border-left-color:#ccc !important}
+.sec-block.soon::after{content:'🔒';position:absolute;top:24px;right:24px;font-size:1.3rem}
 
-/* Cards inside section */
-.sec-cards{display:flex;flex-direction:column;gap:10px}
-.card{background:#faf6f0;border-radius:var(--r);box-shadow:0 1px 8px rgba(44,36,22,.05);padding:18px 22px;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:8px;transition:transform .25s,box-shadow .25s;border-left:4px solid var(--listening);position:relative;overflow:hidden}
-.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
-.card::after{content:'→';position:absolute;top:18px;right:18px;font-size:1.1rem;font-weight:700;color:var(--listening);transition:transform .25s}
-.card:hover::after{transform:translateX(4px)}
-.card.soon{opacity:.5;pointer-events:none;border-left-color:#ccc !important}
-.card.soon::after{content:'🔒'}
-
-.card-tags{display:flex;gap:5px;flex-wrap:wrap}
+.sec-tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
 .tag{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:3px 9px;border-radius:10px}
 .tag-new{background:var(--listening);color:#fff}
 .tag-type{background:#f0ebe3;color:#8a7a66}
-.card-title{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;line-height:1.3;padding-right:28px}
-.card-desc{font-size:.85rem;color:#6b5e4f;line-height:1.5}
-.card-meta{display:flex;gap:12px;font-size:.75rem;color:#8a7a66;font-weight:600;margin-top:auto;flex-wrap:wrap}
+.sec-title{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;line-height:1.3;margin-bottom:6px;padding-right:28px}
+.sec-desc{font-size:.88rem;color:#6b5e4f;line-height:1.5;margin-bottom:8px}
+.sec-meta{display:flex;gap:14px;font-size:.78rem;color:#8a7a66;font-weight:600;flex-wrap:wrap}
 
 @media(max-width:480px){
   .page-hero h1{font-size:1.6rem}
@@ -56,100 +48,50 @@
 
 <div class="container">
 
-  <!-- Section 1 -->
-  <div class="sec-block">
-    <div class="sec-header">
-      <div class="sec-num">Section 1</div>
-      <div class="sec-title">Social / transactional conversation (2 speakers)</div>
+  <a href="../../sections/listening/form-completion/" class="sec-block">
+    <div class="sec-tags">
+      <span class="tag tag-new">New</span>
+      <span class="tag tag-type">Section 1</span>
+      <span class="tag tag-type">Form Completion</span>
     </div>
-    <div class="sec-desc">A dialogue in a social context — booking, ordering, enquiring. Common question types: form completion, table completion, note completion.</div>
-    <div class="sec-cards">
-      <a href="../../sections/listening/form-completion/" class="card">
-        <div class="card-tags">
-          <span class="tag tag-new">New</span>
-          <span class="tag tag-type">Form Completion</span>
-        </div>
-        <div class="card-title">📋 Form Completion — Furniture Ordering</div>
-        <div class="card-desc">Practice form and table completion: company names, phone numbers, product codes. Interactive IELTS practice form + ordering vocabulary.</div>
-        <div class="card-meta">
-          <span>🔊 Audio included</span>
-          <span>📝 34 vocabulary words</span>
-          <span>📋 10-question practice</span>
-        </div>
-      </a>
+    <div class="sec-title">📋 Form Completion — Furniture Ordering</div>
+    <div class="sec-desc">Practice form and table completion: company names, phone numbers, product codes. Interactive IELTS practice form + ordering vocabulary.</div>
+    <div class="sec-meta">
+      <span>🔊 Audio included</span>
+      <span>📝 34 vocabulary words</span>
+      <span>📋 10-question practice</span>
     </div>
-  </div>
+  </a>
 
-  <!-- Section 2 -->
-  <div class="sec-block">
-    <div class="sec-header">
-      <div class="sec-num">Section 2</div>
-      <div class="sec-title">Public announcement / talk (1 speaker)</div>
+  <a href="../../sections/listening/map-labeling/" class="sec-block">
+    <div class="sec-tags">
+      <span class="tag tag-new">New</span>
+      <span class="tag tag-type">Section 2</span>
+      <span class="tag tag-type">Map & Plan Labeling</span>
     </div>
-    <div class="sec-desc">A monologue in a social context — a tour, an event, a speech. Common question types: map/plan labeling, sentence completion, multiple choice.</div>
-    <div class="sec-cards">
-      <a href="../../sections/listening/map-labeling/" class="card">
-        <div class="card-tags">
-          <span class="tag tag-new">New</span>
-          <span class="tag tag-type">Map & Plan Labeling</span>
-        </div>
-        <div class="card-title">🗺️ Map & Plan Labeling</div>
-        <div class="card-desc">Learn directional vocabulary, prepositions of place, and movement verbs. Visual diagrams + interactive quizzes.</div>
-        <div class="card-meta">
-          <span>📝 56 vocabulary words</span>
-          <span>🗺️ 17 visual cards</span>
-          <span>🃏 3 quiz types</span>
-        </div>
-      </a>
-      <a href="../../sections/listening/sentence-completion/" class="card">
-        <div class="card-tags">
-          <span class="tag tag-new">New</span>
-          <span class="tag tag-type">Sentence Completion</span>
-        </div>
-        <div class="card-title">Sentence Completion — Marathon Tips</div>
-        <div class="card-desc">Complete sentences about marathon viewing tips. Listen to the audio and fill in the missing words (7 questions).</div>
-        <div class="card-meta">
-          <span>🔊 Audio included</span>
-          <span>📝 26 vocabulary words</span>
-          <span>📋 7-question practice</span>
-        </div>
-      </a>
+    <div class="sec-title">🗺️ Map & Plan Labeling</div>
+    <div class="sec-desc">Learn directional vocabulary, prepositions of place, and movement verbs. Visual diagrams + interactive quizzes.</div>
+    <div class="sec-meta">
+      <span>📝 56 vocabulary words</span>
+      <span>🗺️ 17 visual cards</span>
+      <span>🃏 3 quiz types</span>
     </div>
-  </div>
+  </a>
 
-  <!-- Section 3 -->
-  <div class="sec-block">
-    <div class="sec-header">
-      <div class="sec-num">Section 3</div>
-      <div class="sec-title">Academic discussion (3–4 speakers)</div>
+  <a href="../../sections/listening/sentence-completion/" class="sec-block">
+    <div class="sec-tags">
+      <span class="tag tag-new">New</span>
+      <span class="tag tag-type">Section 2</span>
+      <span class="tag tag-type">Sentence Completion</span>
     </div>
-    <div class="sec-desc">A conversation between students or a student and tutor in an academic context. Common question types: multiple choice, matching, sentence completion.</div>
-    <div class="sec-cards">
-      <div class="card soon">
-        <div class="card-tags"><span class="tag tag-type">Coming Soon</span></div>
-        <div class="card-title">Section 3 lessons coming soon</div>
-        <div class="card-desc">Academic discussion practice is being developed.</div>
-        <div class="card-meta"><span>🔜 Coming soon</span></div>
-      </div>
+    <div class="sec-title">Sentence Completion — Marathon Tips</div>
+    <div class="sec-desc">Complete sentences about marathon viewing tips. Listen to the audio and fill in the missing words (7 questions).</div>
+    <div class="sec-meta">
+      <span>🔊 Audio included</span>
+      <span>📝 26 vocabulary words</span>
+      <span>📋 7-question practice</span>
     </div>
-  </div>
-
-  <!-- Section 4 -->
-  <div class="sec-block">
-    <div class="sec-header">
-      <div class="sec-num">Section 4</div>
-      <div class="sec-title">Academic lecture (1 speaker)</div>
-    </div>
-    <div class="sec-desc">A monologue on an academic subject — the most challenging section. Common question types: note/summary/diagram completion, sentence completion.</div>
-    <div class="sec-cards">
-      <div class="card soon">
-        <div class="card-tags"><span class="tag tag-type">Coming Soon</span></div>
-        <div class="card-title">Section 4 lessons coming soon</div>
-        <div class="card-desc">Academic lecture practice is being developed.</div>
-        <div class="card-meta"><span>🔜 Coming soon</span></div>
-      </div>
-    </div>
-  </div>
+  </a>
 
 </div>
 
