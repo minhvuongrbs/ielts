@@ -169,11 +169,9 @@
       <button class="preset-btn" data-n="all" onclick="selCount(this)">All</button>
     </div>
 
-    <div class="setup-label">Filter by skill</div>
-    <div class="filter-row">
-      <button class="filter-btn selected" data-f="all" onclick="selFilter(this)">All Lessons</button>
-      <button class="filter-btn" data-f="reading" onclick="selFilter(this)">📖 Reading</button>
-      <button class="filter-btn" data-f="listening" onclick="selFilter(this)">🎧 Listening</button>
+    <div class="setup-label">Filter by category</div>
+    <div class="filter-row" id="filter-row">
+      <button class="filter-btn selected" data-f="all" onclick="selFilter(this)">All</button>
     </div>
 
     <button class="start-btn" id="start-btn" onclick="startQuiz()">Loading vocab...</button>
@@ -264,9 +262,10 @@ async function loadData(){
   }));
   results.forEach(l=>{
     if(!l.data)return;
-    (l.data.vocabulary||[]).forEach(v=>{allVocab.push({...v,_lesson:l.name,_skill:l.skill});});
-    (l.data.fillBlanks||[]).forEach(f=>{allFB.push({...f,_lesson:l.name,_skill:l.skill});});
+    (l.data.vocabulary||[]).forEach(v=>{const c=v.cat&&v.cat.length>1?v.cat:l.name.toLowerCase();allVocab.push({...v,cat:c,_lesson:l.name,_skill:l.skill});});
+    (l.data.fillBlanks||[]).forEach(f=>{allFB.push({...f,cat:f.cat||l.name.toLowerCase(),_lesson:l.name,_skill:l.skill});});
   });
+  buildFilters();
   document.getElementById('start-btn').textContent=`Start Quiz (${allVocab.length} words available)`;
   document.getElementById('start-btn').disabled=false;
   // prefetch IPA in background
@@ -275,7 +274,14 @@ async function loadData(){
 loadData();
 
 /* ======================== SETUP STATE ======================== */
-let cfg={type:'mc',count:10,filter:'all'};
+let cfg={type:'mc',count:10,cats:new Set()};
+const CAT_ICONS={
+  lifestyle:'🧘',mindset:'🧠',research:'🔬',brain:'🧩',learning:'📚',social:'👥',
+  direction:'🧭',location:'📍',movement:'🚶',place:'🏛️',
+  delivery:'🚚',furniture:'🪑',office:'🏢',payment:'💳',
+  clothing:'👕',event:'🏃',preparation:'📋',safety:'⛑️',
+  happiness:'😊','video games':'🎮','map labeling':'🗺️','form completion':'📋','sentence completion':'✏️'
+};
 
 function selType(el){
   document.querySelectorAll('.type-card').forEach(c=>c.classList.remove('selected'));
@@ -288,9 +294,29 @@ function selCount(el){
   updateStartBtn();
 }
 function selFilter(el){
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('selected'));
-  el.classList.add('selected');cfg.filter=el.dataset.f;
+  const f=el.dataset.f;
+  if(f==='all'){
+    cfg.cats.clear();
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('selected'));
+    el.classList.add('selected');
+  }else{
+    document.querySelector('.filter-btn[data-f="all"]').classList.remove('selected');
+    if(cfg.cats.has(f)){cfg.cats.delete(f);el.classList.remove('selected');}
+    else{cfg.cats.add(f);el.classList.add('selected');}
+    if(cfg.cats.size===0)document.querySelector('.filter-btn[data-f="all"]').classList.add('selected');
+  }
   updateStartBtn();
+}
+function buildFilters(){
+  const cats=[...new Set(allVocab.map(v=>v.cat))].sort();
+  const row=document.getElementById('filter-row');
+  cats.forEach(c=>{
+    const b=document.createElement('button');
+    b.className='filter-btn';b.dataset.f=c;
+    b.textContent=`${CAT_ICONS[c]||''} ${c.charAt(0).toUpperCase()+c.slice(1)}`;
+    b.onclick=function(){selFilter(this);};
+    row.appendChild(b);
+  });
 }
 function updateStartBtn(){
   const pool=getPool();
@@ -299,7 +325,7 @@ function updateStartBtn(){
 }
 function getPool(){
   const src=cfg.type==='fb'?allFB:allVocab;
-  return cfg.filter==='all'?src:src.filter(v=>v._skill===cfg.filter);
+  return cfg.cats.size===0?src:src.filter(v=>cfg.cats.has(v.cat));
 }
 
 /* ======================== QUIZ STATE ======================== */
