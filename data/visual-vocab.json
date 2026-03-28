@@ -1,0 +1,138 @@
+[
+  {
+    "term": "turn left",
+    "example": "Turn left at the junction.",
+    "svg": "turn-left",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "rẽ trái"
+  },
+  {
+    "term": "turn right",
+    "example": "Turn right after the bank.",
+    "svg": "turn-right",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "rẽ phải"
+  },
+  {
+    "term": "go straight on",
+    "example": "Go straight on past the park.",
+    "svg": "go-straight",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "đi thẳng"
+  },
+  {
+    "term": "go past",
+    "example": "Go past the library on your left.",
+    "svg": "go-past",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "đi qua"
+  },
+  {
+    "term": "next to",
+    "example": "The café is next to the bookshop.",
+    "svg": "next-to",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "bên cạnh"
+  },
+  {
+    "term": "opposite",
+    "example": "The bank is opposite the post office.",
+    "svg": "opposite",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "đối diện"
+  },
+  {
+    "term": "roundabout",
+    "example": "Take the second exit at the roundabout.",
+    "svg": "roundabout",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "vòng xuyến"
+  },
+  {
+    "term": "take the second left",
+    "example": "Take the second left after the bridge.",
+    "svg": "second-left",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "rẽ trái ở ngã rẽ thứ hai"
+  },
+  {
+    "term": "take the second right",
+    "example": "Take the second right and it's on your left.",
+    "svg": "second-right",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "rẽ phải ở ngã rẽ thứ hai"
+  },
+  {
+    "term": "traffic lights",
+    "example": "Turn right at the traffic lights.",
+    "svg": "traffic-lights",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "đèn giao thông"
+  },
+  {
+    "term": "between",
+    "example": "The shop is between the bank and the café.",
+    "svg": "between",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "ở giữa"
+  },
+  {
+    "term": "in front of",
+    "example": "There's a car park in front of the building.",
+    "svg": "in-front-of",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "phía trước"
+  },
+  {
+    "term": "behind",
+    "example": "The garden is behind the main building.",
+    "svg": "behind",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "phía sau"
+  },
+  {
+    "term": "at the corner of",
+    "example": "The pharmacy is at the corner of High Street.",
+    "svg": "corner",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "ở góc của"
+  },
+  {
+    "term": "cross the road",
+    "example": "Cross the road and it's on your right.",
+    "svg": "cross-road",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "băng qua đường"
+  },
+  {
+    "term": "crossroads",
+    "example": "Turn right at the crossroads.",
+    "svg": "crossroads",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "ngã tư"
+  },
+  {
+    "term": "zebra crossing",
+    "example": "The shop is just past the zebra crossing.",
+    "svg": "zebra-crossing",
+    "skill": "listening",
+    "section": "map-labeling",
+    "vietnamese": "vạch sang đường"
+  }
+]

@@ -17,6 +17,7 @@
 const CAT_LABELS={mindset:'🧠 Mindset',research:'🔬 Research',lifestyle:'🏠 Lifestyle'};
 const IELTS_OPTIONS=['A','B','C','D','E','F','G','H','I','J','K'];
 </script>
+<script src="../../../shared/data.js"></script>
 <script src="../../../shared/lesson.js"></script>
 <script src="../../../shared/reading.js"></script>
 <script>
@@ -62,7 +63,7 @@ renderReadingPage({
       </ul>
     </div>`
 });
-fetch('./data.json?v=3').then(r=>r.json()).then(initReading);
+DataLayer.getLesson('reading','happiness').then(initReading);
 </script>
 </body>
 </html>

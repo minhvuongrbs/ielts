@@ -1,0 +1,2192 @@
+[
+  {
+    "word": "traits",
+    "pos": "noun",
+    "vietnamese": "đặc điểm, tính cách",
+    "definition": "Distinguishing qualities or characteristics.",
+    "example": "\"…certain common traits among happy people.\"",
+    "category": "mindset",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "whereas",
+    "pos": "conjunction",
+    "vietnamese": "trong khi, ngược lại",
+    "definition": "Used to contrast two different facts or situations.",
+    "example": "\"For one person it may mean X, whereas for another…\"",
+    "category": "lifestyle",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "handle",
+    "pos": "verb",
+    "vietnamese": "xử lý, đối phó",
+    "definition": "To deal with or manage a situation.",
+    "example": "\"…the ability to handle whatever life throws at you.\"",
+    "category": "mindset",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "necessarily",
+    "pos": "adverb",
+    "vietnamese": "nhất thiết, chắc chắn",
+    "definition": "As a necessary result; inevitably.",
+    "example": "\"…it isn't necessarily what you might have thought.\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "physically attractive",
+    "pos": "adjective",
+    "vietnamese": "hấp dẫn về ngoại hình",
+    "definition": "Good-looking, having appealing appearance.",
+    "example": "\"…are physically attractive, have great jobs…\"",
+    "category": "lifestyle",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "gadgets",
+    "pos": "noun",
+    "vietnamese": "thiết bị, đồ công nghệ",
+    "definition": "Small electronic devices or tools.",
+    "example": "\"…own the latest gadgets.\"",
+    "category": "lifestyle",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "variables",
+    "pos": "noun",
+    "vietnamese": "biến số, yếu tố",
+    "definition": "Factors that can change and influence outcomes.",
+    "example": "\"…a number of variables that make a far greater contribution…\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "superficial",
+    "pos": "adjective",
+    "vietnamese": "hời hợt, bề ngoài",
+    "definition": "On the surface; not deep or meaningful.",
+    "example": "\"…external and more superficial factors.\"",
+    "category": "lifestyle",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "contribution",
+    "pos": "noun",
+    "vietnamese": "đóng góp, phần đóng góp",
+    "definition": "The part played in bringing about a result.",
+    "example": "\"…make a far greater contribution to happiness…\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "poverty line",
+    "pos": "noun",
+    "vietnamese": "ngưỡng nghèo, mức nghèo",
+    "definition": "The minimum income considered adequate for living.",
+    "example": "\"…those who live below the poverty line.\"",
+    "category": "lifestyle",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "determining",
+    "pos": "verb",
+    "vietnamese": "quyết định, xác định",
+    "definition": "Causing something to occur in a particular way.",
+    "example": "\"…more important in determining happiness.\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "unemployed",
+    "pos": "adjective",
+    "vietnamese": "thất nghiệp",
+    "definition": "Without a paid job.",
+    "example": "\"…below the poverty line and/or who are unemployed.\"",
+    "category": "lifestyle",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "distinguishes",
+    "pos": "verb",
+    "vietnamese": "phân biệt, làm nổi bật",
+    "definition": "To make noticeably different from others.",
+    "example": "\"What distinguishes happy people is…\"",
+    "category": "mindset",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "interpret",
+    "pos": "verb",
+    "vietnamese": "diễn giải, hiểu theo cách",
+    "definition": "To understand or explain the meaning of something.",
+    "example": "\"They interpret the world in a different way.\"",
+    "category": "mindset",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "attitude",
+    "pos": "noun",
+    "vietnamese": "thái độ",
+    "definition": "A way of thinking or feeling about something.",
+    "example": "\"…they have a different attitude.\"",
+    "category": "mindset",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "implications",
+    "pos": "noun",
+    "vietnamese": "hệ quả, tác động ngầm",
+    "definition": "Possible effects or consequences.",
+    "example": "\"The implications are greater than you might think.\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "set-point",
+    "pos": "noun",
+    "vietnamese": "mức cơ bản, điểm thiết lập",
+    "definition": "A baseline level that remains relatively constant.",
+    "example": "\"…born with a certain set-point of happiness.\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "genes",
+    "pos": "noun",
+    "vietnamese": "gen (di truyền)",
+    "definition": "Units of heredity passed from parents to offspring.",
+    "example": "\"…determined by our genes.\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "dramatic",
+    "pos": "adjective",
+    "vietnamese": "lớn lao, kịch tính",
+    "definition": "Sudden, striking, and significant.",
+    "example": "\"…if something dramatic happens…\"",
+    "category": "lifestyle",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "circumstances",
+    "pos": "noun",
+    "vietnamese": "hoàn cảnh, tình huống",
+    "definition": "The conditions surrounding a situation.",
+    "example": "\"…the circumstances we live in…\"",
+    "category": "lifestyle",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "mansions",
+    "pos": "noun",
+    "vietnamese": "biệt thự, dinh thự",
+    "definition": "Large, impressive houses.",
+    "example": "\"…we can't all live in mansions.\"",
+    "category": "lifestyle",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "equation",
+    "pos": "noun",
+    "vietnamese": "phương trình, công thức",
+    "definition": "A formula showing relationships between factors.",
+    "example": "\"…the most important factor in the equation.\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "significant",
+    "pos": "adjective",
+    "vietnamese": "đáng kể, quan trọng",
+    "definition": "Large enough to have an effect or be noticed.",
+    "example": "\"…quite a significant impact.\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "grateful",
+    "pos": "adjective",
+    "vietnamese": "biết ơn",
+    "definition": "Feeling or showing thanks.",
+    "example": "\"They are grateful, forgiving…\"",
+    "category": "mindset",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "forgiving",
+    "pos": "adjective",
+    "vietnamese": "biết tha thứ, vị tha",
+    "definition": "Ready to forgive; not holding grudges.",
+    "example": "\"They are grateful, forgiving…\"",
+    "category": "mindset",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "voluntary",
+    "pos": "adjective",
+    "vietnamese": "tự nguyện, tự do lựa chọn",
+    "definition": "Done by choice; not forced.",
+    "example": "\"…you have voluntary control over…\"",
+    "category": "mindset",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "differentiates",
+    "pos": "verb",
+    "vietnamese": "tạo sự khác biệt",
+    "definition": "To make or become different from something else.",
+    "example": "\"…differentiates the happy from the less happy.\"",
+    "category": "mindset",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "proportion",
+    "pos": "noun",
+    "vietnamese": "tỷ lệ, phần",
+    "definition": "A part or share of a whole.",
+    "example": "\"…a large proportion of your happiness.\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "word": "legitimate",
+    "pos": "adjective",
+    "vietnamese": "chính đáng, hợp lý",
+    "definition": "Reasonable and acceptable; having a valid basis.",
+    "example": "\"…there are still legitimate concerns…\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "psychological",
+    "pos": "adjective",
+    "vietnamese": "thuộc tâm lý",
+    "definition": "Relating to the mind and mental processes.",
+    "example": "\"…the psychological effects of certain violent games…\"",
+    "category": "brain",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "increasingly",
+    "pos": "adverb",
+    "vietnamese": "ngày càng",
+    "definition": "More and more; to a greater degree over time.",
+    "example": "\"…scientists are increasingly examining…\"",
+    "category": "learning",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "potential",
+    "pos": "adjective",
+    "vietnamese": "tiềm năng, có thể xảy ra",
+    "definition": "Having the capacity to develop or happen in the future.",
+    "example": "\"…examining the potential benefits of video games.\"",
+    "category": "learning",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "boost",
+    "pos": "verb",
+    "vietnamese": "tăng cường, thúc đẩy",
+    "definition": "To increase or improve something.",
+    "example": "\"…games can boost mental function…\"",
+    "category": "learning",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "ideal",
+    "pos": "adjective",
+    "vietnamese": "lý tưởng, hoàn hảo",
+    "definition": "Most suitable; perfect for a purpose.",
+    "example": "\"…makes them ideal tools for brain training.\"",
+    "category": "learning",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "persist",
+    "pos": "verb",
+    "vietnamese": "kiên trì, bền bỉ",
+    "definition": "To continue doing something despite difficulty.",
+    "example": "\"…encourage players to persist at solving challenging problems.\"",
+    "category": "learning",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "adaptively",
+    "pos": "adverb",
+    "vietnamese": "một cách thích ứng",
+    "definition": "In a way that adjusts to changing conditions.",
+    "example": "\"…they're adaptively hard.\"",
+    "category": "learning",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "demanding",
+    "pos": "adjective",
+    "vietnamese": "đòi hỏi cao, khó khăn",
+    "definition": "Requiring much skill, effort, or attention.",
+    "example": "\"…they move up to more demanding levels of play.\"",
+    "category": "learning",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "stunningly",
+    "pos": "adverb",
+    "vietnamese": "cực kỳ, đáng kinh ngạc",
+    "definition": "Extremely; in a way that causes great surprise.",
+    "example": "\"This adaptive challenge is 'stunningly powerful' for learning.\"",
+    "category": "learning",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "visual acuity",
+    "pos": "noun",
+    "vietnamese": "thị lực, độ sắc nét thị giác",
+    "definition": "Sharpness of vision; ability to see fine details.",
+    "example": "\"…to boost visual acuity, spatial perception…\"",
+    "category": "brain",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "spatial perception",
+    "pos": "noun",
+    "vietnamese": "nhận thức không gian",
+    "definition": "The ability to understand the position and size of objects.",
+    "example": "\"…boost visual acuity, spatial perception…\"",
+    "category": "brain",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "cognitive",
+    "pos": "adjective",
+    "vietnamese": "thuộc nhận thức",
+    "definition": "Relating to mental processes like thinking and reasoning.",
+    "example": "\"…improve other cognitive skills…\"",
+    "category": "brain",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "malleable",
+    "pos": "adjective",
+    "vietnamese": "dẻo dai, dễ uốn nắn",
+    "definition": "Capable of being shaped or changed.",
+    "example": "\"…how malleable the human brain truly is.\"",
+    "category": "brain",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "emeritus",
+    "pos": "adjective",
+    "vietnamese": "danh dự (sau khi nghỉ hưu)",
+    "definition": "Retired but retaining a title as an honour.",
+    "example": "\"…professor emeritus at the School of Medicine…\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "efficient",
+    "pos": "adjective",
+    "vietnamese": "hiệu quả, năng suất",
+    "definition": "Achieving maximum results with minimum effort.",
+    "example": "\"…their brains became more efficient.\"",
+    "category": "learning",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "cortex",
+    "pos": "noun",
+    "vietnamese": "vỏ não",
+    "definition": "The outer layer of the brain responsible for complex thinking.",
+    "example": "\"…parts of the cortex…actually got thicker.\"",
+    "category": "brain",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "integration",
+    "pos": "noun",
+    "vietnamese": "sự tích hợp, kết hợp",
+    "definition": "The process of combining things into a unified whole.",
+    "example": "\"…planning, and integration of sensory data.\"",
+    "category": "brain",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "administered",
+    "pos": "verb",
+    "vietnamese": "tổ chức, thực hiện (bài kiểm tra)",
+    "definition": "To organize and carry out (a test or procedure).",
+    "example": "\"The tests were administered after eight weeks…\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "multitasking",
+    "pos": "noun",
+    "vietnamese": "đa nhiệm",
+    "definition": "The ability to do several things at the same time.",
+    "example": "\"…tests of memory, reasoning, and multitasking.\"",
+    "category": "learning",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "prosocial",
+    "pos": "adjective",
+    "vietnamese": "vì xã hội, có lợi cho cộng đồng",
+    "definition": "Relating to behavior that benefits other people.",
+    "example": "\"…to encourage prosocial behaviors…\"",
+    "category": "social",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "antisocial",
+    "pos": "adjective",
+    "vietnamese": "chống đối xã hội, phản xã hội",
+    "definition": "Harmful or hostile to other people or society.",
+    "example": "\"…the opposite of 'antisocial' ones.\"",
+    "category": "social",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "subsequently",
+    "pos": "adverb",
+    "vietnamese": "sau đó, tiếp theo",
+    "definition": "After something else; following in time.",
+    "example": "\"…were subsequently kinder to a fellow research subject…\"",
+    "category": "research",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "immense",
+    "pos": "adjective",
+    "vietnamese": "to lớn, khổng lồ",
+    "definition": "Extremely large or great.",
+    "example": "\"…they have immense potential to teach children…\"",
+    "category": "social",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "double-edged sword",
+    "pos": "idiom",
+    "vietnamese": "con dao hai lưỡi",
+    "definition": "Something that has both advantages and disadvantages.",
+    "example": "\"…this is a double-edged sword.\"",
+    "category": "social",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "virtuous",
+    "pos": "adjective",
+    "vietnamese": "đạo đức, có phẩm hạnh",
+    "definition": "Having high moral standards; morally good.",
+    "example": "\"…how to wrap virtuous characteristics into an engaging package.\"",
+    "category": "social",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "word": "distinctive",
+    "pos": "adjective",
+    "vietnamese": "nổi bật, đặc trưng",
+    "definition": "having a quality or characteristic that makes something different from others",
+    "example": "The distinctive feature of this park is undoubtedly the spectacular Pinnacles.",
+    "category": "A",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "limestone",
+    "pos": "noun",
+    "vietnamese": "đá vôi",
+    "definition": "a hard white or grey rock used as a building material and in making cement",
+    "example": "Thousands of huge limestone pillars rise from yellow sands.",
+    "category": "A",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "resemble",
+    "pos": "verb",
+    "vietnamese": "trông giống, có vẻ giống",
+    "definition": "to look like or be similar to someone or something",
+    "example": "The limestone pillars rise to resemble the science fiction movie E.T.",
+    "category": "A",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "array",
+    "pos": "noun",
+    "vietnamese": "loạt, một dải",
+    "definition": "an impressive display or range of a particular type of thing",
+    "example": "The park has an array of attractions, including a koala boardwalk.",
+    "category": "B",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "abundance",
+    "pos": "noun",
+    "vietnamese": "số lượng lớn, sự phong phú",
+    "definition": "a very large quantity of something",
+    "example": "The park has an abundance of Western Grey Kangaroos.",
+    "category": "B",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "breathtaking",
+    "pos": "adjective",
+    "vietnamese": "ngoạn mục, làm choáng ngợp",
+    "definition": "extremely impressive, surprising, or exciting",
+    "example": "The Echidna Trail boasts breathtaking panoramas across the Swan and Avon valleys.",
+    "category": "C",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "panorama",
+    "pos": "noun",
+    "vietnamese": "cảnh toàn cảnh, cảnh rộng lớn",
+    "definition": "an unobstructed and wide view of an extensive area in all directions",
+    "example": "The trail boasts breathtaking panoramas across the valleys and the whole breadth of the park.",
+    "category": "C",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "conservation",
+    "pos": "noun",
+    "vietnamese": "sự bảo tồn",
+    "definition": "the protection of plants, animals, and natural areas",
+    "example": "John Forrest is one of Australia's oldest conservation areas.",
+    "category": "D",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "alignment",
+    "pos": "noun",
+    "vietnamese": "hướng thẳng, sự sắp thẳng hàng",
+    "definition": "a position of agreement or alliance, or a route that something follows",
+    "example": "The Railway Heritage Trail follows the alignment of the old railway line to York.",
+    "category": "D",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "vista",
+    "pos": "noun",
+    "vietnamese": "tầm nhìn đẹp, cảnh quan",
+    "definition": "a pleasing view, especially one seen through a long, narrow opening",
+    "example": "There are many magnificent vistas of the Swan coastal plain.",
+    "category": "D",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "interpretive",
+    "pos": "adjective",
+    "vietnamese": "mang tính diễn giải, giải thích",
+    "definition": "providing information to help people understand something",
+    "example": "There are environmental interpretive activity programs during school holidays.",
+    "category": "E",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "panoramic",
+    "pos": "adjective",
+    "vietnamese": "toàn cảnh, bao quát",
+    "definition": "with a wide view over a large area",
+    "example": "The Golden View Lookout provides panoramic views over the lake and valley.",
+    "category": "E",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "cascade",
+    "pos": "verb",
+    "vietnamese": "chảy xuống, đổ xuống như thác",
+    "definition": "to flow or fall in large quantities",
+    "example": "In winter, the white waters of the Serpentine River cascade over the falls.",
+    "category": "F",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "swirling",
+    "pos": "adjective",
+    "vietnamese": "xoáy tròn, cuộn tròn",
+    "definition": "moving in twisting or spinning patterns",
+    "example": "The white waters cascade into a swirling pool below.",
+    "category": "F",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "focal point",
+    "pos": "noun phrase",
+    "vietnamese": "điểm thu hút, tâm điểm",
+    "definition": "the centre of interest or activity; the most important part",
+    "example": "The falls have been one of the focal points of the area since the early European settlers.",
+    "category": "F",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "accessible",
+    "pos": "adjective",
+    "vietnamese": "có thể tiếp cận được, dễ đến",
+    "definition": "able to be reached or entered, especially by people with disabilities",
+    "example": "The 500 m walk trail along the Serpentine River is accessible by wheelchair.",
+    "category": "F",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "diverse",
+    "pos": "adjective",
+    "vietnamese": "đa dạng, phong phú",
+    "definition": "showing a great deal of variety; very different from each other",
+    "example": "Penguin Island is home to a diverse array of wildlife.",
+    "category": "G",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "colony",
+    "pos": "noun",
+    "vietnamese": "đàn, quần thể (động vật)",
+    "definition": "a group of animals or plants of the same type living together",
+    "example": "The island boasts the largest colony of penguins in Western Australia.",
+    "category": "G",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "sanctuary",
+    "pos": "noun",
+    "vietnamese": "khu bảo tồn, nơi trú ẩn an toàn",
+    "definition": "an area where animals are protected and kept safe",
+    "example": "Fishing is allowed outside sanctuary zones only.",
+    "category": "G",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "designated",
+    "pos": "adjective",
+    "vietnamese": "được chỉ định, quy định",
+    "definition": "officially chosen for a particular purpose",
+    "example": "Diving may be enjoyed in designated areas.",
+    "category": "G",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "word": "apiary",
+    "pos": "noun",
+    "vietnamese": "trại nuôi ong",
+    "definition": "A place where bees are kept; a collection of beehives.",
+    "example": "\"Bees Neez Apiaries\" — the name of the business.",
+    "category": "bee",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "extraction",
+    "pos": "noun",
+    "vietnamese": "sự chiết xuất, khai thác",
+    "definition": "The process of removing or obtaining something from a source.",
+    "example": "\"…tour the extraction plant.\"",
+    "category": "bee",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "honeycomb",
+    "pos": "noun",
+    "vietnamese": "tổ ong, sáp ong chứa mật",
+    "definition": "A structure of hexagonal wax cells built by bees to store honey.",
+    "example": "\"honeycomb — beeswax candles.\"",
+    "category": "bee",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "beeswax",
+    "pos": "noun",
+    "vietnamese": "sáp ong",
+    "definition": "A natural wax produced by honey bees, used in candles and cosmetics.",
+    "example": "\"honeycomb — beeswax candles.\"",
+    "category": "bee",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "pollen",
+    "pos": "noun",
+    "vietnamese": "phấn hoa",
+    "definition": "A fine powder produced by flowers, collected by bees as food.",
+    "example": "\"pollen — Royal Jelly Propolis.\"",
+    "category": "bee",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "royal jelly",
+    "pos": "noun",
+    "vietnamese": "sữa ong chúa",
+    "definition": "A nutritious substance produced by bees, fed to larvae and the queen bee.",
+    "example": "\"pollen — Royal Jelly Propolis.\"",
+    "category": "bee",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "propolis",
+    "pos": "noun",
+    "vietnamese": "keo ong",
+    "definition": "A resinous substance collected by bees from tree buds, used to seal gaps in the hive.",
+    "example": "\"pollen — Royal Jelly Propolis.\"",
+    "category": "bee",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "creamed honey",
+    "pos": "noun",
+    "vietnamese": "mật ong dạng kem",
+    "definition": "Honey that has been processed to control crystallization, giving it a smooth, spreadable texture.",
+    "example": "\"creamed honey — Jarrah honey.\"",
+    "category": "bee",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "appointment",
+    "pos": "noun",
+    "vietnamese": "cuộc hẹn, lịch hẹn",
+    "definition": "An arrangement to meet someone at a particular time and place.",
+    "example": "\"Other times by appointment.\"",
+    "category": "business",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "gift shop",
+    "pos": "noun",
+    "vietnamese": "cửa hàng quà tặng",
+    "definition": "A shop selling items suitable as gifts, often at tourist attractions.",
+    "example": "\"Gift shop open every Sunday 10am–4pm.\"",
+    "category": "business",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "booking",
+    "pos": "noun",
+    "vietnamese": "sự đặt chỗ, đặt trước",
+    "definition": "An arrangement to have something (such as a seat or room) kept for you.",
+    "example": "\"Group bookings welcome.\"",
+    "category": "business",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "sample",
+    "pos": "verb",
+    "vietnamese": "nếm thử, dùng thử",
+    "definition": "To try a small amount of something to see what it is like.",
+    "example": "\"Sample different types of honey.\"",
+    "category": "business",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "tour",
+    "pos": "verb",
+    "vietnamese": "tham quan",
+    "definition": "To make a journey visiting several places of interest.",
+    "example": "\"…tour the extraction plant.\"",
+    "category": "business",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "plant",
+    "pos": "noun",
+    "vietnamese": "nhà máy, xưởng sản xuất",
+    "definition": "A factory or place where an industrial process takes place.",
+    "example": "\"…tour the extraction plant.\"",
+    "category": "business",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "welcome",
+    "pos": "adjective",
+    "vietnamese": "được chào đón, được hoan nghênh",
+    "definition": "Gladly received or accepted.",
+    "example": "\"Group bookings welcome.\"",
+    "category": "business",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "word": "volunteer",
+    "pos": "verb",
+    "vietnamese": "tình nguyện",
+    "definition": "To freely offer to do something without being paid or forced.",
+    "example": "\"Make a real difference by volunteering in conservation and social community development projects.\"",
+    "category": "volunteer",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "conservation",
+    "pos": "noun",
+    "vietnamese": "bảo tồn",
+    "definition": "The protection and preservation of the natural environment and wildlife.",
+    "example": "\"…volunteering in conservation and social community development projects.\"",
+    "category": "environment",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "regeneration",
+    "pos": "noun",
+    "vietnamese": "tái sinh, phục hồi",
+    "definition": "The process of regrowing or restoring something that has been damaged or lost.",
+    "example": "\"rainforest regeneration\"",
+    "category": "environment",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "participate",
+    "pos": "verb",
+    "vietnamese": "tham gia, tham dự",
+    "definition": "To take part in an activity or event.",
+    "example": "\"…participate in a unique combination of volunteer projects plus adventure travel.\"",
+    "category": "program",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "significant",
+    "pos": "adjective",
+    "vietnamese": "đáng kể, quan trọng",
+    "definition": "Important or large enough to be noticed or to have an effect.",
+    "example": "\"You could make a significant difference while having the ADVENTURE OF A LIFETIME!\"",
+    "category": "program",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "community",
+    "pos": "noun",
+    "vietnamese": "cộng đồng",
+    "definition": "A group of people living in the same area or sharing common interests or goals.",
+    "example": "\"…social community development projects.\"",
+    "category": "volunteer",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "highlight",
+    "pos": "noun",
+    "vietnamese": "điểm nổi bật, điểm ấn tượng nhất",
+    "definition": "The most exciting, interesting, or memorable part of something.",
+    "example": "\"Highlights include: white water rafting, African wildlife safaris…\"",
+    "category": "adventure",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "safari",
+    "pos": "noun",
+    "vietnamese": "chuyến safari, chuyến xem thú hoang dã",
+    "definition": "An expedition to observe or hunt animals in their natural habitat, especially in Africa.",
+    "example": "\"African wildlife safaris\"",
+    "category": "adventure",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "snorkelling",
+    "pos": "noun",
+    "vietnamese": "lặn snorkel, bơi lặn có ống thở",
+    "definition": "Swimming on or near the surface of water using a mask and a short breathing tube.",
+    "example": "\"scuba/snorkelling on exotic reefs\"",
+    "category": "adventure",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "rafting",
+    "pos": "noun",
+    "vietnamese": "chèo thuyền vượt ghềnh",
+    "definition": "The activity of travelling down a fast-flowing river on a raft, usually for sport or recreation.",
+    "example": "\"white water rafting\"",
+    "category": "adventure",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "unique",
+    "pos": "adjective",
+    "vietnamese": "độc đáo, đặc biệt",
+    "definition": "Being the only one of its kind; unlike anything else.",
+    "example": "\"…a unique combination of volunteer projects plus adventure travel.\"",
+    "category": "program",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "combination",
+    "pos": "noun",
+    "vietnamese": "sự kết hợp",
+    "definition": "A mixture or joining of two or more things.",
+    "example": "\"…a unique combination of volunteer projects plus adventure travel.\"",
+    "category": "program",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "academic credit",
+    "pos": "noun phrase",
+    "vietnamese": "tín chỉ học thuật",
+    "definition": "Recognition from a university that counts toward a degree or qualification.",
+    "example": "\"Academic credit available on most campuses.\"",
+    "category": "program",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "courtyard",
+    "pos": "noun",
+    "vietnamese": "sân trong, sân tòa nhà",
+    "definition": "An open area of ground that is partly or completely enclosed by the walls of a building.",
+    "example": "\"…in the courtyard next to the Hollis Theatre.\"",
+    "category": "program",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "apply",
+    "pos": "verb",
+    "vietnamese": "đăng ký, nộp đơn",
+    "definition": "To formally request something, such as a position, membership, or program.",
+    "example": "\"Summer travel and volunteer projects—apply online at www.isvonline.org.\"",
+    "category": "program",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "word": "opposite",
+    "pos": "preposition",
+    "vietnamese": "đối diện",
+    "definition": "On the other side of something; directly facing.",
+    "example": "\"The café is opposite the library.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "between",
+    "pos": "preposition",
+    "vietnamese": "ở giữa (hai vật)",
+    "definition": "In the space separating two things.",
+    "example": "\"The shop is between the bank and the post office.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "next to",
+    "pos": "preposition",
+    "vietnamese": "bên cạnh",
+    "definition": "Immediately beside; right next to.",
+    "example": "\"The gym is next to the swimming pool.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "behind",
+    "pos": "preposition",
+    "vietnamese": "phía sau",
+    "definition": "At the back of something.",
+    "example": "\"The car park is behind the main building.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "in front of",
+    "pos": "preposition",
+    "vietnamese": "phía trước",
+    "definition": "Directly before or ahead of something.",
+    "example": "\"There is a fountain in front of the entrance.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "beside",
+    "pos": "preposition",
+    "vietnamese": "bên cạnh",
+    "definition": "At the side of; next to.",
+    "example": "\"The new café is beside the old bookshop.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "beyond",
+    "pos": "preposition",
+    "vietnamese": "ở phía bên kia",
+    "definition": "On the far side of; past.",
+    "example": "\"The sports field is beyond the car park.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "alongside",
+    "pos": "preposition",
+    "vietnamese": "dọc theo, bên cạnh",
+    "definition": "Close beside; along the side of.",
+    "example": "\"There's a path alongside the river.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "across from",
+    "pos": "preposition",
+    "vietnamese": "đối diện, bên kia",
+    "definition": "On the opposite side from.",
+    "example": "\"The pharmacy is across from the bus stop.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "near",
+    "pos": "preposition",
+    "vietnamese": "gần",
+    "definition": "Not far away from; close to.",
+    "example": "\"The toilets are near the main entrance.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "close to",
+    "pos": "preposition",
+    "vietnamese": "gần với",
+    "definition": "Not far from; a short distance away.",
+    "example": "\"The information desk is close to the entrance.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "at the corner of",
+    "pos": "phrase",
+    "vietnamese": "ở góc của",
+    "definition": "Where two streets or walls meet.",
+    "example": "\"The pharmacy is at the corner of High Street and Park Road.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "on the edge of",
+    "pos": "phrase",
+    "vietnamese": "ở rìa của",
+    "definition": "At the outer boundary of an area.",
+    "example": "\"The park is on the edge of the town centre.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "in the middle of",
+    "pos": "phrase",
+    "vietnamese": "ở giữa",
+    "definition": "At the central point of an area.",
+    "example": "\"There's a pond in the middle of the park.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "on the left-hand side",
+    "pos": "phrase",
+    "vietnamese": "ở phía bên trái",
+    "definition": "On the left when facing forward.",
+    "example": "\"The reception is on the left-hand side.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "on the right-hand side",
+    "pos": "phrase",
+    "vietnamese": "ở phía bên phải",
+    "definition": "On the right when facing forward.",
+    "example": "\"You'll see the café on the right-hand side.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "park",
+    "pos": "noun",
+    "vietnamese": "công viên",
+    "definition": "A public green area in a town for recreation.",
+    "example": "\"The park is on the left after the roundabout.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "river",
+    "pos": "noun",
+    "vietnamese": "sông",
+    "definition": "A large natural flow of water through a landscape.",
+    "example": "\"Cross the river using the footbridge.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "pond",
+    "pos": "noun",
+    "vietnamese": "ao, hồ nhỏ",
+    "definition": "A small body of still water, often in a park.",
+    "example": "\"There's a pond in the middle of the park.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "crossroads",
+    "pos": "noun",
+    "vietnamese": "ngã tư",
+    "definition": "A place where two roads cross each other.",
+    "example": "\"Turn right at the crossroads.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "zebra crossing",
+    "pos": "noun",
+    "vietnamese": "vạch sang đường",
+    "definition": "A marked area on a road for pedestrians to cross safely.",
+    "example": "\"The shop is just past the zebra crossing.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "surgery",
+    "pos": "noun",
+    "vietnamese": "phòng khám (Anh-Anh)",
+    "definition": "A doctor's office (British English — very common in IELTS listening).",
+    "example": "\"Go past the surgery on your left.\"",
+    "category": "place",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "turn left",
+    "pos": "verb phrase",
+    "vietnamese": "rẽ trái",
+    "definition": "Change direction to the left.",
+    "example": "\"Turn left at the traffic lights.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "turn right",
+    "pos": "verb phrase",
+    "vietnamese": "rẽ phải",
+    "definition": "Change direction to the right.",
+    "example": "\"Turn right after the supermarket.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "go straight",
+    "pos": "verb phrase",
+    "vietnamese": "đi thẳng",
+    "definition": "Continue forward without turning.",
+    "example": "\"Go straight until you reach the roundabout.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "go past",
+    "pos": "verb phrase",
+    "vietnamese": "đi qua (không dừng)",
+    "definition": "Move beyond something without stopping.",
+    "example": "\"Go past the library and it's on your right.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "pass through",
+    "pos": "verb phrase",
+    "vietnamese": "đi xuyên qua",
+    "definition": "Go through an area or entrance.",
+    "example": "\"Pass through the gate and into the courtyard.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "carry on",
+    "pos": "verb phrase",
+    "vietnamese": "tiếp tục đi",
+    "definition": "Continue in the same direction.",
+    "example": "\"Carry on along the corridor.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "head towards",
+    "pos": "verb phrase",
+    "vietnamese": "đi về hướng",
+    "definition": "Move in the direction of something.",
+    "example": "\"Head towards the main building.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "cross",
+    "pos": "verb",
+    "vietnamese": "băng qua",
+    "definition": "Go from one side to the other.",
+    "example": "\"Cross the bridge and turn left.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "walk along",
+    "pos": "verb phrase",
+    "vietnamese": "đi dọc theo",
+    "definition": "Move in a line beside or following something.",
+    "example": "\"Walk along the river until you see the café.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "take the first turning",
+    "pos": "verb phrase",
+    "vietnamese": "rẽ ở ngã rẽ đầu tiên",
+    "definition": "Turn at the first available road or path.",
+    "example": "\"Take the first turning on your left.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "continue",
+    "pos": "verb",
+    "vietnamese": "tiếp tục",
+    "definition": "Keep going in the same direction.",
+    "example": "\"Continue past the shops and you'll see it.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "take a sharp left",
+    "pos": "verb phrase",
+    "vietnamese": "rẽ gấp sang trái",
+    "definition": "Make a sudden, tight turn to the left.",
+    "example": "\"Take a sharp left after the traffic lights.\"",
+    "category": "movement",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "entrance",
+    "pos": "noun",
+    "vietnamese": "lối vào",
+    "definition": "A door, gate, or opening for going in.",
+    "example": "\"The main entrance is on Park Street.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "exit",
+    "pos": "noun",
+    "vietnamese": "lối ra",
+    "definition": "A way out of a building or area.",
+    "example": "\"The emergency exit is at the back.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "reception",
+    "pos": "noun",
+    "vietnamese": "quầy lễ tân",
+    "definition": "The area where visitors are greeted.",
+    "example": "\"Go to reception to collect your pass.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "corridor",
+    "pos": "noun",
+    "vietnamese": "hành lang",
+    "definition": "A long passageway inside a building.",
+    "example": "\"Walk down the corridor to the last door.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "junction",
+    "pos": "noun",
+    "vietnamese": "ngã tư, giao lộ",
+    "definition": "A point where two or more roads meet.",
+    "example": "\"Turn left at the junction.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "intersection",
+    "pos": "noun",
+    "vietnamese": "giao lộ",
+    "definition": "A place where two roads cross each other.",
+    "example": "\"The café is just past the intersection.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "roundabout",
+    "pos": "noun",
+    "vietnamese": "vòng xuyến, bùng binh",
+    "definition": "A circular junction where traffic flows in one direction.",
+    "example": "\"Take the second exit at the roundabout.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "pedestrian walkway",
+    "pos": "noun",
+    "vietnamese": "đường đi bộ",
+    "definition": "A path designed only for people walking.",
+    "example": "\"Follow the pedestrian walkway to the lake.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "car park",
+    "pos": "noun",
+    "vietnamese": "bãi đỗ xe",
+    "definition": "An area for parking cars.",
+    "example": "\"The car park is behind the shopping centre.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "footpath",
+    "pos": "noun",
+    "vietnamese": "đường mòn đi bộ",
+    "definition": "A narrow path for walking.",
+    "example": "\"Take the footpath through the park.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "main road",
+    "pos": "noun",
+    "vietnamese": "đường chính",
+    "definition": "The principal road through an area.",
+    "example": "\"The hotel faces the main road.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "bridge",
+    "pos": "noun",
+    "vietnamese": "cầu",
+    "definition": "A structure built over a river or road.",
+    "example": "\"Cross the bridge and turn right.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "traffic lights",
+    "pos": "noun",
+    "vietnamese": "đèn giao thông",
+    "definition": "Signals that control traffic flow at junctions.",
+    "example": "\"Turn right at the traffic lights.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "dead end",
+    "pos": "noun",
+    "vietnamese": "đường cụt",
+    "definition": "A road with no exit at one end.",
+    "example": "\"Don't go down there — it's a dead end.\"",
+    "category": "location",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "to the north",
+    "pos": "phrase",
+    "vietnamese": "về phía bắc",
+    "definition": "In the direction of north on a map.",
+    "example": "\"The lake is to the north of the campus.\"",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "to the south",
+    "pos": "phrase",
+    "vietnamese": "về phía nam",
+    "definition": "In the direction of south on a map.",
+    "example": "\"The car park is to the south.\"",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "to the east",
+    "pos": "phrase",
+    "vietnamese": "về phía đông",
+    "definition": "In the direction of east on a map.",
+    "example": "\"The sports hall is to the east of the library.\"",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "to the west",
+    "pos": "phrase",
+    "vietnamese": "về phía tây",
+    "definition": "In the direction of west on a map.",
+    "example": "\"The main gate is to the west.\"",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "straight ahead",
+    "pos": "phrase",
+    "vietnamese": "ngay phía trước",
+    "definition": "Directly in front of you.",
+    "example": "\"Go straight ahead and it's the third building.\"",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "just past",
+    "pos": "phrase",
+    "vietnamese": "ngay sau khi đi qua",
+    "definition": "A short distance after passing something.",
+    "example": "\"The office is just past the reception desk.\"",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "before you get to",
+    "pos": "phrase",
+    "vietnamese": "trước khi đến",
+    "definition": "Located at a point before reaching a landmark.",
+    "example": "\"The toilets are before you get to the stairs.\"",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "at the end of",
+    "pos": "phrase",
+    "vietnamese": "ở cuối",
+    "definition": "At the furthest point of a path or corridor.",
+    "example": "\"The lab is at the end of the corridor.\"",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "office chair",
+    "pos": "noun",
+    "vietnamese": "ghế văn phòng",
+    "definition": "A chair designed for use at a desk in an office.",
+    "example": "\"We need five new office chairs for the meeting room.\"",
+    "category": "furniture",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "glass desk",
+    "pos": "noun",
+    "vietnamese": "bàn kính",
+    "definition": "A desk with a glass surface or top.",
+    "example": "\"I'd like to order two glass desks for the reception area.\"",
+    "category": "furniture",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "leather sofa",
+    "pos": "noun",
+    "vietnamese": "sofa da",
+    "definition": "A sofa covered in leather material.",
+    "example": "\"The leather sofa comes in black, brown, and yellow.\"",
+    "category": "furniture",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "coffee table",
+    "pos": "noun",
+    "vietnamese": "bàn cà phê / bàn trà",
+    "definition": "A low table placed in front of a sofa for drinks and magazines.",
+    "example": "\"We'd also like a silver coffee table to go with the sofa.\"",
+    "category": "furniture",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "bookshelf",
+    "pos": "noun",
+    "vietnamese": "kệ sách",
+    "definition": "A piece of furniture with shelves for storing books.",
+    "example": "\"The bookshelf is available in oak and walnut finishes.\"",
+    "category": "furniture",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "filing cabinet",
+    "pos": "noun",
+    "vietnamese": "tủ hồ sơ",
+    "definition": "A tall metal cabinet with drawers for storing documents.",
+    "example": "\"Each office has a filing cabinet next to the desk.\"",
+    "category": "furniture",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "wardrobe",
+    "pos": "noun",
+    "vietnamese": "tủ quần áo",
+    "definition": "A tall cupboard for hanging clothes.",
+    "example": "\"The wardrobe has sliding doors and a built-in mirror.\"",
+    "category": "furniture",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "chest of drawers",
+    "pos": "noun",
+    "vietnamese": "tủ ngăn kéo",
+    "definition": "A piece of furniture with several drawers stacked on top of each other.",
+    "example": "\"There's a chest of drawers in the bedroom for your clothes.\"",
+    "category": "furniture",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "armchair",
+    "pos": "noun",
+    "vietnamese": "ghế bành",
+    "definition": "A comfortable chair with supports for your arms.",
+    "example": "\"We have two armchairs in the waiting area.\"",
+    "category": "furniture",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "dining table",
+    "pos": "noun",
+    "vietnamese": "bàn ăn",
+    "definition": "A table used for eating meals.",
+    "example": "\"The dining table seats six people comfortably.\"",
+    "category": "furniture",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "credit card",
+    "pos": "noun",
+    "vietnamese": "thẻ tín dụng",
+    "definition": "A card that allows you to buy things now and pay later.",
+    "example": "\"Would you like to pay by credit card or bank transfer?\"",
+    "category": "payment",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "debit card",
+    "pos": "noun",
+    "vietnamese": "thẻ ghi nợ",
+    "definition": "A card that takes money directly from your bank account.",
+    "example": "\"You can pay by cash, cheque, or debit card.\"",
+    "category": "payment",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "invoice",
+    "pos": "noun",
+    "vietnamese": "hóa đơn",
+    "definition": "A document listing items sold and the amount to pay.",
+    "example": "\"We'll send you an invoice after the delivery.\"",
+    "category": "payment",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "receipt",
+    "pos": "noun",
+    "vietnamese": "biên lai",
+    "definition": "A written record that you have paid for something.",
+    "example": "\"Please keep your receipt in case you need a refund.\"",
+    "category": "payment",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "refund",
+    "pos": "noun",
+    "vietnamese": "hoàn tiền",
+    "definition": "Money returned to you after cancelling or returning a purchase.",
+    "example": "\"If the product is faulty, you can get a full refund.\"",
+    "category": "payment",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "discount",
+    "pos": "noun",
+    "vietnamese": "giảm giá",
+    "definition": "A reduction in the normal price.",
+    "example": "\"There's a 10% discount if you order more than ten items.\"",
+    "category": "payment",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "deposit",
+    "pos": "noun",
+    "vietnamese": "tiền đặt cọc",
+    "definition": "A first payment as part of the total cost.",
+    "example": "\"We require a 20% deposit when you place the order.\"",
+    "category": "payment",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "delivery",
+    "pos": "noun",
+    "vietnamese": "giao hàng",
+    "definition": "The act of bringing goods to someone's address.",
+    "example": "\"Delivery is free for orders over £200.\"",
+    "category": "delivery",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "extra charge",
+    "pos": "noun",
+    "vietnamese": "phí phụ thu",
+    "definition": "An additional fee on top of the normal price.",
+    "example": "\"There's no extra charge for the second delivery option.\"",
+    "category": "delivery",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "tracking number",
+    "pos": "noun",
+    "vietnamese": "mã theo dõi đơn hàng",
+    "definition": "A code used to follow the progress of a delivery.",
+    "example": "\"You'll receive a tracking number by email once it's dispatched.\"",
+    "category": "delivery",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "dispatch",
+    "pos": "verb",
+    "vietnamese": "gửi hàng đi",
+    "definition": "To send goods to a customer.",
+    "example": "\"Your order will be dispatched within 48 hours.\"",
+    "category": "delivery",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "warehouse",
+    "pos": "noun",
+    "vietnamese": "nhà kho",
+    "definition": "A large building for storing goods before they are sold.",
+    "example": "\"The items are shipped directly from our warehouse.\"",
+    "category": "delivery",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "in stock",
+    "pos": "phrase",
+    "vietnamese": "còn hàng",
+    "definition": "Available to buy right now.",
+    "example": "\"The black office chairs are in stock and ready to ship.\"",
+    "category": "delivery",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "out of stock",
+    "pos": "phrase",
+    "vietnamese": "hết hàng",
+    "definition": "Not currently available.",
+    "example": "\"I'm afraid the blue version is out of stock at the moment.\"",
+    "category": "delivery",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "estimated delivery",
+    "pos": "noun",
+    "vietnamese": "ngày giao hàng dự kiến",
+    "definition": "The expected date when goods will arrive.",
+    "example": "\"The estimated delivery is three to five working days.\"",
+    "category": "delivery",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "order form",
+    "pos": "noun",
+    "vietnamese": "đơn đặt hàng",
+    "definition": "A document used to request goods or services.",
+    "example": "\"Could you fill in this order form with your details?\"",
+    "category": "office",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "product code",
+    "pos": "noun",
+    "vietnamese": "mã sản phẩm",
+    "definition": "A unique combination of letters and numbers identifying a product.",
+    "example": "\"The product code for the glass desk is TG 586.\"",
+    "category": "office",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "catalogue",
+    "pos": "noun",
+    "vietnamese": "danh mục sản phẩm",
+    "definition": "A booklet or list showing products available for sale.",
+    "example": "\"You can find all our furniture in the latest catalogue.\"",
+    "category": "office",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "quantity",
+    "pos": "noun",
+    "vietnamese": "số lượng",
+    "definition": "The number or amount of something.",
+    "example": "\"What quantity of chairs would you like to order?\"",
+    "category": "office",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "customer",
+    "pos": "noun",
+    "vietnamese": "khách hàng",
+    "definition": "A person who buys goods or services.",
+    "example": "\"We value every customer and aim to deliver on time.\"",
+    "category": "office",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "supplier",
+    "pos": "noun",
+    "vietnamese": "nhà cung cấp",
+    "definition": "A company that provides goods to shops or businesses.",
+    "example": "\"Our main supplier is based in the trading estate.\"",
+    "category": "office",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "trading estate",
+    "pos": "noun",
+    "vietnamese": "khu thương mại / khu công nghiệp",
+    "definition": "An area of land with commercial or industrial buildings.",
+    "example": "\"The warehouse is on the Kirby Trading Estate.\"",
+    "category": "office",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "enquiry",
+    "pos": "noun",
+    "vietnamese": "yêu cầu / câu hỏi",
+    "definition": "A request for information.",
+    "example": "\"I'm calling to make an enquiry about your office furniture.\"",
+    "category": "office",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "word": "spectator",
+    "pos": "noun",
+    "vietnamese": "khán giả, người xem",
+    "definition": "A person who watches an event, especially a sports event.",
+    "example": "\"Thousands of spectators lined the streets to cheer the runners.\"",
+    "category": "event",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "marathon",
+    "pos": "noun",
+    "vietnamese": "cuộc chạy marathon",
+    "definition": "A long-distance running race of 42.195 km (26.2 miles).",
+    "example": "\"The marathon starts at 9 am and the fastest runners finish in about 2 hours.\"",
+    "category": "event",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "runner",
+    "pos": "noun",
+    "vietnamese": "người chạy",
+    "definition": "A person who runs, especially in a race.",
+    "example": "\"Over 12,000 runners are taking part in this year's marathon.\"",
+    "category": "event",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "volunteer",
+    "pos": "noun",
+    "vietnamese": "tình nguyện viên",
+    "definition": "A person who offers to do something without being paid.",
+    "example": "\"Let the volunteers give drinks to runners — don't do it yourself.\"",
+    "category": "event",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "finish line",
+    "pos": "noun",
+    "vietnamese": "vạch đích",
+    "definition": "The line at the end of a race that runners cross to finish.",
+    "example": "\"Don't arrange to meet runners near the finish line — it's too crowded.\"",
+    "category": "event",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "route",
+    "pos": "noun",
+    "vietnamese": "tuyến đường, lộ trình",
+    "definition": "The roads or path that the race follows.",
+    "example": "\"Study the route map so you know where to stand.\"",
+    "category": "event",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "road closure",
+    "pos": "noun",
+    "vietnamese": "đóng đường",
+    "definition": "When roads are closed to cars during an event.",
+    "example": "\"There will be road closures in the city centre from 7 am.\"",
+    "category": "event",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "cheer",
+    "pos": "verb",
+    "vietnamese": "cổ vũ, hoan hô",
+    "definition": "To shout encouragement to someone in a race.",
+    "example": "\"The crowd cheered loudly as the runners passed.\"",
+    "category": "event",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "plan",
+    "pos": "verb",
+    "vietnamese": "lên kế hoạch",
+    "definition": "To decide in advance what you are going to do.",
+    "example": "\"To enjoy the day, make sure you plan it first.\"",
+    "category": "preparation",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "sensible",
+    "pos": "adjective",
+    "vietnamese": "hợp lý, thực tế",
+    "definition": "Showing good judgement; practical and reasonable.",
+    "example": "\"Wear sensible clothes on the day — you'll be standing for hours.\"",
+    "category": "preparation",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "forecast",
+    "pos": "noun",
+    "vietnamese": "dự báo",
+    "definition": "A prediction about future weather conditions.",
+    "example": "\"Check the weather forecast the night before the marathon.\"",
+    "category": "preparation",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "weather",
+    "pos": "noun",
+    "vietnamese": "thời tiết",
+    "definition": "The state of the atmosphere (rain, sun, wind, etc.).",
+    "example": "\"The weather can change quickly — bring a raincoat just in case.\"",
+    "category": "preparation",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "on foot",
+    "pos": "phrase",
+    "vietnamese": "đi bộ",
+    "definition": "Walking rather than using transport.",
+    "example": "\"Travel on foot within the city centre — roads will be closed.\"",
+    "category": "preparation",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "comfortable",
+    "pos": "adjective",
+    "vietnamese": "thoải mái",
+    "definition": "Providing physical ease and relaxation.",
+    "example": "\"Wear comfortable shoes — you'll be on your feet all day.\"",
+    "category": "preparation",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "put on",
+    "pos": "phrasal verb",
+    "vietnamese": "mặc vào",
+    "definition": "To place clothing on your body.",
+    "example": "\"Put on a warm jacket — it might be cold in the morning.\"",
+    "category": "clothing",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "wear",
+    "pos": "verb",
+    "vietnamese": "mặc, mang",
+    "definition": "To have clothing on your body.",
+    "example": "\"Wear sensible clothes and comfortable shoes.\"",
+    "category": "clothing",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "sensible clothes",
+    "pos": "noun phrase",
+    "vietnamese": "quần áo phù hợp / thực tế",
+    "definition": "Practical clothing appropriate for the situation (not fancy or uncomfortable).",
+    "example": "\"Don't wear high heels — wear sensible clothes for standing outside.\"",
+    "category": "clothing",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "raincoat",
+    "pos": "noun",
+    "vietnamese": "áo mưa",
+    "definition": "A waterproof coat worn to protect from rain.",
+    "example": "\"Bring a raincoat in case the weather changes.\"",
+    "category": "clothing",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "sunscreen",
+    "pos": "noun",
+    "vietnamese": "kem chống nắng",
+    "definition": "Cream applied to skin to protect from sunburn.",
+    "example": "\"If it's sunny, don't forget to put on sunscreen.\"",
+    "category": "clothing",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "layer",
+    "pos": "noun",
+    "vietnamese": "lớp (quần áo)",
+    "definition": "One piece of clothing worn on top of another.",
+    "example": "\"Dress in layers so you can adjust if it gets warmer.\"",
+    "category": "clothing",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "accident",
+    "pos": "noun",
+    "vietnamese": "tai nạn",
+    "definition": "An unexpected event that causes injury or damage.",
+    "example": "\"Stay on one side of the road to avoid accidents.\"",
+    "category": "safety",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "avoid",
+    "pos": "verb",
+    "vietnamese": "tránh",
+    "definition": "To keep away from something; to prevent something from happening.",
+    "example": "\"Avoid crossing the road while runners are passing.\"",
+    "category": "safety",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "roadside",
+    "pos": "noun",
+    "vietnamese": "lề đường, ven đường",
+    "definition": "The edge or side of a road.",
+    "example": "\"Stand on the roadside and cheer as runners go past.\"",
+    "category": "safety",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "crowded",
+    "pos": "adjective",
+    "vietnamese": "đông đúc",
+    "definition": "Full of people; not enough space.",
+    "example": "\"The finish line area is very crowded — find a quieter spot.\"",
+    "category": "safety",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "exposure",
+    "pos": "noun",
+    "vietnamese": "sự tiếp xúc / phơi nhiễm",
+    "definition": "The state of being exposed to weather, risk, or an experience. In IELTS: often means contact with English or being outside in weather.",
+    "example": "\"Long exposure to the sun can cause sunburn — wear a hat.\"",
+    "category": "safety",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "word": "barrier",
+    "pos": "noun",
+    "vietnamese": "rào chắn",
+    "definition": "A fence or obstacle that prevents movement or access.",
+    "example": "\"Don't cross the barriers — they're there for your safety.\"",
+    "category": "safety",
+    "skill": "listening",
+    "section": "sentence-completion"
+  }
+]

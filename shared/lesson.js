@@ -76,23 +76,23 @@ function renderGuide(){
 // CAT_LABELS must be defined by the lesson page before calling renderVocab()
 function renderVocab(f='all'){
   const g=document.getElementById('vocab-grid');
-  const list=f==='all'?V:V.filter(v=>v.cat===f);
+  const list=f==='all'?V:V.filter(v=>v.category===f);
   g.innerHTML=list.map(v=>{
-    const ipa=getIPA(v.w);
+    const ipa=getIPA(v.word);
     return `<div class="vc" onclick="this.classList.toggle('open')">
       <div style="display:flex;align-items:baseline;gap:6px;flex-wrap:wrap">
-        <div class="vw">${v.w}</div><span class="vipa">${ipa}</span>
-        <button class="audio-btn" onclick="event.stopPropagation();speak('${v.w.replace(/'/g,"\\'")}')">🔊</button>
+        <div class="vw">${v.word}</div><span class="vipa">${ipa}</span>
+        <button class="audio-btn" onclick="event.stopPropagation();speak('${v.word.replace(/'/g,"\\'")}')">🔊</button>
       </div>
-      <div class="vp">${v.p}</div>
-      <span class="vtag">${(typeof CAT_LABELS!=='undefined'&&CAT_LABELS[v.cat])||v.cat}</span><div class="vtap">tap to reveal</div>
-      <div class="vb"><div class="ved">${v.en}</div><div class="vvi">🇻🇳 ${v.vi}</div><div class="vex">${v.ex}</div></div>
+      <div class="vp">${v.pos}</div>
+      <span class="vtag">${(typeof CAT_LABELS!=='undefined'&&CAT_LABELS[v.category])||v.category}</span><div class="vtap">tap to reveal</div>
+      <div class="vb"><div class="ved">${v.definition}</div><div class="vvi">🇻🇳 ${v.vietnamese}</div><div class="vex">${v.example}</div></div>
     </div>`;
   }).join('');
 }
 
 function renderVF(){
-  const cats=['all',...new Set(V.map(v=>v.cat))];
+  const cats=['all',...new Set(V.map(v=>v.category))];
   document.getElementById('vocab-filter').innerHTML=cats.map(c=>`<button class="fb${c==='all'?' active':''}" onclick="fvocab('${c}',this)">${c==='all'?'All ('+V.length+')':(typeof CAT_LABELS!=='undefined'&&CAT_LABELS[c])||c}</button>`).join('');
 }
 
@@ -105,13 +105,13 @@ function renderPhrases(){
     <div class="ph-card" onclick="this.classList.toggle('open')">
       <div style="display:flex;align-items:baseline;flex-wrap:wrap;gap:4px">
         <div class="ph-phrase">${p.phrase}</div>
-        <span class="ph-tag">${p.cat}</span>
+        <span class="ph-tag">${p.category}</span>
       </div>
       <div class="ph-example-preview">💡 ${p.example} <button class="audio-btn" onclick="event.stopPropagation();speak(\`${p.example.replace(/`/g,'').replace(/'/g,"\\'")}\`)">🔊</button></div>
       <div class="ph-tap">tap to see how to use</div>
       <div class="ph-body">
         <div class="ph-usage"><strong>When to use:</strong> ${p.usage}</div>
-        <div class="ph-vi">🇻🇳 ${p.vi}</div>
+        <div class="ph-vi">🇻🇳 ${p.vietnamese}</div>
       </div>
     </div>`).join('');
 }
@@ -122,12 +122,12 @@ function renderFC(){
   if(!V.length)return;
   if(!fcL.length)fcL=[...V];
   const v=fcL[fcI];
-  document.getElementById('fc-word').textContent=v.w;
-  document.getElementById('fc-pos').textContent=v.p;
-  document.getElementById('fc-ipa').textContent=getIPA(v.w);
-  document.getElementById('fc-def').textContent=v.en;
-  document.getElementById('fc-vi').textContent='🇻🇳 '+v.vi;
-  document.getElementById('fc-ex').textContent=v.ex;
+  document.getElementById('fc-word').textContent=v.word;
+  document.getElementById('fc-pos').textContent=v.pos;
+  document.getElementById('fc-ipa').textContent=getIPA(v.word);
+  document.getElementById('fc-def').textContent=v.definition;
+  document.getElementById('fc-vi').textContent='🇻🇳 '+v.vietnamese;
+  document.getElementById('fc-ex').textContent=v.example;
   document.getElementById('fc-cnt').textContent=`${fcI+1} / ${fcL.length}`;
   document.getElementById('fc-bar').style.width=((fcI+1)/fcL.length*100)+'%';
   document.getElementById('fc-card').classList.remove('flipped');
@@ -140,8 +140,8 @@ function shuffleFC(){fcL=[...V];for(let i=fcL.length-1;i>0;i--){const j=Math.flo
 /* ======================== FILL BLANK ======================== */
 function renderFB2(){
   document.getElementById('fb-ctn').innerHTML=FB.map((q,i)=>{
-    const p=q.s.split('___');
-    return `<div class="card" id="fb-${i}"><div class="qn">${i+1}. <span style="font-size:.78rem;color:var(--vi)">(${q.h})</span></div>
+    const p=q.sentence.split('___');
+    return `<div class="card" id="fb-${i}"><div class="qn">${i+1}. <span style="font-size:.78rem;color:var(--vi)">(${q.hint})</span></div>
     <div class="qtx">${p[0]}<input class="bi" id="fbi-${i}" autocomplete="off" spellcheck="false">${p[1]||''}</div>
     <div class="exp" id="fbe-${i}"></div></div>`;
   }).join('');document.getElementById('fb-sc').textContent='';
@@ -149,9 +149,9 @@ function renderFB2(){
 function checkFB(){
   let sc=0;FB.forEach((q,i)=>{
     const inp=document.getElementById(`fbi-${i}`),c=document.getElementById(`fb-${i}`),e=document.getElementById(`fbe-${i}`);
-    const v=inp.value.trim().toLowerCase().replace(/[-\s]+/g,' '),a=q.a.toLowerCase().replace(/[-\s]+/g,' ');
+    const v=inp.value.trim().toLowerCase().replace(/[-\s]+/g,' '),a=q.answer.toLowerCase().replace(/[-\s]+/g,' ');
     const ok=v===a;if(ok)sc++;inp.disabled=true;inp.classList.add(ok?'ci':'wi');c.classList.add(ok?'correct':'wrong');
-    e.innerHTML=ok?'✅ Correct!':`❌ Answer: <strong>${q.a}</strong>`;e.classList.add('show',ok?'ce':'we');
+    e.innerHTML=ok?'✅ Correct!':`❌ Answer: <strong>${q.answer}</strong>`;e.classList.add('show',ok?'ce':'we');
   });
   document.getElementById('fb-sc').innerHTML=`<span class="sc">${sc}</span> / ${FB.length} correct`;
   document.getElementById('fbc').style.display='none';document.getElementById('fbr').style.display='inline-block';
@@ -163,11 +163,11 @@ let mP=[],mSel=null,mC=0;
 function renderMatch(){
   if(!V.length)return;
   const sh=[...V].sort(()=>Math.random()-.5).slice(0,6);
-  mP=sh.map((v,i)=>({id:i,w:v.w,vi:v.vi}));mC=0;mSel=null;
+  mP=sh.map((v,i)=>({id:i,word:v.word,vietnamese:v.vietnamese}));mC=0;mSel=null;
   const L=[...mP].sort(()=>Math.random()-.5),R=[...mP].sort(()=>Math.random()-.5);
   const g=document.getElementById('m-grid');g.innerHTML='';
-  L.forEach(p=>{const e=document.createElement('div');e.className='mi';e.dataset.id=p.id;e.dataset.side='l';e.textContent=p.w;e.onclick=()=>hMatch(e);g.appendChild(e);});
-  R.forEach(p=>{const e=document.createElement('div');e.className='mi';e.dataset.id=p.id;e.dataset.side='r';e.textContent=p.vi;e.onclick=()=>hMatch(e);g.appendChild(e);});
+  L.forEach(p=>{const e=document.createElement('div');e.className='mi';e.dataset.id=p.id;e.dataset.side='l';e.textContent=p.word;e.onclick=()=>hMatch(e);g.appendChild(e);});
+  R.forEach(p=>{const e=document.createElement('div');e.className='mi';e.dataset.id=p.id;e.dataset.side='r';e.textContent=p.vietnamese;e.onclick=()=>hMatch(e);g.appendChild(e);});
   document.getElementById('m-sc').textContent='';
 }
 function hMatch(el){

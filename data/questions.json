@@ -1,0 +1,853 @@
+[
+  {
+    "number": 28,
+    "text": "The situation we live in has less influence than you think.",
+    "answer": "G",
+    "explanation": "Section G: circumstances = only 8–15%.",
+    "vietnamese": "Đoạn G nói hoàn cảnh chỉ chiếm 8–15% — \"which really isn't that much.\"",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "number": 29,
+    "text": "What makes us happy will surprise you.",
+    "answer": "A",
+    "explanation": "Section A: \"isn't necessarily what you might have thought.\"",
+    "vietnamese": "Đoạn A: \"it isn't necessarily what you might have thought\" — sẽ khiến bạn bất ngờ.",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "number": 30,
+    "text": "Money isn't everything.",
+    "answer": "C",
+    "explanation": "Section C: money–happiness link only below poverty line.",
+    "vietnamese": "Đoạn C: tiền chỉ quan trọng khi dưới mức nghèo.",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "number": 31,
+    "text": "Born with a specific level of happiness.",
+    "answer": "F",
+    "explanation": "Section F: genetic set-point ~50%.",
+    "vietnamese": "Đoạn F: \"set-point\" bẩm sinh do gen quyết định (~50%).",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "number": 32,
+    "text": "Being free to choose the life you want.",
+    "answer": "H",
+    "explanation": "Section H: thoughts & actions you control.",
+    "vietnamese": "Đoạn H: yếu tố bạn kiểm soát được — suy nghĩ và hành động.",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "number": 33,
+    "text": "Is being happy all the time a good thing?",
+    "answer": "J",
+    "explanation": "Section J: sadness is OK, enriches happiness.",
+    "vietnamese": "Đoạn J: buồn bã là bình thường và làm hạnh phúc thêm sáng.",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "number": 34,
+    "text": "Happiness is your responsibility.",
+    "answer": "K",
+    "explanation": "Section K: \"It's up to you.\"",
+    "vietnamese": "Đoạn K: \"It's up to you\" — tùy thuộc vào bạn.",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "Matching Information",
+          "icon": "🔗",
+          "description": "You are given a number of statements and must find which paragraph (A, B, C, etc.) contains that information. Tests your ability to locate specific details across a long passage.",
+          "tips": [
+            "Read all the statements first before looking at the passage",
+            "Underline key words in each statement",
+            "Skim each paragraph looking for paraphrased matches — the text won't use the exact same words",
+            "A paragraph may match more than one statement, or may not be used at all",
+            "Don't be tricked by single word matches — check the full meaning"
+          ],
+          "vi": "Bạn được cho các phát biểu và phải tìm đoạn văn nào chứa thông tin đó. Kiểm tra khả năng xác định vị trí thông tin cụ thể trong bài đọc dài."
+        }
+      ],
+      "allTypes": [
+        {
+          "name": "Multiple Choice",
+          "practiced": false
+        },
+        {
+          "name": "Matching Information",
+          "practiced": true
+        },
+        {
+          "name": "Matching Headings",
+          "practiced": false
+        },
+        {
+          "name": "Matching Features",
+          "practiced": false
+        },
+        {
+          "name": "Matching Sentence Endings",
+          "practiced": false
+        },
+        {
+          "name": "Sentence Completion",
+          "practiced": false
+        },
+        {
+          "name": "Summary Completion",
+          "practiced": false
+        },
+        {
+          "name": "Note / Table / Flow-chart Completion",
+          "practiced": false
+        },
+        {
+          "name": "Short Answer Questions",
+          "practiced": false
+        },
+        {
+          "name": "True / False / Not Given",
+          "practiced": false
+        },
+        {
+          "name": "Yes / No / Not Given",
+          "practiced": false
+        }
+      ]
+    },
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "number": 35,
+    "text": "What are scientists not sure about in relation to video games?",
+    "answer": "C",
+    "explanation": "Section A: scientists are unsure whether gaming benefits transfer to non-game activities.",
+    "vietnamese": "Đoạn A: \"Still unclear is whether these gains are long-lasting and can be applied to non-game tasks\" — chưa rõ lợi ích có áp dụng được ngoài trò chơi không.",
+    "options": [
+      {
+        "v": "A",
+        "t": "If games can improve mental abilities."
+      },
+      {
+        "v": "B",
+        "t": "If violent games have negative effects on the brain."
+      },
+      {
+        "v": "C",
+        "t": "If there will still be benefits when you are doing other activities."
+      },
+      {
+        "v": "D",
+        "t": "If memory and vision are improved."
+      }
+    ],
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "number": 36,
+    "text": "How do video games encourage players to keep on playing?",
+    "answer": "B",
+    "explanation": "Section D: games are 'adaptively hard' — difficulty increases as players improve.",
+    "vietnamese": "Đoạn D: \"they're adaptively hard… as players get better, they move up to more demanding levels\" — thử thách tăng dần theo khả năng.",
+    "options": [
+      {
+        "v": "A",
+        "t": "A player is rewarded with extra points."
+      },
+      {
+        "v": "B",
+        "t": "The challenges get progressively harder."
+      },
+      {
+        "v": "C",
+        "t": "The games become more powerful."
+      },
+      {
+        "v": "D",
+        "t": "The games encourage competition."
+      }
+    ],
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "number": 37,
+    "text": "After three months of playing Tetris, teenage girls",
+    "answer": "A",
+    "explanation": "Section H: their brains worked less hard — the challenges became easier for them.",
+    "vietnamese": "Đoạn H: \"the girls' brains were working less hard to complete the game's challenges\" — não hoạt động ít vất vả hơn → thử thách dễ hơn.",
+    "options": [
+      {
+        "v": "A",
+        "t": "found the challenges easier"
+      },
+      {
+        "v": "B",
+        "t": "were quicker at completing the tasks"
+      },
+      {
+        "v": "C",
+        "t": "developed better vision"
+      },
+      {
+        "v": "D",
+        "t": "got higher scores."
+      }
+    ],
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "number": 38,
+    "text": "What social benefits can result from playing video games?",
+    "answer": "C",
+    "explanation": "Section K: students who played prosocial games became kinder and showed more caring behaviors.",
+    "vietnamese": "Đoạn K: học sinh chơi game có nhân vật giúp đỡ người khác → sau đó cũng tử tế hơn (\"kinder\", \"showed affection\").",
+    "options": [
+      {
+        "v": "A",
+        "t": "increased honesty"
+      },
+      {
+        "v": "B",
+        "t": "increased confidence"
+      },
+      {
+        "v": "C",
+        "t": "increased caring"
+      },
+      {
+        "v": "D",
+        "t": "increased interaction."
+      }
+    ],
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "number": 39,
+    "text": "Video games",
+    "answer": "C",
+    "explanation": "Section L: games are a 'double-edged sword' — they can reward antisocial behavior too.",
+    "vietnamese": "Đoạn L: \"Games could reward negative, antisocial behavior just as easily as positive\" — game có thể thưởng cả hành vi xấu.",
+    "options": [
+      {
+        "v": "A",
+        "t": "punish bad behaviour"
+      },
+      {
+        "v": "B",
+        "t": "reward good behaviour"
+      },
+      {
+        "v": "C",
+        "t": "might not always reward good behaviour"
+      },
+      {
+        "v": "D",
+        "t": "do not consider moral outcomes."
+      }
+    ],
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "number": 40,
+    "text": "An important goal for future game-makers is",
+    "answer": "A",
+    "explanation": "Section M: the challenge is wrapping virtuous characteristics into engaging games.",
+    "vietnamese": "Đoạn M: \"figuring out how to wrap virtuous characteristics into an engaging package\" — đưa đặc tính đạo đức vào gói hấp dẫn.",
+    "options": [
+      {
+        "v": "A",
+        "t": "making interesting characters who do the right thing"
+      },
+      {
+        "v": "B",
+        "t": "making games as interesting as possible"
+      },
+      {
+        "v": "C",
+        "t": "making all games teach moral values"
+      },
+      {
+        "v": "D",
+        "t": "making all games like The Sims."
+      }
+    ],
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "Multiple Choice",
+          "icon": "🔤",
+          "description": "Choose the correct answer from 4 options (A, B, C, or D). Tests your ability to recognise specific points in a passage or to understand the main idea.",
+          "tips": [
+            "Read the question stem carefully — identify key words",
+            "Find the matching paragraph first, then compare ALL options",
+            "Watch for qualifying words like 'always', 'never', 'not sure'",
+            "Eliminate distractors — options that are true but don't answer the question",
+            "Questions usually follow the order of the text"
+          ],
+          "vi": "Chọn đáp án đúng từ 4 lựa chọn (A, B, C hoặc D). Kiểm tra khả năng nhận ra các điểm cụ thể hoặc ý chính của đoạn văn."
+        },
+        {
+          "name": "Summary Completion",
+          "icon": "📝",
+          "description": "Complete a summary of the passage by filling in blanks with words taken from the text (no more than 2–3 words). Tests your understanding of the main ideas.",
+          "tips": [
+            "Read the whole summary first to understand the overall meaning",
+            "Identify what type of word is needed (noun, verb, adjective)",
+            "Find the relevant section of the passage — summaries usually follow text order",
+            "Copy words exactly from the text — don't change the form",
+            "Check the word limit — 'no more than two or three words'"
+          ],
+          "vi": "Hoàn thành bản tóm tắt bằng cách điền từ lấy từ bài đọc (không quá 2–3 từ). Kiểm tra khả năng hiểu ý chính."
+        }
+      ],
+      "allTypes": [
+        {
+          "name": "Multiple Choice",
+          "practiced": true
+        },
+        {
+          "name": "Matching Information",
+          "practiced": false
+        },
+        {
+          "name": "Matching Headings",
+          "practiced": false
+        },
+        {
+          "name": "Matching Features",
+          "practiced": false
+        },
+        {
+          "name": "Matching Sentence Endings",
+          "practiced": false
+        },
+        {
+          "name": "Sentence Completion",
+          "practiced": false
+        },
+        {
+          "name": "Summary Completion",
+          "practiced": true
+        },
+        {
+          "name": "Note / Table / Flow-chart Completion",
+          "practiced": false
+        },
+        {
+          "name": "Short Answer Questions",
+          "practiced": false
+        },
+        {
+          "name": "True / False / Not Given",
+          "practiced": false
+        },
+        {
+          "name": "Yes / No / Not Given",
+          "practiced": false
+        }
+      ]
+    },
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "type": "meta",
+    "key": "summaryQuestions",
+    "value": {
+      "instruction": "Complete the summary using no more than two or three words taken from the text.",
+      "groups": [
+        {
+          "label": "Main idea",
+          "items": [
+            {
+              "n": 35,
+              "parts": [
+                {
+                  "text": "Everyone has been concerned about the"
+                },
+                {
+                  "blank": true,
+                  "a": [
+                    "negative",
+                    "bad"
+                  ],
+                  "size": 14
+                },
+                {
+                  "text": "effects of video games for some time, but now research is showing how games can"
+                },
+                {
+                  "blank": true,
+                  "a": [
+                    "boost mental function"
+                  ],
+                  "size": 20
+                },
+                {
+                  "text": "."
+                }
+              ],
+              "vi": "Đoạn A: 'focusing on the bad' → negative/bad; 'games can boost mental function'"
+            }
+          ]
+        },
+        {
+          "label": "Effects",
+          "items": [
+            {
+              "n": 37,
+              "parts": [
+                {
+                  "text": "The"
+                },
+                {
+                  "blank": true,
+                  "a": [
+                    "very structure",
+                    "structure"
+                  ],
+                  "size": 16
+                },
+                {
+                  "text": "of video games make them ideal for exercising the brain. Video games encourage players to continue by making the games more"
+                },
+                {
+                  "blank": true,
+                  "a": [
+                    "adaptive",
+                    "challenging",
+                    "demanding",
+                    "adaptively hard"
+                  ],
+                  "size": 16
+                },
+                {
+                  "text": ". Playing games has a physical effect on the body by making parts of the brain"
+                },
+                {
+                  "blank": true,
+                  "a": [
+                    "more efficient",
+                    "thicker",
+                    "more efficient/thicker"
+                  ],
+                  "size": 16
+                },
+                {
+                  "text": ". Games can also have positive social effects. People who play games where characters show"
+                },
+                {
+                  "blank": true,
+                  "a": [
+                    "affection"
+                  ],
+                  "size": 12
+                },
+                {
+                  "text": "to others tended to behave similarly."
+                }
+              ],
+              "vi": "37: Đoạn B 'The very structure' | 38: Đoạn D 'adaptively hard / more demanding' | 39: Đoạn G-H 'more efficient / thicker' | 40: Đoạn K 'showed affection'"
+            }
+          ]
+        }
+      ]
+    },
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "number": 1,
+    "text": "These <strong>three</strong> parks are closest to the city.",
+    "answer": [
+      "C",
+      "D",
+      "E"
+    ],
+    "explanation": "Look at the distances. D is 28 km, C and E are both 40 km — the three shortest distances from Perth.",
+    "vietnamese": "Ba công viên này gần thành phố nhất. → Tìm 3 công viên có khoảng cách nhỏ nhất từ Perth: C (40km), D (28km), E (40km).",
+    "count": 3,
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "number": 2,
+    "text": "This park has walking trails along the river.",
+    "answer": [
+      "F"
+    ],
+    "explanation": "Text F explicitly says: 'A 500 m walk trail along the Serpentine River leads to the falls.'",
+    "vietnamese": "Công viên này có đường mòn đi bộ dọc theo sông. → F: 'A 500 m walk trail along the Serpentine River leads to the falls.'",
+    "count": 1,
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "number": 3,
+    "text": "At this park you can see penguins and sea lions.",
+    "answer": [
+      "G"
+    ],
+    "explanation": "Text G mentions both: the largest penguin colony in WA, and sea lions on Seal Island.",
+    "vietnamese": "Tại công viên này bạn có thể nhìn thấy chim cánh cụt và sư tử biển. → G: Penguin Island + 'sea lions lazing on Seal Island.'",
+    "count": 1,
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "number": 4,
+    "text": "This park contains a golf course, and has tours of a cave.",
+    "answer": [
+      "B"
+    ],
+    "explanation": "Text B: 'daily tours of Crystal Cave' and 'There's even a golf course.'",
+    "vietnamese": "Công viên này có sân golf và tham quan hang động. → B: 'There's even a golf course' + 'daily tours of Crystal Cave'.",
+    "count": 1,
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "number": 5,
+    "text": "Name at least <strong>two</strong> parks where you can go swimming.",
+    "answer": [
+      "A",
+      "G",
+      "F"
+    ],
+    "explanation": "A mentions swimming directly; G mentions swimming; F mentions settlers coming 'to swim'. Any two of A, G, F are accepted.",
+    "vietnamese": "Nêu ít nhất hai công viên nơi bạn có thể đi bơi. → Bất kỳ 2 trong số: A (bơi lội được đề cập), G (bơi lội), F (người định cư đến bơi).",
+    "count": 2,
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "Matching Information",
+          "description": "Match statements to the correct text (A–G). You may use any letter more than once.",
+          "tips": [
+            "Read all texts quickly first to get an overview.",
+            "Look for keywords in the question, then scan for related ideas in the texts.",
+            "The text won't use the exact same words — look for paraphrases.",
+            "Some questions require multiple answers — read instructions carefully."
+          ],
+          "vi": "Nối thông tin — Khớp các phát biểu với đoạn văn đúng (A–G). Bạn có thể dùng một chữ cái nhiều lần.",
+          "practiced": true
+        }
+      ],
+      "allTypes": [
+        {
+          "name": "Multiple Choice",
+          "practiced": false
+        },
+        {
+          "name": "Matching Information",
+          "practiced": true
+        },
+        {
+          "name": "Matching Headings",
+          "practiced": false
+        },
+        {
+          "name": "Matching Features",
+          "practiced": false
+        },
+        {
+          "name": "Matching Sentence Endings",
+          "practiced": false
+        },
+        {
+          "name": "Sentence Completion",
+          "practiced": false
+        },
+        {
+          "name": "Summary Completion",
+          "practiced": false
+        },
+        {
+          "name": "Note / Table / Flow-chart Completion",
+          "practiced": false
+        },
+        {
+          "name": "Short Answer Questions",
+          "practiced": false
+        },
+        {
+          "name": "True / False / Not Given",
+          "practiced": false
+        },
+        {
+          "name": "Yes / No / Not Given",
+          "practiced": false
+        }
+      ]
+    },
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "number": 6,
+    "text": "The gift shop is open every day from 10am to 4pm.",
+    "answer": "FALSE",
+    "explanation": "FALSE — The shop is open every Sunday, not every day.",
+    "vietnamese": "Sai — cửa hàng mở cửa mỗi Chủ nhật, không phải mỗi ngày. \"Gift shop open every Sunday 10am–4pm.\"",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "number": 7,
+    "text": "The gift shop sells products which are produced at this apiary.",
+    "answer": "TRUE",
+    "explanation": "TRUE — The ad says you can sample honey and tour the extraction plant, showing products are made on-site.",
+    "vietnamese": "Đúng — quảng cáo nói \"Sample different types of honey; tour the extraction plant\" — mật ong được sản xuất tại đây.",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "number": 8,
+    "text": "Tourists can try their hand at making candles.",
+    "answer": "NOT GIVEN",
+    "explanation": "NOT GIVEN — Beeswax candles are sold, but there's no mention of visitors making them.",
+    "vietnamese": "Không có thông tin — quảng cáo chỉ bán nến sáp ong, không đề cập đến việc du khách tự làm nến.",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "number": 9,
+    "text": "Appointments can be made by phone or online.",
+    "answer": "NOT GIVEN",
+    "explanation": "NOT GIVEN — A phone number and website are listed, but the ad doesn't state how appointments are made.",
+    "vietnamese": "Không có thông tin — chỉ có số điện thoại và trang web, nhưng không nói rõ có thể đặt hẹn qua mạng.",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "number": 10,
+    "text": "The gift shop is within the grounds of a farm.",
+    "answer": "NOT GIVEN",
+    "explanation": "NOT GIVEN — It's an apiary (bee farm), but the ad doesn't mention it being on a farm.",
+    "vietnamese": "Không có thông tin — đây là trại nuôi ong (apiary), không đề cập đến trang trại (farm).",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "True / False / Not Given",
+          "icon": "✅",
+          "description": "You are given statements and must decide if they agree with the information in the text (TRUE), contradict it (FALSE), or if there is no information about this (NOT GIVEN). Tests your ability to identify specific details and distinguish between what is stated, what is contradicted, and what is simply not mentioned.",
+          "tips": [
+            "Read the statement carefully — look for absolute words like 'every', 'all', 'only', 'always'",
+            "TRUE means the text says exactly this (maybe in different words)",
+            "FALSE means the text says the opposite or something clearly different",
+            "NOT GIVEN means the text doesn't mention this at all — don't use your own knowledge",
+            "Be careful with partial matches — if only part of the statement is confirmed, it may be FALSE or NOT GIVEN"
+          ],
+          "vi": "Bạn được cho các phát biểu và phải quyết định chúng đúng (TRUE), sai (FALSE), hay không có thông tin (NOT GIVEN) so với bài đọc. Kiểm tra khả năng phân biệt giữa thông tin được nêu, bị mâu thuẫn, và không được đề cập."
+        }
+      ],
+      "allTypes": [
+        {
+          "name": "Multiple Choice",
+          "practiced": false
+        },
+        {
+          "name": "Matching Information",
+          "practiced": true
+        },
+        {
+          "name": "Matching Headings",
+          "practiced": false
+        },
+        {
+          "name": "Matching Features",
+          "practiced": false
+        },
+        {
+          "name": "Matching Sentence Endings",
+          "practiced": false
+        },
+        {
+          "name": "Sentence Completion",
+          "practiced": false
+        },
+        {
+          "name": "Summary Completion",
+          "practiced": false
+        },
+        {
+          "name": "Note / Table / Flow-chart Completion",
+          "practiced": false
+        },
+        {
+          "name": "Short Answer Questions",
+          "practiced": false
+        },
+        {
+          "name": "True / False / Not Given",
+          "practiced": true
+        },
+        {
+          "name": "Yes / No / Not Given",
+          "practiced": false
+        }
+      ]
+    },
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "number": 5,
+    "text": "International travel and volunteer programs are offered in five different regions of the world.",
+    "answer": "FALSE",
+    "explanation": "FALSE — The advertisement does not mention five different regions of the world.",
+    "vietnamese": "Sai — quảng cáo không đề cập đến số lượng vùng nào trên thế giới.",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "number": 6,
+    "text": "Students can travel for any length of time from two weeks to three months.",
+    "answer": "TRUE",
+    "explanation": "TRUE — The ad states 'Travel from two weeks to three months'.",
+    "vietnamese": "Đúng — quảng cáo nói rõ \"Travel from two weeks to three months\".",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "number": 7,
+    "text": "The cost of return airfares to each country is included in the price of the tour package.",
+    "answer": "NOT GIVEN",
+    "explanation": "NOT GIVEN — The advertisement does not mention airfare costs or what is included in the price.",
+    "vietnamese": "Không có thông tin — quảng cáo không đề cập đến chi phí vé máy bay hay những gì bao gồm trong gói tour.",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "number": 8,
+    "text": "Students can volunteer to assist only on environmental programs.",
+    "answer": "FALSE",
+    "explanation": "FALSE — Projects include social activities like teaching English to children and home/community building, not only environmental programs.",
+    "vietnamese": "Sai — các dự án bao gồm cả hoạt động xã hội như dạy tiếng Anh cho trẻ em và xây dựng nhà ở cộng đồng, không chỉ các chương trình môi trường.",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "number": 9,
+    "text": "Information meetings about the program are held every Thursday every hour on the hour.",
+    "answer": "FALSE",
+    "explanation": "FALSE — The meeting is 'THIS Thursday, April 7th' — a one-time event, not held every Thursday.",
+    "vietnamese": "Sai — buổi họp thông tin chỉ diễn ra vào \"THỨ NĂM NÀY\" (THIS Thursday), không phải mỗi thứ Năm.",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "number": 10,
+    "text": "Volunteers can apply online or by post to the headquarters in London, UK.",
+    "answer": "FALSE",
+    "explanation": "FALSE — The postal address is Bondi Junction, NSW, Australia — not London, UK.",
+    "vietnamese": "Sai — địa chỉ bưu điện là ở Bondi Junction, NSW, Úc — không phải London, Vương quốc Anh.",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "True / False / Not Given",
+          "icon": "✅",
+          "description": "You are given statements and must decide if they agree with the information in the text (TRUE), contradict it (FALSE), or if there is no information about this (NOT GIVEN). Tests your ability to identify specific details and distinguish between what is stated, what is contradicted, and what is simply not mentioned.",
+          "tips": [
+            "Read the statement carefully — look for absolute words like 'every', 'all', 'only', 'always'",
+            "TRUE means the text says exactly this (maybe in different words)",
+            "FALSE means the text says the opposite or something clearly different",
+            "NOT GIVEN means the text doesn't mention this at all — don't use your own knowledge",
+            "Be careful with partial matches — if only part of the statement is confirmed, it may be FALSE or NOT GIVEN"
+          ],
+          "vi": "Bạn được cho các phát biểu và phải quyết định chúng đúng (TRUE), sai (FALSE), hay không có thông tin (NOT GIVEN) so với bài đọc. Kiểm tra khả năng phân biệt giữa thông tin được nêu, bị mâu thuẫn, và không được đề cập."
+        }
+      ],
+      "allTypes": [
+        {
+          "name": "Multiple Choice",
+          "practiced": false
+        },
+        {
+          "name": "Matching Information",
+          "practiced": false
+        },
+        {
+          "name": "Matching Headings",
+          "practiced": false
+        },
+        {
+          "name": "Matching Features",
+          "practiced": false
+        },
+        {
+          "name": "Matching Sentence Endings",
+          "practiced": false
+        },
+        {
+          "name": "Sentence Completion",
+          "practiced": false
+        },
+        {
+          "name": "Summary Completion",
+          "practiced": false
+        },
+        {
+          "name": "Note / Table / Flow-chart Completion",
+          "practiced": false
+        },
+        {
+          "name": "Short Answer Questions",
+          "practiced": false
+        },
+        {
+          "name": "True / False / Not Given",
+          "practiced": true
+        },
+        {
+          "name": "Yes / No / Not Given",
+          "practiced": false
+        }
+      ]
+    },
+    "skill": "reading",
+    "section": "travel-this-summer"
+  }
+]

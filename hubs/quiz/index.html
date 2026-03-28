@@ -204,7 +204,7 @@
   </div>
 </div>
 
-<script src="../../shared/lessons.js"></script>
+<script src="../../shared/data.js"></script>
 <script>
 /* ======================== AUDIO & IPA (from shared/lesson.js) ======================== */
 function speak(text){
@@ -248,23 +248,15 @@ function getIPA(word){return ipaCache[word.toLowerCase().replace(/[^a-z]/g,'')]|
 function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 
 /* ======================== DATA LOADING ======================== */
-const LESSONS=getLessonPaths(2);
 let allVocab=[],allFB=[];
 
 async function loadData(){
-  const results=await Promise.all(LESSONS.map(async l=>{
-    try{const r=await fetch(l.path);return{...l,data:await r.json()};}catch{return{...l,data:null};}
-  }));
-  results.forEach(l=>{
-    if(!l.data)return;
-    (l.data.vocabulary||[]).forEach(v=>{const c=v.cat&&v.cat.length>1?v.cat:l.name.toLowerCase();allVocab.push({...v,cat:c,_lesson:l.name,_skill:l.skill});});
-    (l.data.fillBlanks||[]).forEach(f=>{allFB.push({...f,cat:f.cat||l.name.toLowerCase(),_lesson:l.name,_skill:l.skill});});
-  });
+  allVocab=await DataLayer.getVocabulary();
+  allFB=await DataLayer.getFillBlanks();
   buildFilters();
   document.getElementById('start-btn').textContent=`Start Quiz (${allVocab.length} words available)`;
   document.getElementById('start-btn').disabled=false;
-  // prefetch IPA in background
-  allVocab.forEach(v=>fetchIPA(v.w));
+  allVocab.forEach(v=>fetchIPA(v.word));
 }
 loadData();
 
@@ -303,7 +295,7 @@ function selFilter(el){
   updateStartBtn();
 }
 function buildFilters(){
-  const cats=[...new Set(allVocab.map(v=>v.cat))].sort();
+  const cats=[...new Set(allVocab.map(v=>v.category))].sort();
   const row=document.getElementById('filter-row');
   cats.forEach(c=>{
     const b=document.createElement('button');
@@ -320,7 +312,7 @@ function updateStartBtn(){
 }
 function getPool(){
   const src=cfg.type==='fb'?allFB:allVocab;
-  return cfg.cats.size===0?src:src.filter(v=>cfg.cats.has(v.cat));
+  return cfg.cats.size===0?src:src.filter(v=>cfg.cats.has(v.category));
 }
 
 /* ======================== QUIZ STATE ======================== */
@@ -362,16 +354,16 @@ function renderQ(){
 /* ======================== MULTIPLE CHOICE ======================== */
 function renderMC(){
   const v=Q[qi];
-  const ipa=getIPA(v.w);
+  const ipa=getIPA(v.word);
   // pick 3 distractors
-  const others=allVocab.filter(x=>x.w!==v.w);
-  const distractors=shuffle(others).slice(0,3).map(x=>x.vi);
-  const opts=shuffle([v.vi,...distractors]);
+  const others=allVocab.filter(x=>x.word!==v.word);
+  const distractors=shuffle(others).slice(0,3).map(x=>x.vietnamese);
+  const opts=shuffle([v.vietnamese,...distractors]);
   document.getElementById('q-area').innerHTML=`
     <div class="quiz-card">
-      <button class="quiz-audio" onclick="event.stopPropagation();speak('${v.w.replace(/'/g,"\\'")}')" title="Listen">🔊</button>
-      <div class="quiz-word">${v.w}</div>
-      <div class="quiz-pos">${v.p}</div>
+      <button class="quiz-audio" onclick="event.stopPropagation();speak('${v.word.replace(/'/g,"\\'")}')" title="Listen">🔊</button>
+      <div class="quiz-word">${v.word}</div>
+      <div class="quiz-pos">${v.pos}</div>
       <div class="quiz-ipa">${ipa}</div>
       <div class="mc-options">
         ${opts.map((o,i)=>`<div class="mc-opt" onclick="checkMC(this,'${o.replace(/'/g,"\\'")}')">${o}</div>`).join('')}
@@ -380,10 +372,10 @@ function renderMC(){
 }
 function checkMC(el,chosen){
   const v=Q[qi];
-  const correct=v.vi;
+  const correct=v.vietnamese;
   const ok=chosen===correct;
   if(ok)score++;
-  answers.push({word:v.w,given:chosen,correct,ok,lesson:v._lesson});
+  answers.push({word:v.word,given:chosen,correct,ok,lesson:v._lesson});
   document.querySelectorAll('.mc-opt').forEach(o=>{
     o.classList.add('disabled');
     if(o.textContent===correct)o.classList.add('correct');
@@ -395,24 +387,24 @@ function checkMC(el,chosen){
 /* ======================== FLASHCARD ======================== */
 function renderFCQ(){
   const v=Q[qi];
-  const ipa=getIPA(v.w);
+  const ipa=getIPA(v.word);
   document.getElementById('q-area').innerHTML=`
     <div class="qfc" id="qfc" onclick="document.getElementById('qfc').classList.toggle('flipped')">
       <div class="qfc-inner">
         <div class="qfc-front">
-          <div class="qfc-word">${v.w}</div>
-          <div class="qfc-pos">${v.p}</div>
+          <div class="qfc-word">${v.word}</div>
+          <div class="qfc-pos">${v.pos}</div>
           <div class="qfc-ipa">${ipa}</div>
           <div class="qfc-tap">tap to flip</div>
         </div>
         <div class="qfc-back">
-          <div class="qfc-def">${v.en}</div>
-          <div class="qfc-vi">🇻🇳 ${v.vi}</div>
+          <div class="qfc-def">${v.definition}</div>
+          <div class="qfc-vi">🇻🇳 ${v.vietnamese}</div>
         </div>
       </div>
     </div>
     <div style="text-align:center;margin-top:4px">
-      <button class="quiz-audio" onclick="event.stopPropagation();speak('${v.w.replace(/'/g,"\\'")}')" title="Listen">🔊</button>
+      <button class="quiz-audio" onclick="event.stopPropagation();speak('${v.word.replace(/'/g,"\\'")}')" title="Listen">🔊</button>
     </div>
     <div class="fc-actions">
       <button class="fc-dont" onclick="fcGrade(false)">Still Learning</button>
@@ -422,17 +414,17 @@ function renderFCQ(){
 function fcGrade(know){
   const v=Q[qi];
   if(know)score++;
-  answers.push({word:v.w,given:know?'Know':'Still learning',correct:v.vi,ok:know,lesson:v._lesson});
+  answers.push({word:v.word,given:know?'Know':'Still learning',correct:v.vietnamese,ok:know,lesson:v._lesson});
   qi++;qi<Q.length?renderQ():showResults();
 }
 
 /* ======================== FILL BLANK ======================== */
 function renderFBQ(){
   const q=Q[qi];
-  const parts=q.s.split('___');
+  const parts=q.sentence.split('___');
   document.getElementById('q-area').innerHTML=`
     <div class="quiz-card" style="text-align:left;align-items:stretch">
-      <div class="quiz-hint">${q.h}</div>
+      <div class="quiz-hint">${q.hint}</div>
       <div class="qfb-sentence">${parts[0]}<input class="qfb-input" id="qfb-inp" autocomplete="off" spellcheck="false" placeholder="...">${parts[1]||''}</div>
       <div style="text-align:center">
         <button class="qfb-check" onclick="checkFBQ()">Check</button>
@@ -447,13 +439,13 @@ function checkFBQ(){
   const inp=document.getElementById('qfb-inp');
   if(!inp||inp.disabled)return;
   const val=inp.value.trim().toLowerCase().replace(/[-\s]+/g,' ');
-  const ans=q.a.toLowerCase().replace(/[-\s]+/g,' ');
+  const ans=q.answer.toLowerCase().replace(/[-\s]+/g,' ');
   const alts=(q.altAnswers||[]).map(a=>a.toLowerCase().replace(/[-\s]+/g,' '));
   const ok=val===ans||alts.includes(val);
   if(ok)score++;
   inp.disabled=true;inp.classList.add(ok?'correct':'wrong');
-  document.getElementById('qfb-fb').innerHTML=ok?'<span style="color:var(--correct)">✅ Correct!</span>':`<span style="color:var(--wrong)">❌ Answer: <strong>${q.a}</strong></span>`;
-  answers.push({word:q.a,given:inp.value.trim()||'(blank)',correct:q.a,ok,lesson:q._lesson});
+  document.getElementById('qfb-fb').innerHTML=ok?'<span style="color:var(--correct)">✅ Correct!</span>':`<span style="color:var(--wrong)">❌ Answer: <strong>${q.answer}</strong></span>`;
+  answers.push({word:q.answer,given:inp.value.trim()||'(blank)',correct:q.answer,ok,lesson:q._lesson});
   setTimeout(()=>{qi++;qi<Q.length?renderQ():showResults();},300);
 }
 
@@ -463,15 +455,15 @@ function renderMatchQ(){
   const startIdx=mRoundIdx*perRound;
   const roundItems=Q.slice(startIdx,startIdx+perRound);
   if(!roundItems.length){showResults();return;}
-  mRound=roundItems.map((v,i)=>({id:i,w:v.w,vi:v.vi,_lesson:v._lesson}));
+  mRound=roundItems.map((v,i)=>({id:i,word:v.word,vietnamese:v.vietnamese,_lesson:v._lesson}));
   mSel=null;mMatched=0;mAttempted=false;
   const L=shuffle([...mRound]),R=shuffle([...mRound]);
   const roundLabel=mTotalRounds>1?`<div class="qm-round">Round ${mRoundIdx+1} / ${mTotalRounds}</div>`:'';
   document.getElementById('q-area').innerHTML=`
     ${roundLabel}
     <div class="qm-grid" id="qm-grid">
-      ${L.map(p=>`<div class="qm-item" data-id="${p.id}" data-side="l" onclick="hMatchQ(this)">${p.w}</div>`).join('')}
-      ${R.map(p=>`<div class="qm-item" data-id="${p.id}" data-side="r" onclick="hMatchQ(this)">${p.vi}</div>`).join('')}
+      ${L.map(p=>`<div class="qm-item" data-id="${p.id}" data-side="l" onclick="hMatchQ(this)">${p.word}</div>`).join('')}
+      ${R.map(p=>`<div class="qm-item" data-id="${p.id}" data-side="r" onclick="hMatchQ(this)">${p.vietnamese}</div>`).join('')}
     </div>`;
   // update counter to reflect match progress
   const total=Q.length;
@@ -495,7 +487,7 @@ function hMatchQ(el){
     mSel.classList.add('matched');mSel.classList.remove('selected');
     const item=mRound[parseInt(id1)];
     if(!mAttempted)mFirstTryCount++;
-    answers.push({word:item.w,given:item.vi,correct:item.vi,ok:true,lesson:item._lesson});
+    answers.push({word:item.word,given:item.vietnamese,correct:item.vietnamese,ok:true,lesson:item._lesson});
     mMatched++;
     // update progress
     const startIdx=mRoundIdx*6;

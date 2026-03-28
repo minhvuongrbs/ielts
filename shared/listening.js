@@ -124,8 +124,8 @@ function renderListeningPage(cfg){
 /* ======================== INIT LISTENING ======================== */
 function initListening(data){
   INTRO = data.intro;
-  V = data.vocabulary;
-  UP = (data.usefulPhrases||[]).map(p=>({...p, cat: p.cat || p.section}));
+  V = data.vocabulary || [];
+  UP = data.usefulPhrases || [];
   FB = data.fillBlanks || [];
 
   renderGuide();
@@ -133,5 +133,5 @@ function initListening(data){
   renderPhrases();
   renderFC(); renderFB2(); renderMatch();
 
-  Promise.all(V.map(v=>fetchIPA(v.w))).then(()=>{renderVocab();renderFC();});
+  Promise.all(V.map(v=>fetchIPA(v.word))).then(()=>{renderVocab();renderFC();});
 }

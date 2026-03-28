@@ -14,6 +14,7 @@
 <script>
 const CAT_LABELS={place:'📍 Place',movement:'🚶 Movement',location:'🏛️ Location',direction:'🧭 Direction'};
 </script>
+<script src="../../../shared/data.js"></script>
 <script src="../../../shared/lesson.js"></script>
 <script src="../../../shared/listening.js"></script>
 <script>
@@ -56,13 +57,13 @@ function renderVisualVocab(){
         <div class="vv-tap">tap to reveal</div>
       </div>
       <div class="vv-detail">
-        <div class="vv-vi">🇻🇳 ${v.vi}</div>
+        <div class="vv-vi">🇻🇳 ${v.vietnamese}</div>
         <div class="vv-ex">💡 ${v.example}</div>
       </div>
     </div>`).join('');
 }
 
-fetch('./data.json').then(r=>r.json()).then(data=>{
+DataLayer.getLesson('listening','map-labeling').then(data=>{
   VV=data.visualVocab||[];
   initListening(data);
   renderVisualVocab();

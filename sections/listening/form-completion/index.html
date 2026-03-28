@@ -14,6 +14,7 @@
 <script>
 const CAT_LABELS={furniture:'🪑 Furniture',payment:'💳 Payment',delivery:'🚚 Delivery',office:'🏢 Office'};
 </script>
+<script src="../../../shared/data.js"></script>
 <script src="../../../shared/lesson.js"></script>
 <script src="../../../shared/listening.js"></script>
 <script>
@@ -101,7 +102,7 @@ function checkPractice(){
 
 function resetPractice(){renderPractice();}
 
-fetch('./data.json').then(r=>r.json()).then(data=>{
+DataLayer.getLesson('listening','form-completion').then(data=>{
   PRACTICE=data.practice||{};
   initListening(data);
   renderPractice();

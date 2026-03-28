@@ -1,23 +1,30 @@
 # Data Organization
 
 ## Status
-TODO
+In Progress
 
 ## Goal
-Evaluate and reorganize data files into a domain-oriented structure. Currently each `data.json` lives alongside its lesson HTML. Consider isolating data into a dedicated `data/` folder (organized by domain/skill) to improve maintainability and enable cross-lesson features like shared vocabulary, phrase aggregation, and search.
+Create a dedicated data layer with table-based storage (`data/` folder) and a unified access API (`shared/data.js`). Data is organized like database tables — one file per entity type, all records tagged with `skill` + `section`. The access layer abstracts fetching, caching, filtering, and assembly so the JSON backend can later be swapped for a database/API.
 
-## Context
-Current data files:
-- `lessons/form-completion/data.json`
-- `lessons/sentence-completion/data.json`
-- `listening/map-labeling/data.json`
-- `reading/happiness/data.json`
-- `reading/video-games/data.json`
-- `reading/skills/data.json`
+## Data Tables (`data/`)
+- `sections.json` — 8 records — lesson registry
+- `vocabulary.json` — 219 records — all vocab across all lessons
+- `phrases.json` — 102 records — all useful phrases
+- `fill-blanks.json` — 100 records — all fill-in-the-blank exercises
+- `passages.json` — 33 records — all reading passage sections
+- `questions.json` — 35 records — IELTS questions + metadata
+- `intros.json` — 3 records — listening lesson introductions
+- `visual-vocab.json` — 17 records — listening visual/spatial vocabulary
+- `practice.json` — 2 records — listening practice questions
 
 ## Steps
-- [ ] Decide on folder structure (e.g., `data/reading/`, `data/listening/`, `data/shared/`)
-- [ ] Evaluate impact on existing `fetch('data.json')` calls in lesson pages
-- [ ] Determine if shared data (cross-lesson vocab, phrase bank) justifies the move
-- [ ] Migrate data files and update all fetch paths
-- [ ] Update CLAUDE.md project structure docs
+- [x] Create `data/` folder with table files (split from 8 data.json files)
+- [x] Create `shared/data.js` — IIFE with DataLayer API (getLesson, getVocabulary, getPhrases, etc.)
+- [x] Migrate Quiz Hub to use DataLayer
+- [x] Migrate Phrases Hub to use DataLayer
+- [x] Migrate 5 reading lesson pages to use DataLayer.getLesson()
+- [x] Migrate 3 listening lesson pages to use DataLayer.getLesson()
+- [x] Update CLAUDE.md project structure docs
+- [ ] Delete old `sections/{skill}/{lesson}/data.json` files
+- [ ] Delete `shared/lessons.js`
+- [ ] Test all pages end-to-end in browser

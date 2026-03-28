@@ -23,15 +23,26 @@ index.html                          # Homepage — skill sections + stats + less
 shared/
   styles.css                        # ALL shared CSS: variables, fonts, nav, lesson components
   nav.js                            # Dynamic nav injection (single source of truth)
+  data.js                           # Data access layer — abstracts all data fetching/caching
   lesson.js                         # Shared lesson JS: IPA, vocab, flashcard, fill-blank, match
   reading.css                       # Reading lesson CSS: passage, quiz, flashcard, match, phrases
   reading.js                        # Reading lesson JS: HTML template, IELTS quiz, passage, init
   listening.css                     # Listening lesson CSS: form, sentence, visual vocab practice types
   listening.js                      # Listening lesson JS: HTML template, normalize(), initListening()
+data/                               # Flat table files (like database tables)
+  sections.json                     # Lesson registry — all lessons with skill + section slug
+  vocabulary.json                   # All vocabulary across all lessons
+  phrases.json                      # All useful phrases
+  fill-blanks.json                  # All fill-in-the-blank exercises
+  passages.json                     # All reading passage sections
+  questions.json                    # All IELTS questions + metadata
+  intros.json                       # Listening lesson introductions
+  visual-vocab.json                 # Listening visual/spatial vocabulary
+  practice.json                     # Listening practice questions
 docs/
   books/                            # Reference PDFs
   audio/                            # Listening test MP3s
-sections/                           # ALL lessons — organized by skill
+sections/                           # ALL lessons — organized by skill (HTML only, data in data/)
   listening/
     form-completion/                # S1: Form completion (Furniture Ordering)
     map-labeling/                   # S2: Map & plan labeling
@@ -66,9 +77,10 @@ hubs/                               # ALL hub/index pages — organized by skill
 
 ## Architecture — Follow When Creating New Lessons
 
-### 1. Lesson = folder with `index.html` + `data.json`
-- `data.json` holds ALL content (vocabulary, phrases, quizzes)
-- `index.html` fetches `data.json` at runtime and renders client-side
+### 1. Lesson = folder with `index.html` (data lives in `data/`)
+- All lesson content (vocabulary, phrases, passages, questions) lives in flat table files under `data/`
+- Each record in a table file has `skill` + `section` fields to identify which lesson it belongs to
+- `index.html` uses `DataLayer.getLesson(skill, section)` to fetch and assemble data
 - Never hardcode lesson content in HTML
 
 ### 2. Skill hub pages (`hubs/reading/index.html`, `hubs/listening/index.html`)
@@ -85,7 +97,7 @@ When adding a new lesson, update `index.html`:
    - **Vocabulary**: Sum `vocabulary` array lengths from ALL `data.json` files
    - Current stats location: `index.html` → `.stats` div inside `.hero`
 4. Also update the **skill hub** page (e.g., `listening/index.html`) — add a card in the correct section block
-5. **Lesson registry** (`shared/lessons.js`): Add the lesson to the `ALL_LESSONS` array — this feeds both the quiz hub and phrases hub automatically
+5. **Data tables** (`data/`): Add records to the relevant table files — `vocabulary.json`, `phrases.json`, `fill-blanks.json`, `passages.json` (reading), `questions.json` (reading), `intros.json` (listening), `visual-vocab.json` (listening), `practice.json` (listening). Add a new entry to `sections.json` for the lesson registry. This feeds quiz hub, phrases hub, and all lesson pages automatically via `DataLayer`.
 
 ### 4. Shared files (included on ALL pages)
 Every page includes:
@@ -103,37 +115,52 @@ Where `[depth]` = `./` (root), `../../` (hub pages in `hubs/`), `../../../` (ski
 - For pages under `sections/` or `hubs/`, the URL contains the skill keyword so active nav is auto-detected
 - Depth set via `data-depth="N"` on `<body>`: `0` = root, `2` = hub pages (in `hubs/`), `3` = skills guide + lesson pages (in `sections/`)
 
+**Data layer** (`shared/data.js`) — included on all lesson and hub pages:
+- Fetches and caches table files from `data/`
+- Provides `DataLayer.getLesson()` for individual lessons, `DataLayer.getVocabulary()` etc. for cross-lesson queries
+- Must be loaded before `lesson.js` and `reading.js`/`listening.js`
+
 **Lesson JS** (`shared/lesson.js`) — included on all lesson pages:
 - Contains all shared interactive components (IPA, vocab grid, flashcard, fill-blank, match)
-- Each lesson page only needs page-specific code (CAT_LABELS, practice functions, init, data fetch)
+- Each lesson page only needs page-specific code (CAT_LABELS, practice functions, init)
 
-## Data Format Conventions
+## Data Layer (`data/` + `shared/data.js`)
 
-### Reading lesson data.json
-```json
-{
-  "sections": [{"id": "A", "en": "...", "vi": "..."}],
-  "vocabulary": [{"w": "word", "p": "noun", "vi": "...", "en": "...", "ex": "...", "s": "A"}],
-  "ieltsQuestions": [{"n": 28, "t": "...", "a": "A", "vi": "...", "en": "..."}],
-  "fillBlanks": [{"s": "sentence with ___", "a": "answer", "h": "Vietnamese hint"}],
-  "usefulPhrases": [{"phrase": "...", "vi": "...", "usage": "...", "example": "...", "section": "A"}]
-}
+All lesson data lives in flat JSON table files under `data/`, like database tables. Each record has `skill` and `section` fields. The `shared/data.js` module provides the `DataLayer` API.
+
+### Data Tables
+- `data/sections.json` — lesson registry: `[{"section": "happiness", "name": "What is Happiness?", "skill": "reading"}]`
+- `data/vocabulary.json` — `[{"word": "traits", "pos": "noun", "vietnamese": "...", "definition": "...", "example": "...", "category": "mindset", "skill": "reading", "section": "happiness"}]`
+- `data/phrases.json` — `[{"phrase": "...", "vietnamese": "...", "usage": "...", "example": "...", "category": "...", "skill": "...", "section": "..."}]`
+- `data/fill-blanks.json` — `[{"sentence": "... ___", "answer": "word", "hint": "Vietnamese hint", "skill": "...", "section": "..."}]`
+- `data/passages.json` — `[{"id": "A", "text": "...", "vietnamese": "...", "skill": "reading", "section": "happiness"}]`
+- `data/questions.json` — IELTS questions + meta records for questionTypes/summaryQuestions
+- `data/intros.json` — listening intros with title, tips, format
+- `data/visual-vocab.json` — listening spatial vocab with SVG keys
+- `data/practice.json` — listening practice blocks (one per lesson)
+
+### DataLayer API (`shared/data.js`)
+```js
+DataLayer.getLesson(skill, section)    // → assembled object like old data.json
+DataLayer.getVocabulary(filter?)       // → all vocab (cross-lesson, with _lesson/_skill)
+DataLayer.getPhrases(filter?)          // → all phrases
+DataLayer.getFillBlanks(filter?)       // → all fill-blanks
+DataLayer.getSections(filter?)         // → lesson registry
+// filter: { skill?, section?, cat? }
 ```
 
-### Listening lesson data.json
-```json
-{
-  "intro": {"title": "...", "description": "...", "format": [], "tips": []},
-  "visualVocab": [{"term": "...", "vi": "...", "example": "...", "svg": "svg-key"}],
-  "vocabulary": [{"w": "word", "p": "noun", "vi": "...", "en": "...", "ex": "...", "cat": "place|movement|location|direction"}],
-  "usefulPhrases": [{"phrase": "...", "vi": "...", "usage": "...", "example": "...", "cat": "..."}],
-  "fillBlanks": [{"s": "sentence with ___", "a": "answer", "h": "Vietnamese hint"}]
-}
-```
+### Adding a new lesson's data
+1. Add a record to `data/sections.json`
+2. Add vocabulary rows to `data/vocabulary.json` (each with `skill`, `section`, `cat`)
+3. Add phrase rows to `data/phrases.json`
+4. Add fill-blank rows to `data/fill-blanks.json`
+5. For reading: add passages to `data/passages.json`, questions to `data/questions.json`
+6. For listening: add intro to `data/intros.json`, practice to `data/practice.json`
 
 ### Vocabulary field key
-- `w` = word, `p` = part of speech, `vi` = Vietnamese, `en` = English definition
-- `ex` = example sentence, `s` = section letter (reading), `cat` = category (listening)
+- `word` = the English word, `pos` = part of speech, `vietnamese` = Vietnamese translation
+- `definition` = English definition, `example` = example sentence, `category` = topic category
+- `skill` = "reading" or "listening", `section` = lesson slug (e.g., "happiness")
 
 ## Vocabulary Card Features (standard for all lessons)
 
@@ -173,7 +200,7 @@ Each listening lesson page must set `CAT_LABELS` (category label map) and call `
 - `renderQTInfo()` — question type info cards
 - `initReading(data)` — standard data-loading + render-all sequence
 
-Each reading lesson page sets `CAT_LABELS`, `IELTS_OPTIONS` (array for fixed options, `null` for per-question multiple choice), calls `renderReadingPage(config)` then `fetch('./data.json').then(initReading)`. See `sections/reading/bees-neez/index.html` as reference (~60 lines).
+Each reading lesson page sets `CAT_LABELS`, `IELTS_OPTIONS` (array for fixed options, `null` for per-question multiple choice), calls `renderReadingPage(config)` then `DataLayer.getLesson('reading','slug').then(initReading)`. See `sections/reading/bees-neez/index.html` as reference (~60 lines).
 
 **Listening lesson JS** (`shared/listening.js`) — included on all listening lesson pages alongside `lesson.js`:
 - `renderListeningPage(config)` — generates entire HTML template (tabs, guide, practice/visual, vocab, phrases, quiz)

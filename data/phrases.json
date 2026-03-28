@@ -1,0 +1,920 @@
+[
+  {
+    "phrase": "X can mean different things to different people.",
+    "usage": "Introducing a topic that has many perspectives.",
+    "example": "Success can mean different things to different people.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "contrast",
+    "vietnamese": "X có thể mang ý nghĩa khác nhau với mỗi người."
+  },
+  {
+    "phrase": "For one person, it may mean X, whereas for someone else it may mean Y.",
+    "usage": "Contrasting two different viewpoints or situations.",
+    "example": "For one person, it may mean earning a high salary, whereas for someone else it may mean having free time.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "contrast",
+    "vietnamese": "Với người này, nó có thể là X, trong khi với người khác nó có thể là Y."
+  },
+  {
+    "phrase": "Research shows / Research suggests that…",
+    "usage": "Citing evidence to support an argument. Great for IELTS Writing Task 2.",
+    "example": "Research suggests that regular exercise improves mental health.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "evidence",
+    "vietnamese": "Nghiên cứu cho thấy / Nghiên cứu gợi ý rằng…"
+  },
+  {
+    "phrase": "It isn't necessarily what you might have thought.",
+    "usage": "Challenging a common assumption.",
+    "example": "The answer to the problem isn't necessarily what you might have thought.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "argument",
+    "vietnamese": "Nó không nhất thiết là những gì bạn nghĩ."
+  },
+  {
+    "phrase": "What makes X X?",
+    "usage": "A rhetorical question to introduce analysis. Strong opening for essays or presentations.",
+    "example": "What makes a good leader a good leader?",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "analysis",
+    "vietnamese": "Điều gì khiến X là X?"
+  },
+  {
+    "phrase": "…make a far greater contribution to X than Y.",
+    "usage": "Comparing the importance of two factors.",
+    "example": "Soft skills make a far greater contribution to career success than technical knowledge alone.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "contrast",
+    "vietnamese": "…đóng góp lớn hơn nhiều cho X so với Y."
+  },
+  {
+    "phrase": "That doesn't mean that… It just means that…",
+    "usage": "Clarifying a point to avoid misunderstanding.",
+    "example": "That doesn't mean that technology is bad. It just means that we need to use it wisely.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "argument",
+    "vietnamese": "Điều đó không có nghĩa là… Chỉ là…"
+  },
+  {
+    "phrase": "In fact, …",
+    "usage": "Adding a surprising or emphatic piece of evidence.",
+    "example": "In fact, most successful entrepreneurs failed multiple times before succeeding.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "evidence",
+    "vietnamese": "Thực tế, …"
+  },
+  {
+    "phrase": "What distinguishes X is that…",
+    "usage": "Highlighting what makes something unique.",
+    "example": "What distinguishes great teachers is that they inspire curiosity.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "analysis",
+    "vietnamese": "Điều phân biệt X là…"
+  },
+  {
+    "phrase": "This might seem obvious, but…",
+    "usage": "Acknowledging something before presenting a deeper point.",
+    "example": "This might seem obvious, but many people still underestimate the value of sleep.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "argument",
+    "vietnamese": "Điều này có vẻ hiển nhiên, nhưng…"
+  },
+  {
+    "phrase": "The implications are greater than you might think.",
+    "usage": "Emphasizing that something has bigger consequences than expected.",
+    "example": "Climate change is accelerating — the implications are greater than you might think.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "argument",
+    "vietnamese": "Những hệ quả lớn hơn bạn nghĩ."
+  },
+  {
+    "phrase": "Not only X but also Y.",
+    "usage": "Adding emphasis by listing multiple effects. Very useful in IELTS Writing.",
+    "example": "Exercise benefits not only your body but also your mind.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "argument",
+    "vietnamese": "Không chỉ X mà còn Y."
+  },
+  {
+    "phrase": "There is some evidence to support / suggest that…",
+    "usage": "Presenting evidence cautiously — good academic writing style.",
+    "example": "There is some evidence to suggest that bilingual children develop stronger problem-solving skills.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "evidence",
+    "vietnamese": "Có bằng chứng cho thấy / gợi ý rằng…"
+  },
+  {
+    "phrase": "…rather than focusing on X.",
+    "usage": "Contrasting a better approach with a less helpful one.",
+    "example": "Try to learn from mistakes rather than focusing on failure.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "contrast",
+    "vietnamese": "…thay vì tập trung vào X."
+  },
+  {
+    "phrase": "Not at all.",
+    "usage": "A strong, natural way to disagree or deny something.",
+    "example": "Does that mean we should give up? Not at all.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "argument",
+    "vietnamese": "Hoàn toàn không."
+  },
+  {
+    "phrase": "But overall it seems that it is X that…",
+    "usage": "Summarizing a main conclusion. Great for essay conclusions.",
+    "example": "But overall it seems that it is consistent effort that leads to long-term success.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "analysis",
+    "vietnamese": "Nhưng nhìn chung, dường như chính X là điều…"
+  },
+  {
+    "phrase": "This is something that you can work on in your daily life.",
+    "usage": "Encouraging action — a practical, motivational closing statement.",
+    "example": "Confidence is something that you can work on in your daily life.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "argument",
+    "vietnamese": "Đây là điều bạn có thể rèn luyện mỗi ngày."
+  },
+  {
+    "phrase": "It's up to you.",
+    "usage": "A powerful closing that puts responsibility on the reader/listener.",
+    "example": "You have the tools and the knowledge. It's up to you.",
+    "skill": "reading",
+    "section": "happiness",
+    "category": "argument",
+    "vietnamese": "Tùy thuộc vào bạn."
+  },
+  {
+    "phrase": "There are still legitimate concerns about…",
+    "usage": "Acknowledging a valid opposing viewpoint before presenting your argument. Great for balanced IELTS essays.",
+    "example": "There are still legitimate concerns about the impact of social media on teenagers.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "research",
+    "vietnamese": "Vẫn còn những lo ngại chính đáng về…"
+  },
+  {
+    "phrase": "Scientists are increasingly examining / studying…",
+    "usage": "Introducing a growing trend in research. Shows academic awareness.",
+    "example": "Scientists are increasingly examining the link between sleep quality and productivity.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "research",
+    "vietnamese": "Các nhà khoa học ngày càng nghiên cứu / xem xét…"
+  },
+  {
+    "phrase": "Their studies are revealing that…",
+    "usage": "Presenting research findings as evidence.",
+    "example": "Their studies are revealing that regular exercise can reduce anxiety by up to 50%.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "research",
+    "vietnamese": "Các nghiên cứu cho thấy rằng…"
+  },
+  {
+    "phrase": "Still unclear is whether…",
+    "usage": "Pointing out an unresolved question in research. Shows critical thinking.",
+    "example": "Still unclear is whether online learning is as effective as classroom learning.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "research",
+    "vietnamese": "Điều chưa rõ là liệu…"
+  },
+  {
+    "phrase": "X makes Y ideal for…",
+    "usage": "Explaining why something is well-suited for a purpose.",
+    "example": "Its interactive design makes the app ideal for language learning.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "learning",
+    "vietnamese": "X khiến Y trở nên lý tưởng cho…"
+  },
+  {
+    "phrase": "…have figured out a way to…",
+    "usage": "Describing a solution or innovation.",
+    "example": "Researchers have figured out a way to recycle plastic more efficiently.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "learning",
+    "vietnamese": "…đã tìm ra cách để…"
+  },
+  {
+    "phrase": "X have been shown, in separate studies, to…",
+    "usage": "Citing multiple sources of evidence. Strong academic writing.",
+    "example": "Green spaces have been shown, in separate studies, to reduce stress and improve mood.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "research",
+    "vietnamese": "X đã được chứng minh, qua các nghiên cứu riêng biệt, là…"
+  },
+  {
+    "phrase": "These findings fit with…",
+    "usage": "Connecting new evidence to existing knowledge.",
+    "example": "These findings fit with earlier research on the benefits of outdoor play.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "research",
+    "vietnamese": "Những phát hiện này phù hợp với…"
+  },
+  {
+    "phrase": "The jury is still out on whether…",
+    "usage": "Expressing that something is still undecided. Natural idiom for discussions.",
+    "example": "The jury is still out on whether artificial intelligence will create or destroy jobs.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "research",
+    "vietnamese": "Vẫn chưa có kết luận liệu…"
+  },
+  {
+    "phrase": "…improved on a wide range of…",
+    "usage": "Describing broad improvement across multiple areas.",
+    "example": "Students who joined the program improved on a wide range of academic skills.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "learning",
+    "vietnamese": "…cải thiện ở nhiều khía cạnh / lĩnh vực…"
+  },
+  {
+    "phrase": "boost mental function / boost brain power",
+    "usage": "Collocation: verb + noun. Talking about cognitive improvement.",
+    "example": "Regular reading can boost mental function and improve concentration.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "brain",
+    "vietnamese": "tăng cường chức năng trí não / sức mạnh não bộ"
+  },
+  {
+    "phrase": "encourage prosocial behaviors",
+    "usage": "Collocation: talking about positive social impact of an activity.",
+    "example": "Team sports encourage prosocial behaviors like cooperation and empathy.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "social",
+    "vietnamese": "khuyến khích hành vi vì xã hội"
+  },
+  {
+    "phrase": "have a physical effect on the body / brain",
+    "usage": "Collocation: describing measurable physical changes.",
+    "example": "Meditation has been shown to have a physical effect on the brain, reducing cortisol levels.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "brain",
+    "vietnamese": "có tác động vật lý lên cơ thể / não bộ"
+  },
+  {
+    "phrase": "apply (gains/skills) to non-game tasks",
+    "usage": "Collocation: discussing whether skills transfer to real life.",
+    "example": "The question is whether problem-solving skills from puzzles can be applied to real-world tasks.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "learning",
+    "vietnamese": "áp dụng (kết quả/kỹ năng) vào các nhiệm vụ ngoài trò chơi"
+  },
+  {
+    "phrase": "persist at solving challenging problems",
+    "usage": "Collocation: describing determination and resilience.",
+    "example": "Successful students persist at solving challenging problems instead of giving up.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "learning",
+    "vietnamese": "kiên trì giải quyết các vấn đề khó"
+  },
+  {
+    "phrase": "This is a double-edged sword.",
+    "usage": "A common idiom meaning something has both positive and negative aspects. Very useful in IELTS essays.",
+    "example": "Technology is a double-edged sword — it connects people but can also isolate them.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "social",
+    "vietnamese": "Đây là con dao hai lưỡi."
+  },
+  {
+    "phrase": "…reward certain actions and punish others.",
+    "usage": "Describing a system of incentives and consequences.",
+    "example": "Good education systems reward effort and punish dishonesty.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "social",
+    "vietnamese": "…thưởng một số hành động và phạt các hành động khác."
+  },
+  {
+    "phrase": "The challenge for X will be figuring out how to…",
+    "usage": "Identifying a future challenge. Good for conclusions in IELTS essays.",
+    "example": "The challenge for governments will be figuring out how to balance economic growth with environmental protection.",
+    "skill": "reading",
+    "section": "video-games",
+    "category": "social",
+    "vietnamese": "Thách thức cho X sẽ là tìm cách…"
+  },
+  {
+    "phrase": "The top attraction is…",
+    "usage": "Use to highlight the most popular or impressive feature of a place.",
+    "example": "The top attraction is Penguin Island, home to a diverse array of wildlife.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "G",
+    "vietnamese": "Điểm thu hút hàng đầu là…"
+  },
+  {
+    "phrase": "boasts [impressive feature]",
+    "usage": "Use to describe something a place is proud of or famous for.",
+    "example": "The island boasts the largest colony of penguins in Western Australia.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "G",
+    "vietnamese": "tự hào có [đặc điểm ấn tượng]"
+  },
+  {
+    "phrase": "is accessible by [means of transport]",
+    "usage": "Use to describe how a place or route can be reached.",
+    "example": "A 500 m walk trail along the Serpentine River is accessible by wheelchair.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "F",
+    "vietnamese": "có thể tiếp cận bằng [phương tiện]"
+  },
+  {
+    "phrase": "attracts more than [number] visitors each year",
+    "usage": "Use to give a sense of a place's popularity with statistics.",
+    "example": "The park attracts more than 240,000 local, interstate and international visitors each year.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "B",
+    "vietnamese": "thu hút hơn [số lượng] du khách mỗi năm"
+  },
+  {
+    "phrase": "one of Australia's best-known / oldest…",
+    "usage": "Use to give context about a place's significance or reputation.",
+    "example": "The Pinnacles are one of Australia's best-known landscapes.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "A",
+    "vietnamese": "một trong những… nổi tiếng nhất / lâu đời nhất của Úc"
+  },
+  {
+    "phrase": "there are many different [things] to choose from",
+    "usage": "Use to describe variety and options available at a place.",
+    "example": "There are many different walking trails to choose from in the park.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "C",
+    "vietnamese": "có nhiều [thứ] khác nhau để lựa chọn"
+  },
+  {
+    "phrase": "provides the opportunity to…",
+    "usage": "Use to describe what an experience or place allows you to do.",
+    "example": "The ferry ride provides the opportunity to see the sea lions lazing on Seal Island.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "G",
+    "vietnamese": "cung cấp cơ hội để…"
+  },
+  {
+    "phrase": "an array of [things], including…",
+    "usage": "Use to list multiple features or examples of something.",
+    "example": "The park has an array of attractions, including a koala boardwalk and a golf course.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "B",
+    "vietnamese": "một loạt [các thứ], bao gồm…"
+  },
+  {
+    "phrase": "in designated areas",
+    "usage": "Use to describe restrictions or specific zones for certain activities.",
+    "example": "Diving may be enjoyed in designated areas.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "G",
+    "vietnamese": "trong các khu vực được chỉ định"
+  },
+  {
+    "phrase": "The distinctive feature of X is undoubtedly…",
+    "usage": "Use to highlight the most remarkable or unique characteristic of a subject.",
+    "example": "The distinctive feature of this park is undoubtedly the spectacular Pinnacles.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "A",
+    "vietnamese": "Đặc điểm nổi bật của X chắc chắn là…"
+  },
+  {
+    "phrase": "came in droves to [do something]",
+    "usage": "Use to describe a large number of people coming to do something.",
+    "example": "Early European settlers came in droves to swim, picnic and enjoy a day in the bush.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "F",
+    "vietnamese": "đến hàng đàn để [làm gì đó]"
+  },
+  {
+    "phrase": "have been one of the focal points of the area since…",
+    "usage": "Use to describe something that has been important or popular for a long time.",
+    "example": "The falls have been one of the focal points of the area since the early European settlers.",
+    "section": "on-the-city-doorstep",
+    "skill": "reading",
+    "category": "F",
+    "vietnamese": "đã là một trong những tâm điểm của khu vực kể từ…"
+  },
+  {
+    "phrase": "Open every [day] from [time] to [time].",
+    "usage": "Stating business opening hours — common in advertisements and notices.",
+    "example": "The library is open every weekday from 9am to 5pm.",
+    "skill": "reading",
+    "section": "bees-neez",
+    "category": "advertisement",
+    "vietnamese": "Mở cửa mỗi [ngày] từ [giờ] đến [giờ]."
+  },
+  {
+    "phrase": "Other times by appointment.",
+    "usage": "Indicating flexible availability outside regular hours.",
+    "example": "The clinic is open Monday to Friday. Other times by appointment.",
+    "skill": "reading",
+    "section": "bees-neez",
+    "category": "advertisement",
+    "vietnamese": "Các thời gian khác theo hẹn."
+  },
+  {
+    "phrase": "[Group/Party] bookings welcome.",
+    "usage": "Inviting groups to make reservations — common in tourism and hospitality ads.",
+    "example": "We cater for all occasions. Party bookings welcome.",
+    "skill": "reading",
+    "section": "bees-neez",
+    "category": "advertisement",
+    "vietnamese": "Chào đón đặt chỗ [theo nhóm]."
+  },
+  {
+    "phrase": "Sample different types of [product].",
+    "usage": "Describing a tasting or trial experience — common in food/drink tourism.",
+    "example": "At the vineyard, you can sample different types of wine.",
+    "skill": "reading",
+    "section": "bees-neez",
+    "category": "tourism",
+    "vietnamese": "Nếm thử các loại [sản phẩm] khác nhau."
+  },
+  {
+    "phrase": "Tour the [facility/plant/factory].",
+    "usage": "Describing a guided visit to see how something is made.",
+    "example": "Visitors can tour the chocolate factory and see how truffles are made.",
+    "skill": "reading",
+    "section": "bees-neez",
+    "category": "tourism",
+    "vietnamese": "Tham quan [cơ sở/nhà máy/xưởng]."
+  },
+  {
+    "phrase": "Between the towns of [A] and [B].",
+    "usage": "Giving a location by referencing nearby places — common in directions and addresses.",
+    "example": "The campsite is located between the towns of Oxford and Reading.",
+    "skill": "reading",
+    "section": "bees-neez",
+    "category": "advertisement",
+    "vietnamese": "Giữa các thị trấn [A] và [B]."
+  },
+  {
+    "phrase": "Travel from [time] to [time] and participate in [activity].",
+    "usage": "Describing the duration and nature of a travel or volunteer program — common in ads and brochures.",
+    "example": "Travel from one week to six months and participate in a language immersion program.",
+    "skill": "reading",
+    "section": "travel-this-summer",
+    "category": "advertisement",
+    "vietnamese": "Du lịch từ [thời gian] đến [thời gian] và tham gia vào [hoạt động]."
+  },
+  {
+    "phrase": "Make a real difference by [verb+ing] in [field].",
+    "usage": "Used to motivate volunteers or donors — common in charity/NGO advertising.",
+    "example": "Make a real difference by teaching in underserved communities.",
+    "skill": "reading",
+    "section": "travel-this-summer",
+    "category": "volunteer",
+    "vietnamese": "Tạo ra sự khác biệt thực sự bằng cách [động từ+ing] trong [lĩnh vực]."
+  },
+  {
+    "phrase": "You could make a significant difference while [verb+ing].",
+    "usage": "Combining impact with personal benefit — typical in volunteer tourism marketing.",
+    "example": "You could make a significant difference while gaining valuable work experience.",
+    "skill": "reading",
+    "section": "travel-this-summer",
+    "category": "volunteer",
+    "vietnamese": "Bạn có thể tạo ra sự khác biệt đáng kể trong khi [động từ+ing]."
+  },
+  {
+    "phrase": "Do more in [period] than most people would dream about doing in a lifetime.",
+    "usage": "A marketing superlative used to emphasise the intensity of an experience.",
+    "example": "Do more in one year than most people would dream about doing in a lifetime.",
+    "skill": "reading",
+    "section": "travel-this-summer",
+    "category": "advertisement",
+    "vietnamese": "Làm được nhiều thứ trong [khoảng thời gian] hơn những gì hầu hết mọi người dám mơ làm trong cả đời."
+  },
+  {
+    "phrase": "Highlights include: [list].",
+    "usage": "Listing the best features of a tour, product, or event — very common in advertisements.",
+    "example": "Highlights include: guided city tours, cooking classes, and a farewell dinner.",
+    "skill": "reading",
+    "section": "travel-this-summer",
+    "category": "advertisement",
+    "vietnamese": "Điểm nổi bật bao gồm: [danh sách]."
+  },
+  {
+    "phrase": "Apply online at [website].",
+    "usage": "A call to action directing people to register or apply via a website — standard in ads.",
+    "example": "Apply online at www.volunteerworld.com before the closing date.",
+    "skill": "reading",
+    "section": "travel-this-summer",
+    "category": "advertisement",
+    "vietnamese": "Đăng ký trực tuyến tại [trang web]."
+  },
+  {
+    "phrase": "It's on your left / right.",
+    "usage": "The most common way to indicate location during a tour or giving directions.",
+    "example": "Walk past the entrance and it's on your left.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "Nó ở bên trái / phải của bạn."
+  },
+  {
+    "phrase": "If you look at the map, you'll see...",
+    "usage": "Speaker introduces a location on a map. Signals that the answer is coming next.",
+    "example": "If you look at the map, you'll see the library is in the northeast corner.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "Nếu bạn nhìn vào bản đồ, bạn sẽ thấy..."
+  },
+  {
+    "phrase": "You are here / We are here.",
+    "usage": "Identifies the starting point on the map. Always listen for this first.",
+    "example": "You are here, at the main entrance on Park Road.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "Bạn đang ở đây / Chúng ta đang ở đây."
+  },
+  {
+    "phrase": "As you come in through the entrance...",
+    "usage": "Common opening phrase when giving directions inside a building.",
+    "example": "As you come in through the entrance, the reception desk is straight ahead.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "Khi bạn đi vào qua lối vào..."
+  },
+  {
+    "phrase": "On the far side of...",
+    "usage": "Indicates something is on the opposite side of an area.",
+    "example": "The tennis courts are on the far side of the sports centre.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "Ở phía bên kia của..."
+  },
+  {
+    "phrase": "Take the second exit at the roundabout.",
+    "usage": "Common instruction for outdoor map directions involving a roundabout.",
+    "example": "At the roundabout, take the second exit onto Hill Road.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "movement",
+    "vietnamese": "Rẽ ở lối ra thứ hai tại vòng xuyến."
+  },
+  {
+    "phrase": "Follow the path / road until you reach...",
+    "usage": "Instruction to keep going until reaching a landmark.",
+    "example": "Follow the path until you reach the lake.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "movement",
+    "vietnamese": "Đi theo con đường cho đến khi bạn đến..."
+  },
+  {
+    "phrase": "It's the first / second building on the left / right.",
+    "usage": "Pinpoints a specific building in a sequence.",
+    "example": "It's the second building on the right after the car park.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "Đó là tòa nhà đầu tiên / thứ hai bên trái / phải."
+  },
+  {
+    "phrase": "You'll come to a junction / crossroads.",
+    "usage": "Signals that a decision point is ahead.",
+    "example": "You'll come to a junction — turn left there.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "movement",
+    "vietnamese": "Bạn sẽ đến một ngã tư / giao lộ."
+  },
+  {
+    "phrase": "Actually, no, I meant...",
+    "usage": "A self-correction — the speaker changes their answer. This is a DISTRACTOR signal. Listen for the corrected answer.",
+    "example": "The café is on the left — actually, no, I meant on the right.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "distractor",
+    "vietnamese": "Thực ra, không, ý tôi là..."
+  },
+  {
+    "phrase": "Sorry, let me start again.",
+    "usage": "Another distractor signal — the speaker restarts their direction. The SECOND answer is correct.",
+    "example": "Turn left at... sorry, let me start again. Turn right at the bank.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "distractor",
+    "vietnamese": "Xin lỗi, để tôi nói lại."
+  },
+  {
+    "phrase": "Directly across from...",
+    "usage": "Indicates something is exactly on the other side.",
+    "example": "The bookshop is directly across from the bus station.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "Ngay đối diện với..."
+  },
+  {
+    "phrase": "You can't miss it.",
+    "usage": "Speaker reassures that the location is easy to find. Often follows the key direction.",
+    "example": "It's the big red building on the corner — you can't miss it.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "Bạn không thể bỏ lỡ nó."
+  },
+  {
+    "phrase": "It's tucked away behind...",
+    "usage": "Indicates something is hidden or not immediately visible behind another landmark.",
+    "example": "The garden café is tucked away behind the main hall.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "Nó nằm khuất phía sau..."
+  },
+  {
+    "phrase": "Head north / south / east / west.",
+    "usage": "Compass-based direction, common in outdoor map descriptions.",
+    "example": "Head north along the main road for about 200 metres.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "Đi về hướng bắc / nam / đông / tây."
+  },
+  {
+    "phrase": "You can also go that way, but it's quicker to...",
+    "usage": "DISTRACTOR — the speaker mentions an alternative route but then gives the preferred one. The SECOND route is the answer.",
+    "example": "You can also go straight on here, past the surgery, but it's quicker to drive down Main Street.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "distractor",
+    "vietnamese": "Bạn cũng có thể đi lối đó, nhưng nhanh hơn nếu..."
+  },
+  {
+    "phrase": "Instead of turning left, you need to turn right.",
+    "usage": "DISTRACTOR — the speaker reverses a direction. Listen carefully — the corrected direction is the answer.",
+    "example": "Instead of turning left at the park, turn right with the pond on your left.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "distractor",
+    "vietnamese": "Thay vì rẽ trái, bạn cần rẽ phải."
+  },
+  {
+    "phrase": "That's on the right; there are shops on the left.",
+    "usage": "DISTRACTOR — the speaker mentions both left and right. Focus on which side the TARGET location is on, not the other landmarks.",
+    "example": "The house is the second one after the bridge. That's on the right — there are shops on the left.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "distractor",
+    "vietnamese": "Nó ở bên phải; có các cửa hàng bên trái."
+  },
+  {
+    "phrase": "It's called...",
+    "usage": "Speaker clarifies or introduces a specific name, brand, or term. Listen carefully — the name that follows is often the answer.",
+    "example": "It's called 'Dress Your Best' — that's the company name.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "ordering",
+    "vietnamese": "Nó được gọi là..."
+  },
+  {
+    "phrase": "Where are you located?",
+    "usage": "Asking for someone's address or location. The answer usually includes a street name, building, or area.",
+    "example": "Where are you located? — We're on Kirby Trading Estate.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "personal-details",
+    "vietnamese": "Bạn ở đâu? / Địa chỉ của bạn ở đâu?"
+  },
+  {
+    "phrase": "Could you spell that for me?",
+    "usage": "A request to spell a name or word. Listen for individual letters — this is where answers are confirmed.",
+    "example": "Could you spell that for me? — K-I-R-B-Y.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "spelling",
+    "vietnamese": "Bạn có thể đánh vần cho tôi không?"
+  },
+  {
+    "phrase": "Can I take your name, please?",
+    "usage": "A standard opening question in Section 1 phone conversations.",
+    "example": "Can I take your name, please? — Yes, it's Sue Brown.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "personal-details",
+    "vietnamese": "Cho tôi xin tên của bạn được không?"
+  },
+  {
+    "phrase": "I'd like to place an order for...",
+    "usage": "The caller states what they want to buy. The items mentioned are often answers to table completion questions.",
+    "example": "I'd like to place an order for five office chairs and two glass desks.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "ordering",
+    "vietnamese": "Tôi muốn đặt hàng..."
+  },
+  {
+    "phrase": "Is there a delivery charge?",
+    "usage": "Asking about extra costs for delivery. The answer may mention 'free delivery', 'extra charge', or a specific amount.",
+    "example": "Is there a delivery charge? — No, there's no extra charge for option 2.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "ordering",
+    "vietnamese": "Có phí giao hàng không?"
+  },
+  {
+    "phrase": "Actually, it should be...",
+    "usage": "DISTRACTOR — the speaker corrects a previous answer. The corrected version is the right answer.",
+    "example": "The code is TG 585 — oh, actually, it should be TG 586.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "distractor",
+    "vietnamese": "Thực ra, nó phải là..."
+  },
+  {
+    "phrase": "Let me just check that — so it's...",
+    "usage": "The listener repeats back information to confirm. This repetition often contains the correct answer.",
+    "example": "Let me just check that — so it's 09356 788 545?",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "ordering",
+    "vietnamese": "Để tôi kiểm tra lại — vậy là..."
+  },
+  {
+    "phrase": "The reference number is...",
+    "usage": "A product code or order number is given. Listen for a combination of letters and digits.",
+    "example": "The reference number is ASP 23 — that's for the office chairs.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "ordering",
+    "vietnamese": "Mã tham chiếu là..."
+  },
+  {
+    "phrase": "Would you like to pay by...?",
+    "usage": "Asking about payment method. Common answers: credit card, debit card, cash, bank transfer.",
+    "example": "Would you like to pay by credit card or bank transfer?",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "ordering",
+    "vietnamese": "Bạn muốn thanh toán bằng...?"
+  },
+  {
+    "phrase": "That comes to a total of...",
+    "usage": "The speaker states the total price. Listen for the exact number and currency.",
+    "example": "That comes to a total of £1,250 including delivery.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "ordering",
+    "vietnamese": "Tổng cộng là..."
+  },
+  {
+    "phrase": "Is that with one 'l' or two?",
+    "usage": "Checking spelling of names or words. Signals that spelling matters for the answer.",
+    "example": "Is that with one 'l' or two? — Two l's: B-R-O-W-N-E-L-L.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "spelling",
+    "vietnamese": "Chữ đó có một hay hai chữ 'l'?"
+  },
+  {
+    "phrase": "Sorry, I'll just repeat that.",
+    "usage": "The speaker repeats information — the repeated version confirms the correct answer.",
+    "example": "Sorry, I'll just repeat that — the mobile number is 09356 788 545.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "ordering",
+    "vietnamese": "Xin lỗi, để tôi nhắc lại."
+  },
+  {
+    "phrase": "We have that in stock.",
+    "usage": "Confirms an item is available. May contrast with 'out of stock' for other items.",
+    "example": "The black chairs? Yes, we have those in stock. The grey ones are out of stock though.",
+    "skill": "listening",
+    "section": "form-completion",
+    "category": "ordering",
+    "vietnamese": "Chúng tôi còn hàng."
+  },
+  {
+    "phrase": "Make sure you...",
+    "usage": "Giving strong advice or a recommendation. The words after this phrase are often the answer.",
+    "example": "Make sure you plan your day before you set off.",
+    "skill": "listening",
+    "section": "sentence-completion",
+    "category": "advice",
+    "vietnamese": "Hãy chắc chắn rằng bạn..."
+  },
+  {
+    "phrase": "The best way to get around is...",
+    "usage": "Recommending a method of transport. Listen for what follows.",
+    "example": "The best way to get around is on foot — don't try to drive.",
+    "skill": "listening",
+    "section": "sentence-completion",
+    "category": "advice",
+    "vietnamese": "Cách tốt nhất để di chuyển là..."
+  },
+  {
+    "phrase": "I'd strongly recommend...",
+    "usage": "The speaker gives a firm recommendation. The answer often follows this phrase.",
+    "example": "I'd strongly recommend wearing comfortable shoes.",
+    "skill": "listening",
+    "section": "sentence-completion",
+    "category": "advice",
+    "vietnamese": "Tôi rất khuyến khích..."
+  },
+  {
+    "phrase": "Don't forget to...",
+    "usage": "A reminder about something important. Signals that a key detail is coming.",
+    "example": "Don't forget to check the weather the night before.",
+    "skill": "listening",
+    "section": "sentence-completion",
+    "category": "advice",
+    "vietnamese": "Đừng quên..."
+  },
+  {
+    "phrase": "Leave it to the...",
+    "usage": "Telling the listener not to do something themselves — someone else will do it. The role/person that follows is often the answer.",
+    "example": "Leave it to the volunteers — they'll hand out water to runners.",
+    "skill": "listening",
+    "section": "sentence-completion",
+    "category": "instruction",
+    "vietnamese": "Hãy để việc đó cho..."
+  },
+  {
+    "phrase": "Try to avoid...",
+    "usage": "Warning about something dangerous or inconvenient. What follows is what to stay away from.",
+    "example": "Try to avoid the finish line area — it gets extremely crowded.",
+    "skill": "listening",
+    "section": "sentence-completion",
+    "category": "instruction",
+    "vietnamese": "Cố gắng tránh..."
+  },
+  {
+    "phrase": "It's worth remembering that...",
+    "usage": "Introduces an important fact or tip. The information after this is often tested.",
+    "example": "It's worth remembering that roads will be closed from 7 am.",
+    "skill": "listening",
+    "section": "sentence-completion",
+    "category": "advice",
+    "vietnamese": "Đáng nhớ rằng..."
+  },
+  {
+    "phrase": "What I mean is...",
+    "usage": "DISTRACTOR — the speaker clarifies or corrects what they just said. The corrected version is the answer.",
+    "example": "Bring warm clothes — what I mean is, dress in layers so you can adjust.",
+    "skill": "listening",
+    "section": "sentence-completion",
+    "category": "distractor",
+    "vietnamese": "Ý tôi là..."
+  },
+  {
+    "phrase": "Actually, I should say...",
+    "usage": "DISTRACTOR — the speaker corrects themselves. The second version is correct.",
+    "example": "There are 10,000... actually, I should say 12,000 runners this year.",
+    "skill": "listening",
+    "section": "sentence-completion",
+    "category": "distractor",
+    "vietnamese": "Thực ra, tôi nên nói là..."
+  },
+  {
+    "phrase": "Whatever you do, don't...",
+    "usage": "Strong warning. What follows is something the listener must not do.",
+    "example": "Whatever you do, don't try to cross the road while runners are passing.",
+    "skill": "listening",
+    "section": "sentence-completion",
+    "category": "instruction",
+    "vietnamese": "Dù thế nào, đừng..."
+  }
+]

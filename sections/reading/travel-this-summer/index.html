@@ -17,6 +17,7 @@
 const CAT_LABELS={volunteer:'🤝 Volunteer',environment:'🌿 Environment',adventure:'🏄 Adventure',program:'📋 Program'};
 const IELTS_OPTIONS=['TRUE','FALSE','NOT GIVEN'];
 </script>
+<script src="../../../shared/data.js"></script>
 <script src="../../../shared/lesson.js"></script>
 <script src="../../../shared/reading.js"></script>
 <script>
@@ -53,7 +54,7 @@ renderReadingPage({
       </ul>
     </div>`
 });
-fetch('./data.json?v=1').then(r=>r.json()).then(initReading);
+DataLayer.getLesson('reading','travel-this-summer').then(initReading);
 </script>
 </body>
 </html>

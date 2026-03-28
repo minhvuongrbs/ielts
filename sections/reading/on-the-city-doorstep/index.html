@@ -40,6 +40,7 @@
 const CAT_LABELS={A:'Nambung',B:'Yanchep',C:'Walyunga',D:'John Forrest',E:'Beelu',F:'Serpentine',G:'Shoalwater'};
 const IELTS_OPTIONS=null;
 </script>
+<script src="../../../shared/data.js"></script>
 <script src="../../../shared/lesson.js"></script>
 <script src="../../../shared/reading.js"></script>
 <script>
@@ -86,8 +87,8 @@ function renderPassage() {
           <div class="park-badge" onclick="highlightPark('${p.id}')">${p.id}</div>
           <div><div class="park-name">${p.name}</div><div class="park-dist">📍 ${p.distance}</div></div>
         </div>
-        <div class="park-text">${p.en}</div>
-        <div class="park-vi" data-vi>${p.vi}</div>
+        <div class="park-text">${p.text}</div>
+        <div class="park-vi" data-vi>${p.vietnamese}</div>
       </div>`).join('')}
     </div>`;
 }
@@ -99,7 +100,7 @@ function highlightPark(id) {
 }
 
 function toggleLetter(btn, prefix) {
-  const q = btn.dataset.q, qData = IQ.find(x => x.n == q);
+  const q = btn.dataset.q, qData = IQ.find(x => x.number == q);
   const ctn = document.getElementById((prefix==='p'?'pilo-':'ilo-') + q);
   const sel = ctn.querySelectorAll('.lo.sel');
   if (btn.classList.contains('sel')) btn.classList.remove('sel');
@@ -110,14 +111,14 @@ function renderLetterIELTS(prefix, ctnId) {
   document.getElementById(ctnId).innerHTML = IQ.map(q => {
     const req = q.count===1 ? 'Select 1 letter' : `Select ${q.count} letters`;
     const compact = prefix==='p';
-    return `<div class="card" style="margin-bottom:${compact?'10':'14'}px${compact?';padding:14px 16px':''}" id="${prefix}iq-${q.n}">
-      <div class="qn">${compact?'Q':'Question '}${q.n}</div>
-      <div class="qtx" style="font-size:${compact?'.88':'.95'}rem">${q.t}</div>
-      <div class="letter-opts" id="${prefix}ilo-${q.n}">
-        ${['A','B','C','D','E','F','G'].map(l => `<button class="lo" data-q="${q.n}" data-l="${l}" onclick="toggleLetter(this,'${prefix}')">${l}</button>`).join('')}
+    return `<div class="card" style="margin-bottom:${compact?'10':'14'}px${compact?';padding:14px 16px':''}" id="${prefix}iq-${q.number}">
+      <div class="qn">${compact?'Q':'Question '}${q.number}</div>
+      <div class="qtx" style="font-size:${compact?'.88':'.95'}rem">${q.text}</div>
+      <div class="letter-opts" id="${prefix}ilo-${q.number}">
+        ${['A','B','C','D','E','F','G'].map(l => `<button class="lo" data-q="${q.number}" data-l="${l}" onclick="toggleLetter(this,'${prefix}')">${l}</button>`).join('')}
       </div>
       <div class="iq-req">${req}</div>
-      <div class="exp" id="${prefix}iexp-${q.n}"></div>
+      <div class="exp" id="${prefix}iexp-${q.number}"></div>
     </div>`;
   }).join('');
 }
@@ -125,14 +126,14 @@ function renderLetterIELTS(prefix, ctnId) {
 function checkLetterIELTS(prefix, bannerId, checkId, redoId) {
   let correct = 0;
   IQ.forEach(q => {
-    const ctn = document.getElementById(prefix+'ilo-'+q.n), card = document.getElementById(prefix+'iq-'+q.n), exp = document.getElementById(prefix+'iexp-'+q.n);
+    const ctn = document.getElementById(prefix+'ilo-'+q.number), card = document.getElementById(prefix+'iq-'+q.number), exp = document.getElementById(prefix+'iexp-'+q.number);
     const btns = ctn.querySelectorAll('.lo'), sel = Array.from(ctn.querySelectorAll('.lo.sel')).map(b => b.dataset.l);
     btns.forEach(b => { b.disabled=true; b.classList.remove('sel'); });
-    const ok = q.count===1 ? sel.length===1&&q.a.includes(sel[0]) : sel.length===q.count&&sel.filter(l=>q.a.includes(l)).length===q.count;
-    btns.forEach(b => { if(q.a.includes(b.dataset.l)) b.classList.add('ca'); else if(sel.includes(b.dataset.l)) b.classList.add('wa'); });
+    const ok = q.count===1 ? sel.length===1&&q.answer.includes(sel[0]) : sel.length===q.count&&sel.filter(l=>q.answer.includes(l)).length===q.count;
+    btns.forEach(b => { if(q.answer.includes(b.dataset.l)) b.classList.add('ca'); else if(sel.includes(b.dataset.l)) b.classList.add('wa'); });
     if(ok){ correct++; card.classList.add('correct'); exp.className='exp show ce'; }
     else { card.classList.add('wrong'); exp.className='exp show we'; }
-    exp.innerHTML = `<strong>${ok?'✓ Correct':'✗ Incorrect'}</strong> — ${q.en}<br><span style="color:var(--vi)">${q.vi}</span>`;
+    exp.innerHTML = `<strong>${ok?'✓ Correct':'✗ Incorrect'}</strong> — ${q.explanation}<br><span style="color:var(--vi)">${q.vietnamese}</span>`;
   });
   const total = IQ.length, b = document.getElementById(bannerId);
   b.className='banner show';
@@ -150,7 +151,7 @@ function renderPassageIELTS() { renderLetterIELTS('p','passage-ielts-ctn'); }
 function checkPassageIELTS() { checkLetterIELTS('p','passage-ielts-banner','pic','pir'); }
 function resetPassageIELTS() { renderPassageIELTS(); document.getElementById('passage-ielts-banner').className='banner'; document.getElementById('pic').style.display=''; document.getElementById('pir').style.display='none'; }
 
-fetch('./data.json?v=1').then(r=>r.json()).then(initReading);
+DataLayer.getLesson('reading','on-the-city-doorstep').then(initReading);
 </script>
 </body>
 </html>

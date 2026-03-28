@@ -1,0 +1,73 @@
+[
+  {
+    "title": "Map & Plan Labeling",
+    "subtitle": "IELTS Listening — Section 2 — Question Type",
+    "description": "In this question type, you listen to a description of a place (a campus, town, building, park, etc.) and label locations on a map or plan. The speaker gives directions using prepositions, movement verbs, and landmarks.",
+    "format": [
+      "You see a map or plan with some locations already labeled",
+      "Several locations are numbered but unnamed",
+      "You listen to a monologue (usually a tour guide or orientation speaker)",
+      "Three sub-types: (1) Choose the correct letter — identify where places are on a map, (2) Choose the correct label from a word list (more words than gaps), (3) Write up to three words to label places"
+    ],
+    "tips": [
+      "Read all the labels and look at the map BEFORE the audio plays",
+      "Identify the starting point — the speaker usually says 'You are here' or 'Start at the entrance'",
+      "Follow the speaker's route — don't jump ahead on the map",
+      "Listen for direction words: left, right, straight, past, opposite",
+      "Watch out for distractors — the speaker may mention a place then correct themselves",
+      "The questions follow the order of the audio — if you miss one, move on",
+      "Maps can show streets, building layouts (indoor), or parks/camps — not just roads. Predict what kind of vocabulary you'll hear based on the map type",
+      "During preparation time, study the map and try to predict the direction language you'll hear for each gap"
+    ],
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "title": "Form Completion — Furniture Ordering",
+    "subtitle": "IELTS Listening — Section 1 — Question Type",
+    "description": "In Form Completion tasks, you listen to a conversation (usually a phone call or face-to-face enquiry) and fill in missing information on a form or table. You must write no more than the specified number of words and/or a number. This is one of the most common question types in Section 1.",
+    "format": [
+      "You see a form, table, or note with some information already filled in",
+      "Several gaps are numbered — you write the missing information",
+      "The word limit is stated clearly (e.g., 'NO MORE THAN THREE WORDS AND/OR A NUMBER')",
+      "Answers may be names, numbers, dates, addresses, or short phrases",
+      "The questions follow the order of the audio"
+    ],
+    "tips": [
+      "Read the form BEFORE the audio starts — predict what type of answer each gap needs (a name? a number? a place?)",
+      "Pay close attention to SPELLING — names of people, streets, and companies must be spelled correctly",
+      "Listen for NUMBERS carefully — phone numbers, prices, and dates are common gap-fillers",
+      "Watch the word limit — if it says 'no more than 3 words', an answer of 4 words is WRONG even if the content is correct",
+      "Hyphenated words count as ONE word; numbers written as digits do not count as words",
+      "Listen for CORRECTIONS — the speaker may say one thing then change it: 'Oh wait, actually it's...'",
+      "Table completion follows the same rules — read column headers to know what type of information goes in each cell",
+      "Write exactly what you hear — do not change the grammatical form of the words"
+    ],
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "title": "Sentence Completion — Marathon Tips",
+    "subtitle": "IELTS Listening — Section 2 — Question Type",
+    "description": "In Sentence Completion tasks, you listen to a monologue (usually a talk or announcement) and complete sentences with missing words. You must write no more than the specified number of words. The sentences follow the same order as the audio.",
+    "format": [
+      "You see incomplete sentences with gaps for missing words",
+      "The word limit is stated clearly (e.g., 'NO MORE THAN TWO WORDS')",
+      "The sentences paraphrase what the speaker says — the exact words in the audio may differ from the sentence",
+      "Answers are usually nouns, adjectives, or short phrases from the audio",
+      "The questions follow the order of the audio"
+    ],
+    "tips": [
+      "Read all the sentences BEFORE the audio starts — predict what type of word is missing (noun? adjective? verb?)",
+      "The sentences paraphrase the audio — listen for MEANING, not exact word matches",
+      "Watch the word limit carefully — 'no more than TWO words' means 1 or 2 words only",
+      "Listen for SIGNAL WORDS that tell you the answer is coming: 'firstly', 'the most important thing is', 'make sure you'",
+      "If you miss an answer, move on immediately — the next question is coming soon",
+      "Write the EXACT words you hear from the audio — don't change the form (e.g., don't change plural to singular)",
+      "Check your spelling and grammar after the audio finishes — use the 30-second check time",
+      "Numbers and dates count as one word — '10 am' is two words, but '10am' could be written as one"
+    ],
+    "skill": "listening",
+    "section": "sentence-completion"
+  }
+]

@@ -145,8 +145,8 @@ function renderPassage(){
   document.getElementById('passage-card').innerHTML=sections.map(s=>`
     <div class="section" data-section="${s.id}">
       <span class="sl">${s.id}</span>
-      <p class="st${stClass}">${s.en}</p>
-      <div class="vit" data-vi>${s.vi}</div>
+      <p class="st${stClass}">${s.text}</p>
+      <div class="vit" data-vi>${s.vietnamese}</div>
     </div>`).join('');
 }
 
@@ -164,7 +164,7 @@ function renderIELTS(){
       // Per-question options (multiple choice)
       optsHtml = q.options.map(o=>`<button class="ob" data-q="${i}" data-v="${o.v}" onclick="selI(this)"><strong>${o.v}</strong>&nbsp; ${o.t}</button>`).join('');
     }
-    return `<div class="card" id="iq-${i}"><div class="qn">Question ${q.n}</div><div class="qtx">${q.t}</div>
+    return `<div class="card" id="iq-${i}"><div class="qn">Question ${q.number}</div><div class="qtx">${q.text}</div>
     <div class="opts${optsClass}">${optsHtml}</div>
     <div class="exp" id="ie-${i}"></div></div>`;
   }).join('');
@@ -175,9 +175,9 @@ function selI(b){const q=b.dataset.q;document.querySelectorAll(`.ob[data-q="${q}
 function checkIELTS(){
   let sc=0;IQ.forEach((q,i)=>{
     const c=document.getElementById(`iq-${i}`),e=document.getElementById(`ie-${i}`);
-    document.querySelectorAll(`.ob[data-q="${i}"]`).forEach(b=>{b.disabled=true;if(b.dataset.v===q.a)b.classList.add('ca');if(b.classList.contains('sel')&&b.dataset.v!==q.a)b.classList.add('wa');});
-    const ok=ia[i]===q.a;if(ok)sc++;c.classList.add(ok?'correct':'wrong');
-    e.innerHTML=`<strong>${ok?'✅':'❌'} Answer: ${q.a}</strong><br>${q.en}<br><em style="color:var(--vi)">${q.vi}</em>`;
+    document.querySelectorAll(`.ob[data-q="${i}"]`).forEach(b=>{b.disabled=true;if(b.dataset.v===q.answer)b.classList.add('ca');if(b.classList.contains('sel')&&b.dataset.v!==q.answer)b.classList.add('wa');});
+    const ok=ia[i]===q.answer;if(ok)sc++;c.classList.add(ok?'correct':'wrong');
+    e.innerHTML=`<strong>${ok?'✅':'❌'} Answer: ${q.answer}</strong><br>${q.explanation}<br><em style="color:var(--vi)">${q.vietnamese}</em>`;
     e.classList.add('show',ok?'ce':'we');
   });
   const t=IQ.length, pct=sc/t;
@@ -210,8 +210,8 @@ function renderPassageIELTS(){
       optsHtml = q.options.map(o=>`<button class="ob" style="padding:6px 12px;font-size:.82rem" data-pq="${i}" data-v="${o.v}" onclick="selPI(this)"><strong>${o.v}</strong>&nbsp; ${o.t}</button>`).join('');
     }
     return `<div style="margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--accent-light)" id="piq-${i}">
-      <div class="qn">Q${q.n}</div>
-      <div style="font-size:.88rem;font-weight:600;margin-bottom:6px">${q.t}</div>
+      <div class="qn">Q${q.number}</div>
+      <div style="font-size:.88rem;font-weight:600;margin-bottom:6px">${q.text}</div>
       <div class="opts" style="flex-direction:row;flex-wrap:wrap;gap:6px">${optsHtml}</div>
       <div class="exp" id="pie-${i}"></div>
     </div>`;
@@ -223,9 +223,9 @@ function selPI(b){const q=b.dataset.pq;document.querySelectorAll(`.ob[data-pq="$
 function checkPassageIELTS(){
   let sc=0;IQ.forEach((q,i)=>{
     const e=document.getElementById(`pie-${i}`);
-    document.querySelectorAll(`.ob[data-pq="${i}"]`).forEach(b=>{b.disabled=true;if(b.dataset.v===q.a)b.classList.add('ca');if(b.classList.contains('sel')&&b.dataset.v!==q.a)b.classList.add('wa');});
-    const ok=pia[i]===q.a;if(ok)sc++;
-    e.innerHTML=`<strong>${ok?'✅':'❌'} ${q.a}</strong> — ${q.en}<br><em style="color:var(--vi)">${q.vi}</em>`;
+    document.querySelectorAll(`.ob[data-pq="${i}"]`).forEach(b=>{b.disabled=true;if(b.dataset.v===q.answer)b.classList.add('ca');if(b.classList.contains('sel')&&b.dataset.v!==q.answer)b.classList.add('wa');});
+    const ok=pia[i]===q.answer;if(ok)sc++;
+    e.innerHTML=`<strong>${ok?'✅':'❌'} ${q.answer}</strong> — ${q.explanation}<br><em style="color:var(--vi)">${q.vietnamese}</em>`;
     e.classList.add('show',ok?'ce':'we');
   });
   const t=IQ.length, pct=sc/t;
@@ -343,10 +343,10 @@ function resetSummaryQ(){
 /* ======================== INIT READING ======================== */
 function initReading(data){
   sections = data.sections || [];
-  V = data.vocabulary.map(v=>({...v, cat: v.cat || v.s}));
+  V = data.vocabulary || [];
   IQ = data.ieltsQuestions || [];
   FB = data.fillBlanks || [];
-  UP = (data.usefulPhrases||[]).map(p=>({...p, cat: p.cat || p.section}));
+  UP = data.usefulPhrases || [];
   QT = data.questionTypes || null;
   SQ = data.summaryQuestions || null;
 
@@ -358,5 +358,5 @@ function initReading(data){
   if(document.getElementById('passage-ielts-ctn')) renderPassageIELTS();
   if(SQ && document.getElementById('sq-card')) renderSummaryQ();
 
-  Promise.all(V.map(v=>fetchIPA(v.w))).then(()=>{renderVocab();renderFC();});
+  Promise.all(V.map(v=>fetchIPA(v.word))).then(()=>{renderVocab();renderFC();});
 }

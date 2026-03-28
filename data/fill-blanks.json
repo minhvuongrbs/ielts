@@ -1,0 +1,702 @@
+[
+  {
+    "sentence": "Research shows certain common ___ among happy people.",
+    "answer": "traits",
+    "hint": "đặc điểm",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "For one person it may mean X, ___ for someone else it may mean Y.",
+    "answer": "whereas",
+    "hint": "trong khi",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "There are a number of ___ that make a far greater contribution.",
+    "answer": "variables",
+    "hint": "biến số",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "The ___ are greater than you might think.",
+    "answer": "implications",
+    "hint": "hệ quả",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "We are all born with a certain ___ of happiness.",
+    "answer": "set-point",
+    "hint": "mức cơ bản",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "What ___ happy people is a different attitude.",
+    "answer": "distinguishes",
+    "hint": "phân biệt",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "They are ___, forgiving, and don't believe the past determines the future.",
+    "answer": "grateful",
+    "hint": "biết ơn",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "The ___ we live in account for only 8–15%.",
+    "answer": "circumstances",
+    "hint": "hoàn cảnh",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "This is something you have ___ control over.",
+    "answer": "voluntary",
+    "hint": "tự nguyện",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "External and more ___ factors don't matter as much.",
+    "answer": "superficial",
+    "hint": "hời hợt",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "They ___ the world in a different way.",
+    "answer": "interpret",
+    "hint": "diễn giải",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "It can contribute to a large ___ of your happiness.",
+    "answer": "proportion",
+    "hint": "tỷ lệ",
+    "skill": "reading",
+    "section": "happiness"
+  },
+  {
+    "sentence": "Scientists are ___ examining the potential benefits of video games.",
+    "answer": "increasingly",
+    "hint": "ngày càng",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "A wide variety of games can ___ mental function.",
+    "answer": "boost",
+    "hint": "tăng cường",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "The structure of video games makes them ___ tools for brain training.",
+    "answer": "ideal",
+    "hint": "lý tưởng",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "Games encourage players to ___ at solving challenging problems.",
+    "answer": "persist",
+    "hint": "kiên trì",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "The games aren't just hard — they're ___ hard.",
+    "answer": "adaptively",
+    "hint": "thích ứng",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "Strategy-based games can improve ___ skills like working memory.",
+    "answer": "cognitive",
+    "hint": "nhận thức",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "Scientists are learning how ___ the human brain truly is.",
+    "answer": "malleable",
+    "hint": "dẻo dai",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "After three months of practice, their brains became more ___.",
+    "answer": "efficient",
+    "hint": "hiệu quả",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "Parts of the ___, the outer layer of the brain, actually got thicker.",
+    "answer": "cortex",
+    "hint": "vỏ não",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "Researchers hope to use games to encourage ___ behaviors.",
+    "answer": "prosocial",
+    "hint": "vì xã hội",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "This is a ___ — games can reward bad behavior too.",
+    "answer": "double-edged sword",
+    "hint": "con dao hai lưỡi",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "The challenge is wrapping ___ characteristics into an engaging package.",
+    "answer": "virtuous",
+    "hint": "đạo đức",
+    "skill": "reading",
+    "section": "video-games"
+  },
+  {
+    "sentence": "The ___ feature of Nambung National Park is the spectacular Pinnacles.",
+    "answer": "distinctive",
+    "hint": "nổi bật, đặc trưng",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "Thousands of huge ___ pillars rise from yellow sands.",
+    "answer": "limestone",
+    "hint": "đá vôi",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "Some pillars ___ tombstones in a graveyard.",
+    "answer": "resemble",
+    "hint": "trông giống",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "Yanchep has an ___ of Western Grey Kangaroos.",
+    "answer": "abundance",
+    "hint": "số lượng lớn",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "The park has an ___ of attractions, including a koala boardwalk.",
+    "answer": "array",
+    "hint": "loạt, dải",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "The Echidna Trail offers ___ panoramas across the Swan and Avon valleys.",
+    "answer": "breathtaking",
+    "hint": "ngoạn mục",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "John Forrest is one of Australia's oldest ___ areas.",
+    "answer": "conservation",
+    "hint": "bảo tồn",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "The falls have been one of the ___ ___ of the area since the early settlers.",
+    "answer": "focal point",
+    "hint": "tâm điểm, điểm thu hút",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "The 500 m trail along the river is ___ by wheelchair.",
+    "answer": "accessible",
+    "hint": "có thể tiếp cận được",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "Penguin Island is home to a ___ array of wildlife.",
+    "answer": "diverse",
+    "hint": "đa dạng",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "Shoalwater boasts the largest ___ of penguins in Western Australia.",
+    "answer": "colony",
+    "hint": "đàn, quần thể",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "Diving may be enjoyed in ___ areas only.",
+    "answer": "designated",
+    "hint": "được chỉ định, quy định",
+    "skill": "reading",
+    "section": "on-the-city-doorstep"
+  },
+  {
+    "sentence": "A place where bees are kept is called an ___.",
+    "answer": "apiary",
+    "hint": "trại nuôi ong",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "sentence": "You can ___ different types of honey at the shop.",
+    "answer": "sample",
+    "hint": "nếm thử",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "sentence": "Visitors can ___ the extraction plant to see how honey is made.",
+    "answer": "tour",
+    "hint": "tham quan",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "sentence": "The shop is open other times by ___.",
+    "answer": "appointment",
+    "hint": "cuộc hẹn",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "sentence": "___ is a natural wax produced by bees.",
+    "answer": "Beeswax",
+    "hint": "sáp ong",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "sentence": "Group ___ are welcome at Bees Neez Apiaries.",
+    "answer": "bookings",
+    "hint": "đặt chỗ",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "sentence": "___ is a resinous substance bees collect from tree buds.",
+    "answer": "Propolis",
+    "hint": "keo ong",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "sentence": "The ___ is where the industrial process of extracting honey takes place.",
+    "answer": "plant",
+    "hint": "nhà máy",
+    "skill": "reading",
+    "section": "bees-neez"
+  },
+  {
+    "sentence": "You can ___ in volunteer projects and adventure travel at the same time.",
+    "answer": "participate",
+    "hint": "tham gia",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "sentence": "Sea turtle ___ is one of the volunteer project options.",
+    "answer": "conservation",
+    "hint": "bảo tồn",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "sentence": "Rainforest ___ involves restoring damaged forest areas.",
+    "answer": "regeneration",
+    "hint": "tái sinh",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "sentence": "One of the ___ of the outdoor tour is horseback riding to hidden waterfalls.",
+    "answer": "highlights",
+    "hint": "điểm nổi bật",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "sentence": "White water ___ is a popular adventure activity on fast rivers.",
+    "answer": "rafting",
+    "hint": "chèo thuyền vượt ghềnh",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "sentence": "___ on exotic reefs lets you explore underwater life.",
+    "answer": "Snorkelling",
+    "hint": "lặn có ống thở",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "sentence": "To join the program, ___ online at www.isvonline.org.",
+    "answer": "apply",
+    "hint": "đăng ký",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "sentence": "The information meeting is in the ___ next to the Hollis Theatre.",
+    "answer": "courtyard",
+    "hint": "sân trong",
+    "skill": "reading",
+    "section": "travel-this-summer"
+  },
+  {
+    "sentence": "The gym is ___ the swimming pool.",
+    "answer": "next to",
+    "hint": "bên cạnh",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "The café is ___ the library — they face each other.",
+    "answer": "opposite",
+    "hint": "đối diện",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "___ the road and the park is on your right.",
+    "answer": "Cross",
+    "hint": "băng qua",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "The shop is ___ the bank and the post office.",
+    "answer": "between",
+    "hint": "ở giữa hai vật",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "Go ___ the supermarket — don't stop there.",
+    "answer": "past",
+    "hint": "đi qua, không dừng lại",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "The car park is ___ the main building — you can't see it from the front.",
+    "answer": "behind",
+    "hint": "phía sau",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "Turn ___ at the traffic lights.",
+    "answer": "left",
+    "hint": "rẽ trái",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "The office is at the ___ of the corridor.",
+    "answer": "end",
+    "hint": "ở cuối",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "Take the second ___ at the roundabout.",
+    "answer": "exit",
+    "hint": "lối ra",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "There's a fountain ___ ___ ___ the entrance.",
+    "answer": "in front of",
+    "hint": "phía trước",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "___ straight ahead and it's the third building.",
+    "answer": "Go",
+    "hint": "đi thẳng",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "The pharmacy is ___ the corner of High Street.",
+    "answer": "at",
+    "hint": "ở (góc đường)",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "There's a ___ in the middle of the park.",
+    "answer": "pond",
+    "hint": "ao, hồ nhỏ",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "Turn right at the ___.",
+    "answer": "crossroads",
+    "hint": "ngã tư",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "The shop is just past the ___ ___.",
+    "answer": "zebra crossing",
+    "hint": "vạch sang đường",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "Go past the ___ on your left — that's the doctor's office.",
+    "answer": "surgery",
+    "hint": "phòng khám (Anh-Anh)",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "I'd like to place an ___ for some office furniture.",
+    "answer": "order",
+    "hint": "đơn hàng",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "Could you spell your ___ name for me, please?",
+    "answer": "company",
+    "hint": "công ty",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "The office chairs come in black and dark grey. What ___ would you like?",
+    "answer": "colour",
+    "hint": "màu sắc",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "Is there an extra ___ for delivery?",
+    "answer": "charge",
+    "hint": "phí",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "I'll pay by ___ card — it's an American Express.",
+    "answer": "credit",
+    "hint": "tín dụng",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "The ___ code for the leather sofa is DFD 44.",
+    "answer": "product",
+    "hint": "sản phẩm",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "We're located on Kirby Trading ___.",
+    "answer": "Estate",
+    "hint": "khu thương mại",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "How many chairs would you like? — Five. And what about the ___?",
+    "answer": "quantity",
+    "hint": "số lượng",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "The silver coffee ___ has the code TX 22.",
+    "answer": "table",
+    "hint": "bàn",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "You'll receive a tracking ___ once the order is dispatched.",
+    "answer": "number",
+    "hint": "mã số",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "Sorry, that item is currently out of ___.",
+    "answer": "stock",
+    "hint": "hàng (còn hàng / hết hàng)",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "Could I have your ___ number, please? — Yes, it's a mobile.",
+    "answer": "contact",
+    "hint": "liên lạc",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "The ___ delivery is three to five working days.",
+    "answer": "estimated",
+    "hint": "dự kiến",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "Let me just check — the glass ___ has the code TG 586?",
+    "answer": "desk",
+    "hint": "bàn (làm việc)",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "You can find all our products in the latest ___.",
+    "answer": "catalogue",
+    "hint": "danh mục",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "We require a ___ of 20% when you place the order.",
+    "answer": "deposit",
+    "hint": "tiền đặt cọc",
+    "skill": "listening",
+    "section": "form-completion"
+  },
+  {
+    "sentence": "To enjoy the marathon, make sure you ___ your day in advance.",
+    "answer": "plan",
+    "hint": "lên kế hoạch",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "The best way to travel in the city centre is on ___.",
+    "answer": "foot",
+    "hint": "đi bộ",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "Wear ___ clothes — something practical and comfortable.",
+    "answer": "sensible",
+    "hint": "hợp lý, thực tế",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "Check the weather ___ the night before the race.",
+    "answer": "forecast",
+    "hint": "dự báo",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "The ___ will hand out water to the runners during the race.",
+    "answer": "volunteers",
+    "hint": "tình nguyện viên",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "Stay on one side of the road to avoid ___.",
+    "answer": "accidents",
+    "hint": "tai nạn",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "Don't arrange to meet runners near the ___ ___.",
+    "answer": "finish line",
+    "hint": "vạch đích",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "Over 12,000 ___ are taking part in this year's marathon.",
+    "answer": "runners",
+    "hint": "người chạy",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "Thousands of ___ lined the streets to cheer.",
+    "answer": "spectators",
+    "hint": "khán giả",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "There will be road ___ in the city centre from 7 am.",
+    "answer": "closures",
+    "hint": "đóng đường",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "Put ___ a warm jacket — it might be cold early in the morning.",
+    "answer": "on",
+    "hint": "mặc vào (phrasal verb)",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "The area near the finish line is very ___.",
+    "answer": "crowded",
+    "hint": "đông đúc",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "Stand on the ___ and cheer as runners go past.",
+    "answer": "roadside",
+    "hint": "lề đường",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "Long ___ to the sun can cause sunburn.",
+    "answer": "exposure",
+    "hint": "sự tiếp xúc / phơi nhiễm",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "Don't cross the ___ — they're there for safety.",
+    "answer": "barriers",
+    "hint": "rào chắn",
+    "skill": "listening",
+    "section": "sentence-completion"
+  },
+  {
+    "sentence": "Dress in ___ so you can adjust if it gets warmer.",
+    "answer": "layers",
+    "hint": "lớp (quần áo)",
+    "skill": "listening",
+    "section": "sentence-completion"
+  }
+]

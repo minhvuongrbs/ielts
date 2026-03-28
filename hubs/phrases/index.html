@@ -126,7 +126,7 @@
   </div>
 </div>
 
-<script src="../../shared/lessons.js"></script>
+<script src="../../shared/data.js"></script>
 <script>
 /* ======================== AUDIO ======================== */
 function speak(text){
@@ -139,20 +139,14 @@ function speak(text){
 function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 
 /* ======================== DATA LOADING ======================== */
-const LESSONS=getLessonPaths(2);
 let allPhrases=[];
+let lessonCount=0;
 
 async function loadData(){
-  const results=await Promise.all(LESSONS.map(async l=>{
-    try{const r=await fetch(l.path);return{...l,data:await r.json()};}catch{return{...l,data:null};}
-  }));
-  results.forEach(l=>{
-    if(!l.data)return;
-    (l.data.usefulPhrases||[]).forEach(p=>{
-      allPhrases.push({...p,_lesson:l.name,_skill:l.skill});
-    });
-  });
-  document.getElementById('phrase-count').textContent=`${allPhrases.length} phrases from ${LESSONS.length} lessons`;
+  allPhrases=await DataLayer.getPhrases();
+  const sections=await DataLayer.getSections();
+  lessonCount=sections.length;
+  document.getElementById('phrase-count').textContent=`${allPhrases.length} phrases from ${lessonCount} lessons`;
   buildLessonFilter();
   buildCatFilter();
   renderPhrases();
@@ -192,7 +186,7 @@ function setCat(el){
 function getFiltered(){
   return allPhrases.filter(p=>{
     if(fLesson!=='all'&&p._lesson!==fLesson)return false;
-    if(fCat!=='all'&&p.cat!==fCat)return false;
+    if(fCat!=='all'&&p.category!==fCat)return false;
     return true;
   });
 }
@@ -210,7 +204,7 @@ function buildLessonFilter(){
 }
 function buildCatFilter(){
   const pool=fLesson==='all'?allPhrases:allPhrases.filter(p=>p._lesson===fLesson);
-  const cats=[...new Set(pool.map(p=>p.cat))].sort();
+  const cats=[...new Set(pool.map(p=>p.category))].sort();
   const row=document.getElementById('cat-filter');
   row.innerHTML='<button class="filter-btn selected" data-f="all" onclick="setCat(this)">All</button>';
   cats.forEach(c=>{
@@ -230,7 +224,7 @@ function renderPhrases(){
     <div class="ph-card" onclick="this.classList.toggle('open')">
       <div style="display:flex;align-items:baseline;flex-wrap:wrap;gap:4px">
         <div class="ph-phrase">${p.phrase}</div>
-        <span class="ph-tag">${p.cat}</span>
+        <span class="ph-tag">${p.category}</span>
         <span class="skill-badge ${p._skill}">${p._skill}</span>
       </div>
       <div class="lesson-badge">${p._lesson}</div>
@@ -238,7 +232,7 @@ function renderPhrases(){
       <div class="ph-tap">tap to see how to use</div>
       <div class="ph-body">
         <div class="ph-usage"><strong>When to use:</strong> ${p.usage}</div>
-        <div class="ph-vi">🇻🇳 ${p.vi}</div>
+        <div class="ph-vi">🇻🇳 ${p.vietnamese}</div>
       </div>
     </div>`).join('');
 }
@@ -268,14 +262,14 @@ function renderFC(){
     <div class="fc-wrap" id="fc-card" onclick="this.classList.toggle('flipped')">
       <div class="fc-inner">
         <div class="fc-front">
-          <div class="fc-cat">${p.cat}</div>
+          <div class="fc-cat">${p.category}</div>
           <div class="fc-phrase">${p.phrase}</div>
           <div class="fc-lesson">${p._lesson} · ${p._skill}</div>
           <button class="fc-audio" onclick="event.stopPropagation();speak('${safeExample}')">🔊</button>
           <div class="fc-tap">tap to flip</div>
         </div>
         <div class="fc-back">
-          <div class="fc-vi">🇻🇳 ${p.vi}</div>
+          <div class="fc-vi">🇻🇳 ${p.vietnamese}</div>
           <div class="fc-usage">💡 ${p.usage}</div>
           <div class="fc-example">"${p.example}"</div>
         </div>

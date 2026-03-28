@@ -17,6 +17,7 @@
 const CAT_LABELS={brain:'🧠 Brain',learning:'📚 Learning',research:'🔬 Research',social:'🤝 Social'};
 const IELTS_OPTIONS=null; /* multiple choice — uses per-question options */
 </script>
+<script src="../../../shared/data.js"></script>
 <script src="../../../shared/lesson.js"></script>
 <script src="../../../shared/reading.js"></script>
 <script>
@@ -62,7 +63,7 @@ renderReadingPage({
       </ul>
     </div>`
 });
-fetch('./data.json?v=2').then(r=>r.json()).then(initReading);
+DataLayer.getLesson('reading','video-games').then(initReading);
 </script>
 </body>
 </html>
