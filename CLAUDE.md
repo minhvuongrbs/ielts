@@ -81,6 +81,7 @@ When adding a new lesson, update `index.html`:
    - **Vocabulary**: Sum `vocabulary` array lengths from ALL `data.json` files
    - Current stats location: `index.html` → `.stats` div inside `.hero`
 4. Also update the **skill hub** page (e.g., `listening/index.html`) — add a card in the correct section block
+5. **Lesson registry** (`shared/lessons.js`): Add the lesson to the `ALL_LESSONS` array — this feeds both the quiz hub and phrases hub automatically
 
 ### 4. Shared files (included on ALL pages)
 Every page includes:

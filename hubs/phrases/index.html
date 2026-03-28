@@ -126,6 +126,7 @@
   </div>
 </div>
 
+<script src="../../shared/lessons.js"></script>
 <script>
 /* ======================== AUDIO ======================== */
 function speak(text){
@@ -138,13 +139,7 @@ function speak(text){
 function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 
 /* ======================== DATA LOADING ======================== */
-const LESSONS=[
-  {name:'Happiness',path:'../../sections/reading/happiness/data.json',skill:'reading'},
-  {name:'Video Games',path:'../../sections/reading/video-games/data.json',skill:'reading'},
-  {name:'Map Labeling',path:'../../sections/listening/map-labeling/data.json',skill:'listening'},
-  {name:'Form Completion',path:'../../sections/listening/form-completion/data.json',skill:'listening'},
-  {name:'Sentence Completion',path:'../../sections/listening/sentence-completion/data.json',skill:'listening'},
-];
+const LESSONS=getLessonPaths(2);
 let allPhrases=[];
 
 async function loadData(){
