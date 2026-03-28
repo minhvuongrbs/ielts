@@ -1,0 +1,158 @@
+{
+  "intro": {
+    "title": "Sentence Completion — Marathon Tips",
+    "subtitle": "IELTS Listening — Section 2 — Question Type",
+    "description": "In Sentence Completion tasks, you listen to a monologue (usually a talk or announcement) and complete sentences with missing words. You must write no more than the specified number of words. The sentences follow the same order as the audio.",
+    "format": [
+      "You see incomplete sentences with gaps for missing words",
+      "The word limit is stated clearly (e.g., 'NO MORE THAN TWO WORDS')",
+      "The sentences paraphrase what the speaker says — the exact words in the audio may differ from the sentence",
+      "Answers are usually nouns, adjectives, or short phrases from the audio",
+      "The questions follow the order of the audio"
+    ],
+    "tips": [
+      "Read all the sentences BEFORE the audio starts — predict what type of word is missing (noun? adjective? verb?)",
+      "The sentences paraphrase the audio — listen for MEANING, not exact word matches",
+      "Watch the word limit carefully — 'no more than TWO words' means 1 or 2 words only",
+      "Listen for SIGNAL WORDS that tell you the answer is coming: 'firstly', 'the most important thing is', 'make sure you'",
+      "If you miss an answer, move on immediately — the next question is coming soon",
+      "Write the EXACT words you hear from the audio — don't change the form (e.g., don't change plural to singular)",
+      "Check your spelling and grammar after the audio finishes — use the 30-second check time",
+      "Numbers and dates count as one word — '10 am' is two words, but '10am' could be written as one"
+    ]
+  },
+  "practice": {
+    "title": "Marathon — tips for spectators",
+    "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+    "questions": [
+      { "q": 11, "before": "To enjoy the day, make sure you", "after": "it first.", "answer": "plan", "altAnswers": ["Plan"] },
+      { "q": 12, "before": "Travel", "after": "within the city centre.", "answer": "on foot", "altAnswers": ["On foot"] },
+      { "q": 13, "before": "Wear", "after": "on the day.", "answer": "sensible clothes", "altAnswers": ["Sensible clothes"] },
+      { "q": 14, "before": "Check the", "after": "the night before the marathon", "answer": "weather", "altAnswers": ["Weather", "weather forecast"] },
+      { "q": 15, "before": "Let the", "after": "give drinks to runners.", "answer": "volunteers", "altAnswers": ["Volunteers"] },
+      { "q": 16, "before": "Stay on one side of the road to avoid", "after": "", "answer": "accidents", "altAnswers": ["Accidents"] },
+      { "q": 17, "before": "Don't arrange to meet runners near the", "after": "", "answer": "finish line", "altAnswers": ["Finish line", "finish"] }
+    ]
+  },
+  "vocabulary": [
+    {"w": "spectator", "p": "noun", "vi": "khán giả, người xem", "en": "A person who watches an event, especially a sports event.", "ex": "\"Thousands of spectators lined the streets to cheer the runners.\"", "cat": "event"},
+    {"w": "marathon", "p": "noun", "vi": "cuộc chạy marathon", "en": "A long-distance running race of 42.195 km (26.2 miles).", "ex": "\"The marathon starts at 9 am and the fastest runners finish in about 2 hours.\"", "cat": "event"},
+    {"w": "runner", "p": "noun", "vi": "người chạy", "en": "A person who runs, especially in a race.", "ex": "\"Over 12,000 runners are taking part in this year's marathon.\"", "cat": "event"},
+    {"w": "volunteer", "p": "noun", "vi": "tình nguyện viên", "en": "A person who offers to do something without being paid.", "ex": "\"Let the volunteers give drinks to runners — don't do it yourself.\"", "cat": "event"},
+    {"w": "finish line", "p": "noun", "vi": "vạch đích", "en": "The line at the end of a race that runners cross to finish.", "ex": "\"Don't arrange to meet runners near the finish line — it's too crowded.\"", "cat": "event"},
+    {"w": "route", "p": "noun", "vi": "tuyến đường, lộ trình", "en": "The roads or path that the race follows.", "ex": "\"Study the route map so you know where to stand.\"", "cat": "event"},
+    {"w": "road closure", "p": "noun", "vi": "đóng đường", "en": "When roads are closed to cars during an event.", "ex": "\"There will be road closures in the city centre from 7 am.\"", "cat": "event"},
+    {"w": "cheer", "p": "verb", "vi": "cổ vũ, hoan hô", "en": "To shout encouragement to someone in a race.", "ex": "\"The crowd cheered loudly as the runners passed.\"", "cat": "event"},
+
+    {"w": "plan", "p": "verb", "vi": "lên kế hoạch", "en": "To decide in advance what you are going to do.", "ex": "\"To enjoy the day, make sure you plan it first.\"", "cat": "preparation"},
+    {"w": "sensible", "p": "adjective", "vi": "hợp lý, thực tế", "en": "Showing good judgement; practical and reasonable.", "ex": "\"Wear sensible clothes on the day — you'll be standing for hours.\"", "cat": "preparation"},
+    {"w": "forecast", "p": "noun", "vi": "dự báo", "en": "A prediction about future weather conditions.", "ex": "\"Check the weather forecast the night before the marathon.\"", "cat": "preparation"},
+    {"w": "weather", "p": "noun", "vi": "thời tiết", "en": "The state of the atmosphere (rain, sun, wind, etc.).", "ex": "\"The weather can change quickly — bring a raincoat just in case.\"", "cat": "preparation"},
+    {"w": "on foot", "p": "phrase", "vi": "đi bộ", "en": "Walking rather than using transport.", "ex": "\"Travel on foot within the city centre — roads will be closed.\"", "cat": "preparation"},
+    {"w": "comfortable", "p": "adjective", "vi": "thoải mái", "en": "Providing physical ease and relaxation.", "ex": "\"Wear comfortable shoes — you'll be on your feet all day.\"", "cat": "preparation"},
+
+    {"w": "put on", "p": "phrasal verb", "vi": "mặc vào", "en": "To place clothing on your body.", "ex": "\"Put on a warm jacket — it might be cold in the morning.\"", "cat": "clothing"},
+    {"w": "wear", "p": "verb", "vi": "mặc, mang", "en": "To have clothing on your body.", "ex": "\"Wear sensible clothes and comfortable shoes.\"", "cat": "clothing"},
+    {"w": "sensible clothes", "p": "noun phrase", "vi": "quần áo phù hợp / thực tế", "en": "Practical clothing appropriate for the situation (not fancy or uncomfortable).", "ex": "\"Don't wear high heels — wear sensible clothes for standing outside.\"", "cat": "clothing"},
+    {"w": "raincoat", "p": "noun", "vi": "áo mưa", "en": "A waterproof coat worn to protect from rain.", "ex": "\"Bring a raincoat in case the weather changes.\"", "cat": "clothing"},
+    {"w": "sunscreen", "p": "noun", "vi": "kem chống nắng", "en": "Cream applied to skin to protect from sunburn.", "ex": "\"If it's sunny, don't forget to put on sunscreen.\"", "cat": "clothing"},
+    {"w": "layer", "p": "noun", "vi": "lớp (quần áo)", "en": "One piece of clothing worn on top of another.", "ex": "\"Dress in layers so you can adjust if it gets warmer.\"", "cat": "clothing"},
+
+    {"w": "accident", "p": "noun", "vi": "tai nạn", "en": "An unexpected event that causes injury or damage.", "ex": "\"Stay on one side of the road to avoid accidents.\"", "cat": "safety"},
+    {"w": "avoid", "p": "verb", "vi": "tránh", "en": "To keep away from something; to prevent something from happening.", "ex": "\"Avoid crossing the road while runners are passing.\"", "cat": "safety"},
+    {"w": "roadside", "p": "noun", "vi": "lề đường, ven đường", "en": "The edge or side of a road.", "ex": "\"Stand on the roadside and cheer as runners go past.\"", "cat": "safety"},
+    {"w": "crowded", "p": "adjective", "vi": "đông đúc", "en": "Full of people; not enough space.", "ex": "\"The finish line area is very crowded — find a quieter spot.\"", "cat": "safety"},
+    {"w": "exposure", "p": "noun", "vi": "sự tiếp xúc / phơi nhiễm", "en": "The state of being exposed to weather, risk, or an experience. In IELTS: often means contact with English or being outside in weather.", "ex": "\"Long exposure to the sun can cause sunburn — wear a hat.\"", "cat": "safety"},
+    {"w": "barrier", "p": "noun", "vi": "rào chắn", "en": "A fence or obstacle that prevents movement or access.", "ex": "\"Don't cross the barriers — they're there for your safety.\"", "cat": "safety"}
+  ],
+  "usefulPhrases": [
+    {
+      "phrase": "Make sure you...",
+      "vi": "Hãy chắc chắn rằng bạn...",
+      "usage": "Giving strong advice or a recommendation. The words after this phrase are often the answer.",
+      "example": "Make sure you plan your day before you set off.",
+      "cat": "advice"
+    },
+    {
+      "phrase": "The best way to get around is...",
+      "vi": "Cách tốt nhất để di chuyển là...",
+      "usage": "Recommending a method of transport. Listen for what follows.",
+      "example": "The best way to get around is on foot — don't try to drive.",
+      "cat": "advice"
+    },
+    {
+      "phrase": "I'd strongly recommend...",
+      "vi": "Tôi rất khuyến khích...",
+      "usage": "The speaker gives a firm recommendation. The answer often follows this phrase.",
+      "example": "I'd strongly recommend wearing comfortable shoes.",
+      "cat": "advice"
+    },
+    {
+      "phrase": "Don't forget to...",
+      "vi": "Đừng quên...",
+      "usage": "A reminder about something important. Signals that a key detail is coming.",
+      "example": "Don't forget to check the weather the night before.",
+      "cat": "advice"
+    },
+    {
+      "phrase": "Leave it to the...",
+      "vi": "Hãy để việc đó cho...",
+      "usage": "Telling the listener not to do something themselves — someone else will do it. The role/person that follows is often the answer.",
+      "example": "Leave it to the volunteers — they'll hand out water to runners.",
+      "cat": "instruction"
+    },
+    {
+      "phrase": "Try to avoid...",
+      "vi": "Cố gắng tránh...",
+      "usage": "Warning about something dangerous or inconvenient. What follows is what to stay away from.",
+      "example": "Try to avoid the finish line area — it gets extremely crowded.",
+      "cat": "instruction"
+    },
+    {
+      "phrase": "It's worth remembering that...",
+      "vi": "Đáng nhớ rằng...",
+      "usage": "Introduces an important fact or tip. The information after this is often tested.",
+      "example": "It's worth remembering that roads will be closed from 7 am.",
+      "cat": "advice"
+    },
+    {
+      "phrase": "What I mean is...",
+      "vi": "Ý tôi là...",
+      "usage": "DISTRACTOR — the speaker clarifies or corrects what they just said. The corrected version is the answer.",
+      "example": "Bring warm clothes — what I mean is, dress in layers so you can adjust.",
+      "cat": "distractor"
+    },
+    {
+      "phrase": "Actually, I should say...",
+      "vi": "Thực ra, tôi nên nói là...",
+      "usage": "DISTRACTOR — the speaker corrects themselves. The second version is correct.",
+      "example": "There are 10,000... actually, I should say 12,000 runners this year.",
+      "cat": "distractor"
+    },
+    {
+      "phrase": "Whatever you do, don't...",
+      "vi": "Dù thế nào, đừng...",
+      "usage": "Strong warning. What follows is something the listener must not do.",
+      "example": "Whatever you do, don't try to cross the road while runners are passing.",
+      "cat": "instruction"
+    }
+  ],
+  "fillBlanks": [
+    {"s": "To enjoy the marathon, make sure you ___ your day in advance.", "a": "plan", "h": "lên kế hoạch"},
+    {"s": "The best way to travel in the city centre is on ___.", "a": "foot", "h": "đi bộ"},
+    {"s": "Wear ___ clothes — something practical and comfortable.", "a": "sensible", "h": "hợp lý, thực tế"},
+    {"s": "Check the weather ___ the night before the race.", "a": "forecast", "h": "dự báo"},
+    {"s": "The ___ will hand out water to the runners during the race.", "a": "volunteers", "h": "tình nguyện viên"},
+    {"s": "Stay on one side of the road to avoid ___.", "a": "accidents", "h": "tai nạn"},
+    {"s": "Don't arrange to meet runners near the ___ ___.", "a": "finish line", "h": "vạch đích"},
+    {"s": "Over 12,000 ___ are taking part in this year's marathon.", "a": "runners", "h": "người chạy"},
+    {"s": "Thousands of ___ lined the streets to cheer.", "a": "spectators", "h": "khán giả"},
+    {"s": "There will be road ___ in the city centre from 7 am.", "a": "closures", "h": "đóng đường"},
+    {"s": "Put ___ a warm jacket — it might be cold early in the morning.", "a": "on", "h": "mặc vào (phrasal verb)"},
+    {"s": "The area near the finish line is very ___.", "a": "crowded", "h": "đông đúc"},
+    {"s": "Stand on the ___ and cheer as runners go past.", "a": "roadside", "h": "lề đường"},
+    {"s": "Long ___ to the sun can cause sunburn.", "a": "exposure", "h": "sự tiếp xúc / phơi nhiễm"},
+    {"s": "Don't cross the ___ — they're there for safety.", "a": "barriers", "h": "rào chắn"},
+    {"s": "Dress in ___ so you can adjust if it gets warmer.", "a": "layers", "h": "lớp (quần áo)"}
+  ]
+}
