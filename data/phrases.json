@@ -1152,5 +1152,150 @@
     "section": "sleep-on-it",
     "category": "analysis",
     "vietnamese": "Điều này nói nhiều về X hơn là về Y."
+  },
+
+  {
+    "phrase": "Plenty of research has shown that…",
+    "usage": "Citing research evidence to support a claim — strong opening for IELTS Writing Task 2.",
+    "example": "Plenty of research has shown that regular exercise improves academic performance.",
+    "skill": "reading",
+    "section": "transition-to-university",
+    "category": "evidence",
+    "vietnamese": "Nhiều nghiên cứu đã chỉ ra rằng…"
+  },
+  {
+    "phrase": "become familiar with [something]",
+    "usage": "Getting to know something well — common in academic and professional contexts.",
+    "example": "New employees should become familiar with the company's policies.",
+    "skill": "reading",
+    "section": "transition-to-university",
+    "category": "academic",
+    "vietnamese": "làm quen với [điều gì đó]"
+  },
+  {
+    "phrase": "Don't underestimate the importance of X.",
+    "usage": "Emphasising that something matters more than people think — strong for persuasive writing.",
+    "example": "Don't underestimate the importance of good time management in your career.",
+    "skill": "reading",
+    "section": "transition-to-university",
+    "category": "advice",
+    "vietnamese": "Đừng đánh giá thấp tầm quan trọng của X."
+  },
+  {
+    "phrase": "Take up these opportunities.",
+    "usage": "Encouraging someone to use available chances — useful in IELTS Speaking for giving advice.",
+    "example": "The company offers free training courses — take up these opportunities.",
+    "skill": "reading",
+    "section": "transition-to-university",
+    "category": "advice",
+    "vietnamese": "Hãy tận dụng những cơ hội này."
+  },
+  {
+    "phrase": "Your success may depend on it.",
+    "usage": "Stressing the importance of something for achieving goals.",
+    "example": "Read the instructions carefully — your success may depend on it.",
+    "skill": "reading",
+    "section": "transition-to-university",
+    "category": "academic",
+    "vietnamese": "Sự thành công của bạn có thể phụ thuộc vào điều đó."
+  },
+  {
+    "phrase": "Don't be fooled if…",
+    "usage": "Warning someone not to be deceived by appearances — adds emphasis.",
+    "example": "Don't be fooled if the test looks easy — read every question carefully.",
+    "skill": "reading",
+    "section": "transition-to-university",
+    "category": "advice",
+    "vietnamese": "Đừng bị đánh lừa nếu…"
+  },
+  {
+    "phrase": "you are more likely to [do something]",
+    "usage": "Describing probability or tendency — useful in IELTS Writing for cause-effect.",
+    "example": "If you don't prepare, you are more likely to fail the exam.",
+    "skill": "reading",
+    "section": "transition-to-university",
+    "category": "cause-effect",
+    "vietnamese": "bạn có khả năng [làm gì đó] nhiều hơn"
+  },
+  {
+    "phrase": "as soon as possible",
+    "usage": "Expressing urgency — very common in both formal and informal English.",
+    "example": "You should submit your application as soon as possible.",
+    "skill": "reading",
+    "section": "transition-to-university",
+    "category": "academic",
+    "vietnamese": "càng sớm càng tốt"
+  },
+  {
+    "phrase": "free of disease",
+    "usage": "Describing something that is healthy and unaffected by illness or contamination.",
+    "example": "Always buy plants that are free of disease.",
+    "skill": "reading",
+    "section": "complete-gardening-handbook",
+    "category": "planting",
+    "vietnamese": "không bệnh, sạch bệnh"
+  },
+  {
+    "phrase": "work X into the ground",
+    "usage": "Describing the process of mixing something into soil by digging.",
+    "example": "Work plenty of compost or manure into the ground before planting.",
+    "skill": "reading",
+    "section": "complete-gardening-handbook",
+    "category": "planting",
+    "vietnamese": "trộn X vào đất"
+  },
+  {
+    "phrase": "remove all weeds",
+    "usage": "Giving instructions to clear unwanted plants from an area.",
+    "example": "Make sure to remove all weeds before planting your crops.",
+    "skill": "reading",
+    "section": "complete-gardening-handbook",
+    "category": "care",
+    "vietnamese": "loại bỏ tất cả cỏ dại"
+  },
+  {
+    "phrase": "prior to",
+    "usage": "A formal way of saying 'before' — common in instructions and academic writing.",
+    "example": "Water the plants an hour prior to planting out.",
+    "skill": "reading",
+    "section": "complete-gardening-handbook",
+    "category": "planting",
+    "vietnamese": "trước khi"
+  },
+  {
+    "phrase": "keep the fruit clean",
+    "usage": "Describing the purpose of protecting produce from dirt or damage.",
+    "example": "Use special mats to keep the fruit clean as it develops.",
+    "skill": "reading",
+    "section": "complete-gardening-handbook",
+    "category": "care",
+    "vietnamese": "giữ quả sạch"
+  },
+  {
+    "phrase": "benefit from",
+    "usage": "Saying that something gains an advantage from a particular action or thing.",
+    "example": "The plants benefit from regular feeding in spring.",
+    "skill": "reading",
+    "section": "complete-gardening-handbook",
+    "category": "care",
+    "vietnamese": "được hưởng lợi từ"
+  },
+  {
+    "phrase": "do not sever the link with",
+    "usage": "Instructing someone not to cut off the connection — can be used literally or figuratively.",
+    "example": "Cut off the runner beyond the peg, but do not sever the link with the parent plant.",
+    "skill": "reading",
+    "section": "complete-gardening-handbook",
+    "category": "propagation",
+    "vietnamese": "không cắt đứt liên kết với"
+  },
+  {
+    "phrase": "get well established",
+    "usage": "Describing something becoming firmly settled or developed — used for plants, businesses, or routines.",
+    "example": "Remove flowers so the plants can get well established before bearing fruit.",
+    "skill": "reading",
+    "section": "complete-gardening-handbook",
+    "category": "planting",
+    "vietnamese": "phát triển ổn định, bén rễ vững chắc"
   }
 ]

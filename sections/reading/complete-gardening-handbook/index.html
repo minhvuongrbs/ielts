@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Reading — The Complete Gardening Handbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/reading.css">
+</head>
+<body data-depth="3">
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+<div id="app"></div>
+<script>
+const CAT_LABELS={planting:'🌱 Planting',care:'🧑‍🌾 Routine Care',propagation:'🔄 Propagation'};
+const IELTS_OPTIONS=null;
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/reading.js"></script>
+<script>
+renderReadingPage({
+  title: 'The Complete Gardening Handbook',
+  sub: 'IELTS General Training — Reading Section 1 — Practice 2.3',
+  stPreline: true,
+  passageRight: 'summary-q',
+  passageLabel: '📝 Questions 11–14: Sentence Completion',
+  passageInstruction: 'Complete the sentences below. Choose no more than three words from the text for each answer.',
+  ieltsInstruction: 'Complete the sentences below. Choose <strong>no more than three words</strong> from the text for each answer.',
+  phrasesIntro: 'Useful phrases from gardening and instructional texts that you can reuse in IELTS Writing & Speaking.',
+  summaryCards: `
+    <div class="card">
+      <div class="sk">🍓 How to Grow Strawberries — Key Points</div>
+      <ul class="slist">
+        <li><strong>Buy:</strong> Always buy certified disease-free plants; replace if disease attacks</li>
+        <li><strong>Soil:</strong> Fertile soil — work in compost or manure, remove all weeds, rake in fertiliser</li>
+        <li><strong>Plant:</strong> 45 cm apart in rows 75 cm apart; spread roots on mound, crown level with surface</li>
+        <li><strong>Care:</strong> Feed with sulphate of potash in spring; use mats or straw to keep fruit clean</li>
+        <li><strong>First year:</strong> Remove flowers so plants establish before fruiting</li>
+        <li><strong>Propagate:</strong> Peg runners into pots of compost; sever from parent after 6 weeks</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">📌 IELTS Tip: Sentence Completion</div>
+      <ul class="slist">
+        <li><strong>Read the instruction</strong> — note the word limit (e.g. "no more than three words")</li>
+        <li>Words must come <strong>directly from the text</strong> — don't change the form</li>
+        <li>Read the incomplete sentence and <strong>predict</strong> what kind of word is missing</li>
+        <li><strong>Scan the passage</strong> for the relevant section — questions follow text order</li>
+        <li>Check your answer <strong>fits grammatically</strong> in the sentence</li>
+        <li>Don't write more words than allowed — you'll lose the mark</li>
+      </ul>
+    </div>`
+});
+DataLayer.getLesson('reading','complete-gardening-handbook').then(initReading);
+</script>
+</body>
+</html>

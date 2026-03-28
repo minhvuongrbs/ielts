@@ -48,9 +48,8 @@ renderReadingPage({
   title: 'European River Cruising',
   sub: 'IELTS General Training — Reading Section 1 — Practice 2.3',
   passageRight: 'ielts',
-  passageLabel: '📝 Questions 1–4: Matching Information',
-  passageInstruction: 'For which advertisement are the following statements true? Write the correct letter, <strong>A–D</strong>.',
-  ieltsInstruction: 'Do the following statements agree with the information in the advertisements? Write TRUE, FALSE, or NOT GIVEN.',
+  passageLabel: '📝 Questions 1–9',
+  passageInstruction: '',
   phrasesIntro: 'Useful phrases from travel advertisements that you can reuse in IELTS Writing & Speaking.',
   summaryCards: `
     <div class="card">
@@ -78,7 +77,7 @@ renderReadingPage({
 });
 
 /* ── Split questions: matching (Q1–4) vs T/F/NG (Q5–9) ── */
-let MQ = [];
+let MQ = [], TFQ = [], tfAnswers = {};
 
 function highlightTour(id) {
   document.querySelectorAll('.tour-card').forEach(c => c.classList.remove('highlight'));
@@ -102,6 +101,12 @@ function renderPassage() {
         <div class="tour-text">${p.text}</div>
         <div class="tour-vi" data-vi>${p.vietnamese}</div>
       </div>`).join('')}
+    </div>
+    <div style="margin-top:18px;padding-top:14px;border-top:2px solid var(--accent-light);text-align:center;font-size:.82rem;color:#8a7a66;line-height:1.7">
+      <div style="font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;color:var(--accent)">Evergreen Tours</div>
+      <div>Premium touring worldwide</div>
+      <div>Call 1300 364 414 or contact your travel agent</div>
+      <div>www.evergreentours.com.au</div>
     </div>`;
 }
 
@@ -115,8 +120,19 @@ function toggleLetter(btn) {
   }
 }
 
+function selTF(btn) {
+  const q = btn.dataset.q;
+  document.querySelectorAll(`.ob[data-q="${q}"]`).forEach(b => b.classList.remove('sel'));
+  btn.classList.add('sel');
+  tfAnswers[q] = btn.dataset.v;
+}
+
 function renderPassageIELTS() {
-  document.getElementById('passage-ielts-ctn').innerHTML = MQ.map(q => `
+  const tfOpts = ['TRUE','FALSE','NOT GIVEN'];
+  document.getElementById('passage-ielts-ctn').innerHTML =
+    `<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin-bottom:8px">Questions 1–4: Matching Information</div>
+     <p style="font-size:.82rem;color:#8a7a66;font-style:italic;margin-bottom:10px">For which advertisement are the following statements true? Write the correct letter, <strong>A–D</strong>.</p>` +
+    MQ.map(q => `
     <div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-${q.number}">
       <div class="qn">Q${q.number}</div>
       <div class="qtx" style="font-size:.88rem">${q.text}</div>
@@ -124,43 +140,71 @@ function renderPassageIELTS() {
         ${['A','B','C','D'].map(l => `<button class="lo" data-q="${q.number}" data-l="${l}" onclick="toggleLetter(this)">${l}</button>`).join('')}
       </div>
       <div class="exp" id="piexp-${q.number}"></div>
+    </div>`).join('') +
+    `<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin:18px 0 8px;padding-top:14px;border-top:2px solid var(--accent-light)">Questions 5–9: True / False / Not Given</div>
+     <p style="font-size:.82rem;color:#8a7a66;font-style:italic;margin-bottom:10px">Do the following statements agree with the information in the advertisements? Write TRUE, FALSE, or NOT GIVEN.</p>` +
+    TFQ.map(q => `
+    <div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-${q.number}">
+      <div class="qn">Q${q.number}</div>
+      <div class="qtx" style="font-size:.88rem">${q.text}</div>
+      <div class="opts" style="flex-direction:row;flex-wrap:wrap;gap:6px;margin-top:8px">
+        ${tfOpts.map(o => `<button class="ob" style="padding:6px 12px;font-size:.82rem" data-q="${q.number}" data-v="${o}" onclick="selTF(this)">${o}</button>`).join('')}
+      </div>
+      <div class="exp" id="piexp-${q.number}"></div>
     </div>`).join('');
 }
 
 function checkPassageIELTS() {
-  let correct = 0;
+  let correct = 0, total = MQ.length + TFQ.length;
+  /* Check matching Q1–4 */
   MQ.forEach(q => {
     const ctn = document.getElementById('pilo-'+q.number), card = document.getElementById('piq-'+q.number), exp = document.getElementById('piexp-'+q.number);
     const btns = ctn.querySelectorAll('.lo'), sel = ctn.querySelector('.lo.sel');
     const picked = sel ? sel.dataset.l : '';
     btns.forEach(b => { b.disabled=true; b.classList.remove('sel'); if(b.dataset.l===q.answer) b.classList.add('ca'); else if(b.dataset.l===picked) b.classList.add('wa'); });
     const ok = picked === q.answer;
-    if(ok){ correct++; card.classList.add('correct'); } else { card.classList.add('wrong'); }
+    if(ok) correct++;
+    card.classList.add(ok?'correct':'wrong');
+    exp.className = 'exp show ' + (ok?'ce':'we');
+    exp.innerHTML = `<strong>${ok?'✓ Correct':'✗ Incorrect'}</strong> — ${q.explanation}<br><span style="color:var(--vi)">${q.vietnamese}</span>`;
+  });
+  /* Check T/F/NG Q5–9 */
+  TFQ.forEach(q => {
+    const card = document.getElementById('piq-'+q.number), exp = document.getElementById('piexp-'+q.number);
+    const picked = tfAnswers[q.number] || '';
+    document.querySelectorAll(`.ob[data-q="${q.number}"]`).forEach(b => { b.disabled=true; b.classList.remove('sel'); if(b.dataset.v===q.answer) b.classList.add('ca'); else if(b.dataset.v===picked) b.classList.add('wa'); });
+    const ok = picked === q.answer;
+    if(ok) correct++;
+    card.classList.add(ok?'correct':'wrong');
     exp.className = 'exp show ' + (ok?'ce':'we');
     exp.innerHTML = `<strong>${ok?'✓ Correct':'✗ Incorrect'}</strong> — ${q.explanation}<br><span style="color:var(--vi)">${q.vietnamese}</span>`;
   });
   const b = document.getElementById('passage-ielts-banner');
   b.className='banner show';
-  b.style.background = correct===MQ.length?'var(--correct-bg)':correct>=MQ.length/2?'#fffbe6':'var(--wrong-bg)';
-  b.style.color = correct===MQ.length?'var(--correct)':correct>=MQ.length/2?'#7a6200':'var(--wrong)';
-  b.textContent = `${correct}/${MQ.length} correct`;
+  const pct = correct/total;
+  b.style.background = pct>=.7?'var(--correct-bg)':pct>=.4?'#fffbe6':'var(--wrong-bg)';
+  b.style.color = pct>=.7?'var(--correct)':pct>=.4?'#7a6200':'var(--wrong)';
+  b.textContent = `${correct}/${total} correct`;
   document.getElementById('pic').style.display='none'; document.getElementById('pir').style.display='';
 }
 
 function resetPassageIELTS() {
+  tfAnswers = {};
   renderPassageIELTS();
   document.getElementById('passage-ielts-banner').className='banner';
   document.getElementById('pic').style.display=''; document.getElementById('pir').style.display='none';
 }
 
-/* ── Init: split matching vs T/F/NG, then render ── */
+/* ── Init: split matching vs T/F/NG, render all in passage panel ── */
 DataLayer.getLesson('reading','european-river-cruising').then(function(data) {
   initReading(data);
   /* Split: matching questions have qtype field */
   MQ = IQ.filter(q => q.qtype === 'matching');
-  IQ = IQ.filter(q => !q.qtype);
-  /* Re-render with split data */
-  renderIELTS();
+  TFQ = IQ.filter(q => !q.qtype);
+  /* Clear quiz tab IELTS (all questions are in passage panel now) */
+  document.getElementById('ielts-ctn').innerHTML = '';
+  document.getElementById('ic').style.display = 'none';
+  /* Render all 9 questions in passage panel */
   renderPassageIELTS();
 });
 </script>

@@ -3,7 +3,7 @@
 
 /* ======================== READING GLOBALS ======================== */
 let sections=[], IQ=[], QT=null, SQ=null;
-const ia={}, pia={};
+const pia={};
 
 /* ======================== HTML TEMPLATE ======================== */
 function renderReadingPage(cfg){
@@ -357,6 +357,10 @@ function initReading(data){
   if(QT) renderQTInfo();
   if(document.getElementById('passage-ielts-ctn')) renderPassageIELTS();
   if(SQ && document.getElementById('sq-card')) renderSummaryQ();
+  if(SQ && !IQ.length){
+    document.getElementById('ielts-ctn').innerHTML='<div class="card" style="text-align:center;padding:32px"><p style="font-size:1rem;margin-bottom:12px">✏️ Sentence completion questions are shown alongside the passage.</p><button class="btn bp" onclick="document.querySelector(\'[data-tab=passage]\').click()">Go to Passage</button></div>';
+    document.getElementById('ic').style.display='none';
+  }
 
   Promise.all(V.map(v=>fetchIPA(v.word))).then(()=>{renderVocab();renderFC();});
 }

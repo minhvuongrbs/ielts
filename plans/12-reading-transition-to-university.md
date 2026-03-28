@@ -1,7 +1,7 @@
 # Reading Lesson: Making the Transition to University Studies
 
 ## Status
-TODO
+DONE
 
 ## Goal
 Create a new Section 2 reading lesson based on "Making the Transition to University Studies" (p37–38, IELTS Reading & Writing General Training book). The passage provides advice for first-year university students across 7 sections (A–G), covering topics like faculty orientation, library use, study support, unit outlines, and study planning. Questions test Matching Headings skills.
@@ -28,4 +28,12 @@ Source: Appendix 1, p160–161 — Practice activity 3.1, Text 1
 | 21 | section G–i   |
 
 ## Steps
-- [ ] (to be filled in when working on this item)
+- [x] Add entry to `data/sections.json`
+- [x] Add 7 passages (A–G) to `data/passages.json`
+- [x] Add 7 matching heading questions (Q15–21) + meta to `data/questions.json`
+- [x] Add 15 vocabulary words to `data/vocabulary.json`
+- [x] Add 8 phrases to `data/phrases.json`
+- [x] Add 10 fill-blank exercises to `data/fill-blanks.json`
+- [x] Create `sections/reading/transition-to-university/index.html`
+- [x] Add card to reading hub `hubs/reading/index.html`
+- [x] Add card to homepage `index.html` + update stats

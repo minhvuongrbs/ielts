@@ -910,5 +910,146 @@
     "hint": "dấu hiệu",
     "skill": "reading",
     "section": "sleep-on-it"
+  },
+
+  {
+    "sentence": "It is important to find ways to help yourself ___ as a tertiary student.",
+    "answer": "thrive",
+    "hint": "phát triển mạnh",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "sentence": "Become familiar with your ___ — know where the offices and pigeonholes are.",
+    "answer": "faculty",
+    "hint": "khoa",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "sentence": "Don't ___ the importance of the university library to your success.",
+    "answer": "underestimate",
+    "hint": "đánh giá thấp",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "sentence": "Lecturers expect you to use a range of ___ for your research.",
+    "answer": "sources",
+    "hint": "nguồn tài liệu",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "sentence": "Advice and ___-paced tutorials are often available online.",
+    "answer": "self",
+    "hint": "tự",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "sentence": "The unit ___ contains essential information about each course.",
+    "answer": "outline",
+    "hint": "đề cương",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "sentence": "Don't be fooled if you have very few ___ contact hours.",
+    "answer": "compulsory",
+    "hint": "bắt buộc",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "sentence": "Set a time in week 3 or 4 to ___ your study plan.",
+    "answer": "reassess",
+    "hint": "đánh giá lại",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "sentence": "Making your plan public ensures people will support rather than ___ your plans.",
+    "answer": "sabotage",
+    "hint": "phá hoại",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "sentence": "All first-year students go through ___ Week at the start of semester.",
+    "answer": "Orientation",
+    "hint": "tuần nhập học",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "sentence": "Always buy ___ disease-free plants from a trusted supplier.",
+    "answer": "certified",
+    "hint": "được chứng nhận",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "sentence": "Strawberries need ___ soil to grow well.",
+    "answer": "fertile",
+    "hint": "màu mỡ",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "sentence": "Work plenty of ___ or manure into the ground before planting.",
+    "answer": "compost",
+    "hint": "phân ủ",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "sentence": "Rake in ___, then plant 45 cm apart in rows.",
+    "answer": "fertiliser",
+    "hint": "phân bón",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "sentence": "Spread the roots out on a ___, making sure the crown is level with the surface.",
+    "answer": "mound",
+    "hint": "gò đất",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "sentence": "Sulphate of potash should be applied in early ___.",
+    "answer": "spring",
+    "hint": "mùa xuân",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "sentence": "___ or hand weeding will keep down weeds.",
+    "answer": "Hoeing",
+    "hint": "xới đất",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "sentence": "Use special mats or lay a thick bed of ___ around the plants.",
+    "answer": "straw",
+    "hint": "rơm",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "sentence": "Spread out the ___ in early to mid-summer to grow new plants.",
+    "answer": "runners",
+    "hint": "thân bò",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "sentence": "Do not ___ the link with the parent plant until the new plant has rooted.",
+    "answer": "sever",
+    "hint": "cắt đứt",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
   }
 ]

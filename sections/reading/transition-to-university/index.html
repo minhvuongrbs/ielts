@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Reading — Making the Transition to University Studies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/reading.css">
+</head>
+<body data-depth="3">
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+<div id="app"></div>
+<script>
+const CAT_LABELS={academic:'🎓 Academic',campus:'🏫 Campus',study:'📖 Study'};
+const IELTS_OPTIONS=['i','ii','iii','iv','v','vi','vii','viii','ix'];
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/reading.js"></script>
+<script>
+renderReadingPage({
+  title: 'Making the Transition to University Studies',
+  sub: 'IELTS General Training — Reading Section 2 — Practice 3.1',
+  passageRight: 'ielts',
+  optsLayout: 'column',
+  passageLabel: '📑 Questions 15–21: Matching Headings',
+  passageInstruction: 'Choose the correct heading for each section from the list below.',
+  ieltsInstruction: '<div style="text-align:left;margin-bottom:12px;font-size:.85rem;line-height:1.7"><strong>List of Headings</strong><br>i &nbsp;A brief overview of the semester<br>ii &nbsp;Student learning support centres<br>iii &nbsp;Lectures, tutorials and seminars<br>iv &nbsp;Study plans and timetables<br>v &nbsp;Your faculty<br>vi &nbsp;Unit outlines<br>vii &nbsp;Preparing for exams<br>viii &nbsp;The library<br>ix &nbsp;Your first weeks on campus</div>Choose the correct heading for Sections A–G.',
+  phrasesIntro: 'Useful phrases from this university advice text — reuse them in IELTS Writing & Speaking.',
+  summaryCards: `
+    <div class="card">
+      <div class="sk">🎓 Key Ideas by Section</div>
+      <ul class="slist">
+        <li><strong>A</strong> — Introduction: importance of adapting to academic life</li>
+        <li><strong>B</strong> — Get to know your faculty: offices, tutors, coordinators</li>
+        <li><strong>C</strong> — Use the library: tours, courses, range of sources</li>
+        <li><strong>D</strong> — Free study support: one-on-one help, seminars, online tutorials</li>
+        <li><strong>E</strong> — Read unit outlines carefully and keep paper copies</li>
+        <li><strong>F</strong> — Create a study plan: weekly + semester, share with others</li>
+        <li><strong>G</strong> — Overview: Orientation Week → study break</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">📑 IELTS Tip: Matching Headings</div>
+      <ul class="slist">
+        <li>Read the <strong>headings first</strong>, then skim each section for its main idea</li>
+        <li>The heading must match the <strong>whole section</strong>, not just one detail</li>
+        <li>Watch for <strong>distractors</strong> — some headings are not used (here: iii and vii)</li>
+        <li>If two headings seem to fit, choose the one that covers the <strong>broadest idea</strong></li>
+        <li>Cross off headings as you use them to narrow down choices</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">⚠️ Distractor Headings</div>
+      <ul class="slist">
+        <li>Heading <strong>iii</strong> ("Lectures, tutorials and seminars") — not used! No section is specifically about lecture formats</li>
+        <li>Heading <strong>vii</strong> ("Preparing for exams") — not used! The passage focuses on starting university, not exam preparation</li>
+        <li>IELTS tip: distractors often use words that appear in the text but don't match any section's <strong>main idea</strong></li>
+      </ul>
+    </div>`
+});
+DataLayer.getLesson('reading','transition-to-university').then(initReading);
+</script>
+</body>
+</html>

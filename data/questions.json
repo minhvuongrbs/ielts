@@ -1220,5 +1220,194 @@
     },
     "skill": "reading",
     "section": "sleep-on-it"
+  },
+
+  {
+    "number": 15,
+    "text": "Section A",
+    "answer": "ix",
+    "explanation": "Section A introduces the importance of adapting to university life — 'find ways to help yourself survive — and indeed thrive — as a tertiary student'. This is about your first weeks on campus.",
+    "vietnamese": "Đoạn A giới thiệu tầm quan trọng của việc thích nghi với đời sống đại học — 'tìm cách giúp bản thân tồn tại và phát triển với tư cách sinh viên'. Đây là về những tuần đầu tiên của bạn ở trường.",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "number": 16,
+    "text": "Section B",
+    "answer": "v",
+    "explanation": "Section B is all about getting to know your faculty — offices, lecturers, tutors, pigeonholes, first-year coordinator. Heading v ('Your faculty') matches perfectly.",
+    "vietnamese": "Đoạn B hoàn toàn về việc làm quen với khoa — văn phòng, giảng viên, trợ giảng, hộp thư, điều phối viên năm nhất. Tiêu đề v ('Khoa của bạn') hoàn toàn phù hợp.",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "number": 17,
+    "text": "Section C",
+    "answer": "viii",
+    "explanation": "Section C discusses the university library — its importance, library tours, free courses, and using a range of sources beyond the internet.",
+    "vietnamese": "Đoạn C thảo luận về thư viện đại học — tầm quan trọng, tham quan thư viện, khóa học miễn phí, và sử dụng nhiều nguồn tài liệu ngoài internet.",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "number": 18,
+    "text": "Section D",
+    "answer": "ii",
+    "explanation": "Section D describes free study support services — one-on-one help, seminars on study techniques, writing skills, and online tutorials. These are student learning support centres.",
+    "vietnamese": "Đoạn D mô tả các dịch vụ hỗ trợ học tập miễn phí — trợ giúp một-một, hội thảo về kỹ thuật học tập, kỹ năng viết, và hướng dẫn trực tuyến. Đây là các trung tâm hỗ trợ học tập sinh viên.",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "number": 19,
+    "text": "Section E",
+    "answer": "vi",
+    "explanation": "Section E is about unit outlines — reading them carefully, keeping paper copies, and understanding that they contain essential information about each unit.",
+    "vietnamese": "Đoạn E nói về đề cương môn học — đọc kỹ, giữ bản giấy, và hiểu rằng chúng chứa thông tin thiết yếu về từng môn học.",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "number": 20,
+    "text": "Section F",
+    "answer": "iv",
+    "explanation": "Section F advises creating a study plan — weekly plans, semester plans, deadlines, timetables. Heading iv ('Study plans and timetables') matches exactly.",
+    "vietnamese": "Đoạn F khuyên lập kế hoạch học tập — kế hoạch tuần, kế hoạch học kỳ, hạn chót, thời khóa biểu. Tiêu đề iv ('Kế hoạch học tập và thời khóa biểu') hoàn toàn phù hợp.",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "number": 21,
+    "text": "Section G",
+    "answer": "i",
+    "explanation": "Section G gives a brief summary of what happens during the first semester — Orientation Week, early weeks, breaks, later weeks, study break. This is 'a brief overview of the semester'.",
+    "vietnamese": "Đoạn G cung cấp tóm tắt ngắn gọn về những gì xảy ra trong học kỳ đầu — Tuần Định hướng, các tuần đầu, nghỉ, các tuần cuối, tuần ôn thi. Đây là 'tổng quan ngắn gọn về học kỳ'.",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "Matching Headings",
+          "icon": "📑",
+          "description": "Choose the best heading for each section of the passage from a list of headings. Tests your ability to identify the main idea of each section.",
+          "tips": [
+            "Read the list of headings carefully first before reading the passage.",
+            "Skim each section for its main idea — don't get distracted by details.",
+            "The heading should summarise the WHOLE section, not just one sentence.",
+            "Cross off headings as you use them — but remember some are distractors (not used).",
+            "If two headings seem to fit, choose the one that covers the broadest idea of the section."
+          ],
+          "vi": "Nối tiêu đề — Chọn tiêu đề phù hợp nhất cho mỗi đoạn văn từ danh sách. Kiểm tra khả năng xác định ý chính của mỗi đoạn."
+        }
+      ],
+      "allTypes": [
+        { "name": "Multiple Choice", "practiced": false },
+        { "name": "Matching Information", "practiced": true },
+        { "name": "Matching Headings", "practiced": true },
+        { "name": "Matching Features", "practiced": false },
+        { "name": "Matching Sentence Endings", "practiced": false },
+        { "name": "Sentence Completion", "practiced": false },
+        { "name": "Summary Completion", "practiced": false },
+        { "name": "Note / Table / Flow-chart Completion", "practiced": false },
+        { "name": "Short Answer Questions", "practiced": false },
+        { "name": "True / False / Not Given", "practiced": true },
+        { "name": "Yes / No / Not Given", "practiced": false }
+      ]
+    },
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "type": "meta",
+    "key": "summaryQuestions",
+    "value": {
+      "instruction": "Complete the sentences below. Choose <strong>no more than three words</strong> from the text for each answer.",
+      "groups": [
+        {
+          "label": "Questions 11–14",
+          "items": [
+            {
+              "n": 11,
+              "parts": [
+                { "text": "It is important that you choose strawberry plants to grow that are" },
+                { "blank": true, "a": ["free of disease", "disease free", "disease-free"], "size": 16 },
+                { "text": "." }
+              ],
+              "vi": "Đoạn đầu: \"always buy certified disease-free plants\" → free of disease / disease free"
+            },
+            {
+              "n": 12,
+              "parts": [
+                { "text": "Before you plant strawberry plants ensure that your soil is fertile, and" },
+                { "blank": true, "a": ["remove all weeds"], "size": 18 },
+                { "text": "from the ground." }
+              ],
+              "vi": "Phần Planting: \"removing all weeds before planting\" → remove all weeds"
+            },
+            {
+              "n": 13,
+              "parts": [
+                { "text": "As the strawberry plants grow you should place a small mat or a bed of straw around each plant to keep" },
+                { "blank": true, "a": ["the fruit clean", "fruit clean"], "size": 16 },
+                { "text": "." }
+              ],
+              "vi": "Routine care #3–4: \"Use special mats to keep the fruit clean\" / \"lay a thick bed of straw\" → (the) fruit clean"
+            },
+            {
+              "n": 14,
+              "parts": [
+                { "text": "During the first year, remove all" },
+                { "blank": true, "a": ["flowers"], "size": 10 },
+                { "text": "from the plants, so that they can grow strong to bear fruit." }
+              ],
+              "vi": "Phần Planting: \"Remove flowers that appear during the first year\" → flowers"
+            }
+          ]
+        }
+      ]
+    },
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "Sentence Completion",
+          "icon": "✏️",
+          "description": "You are given incomplete sentences and must complete them using words taken directly from the reading passage. There is a word limit (e.g. no more than three words).",
+          "tips": [
+            "Read the instruction carefully — note the maximum number of words allowed",
+            "The words must come directly from the passage — don't change the form",
+            "Read the incomplete sentence first and predict what type of word is needed",
+            "Questions follow the order of information in the passage",
+            "Check that your completed sentence is grammatically correct",
+            "Count your words — exceeding the limit means zero marks for that question"
+          ],
+          "vi": "Bạn được cho các câu chưa hoàn chỉnh và phải hoàn thành chúng bằng các từ lấy trực tiếp từ bài đọc. Có giới hạn số từ (ví dụ: không quá ba từ)."
+        }
+      ],
+      "allTypes": [
+        { "name": "Multiple Choice", "practiced": false },
+        { "name": "Matching Information", "practiced": false },
+        { "name": "Matching Headings", "practiced": false },
+        { "name": "Matching Features", "practiced": false },
+        { "name": "Matching Sentence Endings", "practiced": false },
+        { "name": "Sentence Completion", "practiced": true },
+        { "name": "Summary Completion", "practiced": false },
+        { "name": "Note / Table / Flow-chart Completion", "practiced": false },
+        { "name": "Short Answer Questions", "practiced": false },
+        { "name": "True / False / Not Given", "practiced": false },
+        { "name": "Yes / No / Not Given", "practiced": false }
+      ]
+    },
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
   }
 ]

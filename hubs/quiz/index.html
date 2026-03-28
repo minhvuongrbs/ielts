@@ -254,8 +254,8 @@ async function loadData(){
   allVocab=await DataLayer.getVocabulary();
   allFB=await DataLayer.getFillBlanks();
   buildFilters();
-  document.getElementById('start-btn').textContent=`Start Quiz (${allVocab.length} words available)`;
   document.getElementById('start-btn').disabled=false;
+  updateStartBtn();
   allVocab.forEach(v=>fetchIPA(v.word));
 }
 loadData();

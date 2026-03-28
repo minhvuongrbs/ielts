@@ -58,5 +58,10 @@
     "section": "sleep-on-it",
     "name": "Sleep on It",
     "skill": "reading"
+  },
+  {
+    "section": "complete-gardening-handbook",
+    "name": "The Complete Gardening Handbook",
+    "skill": "reading"
   }
 ]

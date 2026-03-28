@@ -1,7 +1,7 @@
 # Reading Lesson: The Complete Gardening Handbook
 
 ## Status
-TODO
+DONE
 
 ## Goal
 Create a new Section 1 reading lesson based on "The Complete Gardening Handbook — How to Grow Strawberries" (p25–27, IELTS Reading & Writing General Training book). The passage is an instructional text about growing strawberries, covering planting, routine care, and propagating new plants from runners. Questions use sentence completion format.
@@ -25,4 +25,14 @@ Source: Appendix 1, p160 — Practice activity 2.3, Text 3
 | 14 | flowers                      |
 
 ## Steps
-- [ ] (to be filled in when working on this item)
+- [x] Create `sections/reading/complete-gardening-handbook/index.html` — lesson page with sentence completion config
+- [x] Add passage to `data/passages.json` — full text (intro, planting, routine care, runners) + Vietnamese
+- [x] Add `summaryQuestions` meta to `data/questions.json` — 4 sentence completion questions (Q11–14)
+- [x] Add `questionTypes` meta to `data/questions.json` — Sentence Completion type info
+- [x] Add 15 vocabulary items to `data/vocabulary.json` (planting, care, propagation categories)
+- [x] Add 8 phrases to `data/phrases.json`
+- [x] Add 10 fill-in-the-blank exercises to `data/fill-blanks.json`
+- [x] Register lesson in `data/sections.json`
+- [x] Update `shared/reading.js` — handle empty IQ + SQ case in IELTS tab (redirect to passage)
+- [x] Add card to homepage `index.html` + update stats (14 lessons, 303 vocab, 144 phrases)
+- [x] Add card to reading hub `hubs/reading/index.html`

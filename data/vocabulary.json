@@ -2730,5 +2730,306 @@
     "category": "sleep",
     "skill": "reading",
     "section": "sleep-on-it"
+  },
+
+  {
+    "word": "thrive",
+    "pos": "verb",
+    "vietnamese": "phát triển mạnh",
+    "definition": "To grow, develop, or be successful; to flourish.",
+    "example": "\"…find ways to help yourself survive — and indeed thrive — as a tertiary student.\"",
+    "category": "academic",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "tertiary",
+    "pos": "adjective",
+    "vietnamese": "bậc đại học, bậc ba",
+    "definition": "Relating to education at the university or college level (after primary and secondary).",
+    "example": "\"…help yourself survive — and indeed thrive — as a tertiary student.\"",
+    "category": "academic",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "faculty",
+    "pos": "noun",
+    "vietnamese": "khoa (đại học)",
+    "definition": "A department or group of related departments within a university.",
+    "example": "\"Become familiar with your faculty.\"",
+    "category": "campus",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "pigeonhole",
+    "pos": "noun",
+    "vietnamese": "hộp thư, ngăn đựng thư",
+    "definition": "A small compartment or slot for letters or messages, often found in offices.",
+    "example": "\"Where are your lecturers' and tutors' offices and pigeonholes?\"",
+    "category": "campus",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "coordinator",
+    "pos": "noun",
+    "vietnamese": "điều phối viên",
+    "definition": "A person who organises activities or groups of people.",
+    "example": "\"Does your faculty have a special first-year coordinator?\"",
+    "category": "campus",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "underestimate",
+    "pos": "verb",
+    "vietnamese": "đánh giá thấp",
+    "definition": "To think something is less important, less good, or smaller than it really is.",
+    "example": "\"Don't underestimate the importance of the university library to your success.\"",
+    "category": "academic",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "discipline",
+    "pos": "noun",
+    "vietnamese": "ngành học, lĩnh vực",
+    "definition": "A branch of knowledge or field of study, especially one studied at university.",
+    "example": "\"…help you discover the best resources for your discipline.\"",
+    "category": "academic",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "enrolment",
+    "pos": "noun",
+    "vietnamese": "sự nhập học, đăng ký",
+    "definition": "The act of officially joining a school, university, or course.",
+    "example": "\"Read the information given to you on enrolment.\"",
+    "category": "academic",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "self-paced",
+    "pos": "adjective",
+    "vietnamese": "tự điều chỉnh tốc độ",
+    "definition": "Allowing learners to progress through material at their own speed.",
+    "example": "\"Advice and self-paced tutorials are often available online.\"",
+    "category": "study",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "unit outline",
+    "pos": "noun",
+    "vietnamese": "đề cương môn học",
+    "definition": "A document that describes the content, objectives, and assessment of a university course unit.",
+    "example": "\"Read your unit outlines as soon as you receive them.\"",
+    "category": "study",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "compulsory",
+    "pos": "adjective",
+    "vietnamese": "bắt buộc",
+    "definition": "Required by law or a rule; obligatory.",
+    "example": "\"Don't be fooled if you have very few compulsory contact hours.\"",
+    "category": "study",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "reassess",
+    "pos": "verb",
+    "vietnamese": "đánh giá lại",
+    "definition": "To consider or evaluate something again, especially to make changes.",
+    "example": "\"Set a time in week 3 or 4 of the semester to reassess your study plan.\"",
+    "category": "study",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "sabotage",
+    "pos": "verb",
+    "vietnamese": "phá hoại",
+    "definition": "To deliberately destroy or damage something; to undermine someone's plans.",
+    "example": "\"…they will support you rather than sabotage your plans.\"",
+    "category": "study",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "orientation",
+    "pos": "noun",
+    "vietnamese": "định hướng, tuần nhập học",
+    "definition": "An introduction or familiarisation programme for new students at a university.",
+    "example": "\"Orientation Week.\"",
+    "category": "campus",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "semester",
+    "pos": "noun",
+    "vietnamese": "học kỳ",
+    "definition": "A half-year term in an academic year, typically lasting about 15–18 weeks.",
+    "example": "\"…use a diary or wall planner to make a whole-semester study plan.\"",
+    "category": "academic",
+    "skill": "reading",
+    "section": "transition-to-university"
+  },
+  {
+    "word": "certified",
+    "pos": "adjective",
+    "vietnamese": "được chứng nhận",
+    "definition": "Officially recognised as meeting a certain standard.",
+    "example": "\"…always buy certified disease-free plants.\"",
+    "category": "planting",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "fertile",
+    "pos": "adjective",
+    "vietnamese": "màu mỡ, phì nhiêu",
+    "definition": "Rich in nutrients and capable of producing abundant plant growth.",
+    "example": "\"Strawberries need fertile soil…\"",
+    "category": "planting",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "compost",
+    "pos": "noun",
+    "vietnamese": "phân ủ, phân hữu cơ",
+    "definition": "Decayed organic material used to enrich soil.",
+    "example": "\"…work plenty of compost or manure into the ground.\"",
+    "category": "planting",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "manure",
+    "pos": "noun",
+    "vietnamese": "phân chuồng",
+    "definition": "Animal waste used as fertiliser for growing plants.",
+    "example": "\"…work plenty of compost or manure into the ground.\"",
+    "category": "planting",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "fertiliser",
+    "pos": "noun",
+    "vietnamese": "phân bón",
+    "definition": "A substance added to soil to supply plant nutrients.",
+    "example": "\"Rake in fertiliser, then plant 45 cm apart…\"",
+    "category": "planting",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "mound",
+    "pos": "noun",
+    "vietnamese": "gò đất, ụ đất",
+    "definition": "A small raised pile of earth.",
+    "example": "\"Spread the roots out on a mound…\"",
+    "category": "planting",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "crown",
+    "pos": "noun",
+    "vietnamese": "thân gốc (cây)",
+    "definition": "The point where the stem meets the roots of a plant.",
+    "example": "\"…making sure that the crown is level with the surrounding surface.\"",
+    "category": "planting",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "sulphate of potash",
+    "pos": "noun",
+    "vietnamese": "kali sunfat",
+    "definition": "A potassium-based fertiliser that promotes fruit and flower growth.",
+    "example": "\"Sulphate of potash should be applied in early spring.\"",
+    "category": "care",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "ammonia",
+    "pos": "noun",
+    "vietnamese": "amoniac",
+    "definition": "A nitrogen compound; in gardening, used as a plant nutrient.",
+    "example": "\"…apply sulphate of ammonia in mid-spring.\"",
+    "category": "care",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "hoeing",
+    "pos": "noun",
+    "vietnamese": "xới đất (bằng cuốc)",
+    "definition": "Using a hoe to break up soil or remove weeds.",
+    "example": "\"Hoeing or hand weeding will keep down weeds.\"",
+    "category": "care",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "straw",
+    "pos": "noun",
+    "vietnamese": "rơm, rạ",
+    "definition": "Dried stalks of grain, used as mulch or bedding.",
+    "example": "\"…lay a thick bed of straw around the plants.\"",
+    "category": "care",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "runners",
+    "pos": "noun",
+    "vietnamese": "thân bò (cây)",
+    "definition": "Long horizontal stems that grow along the ground and produce new plants.",
+    "example": "\"Spread out the runners in early to mid-summer…\"",
+    "category": "propagation",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "peg",
+    "pos": "verb",
+    "vietnamese": "ghim, cố định",
+    "definition": "To fasten or pin something in place.",
+    "example": "\"…peg where there is a strong tuft of leaves into pots of compost.\"",
+    "category": "propagation",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "sever",
+    "pos": "verb",
+    "vietnamese": "cắt đứt, cắt rời",
+    "definition": "To cut through or separate completely.",
+    "example": "\"…do not sever the link with the parent plant.\"",
+    "category": "propagation",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
+  },
+  {
+    "word": "surplus",
+    "pos": "adjective",
+    "vietnamese": "thừa, dư",
+    "definition": "More than what is needed; excess.",
+    "example": "\"Remove surplus runners not required.\"",
+    "category": "propagation",
+    "skill": "reading",
+    "section": "complete-gardening-handbook"
   }
 ]
