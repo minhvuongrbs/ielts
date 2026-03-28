@@ -4,32 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IELTS Reading — On the City Doorstep</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/reading.css">
 <style>
-:root{--highlight:#ffe9a0}
-.container{max-width:1200px;margin:0 auto;padding:20px 16px 80px}
-header{text-align:center;padding:32px 0 24px;border-bottom:2px solid var(--accent-light);margin-bottom:24px}
-header h1{font-family:'Fraunces',serif;font-weight:700;font-size:2.2rem;letter-spacing:-0.02em}
-header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
-
-.tabs{display:flex;gap:3px;background:#efe8de;border-radius:10px;padding:3px;margin-bottom:24px;overflow-x:auto}
-.tab-btn{flex:1;min-width:0;padding:9px 6px;border:none;background:0;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:.82rem;color:#8a7a66;border-radius:8px;cursor:pointer;transition:.25s;white-space:nowrap}
-.tab-btn.active{background:#fff;color:var(--text);box-shadow:0 1px 4px rgba(0,0,0,.08)}
-.tp{display:none}.tp.active{display:block}
-
-.card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:24px 28px;margin-bottom:16px}
-
-/* Passage */
-.vi-bar{display:flex;align-items:center;gap:10px;margin-bottom:16px;padding:10px 16px;background:var(--vi-bg);border-radius:8px;font-size:.88rem}
-.vi-bar label{font-weight:600;color:var(--vi)}
-.sw{position:relative;width:44px;height:24px}
-.sw input{opacity:0;width:0;height:0}
-.sld{position:absolute;inset:0;background:#ccc;border-radius:24px;cursor:pointer;transition:.3s}
-.sld:before{content:'';position:absolute;height:18px;width:18px;left:3px;bottom:3px;background:#fff;border-radius:50%;transition:.3s}
-.sw input:checked+.sld{background:var(--vi)}
-.sw input:checked+.sld:before{transform:translateX(20px)}
-
-/* Park cards grid */
+/* Park cards + multi-letter select (unique to matching-information lessons) */
 .parks-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .park-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:18px 20px;border-left:4px solid var(--accent)}
 .park-card.highlight{background:var(--accent-light)}
@@ -41,138 +21,6 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 .park-text{font-size:.88rem;line-height:1.6;color:var(--text)}
 .park-vi{display:none;font-size:.83rem;color:var(--vi);font-style:italic;margin-top:8px;padding:8px 12px;background:var(--vi-bg);border-radius:6px;border-left:3px solid var(--vi)}
 .park-vi.show{display:block}
-
-/* Vocab */
-.vf{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
-.fb{padding:6px 14px;border:2px solid #e0d6c8;border-radius:20px;background:#fff;font-size:.82rem;font-weight:600;cursor:pointer;transition:.2s;font-family:'Source Sans 3',sans-serif}
-.fb.active{border-color:var(--accent);background:var(--accent);color:#fff}
-.vg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
-.vc{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:18px 22px;cursor:pointer;transition:transform .2s,box-shadow .2s;border-left:4px solid var(--accent);position:relative}
-.vc:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(44,36,22,.12)}
-.vc.open{border-left-color:var(--correct)}
-.vw{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem}
-.vp{font-size:.78rem;color:#8a7a66;font-style:italic}
-.vtag{position:absolute;top:16px;right:16px;font-size:.7rem;font-weight:700;background:var(--accent-light);color:var(--accent-dark);padding:2px 8px;border-radius:10px}
-.vb{display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--accent-light);font-size:.9rem}
-.vc.open .vb{display:block}
-.vvi{color:var(--vi);font-weight:600;margin-bottom:4px}
-.ved{margin-bottom:6px}
-.vex{font-style:italic;font-size:.85rem;color:#6b5e4f}
-.vtap{font-size:.78rem;color:var(--accent);margin-top:4px}
-.vipa{font-size:.82rem;color:#888;font-style:italic;margin-left:2px}
-.audio-btn{background:none;border:none;cursor:pointer;font-size:1rem;padding:2px 6px;border-radius:6px;opacity:.5;transition:opacity .2s,background .2s;vertical-align:middle}
-.audio-btn:hover{opacity:1;background:var(--accent-light)}
-
-/* Quiz shared */
-.qh{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px}
-.qt{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem}
-.qs{font-weight:600;font-size:.95rem}
-.sc{color:var(--correct)}.sw2{color:var(--wrong)}
-.qn{font-family:'Fraunces',serif;font-weight:700;color:var(--accent);font-size:.85rem;margin-bottom:4px}
-.qtx{font-weight:600;font-size:.95rem;margin-bottom:10px}
-.opts{display:flex;flex-wrap:wrap;gap:8px}
-.ob{padding:7px 16px;border:2px solid #e0d6c8;border-radius:8px;background:#fff;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:.9rem;cursor:pointer;transition:.2s;color:var(--text)}
-.ob:hover{border-color:var(--accent);background:var(--accent-light)}
-.ob.sel{border-color:var(--accent);background:var(--accent);color:#fff}
-.ob.ca{border-color:var(--correct);background:var(--correct);color:#fff}
-.ob.wa{border-color:var(--wrong);background:var(--wrong);color:#fff}
-.ob:disabled{cursor:default;opacity:.7}
-.exp{display:none;margin-top:10px;padding:10px 14px;border-radius:8px;font-size:.88rem;line-height:1.6}
-.exp.show{display:block}
-.exp.ce{background:var(--correct-bg);color:#1a5632}
-.exp.we{background:var(--wrong-bg);color:#8b2a1f}
-.card.correct{border-left:4px solid var(--correct);background:var(--correct-bg)}
-.card.wrong{border-left:4px solid var(--wrong);background:var(--wrong-bg)}
-.ctrls{display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap}
-.btn{padding:10px 28px;border:none;border-radius:8px;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:.95rem;cursor:pointer;transition:.2s}
-.bp{background:var(--accent);color:#fff}.bp:hover{background:var(--accent-dark)}
-.bs{background:#efe8de;color:var(--text)}.bs:hover{background:#e4d9ca}
-.banner{text-align:center;padding:16px;border-radius:var(--r);font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;margin-bottom:16px;display:none}
-.banner.show{display:block}
-
-/* Fill blank */
-.bi{display:inline-block;border:none;border-bottom:2px solid var(--accent);background:0;font-family:'Source Sans 3',sans-serif;font-size:.95rem;font-weight:600;color:var(--text);padding:2px 4px;width:140px;outline:0;transition:.2s}
-.bi:focus{border-bottom-color:var(--accent-dark)}
-.bi.ci{border-bottom-color:var(--correct);color:var(--correct)}
-.bi.wi{border-bottom-color:var(--wrong);color:var(--wrong)}
-
-/* Flashcard */
-.fcc{display:flex;flex-direction:column;align-items:center;gap:16px}
-.fc{width:100%;max-width:480px;min-height:260px;perspective:800px;cursor:pointer}
-.fci{position:relative;width:100%;min-height:260px;transition:transform .5s;transform-style:preserve-3d}
-.fc.flipped .fci{transform:rotateY(180deg)}
-.fcf,.fcb{position:absolute;inset:0;backface-visibility:hidden;border-radius:var(--r);box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center}
-.fcf{background:#fff}
-.fcb{background:var(--vi-bg);transform:rotateY(180deg)}
-.fcw{font-family:'Fraunces',serif;font-weight:700;font-size:1.8rem;margin-bottom:8px}
-.fcp{font-size:.85rem;color:#8a7a66;font-style:italic}
-.fch{font-size:.82rem;color:var(--accent);margin-top:12px}
-.fcvi{font-size:1rem;font-weight:600;color:var(--vi);margin-bottom:8px}
-.fcd{font-size:1.1rem;font-weight:600;margin-bottom:8px}
-.fce{font-size:.85rem;font-style:italic;color:#6b5e4f}
-.fcn{display:flex;gap:12px;align-items:center}
-.fcn .btn{padding:8px 20px}
-.fccnt{font-weight:600;font-size:.9rem;color:#8a7a66;min-width:60px;text-align:center}
-.fcpg{width:100%;max-width:480px;height:6px;background:#efe8de;border-radius:3px;overflow:hidden}
-.fcpgb{height:100%;background:var(--accent);border-radius:3px;transition:width .3s}
-
-/* Match */
-.mg{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:600px;margin:0 auto}
-.mi{padding:14px 16px;border:2px solid #e0d6c8;border-radius:8px;background:#fff;text-align:center;cursor:pointer;font-weight:600;font-size:.9rem;transition:.25s;user-select:none}
-.mi:hover{border-color:var(--accent);background:var(--accent-light)}
-.mi.sm{border-color:var(--accent);background:var(--accent);color:#fff}
-.mi.matched{border-color:var(--correct);background:var(--correct-bg);color:var(--correct);cursor:default;opacity:.8}
-.mi.wf{border-color:var(--wrong);background:var(--wrong-bg)}
-
-/* Sub tabs */
-.stabs{display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap}
-.stab{padding:7px 14px;border:2px solid #e0d6c8;border-radius:20px;background:#fff;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:.82rem;cursor:pointer;transition:.2s;color:#8a7a66}
-.stab.active{border-color:var(--accent);background:var(--accent);color:#fff}
-.sp{display:none}.sp.active{display:block}
-
-/* Useful Phrases */
-.ph-grid{display:flex;flex-direction:column;gap:14px}
-.ph-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:20px 24px;border-left:4px solid var(--accent);cursor:pointer;transition:transform .2s,box-shadow .2s}
-.ph-card:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(44,36,22,.12)}
-.ph-card.open{border-left-color:var(--correct)}
-.ph-phrase{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;margin-bottom:2px}
-.ph-example-preview{font-size:.88rem;color:#1a5632;margin-top:6px;background:var(--correct-bg);padding:8px 14px;border-radius:8px;font-style:italic}
-.ph-tag{display:inline-block;font-size:.7rem;font-weight:700;background:var(--accent-light);color:var(--accent-dark);padding:2px 8px;border-radius:10px;margin-left:8px}
-.ph-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--accent-light);font-size:.9rem}
-.ph-card.open .ph-body{display:block}
-.ph-card.open .ph-tap{display:none}
-.ph-usage{font-size:.9rem;color:#6b5e4f;margin-bottom:8px}
-.ph-vi{font-size:.92rem;color:var(--vi);font-weight:600;font-style:italic}
-.ph-tap{font-size:.78rem;color:var(--accent);margin-top:6px}
-
-/* Question Type Info */
-.qt-info{background:#fdf6ee;border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px;margin-bottom:16px;cursor:pointer;transition:background .2s}
-.qt-info:hover{background:#faf0e2}
-.qt-info-header{display:flex;justify-content:space-between;align-items:center}
-.qt-info-type{font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;color:var(--accent)}
-.qt-info-toggle{color:var(--accent);transition:transform .25s;font-size:.8rem}
-.qt-info.open .qt-info-toggle{transform:rotate(180deg)}
-.qt-info-body{display:none;margin-top:12px;font-size:.88rem;line-height:1.6}
-.qt-info.open .qt-info-body{display:block}
-.qt-info-desc{margin-bottom:8px;color:#6b5e4f}
-.qt-info-vi{color:var(--vi);font-style:italic;font-size:.85rem;margin-bottom:10px}
-.qt-info-tips{padding-left:18px;color:var(--text);margin-bottom:12px}
-.qt-info-tips li{margin-bottom:4px}
-.qt-types-title{font-weight:700;font-size:.82rem;color:#8a7a66;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
-.qt-checklist{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
-.qt-check-item{font-size:.82rem;padding:3px 0;color:#8a7a66}
-.qt-check-item.practiced{color:var(--correct);font-weight:600}
-.qt-check-item .qt-mark{display:inline-block;width:18px;text-align:center;margin-right:2px}
-
-/* Passage split */
-.passage-split{display:flex;gap:20px;align-items:flex-start}
-.passage-left{flex:1;min-width:0}
-.passage-right{width:380px;flex-shrink:0;position:sticky;top:60px;max-height:calc(100vh - 80px);overflow-y:auto;scrollbar-width:thin}
-.passage-right::-webkit-scrollbar{width:5px}
-.passage-right::-webkit-scrollbar-thumb{background:#d4c5b0;border-radius:4px}
-.passage-right .card{border-top:3px solid var(--accent)}
-
-/* Multi-letter select buttons */
 .letter-opts{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .lo{width:36px;height:36px;border:2px solid #e0d6c8;border-radius:8px;background:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;cursor:pointer;transition:.2s;color:var(--text);display:flex;align-items:center;justify-content:center}
 .lo:hover{border-color:var(--accent);background:var(--accent-light)}
@@ -181,380 +29,128 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 .lo.wa{border-color:var(--wrong);background:var(--wrong);color:#fff}
 .lo:disabled{cursor:default}
 .iq-req{font-size:.78rem;color:#8a7a66;font-style:italic;margin-top:4px}
-
-@media(max-width:900px){
-  .passage-split{flex-direction:column}
-  .passage-right{width:100%;position:static;max-height:none;overflow-y:visible}
-  .parks-grid{grid-template-columns:1fr}
-}
-@media(max-width:600px){
-  .card{padding:18px 16px}header h1{font-size:1.7rem}.opts{flex-direction:column}.mg{grid-template-columns:1fr}
-  .fcf,.fcb{padding:24px 16px}.fcw{font-size:1.4rem}
-}
+@media(max-width:900px){.parks-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body data-depth="3">
 <nav id="nav"></nav>
 <script src="../../../shared/nav.js"></script>
-<div class="container">
-  <header>
-    <h1>On the City Doorstep</h1>
-    <div class="sub">IELTS General Training — Reading Section 1 — Practice 2.1</div>
-  </header>
-
-  <div class="tabs">
-    <button class="tab-btn active" data-tab="passage">📖 Passage</button>
-    <button class="tab-btn" data-tab="vocab">📝 Vocabulary</button>
-    <button class="tab-btn" data-tab="quiz">❓ Quiz</button>
-    <button class="tab-btn" data-tab="phrases">💬 Phrases</button>
-  </div>
-
-  <div id="passage" class="tp active">
-    <div class="vi-bar">
-      <label>🇻🇳 Show Vietnamese translation</label>
-      <label class="sw"><input type="checkbox" id="vi-toggle" onchange="toggleVI()"><span class="sld"></span></label>
-    </div>
-    <div class="passage-split">
-      <div class="passage-left">
-        <div class="card" style="padding:16px 20px;margin-bottom:12px;background:#fdf6ee;border-left:4px solid var(--accent)">
-          <div style="font-family:'Fraunces',serif;font-weight:700;font-size:1rem;color:var(--accent);margin-bottom:4px">Looking for somewhere to go this long weekend?</div>
-          <div style="font-size:.9rem;color:#6b5e4f">Try these West Australian national parks. They are closer to home than you think!</div>
-        </div>
-        <div class="parks-grid" id="parks-grid"></div>
-      </div>
-      <div class="passage-right">
-        <div class="card">
-          <div style="font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--accent);margin-bottom:4px">📝 Questions 1–5: Matching Information</div>
-          <p style="font-size:.85rem;color:#8a7a66;font-style:italic;margin-bottom:12px">Write the correct letter, <strong>A–G</strong>. You may use any letter more than once.</p>
-          <div id="passage-ielts-ctn"></div>
-          <div class="ctrls" style="margin-top:12px">
-            <button class="btn bp" id="pic" onclick="checkPassageIELTS()">Check</button>
-            <button class="btn bs" id="pir" onclick="resetPassageIELTS()" style="display:none">Redo</button>
-          </div>
-          <div id="passage-ielts-banner" class="banner" style="margin-top:12px"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="vocab" class="tp">
-    <div class="vf" id="vocab-filter"></div>
-    <div class="vg" id="vocab-grid"></div>
-  </div>
-
-  <div id="quiz" class="tp">
-    <div class="stabs">
-      <button class="stab active" data-sub="ielts">📋 IELTS</button>
-      <button class="stab" data-sub="flashcard">🃏 Flashcard</button>
-      <button class="stab" data-sub="fillblank">✏️ Fill in Blank</button>
-      <button class="stab" data-sub="match">🔗 Matching</button>
-    </div>
-    <div id="ielts" class="sp active">
-      <div id="qt-info-ctn"></div>
-      <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.88rem">Write the correct letter, <strong>A–G</strong>, for each question. You may use any letter more than once.</p>
-      <div id="ielts-banner" class="banner"></div>
-      <div id="ielts-ctn"></div>
-      <div class="ctrls">
-        <button class="btn bp" id="ic" onclick="checkIELTS()">Check</button>
-        <button class="btn bs" id="ir" onclick="resetIELTS()" style="display:none">Redo</button>
-      </div>
-    </div>
-    <div id="flashcard" class="sp">
-      <div class="fcc">
-        <div class="fcpg"><div class="fcpgb" id="fc-bar"></div></div>
-        <div class="fc" id="fc-card" onclick="flipCard()">
-          <div class="fci" id="fc-inner">
-            <div class="fcf"><div class="fcw" id="fc-word"></div><div class="fcp" id="fc-pos"></div><div class="fcp" id="fc-ipa" style="color:#888"></div><button class="audio-btn" id="fc-audio" onclick="event.stopPropagation();speak(document.getElementById('fc-word').textContent)" style="font-size:1.3rem;margin-top:6px">🔊</button><div class="fch">tap to flip</div></div>
-            <div class="fcb"><div class="fcvi" id="fc-vi"></div><div class="fcd" id="fc-def"></div><div class="fce" id="fc-ex"></div></div>
-          </div>
-        </div>
-        <div class="fcn">
-          <button class="btn bs" onclick="fcPrev()">← Prev</button>
-          <div class="fccnt" id="fc-cnt"></div>
-          <button class="btn bs" onclick="fcNext()">Next →</button>
-        </div>
-        <button class="btn bp" onclick="shuffleFC()">🔀 Shuffle</button>
-      </div>
-    </div>
-    <div id="fillblank" class="sp">
-      <div class="qh"><span class="qt">Fill in the Blank</span><span class="qs" id="fb-sc"></span></div>
-      <div id="fb-ctn"></div>
-      <div class="ctrls">
-        <button class="btn bp" id="fbc" onclick="checkFB()">Check</button>
-        <button class="btn bs" id="fbr" onclick="resetFB()" style="display:none">Redo</button>
-      </div>
-    </div>
-    <div id="match" class="sp">
-      <div class="qh"><span class="qt">Word Matching</span><span class="qs" id="m-sc"></span></div>
-      <p style="text-align:center;color:#8a7a66;margin-bottom:12px;font-size:.85rem">Select a word on the left, then select its meaning on the right</p>
-      <div class="mg" id="m-grid"></div>
-      <div class="ctrls" style="margin-top:16px"><button class="btn bs" onclick="resetMatch()">Play again</button></div>
-    </div>
-  </div>
-
-  <div id="phrases" class="tp">
-    <div class="qh"><span class="qt">Useful Phrases</span></div>
-    <div class="ph-grid" id="phrases-grid"></div>
-  </div>
-</div>
-
+<div id="app"></div>
 <script>
-// ── Category labels (park letter → short name) — must be defined before lesson.js ──
-const CAT_LABELS = {
-  A: 'Nambung', B: 'Yanchep', C: 'Walyunga',
-  D: 'John Forrest', E: 'Beelu', F: 'Serpentine', G: 'Shoalwater'
-};
+const CAT_LABELS={A:'Nambung',B:'Yanchep',C:'Walyunga',D:'John Forrest',E:'Beelu',F:'Serpentine',G:'Shoalwater'};
+const IELTS_OPTIONS=null;
 </script>
 <script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/reading.js"></script>
 <script>
-let DATA = {};
-let viVisible = false;
-
-// ── Vietnamese toggle ─────────────────────────────────────────────────────────
-function toggleVI() {
-  viVisible = document.getElementById('vi-toggle').checked;
-  document.querySelectorAll('.park-vi').forEach(el => el.classList.toggle('show', viVisible));
-}
-
-// ── Render park cards ─────────────────────────────────────────────────────────
-function renderParks() {
-  const grid = document.getElementById('parks-grid');
-  grid.innerHTML = DATA.sections.map(p => `
-    <div class="park-card" id="park-${p.id}">
-      <div class="park-header">
-        <div class="park-badge" onclick="highlightPark('${p.id}')" title="Highlight park ${p.id}">${p.id}</div>
-        <div>
-          <div class="park-name">${p.name}</div>
-          <div class="park-dist">📍 ${p.distance}</div>
-        </div>
-      </div>
-      <div class="park-text">${p.en}</div>
-      <div class="park-vi${viVisible ? ' show' : ''}">${p.vi}</div>
+renderReadingPage({
+  title: 'On the City Doorstep',
+  sub: 'IELTS General Training — Reading Section 1 — Practice 2.1',
+  passageRight: 'ielts',
+  passageLabel: '📝 Questions 1–5: Matching Information',
+  passageInstruction: 'Write the correct letter, <strong>A–G</strong>. You may use any letter more than once.',
+  ieltsInstruction: 'Write the correct letter, <strong>A–G</strong>, for each question. You may use any letter more than once.',
+  phrasesIntro: 'Useful phrases from tourism and travel texts that you can reuse in IELTS Writing & Speaking.',
+  summaryCards: `
+    <div class="card">
+      <div class="sk">🏞️ Passage Key Details</div>
+      <ul class="slist">
+        <li><strong>Topic:</strong> Seven national parks near Perth, Western Australia</li>
+        <li><strong>Parks:</strong> Nambung (A), Yanchep (B), Walyunga (C), John Forrest (D), Beelu (E), Serpentine (F), Shoalwater (G)</li>
+        <li><strong>Activities:</strong> Bushwalking, picnicking, wildlife observation, canoeing, diving, snorkelling</li>
+        <li><strong>Highlights:</strong> The Pinnacles (A), Crystal Cave (B), Echidna Trail panoramas (C), Swan View Tunnel (D), Penguin Island (G)</li>
+      </ul>
     </div>
-  `).join('');
+    <div class="card">
+      <div class="sk">📌 IELTS Tip: Matching Information</div>
+      <ul class="slist">
+        <li><strong>Read all texts quickly first</strong> to get an overview of each paragraph</li>
+        <li><strong>Find keywords</strong> in the question, then scan the texts for related ideas</li>
+        <li>The text won't use the <strong>exact same words</strong> — look for paraphrases</li>
+        <li>Some questions may require <strong>multiple answers</strong> — read the instructions carefully</li>
+        <li>You may use a letter <strong>more than once</strong></li>
+      </ul>
+    </div>`
+});
+
+/* ── Custom overrides: park card passage + multi-letter matching info ── */
+function renderPassage() {
+  document.getElementById('passage-card').innerHTML = `
+    <div style="padding:0 0 12px;margin-bottom:12px;border-bottom:1px solid var(--accent-light)">
+      <div style="font-family:'Fraunces',serif;font-weight:700;font-size:1rem;color:var(--accent);margin-bottom:4px">Looking for somewhere to go this long weekend?</div>
+      <div style="font-size:.9rem;color:#6b5e4f">Try these West Australian national parks. They are closer to home than you think!</div>
+    </div>
+    <div class="parks-grid">${sections.map(p => `
+      <div class="park-card" id="park-${p.id}">
+        <div class="park-header">
+          <div class="park-badge" onclick="highlightPark('${p.id}')">${p.id}</div>
+          <div><div class="park-name">${p.name}</div><div class="park-dist">📍 ${p.distance}</div></div>
+        </div>
+        <div class="park-text">${p.en}</div>
+        <div class="park-vi" data-vi>${p.vi}</div>
+      </div>`).join('')}
+    </div>`;
 }
 
 function highlightPark(id) {
   document.querySelectorAll('.park-card').forEach(c => c.classList.remove('highlight'));
   const el = document.getElementById('park-' + id);
-  if (el) {
-    el.classList.add('highlight');
-    el.scrollIntoView({behavior:'smooth', block:'nearest'});
-    setTimeout(() => el.classList.remove('highlight'), 2000);
-  }
-}
-
-// ── Passage IELTS panel ───────────────────────────────────────────────────────
-function renderPassageIELTS() {
-  const ctn = document.getElementById('passage-ielts-ctn');
-  ctn.innerHTML = DATA.ieltsQuestions.map(q => {
-    const reqLabel = q.count === 1 ? 'Select 1 letter' : `Select ${q.count} letters`;
-    return `
-      <div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-${q.n}">
-        <div class="qn">Q${q.n}</div>
-        <div class="qtx" style="font-size:.88rem">${q.t}</div>
-        <div class="letter-opts" id="pilo-${q.n}">
-          ${['A','B','C','D','E','F','G'].map(l =>
-            `<button class="lo" data-q="${q.n}" data-l="${l}" onclick="toggleLetter(this,'p')">${l}</button>`
-          ).join('')}
-        </div>
-        <div class="iq-req" id="pireq-${q.n}">${reqLabel}</div>
-        <div class="exp" id="piexp-${q.n}"></div>
-      </div>`;
-  }).join('');
+  if (el) { el.classList.add('highlight'); el.scrollIntoView({behavior:'smooth',block:'nearest'}); setTimeout(() => el.classList.remove('highlight'), 2000); }
 }
 
 function toggleLetter(btn, prefix) {
-  const q = btn.dataset.q;
-  const qData = DATA.ieltsQuestions.find(x => x.n == q);
-  const container = document.getElementById((prefix === 'p' ? 'pilo-' : 'ilo-') + q);
-  const selected = container.querySelectorAll('.lo.sel');
-  if (btn.classList.contains('sel')) {
-    btn.classList.remove('sel');
-  } else {
-    if (selected.length < qData.count) {
-      btn.classList.add('sel');
-    }
-  }
+  const q = btn.dataset.q, qData = IQ.find(x => x.n == q);
+  const ctn = document.getElementById((prefix==='p'?'pilo-':'ilo-') + q);
+  const sel = ctn.querySelectorAll('.lo.sel');
+  if (btn.classList.contains('sel')) btn.classList.remove('sel');
+  else if (sel.length < qData.count) btn.classList.add('sel');
 }
 
-function checkPassageIELTS() {
-  let correct = 0;
-  DATA.ieltsQuestions.forEach(q => {
-    const container = document.getElementById('pilo-' + q.n);
-    const card = document.getElementById('piq-' + q.n);
-    const exp = document.getElementById('piexp-' + q.n);
-    const btns = container.querySelectorAll('.lo');
-    const selected = Array.from(container.querySelectorAll('.lo.sel')).map(b => b.dataset.l);
-    btns.forEach(b => { b.disabled = true; b.classList.remove('sel'); });
-
-    const answers = q.a;
-    let isCorrect;
-    if (q.count === 1) {
-      isCorrect = selected.length === 1 && answers.includes(selected[0]);
-      btns.forEach(b => {
-        if (answers.includes(b.dataset.l)) b.classList.add('ca');
-        else if (selected.includes(b.dataset.l)) b.classList.add('wa');
-      });
-    } else {
-      // Multi-answer: count how many selected answers are correct
-      const correctSelected = selected.filter(l => answers.includes(l));
-      isCorrect = selected.length === q.count && correctSelected.length === q.count;
-      btns.forEach(b => {
-        if (answers.includes(b.dataset.l)) b.classList.add('ca');
-        else if (selected.includes(b.dataset.l)) b.classList.add('wa');
-      });
-    }
-
-    if (isCorrect) {
-      correct++;
-      card.classList.add('correct');
-      exp.className = 'exp show ce';
-    } else {
-      card.classList.add('wrong');
-      exp.className = 'exp show we';
-    }
-    exp.innerHTML = `<strong>${isCorrect ? '✓ Correct' : '✗ Incorrect'}</strong> — ${q.en}<br><span style="color:var(--vi)">${q.vi}</span>`;
-  });
-
-  const total = DATA.ieltsQuestions.length;
-  const banner = document.getElementById('passage-ielts-banner');
-  banner.className = 'banner show';
-  banner.style.background = correct === total ? 'var(--correct-bg)' : correct >= total/2 ? '#fffbe6' : 'var(--wrong-bg)';
-  banner.style.color = correct === total ? 'var(--correct)' : correct >= total/2 ? '#7a6200' : 'var(--wrong)';
-  banner.textContent = `${correct}/${total} correct`;
-  document.getElementById('pic').style.display = 'none';
-  document.getElementById('pir').style.display = '';
-}
-
-function resetPassageIELTS() {
-  renderPassageIELTS();
-  document.getElementById('passage-ielts-banner').className = 'banner';
-  document.getElementById('pic').style.display = '';
-  document.getElementById('pir').style.display = 'none';
-}
-
-// ── IELTS Quiz tab ────────────────────────────────────────────────────────────
-function renderIELTSQuiz() {
-  renderQTInfo();
-  const ctn = document.getElementById('ielts-ctn');
-  ctn.innerHTML = DATA.ieltsQuestions.map(q => {
-    const reqLabel = q.count === 1 ? 'Select 1 letter' : `Select ${q.count} letters`;
-    return `
-      <div class="card" style="margin-bottom:14px" id="iq-${q.n}">
-        <div class="qn">Question ${q.n}</div>
-        <div class="qtx">${q.t}</div>
-        <div class="letter-opts" id="ilo-${q.n}">
-          ${['A','B','C','D','E','F','G'].map(l =>
-            `<button class="lo" data-q="${q.n}" data-l="${l}" onclick="toggleLetter(this,'i')">${l}</button>`
-          ).join('')}
-        </div>
-        <div class="iq-req" id="ireq-${q.n}">${reqLabel}</div>
-        <div class="exp" id="iexp-${q.n}"></div>
-      </div>`;
+function renderLetterIELTS(prefix, ctnId) {
+  document.getElementById(ctnId).innerHTML = IQ.map(q => {
+    const req = q.count===1 ? 'Select 1 letter' : `Select ${q.count} letters`;
+    const compact = prefix==='p';
+    return `<div class="card" style="margin-bottom:${compact?'10':'14'}px${compact?';padding:14px 16px':''}" id="${prefix}iq-${q.n}">
+      <div class="qn">${compact?'Q':'Question '}${q.n}</div>
+      <div class="qtx" style="font-size:${compact?'.88':'.95'}rem">${q.t}</div>
+      <div class="letter-opts" id="${prefix}ilo-${q.n}">
+        ${['A','B','C','D','E','F','G'].map(l => `<button class="lo" data-q="${q.n}" data-l="${l}" onclick="toggleLetter(this,'${prefix}')">${l}</button>`).join('')}
+      </div>
+      <div class="iq-req">${req}</div>
+      <div class="exp" id="${prefix}iexp-${q.n}"></div>
+    </div>`;
   }).join('');
 }
 
-function checkIELTS() {
+function checkLetterIELTS(prefix, bannerId, checkId, redoId) {
   let correct = 0;
-  DATA.ieltsQuestions.forEach(q => {
-    const container = document.getElementById('ilo-' + q.n);
-    const card = document.getElementById('iq-' + q.n);
-    const exp = document.getElementById('iexp-' + q.n);
-    const btns = container.querySelectorAll('.lo');
-    const selected = Array.from(container.querySelectorAll('.lo.sel')).map(b => b.dataset.l);
-    btns.forEach(b => { b.disabled = true; b.classList.remove('sel'); });
-
-    const answers = q.a;
-    let isCorrect;
-    if (q.count === 1) {
-      isCorrect = selected.length === 1 && answers.includes(selected[0]);
-    } else {
-      const correctSelected = selected.filter(l => answers.includes(l));
-      isCorrect = selected.length === q.count && correctSelected.length === q.count;
-    }
-    btns.forEach(b => {
-      if (answers.includes(b.dataset.l)) b.classList.add('ca');
-      else if (selected.includes(b.dataset.l)) b.classList.add('wa');
-    });
-
-    if (isCorrect) {
-      correct++;
-      card.classList.add('correct');
-      exp.className = 'exp show ce';
-    } else {
-      card.classList.add('wrong');
-      exp.className = 'exp show we';
-    }
-    exp.innerHTML = `<strong>${isCorrect ? '✓ Correct' : '✗ Incorrect'}</strong> — ${q.en}<br><span style="color:var(--vi)">${q.vi}</span>`;
+  IQ.forEach(q => {
+    const ctn = document.getElementById(prefix+'ilo-'+q.n), card = document.getElementById(prefix+'iq-'+q.n), exp = document.getElementById(prefix+'iexp-'+q.n);
+    const btns = ctn.querySelectorAll('.lo'), sel = Array.from(ctn.querySelectorAll('.lo.sel')).map(b => b.dataset.l);
+    btns.forEach(b => { b.disabled=true; b.classList.remove('sel'); });
+    const ok = q.count===1 ? sel.length===1&&q.a.includes(sel[0]) : sel.length===q.count&&sel.filter(l=>q.a.includes(l)).length===q.count;
+    btns.forEach(b => { if(q.a.includes(b.dataset.l)) b.classList.add('ca'); else if(sel.includes(b.dataset.l)) b.classList.add('wa'); });
+    if(ok){ correct++; card.classList.add('correct'); exp.className='exp show ce'; }
+    else { card.classList.add('wrong'); exp.className='exp show we'; }
+    exp.innerHTML = `<strong>${ok?'✓ Correct':'✗ Incorrect'}</strong> — ${q.en}<br><span style="color:var(--vi)">${q.vi}</span>`;
   });
-
-  const total = DATA.ieltsQuestions.length;
-  const banner = document.getElementById('ielts-banner');
-  banner.className = 'banner show';
-  banner.style.background = correct === total ? 'var(--correct-bg)' : correct >= total/2 ? '#fffbe6' : 'var(--wrong-bg)';
-  banner.style.color = correct === total ? 'var(--correct)' : correct >= total/2 ? '#7a6200' : 'var(--wrong)';
-  banner.textContent = `${correct}/${total} correct`;
-  document.getElementById('ic').style.display = 'none';
-  document.getElementById('ir').style.display = '';
+  const total = IQ.length, b = document.getElementById(bannerId);
+  b.className='banner show';
+  b.style.background = correct===total?'var(--correct-bg)':correct>=total/2?'#fffbe6':'var(--wrong-bg)';
+  b.style.color = correct===total?'var(--correct)':correct>=total/2?'#7a6200':'var(--wrong)';
+  b.textContent = `${correct}/${total} correct`;
+  document.getElementById(checkId).style.display='none'; document.getElementById(redoId).style.display='';
 }
 
-function resetIELTS() {
-  renderIELTSQuiz();
-  document.getElementById('ielts-banner').className = 'banner';
-  document.getElementById('ic').style.display = '';
-  document.getElementById('ir').style.display = 'none';
-}
+function renderIELTS() { renderQTInfo(); renderLetterIELTS('i','ielts-ctn'); }
+function checkIELTS() { checkLetterIELTS('i','ielts-banner','ic','ir'); }
+function resetIELTS() { renderIELTS(); document.getElementById('ielts-banner').className='banner'; document.getElementById('ic').style.display=''; document.getElementById('ir').style.display='none'; }
 
-function renderQTInfo() {
-  const ctn = document.getElementById('qt-info-ctn');
-  if (!DATA.questionTypes || !DATA.questionTypes.active) return;
-  ctn.innerHTML = DATA.questionTypes.active.map(qt => `
-    <div class="qt-info" onclick="this.classList.toggle('open')">
-      <div class="qt-info-header">
-        <span class="qt-info-type">📌 ${qt.name}</span>
-        <span class="qt-info-toggle">▼</span>
-      </div>
-      <div class="qt-info-body">
-        <div class="qt-info-desc">${qt.description}</div>
-        <div class="qt-info-vi">${qt.vi}</div>
-        <ul class="qt-info-tips">${qt.tips.map(t => `<li>${t}</li>`).join('')}</ul>
-        <div class="qt-types-title">All 11 IELTS Reading Question Types</div>
-        <div class="qt-checklist">
-          ${DATA.questionTypes.allTypes.map(t => `
-            <div class="qt-check-item${t.practiced ? ' practiced' : ''}">
-              <span class="qt-mark">${t.practiced ? '✓' : '○'}</span>${t.name}
-            </div>`).join('')}
-        </div>
-      </div>
-    </div>`).join('');
-}
+function renderPassageIELTS() { renderLetterIELTS('p','passage-ielts-ctn'); }
+function checkPassageIELTS() { checkLetterIELTS('p','passage-ielts-banner','pic','pir'); }
+function resetPassageIELTS() { renderPassageIELTS(); document.getElementById('passage-ielts-banner').className='banner'; document.getElementById('pic').style.display=''; document.getElementById('pir').style.display='none'; }
 
-// ── Init ──────────────────────────────────────────────────────────────────────
-fetch('data.json')
-  .then(r => r.json())
-  .then(data => {
-    DATA = data;
-    // Set shared lesson.js globals
-    // lesson.js uses `cat` for vocab filtering; map `s` → `cat`
-    V = data.vocabulary.map(v => ({...v, cat: v.s}));
-    // lesson.js uses `cat` for phrase tags; map `section` → `cat`
-    UP = (data.usefulPhrases || []).map(p => ({...p, cat: p.section}));
-    FB = data.fillBlanks || [];
-
-    renderParks();
-    renderPassageIELTS();
-    renderIELTSQuiz();
-    renderVF();
-    renderVocab();
-    renderFC();
-    renderFB2();
-    renderMatch();
-    renderPhrases();
-
-    // Fetch IPA then re-render vocab and flashcard
-    Promise.all(V.map(v => fetchIPA(v.w))).then(() => { renderVocab(); renderFC(); });
-  });
+fetch('./data.json?v=1').then(r=>r.json()).then(initReading);
 </script>
 </body>
 </html>
