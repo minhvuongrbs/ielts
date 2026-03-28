@@ -368,7 +368,7 @@ function checkMC(el,chosen){
     if(o.textContent===correct)o.classList.add('correct');
   });
   if(!ok)el.classList.add('wrong');
-  setTimeout(()=>{qi++;qi<Q.length?renderQ():showResults();},800);
+  setTimeout(()=>{qi++;qi<Q.length?renderQ():showResults();},150);
 }
 
 /* ======================== FLASHCARD ======================== */
@@ -433,7 +433,7 @@ function checkFBQ(){
   inp.disabled=true;inp.classList.add(ok?'correct':'wrong');
   document.getElementById('qfb-fb').innerHTML=ok?'<span style="color:var(--correct)">✅ Correct!</span>':`<span style="color:var(--wrong)">❌ Answer: <strong>${q.a}</strong></span>`;
   answers.push({word:q.a,given:inp.value.trim()||'(blank)',correct:q.a,ok,lesson:q._lesson});
-  setTimeout(()=>{qi++;qi<Q.length?renderQ():showResults();},1200);
+  setTimeout(()=>{qi++;qi<Q.length?renderQ():showResults();},300);
 }
 
 /* ======================== MATCH ======================== */

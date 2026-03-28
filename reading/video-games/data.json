@@ -15,32 +15,32 @@
     {"id": "M", "en": "Some off-the-shelf games already contain strong prosocial themes; consider The Sims, for instance, or the classic Oregon Trail, which make players responsible for the well-being of other characters and feature characters who take care of one another. But Seider also hopes game developers consider the pro-social possibilities in developing new games. The challenge for the architects of future games will be figuring out how to wrap virtuous characteristics into an engaging package.", "vi": "Một số trò chơi phổ biến đã có chủ đề vì xã hội; ví dụ The Sims hoặc Oregon Trail, nơi người chơi chịu trách nhiệm về phúc lợi của nhân vật khác. Seider hy vọng các nhà phát triển game sẽ xem xét khả năng prosocial khi tạo game mới. Thách thức cho các nhà thiết kế game tương lai là tìm cách đưa các đặc tính đạo đức vào một gói hấp dẫn."}
   ],
   "vocabulary": [
-    {"w": "legitimate", "p": "adjective", "vi": "chính đáng, hợp lý", "en": "Reasonable and acceptable; having a valid basis.", "ex": "\"…there are still legitimate concerns…\"", "s": "A"},
-    {"w": "psychological", "p": "adjective", "vi": "thuộc tâm lý", "en": "Relating to the mind and mental processes.", "ex": "\"…the psychological effects of certain violent games…\"", "s": "A"},
-    {"w": "increasingly", "p": "adverb", "vi": "ngày càng", "en": "More and more; to a greater degree over time.", "ex": "\"…scientists are increasingly examining…\"", "s": "A"},
-    {"w": "potential", "p": "adjective", "vi": "tiềm năng, có thể xảy ra", "en": "Having the capacity to develop or happen in the future.", "ex": "\"…examining the potential benefits of video games.\"", "s": "A"},
-    {"w": "boost", "p": "verb", "vi": "tăng cường, thúc đẩy", "en": "To increase or improve something.", "ex": "\"…games can boost mental function…\"", "s": "A"},
-    {"w": "ideal", "p": "adjective", "vi": "lý tưởng, hoàn hảo", "en": "Most suitable; perfect for a purpose.", "ex": "\"…makes them ideal tools for brain training.\"", "s": "B"},
-    {"w": "persist", "p": "verb", "vi": "kiên trì, bền bỉ", "en": "To continue doing something despite difficulty.", "ex": "\"…encourage players to persist at solving challenging problems.\"", "s": "C"},
-    {"w": "adaptively", "p": "adverb", "vi": "một cách thích ứng", "en": "In a way that adjusts to changing conditions.", "ex": "\"…they're adaptively hard.\"", "s": "D"},
-    {"w": "demanding", "p": "adjective", "vi": "đòi hỏi cao, khó khăn", "en": "Requiring much skill, effort, or attention.", "ex": "\"…they move up to more demanding levels of play.\"", "s": "D"},
-    {"w": "stunningly", "p": "adverb", "vi": "cực kỳ, đáng kinh ngạc", "en": "Extremely; in a way that causes great surprise.", "ex": "\"This adaptive challenge is 'stunningly powerful' for learning.\"", "s": "D"},
-    {"w": "visual acuity", "p": "noun", "vi": "thị lực, độ sắc nét thị giác", "en": "Sharpness of vision; ability to see fine details.", "ex": "\"…to boost visual acuity, spatial perception…\"", "s": "E"},
-    {"w": "spatial perception", "p": "noun", "vi": "nhận thức không gian", "en": "The ability to understand the position and size of objects.", "ex": "\"…boost visual acuity, spatial perception…\"", "s": "E"},
-    {"w": "cognitive", "p": "adjective", "vi": "thuộc nhận thức", "en": "Relating to mental processes like thinking and reasoning.", "ex": "\"…improve other cognitive skills…\"", "s": "E"},
-    {"w": "malleable", "p": "adjective", "vi": "dẻo dai, dễ uốn nắn", "en": "Capable of being shaped or changed.", "ex": "\"…how malleable the human brain truly is.\"", "s": "F"},
-    {"w": "emeritus", "p": "adjective", "vi": "danh dự (sau khi nghỉ hưu)", "en": "Retired but retaining a title as an honour.", "ex": "\"…professor emeritus at the School of Medicine…\"", "s": "G"},
-    {"w": "efficient", "p": "adjective", "vi": "hiệu quả, năng suất", "en": "Achieving maximum results with minimum effort.", "ex": "\"…their brains became more efficient.\"", "s": "G"},
-    {"w": "cortex", "p": "noun", "vi": "vỏ não", "en": "The outer layer of the brain responsible for complex thinking.", "ex": "\"…parts of the cortex…actually got thicker.\"", "s": "H"},
-    {"w": "integration", "p": "noun", "vi": "sự tích hợp, kết hợp", "en": "The process of combining things into a unified whole.", "ex": "\"…planning, and integration of sensory data.\"", "s": "H"},
-    {"w": "administered", "p": "verb", "vi": "tổ chức, thực hiện (bài kiểm tra)", "en": "To organize and carry out (a test or procedure).", "ex": "\"The tests were administered after eight weeks…\"", "s": "I"},
-    {"w": "multitasking", "p": "noun", "vi": "đa nhiệm", "en": "The ability to do several things at the same time.", "ex": "\"…tests of memory, reasoning, and multitasking.\"", "s": "I"},
-    {"w": "prosocial", "p": "adjective", "vi": "vì xã hội, có lợi cho cộng đồng", "en": "Relating to behavior that benefits other people.", "ex": "\"…to encourage prosocial behaviors…\"", "s": "K"},
-    {"w": "antisocial", "p": "adjective", "vi": "chống đối xã hội, phản xã hội", "en": "Harmful or hostile to other people or society.", "ex": "\"…the opposite of 'antisocial' ones.\"", "s": "K"},
-    {"w": "subsequently", "p": "adverb", "vi": "sau đó, tiếp theo", "en": "After something else; following in time.", "ex": "\"…were subsequently kinder to a fellow research subject…\"", "s": "K"},
-    {"w": "immense", "p": "adjective", "vi": "to lớn, khổng lồ", "en": "Extremely large or great.", "ex": "\"…they have immense potential to teach children…\"", "s": "L"},
-    {"w": "double-edged sword", "p": "idiom", "vi": "con dao hai lưỡi", "en": "Something that has both advantages and disadvantages.", "ex": "\"…this is a double-edged sword.\"", "s": "L"},
-    {"w": "virtuous", "p": "adjective", "vi": "đạo đức, có phẩm hạnh", "en": "Having high moral standards; morally good.", "ex": "\"…how to wrap virtuous characteristics into an engaging package.\"", "s": "M"}
+    {"w": "legitimate", "p": "adjective", "vi": "chính đáng, hợp lý", "en": "Reasonable and acceptable; having a valid basis.", "ex": "\"…there are still legitimate concerns…\"", "cat": "research"},
+    {"w": "psychological", "p": "adjective", "vi": "thuộc tâm lý", "en": "Relating to the mind and mental processes.", "ex": "\"…the psychological effects of certain violent games…\"", "cat": "brain"},
+    {"w": "increasingly", "p": "adverb", "vi": "ngày càng", "en": "More and more; to a greater degree over time.", "ex": "\"…scientists are increasingly examining…\"", "cat": "learning"},
+    {"w": "potential", "p": "adjective", "vi": "tiềm năng, có thể xảy ra", "en": "Having the capacity to develop or happen in the future.", "ex": "\"…examining the potential benefits of video games.\"", "cat": "learning"},
+    {"w": "boost", "p": "verb", "vi": "tăng cường, thúc đẩy", "en": "To increase or improve something.", "ex": "\"…games can boost mental function…\"", "cat": "learning"},
+    {"w": "ideal", "p": "adjective", "vi": "lý tưởng, hoàn hảo", "en": "Most suitable; perfect for a purpose.", "ex": "\"…makes them ideal tools for brain training.\"", "cat": "learning"},
+    {"w": "persist", "p": "verb", "vi": "kiên trì, bền bỉ", "en": "To continue doing something despite difficulty.", "ex": "\"…encourage players to persist at solving challenging problems.\"", "cat": "learning"},
+    {"w": "adaptively", "p": "adverb", "vi": "một cách thích ứng", "en": "In a way that adjusts to changing conditions.", "ex": "\"…they're adaptively hard.\"", "cat": "learning"},
+    {"w": "demanding", "p": "adjective", "vi": "đòi hỏi cao, khó khăn", "en": "Requiring much skill, effort, or attention.", "ex": "\"…they move up to more demanding levels of play.\"", "cat": "learning"},
+    {"w": "stunningly", "p": "adverb", "vi": "cực kỳ, đáng kinh ngạc", "en": "Extremely; in a way that causes great surprise.", "ex": "\"This adaptive challenge is 'stunningly powerful' for learning.\"", "cat": "learning"},
+    {"w": "visual acuity", "p": "noun", "vi": "thị lực, độ sắc nét thị giác", "en": "Sharpness of vision; ability to see fine details.", "ex": "\"…to boost visual acuity, spatial perception…\"", "cat": "brain"},
+    {"w": "spatial perception", "p": "noun", "vi": "nhận thức không gian", "en": "The ability to understand the position and size of objects.", "ex": "\"…boost visual acuity, spatial perception…\"", "cat": "brain"},
+    {"w": "cognitive", "p": "adjective", "vi": "thuộc nhận thức", "en": "Relating to mental processes like thinking and reasoning.", "ex": "\"…improve other cognitive skills…\"", "cat": "brain"},
+    {"w": "malleable", "p": "adjective", "vi": "dẻo dai, dễ uốn nắn", "en": "Capable of being shaped or changed.", "ex": "\"…how malleable the human brain truly is.\"", "cat": "brain"},
+    {"w": "emeritus", "p": "adjective", "vi": "danh dự (sau khi nghỉ hưu)", "en": "Retired but retaining a title as an honour.", "ex": "\"…professor emeritus at the School of Medicine…\"", "cat": "research"},
+    {"w": "efficient", "p": "adjective", "vi": "hiệu quả, năng suất", "en": "Achieving maximum results with minimum effort.", "ex": "\"…their brains became more efficient.\"", "cat": "learning"},
+    {"w": "cortex", "p": "noun", "vi": "vỏ não", "en": "The outer layer of the brain responsible for complex thinking.", "ex": "\"…parts of the cortex…actually got thicker.\"", "cat": "brain"},
+    {"w": "integration", "p": "noun", "vi": "sự tích hợp, kết hợp", "en": "The process of combining things into a unified whole.", "ex": "\"…planning, and integration of sensory data.\"", "cat": "brain"},
+    {"w": "administered", "p": "verb", "vi": "tổ chức, thực hiện (bài kiểm tra)", "en": "To organize and carry out (a test or procedure).", "ex": "\"The tests were administered after eight weeks…\"", "cat": "research"},
+    {"w": "multitasking", "p": "noun", "vi": "đa nhiệm", "en": "The ability to do several things at the same time.", "ex": "\"…tests of memory, reasoning, and multitasking.\"", "cat": "learning"},
+    {"w": "prosocial", "p": "adjective", "vi": "vì xã hội, có lợi cho cộng đồng", "en": "Relating to behavior that benefits other people.", "ex": "\"…to encourage prosocial behaviors…\"", "cat": "social"},
+    {"w": "antisocial", "p": "adjective", "vi": "chống đối xã hội, phản xã hội", "en": "Harmful or hostile to other people or society.", "ex": "\"…the opposite of 'antisocial' ones.\"", "cat": "social"},
+    {"w": "subsequently", "p": "adverb", "vi": "sau đó, tiếp theo", "en": "After something else; following in time.", "ex": "\"…were subsequently kinder to a fellow research subject…\"", "cat": "research"},
+    {"w": "immense", "p": "adjective", "vi": "to lớn, khổng lồ", "en": "Extremely large or great.", "ex": "\"…they have immense potential to teach children…\"", "cat": "social"},
+    {"w": "double-edged sword", "p": "idiom", "vi": "con dao hai lưỡi", "en": "Something that has both advantages and disadvantages.", "ex": "\"…this is a double-edged sword.\"", "cat": "social"},
+    {"w": "virtuous", "p": "adjective", "vi": "đạo đức, có phẩm hạnh", "en": "Having high moral standards; morally good.", "ex": "\"…how to wrap virtuous characteristics into an engaging package.\"", "cat": "social"}
   ],
   "ieltsQuestions": [
     {
@@ -142,126 +142,126 @@
       "vi": "Vẫn còn những lo ngại chính đáng về…",
       "usage": "Acknowledging a valid opposing viewpoint before presenting your argument. Great for balanced IELTS essays.",
       "example": "There are still legitimate concerns about the impact of social media on teenagers.",
-      "section": "A"
+      "cat": "research"
     },
     {
       "phrase": "Scientists are increasingly examining / studying…",
       "vi": "Các nhà khoa học ngày càng nghiên cứu / xem xét…",
       "usage": "Introducing a growing trend in research. Shows academic awareness.",
       "example": "Scientists are increasingly examining the link between sleep quality and productivity.",
-      "section": "A"
+      "cat": "research"
     },
     {
       "phrase": "Their studies are revealing that…",
       "vi": "Các nghiên cứu cho thấy rằng…",
       "usage": "Presenting research findings as evidence.",
       "example": "Their studies are revealing that regular exercise can reduce anxiety by up to 50%.",
-      "section": "A"
+      "cat": "research"
     },
     {
       "phrase": "Still unclear is whether…",
       "vi": "Điều chưa rõ là liệu…",
       "usage": "Pointing out an unresolved question in research. Shows critical thinking.",
       "example": "Still unclear is whether online learning is as effective as classroom learning.",
-      "section": "A"
+      "cat": "research"
     },
     {
       "phrase": "X makes Y ideal for…",
       "vi": "X khiến Y trở nên lý tưởng cho…",
       "usage": "Explaining why something is well-suited for a purpose.",
       "example": "Its interactive design makes the app ideal for language learning.",
-      "section": "B"
+      "cat": "learning"
     },
     {
       "phrase": "…have figured out a way to…",
       "vi": "…đã tìm ra cách để…",
       "usage": "Describing a solution or innovation.",
       "example": "Researchers have figured out a way to recycle plastic more efficiently.",
-      "section": "C"
+      "cat": "learning"
     },
     {
       "phrase": "X have been shown, in separate studies, to…",
       "vi": "X đã được chứng minh, qua các nghiên cứu riêng biệt, là…",
       "usage": "Citing multiple sources of evidence. Strong academic writing.",
       "example": "Green spaces have been shown, in separate studies, to reduce stress and improve mood.",
-      "section": "E"
+      "cat": "research"
     },
     {
       "phrase": "These findings fit with…",
       "vi": "Những phát hiện này phù hợp với…",
       "usage": "Connecting new evidence to existing knowledge.",
       "example": "These findings fit with earlier research on the benefits of outdoor play.",
-      "section": "F"
+      "cat": "research"
     },
     {
       "phrase": "The jury is still out on whether…",
       "vi": "Vẫn chưa có kết luận liệu…",
       "usage": "Expressing that something is still undecided. Natural idiom for discussions.",
       "example": "The jury is still out on whether artificial intelligence will create or destroy jobs.",
-      "section": "I"
+      "cat": "research"
     },
     {
       "phrase": "…improved on a wide range of…",
       "vi": "…cải thiện ở nhiều khía cạnh / lĩnh vực…",
       "usage": "Describing broad improvement across multiple areas.",
       "example": "Students who joined the program improved on a wide range of academic skills.",
-      "section": "I"
+      "cat": "learning"
     },
     {
       "phrase": "boost mental function / boost brain power",
       "vi": "tăng cường chức năng trí não / sức mạnh não bộ",
       "usage": "Collocation: verb + noun. Talking about cognitive improvement.",
       "example": "Regular reading can boost mental function and improve concentration.",
-      "section": "A"
+      "cat": "brain"
     },
     {
       "phrase": "encourage prosocial behaviors",
       "vi": "khuyến khích hành vi vì xã hội",
       "usage": "Collocation: talking about positive social impact of an activity.",
       "example": "Team sports encourage prosocial behaviors like cooperation and empathy.",
-      "section": "K"
+      "cat": "social"
     },
     {
       "phrase": "have a physical effect on the body / brain",
       "vi": "có tác động vật lý lên cơ thể / não bộ",
       "usage": "Collocation: describing measurable physical changes.",
       "example": "Meditation has been shown to have a physical effect on the brain, reducing cortisol levels.",
-      "section": "H"
+      "cat": "brain"
     },
     {
       "phrase": "apply (gains/skills) to non-game tasks",
       "vi": "áp dụng (kết quả/kỹ năng) vào các nhiệm vụ ngoài trò chơi",
       "usage": "Collocation: discussing whether skills transfer to real life.",
       "example": "The question is whether problem-solving skills from puzzles can be applied to real-world tasks.",
-      "section": "A"
+      "cat": "learning"
     },
     {
       "phrase": "persist at solving challenging problems",
       "vi": "kiên trì giải quyết các vấn đề khó",
       "usage": "Collocation: describing determination and resilience.",
       "example": "Successful students persist at solving challenging problems instead of giving up.",
-      "section": "C"
+      "cat": "learning"
     },
     {
       "phrase": "This is a double-edged sword.",
       "vi": "Đây là con dao hai lưỡi.",
       "usage": "A common idiom meaning something has both positive and negative aspects. Very useful in IELTS essays.",
       "example": "Technology is a double-edged sword — it connects people but can also isolate them.",
-      "section": "L"
+      "cat": "social"
     },
     {
       "phrase": "…reward certain actions and punish others.",
       "vi": "…thưởng một số hành động và phạt các hành động khác.",
       "usage": "Describing a system of incentives and consequences.",
       "example": "Good education systems reward effort and punish dishonesty.",
-      "section": "L"
+      "cat": "social"
     },
     {
       "phrase": "The challenge for X will be figuring out how to…",
       "vi": "Thách thức cho X sẽ là tìm cách…",
       "usage": "Identifying a future challenge. Good for conclusions in IELTS essays.",
       "example": "The challenge for governments will be figuring out how to balance economic growth with environmental protection.",
-      "section": "M"
+      "cat": "social"
     }
   ],
   "summaryQuestions": {

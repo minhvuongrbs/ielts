@@ -382,7 +382,7 @@ async function fetchIPA(word){
 function getIPA(word){return ipaCache[word.toLowerCase().replace(/[^a-z]/g,'')]||'';}
 
 // Load data from JSON
-fetch('./data.json?v=1')
+fetch('./data.json?v=2')
   .then(r=>r.json())
   .then(data=>{
     sections=data.sections;
@@ -434,9 +434,10 @@ function renderPassage(){
 function toggleVI(){const show=document.getElementById('vi-toggle').checked;document.querySelectorAll('[data-vi]').forEach(e=>e.classList.toggle('show',show));}
 
 // ======================== VOCAB ========================
+const CAT_LABELS={brain:'🧠 Brain',learning:'📚 Learning',research:'🔬 Research',social:'🤝 Social'};
 function renderVocab(f='all'){
   const g=document.getElementById('vocab-grid');
-  const list=f==='all'?V:V.filter(v=>v.s===f);
+  const list=f==='all'?V:V.filter(v=>v.cat===f);
   g.innerHTML=list.map(v=>{
     const ipa=getIPA(v.w);
     return `<div class="vc" onclick="this.classList.toggle('open')">
@@ -445,14 +446,14 @@ function renderVocab(f='all'){
         <button class="audio-btn" onclick="event.stopPropagation();speak('${v.w.replace(/'/g,"\\'")}')">🔊</button>
       </div>
       <div class="vp">${v.p}</div>
-      <span class="vtag">${v.s}</span><div class="vtap">tap to reveal</div>
+      <span class="vtag">${CAT_LABELS[v.cat]||v.cat}</span><div class="vtap">tap to reveal</div>
       <div class="vb"><div class="ved">${v.en}</div><div class="vvi">🇻🇳 ${v.vi}</div><div class="vex">${v.ex}</div></div>
     </div>`;
   }).join('');
 }
 function renderVF(){
-  const secs=['all',...new Set(V.map(v=>v.s))];
-  document.getElementById('vocab-filter').innerHTML=secs.map(s=>`<button class="fb${s==='all'?' active':''}" onclick="fvocab('${s}',this)">${s==='all'?'All ('+V.length+')':'Section '+s}</button>`).join('');
+  const cats=['all',...new Set(V.map(v=>v.cat))];
+  document.getElementById('vocab-filter').innerHTML=cats.map(c=>`<button class="fb${c==='all'?' active':''}" onclick="fvocab('${c}',this)">${c==='all'?'All ('+V.length+')':(CAT_LABELS[c]||c)}</button>`).join('');
 }
 function fvocab(f,btn){document.querySelectorAll('.fb').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderVocab(f);}
 
@@ -561,7 +562,7 @@ function renderPhrases(){
     <div class="ph-card" onclick="this.classList.toggle('open')">
       <div style="display:flex;align-items:baseline;flex-wrap:wrap;gap:4px">
         <div class="ph-phrase">${p.phrase}</div>
-        <span class="ph-tag">${p.section}</span>
+        <span class="ph-tag">${p.cat}</span>
       </div>
       <div class="ph-example-preview">💡 ${p.example} <button class="audio-btn" onclick="event.stopPropagation();speak(\`${p.example.replace(/`/g,'').replace(/'/g,"\\'")}\`)">🔊</button></div>
       <div class="ph-tap">tap to see how to use</div>
