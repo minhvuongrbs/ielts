@@ -20,7 +20,8 @@
   // ---- Path resolution ----
   function resolveRoot() {
     var depth = parseInt(document.body.dataset.depth || '0', 10);
-    return depth === 0 ? './' : '../'.repeat(depth);
+    var prefix = document.body.dataset.prefix || '';
+    return (depth === 0 ? './' : '../'.repeat(depth)) + prefix;
   }
 
   function tablePath(name) {

@@ -7,7 +7,7 @@ Done
 Create a new Section 1 reading lesson based on "On the City Doorstep" (p11-12, IELTS Reading & Writing General Training book). This is a short-text passage about 7 Australian national parks (A-G) with matching questions and True/False/Not Given questions. First Section 1 lesson in the platform.
 
 ## Source
-- Book: `docs/books/IELTS_Reading_and_Writing_General_ielts.pdf`
+- Book: `assets/books/IELTS_Reading_and_Writing_General_ielts.pdf`
 - Pages: 11-13 (Text 1: On the City Doorstep + Practice activity 2.1)
 - Question types: Matching Information (Q1-5), True/False/Not Given (Q6-10 from Text 2 — separate text)
 - IELTS section: Part 1 General Training Reading, Unit 2 Section 1

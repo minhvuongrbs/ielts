@@ -197,7 +197,7 @@ function renderQTInfo(){
   const depth = document.body.dataset.depth || '0';
   const prefix = depth==='3' ? '../../../' : depth==='2' ? '../../' : '';
   ctn.innerHTML=`<div class="qt-tags">${QT.active.map(qt=>
-    `<a class="qt-tag" href="${prefix}hubs/tips/#${qtSlug(qt.name)}">${qt.icon||''} ${qt.name}</a>`
+    `<a class="qt-tag" href="${prefix}pages/tips/#${qtSlug(qt.name)}">${qt.icon||''} ${qt.name}</a>`
   ).join('')}</div>`;
 }
 

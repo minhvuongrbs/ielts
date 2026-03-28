@@ -7,7 +7,7 @@ DONE
 Create a new Section 2 reading lesson based on "Making the Transition to University Studies" (p37–38, IELTS Reading & Writing General Training book). The passage provides advice for first-year university students across 7 sections (A–G), covering topics like faculty orientation, library use, study support, unit outlines, and study planning. Questions test Matching Headings skills.
 
 ## Source
-- Book: `docs/books/IELTS_Reading_and_Writing_General_ielts.pdf`
+- Book: `assets/books/IELTS_Reading_and_Writing_General_ielts.pdf`
 - Pages: 37–38
 - IELTS section: Section 2 (workplace/education — longer texts)
 - Question types:

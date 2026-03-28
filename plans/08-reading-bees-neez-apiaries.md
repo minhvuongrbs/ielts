@@ -7,7 +7,7 @@ Done
 Create a new Section 1 reading lesson based on "Bees Neez Apiaries" (p13, IELTS Reading & Writing General Training book). A short advertisement text about a honey apiary gift shop, with True/False/Not Given questions. Practices scanning for specific details in ads/notices.
 
 ## Source
-- Book: `docs/books/IELTS_Reading_and_Writing_General_ielts.pdf`
+- Book: `assets/books/IELTS_Reading_and_Writing_General_ielts.pdf`
 - Pages: 13
 - IELTS section: Section 1 (short texts — advertisements/notices)
 - Question types: True / False / Not Given (Q6-10)

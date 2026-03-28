@@ -7,7 +7,7 @@ DONE
 Create a new Section 3 reading lesson based on "Sleep on It" (p51-53, IELTS Reading & Writing General Training book). A long general-interest article about sleep deprivation and its consequences — covering disasters caused by drowsiness, cognitive effects, microsleeps, impact on mood and weight, and sleep research. Matching Headings questions.
 
 ## Source
-- Book: `docs/books/IELTS_Reading_and_Writing_General_ielts.pdf`
+- Book: `assets/books/IELTS_Reading_and_Writing_General_ielts.pdf`
 - Pages: 51–53
 - IELTS section: Section 3 (longer text — general interest article)
 - Question types: Matching Headings (Q28–36) — match 11 headings to 9 sections

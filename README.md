@@ -50,7 +50,7 @@ ielts-hub/
 │   └── index.html                       ← Coming soon
 ├── speaking/
 │   └── index.html                       ← Coming soon
-├── docs/
+├── assets/
 │   ├── IELTS_Reading_and_Writing_General_ielts.pdf
 │   └── Mindset for IELTS Level 1 Student_s Book.pdf
 ├── README.md

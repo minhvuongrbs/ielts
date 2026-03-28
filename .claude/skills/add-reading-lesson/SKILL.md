@@ -5,13 +5,13 @@ description: Add a new reading lesson TODO from the IELTS Reading & Writing GT b
 
 # Add Reading Lesson TODO
 
-Add a new reading lesson TODO item from `docs/books/IELTS_Reading_and_Writing_General_ielts.pdf`.
+Add a new reading lesson TODO item from `assets/books/IELTS_Reading_and_Writing_General_ielts.pdf`.
 
 The user will provide a page number and/or passage title. This skill reads the book pages, extracts the key info, and creates a well-structured plan file + README entry.
 
 ## Steps
 
-1. **Read the book pages** — Use the Read tool with the `pages` parameter on `docs/books/IELTS_Reading_and_Writing_General_ielts.pdf` to read the passage and questions. Read 3-5 pages starting from the given page to capture the full text + questions.
+1. **Read the book pages** — Use the Read tool with the `pages` parameter on `assets/books/IELTS_Reading_and_Writing_General_ielts.pdf` to read the passage and questions. Read 3-5 pages starting from the given page to capture the full text + questions.
 
 1b. **Read the answer key** — Read `pages "158-168"` from the same book (Appendix 1: Answer Key). Find the matching Practice Activity and Text number to extract the correct answers for this lesson's questions.
 
@@ -37,7 +37,7 @@ TODO
 Create a new Section <N> reading lesson based on "<Title>" (p<pages>, IELTS Reading & Writing General Training book). <Brief description of the passage content and question types>.
 
 ## Source
-- Book: `docs/books/IELTS_Reading_and_Writing_General_ielts.pdf`
+- Book: `assets/books/IELTS_Reading_and_Writing_General_ielts.pdf`
 - Pages: <page range>
 - IELTS section: Section <N> (<section description>)
 - Question types: <list of question types with question numbers>

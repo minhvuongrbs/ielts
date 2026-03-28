@@ -7,7 +7,7 @@ Done
 Create a new Section 1 reading lesson based on "European River Cruising" (p22–23, IELTS Reading & Writing General Training book). The passage is a travel advertisement from Evergreen Tours featuring 4 European river cruise packages (A–D). Questions test matching information and True/False/Not Given skills.
 
 ## Source
-- Book: `docs/books/IELTS_Reading_and_Writing_General_ielts.pdf`
+- Book: `assets/books/IELTS_Reading_and_Writing_General_ielts.pdf`
 - Pages: 22–23
 - IELTS section: Section 1 (short texts — advertisements)
 - Question types:
