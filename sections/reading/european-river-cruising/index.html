@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Reading — European River Cruising</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/reading.css">
+<style>
+/* Tour ad cards (A–D) */
+.tours-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tour-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:18px 20px;border-left:4px solid var(--accent)}
+.tour-card.highlight{background:var(--accent-light)}
+.tour-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px}
+.tour-badge{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:#fff;background:var(--accent);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;transition:transform .15s}
+.tour-badge:hover{transform:scale(1.1)}
+.tour-name{font-family:'Fraunces',serif;font-weight:700;font-size:.98rem;line-height:1.3}
+.tour-text{font-size:.85rem;line-height:1.6;color:var(--text);white-space:pre-line}
+.tour-vi{display:none;font-size:.83rem;color:var(--vi);font-style:italic;margin-top:8px;padding:8px 12px;background:var(--vi-bg);border-radius:6px;border-left:3px solid var(--vi);white-space:pre-line}
+.tour-vi.show{display:block}
+/* Letter select buttons for matching info */
+.letter-opts{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.lo{width:36px;height:36px;border:2px solid #e0d6c8;border-radius:8px;background:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;cursor:pointer;transition:.2s;color:var(--text);display:flex;align-items:center;justify-content:center}
+.lo:hover{border-color:var(--accent);background:var(--accent-light)}
+.lo.sel{border-color:var(--accent);background:var(--accent);color:#fff}
+.lo.ca{border-color:var(--correct);background:var(--correct);color:#fff}
+.lo.wa{border-color:var(--wrong);background:var(--wrong);color:#fff}
+.lo:disabled{cursor:default}
+@media(max-width:900px){.tours-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body data-depth="3">
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+<div id="app"></div>
+<script>
+const CAT_LABELS={cruise:'🚢 Cruise',tour:'🏛️ Tour',booking:'💰 Booking'};
+const IELTS_OPTIONS=['TRUE','FALSE','NOT GIVEN'];
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/reading.js"></script>
+<script>
+/* ── Config ── */
+renderReadingPage({
+  title: 'European River Cruising',
+  sub: 'IELTS General Training — Reading Section 1 — Practice 2.3',
+  passageRight: 'ielts',
+  passageLabel: '📝 Questions 1–4: Matching Information',
+  passageInstruction: 'For which advertisement are the following statements true? Write the correct letter, <strong>A–D</strong>.',
+  ieltsInstruction: 'Do the following statements agree with the information in the advertisements? Write TRUE, FALSE, or NOT GIVEN.',
+  phrasesIntro: 'Useful phrases from travel advertisements that you can reuse in IELTS Writing & Speaking.',
+  summaryCards: `
+    <div class="card">
+      <div class="sk">🚢 Tour Packages at a Glance</div>
+      <ul class="slist">
+        <li><strong>A — Prague to London:</strong> 21 days, $8645 pp, 49 meals, fly free return</li>
+        <li><strong>B — Paris Escape:</strong> 18 days, $7645 pp, 45 meals, buy 1 airfare get 1 free</li>
+        <li><strong>C — Britain, Ireland & Cruise:</strong> 30 days, $11 195 pp, 63 meals, fly free return</li>
+        <li><strong>D — Grand Alpine Tour:</strong> 28 days, $10 495 pp, 58 meals, fly free return</li>
+        <li><strong>All tours:</strong> 15-day luxury charter, 85%+ French balcony staterooms</li>
+        <li><strong>Operator:</strong> Evergreen Tours — 1300 364 414 — evergreentours.com.au</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">📌 IELTS Tips</div>
+      <ul class="slist">
+        <li><strong>Matching Info:</strong> Read all ads first, then match keywords in each question</li>
+        <li><strong>T/F/NG — TRUE:</strong> the text confirms this (maybe using different words)</li>
+        <li><strong>T/F/NG — FALSE:</strong> the text says the opposite or something clearly different</li>
+        <li><strong>T/F/NG — NOT GIVEN:</strong> the text doesn't mention this at all</li>
+        <li>Watch for <strong>"pp"</strong> = per person, not total price</li>
+        <li>Watch for <strong>"all"</strong> — check every ad to see if the statement is truly universal</li>
+      </ul>
+    </div>`
+});
+
+/* ── Split questions: matching (Q1–4) vs T/F/NG (Q5–9) ── */
+let MQ = [];
+
+function highlightTour(id) {
+  document.querySelectorAll('.tour-card').forEach(c => c.classList.remove('highlight'));
+  const el = document.getElementById('tour-' + id);
+  if (el) { el.classList.add('highlight'); el.scrollIntoView({behavior:'smooth',block:'nearest'}); setTimeout(() => el.classList.remove('highlight'), 2000); }
+}
+
+/* ── Custom passage: tour ad cards ── */
+function renderPassage() {
+  document.getElementById('passage-card').innerHTML = `
+    <div style="padding:0 0 12px;margin-bottom:12px;border-bottom:1px solid var(--accent-light)">
+      <div style="font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--accent);margin-bottom:4px">EUROPEAN RIVER CRUISING</div>
+      <div style="font-size:.85rem;color:#6b5e4f">Evergreen Tours — Premium touring worldwide</div>
+    </div>
+    <div class="tours-grid">${sections.map(p => `
+      <div class="tour-card" id="tour-${p.id}">
+        <div class="tour-header">
+          <div class="tour-badge" onclick="highlightTour('${p.id}')">${p.id}</div>
+          <div class="tour-name">${p.name}</div>
+        </div>
+        <div class="tour-text">${p.text}</div>
+        <div class="tour-vi" data-vi>${p.vietnamese}</div>
+      </div>`).join('')}
+    </div>`;
+}
+
+/* ── Passage-side: matching info Q1–4 with letter buttons ── */
+function toggleLetter(btn) {
+  if (btn.classList.contains('sel')) btn.classList.remove('sel');
+  else {
+    const q = btn.dataset.q;
+    document.querySelectorAll(`#pilo-${q} .lo`).forEach(b => b.classList.remove('sel'));
+    btn.classList.add('sel');
+  }
+}
+
+function renderPassageIELTS() {
+  document.getElementById('passage-ielts-ctn').innerHTML = MQ.map(q => `
+    <div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-${q.number}">
+      <div class="qn">Q${q.number}</div>
+      <div class="qtx" style="font-size:.88rem">${q.text}</div>
+      <div class="letter-opts" id="pilo-${q.number}">
+        ${['A','B','C','D'].map(l => `<button class="lo" data-q="${q.number}" data-l="${l}" onclick="toggleLetter(this)">${l}</button>`).join('')}
+      </div>
+      <div class="exp" id="piexp-${q.number}"></div>
+    </div>`).join('');
+}
+
+function checkPassageIELTS() {
+  let correct = 0;
+  MQ.forEach(q => {
+    const ctn = document.getElementById('pilo-'+q.number), card = document.getElementById('piq-'+q.number), exp = document.getElementById('piexp-'+q.number);
+    const btns = ctn.querySelectorAll('.lo'), sel = ctn.querySelector('.lo.sel');
+    const picked = sel ? sel.dataset.l : '';
+    btns.forEach(b => { b.disabled=true; b.classList.remove('sel'); if(b.dataset.l===q.answer) b.classList.add('ca'); else if(b.dataset.l===picked) b.classList.add('wa'); });
+    const ok = picked === q.answer;
+    if(ok){ correct++; card.classList.add('correct'); } else { card.classList.add('wrong'); }
+    exp.className = 'exp show ' + (ok?'ce':'we');
+    exp.innerHTML = `<strong>${ok?'✓ Correct':'✗ Incorrect'}</strong> — ${q.explanation}<br><span style="color:var(--vi)">${q.vietnamese}</span>`;
+  });
+  const b = document.getElementById('passage-ielts-banner');
+  b.className='banner show';
+  b.style.background = correct===MQ.length?'var(--correct-bg)':correct>=MQ.length/2?'#fffbe6':'var(--wrong-bg)';
+  b.style.color = correct===MQ.length?'var(--correct)':correct>=MQ.length/2?'#7a6200':'var(--wrong)';
+  b.textContent = `${correct}/${MQ.length} correct`;
+  document.getElementById('pic').style.display='none'; document.getElementById('pir').style.display='';
+}
+
+function resetPassageIELTS() {
+  renderPassageIELTS();
+  document.getElementById('passage-ielts-banner').className='banner';
+  document.getElementById('pic').style.display=''; document.getElementById('pir').style.display='none';
+}
+
+/* ── Init: split matching vs T/F/NG, then render ── */
+DataLayer.getLesson('reading','european-river-cruising').then(function(data) {
+  initReading(data);
+  /* Split: matching questions have qtype field */
+  MQ = IQ.filter(q => q.qtype === 'matching');
+  IQ = IQ.filter(q => !q.qtype);
+  /* Re-render with split data */
+  renderIELTS();
+  renderPassageIELTS();
+});
+</script>
+</body>
+</html>

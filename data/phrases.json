@@ -909,6 +909,78 @@
     "vietnamese": "Thực ra, tôi nên nói là..."
   },
   {
+    "phrase": "When it's time for some retail therapy…",
+    "usage": "Introducing a shopping topic in a light, casual way.",
+    "example": "When it's time for some retail therapy, head to the city centre for the best deals.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra",
+    "category": "tourism",
+    "vietnamese": "Khi đến lúc thư giãn bằng mua sắm…"
+  },
+  {
+    "phrase": "hidden away in the arcades",
+    "usage": "Describing a place that is tucked away or not immediately visible — creates a sense of discovery.",
+    "example": "Some of the best coffee shops are hidden away in the arcades near the station.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra",
+    "category": "location",
+    "vietnamese": "ẩn mình trong các khu phố mái vòm"
+  },
+  {
+    "phrase": "showcases the talents of…",
+    "usage": "Highlighting the skills or work of people — good for describing exhibitions, events, or shops.",
+    "example": "The festival showcases the talents of local musicians and artists.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra",
+    "category": "description",
+    "vietnamese": "trưng bày / giới thiệu tài năng của…"
+  },
+  {
+    "phrase": "a [time]-minute walk from each other",
+    "usage": "Describing the distance between two places in terms of walking time.",
+    "example": "The two museums are just a 5-minute walk from each other.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra",
+    "category": "location",
+    "vietnamese": "cách nhau [thời gian] phút đi bộ"
+  },
+  {
+    "phrase": "renowned for a mix of…",
+    "usage": "Describing a place or thing famous for having a variety of items.",
+    "example": "The market is renowned for a mix of fresh produce, artisan bread, and handmade crafts.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra",
+    "category": "description",
+    "vietnamese": "nổi tiếng với sự kết hợp của…"
+  },
+  {
+    "phrase": "brings together [people] under the one roof",
+    "usage": "Describing an event or place that unites different people or activities in one location.",
+    "example": "The conference brings together scientists, engineers, and designers under the one roof.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra",
+    "category": "description",
+    "vietnamese": "quy tụ [mọi người] dưới một mái nhà"
+  },
+  {
+    "phrase": "Be tantalised by the array of…",
+    "usage": "Creating excitement about a wide variety of items — common in tourism and food writing.",
+    "example": "Be tantalised by the array of dishes from around the world at the food festival.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra",
+    "category": "tourism",
+    "vietnamese": "Hãy để bị hấp dẫn bởi sự đa dạng của…"
+  },
+  {
+    "phrase": "the fresh seasonal produce reflects the regional diversity",
+    "usage": "Linking local products to the character of a region — useful in IELTS Writing about local economies or food.",
+    "example": "The fresh seasonal produce at the farmers market reflects the regional diversity of the area.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra",
+    "category": "tourism",
+    "vietnamese": "nông sản tươi theo mùa phản ánh sự đa dạng của vùng miền"
+  },
+  {
     "phrase": "Whatever you do, don't...",
     "usage": "Strong warning. What follows is something the listener must not do.",
     "example": "Whatever you do, don't try to cross the road while runners are passing.",
@@ -916,5 +988,78 @@
     "section": "sentence-completion",
     "category": "instruction",
     "vietnamese": "Dù thế nào, đừng..."
+  },
+
+  {
+    "phrase": "FROM $[price] pp twin share",
+    "usage": "Standard travel pricing format — 'pp' means per person, 'twin share' means sharing a room with another person.",
+    "example": "The 21-day tour starts from $8645 pp twin share.",
+    "skill": "reading",
+    "section": "european-river-cruising",
+    "category": "booking",
+    "vietnamese": "TỪ $[giá]/người ở phòng đôi"
+  },
+  {
+    "phrase": "Fly free return airfare to [destination]",
+    "usage": "Promotional phrase offering complimentary round-trip flights as part of a package deal.",
+    "example": "Book now and fly free return airfare to Europe.",
+    "skill": "reading",
+    "section": "european-river-cruising",
+    "category": "booking",
+    "vietnamese": "Vé máy bay khứ hồi miễn phí đến [điểm đến]"
+  },
+  {
+    "phrase": "buy one [item] and get one free",
+    "usage": "A promotional offer where purchasing one item gives you a second one at no cost.",
+    "example": "Buy one airfare and get one free on the Paris Escape tour.",
+    "skill": "reading",
+    "section": "european-river-cruising",
+    "category": "booking",
+    "vietnamese": "mua một tặng một"
+  },
+  {
+    "phrase": "[number]-day exclusive luxury charter",
+    "usage": "Describing a premium, privately hired cruise experience with a specific duration.",
+    "example": "Enjoy a 15-day exclusive luxury charter with French balcony staterooms.",
+    "skill": "reading",
+    "section": "european-river-cruising",
+    "category": "cruise",
+    "vietnamese": "thuê du thuyền sang trọng [số] ngày"
+  },
+  {
+    "phrase": "peak season departures",
+    "usage": "Refers to travel options available during the busiest (and often most expensive) time of year.",
+    "example": "Peak season departures are available across all cabin types.",
+    "skill": "reading",
+    "section": "european-river-cruising",
+    "category": "booking",
+    "vietnamese": "khởi hành mùa cao điểm"
+  },
+  {
+    "phrase": "guided tours of [place]",
+    "usage": "Describing organised sightseeing trips led by a professional guide.",
+    "example": "The Alpine tour includes guided tours of Munich and Salzburg.",
+    "skill": "reading",
+    "section": "european-river-cruising",
+    "category": "tour",
+    "vietnamese": "tour có hướng dẫn viên tại [địa điểm]"
+  },
+  {
+    "phrase": "Explore [number] cities",
+    "usage": "Highlighting the number of destinations included in a travel package.",
+    "example": "The Paris Escape lets you explore 18 cities across Europe.",
+    "skill": "reading",
+    "section": "european-river-cruising",
+    "category": "tour",
+    "vietnamese": "Khám phá [số] thành phố"
+  },
+  {
+    "phrase": "premium touring worldwide",
+    "usage": "Marketing phrase describing high-quality international travel services.",
+    "example": "Evergreen Tours — premium touring worldwide.",
+    "skill": "reading",
+    "section": "european-river-cruising",
+    "category": "tour",
+    "vietnamese": "du lịch cao cấp toàn cầu"
   }
 ]

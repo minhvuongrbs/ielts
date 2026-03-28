@@ -849,5 +849,258 @@
     },
     "skill": "reading",
     "section": "travel-this-summer"
+  },
+  {
+    "number": 10,
+    "text": "The main shopping hub in Canberra is in the city centre and has more than 300 outlets.",
+    "answer": "TRUE",
+    "explanation": "TRUE — The Canberra Centre on Bunda Street, Civic is described as 'Canberra's city shopping hub' with 'more than 300 retail outlets'.",
+    "vietnamese": "Đúng — Trung tâm Canberra ở đường Bunda, Civic được mô tả là 'trung tâm mua sắm thành phố' với 'hơn 300 cửa hàng bán lẻ'.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "number": 11,
+    "text": "Shop Handmade in City Walk is one of the speciality shops of Canberra, selling local but not interstate products.",
+    "answer": "FALSE",
+    "explanation": "FALSE — The text says Shop Handmade 'showcases the talents of local and interstate designers' — it sells both local AND interstate products.",
+    "vietnamese": "Sai — bài viết nói Shop Handmade 'trưng bày tài năng của các nhà thiết kế địa phương VÀ liên bang' — bán cả sản phẩm địa phương lẫn liên bang.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "number": 12,
+    "text": "There are four shopping centres to choose from outside the Canberra city centre, one of which is named the Tuggeranong Hyperdome.",
+    "answer": "TRUE",
+    "explanation": "TRUE — The 'Other shopping centres' section lists exactly four: Westfield Shoppingtown, Westfield Woden, Tuggeranong Hyperdome, and Riverside Plaza.",
+    "vietnamese": "Đúng — mục 'Các trung tâm mua sắm khác' liệt kê đúng 4: Westfield Shoppingtown, Westfield Woden, Tuggeranong Hyperdome, và Riverside Plaza.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "number": 13,
+    "text": "The 1920s shopping centres are well known for the glamorous architecture of their buildings.",
+    "answer": "NOT GIVEN",
+    "explanation": "NOT GIVEN — The text mentions that Manuka and Kingston are 'small 1920s shopping centres' but says nothing about their architecture.",
+    "vietnamese": "Không có thông tin — bài viết đề cập Manuka và Kingston là 'trung tâm mua sắm nhỏ từ thập niên 1920' nhưng không nói gì về kiến trúc của chúng.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "number": 14,
+    "text": "The Old Bus Depot Markets are open on Saturdays and Sundays throughout the year.",
+    "answer": "FALSE",
+    "explanation": "FALSE — The markets are open 'on most Sundays of the year' and only 'Saturdays in December' — not Saturdays and Sundays throughout the year.",
+    "vietnamese": "Sai — chợ mở cửa 'hầu hết các Chủ nhật trong năm' và chỉ 'các thứ Bảy tháng 12' — không phải cả thứ Bảy và Chủ nhật quanh năm.",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "True / False / Not Given",
+          "icon": "✅",
+          "description": "You are given statements and must decide if they agree with the information in the text (TRUE), contradict it (FALSE), or if there is no information about this (NOT GIVEN). Tests your ability to identify specific details and distinguish between what is stated, what is contradicted, and what is simply not mentioned.",
+          "tips": [
+            "Read the statement carefully — look for absolute words like 'every', 'all', 'only', 'always'",
+            "TRUE means the text says exactly this (maybe in different words)",
+            "FALSE means the text says the opposite or something clearly different",
+            "NOT GIVEN means the text doesn't mention this at all — don't use your own knowledge",
+            "Be careful with partial matches — if only part of the statement is confirmed, it may be FALSE or NOT GIVEN",
+            "In Q11, 'not interstate' contradicts 'local and interstate' — that's FALSE, not NOT GIVEN"
+          ],
+          "vi": "Bạn được cho các phát biểu và phải quyết định chúng đúng (TRUE), sai (FALSE), hay không có thông tin (NOT GIVEN) so với bài đọc. Kiểm tra khả năng phân biệt giữa thông tin được nêu, bị mâu thuẫn, và không được đề cập."
+        }
+      ],
+      "allTypes": [
+        {
+          "name": "Multiple Choice",
+          "practiced": false
+        },
+        {
+          "name": "Matching Information",
+          "practiced": false
+        },
+        {
+          "name": "Matching Headings",
+          "practiced": false
+        },
+        {
+          "name": "Matching Features",
+          "practiced": false
+        },
+        {
+          "name": "Matching Sentence Endings",
+          "practiced": false
+        },
+        {
+          "name": "Sentence Completion",
+          "practiced": false
+        },
+        {
+          "name": "Summary Completion",
+          "practiced": false
+        },
+        {
+          "name": "Note / Table / Flow-chart Completion",
+          "practiced": false
+        },
+        {
+          "name": "Short Answer Questions",
+          "practiced": false
+        },
+        {
+          "name": "True / False / Not Given",
+          "practiced": true
+        },
+        {
+          "name": "Yes / No / Not Given",
+          "practiced": false
+        }
+      ]
+    },
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+
+  {
+    "number": 1,
+    "text": "This tour is the shortest and the least expensive.",
+    "answer": "B",
+    "qtype": "matching",
+    "count": 1,
+    "explanation": "Tour B (Paris Escape) is 18 days — the shortest of all four tours. It also costs $7645 pp — the lowest price.",
+    "vietnamese": "Tour B (Paris Escape) là 18 ngày — ngắn nhất trong bốn tour. Giá cũng rẻ nhất: $7645/người.",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "number": 2,
+    "text": "This tour might be popular with beer drinkers.",
+    "answer": "C",
+    "qtype": "matching",
+    "count": 1,
+    "explanation": "Tour C (Britain, Ireland and Cruise) includes 'Guinness tasting' — Guinness is a famous Irish beer.",
+    "vietnamese": "Tour C bao gồm 'nếm bia Guinness' — Guinness là loại bia nổi tiếng của Ireland, hấp dẫn người thích uống bia.",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "number": 3,
+    "text": "This tour does not include a tour to a castle.",
+    "answer": "B",
+    "qtype": "matching",
+    "count": 1,
+    "explanation": "Tour B (Paris Escape) lists Eiffel Tower, Opera House, Notre Dame Cathedral, and canal boat cruise — no castle. Tours A (Hradcany Castle), C (Blarney Castle), and D (Neuschwanstein Castle) all include castles.",
+    "vietnamese": "Tour B không có lâu đài nào. Các tour A (Hradcany), C (Blarney), D (Neuschwanstein) đều có thăm lâu đài.",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "number": 4,
+    "text": "This tour includes a horse-and-carriage ride.",
+    "answer": "D",
+    "qtype": "matching",
+    "count": 1,
+    "explanation": "Tour D (Grand Alpine Tour) specifically mentions 'Horse-and-carriage ride to Neuschwanstein Castle'.",
+    "vietnamese": "Tour D ghi rõ 'Horse-and-carriage ride to Neuschwanstein Castle' — đi xe ngựa đến lâu đài Neuschwanstein.",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "number": 5,
+    "text": "All cruises include a 15-day bus tour and a river cruise.",
+    "answer": "true",
+    "explanation": "TRUE — All four tours state '15-day exclusive luxury charter' as part of a larger tour and river cruise package.",
+    "vietnamese": "ĐÚNG — Cả bốn tour đều ghi '15-day exclusive luxury charter' là một phần của tour kết hợp du thuyền sông.",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "number": 6,
+    "text": "The cost of the 'Prague to London Tour' is $8645 for a twin room.",
+    "answer": "false",
+    "explanation": "FALSE — The price is '$8645 pp twin share' — 'pp' means per person. Two people sharing a twin room would each pay $8645.",
+    "vietnamese": "SAI — Giá là '$8645 pp twin share' — 'pp' nghĩa là mỗi người. Hai người ở chung phòng đôi sẽ trả $8645 mỗi người.",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "number": 7,
+    "text": "All tours offer a free return airfare to Europe.",
+    "answer": "false",
+    "explanation": "FALSE — Tours A, C, and D say 'Fly free return airfare to Europe', but Tour B says 'buy one airfare and get one free' — you must buy one ticket first.",
+    "vietnamese": "SAI — Tour A, C, D ghi 'bay miễn phí khứ hồi', nhưng Tour B ghi 'mua một vé tặng một' — phải mua vé trước.",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "number": 8,
+    "text": "All cruises take place on Evergreen Tours ferries.",
+    "answer": "false",
+    "explanation": "FALSE — The ads describe 'exclusive luxury charter' ships, not ferries. Ferries are public transport vessels; these are private luxury cruise charters.",
+    "vietnamese": "SAI — Quảng cáo ghi 'exclusive luxury charter' (du thuyền sang trọng thuê riêng), không phải phà (ferries).",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "number": 9,
+    "text": "Entrance fees to castles and historic buildings are not included in the price.",
+    "answer": "not given",
+    "explanation": "NOT GIVEN — The advertisements do not mention whether entrance fees are included or excluded from the tour price.",
+    "vietnamese": "KHÔNG CÓ THÔNG TIN — Quảng cáo không đề cập phí vào cửa lâu đài và tòa nhà lịch sử có bao gồm trong giá tour hay không.",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "Matching Information",
+          "description": "Match statements to the correct advertisement (A–D). You may use any letter more than once.",
+          "tips": [
+            "Read all four advertisements quickly first to get an overview of each tour.",
+            "Look for keywords in the question, then scan for related details in the ads.",
+            "The question won't use the exact same words — look for paraphrases.",
+            "You may use a letter more than once."
+          ],
+          "vi": "Nối thông tin — Khớp các phát biểu với quảng cáo đúng (A–D). Bạn có thể dùng một chữ cái nhiều lần.",
+          "practiced": true
+        },
+        {
+          "name": "True / False / Not Given",
+          "description": "Decide if the statement agrees with (TRUE), contradicts (FALSE), or is not mentioned in (NOT GIVEN) the advertisements.",
+          "tips": [
+            "TRUE means the text confirms the statement (may use different words).",
+            "FALSE means the text says the opposite or something clearly different.",
+            "NOT GIVEN means the text doesn't mention this information at all.",
+            "Watch for absolute words like 'all', 'every', 'only' — they often make a statement FALSE.",
+            "Don't use your own knowledge — only what the text says."
+          ],
+          "vi": "Đúng / Sai / Không có thông tin — Xác định phát biểu có đúng với quảng cáo (TRUE), trái ngược (FALSE), hay không được đề cập (NOT GIVEN).",
+          "practiced": true
+        }
+      ],
+      "allTypes": [
+        { "name": "Multiple Choice", "practiced": false },
+        { "name": "Matching Information", "practiced": true },
+        { "name": "Matching Headings", "practiced": false },
+        { "name": "Matching Features", "practiced": false },
+        { "name": "Matching Sentence Endings", "practiced": false },
+        { "name": "Sentence Completion", "practiced": false },
+        { "name": "Summary Completion", "practiced": false },
+        { "name": "Note / Table / Flow-chart Completion", "practiced": false },
+        { "name": "Short Answer Questions", "practiced": false },
+        { "name": "True / False / Not Given", "practiced": true },
+        { "name": "Yes / No / Not Given", "practiced": false }
+      ]
+    },
+    "skill": "reading",
+    "section": "european-river-cruising"
   }
 ]

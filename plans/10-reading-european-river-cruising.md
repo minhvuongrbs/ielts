@@ -1,7 +1,7 @@
 # Reading Lesson: European River Cruising
 
 ## Status
-TODO
+Done
 
 ## Goal
 Create a new Section 1 reading lesson based on "European River Cruising" (p22–23, IELTS Reading & Writing General Training book). The passage is a travel advertisement from Evergreen Tours featuring 4 European river cruise packages (A–D). Questions test matching information and True/False/Not Given skills.
@@ -36,4 +36,13 @@ True / False / Not Given (Q5–9):
 | 9 | not given |
 
 ## Steps
-- [ ] (to be filled in when working on this item)
+- [x] Add section entry to `data/sections.json`
+- [x] Add 4 passage entries (A–D) to `data/passages.json`
+- [x] Add 9 questions (4 matching + 5 T/F/NG) + meta to `data/questions.json`
+- [x] Add 15 vocabulary items to `data/vocabulary.json`
+- [x] Add 8 phrases to `data/phrases.json`
+- [x] Add 10 fill-blank exercises to `data/fill-blanks.json`
+- [x] Create `sections/reading/european-river-cruising/index.html` with dual question types
+- [x] Update homepage stats and add lesson card
+- [x] Update reading hub with lesson card
+- [x] Update plan status to Done

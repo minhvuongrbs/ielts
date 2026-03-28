@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Reading — Hit the Shops in Canberra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/reading.css">
+</head>
+<body data-depth="3">
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+<div id="app"></div>
+<script>
+const CAT_LABELS={shopping:'🛍️ Shopping',food:'🍽️ Food & Markets',description:'📝 Description'};
+const IELTS_OPTIONS=['TRUE','FALSE','NOT GIVEN'];
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/reading.js"></script>
+<script>
+renderReadingPage({
+  title: 'Hit the Shops in Canberra, Australia',
+  sub: 'IELTS General Training — Reading Section 1 — Practice 2.3',
+  stPreline: true,
+  passageRight: 'ielts',
+  passageLabel: '📝 Questions 10–14: True / False / Not Given',
+  passageInstruction: 'Do the following statements agree with the information in the advertisement?',
+  ieltsInstruction: 'Do the following statements agree with the information in the advertisement? Write TRUE, FALSE, or NOT GIVEN.',
+  phrasesIntro: 'Useful phrases from tourism and shopping texts that you can reuse in IELTS Writing & Speaking.',
+  summaryCards: `
+    <div class="card">
+      <div class="sk">🛍️ Shopping Guide Key Details</div>
+      <ul class="slist">
+        <li><strong>Canberra Centre:</strong> Bunda Street, Civic — 300+ retail outlets, cinemas, alfresco dining</li>
+        <li><strong>Other centres:</strong> Westfield Shoppingtown (Belconnen), Westfield Woden (Phillip), Tuggeranong Hyperdome, Riverside Plaza (Queanbeyan)</li>
+        <li><strong>Speciality:</strong> City Walk arcades + Shop Handmade (local & interstate designers); Manuka & Kingston (1920s centres, antiques, gourmet food)</li>
+        <li><strong>Markets:</strong> Old Bus Depot (most Sundays + Dec Saturdays), Handmade Market (quarterly), Capital Region Farmers Market (Saturday 8–11am)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">📌 IELTS Tip: True / False / Not Given</div>
+      <ul class="slist">
+        <li><strong>TRUE</strong> — the text confirms this information (maybe using different words)</li>
+        <li><strong>FALSE</strong> — the text says the opposite or something clearly different</li>
+        <li><strong>NOT GIVEN</strong> — the text doesn't mention this at all</li>
+        <li>Watch for <strong>absolute words</strong>: "every", "all", "only", "always" — they often make a statement FALSE</li>
+        <li>Don't use your <strong>own knowledge</strong> — only what the text says</li>
+        <li>If you can't find the information, it's probably <strong>NOT GIVEN</strong></li>
+      </ul>
+    </div>`
+});
+DataLayer.getLesson('reading','hit-the-shops-canberra').then(initReading);
+</script>
+</body>
+</html>

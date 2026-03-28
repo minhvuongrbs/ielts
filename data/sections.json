@@ -38,5 +38,15 @@
     "section": "sentence-completion",
     "name": "Sentence Completion",
     "skill": "listening"
+  },
+  {
+    "section": "hit-the-shops-canberra",
+    "name": "Hit the Shops in Canberra",
+    "skill": "reading"
+  },
+  {
+    "section": "european-river-cruising",
+    "name": "European River Cruising",
+    "skill": "reading"
   }
 ]

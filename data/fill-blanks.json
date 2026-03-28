@@ -698,5 +698,146 @@
     "hint": "lớp (quần áo)",
     "skill": "listening",
     "section": "sentence-completion"
+  },
+  {
+    "sentence": "When it's time for some ___ therapy, head to the shops.",
+    "answer": "retail",
+    "hint": "mua sắm",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "sentence": "Find interesting ___ selling fashionable clothes and accessories.",
+    "answer": "boutiques",
+    "hint": "cửa hàng thời trang nhỏ",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "sentence": "The café has a lovely ___ dining area in the garden.",
+    "answer": "alfresco",
+    "hint": "ngoài trời",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "sentence": "The concept store ___ the talents of local designers.",
+    "answer": "showcases",
+    "hint": "trưng bày",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "sentence": "She decided to ___ on a designer handbag as a birthday treat.",
+    "answer": "splurge",
+    "hint": "tiêu xài hoang phí",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "sentence": "The shop sells beautiful ___ from the 18th century.",
+    "answer": "antiques",
+    "hint": "đồ cổ",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "sentence": "The market is ___ for its handcrafted jewellery and art.",
+    "answer": "renowned",
+    "hint": "nổi tiếng",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "sentence": "Be ___ by the array of fresh fruit and vegetables at the market.",
+    "answer": "tantalised",
+    "hint": "hấp dẫn, kích thích",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "sentence": "Add salt, pepper, and other ___ to taste.",
+    "answer": "condiments",
+    "hint": "gia vị",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "sentence": "The Handmade Market takes place ___, four times a year.",
+    "answer": "quarterly",
+    "hint": "hàng quý",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+
+  {
+    "sentence": "We booked a 15-day river ___ through Europe.",
+    "answer": "cruise",
+    "hint": "chuyến du thuyền",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "sentence": "The tour includes a 15-day exclusive luxury ___.",
+    "answer": "charter",
+    "hint": "thuê riêng",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "sentence": "The ship has over 85% French balcony ___.",
+    "answer": "staterooms",
+    "hint": "phòng hạng sang trên tàu",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "sentence": "Each room has a ___ overlooking the river.",
+    "answer": "balcony",
+    "hint": "ban công",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "sentence": "___ season departures are available across all cabins.",
+    "answer": "Peak",
+    "hint": "cao điểm",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "sentence": "The price is $7645 per person ___ share.",
+    "answer": "twin",
+    "hint": "phòng đôi",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "sentence": "The tour includes a free return ___ to Europe.",
+    "answer": "airfare",
+    "hint": "vé máy bay",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "sentence": "Notre Dame ___ is one of the most famous churches in Paris.",
+    "answer": "Cathedral",
+    "hint": "nhà thờ lớn",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "sentence": "Take a ___-and-carriage ride to the castle.",
+    "answer": "horse",
+    "hint": "ngựa",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "sentence": "Westminster ___ is one of London's most famous landmarks.",
+    "answer": "Abbey",
+    "hint": "tu viện",
+    "skill": "reading",
+    "section": "european-river-cruising"
   }
 ]

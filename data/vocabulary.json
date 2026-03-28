@@ -2188,5 +2188,356 @@
     "category": "safety",
     "skill": "listening",
     "section": "sentence-completion"
+  },
+  {
+    "word": "retail therapy",
+    "pos": "noun",
+    "vietnamese": "mua sắm giải trí",
+    "definition": "Shopping as a way to make yourself feel happier.",
+    "example": "\"When it's time for some retail therapy, pick from Canberra's luxury boutiques.\"",
+    "category": "shopping",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "boutiques",
+    "pos": "noun",
+    "vietnamese": "cửa hàng thời trang nhỏ",
+    "definition": "Small shops selling fashionable or specialist goods.",
+    "example": "\"Find interesting boutiques, street fashion, and designer shoes.\"",
+    "category": "shopping",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "contemporary",
+    "pos": "adjective",
+    "vietnamese": "đương đại, hiện đại",
+    "definition": "Belonging to the present time; modern.",
+    "example": "\"Find the most contemporary and innovative retail experience.\"",
+    "category": "description",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "innovative",
+    "pos": "adjective",
+    "vietnamese": "sáng tạo, đổi mới",
+    "definition": "Introducing new ideas or methods.",
+    "example": "\"The most contemporary and innovative retail and leisure experience.\"",
+    "category": "description",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "alfresco",
+    "pos": "adjective",
+    "vietnamese": "ngoài trời",
+    "definition": "Taking place in the open air; outdoors.",
+    "example": "\"…plus cinemas and an alfresco, streetscape dining and café precinct.\"",
+    "category": "description",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "precinct",
+    "pos": "noun",
+    "vietnamese": "khu vực",
+    "definition": "An area of a town or city with a particular purpose or character.",
+    "example": "\"…an alfresco, streetscape dining and café precinct.\"",
+    "category": "shopping",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "speciality",
+    "pos": "noun",
+    "vietnamese": "chuyên biệt, đặc sản",
+    "definition": "A product or area of special expertise (British spelling of 'specialty').",
+    "example": "\"There are department and speciality stores.\"",
+    "category": "shopping",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "arcades",
+    "pos": "noun",
+    "vietnamese": "khu phố mái vòm, dãy cửa hàng",
+    "definition": "Covered walkways with shops on one or both sides.",
+    "example": "\"…designer shoes and books hidden away in the arcades in City Walk.\"",
+    "category": "shopping",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "showcases",
+    "pos": "verb",
+    "vietnamese": "trưng bày, giới thiệu",
+    "definition": "To display or present something in an attractive way.",
+    "example": "\"This concept store showcases the talents of local and interstate designers.\"",
+    "category": "shopping",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "interstate",
+    "pos": "adjective",
+    "vietnamese": "liên bang, xuyên tiểu bang",
+    "definition": "Between states (in Australia: from other states).",
+    "example": "\"…showcases the talents of local and interstate designers.\"",
+    "category": "description",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "splurge",
+    "pos": "verb",
+    "vietnamese": "tiêu xài hoang phí",
+    "definition": "To spend a lot of money on something, especially as a treat.",
+    "example": "\"Splurge on Australian and international designer labels.\"",
+    "category": "shopping",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "antiques",
+    "pos": "noun",
+    "vietnamese": "đồ cổ",
+    "definition": "Old objects that are valuable because of their age and quality.",
+    "example": "\"…beautiful antiques, gourmet food, high-quality homewares.\"",
+    "category": "shopping",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "exquisite",
+    "pos": "adjective",
+    "vietnamese": "tinh xảo, tuyệt đẹp",
+    "definition": "Extremely beautiful or delicate.",
+    "example": "\"…high-quality homewares and exquisite jewellery.\"",
+    "category": "description",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "homewares",
+    "pos": "noun",
+    "vietnamese": "đồ gia dụng",
+    "definition": "Items used to furnish or decorate a home.",
+    "example": "\"…gourmet food, high-quality homewares and exquisite jewellery.\"",
+    "category": "shopping",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "renowned",
+    "pos": "adjective",
+    "vietnamese": "nổi tiếng",
+    "definition": "Famous and respected for a particular quality or achievement.",
+    "example": "\"…are renowned for a mix of handcrafted jewellery, art, clothing.\"",
+    "category": "description",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "handcrafted",
+    "pos": "adjective",
+    "vietnamese": "thủ công",
+    "definition": "Made skilfully by hand, not by machine.",
+    "example": "\"…renowned for a mix of handcrafted jewellery, art, clothing, furniture.\"",
+    "category": "food",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "tantalised",
+    "pos": "verb",
+    "vietnamese": "hấp dẫn, kích thích",
+    "definition": "To excite someone's desire or interest without satisfying it.",
+    "example": "\"Be tantalised by the array of fruit, vegetables, plants, flowers.\"",
+    "category": "description",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "condiments",
+    "pos": "noun",
+    "vietnamese": "gia vị",
+    "definition": "Sauces, spices, or seasonings added to food to enhance flavour.",
+    "example": "\"…seafood, cakes, condiments, meats, cheese and more.\"",
+    "category": "food",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "gourmets",
+    "pos": "noun",
+    "vietnamese": "người sành ăn",
+    "definition": "People who enjoy and know a lot about good food.",
+    "example": "\"…brings together talented artists, designers, stylists, craftspeople and gourmets.\"",
+    "category": "food",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+  {
+    "word": "quarterly",
+    "pos": "adjective",
+    "vietnamese": "hàng quý (3 tháng/lần)",
+    "definition": "Happening four times a year, once every three months.",
+    "example": "\"Visit Canberra's quarterly Handmade Market.\"",
+    "category": "description",
+    "skill": "reading",
+    "section": "hit-the-shops-canberra"
+  },
+
+  {
+    "word": "cruise",
+    "pos": "noun",
+    "vietnamese": "chuyến du thuyền",
+    "definition": "A voyage on a ship for pleasure, visiting different places.",
+    "example": "We booked a 15-day river cruise through Europe.",
+    "category": "cruise",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "charter",
+    "pos": "noun",
+    "vietnamese": "thuê riêng, bao trọn",
+    "definition": "The hiring of a ship, aircraft, or vehicle for exclusive use.",
+    "example": "The tour includes a 15-day exclusive luxury charter.",
+    "category": "cruise",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "stateroom",
+    "pos": "noun",
+    "vietnamese": "phòng hạng sang (trên tàu)",
+    "definition": "A large, comfortable private cabin on a ship.",
+    "example": "The ship has over 85% French balcony staterooms.",
+    "category": "cruise",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "balcony",
+    "pos": "noun",
+    "vietnamese": "ban công",
+    "definition": "A platform enclosed by a wall or railing on the outside of a building or ship cabin.",
+    "example": "Each stateroom has a French balcony overlooking the river.",
+    "category": "cruise",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "departure",
+    "pos": "noun",
+    "vietnamese": "sự khởi hành",
+    "definition": "The act of leaving a place, especially to start a journey.",
+    "example": "Peak season departures are available across all cabins.",
+    "category": "booking",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "twin share",
+    "pos": "noun",
+    "vietnamese": "ở chung phòng đôi",
+    "definition": "A pricing arrangement where two people share a twin or double room.",
+    "example": "The price is $7645 per person twin share.",
+    "category": "booking",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "airfare",
+    "pos": "noun",
+    "vietnamese": "vé máy bay",
+    "definition": "The price of a journey by air.",
+    "example": "The tour includes a free return airfare to Europe.",
+    "category": "booking",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "exclusive",
+    "pos": "adjective",
+    "vietnamese": "sang trọng, dành riêng",
+    "definition": "Restricted to a particular group; high-end and luxurious.",
+    "example": "Enjoy an exclusive luxury river cruise through the heart of Europe.",
+    "category": "cruise",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "cathedral",
+    "pos": "noun",
+    "vietnamese": "nhà thờ lớn",
+    "definition": "The principal church of a diocese, containing the bishop's throne.",
+    "example": "The Paris tour includes a visit to Notre Dame Cathedral.",
+    "category": "tour",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "guided tour",
+    "pos": "noun",
+    "vietnamese": "tour có hướng dẫn viên",
+    "definition": "A tour led by a knowledgeable guide who explains the sights.",
+    "example": "The Alpine tour includes guided tours of Munich and Salzburg.",
+    "category": "tour",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "horse-and-carriage",
+    "pos": "noun",
+    "vietnamese": "xe ngựa",
+    "definition": "A traditional vehicle pulled by horses, often used for sightseeing.",
+    "example": "Take a horse-and-carriage ride to Neuschwanstein Castle.",
+    "category": "tour",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "peak season",
+    "pos": "noun",
+    "vietnamese": "mùa cao điểm",
+    "definition": "The busiest and most expensive time of year for travel.",
+    "example": "Peak season departures are available across all cabins.",
+    "category": "booking",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "abbey",
+    "pos": "noun",
+    "vietnamese": "tu viện",
+    "definition": "A large church that was once part of a monastery.",
+    "example": "Westminster Abbey is one of London's most famous landmarks.",
+    "category": "tour",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "all-weather",
+    "pos": "adjective",
+    "vietnamese": "chống thời tiết, mọi thời tiết",
+    "definition": "Designed to be used in all types of weather conditions.",
+    "example": "The staterooms feature all-weather French balconies.",
+    "category": "cruise",
+    "skill": "reading",
+    "section": "european-river-cruising"
+  },
+  {
+    "word": "cabin",
+    "pos": "noun",
+    "vietnamese": "phòng (trên tàu)",
+    "definition": "A private room on a ship for sleeping.",
+    "example": "Peak season departures are available across all cabins.",
+    "category": "cruise",
+    "skill": "reading",
+    "section": "european-river-cruising"
   }
 ]
