@@ -5,110 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IELTS Listening — Map & Plan Labeling</title>
 <link rel="stylesheet" href="../../../shared/styles.css">
-<style>
-/* Page-specific: Visual Vocab */
-.vv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
-.vv-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);text-align:center;cursor:pointer;transition:transform .2s,box-shadow .2s;overflow:hidden;border:2px solid transparent}
-.vv-card:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(44,36,22,.12)}
-.vv-card.open{border-color:var(--correct)}
-.vv-svg{height:120px;background:#fef3e6;display:flex;align-items:center;justify-content:center;padding:12px}
-.vv-svg svg{width:100%;height:100%;max-width:160px}
-.vv-body{padding:12px 14px}
-.vv-term{font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;margin-bottom:2px}
-.vv-tap{font-size:.75rem;color:var(--accent)}
-.vv-detail{display:none;padding:8px 14px 14px;border-top:1px solid var(--accent-light);font-size:.85rem;text-align:left}
-.vv-card.open .vv-detail{display:block}
-.vv-card.open .vv-tap{display:none}
-.vv-vi{color:var(--vi);font-weight:600;margin-bottom:4px}
-.vv-ex{font-style:italic;color:#6b5e4f}
-@media(max-width:600px){
-  .vv-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
-  .vv-svg{height:90px}
-}
-</style>
+<link rel="stylesheet" href="../../../shared/listening.css">
 </head>
-<body data-depth="3">
+<body data-depth="3" data-active="listening">
 <nav id="nav"></nav>
-<div class="container">
-  <header>
-    <h1>Map & Plan Labeling</h1>
-    <div class="sub">IELTS Listening — Section 2 — Question Type</div>
-  </header>
-
-  <div class="tabs">
-    <button class="tab-btn active" data-tab="guide">📖 Guide</button>
-    <button class="tab-btn" data-tab="visual">🗺️ Visual</button>
-    <button class="tab-btn" data-tab="vocab">📝 Vocab</button>
-    <button class="tab-btn" data-tab="phrases">💬 Phrases</button>
-    <button class="tab-btn" data-tab="quiz">❓ Quiz</button>
-  </div>
-
-  <div id="guide" class="tp active">
-    <div class="card"><div class="guide-title">📋 What is Map & Plan Labeling?</div><p id="guide-desc" style="font-size:.92rem;margin-bottom:16px"></p></div>
-    <div class="card"><div class="guide-title">📝 Exam Format</div><ul class="guide-list" id="guide-format"></ul></div>
-    <div class="card"><div class="guide-title">💡 Tips & Strategies</div><div id="guide-tips"></div></div>
-  </div>
-
-  <div id="visual" class="tp">
-    <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.9rem">Tap a card to see the Vietnamese meaning and example sentence.</p>
-    <div class="vv-grid" id="vv-grid"></div>
-  </div>
-
-  <div id="vocab" class="tp">
-    <div class="vf" id="vocab-filter"></div>
-    <div class="vg" id="vocab-grid"></div>
-  </div>
-
-  <div id="phrases" class="tp">
-    <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.9rem">Common sentences you'll hear in map & plan labeling audio. Learn to recognize these patterns.</p>
-    <div class="ph-grid" id="phrases-grid"></div>
-  </div>
-
-  <div id="quiz" class="tp">
-    <div class="stabs">
-      <button class="stab active" data-sub="flashcard">🃏 Flashcard</button>
-      <button class="stab" data-sub="fillblank">✏️ Fill in Blank</button>
-      <button class="stab" data-sub="match">🔗 Matching</button>
-    </div>
-    <div id="flashcard" class="sp active">
-      <div class="fcc">
-        <div class="fcpg"><div class="fcpgb" id="fc-bar"></div></div>
-        <div class="fc" id="fc-card" onclick="flipCard()">
-          <div class="fci" id="fc-inner">
-            <div class="fcf"><div class="fcw" id="fc-word"></div><div class="fcp" id="fc-pos"></div><div class="fcp" id="fc-ipa" style="color:#888"></div><button class="audio-btn" id="fc-audio" onclick="event.stopPropagation();speak(document.getElementById('fc-word').textContent)" style="font-size:1.3rem;margin-top:6px">🔊</button><div class="fch">tap to flip</div></div>
-            <div class="fcb"><div class="fcd" id="fc-def"></div><div class="fcvi" id="fc-vi"></div><div class="fce" id="fc-ex"></div></div>
-          </div>
-        </div>
-        <div class="fcn">
-          <button class="btn bs" onclick="fcPrev()">← Previous</button>
-          <span class="fccnt" id="fc-cnt"></span>
-          <button class="btn bp" onclick="fcNext()">Next →</button>
-        </div>
-        <button class="btn bs" onclick="shuffleFC()" style="margin-top:4px">🔀 Shuffle</button>
-      </div>
-    </div>
-    <div id="fillblank" class="sp">
-      <div class="qh"><div class="qt">Fill in the blanks</div><div class="qs" id="fb-sc"></div></div>
-      <div id="fb-ctn"></div>
-      <div class="ctrls">
-        <button class="btn bp" id="fbc" onclick="checkFB()">Check</button>
-        <button class="btn bs" id="fbr" onclick="resetFB()" style="display:none">Redo</button>
-      </div>
-    </div>
-    <div id="match" class="sp">
-      <div class="qh"><div class="qt">Match words with Vietnamese meanings</div><div class="qs" id="m-sc"></div></div>
-      <p style="text-align:center;color:#8a7a66;margin-bottom:12px;font-size:.85rem">Select a word on the left, then select its meaning on the right</p>
-      <div class="mg" id="m-grid"></div>
-      <div class="ctrls" style="margin-top:16px"><button class="btn bs" onclick="resetMatch()">Play again</button></div>
-    </div>
-  </div>
-</div>
-
 <script src="../../../shared/nav.js"></script>
-<script src="../../../shared/lesson.js"></script>
+<div id="app"></div>
 <script>
-/* Page-specific */
 const CAT_LABELS={place:'📍 Place',movement:'🚶 Movement',location:'🏛️ Location',direction:'🧭 Direction'};
+</script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/listening.js"></script>
+<script>
+renderListeningPage({
+  title: 'Map & Plan Labeling',
+  sub: 'IELTS Listening — Section 2 — Question Type',
+  guideWhat: 'Map & Plan Labeling',
+  visualTab: true,
+  phrasesIntro: "Common sentences you'll hear in map & plan labeling audio. Learn to recognize these patterns."
+});
+
 let VV=[];
 
 const SVG_MAP = {
@@ -147,10 +63,9 @@ function renderVisualVocab(){
 }
 
 fetch('./data.json').then(r=>r.json()).then(data=>{
-  INTRO=data.intro; V=data.vocabulary; UP=data.usefulPhrases||[]; FB=data.fillBlanks||[];
   VV=data.visualVocab||[];
-  renderGuide(); renderVisualVocab(); renderVF(); renderVocab(); renderPhrases(); renderFC(); renderFB2(); renderMatch();
-  Promise.all(V.map(v=>fetchIPA(v.w))).then(()=>{renderVocab();renderFC();});
+  initListening(data);
+  renderVisualVocab();
 });
 </script>
 </body>

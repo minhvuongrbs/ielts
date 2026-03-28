@@ -5,139 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IELTS Listening — Form Completion — Furniture Ordering</title>
 <link rel="stylesheet" href="../../../shared/styles.css">
-<style>
-/* Page-specific: IELTS Form + Table practice */
-.ielts-form{background:#fef8f0;border:2px solid #e8ddd0;border-radius:var(--r);padding:28px 28px 20px;margin-bottom:20px}
-.ielts-form-header{text-align:center;margin-bottom:20px}
-.ielts-form-header h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem}
-.ielts-form-header h4{font-family:'Fraunces',serif;font-weight:500;font-size:1rem;color:#8a7a66}
-.form-section-title{font-weight:700;font-size:.95rem;margin-bottom:12px;border-bottom:1px solid #e0d6c8;padding-bottom:6px}
-.form-example{background:#f0ebe3;border-radius:8px;padding:10px 16px;margin-bottom:16px;font-size:.88rem;color:#8a7a66}
-.form-example strong{color:var(--text)}
-.form-row{display:flex;align-items:baseline;gap:8px;margin-bottom:14px;flex-wrap:wrap}
-.form-label{font-weight:700;font-size:.92rem;min-width:160px;flex-shrink:0}
-.form-q{display:inline-flex;align-items:baseline;gap:4px;flex:1;min-width:0;flex-wrap:wrap;font-size:.92rem}
-.form-q-num{font-weight:700;color:var(--accent);font-size:.85rem}
-.form-input{display:inline-block;border:none;border-bottom:2px dashed var(--accent);background:transparent;font-family:'Source Sans 3',sans-serif;font-size:.92rem;font-weight:600;color:var(--text);padding:2px 4px;width:180px;outline:0;transition:.2s}
-.form-input:focus{border-bottom-style:solid;border-bottom-color:var(--accent-dark)}
-.form-input.pc{border-bottom-color:var(--correct);color:var(--correct);border-bottom-style:solid}
-.form-input.pw{border-bottom-color:var(--wrong);color:var(--wrong);border-bottom-style:solid}
-.form-suffix{font-size:.92rem;color:#6b5e4f;white-space:pre-line}
-.form-answer{font-size:.82rem;color:var(--correct);font-weight:600;display:none}
-.form-answer.show{display:inline;margin-left:6px}
-
-.ielts-table-section{margin-top:24px}
-.ielts-table-section h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;color:var(--accent);margin-bottom:8px}
-.ielts-table-wrap{overflow-x:auto;margin-bottom:16px}
-.ielts-table{width:100%;border-collapse:collapse;font-size:.9rem}
-.ielts-table th{background:var(--accent);color:#fff;padding:10px 14px;text-align:left;font-weight:700;text-transform:capitalize;font-size:.82rem;letter-spacing:.03em}
-.ielts-table td{padding:10px 14px;border-bottom:1px solid #e8ddd0;vertical-align:middle}
-.ielts-table tr:nth-child(even){background:#fef8f0}
-.table-q-num{font-weight:700;color:var(--accent);font-size:.8rem;margin-right:2px}
-.table-input{border:none;border-bottom:2px dashed var(--accent);background:transparent;font-family:'Source Sans 3',sans-serif;font-size:.88rem;font-weight:600;color:var(--text);padding:2px 4px;width:120px;outline:0;transition:.2s}
-.table-input:focus{border-bottom-style:solid;border-bottom-color:var(--accent-dark)}
-.table-input.pc{border-bottom-color:var(--correct);color:var(--correct);border-bottom-style:solid}
-.table-input.pw{border-bottom-color:var(--wrong);color:var(--wrong);border-bottom-style:solid}
-.table-answer{font-size:.78rem;color:var(--correct);font-weight:600;display:none}
-.table-answer.show{display:inline;margin-left:4px}
-
-@media(max-width:600px){
-  .form-label{min-width:auto;width:100%}
-  .form-input,.table-input{width:140px}
-  .ielts-form{padding:18px 14px}
-}
-</style>
+<link rel="stylesheet" href="../../../shared/listening.css">
 </head>
 <body data-depth="3" data-active="listening">
 <nav id="nav"></nav>
-<div class="container">
-  <header>
-    <h1>📋 Form Completion — Furniture Ordering</h1>
-    <div class="sub">IELTS Listening — Section 1 — Revision Test</div>
-  </header>
-
-  <div class="tabs">
-    <button class="tab-btn active" data-tab="guide">📖 Guide</button>
-    <button class="tab-btn" data-tab="practice">📋 Practice</button>
-    <button class="tab-btn" data-tab="vocab">📝 Vocab</button>
-    <button class="tab-btn" data-tab="phrases">💬 Phrases</button>
-    <button class="tab-btn" data-tab="quiz">❓ Quiz</button>
-  </div>
-
-  <div id="guide" class="tp active">
-    <div class="card"><div class="guide-title">📋 What is Form Completion?</div><p id="guide-desc" style="font-size:.92rem;margin-bottom:16px"></p></div>
-    <div class="card"><div class="guide-title">📝 Exam Format</div><ul class="guide-list" id="guide-format"></ul></div>
-    <div class="card"><div class="guide-title">💡 Tips & Strategies</div><div id="guide-tips"></div></div>
-  </div>
-
-  <div id="practice" class="tp">
-    <div class="audio-card">
-      <div class="label">🔊 Listen to the audio</div>
-      <audio controls src="../../../docs/audio/kt-furniture-listening-s1.mp3" style="flex:1;min-width:200px"></audio>
-    </div>
-    <div id="practice-content"></div>
-    <div class="practice-score" id="practice-score"></div>
-    <div class="ctrls">
-      <button class="btn bp" id="pcheck" onclick="checkPractice()">Check Answers</button>
-      <button class="btn bs" id="preset" onclick="resetPractice()" style="display:none">Try Again</button>
-    </div>
-  </div>
-
-  <div id="vocab" class="tp">
-    <div class="vf" id="vocab-filter"></div>
-    <div class="vg" id="vocab-grid"></div>
-  </div>
-
-  <div id="phrases" class="tp">
-    <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.9rem">Common sentences you'll hear in Section 1 ordering conversations. Learn to recognize these patterns.</p>
-    <div class="ph-grid" id="phrases-grid"></div>
-  </div>
-
-  <div id="quiz" class="tp">
-    <div class="stabs">
-      <button class="stab active" data-sub="flashcard">🃏 Flashcard</button>
-      <button class="stab" data-sub="fillblank">✏️ Fill in Blank</button>
-      <button class="stab" data-sub="match">🔗 Matching</button>
-    </div>
-    <div id="flashcard" class="sp active">
-      <div class="fcc">
-        <div class="fcpg"><div class="fcpgb" id="fc-bar"></div></div>
-        <div class="fc" id="fc-card" onclick="flipCard()">
-          <div class="fci" id="fc-inner">
-            <div class="fcf"><div class="fcw" id="fc-word"></div><div class="fcp" id="fc-pos"></div><div class="fcp" id="fc-ipa" style="color:#888"></div><button class="audio-btn" id="fc-audio" onclick="event.stopPropagation();speak(document.getElementById('fc-word').textContent)" style="font-size:1.3rem;margin-top:6px">🔊</button><div class="fch">tap to flip</div></div>
-            <div class="fcb"><div class="fcd" id="fc-def"></div><div class="fcvi" id="fc-vi"></div><div class="fce" id="fc-ex"></div></div>
-          </div>
-        </div>
-        <div class="fcn">
-          <button class="btn bs" onclick="fcPrev()">← Previous</button>
-          <span class="fccnt" id="fc-cnt"></span>
-          <button class="btn bp" onclick="fcNext()">Next →</button>
-        </div>
-        <button class="btn bs" onclick="shuffleFC()" style="margin-top:4px">🔀 Shuffle</button>
-      </div>
-    </div>
-    <div id="fillblank" class="sp">
-      <div class="qh"><div class="qt">Fill in the blanks</div><div class="qs" id="fb-sc"></div></div>
-      <div id="fb-ctn"></div>
-      <div class="ctrls">
-        <button class="btn bp" id="fbc" onclick="checkFB()">Check</button>
-        <button class="btn bs" id="fbr" onclick="resetFB()" style="display:none">Redo</button>
-      </div>
-    </div>
-    <div id="match" class="sp">
-      <div class="qh"><div class="qt">Match words with Vietnamese meanings</div><div class="qs" id="m-sc"></div></div>
-      <p style="text-align:center;color:#8a7a66;margin-bottom:12px;font-size:.85rem">Select a word on the left, then select its meaning on the right</p>
-      <div class="mg" id="m-grid"></div>
-      <div class="ctrls" style="margin-top:16px"><button class="btn bs" onclick="resetMatch()">Play again</button></div>
-    </div>
-  </div>
-</div>
-
 <script src="../../../shared/nav.js"></script>
-<script src="../../../shared/lesson.js"></script>
+<div id="app"></div>
 <script>
-/* Page-specific */
 const CAT_LABELS={furniture:'🪑 Furniture',payment:'💳 Payment',delivery:'🚚 Delivery',office:'🏢 Office'};
+</script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/listening.js"></script>
+<script>
+renderListeningPage({
+  title: '📋 Form Completion — Furniture Ordering',
+  sub: 'IELTS Listening — Section 1 — Revision Test',
+  guideWhat: 'Form Completion',
+  practiceTab: { audioSrc: '../../../docs/audio/kt-furniture-listening-s1.mp3' },
+  phrasesIntro: "Common sentences you'll hear in Section 1 ordering conversations. Learn to recognize these patterns."
+});
+
 let PRACTICE={};
 
 function renderPractice(){
@@ -183,8 +70,6 @@ function renderPractice(){
   document.getElementById('preset').style.display='none';
 }
 
-function normalize(s){return s.trim().toLowerCase().replace(/[\s]+/g,' ');}
-
 function checkPractice(){
   const allQ=[...PRACTICE.formQuestions];
   PRACTICE.tableRows.forEach(row=>{
@@ -217,10 +102,9 @@ function checkPractice(){
 function resetPractice(){renderPractice();}
 
 fetch('./data.json').then(r=>r.json()).then(data=>{
-  INTRO=data.intro; V=data.vocabulary; UP=data.usefulPhrases||[]; FB=data.fillBlanks||[];
   PRACTICE=data.practice||{};
-  renderGuide(); renderPractice(); renderVF(); renderVocab(); renderPhrases(); renderFC(); renderFB2(); renderMatch();
-  Promise.all(V.map(v=>fetchIPA(v.w))).then(()=>{renderVocab();renderFC();});
+  initListening(data);
+  renderPractice();
 });
 </script>
 </body>

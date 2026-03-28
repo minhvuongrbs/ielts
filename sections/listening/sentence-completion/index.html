@@ -5,113 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IELTS Listening — Sentence Completion — Marathon Tips</title>
 <link rel="stylesheet" href="../../../shared/styles.css">
-<style>
-/* Page-specific: Sentence completion practice */
-.sent-list{display:flex;flex-direction:column;gap:14px}
-.sent-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:18px 22px;border-left:4px solid var(--accent)}
-.sent-card.pc{border-left-color:var(--correct);background:var(--correct-bg)}
-.sent-card.pw{border-left-color:var(--wrong);background:var(--wrong-bg)}
-.sent-num{font-weight:700;color:var(--accent);font-size:.85rem;margin-right:4px}
-.sent-text{font-size:.95rem;font-weight:500;line-height:1.8}
-.sent-input{display:inline-block;border:none;border-bottom:2px dashed var(--accent);background:transparent;font-family:'Source Sans 3',sans-serif;font-size:.95rem;font-weight:600;color:var(--text);padding:2px 4px;width:160px;outline:0;transition:.2s}
-.sent-input:focus{border-bottom-style:solid;border-bottom-color:var(--accent-dark)}
-.sent-input.pc{border-bottom-color:var(--correct);color:var(--correct);border-bottom-style:solid}
-.sent-input.pw{border-bottom-color:var(--wrong);color:var(--wrong);border-bottom-style:solid}
-.sent-answer{font-size:.82rem;color:var(--correct);font-weight:600;display:none;margin-left:4px}
-.sent-answer.show{display:inline}
-@media(max-width:600px){.sent-input{width:120px}}
-</style>
+<link rel="stylesheet" href="../../../shared/listening.css">
 </head>
 <body data-depth="3" data-active="listening">
 <nav id="nav"></nav>
-<div class="container">
-  <header>
-    <h1>Sentence Completion — Marathon Tips</h1>
-    <div class="sub">IELTS Listening — Section 2 — Revision Test</div>
-  </header>
-
-  <div class="tabs">
-    <button class="tab-btn active" data-tab="guide">📖 Guide</button>
-    <button class="tab-btn" data-tab="practice">📋 Practice</button>
-    <button class="tab-btn" data-tab="vocab">📝 Vocab</button>
-    <button class="tab-btn" data-tab="phrases">💬 Phrases</button>
-    <button class="tab-btn" data-tab="quiz">❓ Quiz</button>
-  </div>
-
-  <div id="guide" class="tp active">
-    <div class="card"><div class="guide-title">📋 What is Sentence Completion?</div><p id="guide-desc" style="font-size:.92rem;margin-bottom:16px"></p></div>
-    <div class="card"><div class="guide-title">📝 Exam Format</div><ul class="guide-list" id="guide-format"></ul></div>
-    <div class="card"><div class="guide-title">💡 Tips & Strategies</div><div id="guide-tips"></div></div>
-  </div>
-
-  <div id="practice" class="tp">
-    <div class="audio-card">
-      <div class="label">🔊 Listen to the audio</div>
-      <audio controls src="../../../docs/audio/marathon-tips-listening-s2.mp3" style="flex:1;min-width:200px"></audio>
-    </div>
-    <div id="practice-content"></div>
-    <div class="practice-score" id="practice-score"></div>
-    <div class="ctrls">
-      <button class="btn bp" id="pcheck" onclick="checkPractice()">Check Answers</button>
-      <button class="btn bs" id="preset" onclick="resetPractice()" style="display:none">Try Again</button>
-    </div>
-  </div>
-
-  <div id="vocab" class="tp">
-    <div class="vf" id="vocab-filter"></div>
-    <div class="vg" id="vocab-grid"></div>
-  </div>
-
-  <div id="phrases" class="tp">
-    <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.9rem">Common phrases you'll hear in Section 2 talks and announcements. Learn to recognize these signal words.</p>
-    <div class="ph-grid" id="phrases-grid"></div>
-  </div>
-
-  <div id="quiz" class="tp">
-    <div class="stabs">
-      <button class="stab active" data-sub="flashcard">🃏 Flashcard</button>
-      <button class="stab" data-sub="fillblank">✏️ Fill in Blank</button>
-      <button class="stab" data-sub="match">🔗 Matching</button>
-    </div>
-    <div id="flashcard" class="sp active">
-      <div class="fcc">
-        <div class="fcpg"><div class="fcpgb" id="fc-bar"></div></div>
-        <div class="fc" id="fc-card" onclick="flipCard()">
-          <div class="fci" id="fc-inner">
-            <div class="fcf"><div class="fcw" id="fc-word"></div><div class="fcp" id="fc-pos"></div><div class="fcp" id="fc-ipa" style="color:#888"></div><button class="audio-btn" id="fc-audio" onclick="event.stopPropagation();speak(document.getElementById('fc-word').textContent)" style="font-size:1.3rem;margin-top:6px">🔊</button><div class="fch">tap to flip</div></div>
-            <div class="fcb"><div class="fcd" id="fc-def"></div><div class="fcvi" id="fc-vi"></div><div class="fce" id="fc-ex"></div></div>
-          </div>
-        </div>
-        <div class="fcn">
-          <button class="btn bs" onclick="fcPrev()">← Previous</button>
-          <span class="fccnt" id="fc-cnt"></span>
-          <button class="btn bp" onclick="fcNext()">Next →</button>
-        </div>
-        <button class="btn bs" onclick="shuffleFC()" style="margin-top:4px">🔀 Shuffle</button>
-      </div>
-    </div>
-    <div id="fillblank" class="sp">
-      <div class="qh"><div class="qt">Fill in the blanks</div><div class="qs" id="fb-sc"></div></div>
-      <div id="fb-ctn"></div>
-      <div class="ctrls">
-        <button class="btn bp" id="fbc" onclick="checkFB()">Check</button>
-        <button class="btn bs" id="fbr" onclick="resetFB()" style="display:none">Redo</button>
-      </div>
-    </div>
-    <div id="match" class="sp">
-      <div class="qh"><div class="qt">Match words with Vietnamese meanings</div><div class="qs" id="m-sc"></div></div>
-      <p style="text-align:center;color:#8a7a66;margin-bottom:12px;font-size:.85rem">Select a word on the left, then select its meaning on the right</p>
-      <div class="mg" id="m-grid"></div>
-      <div class="ctrls" style="margin-top:16px"><button class="btn bs" onclick="resetMatch()">Play again</button></div>
-    </div>
-  </div>
-</div>
-
 <script src="../../../shared/nav.js"></script>
-<script src="../../../shared/lesson.js"></script>
+<div id="app"></div>
 <script>
-/* Page-specific */
 const CAT_LABELS={event:'🏃 Event',preparation:'📋 Preparation',clothing:'👕 Clothing',safety:'⚠️ Safety'};
+</script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/listening.js"></script>
+<script>
+renderListeningPage({
+  title: 'Sentence Completion — Marathon Tips',
+  sub: 'IELTS Listening — Section 2 — Revision Test',
+  guideWhat: 'Sentence Completion',
+  practiceTab: { audioSrc: '../../../docs/audio/marathon-tips-listening-s2.mp3' },
+  phrasesIntro: "Common phrases you'll hear in Section 2 talks and announcements. Learn to recognize these signal words."
+});
+
 let PRACTICE={};
 
 function renderPractice(){
@@ -136,8 +49,6 @@ function renderPractice(){
   document.getElementById('pcheck').style.display='inline-block';
   document.getElementById('preset').style.display='none';
 }
-
-function normalize(s){return s.trim().toLowerCase().replace(/[\s]+/g,' ');}
 
 function checkPractice(){
   const allQ=PRACTICE.questions;
@@ -167,10 +78,9 @@ function checkPractice(){
 function resetPractice(){renderPractice();}
 
 fetch('./data.json').then(r=>r.json()).then(data=>{
-  INTRO=data.intro; V=data.vocabulary; UP=data.usefulPhrases||[]; FB=data.fillBlanks||[];
   PRACTICE=data.practice||{};
-  renderGuide(); renderPractice(); renderVF(); renderVocab(); renderPhrases(); renderFC(); renderFB2(); renderMatch();
-  Promise.all(V.map(v=>fetchIPA(v.w))).then(()=>{renderVocab();renderFC();});
+  initListening(data);
+  renderPractice();
 });
 </script>
 </body>

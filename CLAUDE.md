@@ -26,6 +26,8 @@ shared/
   lesson.js                         # Shared lesson JS: IPA, vocab, flashcard, fill-blank, match
   reading.css                       # Reading lesson CSS: passage, quiz, flashcard, match, phrases
   reading.js                        # Reading lesson JS: HTML template, IELTS quiz, passage, init
+  listening.css                     # Listening lesson CSS: form, sentence, visual vocab practice types
+  listening.js                      # Listening lesson JS: HTML template, normalize(), initListening()
 docs/
   books/                            # Reference PDFs
   audio/                            # Listening test MP3s
@@ -172,6 +174,20 @@ Each listening lesson page must set `CAT_LABELS` (category label map) and call `
 - `initReading(data)` — standard data-loading + render-all sequence
 
 Each reading lesson page sets `CAT_LABELS`, `IELTS_OPTIONS` (array for fixed options, `null` for per-question multiple choice), calls `renderReadingPage(config)` then `fetch('./data.json').then(initReading)`. See `sections/reading/bees-neez/index.html` as reference (~60 lines).
+
+**Listening lesson JS** (`shared/listening.js`) — included on all listening lesson pages alongside `lesson.js`:
+- `renderListeningPage(config)` — generates entire HTML template (tabs, guide, practice/visual, vocab, phrases, quiz)
+- `normalize(s)` — shared text normalization for answer checking
+- `initListening(data)` — standard data-loading + render-all sequence (guide, vocab, phrases, flashcard, fill-blank, match, IPA)
+
+Config options for `renderListeningPage()`:
+- `title`, `sub` — header text
+- `guideWhat` — inserted as "What is {guideWhat}?" in guide tab
+- `practiceTab: { audioSrc }` — renders practice tab with audio player + `<div id="practice-content"></div>` hook
+- `visualTab: true` — renders visual vocab tab with `<div id="vv-grid"></div>` hook (for map-labeling)
+- `phrasesIntro` — intro text for phrases tab
+
+Each listening lesson page sets `CAT_LABELS`, calls `renderListeningPage(config)`, defines practice-specific functions (`renderPractice()`, `checkPractice()`, `resetPractice()` or `renderVisualVocab()`), then fetches data.json and calls `initListening(data)` plus its own render functions. See `sections/listening/sentence-completion/index.html` as reference (~70 lines).
 
 ## Design System
 - **Fonts:** Fraunces (serif, headings) + Source Sans 3 (sans, body)

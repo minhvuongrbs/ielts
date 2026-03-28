@@ -1,0 +1,77 @@
+/* ======================== LISTENING LESSON STYLES ======================== */
+/* Practice-type CSS for all listening lessons — extracted from inline <style> blocks */
+
+/* ======================== FORM COMPLETION ======================== */
+.ielts-form{background:#fef8f0;border:2px solid #e8ddd0;border-radius:var(--r);padding:28px 28px 20px;margin-bottom:20px}
+.ielts-form-header{text-align:center;margin-bottom:20px}
+.ielts-form-header h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem}
+.ielts-form-header h4{font-family:'Fraunces',serif;font-weight:500;font-size:1rem;color:#8a7a66}
+.form-section-title{font-weight:700;font-size:.95rem;margin-bottom:12px;border-bottom:1px solid #e0d6c8;padding-bottom:6px}
+.form-example{background:#f0ebe3;border-radius:8px;padding:10px 16px;margin-bottom:16px;font-size:.88rem;color:#8a7a66}
+.form-example strong{color:var(--text)}
+.form-row{display:flex;align-items:baseline;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.form-label{font-weight:700;font-size:.92rem;min-width:160px;flex-shrink:0}
+.form-q{display:inline-flex;align-items:baseline;gap:4px;flex:1;min-width:0;flex-wrap:wrap;font-size:.92rem}
+.form-q-num{font-weight:700;color:var(--accent);font-size:.85rem}
+.form-input{display:inline-block;border:none;border-bottom:2px dashed var(--accent);background:transparent;font-family:'Source Sans 3',sans-serif;font-size:.92rem;font-weight:600;color:var(--text);padding:2px 4px;width:180px;outline:0;transition:.2s}
+.form-input:focus{border-bottom-style:solid;border-bottom-color:var(--accent-dark)}
+.form-input.pc{border-bottom-color:var(--correct);color:var(--correct);border-bottom-style:solid}
+.form-input.pw{border-bottom-color:var(--wrong);color:var(--wrong);border-bottom-style:solid}
+.form-suffix{font-size:.92rem;color:#6b5e4f;white-space:pre-line}
+.form-answer{font-size:.82rem;color:var(--correct);font-weight:600;display:none}
+.form-answer.show{display:inline;margin-left:6px}
+
+.ielts-table-section{margin-top:24px}
+.ielts-table-section h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;color:var(--accent);margin-bottom:8px}
+.ielts-table-wrap{overflow-x:auto;margin-bottom:16px}
+.ielts-table{width:100%;border-collapse:collapse;font-size:.9rem}
+.ielts-table th{background:var(--accent);color:#fff;padding:10px 14px;text-align:left;font-weight:700;text-transform:capitalize;font-size:.82rem;letter-spacing:.03em}
+.ielts-table td{padding:10px 14px;border-bottom:1px solid #e8ddd0;vertical-align:middle}
+.ielts-table tr:nth-child(even){background:#fef8f0}
+.table-q-num{font-weight:700;color:var(--accent);font-size:.8rem;margin-right:2px}
+.table-input{border:none;border-bottom:2px dashed var(--accent);background:transparent;font-family:'Source Sans 3',sans-serif;font-size:.88rem;font-weight:600;color:var(--text);padding:2px 4px;width:120px;outline:0;transition:.2s}
+.table-input:focus{border-bottom-style:solid;border-bottom-color:var(--accent-dark)}
+.table-input.pc{border-bottom-color:var(--correct);color:var(--correct);border-bottom-style:solid}
+.table-input.pw{border-bottom-color:var(--wrong);color:var(--wrong);border-bottom-style:solid}
+.table-answer{font-size:.78rem;color:var(--correct);font-weight:600;display:none}
+.table-answer.show{display:inline;margin-left:4px}
+
+/* ======================== VISUAL VOCAB ======================== */
+.vv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.vv-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);text-align:center;cursor:pointer;transition:transform .2s,box-shadow .2s;overflow:hidden;border:2px solid transparent}
+.vv-card:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(44,36,22,.12)}
+.vv-card.open{border-color:var(--correct)}
+.vv-svg{height:120px;background:#fef3e6;display:flex;align-items:center;justify-content:center;padding:12px}
+.vv-svg svg{width:100%;height:100%;max-width:160px}
+.vv-body{padding:12px 14px}
+.vv-term{font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;margin-bottom:2px}
+.vv-tap{font-size:.75rem;color:var(--accent)}
+.vv-detail{display:none;padding:8px 14px 14px;border-top:1px solid var(--accent-light);font-size:.85rem;text-align:left}
+.vv-card.open .vv-detail{display:block}
+.vv-card.open .vv-tap{display:none}
+.vv-vi{color:var(--vi);font-weight:600;margin-bottom:4px}
+.vv-ex{font-style:italic;color:#6b5e4f}
+
+/* ======================== SENTENCE COMPLETION ======================== */
+.sent-list{display:flex;flex-direction:column;gap:14px}
+.sent-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:18px 22px;border-left:4px solid var(--accent)}
+.sent-card.pc{border-left-color:var(--correct);background:var(--correct-bg)}
+.sent-card.pw{border-left-color:var(--wrong);background:var(--wrong-bg)}
+.sent-num{font-weight:700;color:var(--accent);font-size:.85rem;margin-right:4px}
+.sent-text{font-size:.95rem;font-weight:500;line-height:1.8}
+.sent-input{display:inline-block;border:none;border-bottom:2px dashed var(--accent);background:transparent;font-family:'Source Sans 3',sans-serif;font-size:.95rem;font-weight:600;color:var(--text);padding:2px 4px;width:160px;outline:0;transition:.2s}
+.sent-input:focus{border-bottom-style:solid;border-bottom-color:var(--accent-dark)}
+.sent-input.pc{border-bottom-color:var(--correct);color:var(--correct);border-bottom-style:solid}
+.sent-input.pw{border-bottom-color:var(--wrong);color:var(--wrong);border-bottom-style:solid}
+.sent-answer{font-size:.82rem;color:var(--correct);font-weight:600;display:none;margin-left:4px}
+.sent-answer.show{display:inline}
+
+/* ======================== RESPONSIVE ======================== */
+@media(max-width:600px){
+  .form-label{min-width:auto;width:100%}
+  .form-input,.table-input{width:140px}
+  .ielts-form{padding:18px 14px}
+  .vv-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+  .vv-svg{height:90px}
+  .sent-input{width:120px}
+}
