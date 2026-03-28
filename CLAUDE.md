@@ -24,6 +24,8 @@ shared/
   styles.css                        # ALL shared CSS: variables, fonts, nav, lesson components
   nav.js                            # Dynamic nav injection (single source of truth)
   lesson.js                         # Shared lesson JS: IPA, vocab, flashcard, fill-blank, match
+  reading.css                       # Reading lesson CSS: passage, quiz, flashcard, match, phrases
+  reading.js                        # Reading lesson JS: HTML template, IELTS quiz, passage, init
 docs/
   books/                            # Reference PDFs
   audio/                            # Listening test MP3s
@@ -158,7 +160,18 @@ All shared lesson interactivity lives in `shared/lesson.js` — do NOT copy-past
 - `renderMatch()` / `hMatch()` / `resetMatch()` — word matching game
 - `renderPhrases()` — useful phrases with tap-to-reveal
 
-Each lesson page must set `CAT_LABELS` (category label map) and call `renderVocab()` from `init()` after the data fetch. Reading lesson pages have different quiz patterns and may not use `lesson.js` — check existing reading lessons for reference.
+Each listening lesson page must set `CAT_LABELS` (category label map) and call `renderVocab()` from `init()` after the data fetch.
+
+**Reading lesson JS** (`shared/reading.js`) — included on all reading lesson pages alongside `lesson.js`:
+- `renderReadingPage(config)` — generates entire HTML template (tabs, passage, quiz, vocab, etc.)
+- `renderPassage()` / `toggleVI()` — passage display with Vietnamese toggle
+- `renderIELTS()` / `selI()` / `checkIELTS()` / `resetIELTS()` — IELTS quiz (T/F/NG, matching, or multiple choice based on `IELTS_OPTIONS`)
+- `renderPassageIELTS()` / `selPI()` / `checkPassageIELTS()` / `resetPassageIELTS()` — passage-side quiz
+- `renderSummaryQ()` / `checkSummaryQ()` / `resetSummaryQ()` — summary fill-in-the-blank (for Section 3)
+- `renderQTInfo()` — question type info cards
+- `initReading(data)` — standard data-loading + render-all sequence
+
+Each reading lesson page sets `CAT_LABELS`, `IELTS_OPTIONS` (array for fixed options, `null` for per-question multiple choice), calls `renderReadingPage(config)` then `fetch('./data.json').then(initReading)`. See `sections/reading/bees-neez/index.html` as reference (~60 lines).
 
 ## Design System
 - **Fonts:** Fraunces (serif, headings) + Source Sans 3 (sans, body)

@@ -5,6 +5,7 @@
 const ALL_LESSONS = [
   {name:'On the City Doorstep', path:'sections/reading/on-the-city-doorstep/data.json', skill:'reading'},
   {name:'Bees Neez Apiaries',   path:'sections/reading/bees-neez/data.json',             skill:'reading'},
+  {name:'Travel This Summer',   path:'sections/reading/travel-this-summer/data.json',    skill:'reading'},
   {name:'Happiness',            path:'sections/reading/happiness/data.json',              skill:'reading'},
   {name:'Video Games',          path:'sections/reading/video-games/data.json',            skill:'reading'},
   {name:'Map Labeling',         path:'sections/listening/map-labeling/data.json',         skill:'listening'},

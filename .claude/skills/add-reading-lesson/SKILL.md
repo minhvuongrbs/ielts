@@ -57,6 +57,32 @@ Source: Appendix 1, p<page> — Practice activity <X.Y>, Text <N>
 5. **Append** to `plans/README.md`:
    `- [ ] [Reading: <Title>](<NN>-reading-<slug>.md) — Section <N> reading lesson: <brief description>`
 
+## Reading Lesson Architecture
+
+Reading lessons use shared files: `shared/reading.css` (all CSS) + `shared/reading.js` (HTML template + JS logic) + `shared/lesson.js` (vocab, flashcard, etc.).
+
+Each lesson's `index.html` is ~60 lines:
+1. Set `CAT_LABELS` and `IELTS_OPTIONS` globals
+2. Include `lesson.js` + `reading.js`
+3. Call `renderReadingPage(config)` with lesson-specific config
+4. Fetch `data.json` and call `initReading(data)`
+
+**Reference template**: `sections/reading/bees-neez/index.html`
+
+**Config options for `renderReadingPage()`**:
+- `title`, `sub` — header text
+- `passageRight`: `'ielts'` (T/F/NG or matching), `'summary-q'` (fill-in-blank), `'none'`
+- `passageLabel`, `passageInstruction` — for passage-side quiz header
+- `ieltsInstruction` — instruction text above the main IELTS quiz tab
+- `optsLayout`: `'wrap'` (default, horizontal) or `'column'` (vertical, for multiple choice)
+- `stPreline`: `true` for pre-formatted passage text
+- `summaryCards` — HTML string for the Summary tab
+
+**IELTS_OPTIONS values**:
+- T/F/NG: `['TRUE','FALSE','NOT GIVEN']`
+- Letter matching: `['A','B','C',...]`
+- Multiple choice: `null` (uses per-question `q.options`)
+
 ## Section Content Patterns
 
 When **implementing** a reading lesson (not just creating the TODO), follow these content patterns based on the IELTS section. Reference existing lessons for the exact data.json structure.
