@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IELTS Listening — Map & Plan Labeling</title>
+<title>IELTS Listening — Form Completion — Furniture Ordering</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -24,7 +24,6 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
 
-/* Nav */
 .nav{display:flex;align-items:center;gap:16px;padding:10px 20px;background:#fff;box-shadow:0 1px 8px rgba(44,36,22,.06);position:sticky;top:0;z-index:100}
 .nav-brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--accent);text-decoration:none}
 .nav-links{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
@@ -51,21 +50,51 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 .tip-card{background:var(--correct-bg);border-left:4px solid var(--correct);padding:14px 18px;border-radius:0 var(--r) var(--r) 0;margin-bottom:10px;font-size:.9rem}
 .tip-num{font-weight:700;color:var(--correct);margin-right:6px}
 
-/* Visual Vocab */
-.vv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
-.vv-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);text-align:center;cursor:pointer;transition:transform .2s,box-shadow .2s;overflow:hidden;border:2px solid transparent}
-.vv-card:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(44,36,22,.12)}
-.vv-card.open{border-color:var(--correct)}
-.vv-svg{height:120px;background:#fef3e6;display:flex;align-items:center;justify-content:center;padding:12px}
-.vv-svg svg{width:100%;height:100%;max-width:160px}
-.vv-body{padding:12px 14px}
-.vv-term{font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;margin-bottom:2px}
-.vv-tap{font-size:.75rem;color:var(--accent)}
-.vv-detail{display:none;padding:8px 14px 14px;border-top:1px solid var(--accent-light);font-size:.85rem;text-align:left}
-.vv-card.open .vv-detail{display:block}
-.vv-card.open .vv-tap{display:none}
-.vv-vi{color:var(--vi);font-weight:600;margin-bottom:4px}
-.vv-ex{font-style:italic;color:#6b5e4f}
+/* Practice — IELTS Form */
+.audio-card{background:var(--accent-light);border-radius:var(--r);padding:16px 20px;margin-bottom:16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.audio-card .label{font-family:'Fraunces',serif;font-weight:700;font-size:1rem;color:var(--accent-dark)}
+.audio-card audio{flex:1;min-width:200px;height:40px}
+.practice-instruction{font-size:.88rem;color:#8a7a66;margin-bottom:12px;font-style:italic}
+
+.ielts-form{background:#fef8f0;border:2px solid #e8ddd0;border-radius:var(--r);padding:28px 28px 20px;margin-bottom:20px}
+.ielts-form-header{text-align:center;margin-bottom:20px}
+.ielts-form-header h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem}
+.ielts-form-header h4{font-family:'Fraunces',serif;font-weight:500;font-size:1rem;color:#8a7a66}
+.form-section-title{font-weight:700;font-size:.95rem;margin-bottom:12px;border-bottom:1px solid #e0d6c8;padding-bottom:6px}
+.form-example{background:#f0ebe3;border-radius:8px;padding:10px 16px;margin-bottom:16px;font-size:.88rem;color:#8a7a66}
+.form-example strong{color:var(--text)}
+.form-row{display:flex;align-items:baseline;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.form-label{font-weight:700;font-size:.92rem;min-width:160px;flex-shrink:0}
+.form-q{display:inline-flex;align-items:baseline;gap:4px;flex:1;min-width:0;flex-wrap:wrap;font-size:.92rem}
+.form-q-num{font-weight:700;color:var(--accent);font-size:.85rem}
+.form-input{display:inline-block;border:none;border-bottom:2px dashed var(--accent);background:transparent;font-family:'Source Sans 3',sans-serif;font-size:.92rem;font-weight:600;color:var(--text);padding:2px 4px;width:180px;outline:0;transition:.2s}
+.form-input:focus{border-bottom-style:solid;border-bottom-color:var(--accent-dark)}
+.form-input.pc{border-bottom-color:var(--correct);color:var(--correct);border-bottom-style:solid}
+.form-input.pw{border-bottom-color:var(--wrong);color:var(--wrong);border-bottom-style:solid}
+.form-suffix{font-size:.92rem;color:#6b5e4f;white-space:pre-line}
+.form-answer{font-size:.82rem;color:var(--correct);font-weight:600;display:none}
+.form-answer.show{display:inline;margin-left:6px}
+
+/* Practice — IELTS Table */
+.ielts-table-section{margin-top:24px}
+.ielts-table-section h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;color:var(--accent);margin-bottom:8px}
+.ielts-table-wrap{overflow-x:auto;margin-bottom:16px}
+.ielts-table{width:100%;border-collapse:collapse;font-size:.9rem}
+.ielts-table th{background:var(--accent);color:#fff;padding:10px 14px;text-align:left;font-weight:700;text-transform:capitalize;font-size:.82rem;letter-spacing:.03em}
+.ielts-table td{padding:10px 14px;border-bottom:1px solid #e8ddd0;vertical-align:middle}
+.ielts-table tr:nth-child(even){background:#fef8f0}
+.table-q-num{font-weight:700;color:var(--accent);font-size:.8rem;margin-right:2px}
+.table-input{border:none;border-bottom:2px dashed var(--accent);background:transparent;font-family:'Source Sans 3',sans-serif;font-size:.88rem;font-weight:600;color:var(--text);padding:2px 4px;width:120px;outline:0;transition:.2s}
+.table-input:focus{border-bottom-style:solid;border-bottom-color:var(--accent-dark)}
+.table-input.pc{border-bottom-color:var(--correct);color:var(--correct);border-bottom-style:solid}
+.table-input.pw{border-bottom-color:var(--wrong);color:var(--wrong);border-bottom-style:solid}
+.table-answer{font-size:.78rem;color:var(--correct);font-weight:600;display:none}
+.table-answer.show{display:inline;margin-left:4px}
+
+.practice-score{text-align:center;padding:16px;border-radius:var(--r);font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;margin-bottom:16px;display:none}
+.practice-score.show{display:block}
+.practice-score.good{background:var(--correct-bg);color:var(--correct)}
+.practice-score.bad{background:var(--wrong-bg);color:var(--wrong)}
 
 /* Vocab */
 .vf{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
@@ -163,8 +192,9 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 
 @media(max-width:600px){
   .card{padding:18px 16px}header h1{font-size:1.7rem}
-  .vv-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
-  .vv-svg{height:90px}
+  .form-label{min-width:auto;width:100%}
+  .form-input,.table-input{width:140px}
+  .ielts-form{padding:18px 14px}
   .fcf,.fcb{padding:24px 16px}.fcw{font-size:1.4rem}
   .mg{grid-template-columns:1fr}
 }
@@ -177,20 +207,20 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
     <a href="../../" class="nav-link">Home</a>
     <a href="../../reading/" class="nav-link">📖 Reading</a>
     <a href="../../writing/" class="nav-link">✍️ Writing</a>
-    <a href="../" class="nav-link active">🎧 Listening</a>
+    <a href="../../listening/" class="nav-link active">🎧 Listening</a>
     <a href="../../speaking/" class="nav-link">🗣️ Speaking</a>
     <a href="../../revision/" class="nav-link">📝 Revision</a>
   </div>
 </nav>
 <div class="container">
   <header>
-    <h1>🗺️ Map & Plan Labeling</h1>
-    <div class="sub">IELTS Listening — Section 2 — Question Type</div>
+    <h1>📋 Form Completion — Furniture Ordering</h1>
+    <div class="sub">IELTS Listening — Section 1 — Revision Test</div>
   </header>
 
   <div class="tabs">
     <button class="tab-btn active" data-tab="guide">📖 Guide</button>
-    <button class="tab-btn" data-tab="visual">🗺️ Visual</button>
+    <button class="tab-btn" data-tab="practice">📋 Practice</button>
     <button class="tab-btn" data-tab="vocab">📝 Vocab</button>
     <button class="tab-btn" data-tab="phrases">💬 Phrases</button>
     <button class="tab-btn" data-tab="quiz">❓ Quiz</button>
@@ -198,7 +228,7 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 
   <div id="guide" class="tp active">
     <div class="card">
-      <div class="guide-title">📋 What is Map & Plan Labeling?</div>
+      <div class="guide-title">📋 What is Form Completion?</div>
       <p id="guide-desc" style="font-size:.92rem;margin-bottom:16px"></p>
     </div>
     <div class="card">
@@ -211,9 +241,17 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
     </div>
   </div>
 
-  <div id="visual" class="tp">
-    <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.9rem">Tap a card to see the Vietnamese meaning and example sentence.</p>
-    <div class="vv-grid" id="vv-grid"></div>
+  <div id="practice" class="tp">
+    <div class="audio-card">
+      <div class="label">🔊 Listen to the audio</div>
+      <audio controls src="../../docs/audio/kt-furniture-listening-s1.mp3" style="flex:1;min-width:200px"></audio>
+    </div>
+    <div id="practice-content"></div>
+    <div class="practice-score" id="practice-score"></div>
+    <div class="ctrls">
+      <button class="btn bp" id="pcheck" onclick="checkPractice()">Check Answers</button>
+      <button class="btn bs" id="preset" onclick="resetPractice()" style="display:none">Try Again</button>
+    </div>
   </div>
 
   <div id="vocab" class="tp">
@@ -222,7 +260,7 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
   </div>
 
   <div id="phrases" class="tp">
-    <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.9rem">Common sentences you'll hear in map & plan labeling audio. Learn to recognize these patterns.</p>
+    <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.9rem">Common sentences you'll hear in Section 1 ordering conversations. Learn to recognize these patterns.</p>
     <div class="ph-grid" id="phrases-grid"></div>
   </div>
 
@@ -267,7 +305,7 @@ header .sub{font-size:.9rem;color:#8a7a66;margin-top:6px}
 </div>
 
 <script>
-let INTRO={}, V=[], UP=[], FB=[], VV=[];
+let INTRO={}, V=[], UP=[], FB=[], PRACTICE={};
 
 // ======================== AUDIO & IPA ========================
 function speak(text){
@@ -319,27 +357,6 @@ async function fetchIPA(word){
 
 function getIPA(word){return ipaCache[word.toLowerCase().replace(/[^a-z]/g,'')]||'';}
 
-// ======================== SVG ILLUSTRATIONS ========================
-const SVG_MAP = {
-  'turn-left': `<svg viewBox="0 0 160 120"><rect x="60" y="10" width="40" height="100" rx="4" fill="#b8d8b8"/><path d="M80 90 L80 50 Q80 35 65 35 L30 35" stroke="#c44536" stroke-width="6" fill="none" marker-end="url(#ah)"/><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c44536"/></marker></defs></svg>`,
-  'turn-right': `<svg viewBox="0 0 160 120"><rect x="60" y="10" width="40" height="100" rx="4" fill="#b8d8b8"/><path d="M80 90 L80 50 Q80 35 95 35 L130 35" stroke="#c44536" stroke-width="6" fill="none" marker-end="url(#ah2)"/><defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c44536"/></marker></defs></svg>`,
-  'go-straight': `<svg viewBox="0 0 160 120"><rect x="60" y="10" width="40" height="100" rx="4" fill="#b8d8b8"/><path d="M80 100 L80 20" stroke="#c44536" stroke-width="6" fill="none" marker-end="url(#ah3)"/><defs><marker id="ah3" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,10 L5,0 L10,10 Z" fill="#c44536"/></marker></defs></svg>`,
-  'go-past': `<svg viewBox="0 0 160 120"><rect x="55" y="20" width="50" height="35" rx="4" fill="#d4c5a0" stroke="#b0a080" stroke-width="1.5"/><text x="80" y="42" text-anchor="middle" font-size="10" fill="#6b5e4f">SHOP</text><path d="M30 90 L30 40 L30 15" stroke="#c44536" stroke-width="5" fill="none" marker-end="url(#ah4)" stroke-dasharray="0"/><defs><marker id="ah4" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,10 L5,0 L10,10 Z" fill="#c44536"/></marker></defs></svg>`,
-  'next-to': `<svg viewBox="0 0 160 120"><rect x="20" y="30" width="50" height="50" rx="4" fill="#b8d8b8" stroke="#7ab87a" stroke-width="1.5"/><text x="45" y="59" text-anchor="middle" font-size="10" fill="#2c5e2c">A</text><rect x="90" y="30" width="50" height="50" rx="4" fill="#a8c8e8" stroke="#6090b0" stroke-width="1.5"/><text x="115" y="59" text-anchor="middle" font-size="10" fill="#2c4e6e">B</text><path d="M73 55 L87 55" stroke="#c47a3b" stroke-width="3" stroke-dasharray="4,3"/></svg>`,
-  'opposite': `<svg viewBox="0 0 160 120"><rect x="20" y="15" width="50" height="35" rx="4" fill="#b8d8b8" stroke="#7ab87a" stroke-width="1.5"/><text x="45" y="37" text-anchor="middle" font-size="10" fill="#2c5e2c">A</text><rect x="90" y="15" width="50" height="35" rx="4" fill="#a8c8e8" stroke="#6090b0" stroke-width="1.5"/><text x="115" y="37" text-anchor="middle" font-size="10" fill="#2c4e6e">B</text><rect x="10" y="55" width="140" height="16" rx="3" fill="#e0d6c8"/><text x="80" y="66" text-anchor="middle" font-size="8" fill="#8a7a66">ROAD</text><path d="M45 50 L45 72 M115 50 L115 72" stroke="#c44536" stroke-width="2" stroke-dasharray="3,2"/></svg>`,
-  'roundabout': `<svg viewBox="0 0 160 120"><circle cx="80" cy="55" r="30" fill="none" stroke="#b8d8b8" stroke-width="12"/><circle cx="80" cy="55" r="12" fill="#e8f5ed"/><path d="M80 110 L80 85" stroke="#c44536" stroke-width="5" fill="none"/><path d="M55 38 L30 20" stroke="#c44536" stroke-width="5" fill="none" marker-end="url(#ah5)"/><defs><marker id="ah5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c44536"/></marker></defs></svg>`,
-  'second-left': `<svg viewBox="0 0 160 120"><rect x="70" y="0" width="20" height="120" fill="#b8d8b8"/><rect x="0" y="30" width="70" height="14" fill="#d8e8d0"/><rect x="0" y="70" width="70" height="14" fill="#b8d8b8"/><circle cx="80" cy="100" r="4" fill="#c44536"/><path d="M80 96 L80 77 L20 77" stroke="#c44536" stroke-width="4" fill="none" marker-end="url(#ah6)"/><text x="35" y="28" text-anchor="middle" font-size="8" fill="#aaa">1st</text><text x="35" y="66" text-anchor="middle" font-size="9" fill="#c44536" font-weight="700">2nd</text><defs><marker id="ah6" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10,0 L0,5 L10,10 Z" fill="#c44536"/></marker></defs></svg>`,
-  'second-right': `<svg viewBox="0 0 160 120"><rect x="70" y="0" width="20" height="120" fill="#b8d8b8"/><rect x="90" y="30" width="70" height="14" fill="#d8e8d0"/><rect x="90" y="70" width="70" height="14" fill="#b8d8b8"/><circle cx="80" cy="100" r="4" fill="#c44536"/><path d="M80 96 L80 77 L140 77" stroke="#c44536" stroke-width="4" fill="none" marker-end="url(#ah7)"/><text x="125" y="28" text-anchor="middle" font-size="8" fill="#aaa">1st</text><text x="125" y="66" text-anchor="middle" font-size="9" fill="#c44536" font-weight="700">2nd</text><defs><marker id="ah7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c44536"/></marker></defs></svg>`,
-  'traffic-lights': `<svg viewBox="0 0 160 120"><rect x="60" y="10" width="40" height="95" rx="8" fill="#444"/><circle cx="80" cy="30" r="10" fill="#e44"/><circle cx="80" cy="55" r="10" fill="#ea2"/><circle cx="80" cy="80" r="10" fill="#4b4"/><rect x="76" y="105" width="8" height="10" fill="#666"/></svg>`,
-  'between': `<svg viewBox="0 0 160 120"><rect x="10" y="30" width="40" height="50" rx="4" fill="#d8e8d0" stroke="#a0c0a0" stroke-width="1.5"/><text x="30" y="59" text-anchor="middle" font-size="10" fill="#4a7a4a">A</text><rect x="60" y="30" width="40" height="50" rx="4" fill="#f5dfc4" stroke="#c47a3b" stroke-width="2"/><text x="80" y="59" text-anchor="middle" font-size="11" fill="#c47a3b" font-weight="700">?</text><rect x="110" y="30" width="40" height="50" rx="4" fill="#d0d8e8" stroke="#8090b0" stroke-width="1.5"/><text x="130" y="59" text-anchor="middle" font-size="10" fill="#4a5a7a">C</text></svg>`,
-  'in-front-of': `<svg viewBox="0 0 160 120"><rect x="40" y="15" width="80" height="45" rx="4" fill="#d4c5a0" stroke="#b0a080" stroke-width="1.5"/><text x="80" y="42" text-anchor="middle" font-size="10" fill="#6b5e4f">BUILDING</text><circle cx="80" cy="90" r="12" fill="#f5dfc4" stroke="#c47a3b" stroke-width="2"/><text x="80" y="94" text-anchor="middle" font-size="10" fill="#c47a3b" font-weight="700">★</text><path d="M80 78 L80 63" stroke="#c44536" stroke-width="3" marker-end="url(#ah8)"/><defs><marker id="ah8" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,10 L5,0 L10,10 Z" fill="#c44536"/></marker></defs></svg>`,
-  'behind': `<svg viewBox="0 0 160 120"><rect x="40" y="45" width="80" height="45" rx="4" fill="#d4c5a0" stroke="#b0a080" stroke-width="1.5"/><text x="80" y="72" text-anchor="middle" font-size="10" fill="#6b5e4f">BUILDING</text><circle cx="80" cy="22" r="12" fill="#f5dfc4" stroke="#c47a3b" stroke-width="2"/><text x="80" y="26" text-anchor="middle" font-size="10" fill="#c47a3b" font-weight="700">★</text><path d="M80 34 L80 42" stroke="#c44536" stroke-width="3" marker-end="url(#ah9)"/><text x="80" y="108" text-anchor="middle" font-size="9" fill="#aaa">FRONT</text><defs><marker id="ah9" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L5,10 L10,0 Z" fill="#c44536"/></marker></defs></svg>`,
-  'corner': `<svg viewBox="0 0 160 120"><rect x="10" y="85" width="140" height="14" rx="3" fill="#b8d8b8"/><rect x="120" y="10" width="14" height="90" rx="3" fill="#b8d8b8"/><circle cx="127" cy="85" r="14" fill="#f5dfc4" stroke="#c47a3b" stroke-width="2.5"/><text x="127" y="89" text-anchor="middle" font-size="10" fill="#c47a3b" font-weight="700">★</text><text x="65" y="82" text-anchor="middle" font-size="8" fill="#8a7a66">HIGH ST</text></svg>`,
-  'cross-road': `<svg viewBox="0 0 160 120"><rect x="10" y="48" width="140" height="20" rx="3" fill="#d8e8d0"/><text x="80" y="61" text-anchor="middle" font-size="8" fill="#8a7a66">ROAD</text><path d="M80 90 L80 40" stroke="#c44536" stroke-width="5" fill="none" stroke-dasharray="6,4" marker-end="url(#ah10)"/><circle cx="80" cy="95" r="5" fill="#c44536"/><defs><marker id="ah10" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,10 L5,0 L10,10 Z" fill="#c44536"/></marker></defs></svg>`,
-  'crossroads': `<svg viewBox="0 0 160 120"><rect x="10" y="50" width="140" height="16" rx="2" fill="#b8d8b8"/><rect x="72" y="10" width="16" height="100" rx="2" fill="#b8d8b8"/><circle cx="80" cy="58" r="8" fill="#f5dfc4" stroke="#c47a3b" stroke-width="2"/><text x="80" y="62" text-anchor="middle" font-size="8" fill="#c47a3b" font-weight="700">+</text><text x="30" y="47" font-size="7" fill="#8a7a66">←</text><text x="130" y="47" font-size="7" fill="#8a7a66">→</text><text x="86" y="20" font-size="7" fill="#8a7a66">↑</text><text x="86" y="106" font-size="7" fill="#8a7a66">↓</text></svg>`,
-  'zebra-crossing': `<svg viewBox="0 0 160 120"><rect x="10" y="45" width="140" height="30" rx="2" fill="#d8d8d8"/><rect x="55" y="45" width="8" height="30" fill="#fff"/><rect x="67" y="45" width="8" height="30" fill="#fff"/><rect x="79" y="45" width="8" height="30" fill="#fff"/><rect x="91" y="45" width="8" height="30" fill="#fff"/><rect x="103" y="45" width="8" height="30" fill="#fff"/><circle cx="80" cy="30" r="6" fill="#f5dfc4" stroke="#c47a3b" stroke-width="1.5"/><path d="M80 36 L80 45" stroke="#c44536" stroke-width="2" stroke-dasharray="3,2"/><text x="80" y="95" text-anchor="middle" font-size="8" fill="#8a7a66">ROAD</text></svg>`
-};
-
 // ======================== LOAD DATA ========================
 fetch('./data.json')
   .then(r=>r.json())
@@ -348,14 +365,14 @@ fetch('./data.json')
     V=data.vocabulary;
     UP=data.usefulPhrases||[];
     FB=data.fillBlanks||[];
-    VV=data.visualVocab||[];
+    PRACTICE=data.practice||{};
     init();
     Promise.all(V.map(v=>fetchIPA(v.w))).then(()=>{renderVocab();renderFC();});
   });
 
 function init(){
   renderGuide();
-  renderVisualVocab();
+  renderPractice();
   renderVF();
   renderVocab();
   renderPhrases();
@@ -383,24 +400,100 @@ function renderGuide(){
   document.getElementById('guide-tips').innerHTML=INTRO.tips.map((t,i)=>`<div class="tip-card"><span class="tip-num">${i+1}.</span>${t}</div>`).join('');
 }
 
-// ======================== VISUAL VOCAB ========================
-function renderVisualVocab(){
-  document.getElementById('vv-grid').innerHTML=VV.map(v=>`
-    <div class="vv-card" onclick="this.classList.toggle('open')">
-      <div class="vv-svg">${SVG_MAP[v.svg]||''}</div>
-      <div class="vv-body">
-        <div class="vv-term">${v.term} <button class="audio-btn" onclick="event.stopPropagation();speak('${v.term.replace(/'/g,"\\'")}')">🔊</button></div>
-        <div class="vv-tap">tap to reveal</div>
+// ======================== PRACTICE ========================
+function renderPractice(){
+  const P=PRACTICE;if(!P.formQuestions)return;
+  let html='';
+
+  // Form section
+  html+=`<div class="ielts-form">
+    <div class="ielts-form-header"><h3>${P.title}</h3><h4>${P.subtitle}</h4></div>
+    <div class="form-section-title">Customer details</div>
+    <p class="practice-instruction">${P.formInstruction}</p>
+    <div class="form-example"><em>Example</em><br><strong>${P.example.label}:</strong> <span style="text-decoration:underline">${P.example.value}</span></div>`;
+
+  P.formQuestions.forEach(fq=>{
+    html+=`<div class="form-row">
+      <div class="form-label">${fq.label}</div>
+      <div class="form-q">
+        <span class="form-q-num">${fq.q}</span>
+        ${fq.before?`<span>${fq.before}</span>`:''}
+        <input class="form-input" id="pq-${fq.q}" data-q="${fq.q}" autocomplete="off" spellcheck="false">
+        <span class="form-answer" id="pa-${fq.q}"></span>
+        ${fq.after?`<span class="form-suffix">${fq.after}</span>`:''}
       </div>
-      <div class="vv-detail">
-        <div class="vv-vi">🇻🇳 ${v.vi}</div>
-        <div class="vv-ex">💡 ${v.example}</div>
-      </div>
-    </div>`).join('');
+    </div>`;
+  });
+  html+=`</div>`;
+
+  // Table section
+  html+=`<div class="ielts-table-section">
+    <h3>Questions 6–10</h3>
+    <p class="practice-instruction">${P.tableInstruction}</p>
+    <div class="ielts-table-wrap"><table class="ielts-table">
+    <thead><tr>${P.tableColumns.map(c=>`<th>${c}</th>`).join('')}</tr></thead><tbody>`;
+
+  P.tableRows.forEach(row=>{
+    html+='<tr>';
+    P.tableColumns.forEach(col=>{
+      const cell=row[col];
+      if(typeof cell==='object'&&cell&&cell.q){
+        html+=`<td><span class="table-q-num">${cell.q}</span><input class="table-input" id="pq-${cell.q}" data-q="${cell.q}" autocomplete="off" spellcheck="false"><span class="table-answer" id="pa-${cell.q}"></span></td>`;
+      } else {
+        html+=`<td>${cell||'—'}</td>`;
+      }
+    });
+    html+='</tr>';
+  });
+
+  html+=`</tbody></table></div></div>`;
+  document.getElementById('practice-content').innerHTML=html;
+  document.getElementById('practice-score').className='practice-score';
+  document.getElementById('practice-score').textContent='';
+  document.getElementById('pcheck').style.display='inline-block';
+  document.getElementById('preset').style.display='none';
 }
 
+function normalize(s){return s.trim().toLowerCase().replace(/[\s]+/g,' ');}
+
+function checkPractice(){
+  const allQ=[...PRACTICE.formQuestions];
+  PRACTICE.tableRows.forEach(row=>{
+    PRACTICE.tableColumns.forEach(col=>{
+      const cell=row[col];
+      if(typeof cell==='object'&&cell&&cell.q)allQ.push(cell);
+    });
+  });
+
+  let score=0;
+  allQ.forEach(q=>{
+    const inp=document.getElementById(`pq-${q.q}`);
+    const ans=document.getElementById(`pa-${q.q}`);
+    if(!inp)return;
+    const val=normalize(inp.value);
+    const correct=normalize(q.answer);
+    const alts=(q.altAnswers||[]).map(a=>normalize(a));
+    const ok=val===correct||alts.includes(val);
+    if(ok)score++;
+    inp.disabled=true;
+    inp.classList.add(ok?'pc':'pw');
+    if(!ok){
+      ans.textContent='✓ '+q.answer;
+      ans.classList.add('show');
+    }
+  });
+
+  const el=document.getElementById('practice-score');
+  el.textContent=`${score} / ${allQ.length} correct` + (score===allQ.length?' 🎉':'');
+  el.className='practice-score show '+(score>=allQ.length*0.7?'good':'bad');
+  document.getElementById('pcheck').style.display='none';
+  document.getElementById('preset').style.display='inline-block';
+}
+
+function resetPractice(){renderPractice();}
+
 // ======================== VOCAB ========================
-const CAT_LABELS={place:'📍 Place',movement:'🚶 Movement',location:'🏛️ Location',direction:'🧭 Direction'};
+const CAT_LABELS={furniture:'🪑 Furniture',payment:'💳 Payment',delivery:'🚚 Delivery',office:'🏢 Office'};
 function renderVocab(f='all'){
   const g=document.getElementById('vocab-grid');
   const list=f==='all'?V:V.filter(v=>v.cat===f);

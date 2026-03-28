@@ -23,6 +23,8 @@
   --listening-bg: #fef3e6;
   --speaking: #b05ca8;
   --speaking-bg: #f8edf7;
+  --revision: #7a6cc4;
+  --revision-bg: #eee8fb;
   --vocab: #d4853b;
   --vocab-bg: #f5dfc4;
 }
@@ -107,6 +109,13 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--tex
 .speaking .card{border-left-color:var(--speaking)}
 .speaking .card::after{color:var(--speaking)}
 
+/* Revision */
+.revision .skill-icon{background:var(--revision-bg);color:var(--revision)}
+.revision .skill-line{background:var(--revision-bg)}
+.revision .card{border-left-color:var(--revision)}
+.revision .card::after{color:var(--revision)}
+.revision .tag-new{background:var(--revision)}
+
 /* Features */
 .features{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:44px}
 .feat{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:18px 20px;text-align:center}
@@ -135,6 +144,7 @@ footer a{color:var(--accent);text-decoration:none}
     <a href="./writing/" class="nav-link">✍️ Writing</a>
     <a href="./listening/" class="nav-link">🎧 Listening</a>
     <a href="./speaking/" class="nav-link">🗣️ Speaking</a>
+    <a href="./revision/" class="nav-link">📝 Revision</a>
   </div>
 </nav>
 
@@ -237,12 +247,19 @@ footer a{color:var(--accent);text-decoration:none}
           <span>🃏 3 quiz types</span>
         </div>
       </a>
-      <div class="card soon">
-        <div class="card-tags"><span class="tag tag-type">Section 1</span></div>
-        <div class="card-title">Form Completion — Booking & Registration</div>
-        <div class="card-desc">Practice form completion: phone numbers, addresses, dates. Common Section 1 vocabulary.</div>
-        <div class="card-meta"><span>🔜 Coming soon</span></div>
-      </div>
+      <a href="lessons/form-completion/" class="card">
+        <div class="card-tags">
+          <span class="tag tag-new">New</span>
+          <span class="tag tag-type">Section 1</span>
+        </div>
+        <div class="card-title">📋 Form Completion — Furniture Ordering</div>
+        <div class="card-desc">Practice form and table completion: company names, phone numbers, product codes. Interactive IELTS practice form.</div>
+        <div class="card-meta">
+          <span>🔊 Audio included</span>
+          <span>📝 34 vocabulary words</span>
+          <span>📋 10-question practice</span>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -267,6 +284,30 @@ footer a{color:var(--accent);text-decoration:none}
         <div class="card-desc">How to brainstorm in 1 minute, structure a 2-minute talk, and use natural filler phrases.</div>
         <div class="card-meta"><span>🔜 Coming soon</span></div>
       </div>
+    </div>
+  </div>
+
+  <!-- ==================== REVISION ==================== -->
+  <div class="skill-section revision">
+    <div class="skill-header">
+      <div class="skill-icon">📝</div>
+      <h2>Revision</h2>
+      <div class="skill-line"></div>
+    </div>
+    <p class="skill-desc">Full mock tests grouped by revision session. Test your skills before the real exam.</p>
+    <div class="cards">
+      <a href="revision/" class="card">
+        <div class="card-tags">
+          <span class="tag tag-new">New</span>
+          <span class="tag tag-type">Mock Test</span>
+        </div>
+        <div class="card-title">📝 Revision 1</div>
+        <div class="card-desc">Listening Section 1: Form Completion (Furniture Ordering) + Section 2: Sentence Completion (coming soon).</div>
+        <div class="card-meta">
+          <span>🎧 2 listening tests</span>
+          <span>🔊 Audio included</span>
+        </div>
+      </a>
     </div>
   </div>
 

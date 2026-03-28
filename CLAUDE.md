@@ -12,26 +12,39 @@
 - **Local server:** `python3 -m http.server 8080` from project root
 - **Preview config:** `.claude/launch.json` (server name: `ielts-hub`, port 8080)
 - **CRITICAL:** All paths must be **relative** (not absolute `/`) for GitHub Pages compatibility
-- **Reference PDFs:**
-  - `docs/IELTS_Reading_and_Writing_General_ielts.pdf` — GT Reading & Writing practice tests
-  - `docs/Mindset for IELTS Level 1 Student_s Book.pdf` — Mindset for IELTS Level 1 (Foundation/Band 5.5–6.0)
+- **Reference materials** (organized by type):
+  - `docs/books/IELTS_Reading_and_Writing_General_ielts.pdf` — GT Reading & Writing practice tests
+  - `docs/books/Mindset for IELTS Level 1 Student_s Book.pdf` — Mindset for IELTS Level 1 (Foundation/Band 5.5–6.0)
+  - `docs/audio/` — Listening test audio files (MP3)
 
 ## Project Structure
 ```
 index.html                          # Homepage — skill sections with lesson cards
+lessons/                            # Shared lessons (linked from both skill hubs + revision)
+  form-completion/
+    index.html                      # Lesson page (tabs + interactive components)
+    data.json                       # ALL lesson content (vocab, quizzes, phrases)
 reading/
   index.html                        # Reading lesson hub (card grid)
   happiness/
-    index.html                      # Lesson page (tabs + interactive components)
-    data.json                       # ALL lesson content (vocab, quizzes, phrases)
+    index.html                      # Lesson page
+    data.json
 listening/
   index.html                        # Listening lesson hub (card grid)
   map-labeling/
     index.html                      # Lesson page
-    data.json                       # ALL lesson content
+    data.json
+revision/
+  index.html                        # Revision hub — mock tests (Revision 1, 2, etc.)
 writing/index.html                  # Coming soon placeholder
 speaking/index.html                 # Coming soon placeholder
 ```
+
+### Shared lessons (`lessons/`)
+- Lessons that appear in **both** a skill hub and revision live in `lessons/`
+- Skill hubs and revision hub link to `../lessons/<lesson>/` via relative paths
+- Lessons that are skill-specific only (e.g., `listening/map-labeling/`) stay in their skill folder
+- Shared lessons mark their **primary skill** as active in the nav
 
 ## Architecture — Follow When Creating New Lessons
 
