@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>7 Reading Skills — IELTS Hub</title>
+<title>8 Reading Skills — IELTS Hub</title>
 <link rel="stylesheet" href="../../../shared/styles.css">
 <style>
 .container{max-width:800px}
@@ -165,6 +165,14 @@
 .mh-select.correct{border-color:var(--correct);background:var(--correct-bg)}
 .mh-select.wrong{border-color:var(--wrong);background:var(--wrong-bg)}
 
+/* Match views */
+.mv-item{display:flex;align-items:center;gap:10px;padding:10px 12px;margin:6px 0;background:#fff;border-radius:8px;border:1px solid #e8e2d8;font-size:.85rem}
+.mv-num{font-weight:700;color:var(--reading);min-width:28px}
+.mv-text{flex:1;line-height:1.5}
+.mv-select{padding:6px 10px;border:2px solid #e8e2d8;border-radius:8px;font-size:.82rem;font-family:inherit;cursor:pointer;min-width:120px}
+.mv-select.correct{border-color:var(--correct);background:var(--correct-bg)}
+.mv-select.wrong{border-color:var(--wrong);background:var(--wrong-bg)}
+
 /* Score */
 .score-bar{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;padding:10px;border-radius:10px;font-size:.88rem;font-weight:700}
 .score-bar.perfect{background:var(--correct-bg);color:var(--correct)}
@@ -183,6 +191,8 @@
   .ooo-grid{grid-template-columns:1fr}
   .fo-item{flex-direction:column;align-items:flex-start}
   .fo-btns{margin-left:0;margin-top:6px}
+  .mv-item{flex-wrap:wrap}
+  .mv-select{width:100%}
   .page-hero h1{font-size:1.6rem}
   .snav-btn{width:34px;height:34px;font-size:.78rem}
 }
@@ -194,10 +204,10 @@
 
 <div class="page-hero">
   <div class="icon">📖</div>
-  <h1><span>7 Reading</span> Skills</h1>
+  <h1><span>8 Reading</span> Skills</h1>
   <p>Master these essential IELTS reading skills — from speed-reading to understanding what the writer really thinks.</p>
   <div class="progress-wrap">
-    <span class="progress-text" id="progText">0 / 7 skills practised</span>
+    <span class="progress-text" id="progText">0 / 8 skills practised</span>
     <div class="progress-bar"><div class="progress-fill" id="progFill"></div></div>
   </div>
 </div>
@@ -314,6 +324,7 @@ function renderSkill(s) {
     case 'match-headings': renderMatchHeadings(container, p, s); break;
     case 'sort-statements': renderSortStatements(container, p, s); break;
     case 'fact-opinion': renderFactOpinion(container, p, s); break;
+    case 'match-views': renderMatchViews(container, p, s); break;
   }
 }
 
@@ -688,6 +699,51 @@ function renderFactOpinion(el, p, skill) {
   }
 
   render();
+}
+
+/* 8. Match Views to People */
+function renderMatchViews(el, p, skill) {
+  const opts = p.people.map(pe => `<option value="${pe.id}">${pe.id}. ${pe.name}</option>`).join('');
+
+  el.innerHTML = `
+    <div class="passage-box" style="max-height:260px;overflow-y:auto;font-size:.85rem;line-height:1.65">${p.passage.replace(/\n/g,'<br>')}</div>
+    <div class="vi passage-box" style="display:none;border-color:var(--vi);max-height:none;font-size:.82rem">${p.passageVi}</div>
+    <p style="font-weight:700;font-size:.88rem;margin:14px 0 6px">People:</p>
+    <div style="font-size:.85rem;color:#6b5e4f;margin-bottom:14px">${p.people.map(pe => `<strong>${pe.id}</strong> ${pe.name}`).join(' &nbsp;·&nbsp; ')}</div>
+    <div id="mv-items">
+      ${p.questions.map(q => `
+        <div class="mv-item" data-num="${q.num}">
+          <span class="mv-num">${q.num}</span>
+          <span class="mv-text">${q.text}<span class="vi" style="display:none"> — ${q.textVi}</span></span>
+          <select class="mv-select" data-num="${q.num}" data-answer="${q.answer}">
+            <option value="">—</option>
+            ${opts}
+          </select>
+        </div>
+      `).join('')}
+    </div>
+    <button class="btn-check" id="mv-check">Check Answers</button>
+    <div id="mv-score"></div>`;
+
+  document.getElementById('mv-check').onclick = () => {
+    let score = 0;
+    const selects = el.querySelectorAll('.mv-select');
+    selects.forEach(sel => {
+      if (sel.value === sel.dataset.answer) { sel.classList.add('correct'); score++; }
+      else { sel.classList.add('wrong'); }
+    });
+    const n = p.questions.length;
+    const pct = score / n;
+    const cls = pct === 1 ? 'perfect' : pct >= 0.5 ? 'good' : 'try';
+    let expHtml = p.questions.map((q, i) => {
+      const sel = selects[i];
+      const ok = sel.value === q.answer;
+      return `<div style="font-size:.82rem;margin:3px 0">${ok ? '✅' : '❌'} <strong>Q${q.num} → ${q.answer}:</strong> ${q.explanation}<span class="vi" style="display:none;color:var(--vi);font-style:italic"> ${q.explanationVi}</span></div>`;
+    }).join('');
+    document.getElementById('mv-score').innerHTML = `<div class="score-bar ${cls}">${pct === 1 ? '🎉 Perfect matching!' : score + '/' + n + ' correct'}</div>${expHtml}`;
+    document.getElementById('mv-check').disabled = true;
+    markDone(skill);
+  };
 }
 
 /* Mark skill as done */

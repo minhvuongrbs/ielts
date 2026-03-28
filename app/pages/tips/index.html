@@ -16,27 +16,6 @@
 
 .section-heading{font-family:'Fraunces',serif;font-weight:700;font-size:1.4rem;color:var(--text);margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--accent)}
 
-/* Question type card */
-.qt-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:20px 24px;margin-bottom:14px;border-left:5px solid var(--accent);cursor:pointer;transition:background .2s}
-.qt-card:hover{background:#fdf8f3}
-.qt-card-header{display:flex;justify-content:space-between;align-items:center}
-.qt-card-name{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;color:var(--accent)}
-.qt-card-num{font-size:.75rem;font-weight:700;color:#8a7a66;background:#f0ebe3;border-radius:10px;padding:2px 10px}
-.qt-card-toggle{color:var(--accent);transition:transform .25s;font-size:.8rem;margin-left:12px}
-.qt-card.open .qt-card-toggle{transform:rotate(180deg)}
-.qt-card-body{display:none;margin-top:14px;font-size:.9rem;line-height:1.7}
-.qt-card.open .qt-card-body{display:block}
-.qt-card-desc{color:#6b5e4f;margin-bottom:10px}
-.qt-card-vi{color:var(--vi);font-style:italic;font-size:.85rem;margin-bottom:12px}
-.qt-card-tips{padding-left:18px;color:var(--text);margin-bottom:12px}
-.qt-card-tips li{margin-bottom:5px}
-.qt-card-lessons{font-size:.82rem;color:#8a7a66}
-.qt-card-lessons a{color:var(--accent);text-decoration:none;font-weight:600}
-.qt-card-lessons a:hover{text-decoration:underline}
-.qt-soon{opacity:.55;cursor:default;border-left-color:#ccc}
-.qt-soon:hover{background:#fff}
-.qt-soon .qt-card-name{color:#8a7a66}
-
 /* Skills link card */
 .skills-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:24px 26px;margin-bottom:16px;border-left:5px solid var(--reading);text-decoration:none;color:var(--text);display:block;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
 .skills-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
@@ -48,7 +27,6 @@
 
 @media(max-width:480px){
   .page-hero h1{font-size:1.6rem}
-  .qt-card{padding:16px 18px}
 }
 </style>
 </head>
@@ -59,171 +37,29 @@
 <div class="page-hero">
   <div class="icon">💡</div>
   <h1>IELTS <span>Tips</span></h1>
-  <p>Master the 11 IELTS Reading question types and essential reading skills. Learn strategies, tips, and common traps for each type.</p>
+  <p>Essential reading skills and question type strategies to boost your IELTS Reading score.</p>
 </div>
 
 <div class="container">
 
-  <div class="section-heading">📋 11 IELTS Reading Question Types</div>
-
-  <div class="qt-card" id="multiple-choice" onclick="this.classList.toggle('open')">
-    <div class="qt-card-header">
-      <span class="qt-card-name">🔤 1. Multiple Choice</span>
-      <span><span class="qt-card-num">Practiced</span> <span class="qt-card-toggle">▼</span></span>
-    </div>
-    <div class="qt-card-body">
-      <div class="qt-card-desc">Choose the correct answer from 4 options (A, B, C, or D). Tests your ability to recognise specific points in a passage or to understand the main idea.</div>
-      <div class="qt-card-vi">🇻🇳 Chọn đáp án đúng từ 4 lựa chọn (A, B, C hoặc D). Kiểm tra khả năng nhận ra các điểm cụ thể hoặc ý chính của đoạn văn.</div>
-      <ul class="qt-card-tips">
-        <li>Read the question stem carefully — identify key words</li>
-        <li>Find the matching paragraph first, then compare ALL options</li>
-        <li>Watch for qualifying words like 'always', 'never', 'not sure'</li>
-        <li>Eliminate distractors — options that are true but don't answer the question</li>
-        <li>Questions usually follow the order of the text</li>
-      </ul>
-      <div class="qt-card-lessons">Practice: <a href="../../sections/reading/video-games/">How Video Games Are Good for the Brain</a></div>
-    </div>
-  </div>
-
-  <div class="qt-card" id="matching-information" onclick="this.classList.toggle('open')">
-    <div class="qt-card-header">
-      <span class="qt-card-name">🔗 2. Matching Information</span>
-      <span><span class="qt-card-num">Practiced</span> <span class="qt-card-toggle">▼</span></span>
-    </div>
-    <div class="qt-card-body">
-      <div class="qt-card-desc">You are given a number of statements and must find which paragraph (A, B, C, etc.) contains that information. Tests your ability to locate specific details across a long passage.</div>
-      <div class="qt-card-vi">🇻🇳 Bạn được cho các phát biểu và phải tìm đoạn văn nào chứa thông tin đó. Kiểm tra khả năng xác định vị trí thông tin cụ thể trong bài đọc dài.</div>
-      <ul class="qt-card-tips">
-        <li>Read all the statements first before looking at the passage</li>
-        <li>Underline key words in each statement</li>
-        <li>Skim each paragraph looking for paraphrased matches — the text won't use the exact same words</li>
-        <li>A paragraph may match more than one statement, or may not be used at all</li>
-        <li>Don't be tricked by single word matches — check the full meaning</li>
-      </ul>
-      <div class="qt-card-lessons">Practice: <a href="../../sections/reading/happiness/">What is Happiness?</a> · <a href="../../sections/reading/on-the-city-doorstep/">On the City Doorstep</a> · <a href="../../sections/reading/european-river-cruising/">European River Cruising</a></div>
-    </div>
-  </div>
-
-  <div class="qt-card" id="matching-headings" onclick="this.classList.toggle('open')">
-    <div class="qt-card-header">
-      <span class="qt-card-name">📑 3. Matching Headings</span>
-      <span><span class="qt-card-num">Practiced</span> <span class="qt-card-toggle">▼</span></span>
-    </div>
-    <div class="qt-card-body">
-      <div class="qt-card-desc">Choose the best heading for each section of the passage from a list of headings. Tests your ability to identify the main idea of each section.</div>
-      <div class="qt-card-vi">🇻🇳 Nối tiêu đề — Chọn tiêu đề phù hợp nhất cho mỗi đoạn văn từ danh sách. Kiểm tra khả năng xác định ý chính của mỗi đoạn.</div>
-      <ul class="qt-card-tips">
-        <li>Read the list of headings carefully first before reading the passage</li>
-        <li>Skim each section for its main idea — don't get distracted by details</li>
-        <li>The heading should summarise the WHOLE section, not just one sentence</li>
-        <li>Cross off headings as you use them — but remember some are distractors (not used)</li>
-        <li>If two headings seem to fit, choose the one that covers the broadest idea of the section</li>
-      </ul>
-      <div class="qt-card-lessons">Practice: <a href="../../sections/reading/sleep-on-it/">Sleep on It</a> · <a href="../../sections/reading/transition-to-university/">Transition to University</a></div>
-    </div>
-  </div>
-
-  <div class="qt-card qt-soon" id="matching-features">
-    <div class="qt-card-header">
-      <span class="qt-card-name">4. Matching Features</span>
-      <span class="qt-card-num">Coming soon</span>
-    </div>
-  </div>
-
-  <div class="qt-card qt-soon" id="matching-sentence-endings">
-    <div class="qt-card-header">
-      <span class="qt-card-name">5. Matching Sentence Endings</span>
-      <span class="qt-card-num">Coming soon</span>
-    </div>
-  </div>
-
-  <div class="qt-card" id="sentence-completion" onclick="this.classList.toggle('open')">
-    <div class="qt-card-header">
-      <span class="qt-card-name">✏️ 6. Sentence Completion</span>
-      <span><span class="qt-card-num">Practiced</span> <span class="qt-card-toggle">▼</span></span>
-    </div>
-    <div class="qt-card-body">
-      <div class="qt-card-desc">You are given incomplete sentences and must complete them using words taken directly from the reading passage. There is a word limit (e.g. no more than three words).</div>
-      <div class="qt-card-vi">🇻🇳 Bạn được cho các câu chưa hoàn chỉnh và phải hoàn thành chúng bằng các từ lấy trực tiếp từ bài đọc. Có giới hạn số từ (ví dụ: không quá ba từ).</div>
-      <ul class="qt-card-tips">
-        <li>Read the instruction carefully — note the maximum number of words allowed</li>
-        <li>The words must come directly from the passage — don't change the form</li>
-        <li>Read the incomplete sentence first and predict what type of word is needed</li>
-        <li>Questions follow the order of information in the passage</li>
-        <li>Check that your completed sentence is grammatically correct</li>
-        <li>Count your words — exceeding the limit means zero marks for that question</li>
-      </ul>
-      <div class="qt-card-lessons">Practice: <a href="../../sections/reading/complete-gardening-handbook/">The Complete Gardening Handbook</a></div>
-    </div>
-  </div>
-
-  <div class="qt-card" id="summary-completion" onclick="this.classList.toggle('open')">
-    <div class="qt-card-header">
-      <span class="qt-card-name">📝 7. Summary Completion</span>
-      <span><span class="qt-card-num">Practiced</span> <span class="qt-card-toggle">▼</span></span>
-    </div>
-    <div class="qt-card-body">
-      <div class="qt-card-desc">Complete a summary of the passage by filling in blanks with words taken from the text (no more than 2–3 words). Tests your understanding of the main ideas.</div>
-      <div class="qt-card-vi">🇻🇳 Hoàn thành bản tóm tắt bằng cách điền từ lấy từ bài đọc (không quá 2–3 từ). Kiểm tra khả năng hiểu ý chính.</div>
-      <ul class="qt-card-tips">
-        <li>Read the whole summary first to understand the overall meaning</li>
-        <li>Identify what type of word is needed (noun, verb, adjective)</li>
-        <li>Find the relevant section of the passage — summaries usually follow text order</li>
-        <li>Copy words exactly from the text — don't change the form</li>
-        <li>Check the word limit — 'no more than two or three words'</li>
-      </ul>
-      <div class="qt-card-lessons">Practice: <a href="../../sections/reading/video-games/">How Video Games Are Good for the Brain</a></div>
-    </div>
-  </div>
-
-  <div class="qt-card qt-soon" id="note-table-flow-chart-completion">
-    <div class="qt-card-header">
-      <span class="qt-card-name">8. Note / Table / Flow-chart Completion</span>
-      <span class="qt-card-num">Coming soon</span>
-    </div>
-  </div>
-
-  <div class="qt-card qt-soon" id="short-answer-questions">
-    <div class="qt-card-header">
-      <span class="qt-card-name">9. Short Answer Questions</span>
-      <span class="qt-card-num">Coming soon</span>
-    </div>
-  </div>
-
-  <div class="qt-card" id="true-false-not-given" onclick="this.classList.toggle('open')">
-    <div class="qt-card-header">
-      <span class="qt-card-name">✅ 10. True / False / Not Given</span>
-      <span><span class="qt-card-num">Practiced</span> <span class="qt-card-toggle">▼</span></span>
-    </div>
-    <div class="qt-card-body">
-      <div class="qt-card-desc">You are given statements and must decide if they agree with the information in the text (TRUE), contradict it (FALSE), or if there is no information about this (NOT GIVEN). Tests your ability to identify specific details and distinguish between what is stated, what is contradicted, and what is simply not mentioned.</div>
-      <div class="qt-card-vi">🇻🇳 Bạn được cho các phát biểu và phải quyết định chúng đúng (TRUE), sai (FALSE), hay không có thông tin (NOT GIVEN) so với bài đọc. Kiểm tra khả năng phân biệt giữa thông tin được nêu, bị mâu thuẫn, và không được đề cập.</div>
-      <ul class="qt-card-tips">
-        <li>Read the statement carefully — look for absolute words like 'every', 'all', 'only', 'always'</li>
-        <li>TRUE means the text says exactly this (maybe in different words)</li>
-        <li>FALSE means the text says the opposite or something clearly different</li>
-        <li>NOT GIVEN means the text doesn't mention this at all — don't use your own knowledge</li>
-        <li>Be careful with partial matches — if only part of the statement is confirmed, it may be FALSE or NOT GIVEN</li>
-      </ul>
-      <div class="qt-card-lessons">Practice: <a href="../../sections/reading/bees-neez/">Bees Neez Apiaries</a> · <a href="../../sections/reading/travel-this-summer/">Travel This Summer</a> · <a href="../../sections/reading/hit-the-shops-canberra/">Hit the Shops in Canberra</a> · <a href="../../sections/reading/european-river-cruising/">European River Cruising</a></div>
-    </div>
-  </div>
-
-  <div class="qt-card qt-soon" id="yes-no-not-given">
-    <div class="qt-card-header">
-      <span class="qt-card-name">11. Yes / No / Not Given</span>
-      <span class="qt-card-num">Coming soon</span>
-    </div>
-  </div>
-
   <div class="section-heading">📖 Reading Skills</div>
 
   <a href="./reading-skills/" class="skills-card">
-    <div class="skills-title">📖 7 Reading Skills</div>
-    <div class="skills-desc">Master skimming, scanning, vocabulary from context, main ideas, details, and writer's viewpoint — with interactive practice for each skill.</div>
+    <div class="skills-title">📖 8 Reading Skills</div>
+    <div class="skills-desc">Master skimming, scanning, vocabulary from context, main ideas, details, writer's viewpoint, and understanding argument — with interactive practice for each skill.</div>
     <div class="skills-meta">
-      <span>📚 7 skills</span>
-      <span>🎮 7 exercises</span>
+      <span>📚 8 skills</span>
+      <span>🎮 8 exercises</span>
+      <span>🇻🇳 Bilingual</span>
+    </div>
+  </a>
+
+  <a href="./question-types/" class="skills-card" style="border-left-color:var(--accent)">
+    <div class="skills-title">📋 11 IELTS Reading Question Types</div>
+    <div class="skills-desc">Learn strategies, tips, and common traps for each of the 11 IELTS Reading question types — with links to practice lessons.</div>
+    <div class="skills-meta">
+      <span>📋 11 types</span>
+      <span>✅ 6 practiced</span>
       <span>🇻🇳 Bilingual</span>
     </div>
   </a>

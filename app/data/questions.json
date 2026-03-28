@@ -965,7 +965,6 @@
     "skill": "reading",
     "section": "hit-the-shops-canberra"
   },
-
   {
     "number": 1,
     "text": "This tour is the shortest and the least expensive.",
@@ -1013,7 +1012,7 @@
   {
     "number": 5,
     "text": "All cruises include a 15-day bus tour and a river cruise.",
-    "answer": "true",
+    "answer": "TRUE",
     "explanation": "TRUE — All four tours state '15-day exclusive luxury charter' as part of a larger tour and river cruise package.",
     "vietnamese": "ĐÚNG — Cả bốn tour đều ghi '15-day exclusive luxury charter' là một phần của tour kết hợp du thuyền sông.",
     "skill": "reading",
@@ -1022,7 +1021,7 @@
   {
     "number": 6,
     "text": "The cost of the 'Prague to London Tour' is $8645 for a twin room.",
-    "answer": "false",
+    "answer": "FALSE",
     "explanation": "FALSE — The price is '$8645 pp twin share' — 'pp' means per person. Two people sharing a twin room would each pay $8645.",
     "vietnamese": "SAI — Giá là '$8645 pp twin share' — 'pp' nghĩa là mỗi người. Hai người ở chung phòng đôi sẽ trả $8645 mỗi người.",
     "skill": "reading",
@@ -1031,7 +1030,7 @@
   {
     "number": 7,
     "text": "All tours offer a free return airfare to Europe.",
-    "answer": "false",
+    "answer": "FALSE",
     "explanation": "FALSE — Tours A, C, and D say 'Fly free return airfare to Europe', but Tour B says 'buy one airfare and get one free' — you must buy one ticket first.",
     "vietnamese": "SAI — Tour A, C, D ghi 'bay miễn phí khứ hồi', nhưng Tour B ghi 'mua một vé tặng một' — phải mua vé trước.",
     "skill": "reading",
@@ -1040,7 +1039,7 @@
   {
     "number": 8,
     "text": "All cruises take place on Evergreen Tours ferries.",
-    "answer": "false",
+    "answer": "FALSE",
     "explanation": "FALSE — The ads describe 'exclusive luxury charter' ships, not ferries. Ferries are public transport vessels; these are private luxury cruise charters.",
     "vietnamese": "SAI — Quảng cáo ghi 'exclusive luxury charter' (du thuyền sang trọng thuê riêng), không phải phà (ferries).",
     "skill": "reading",
@@ -1049,7 +1048,7 @@
   {
     "number": 9,
     "text": "Entrance fees to castles and historic buildings are not included in the price.",
-    "answer": "not given",
+    "answer": "NOT GIVEN",
     "explanation": "NOT GIVEN — The advertisements do not mention whether entrance fees are included or excluded from the tour price.",
     "vietnamese": "KHÔNG CÓ THÔNG TIN — Quảng cáo không đề cập phí vào cửa lâu đài và tòa nhà lịch sử có bao gồm trong giá tour hay không.",
     "skill": "reading",
@@ -1087,23 +1086,55 @@
         }
       ],
       "allTypes": [
-        { "name": "Multiple Choice", "practiced": false },
-        { "name": "Matching Information", "practiced": true },
-        { "name": "Matching Headings", "practiced": false },
-        { "name": "Matching Features", "practiced": false },
-        { "name": "Matching Sentence Endings", "practiced": false },
-        { "name": "Sentence Completion", "practiced": false },
-        { "name": "Summary Completion", "practiced": false },
-        { "name": "Note / Table / Flow-chart Completion", "practiced": false },
-        { "name": "Short Answer Questions", "practiced": false },
-        { "name": "True / False / Not Given", "practiced": true },
-        { "name": "Yes / No / Not Given", "practiced": false }
+        {
+          "name": "Multiple Choice",
+          "practiced": false
+        },
+        {
+          "name": "Matching Information",
+          "practiced": true
+        },
+        {
+          "name": "Matching Headings",
+          "practiced": false
+        },
+        {
+          "name": "Matching Features",
+          "practiced": false
+        },
+        {
+          "name": "Matching Sentence Endings",
+          "practiced": false
+        },
+        {
+          "name": "Sentence Completion",
+          "practiced": false
+        },
+        {
+          "name": "Summary Completion",
+          "practiced": false
+        },
+        {
+          "name": "Note / Table / Flow-chart Completion",
+          "practiced": false
+        },
+        {
+          "name": "Short Answer Questions",
+          "practiced": false
+        },
+        {
+          "name": "True / False / Not Given",
+          "practiced": true
+        },
+        {
+          "name": "Yes / No / Not Given",
+          "practiced": false
+        }
       ]
     },
     "skill": "reading",
     "section": "european-river-cruising"
   },
-
   {
     "number": 28,
     "text": "Section 1",
@@ -1205,23 +1236,55 @@
         }
       ],
       "allTypes": [
-        { "name": "Multiple Choice", "practiced": false },
-        { "name": "Matching Information", "practiced": true },
-        { "name": "Matching Headings", "practiced": true },
-        { "name": "Matching Features", "practiced": false },
-        { "name": "Matching Sentence Endings", "practiced": false },
-        { "name": "Sentence Completion", "practiced": false },
-        { "name": "Summary Completion", "practiced": false },
-        { "name": "Note / Table / Flow-chart Completion", "practiced": false },
-        { "name": "Short Answer Questions", "practiced": false },
-        { "name": "True / False / Not Given", "practiced": true },
-        { "name": "Yes / No / Not Given", "practiced": false }
+        {
+          "name": "Multiple Choice",
+          "practiced": false
+        },
+        {
+          "name": "Matching Information",
+          "practiced": true
+        },
+        {
+          "name": "Matching Headings",
+          "practiced": true
+        },
+        {
+          "name": "Matching Features",
+          "practiced": false
+        },
+        {
+          "name": "Matching Sentence Endings",
+          "practiced": false
+        },
+        {
+          "name": "Sentence Completion",
+          "practiced": false
+        },
+        {
+          "name": "Summary Completion",
+          "practiced": false
+        },
+        {
+          "name": "Note / Table / Flow-chart Completion",
+          "practiced": false
+        },
+        {
+          "name": "Short Answer Questions",
+          "practiced": false
+        },
+        {
+          "name": "True / False / Not Given",
+          "practiced": true
+        },
+        {
+          "name": "Yes / No / Not Given",
+          "practiced": false
+        }
       ]
     },
     "skill": "reading",
     "section": "sleep-on-it"
   },
-
   {
     "number": 15,
     "text": "Section A",
@@ -1305,17 +1368,50 @@
         }
       ],
       "allTypes": [
-        { "name": "Multiple Choice", "practiced": false },
-        { "name": "Matching Information", "practiced": true },
-        { "name": "Matching Headings", "practiced": true },
-        { "name": "Matching Features", "practiced": false },
-        { "name": "Matching Sentence Endings", "practiced": false },
-        { "name": "Sentence Completion", "practiced": false },
-        { "name": "Summary Completion", "practiced": false },
-        { "name": "Note / Table / Flow-chart Completion", "practiced": false },
-        { "name": "Short Answer Questions", "practiced": false },
-        { "name": "True / False / Not Given", "practiced": true },
-        { "name": "Yes / No / Not Given", "practiced": false }
+        {
+          "name": "Multiple Choice",
+          "practiced": false
+        },
+        {
+          "name": "Matching Information",
+          "practiced": true
+        },
+        {
+          "name": "Matching Headings",
+          "practiced": true
+        },
+        {
+          "name": "Matching Features",
+          "practiced": false
+        },
+        {
+          "name": "Matching Sentence Endings",
+          "practiced": false
+        },
+        {
+          "name": "Sentence Completion",
+          "practiced": false
+        },
+        {
+          "name": "Summary Completion",
+          "practiced": false
+        },
+        {
+          "name": "Note / Table / Flow-chart Completion",
+          "practiced": false
+        },
+        {
+          "name": "Short Answer Questions",
+          "practiced": false
+        },
+        {
+          "name": "True / False / Not Given",
+          "practiced": true
+        },
+        {
+          "name": "Yes / No / Not Given",
+          "practiced": false
+        }
       ]
     },
     "skill": "reading",
@@ -1333,36 +1429,79 @@
             {
               "n": 11,
               "parts": [
-                { "text": "It is important that you choose strawberry plants to grow that are" },
-                { "blank": true, "a": ["free of disease", "disease free", "disease-free"], "size": 16 },
-                { "text": "." }
+                {
+                  "text": "It is important that you choose strawberry plants to grow that are"
+                },
+                {
+                  "blank": true,
+                  "a": [
+                    "free of disease",
+                    "disease free",
+                    "disease-free"
+                  ],
+                  "size": 16
+                },
+                {
+                  "text": "."
+                }
               ],
               "vi": "Đoạn đầu: \"always buy certified disease-free plants\" → free of disease / disease free"
             },
             {
               "n": 12,
               "parts": [
-                { "text": "Before you plant strawberry plants ensure that your soil is fertile, and" },
-                { "blank": true, "a": ["remove all weeds"], "size": 18 },
-                { "text": "from the ground." }
+                {
+                  "text": "Before you plant strawberry plants ensure that your soil is fertile, and"
+                },
+                {
+                  "blank": true,
+                  "a": [
+                    "remove all weeds"
+                  ],
+                  "size": 18
+                },
+                {
+                  "text": "from the ground."
+                }
               ],
               "vi": "Phần Planting: \"removing all weeds before planting\" → remove all weeds"
             },
             {
               "n": 13,
               "parts": [
-                { "text": "As the strawberry plants grow you should place a small mat or a bed of straw around each plant to keep" },
-                { "blank": true, "a": ["the fruit clean", "fruit clean"], "size": 16 },
-                { "text": "." }
+                {
+                  "text": "As the strawberry plants grow you should place a small mat or a bed of straw around each plant to keep"
+                },
+                {
+                  "blank": true,
+                  "a": [
+                    "the fruit clean",
+                    "fruit clean"
+                  ],
+                  "size": 16
+                },
+                {
+                  "text": "."
+                }
               ],
               "vi": "Routine care #3–4: \"Use special mats to keep the fruit clean\" / \"lay a thick bed of straw\" → (the) fruit clean"
             },
             {
               "n": 14,
               "parts": [
-                { "text": "During the first year, remove all" },
-                { "blank": true, "a": ["flowers"], "size": 10 },
-                { "text": "from the plants, so that they can grow strong to bear fruit." }
+                {
+                  "text": "During the first year, remove all"
+                },
+                {
+                  "blank": true,
+                  "a": [
+                    "flowers"
+                  ],
+                  "size": 10
+                },
+                {
+                  "text": "from the plants, so that they can grow strong to bear fruit."
+                }
               ],
               "vi": "Phần Planting: \"Remove flowers that appear during the first year\" → flowers"
             }
@@ -1394,17 +1533,50 @@
         }
       ],
       "allTypes": [
-        { "name": "Multiple Choice", "practiced": false },
-        { "name": "Matching Information", "practiced": false },
-        { "name": "Matching Headings", "practiced": false },
-        { "name": "Matching Features", "practiced": false },
-        { "name": "Matching Sentence Endings", "practiced": false },
-        { "name": "Sentence Completion", "practiced": true },
-        { "name": "Summary Completion", "practiced": false },
-        { "name": "Note / Table / Flow-chart Completion", "practiced": false },
-        { "name": "Short Answer Questions", "practiced": false },
-        { "name": "True / False / Not Given", "practiced": false },
-        { "name": "Yes / No / Not Given", "practiced": false }
+        {
+          "name": "Multiple Choice",
+          "practiced": false
+        },
+        {
+          "name": "Matching Information",
+          "practiced": false
+        },
+        {
+          "name": "Matching Headings",
+          "practiced": false
+        },
+        {
+          "name": "Matching Features",
+          "practiced": false
+        },
+        {
+          "name": "Matching Sentence Endings",
+          "practiced": false
+        },
+        {
+          "name": "Sentence Completion",
+          "practiced": true
+        },
+        {
+          "name": "Summary Completion",
+          "practiced": false
+        },
+        {
+          "name": "Note / Table / Flow-chart Completion",
+          "practiced": false
+        },
+        {
+          "name": "Short Answer Questions",
+          "practiced": false
+        },
+        {
+          "name": "True / False / Not Given",
+          "practiced": false
+        },
+        {
+          "name": "Yes / No / Not Given",
+          "practiced": false
+        }
       ]
     },
     "skill": "reading",

@@ -329,7 +329,7 @@
     "example": "The top attraction is Penguin Island, home to a diverse array of wildlife.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "G",
+    "category": "tourism",
     "vietnamese": "Điểm thu hút hàng đầu là…"
   },
   {
@@ -338,7 +338,7 @@
     "example": "The island boasts the largest colony of penguins in Western Australia.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "G",
+    "category": "tourism",
     "vietnamese": "tự hào có [đặc điểm ấn tượng]"
   },
   {
@@ -347,7 +347,7 @@
     "example": "A 500 m walk trail along the Serpentine River is accessible by wheelchair.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "F",
+    "category": "tourism",
     "vietnamese": "có thể tiếp cận bằng [phương tiện]"
   },
   {
@@ -356,7 +356,7 @@
     "example": "The park attracts more than 240,000 local, interstate and international visitors each year.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "B",
+    "category": "description",
     "vietnamese": "thu hút hơn [số lượng] du khách mỗi năm"
   },
   {
@@ -365,7 +365,7 @@
     "example": "The Pinnacles are one of Australia's best-known landscapes.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "A",
+    "category": "description",
     "vietnamese": "một trong những… nổi tiếng nhất / lâu đời nhất của Úc"
   },
   {
@@ -374,7 +374,7 @@
     "example": "There are many different walking trails to choose from in the park.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "C",
+    "category": "description",
     "vietnamese": "có nhiều [thứ] khác nhau để lựa chọn"
   },
   {
@@ -383,7 +383,7 @@
     "example": "The ferry ride provides the opportunity to see the sea lions lazing on Seal Island.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "G",
+    "category": "tourism",
     "vietnamese": "cung cấp cơ hội để…"
   },
   {
@@ -392,7 +392,7 @@
     "example": "The park has an array of attractions, including a koala boardwalk and a golf course.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "B",
+    "category": "description",
     "vietnamese": "một loạt [các thứ], bao gồm…"
   },
   {
@@ -401,7 +401,7 @@
     "example": "Diving may be enjoyed in designated areas.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "G",
+    "category": "tourism",
     "vietnamese": "trong các khu vực được chỉ định"
   },
   {
@@ -410,7 +410,7 @@
     "example": "The distinctive feature of this park is undoubtedly the spectacular Pinnacles.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "A",
+    "category": "description",
     "vietnamese": "Đặc điểm nổi bật của X chắc chắn là…"
   },
   {
@@ -419,7 +419,7 @@
     "example": "Early European settlers came in droves to swim, picnic and enjoy a day in the bush.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "F",
+    "category": "tourism",
     "vietnamese": "đến hàng đàn để [làm gì đó]"
   },
   {
@@ -428,7 +428,7 @@
     "example": "The falls have been one of the focal points of the area since the early European settlers.",
     "section": "on-the-city-doorstep",
     "skill": "reading",
-    "category": "F",
+    "category": "tourism",
     "vietnamese": "đã là một trong những tâm điểm của khu vực kể từ…"
   },
   {
@@ -989,7 +989,6 @@
     "category": "instruction",
     "vietnamese": "Dù thế nào, đừng..."
   },
-
   {
     "phrase": "FROM $[price] pp twin share",
     "usage": "Standard travel pricing format — 'pp' means per person, 'twin share' means sharing a room with another person.",
@@ -1062,7 +1061,6 @@
     "category": "tour",
     "vietnamese": "du lịch cao cấp toàn cầu"
   },
-
   {
     "phrase": "X may have been a factor in Y.",
     "usage": "Suggesting a possible cause of something — useful in IELTS Writing when discussing causes.",
@@ -1153,7 +1151,6 @@
     "category": "analysis",
     "vietnamese": "Điều này nói nhiều về X hơn là về Y."
   },
-
   {
     "phrase": "Plenty of research has shown that…",
     "usage": "Citing research evidence to support a claim — strong opening for IELTS Writing Task 2.",

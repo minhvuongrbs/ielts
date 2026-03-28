@@ -197,15 +197,11 @@ function resetPassageIELTS() {
 
 /* ── Init: split matching vs T/F/NG, render all in passage panel ── */
 DataLayer.getLesson('reading','european-river-cruising').then(function(data) {
+  /* Split questions before initReading so custom renderPassageIELTS has data */
+  var allQ = data.ieltsQuestions || [];
+  MQ = allQ.filter(q => q.qtype === 'matching');
+  TFQ = allQ.filter(q => !q.qtype);
   initReading(data);
-  /* Split: matching questions have qtype field */
-  MQ = IQ.filter(q => q.qtype === 'matching');
-  TFQ = IQ.filter(q => !q.qtype);
-  /* Clear quiz tab IELTS (all questions are in passage panel now) */
-  document.getElementById('ielts-ctn').innerHTML = '';
-  document.getElementById('ic').style.display = 'none';
-  /* Render all 9 questions in passage panel */
-  renderPassageIELTS();
 });
 </script>
 </body>
