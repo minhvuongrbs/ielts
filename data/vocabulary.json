@@ -2539,5 +2539,196 @@
     "category": "cruise",
     "skill": "reading",
     "section": "european-river-cruising"
+  },
+
+  {
+    "word": "sleep deprivation",
+    "pos": "noun",
+    "vietnamese": "thiếu ngủ",
+    "definition": "The condition of not having enough sleep, which can impair physical and mental health.",
+    "example": "\"Sleep deprivation and drowsiness may have been a factor in some of the world's most notable disasters.\"",
+    "category": "sleep",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "drowsiness",
+    "pos": "noun",
+    "vietnamese": "buồn ngủ, ngái ngủ",
+    "definition": "A state of being sleepy and not fully alert.",
+    "example": "\"Sleep deprivation and drowsiness may have been a factor in some of the world's most notable disasters.\"",
+    "category": "sleep",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "grogginess",
+    "pos": "noun",
+    "vietnamese": "trạng thái mệt mỏi, lờ đờ",
+    "definition": "A feeling of being dazed, weak, or unsteady, especially after waking up.",
+    "example": "\"…you'll be familiar with the consequences — grogginess, grumpiness, reduced awareness and forgetfulness.\"",
+    "category": "sleep",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "psychomotor",
+    "pos": "adjective",
+    "vietnamese": "tâm vận động",
+    "definition": "Relating to the connection between mental processes and physical movement.",
+    "example": "\"…17 hours of sustained wakefulness leads to a psychomotor deterioration…\"",
+    "category": "cognitive",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "deterioration",
+    "pos": "noun",
+    "vietnamese": "sự suy giảm, xuống cấp",
+    "definition": "The process of becoming progressively worse.",
+    "example": "\"…just 17 hours of sustained wakefulness leads to a psychomotor deterioration…\"",
+    "category": "health",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "cognitive",
+    "pos": "adjective",
+    "vietnamese": "nhận thức",
+    "definition": "Relating to mental processes such as thinking, understanding, learning, and remembering.",
+    "example": "\"It's clear we need sleep to maintain normal cognitive functions.\"",
+    "category": "cognitive",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "microsleep",
+    "pos": "noun",
+    "vietnamese": "giấc ngủ vi mô",
+    "definition": "A brief episode of involuntary sleep lasting a few seconds to a few minutes.",
+    "example": "\"You may have been the victim of a partial microsleep — a period of involuntary sleeping while still appearing to be awake.\"",
+    "category": "sleep",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "involuntary",
+    "pos": "adjective",
+    "vietnamese": "không tự nguyện, không chủ ý",
+    "definition": "Done without conscious control or intention.",
+    "example": "\"…a period of involuntary sleeping while still appearing to be awake…\"",
+    "category": "health",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "fatigue",
+    "pos": "noun",
+    "vietnamese": "mệt mỏi, kiệt sức",
+    "definition": "Extreme tiredness resulting from physical or mental effort, or illness.",
+    "example": "\"Statistics show that fatigue plays a role in 20 per cent of driver fatalities in NSW.\"",
+    "category": "health",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "concentration",
+    "pos": "noun",
+    "vietnamese": "sự tập trung",
+    "definition": "The ability to focus one's attention on a particular task or subject.",
+    "example": "\"Our concentration and thinking ability deteriorate the longer we remain awake.\"",
+    "category": "cognitive",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "accuracy",
+    "pos": "noun",
+    "vietnamese": "độ chính xác",
+    "definition": "The quality of being correct or exact.",
+    "example": "\"…this means decreased accuracy and efficiency.\"",
+    "category": "cognitive",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "efficiency",
+    "pos": "noun",
+    "vietnamese": "hiệu suất",
+    "definition": "The ability to do something well without wasting time, effort, or resources.",
+    "example": "\"…this means decreased accuracy and efficiency.\"",
+    "category": "cognitive",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "adversely",
+    "pos": "adverb",
+    "vietnamese": "bất lợi, tiêu cực",
+    "definition": "In a way that is harmful or negative.",
+    "example": "\"Virtually all levels of sleep deprivation adversely affect your mood.\"",
+    "category": "health",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "vigour",
+    "pos": "noun",
+    "vietnamese": "sức sống, sinh lực",
+    "definition": "Physical strength and energy.",
+    "example": "\"Losing a few hours may result in negative mood states, stress, loss of vigour and confusion.\"",
+    "category": "health",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "body mass index",
+    "pos": "noun",
+    "vietnamese": "chỉ số khối cơ thể (BMI)",
+    "definition": "A measure of body fat based on height and weight, used to classify underweight, overweight, and obesity.",
+    "example": "\"Studies have shown a negative relationship between body mass index (BMI) and sleep duration.\"",
+    "category": "health",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "suppress",
+    "pos": "verb",
+    "vietnamese": "ức chế, kìm nén",
+    "definition": "To prevent or reduce something from developing or being expressed.",
+    "example": "\"…including leptin and ghrelin, which suppress and promote appetite respectively.\"",
+    "category": "health",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "cardiovascular",
+    "pos": "adjective",
+    "vietnamese": "tim mạch",
+    "definition": "Relating to the heart and blood vessels.",
+    "example": "\"…too little sleep increases your chances of cardiovascular disease, type 2 diabetes…\"",
+    "category": "health",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "tolerate",
+    "pos": "verb",
+    "vietnamese": "chịu đựng, dung nạp",
+    "definition": "To endure or put up with something difficult or unpleasant.",
+    "example": "\"Some people can tolerate large deficits with few problems.\"",
+    "category": "cognitive",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "word": "alertness",
+    "pos": "noun",
+    "vietnamese": "sự tỉnh táo",
+    "definition": "The state of being watchful and ready to respond quickly.",
+    "example": "\"…to test their alertness and reaction time.\"",
+    "category": "sleep",
+    "skill": "reading",
+    "section": "sleep-on-it"
   }
 ]

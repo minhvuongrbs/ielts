@@ -48,5 +48,15 @@
     "section": "european-river-cruising",
     "name": "European River Cruising",
     "skill": "reading"
+  },
+  {
+    "section": "transition-to-university",
+    "name": "Making the Transition to University Studies",
+    "skill": "reading"
+  },
+  {
+    "section": "sleep-on-it",
+    "name": "Sleep on It",
+    "skill": "reading"
   }
 ]

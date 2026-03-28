@@ -1102,5 +1102,123 @@
     },
     "skill": "reading",
     "section": "european-river-cruising"
+  },
+
+  {
+    "number": 28,
+    "text": "Section 1",
+    "answer": "vii",
+    "explanation": "Section 1 mentions the Challenger disaster, Chernobyl, and the Exxon Valdez oil spill — all serious consequences of sleep deprivation and drowsiness.",
+    "vietnamese": "Đoạn 1 đề cập đến thảm họa Challenger, Chernobyl và tràn dầu Exxon Valdez — tất cả là hậu quả nghiêm trọng (serious consequences) của thiếu ngủ.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "number": 29,
+    "text": "Section 2",
+    "answer": "viii",
+    "explanation": "Section 2 explains that we need sleep for normal cognitive functions but are getting less sleep — 'not enough sleep to function normally' summarises this.",
+    "vietnamese": "Đoạn 2 giải thích rằng chúng ta cần ngủ để duy trì chức năng nhận thức bình thường nhưng lại ngủ ít hơn — 'không đủ giấc để hoạt động bình thường' tóm tắt ý này.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "number": 30,
+    "text": "Section 3",
+    "answer": "x",
+    "explanation": "Section 3 describes microsleeps — 'involuntary sleeping while still appearing to be awake'. Heading x ('Fast asleep yet still awake') captures this exactly.",
+    "vietnamese": "Đoạn 3 mô tả giấc ngủ vi mô — 'ngủ không tự nguyện trong khi vẫn có vẻ đang thức'. Tiêu đề x ('Ngủ say nhưng vẫn tỉnh') nắm bắt chính xác điều này.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "number": 31,
+    "text": "Section 4",
+    "answer": "ii",
+    "explanation": "Section 4 discusses microsleeps while driving and states that 'fatigue plays a role in 20 per cent of driver fatalities' — possible causes of car crashes.",
+    "vietnamese": "Đoạn 4 thảo luận về giấc ngủ vi mô khi lái xe và nêu rằng 'mệt mỏi đóng vai trò trong 20% vụ tử vong lái xe' — nguyên nhân có thể gây tai nạn xe hơi.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "number": 32,
+    "text": "Section 5",
+    "answer": "iii",
+    "explanation": "Section 5 explains how sleep loss causes 'decreased accuracy and efficiency' and a '20–32% increase in mistakes' at work — not being able to do your job properly.",
+    "vietnamese": "Đoạn 5 giải thích thiếu ngủ gây 'giảm độ chính xác và hiệu suất' và 'tăng 20–32% lỗi sai' tại nơi làm việc — không thể làm tốt công việc.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "number": 33,
+    "text": "Section 6",
+    "answer": "iv",
+    "explanation": "Section 6 describes how sleep deprivation affects mood — causing 'negative mood states, stress, anxiety, depression'. Heading iv ('Feeling pessimistic about life') matches this negative outlook.",
+    "vietnamese": "Đoạn 6 mô tả thiếu ngủ ảnh hưởng đến tâm trạng — gây ra 'trạng thái tâm trạng tiêu cực, căng thẳng, lo âu, trầm cảm'. Tiêu đề iv ('Cảm thấy bi quan về cuộc sống') phù hợp.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "number": 34,
+    "text": "Section 7",
+    "answer": "ix",
+    "explanation": "Section 7 discusses weight gain, hormones, cardiovascular disease, diabetes, and premature death — all negative effects on the body. Note: heading v ('Making us overweight') only covers weight, but section 7 covers many body effects, so ix is the best fit.",
+    "vietnamese": "Đoạn 7 thảo luận về tăng cân, hormone, bệnh tim mạch, tiểu đường và tử vong sớm — tất cả là tác động tiêu cực lên cơ thể. Lưu ý: tiêu đề v ('Khiến béo phì') chỉ nói về cân nặng, nhưng đoạn 7 nói nhiều tác động lên cơ thể nên ix phù hợp hơn.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "number": 35,
+    "text": "Section 8",
+    "answer": "vi",
+    "explanation": "Section 8 explains that 'our genes largely dictate how much sleep we need' and 'some people can tolerate large deficits while others struggle' — not everyone needs the same amount.",
+    "vietnamese": "Đoạn 8 giải thích 'gen quyết định phần lớn chúng ta cần ngủ bao nhiêu' và 'một số người chịu đựng được thiếu hụt lớn trong khi người khác vật lộn' — không phải ai cũng cần cùng một lượng giấc ngủ.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "number": 36,
+    "text": "Section 9",
+    "answer": "xi",
+    "explanation": "Section 9 describes a sleep test where subjects fall asleep involuntarily. Rapoport says: 'If you're falling asleep in boring situations, that is a sure marker you are not getting enough sleep.' — if your body needs rest, you'll fall asleep.",
+    "vietnamese": "Đoạn 9 mô tả bài kiểm tra giấc ngủ nơi các đối tượng ngủ thiếp đi không tự nguyện. Rapoport nói: 'Nếu bạn ngủ gật trong tình huống nhàm chán, đó là dấu hiệu bạn không ngủ đủ.' — nếu cơ thể cần nghỉ ngơi, bạn sẽ ngủ thiếp đi.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "Matching Headings",
+          "icon": "📑",
+          "description": "Choose the best heading for each section of the passage from a list of headings. Tests your ability to identify the main idea of each section.",
+          "tips": [
+            "Read the list of headings carefully first before reading the passage.",
+            "Skim each section for its main idea — don't get distracted by details.",
+            "The heading should summarise the WHOLE section, not just one sentence.",
+            "Cross off headings as you use them — but remember some are distractors (not used).",
+            "If two headings seem to fit, choose the one that covers the broadest idea of the section."
+          ],
+          "vi": "Nối tiêu đề — Chọn tiêu đề phù hợp nhất cho mỗi đoạn văn từ danh sách. Kiểm tra khả năng xác định ý chính của mỗi đoạn."
+        }
+      ],
+      "allTypes": [
+        { "name": "Multiple Choice", "practiced": false },
+        { "name": "Matching Information", "practiced": true },
+        { "name": "Matching Headings", "practiced": true },
+        { "name": "Matching Features", "practiced": false },
+        { "name": "Matching Sentence Endings", "practiced": false },
+        { "name": "Sentence Completion", "practiced": false },
+        { "name": "Summary Completion", "practiced": false },
+        { "name": "Note / Table / Flow-chart Completion", "practiced": false },
+        { "name": "Short Answer Questions", "practiced": false },
+        { "name": "True / False / Not Given", "practiced": true },
+        { "name": "Yes / No / Not Given", "practiced": false }
+      ]
+    },
+    "skill": "reading",
+    "section": "sleep-on-it"
   }
 ]

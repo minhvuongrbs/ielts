@@ -1061,5 +1061,96 @@
     "section": "european-river-cruising",
     "category": "tour",
     "vietnamese": "du lịch cao cấp toàn cầu"
+  },
+
+  {
+    "phrase": "X may have been a factor in Y.",
+    "usage": "Suggesting a possible cause of something — useful in IELTS Writing when discussing causes.",
+    "example": "Sleep deprivation may have been a factor in some of the world's most notable disasters.",
+    "skill": "reading",
+    "section": "sleep-on-it",
+    "category": "cause-effect",
+    "vietnamese": "X có thể là một yếu tố gây ra Y."
+  },
+  {
+    "phrase": "burn the candle at both ends",
+    "usage": "Idiom meaning to work or do too much, not getting enough rest — useful in Speaking Part 2/3.",
+    "example": "Given our increasing tendency to burn the candle at both ends, we're getting less sleep.",
+    "skill": "reading",
+    "section": "sleep-on-it",
+    "category": "idiom",
+    "vietnamese": "thức khuya dậy sớm, làm việc quá sức"
+  },
+  {
+    "phrase": "the consequences can be X or Y",
+    "usage": "Listing possible outcomes ranging from mild to serious.",
+    "example": "The consequences can be amusing or downright dangerous.",
+    "skill": "reading",
+    "section": "sleep-on-it",
+    "category": "cause-effect",
+    "vietnamese": "hậu quả có thể là X hoặc Y"
+  },
+  {
+    "phrase": "Statistics show that X plays a role in Y.",
+    "usage": "Citing data to support an argument — strong phrase for IELTS Writing Task 2.",
+    "example": "Statistics show that fatigue plays a role in 20 per cent of driver fatalities.",
+    "skill": "reading",
+    "section": "sleep-on-it",
+    "category": "evidence",
+    "vietnamese": "Thống kê cho thấy X đóng vai trò trong Y."
+  },
+  {
+    "phrase": "As if things weren't bad enough, ...",
+    "usage": "Introducing an additional negative point — adds emphasis and surprise.",
+    "example": "As if things weren't bad enough, our 24/7 lifestyle could also be making us fat.",
+    "skill": "reading",
+    "section": "sleep-on-it",
+    "category": "argument",
+    "vietnamese": "Như thể mọi thứ chưa đủ tệ, ..."
+  },
+  {
+    "phrase": "Studies have shown a relationship between X and Y.",
+    "usage": "Reporting research findings about a correlation — essential for academic writing.",
+    "example": "Studies have shown a negative relationship between body mass index and sleep duration.",
+    "skill": "reading",
+    "section": "sleep-on-it",
+    "category": "evidence",
+    "vietnamese": "Các nghiên cứu cho thấy mối quan hệ giữa X và Y."
+  },
+  {
+    "phrase": "Evidence suggests that X increases your chances of Y.",
+    "usage": "Citing evidence about risk factors — strong for IELTS Writing cause-effect essays.",
+    "example": "Evidence suggests that too little sleep increases your chances of cardiovascular disease.",
+    "skill": "reading",
+    "section": "sleep-on-it",
+    "category": "evidence",
+    "vietnamese": "Bằng chứng cho thấy X làm tăng nguy cơ Y."
+  },
+  {
+    "phrase": "The standard answer is X, but the truth is more complicated.",
+    "usage": "Challenging a simple assumption — good for IELTS Writing introductions.",
+    "example": "The standard answer is seven to eight hours a night, but the truth is more complicated.",
+    "skill": "reading",
+    "section": "sleep-on-it",
+    "category": "argument",
+    "vietnamese": "Câu trả lời chuẩn là X, nhưng sự thật phức tạp hơn."
+  },
+  {
+    "phrase": "The key is to know X and Y.",
+    "usage": "Giving practical advice or a conclusion — useful for IELTS Speaking and Writing.",
+    "example": "The key is to know your body and get the right amount of sleep for you.",
+    "skill": "reading",
+    "section": "sleep-on-it",
+    "category": "advice",
+    "vietnamese": "Chìa khóa là hiểu X và Y."
+  },
+  {
+    "phrase": "This may say more about X than Y.",
+    "usage": "Making a witty or insightful comparison — the real cause may be different from what it seems.",
+    "example": "Remember this may say more about you than the skills of the director.",
+    "skill": "reading",
+    "section": "sleep-on-it",
+    "category": "analysis",
+    "vietnamese": "Điều này nói nhiều về X hơn là về Y."
   }
 ]

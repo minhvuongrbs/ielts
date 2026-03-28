@@ -839,5 +839,76 @@
     "hint": "tu viện",
     "skill": "reading",
     "section": "european-river-cruising"
+  },
+
+  {
+    "sentence": "Sleep ___ and drowsiness may have been a factor in some disasters.",
+    "answer": "deprivation",
+    "hint": "thiếu ngủ",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "sentence": "17 hours of wakefulness leads to psychomotor ___.",
+    "answer": "deterioration",
+    "hint": "suy giảm",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "sentence": "A ___ is a period of involuntary sleeping while still appearing to be awake.",
+    "answer": "microsleep",
+    "hint": "giấc ngủ vi mô",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "sentence": "___ plays a role in 20 per cent of driver fatalities.",
+    "answer": "Fatigue",
+    "hint": "mệt mỏi",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "sentence": "One night of insufficient sleep can result in a 32 per cent increase in ___.",
+    "answer": "mistakes",
+    "hint": "lỗi sai",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "sentence": "Virtually all levels of sleep deprivation ___ affect your mood.",
+    "answer": "adversely",
+    "hint": "tiêu cực",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "sentence": "The lack of sleep affects the release of hormones that ___ and promote appetite.",
+    "answer": "suppress",
+    "hint": "ức chế",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "sentence": "Our genes largely dictate our ___ to sleep deprivation.",
+    "answer": "sensitivity",
+    "hint": "độ nhạy cảm",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "sentence": "Many of his sleep-deprived subjects fall ___ in the chair.",
+    "answer": "asleep",
+    "hint": "ngủ thiếp đi",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "sentence": "If you're falling asleep in boring situations, that is a sure ___ you are not getting enough sleep.",
+    "answer": "marker",
+    "hint": "dấu hiệu",
+    "skill": "reading",
+    "section": "sleep-on-it"
   }
 ]

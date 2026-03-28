@@ -282,5 +282,69 @@
     "vietnamese": "CHUYẾN DU LỊCH VÀ DU THUYỀN SÔNG 28 NGÀY\nThuê du thuyền sang trọng 15 ngày với hơn 85% phòng ban công kiểu Pháp chống thời tiết\n\n• Tour có hướng dẫn Munich và Salzburg\n• Xe ngựa đến Lâu đài Neuschwanstein\n• 58 bữa ăn\n\nTỪ $10.495/người ở phòng đôi\nVé máy bay khứ hồi miễn phí đến châu Âu",
     "skill": "reading",
     "section": "european-river-cruising"
+  },
+
+  {
+    "id": "1",
+    "text": "Sleep deprivation and drowsiness may have been a factor in some of the world's most notable disasters, including the fiery end to the Challenger space shuttle, Chernobyl and the 1988 Exxon Valdez oil spill off the coast of Alaska. If you've ever pulled an all-nighter or been on a sleepless long-haul flight, you'll be familiar with the consequences — grogginess, grumpiness, reduced awareness and forgetfulness. In fact, just 17 hours of sustained wakefulness leads to a psychomotor deterioration equivalent to a blood alcohol level of up to 0.05 per cent.",
+    "vietnamese": "Thiếu ngủ và buồn ngủ có thể là yếu tố trong một số thảm họa nổi tiếng nhất thế giới, bao gồm vụ nổ tàu con thoi Challenger, Chernobyl và vụ tràn dầu Exxon Valdez năm 1988 ngoài khơi Alaska. Nếu bạn từng thức trắng đêm hoặc bay đường dài không ngủ, bạn sẽ quen thuộc với các hậu quả — mệt mỏi, cáu kỉnh, giảm nhận thức và hay quên. Thực tế, chỉ 17 giờ thức liên tục dẫn đến suy giảm tâm vận động tương đương với nồng độ cồn trong máu lên đến 0,05%.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "id": "2",
+    "text": "It's clear we need sleep to maintain normal cognitive functions. But given our increasing tendency to burn the candle at both ends, we're getting less sleep while expecting to achieve more. The truth is you may be sleep deprived without even realising — and the consequences can be amusing or downright dangerous.",
+    "vietnamese": "Rõ ràng chúng ta cần giấc ngủ để duy trì chức năng nhận thức bình thường. Nhưng với xu hướng ngày càng tăng của việc thức khuya dậy sớm, chúng ta ngủ ít hơn trong khi kỳ vọng đạt được nhiều hơn. Sự thật là bạn có thể đang thiếu ngủ mà không hề nhận ra — và hậu quả có thể hài hước hoặc thực sự nguy hiểm.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "id": "3",
+    "text": "Have you ever misplaced your car keys and found them in the fridge, or put ice cream in the pantry? You may have been the victim of a partial microsleep — a period of involuntary sleeping while still appearing to be awake that can last a few seconds or a few minutes. A new study in rats suggests that when parts of your brain get tired they may go offline to take a nap while you're still conscious. This may be the first sign that your brain needs sleep.",
+    "vietnamese": "Bạn đã bao giờ để nhầm chìa khóa xe trong tủ lạnh, hoặc để kem vào tủ đựng thức ăn chưa? Bạn có thể đã là nạn nhân của giấc ngủ vi mô bán phần — một giai đoạn ngủ không tự nguyện trong khi vẫn có vẻ đang thức, có thể kéo dài vài giây hoặc vài phút. Một nghiên cứu mới trên chuột cho thấy khi các phần não bộ mệt mỏi, chúng có thể tắt để chợp mắt trong khi bạn vẫn tỉnh táo. Đây có thể là dấu hiệu đầu tiên cho thấy não bạn cần ngủ.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "id": "4",
+    "text": "Ever found yourself winding down the windows or turning up the music to stay alert while driving? By the time you feel sleepy you may have already had several microsleeps without even realising. Statistics show that fatigue plays a role in 20 per cent of driver fatalities in NSW. Next time you start to feel tired, hand the keys to someone else if you can, or pull over if you can't.",
+    "vietnamese": "Bạn đã bao giờ thấy mình hạ cửa kính xe hoặc bật nhạc to để tỉnh táo khi lái xe chưa? Khi bạn cảm thấy buồn ngủ, bạn có thể đã trải qua nhiều giấc ngủ vi mô mà không hề nhận ra. Thống kê cho thấy mệt mỏi đóng vai trò trong 20% số vụ tử vong lái xe ở NSW. Lần tới khi bạn bắt đầu cảm thấy mệt, hãy đưa chìa khóa cho người khác nếu có thể, hoặc tấp vào lề nếu không.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "id": "5",
+    "text": "If your work is repetitive or requires solving lots of problems, losing sleep is not ideal for your career. Our concentration and thinking ability deteriorate the longer we remain awake; this means decreased accuracy and efficiency. One night of insufficient sleep can result in a 20 per cent–32 per cent increase in mistakes and 14 per cent increase in time needed to perform a task — not great if you're aiming for a promotion or working with heavy machinery.",
+    "vietnamese": "Nếu công việc của bạn lặp đi lặp lại hoặc cần giải quyết nhiều vấn đề, thiếu ngủ không tốt cho sự nghiệp của bạn. Khả năng tập trung và suy nghĩ của chúng ta suy giảm khi thức càng lâu; điều này có nghĩa là giảm độ chính xác và hiệu suất. Một đêm ngủ không đủ giấc có thể dẫn đến tăng 20–32% lỗi sai và tăng 14% thời gian cần thiết để thực hiện nhiệm vụ — không tốt nếu bạn đang nhắm đến thăng chức hoặc làm việc với máy móc nặng.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "id": "6",
+    "text": "Virtually all levels of sleep deprivation adversely affect your mood. Losing a few hours may result in negative mood states, stress, loss of vigour and confusion. Some people even report anxiety, depression and increased moodiness. To keep your friends and family onside, you may need to increase your sleep duration.",
+    "vietnamese": "Hầu như mọi mức độ thiếu ngủ đều ảnh hưởng xấu đến tâm trạng của bạn. Mất vài giờ ngủ có thể dẫn đến trạng thái tâm trạng tiêu cực, căng thẳng, mất sức sống và bối rối. Một số người thậm chí báo cáo lo âu, trầm cảm và tính khí thất thường tăng. Để giữ bạn bè và gia đình hài lòng, bạn có thể cần tăng thời gian ngủ.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "id": "7",
+    "text": "As if things weren't bad enough, our 24/7 lifestyle could also be making us fat. Studies have shown a negative relationship between body mass index (BMI) and sleep duration — meaning the less we sleep, the higher our BMI. The lack of sleep affects timing of the release of some hormones, including leptin and ghrelin, which suppress and promote appetite respectively. Sleep deprivation may lead to more munching and an expanding waistline. Evidence also suggests that too little sleep increases your chances of cardiovascular disease, type 2 diabetes, respiratory disorders and premature death.",
+    "vietnamese": "Như thể mọi thứ chưa đủ tệ, lối sống 24/7 của chúng ta cũng có thể khiến chúng ta béo lên. Các nghiên cứu đã chỉ ra mối quan hệ nghịch giữa chỉ số khối cơ thể (BMI) và thời gian ngủ — nghĩa là chúng ta ngủ càng ít, BMI càng cao. Thiếu ngủ ảnh hưởng đến thời điểm giải phóng một số hormone, bao gồm leptin và ghrelin, lần lượt ức chế và thúc đẩy sự thèm ăn. Thiếu ngủ có thể dẫn đến ăn vặt nhiều hơn và vòng eo ngày càng tăng. Bằng chứng cũng cho thấy ngủ quá ít làm tăng nguy cơ mắc bệnh tim mạch, tiểu đường loại 2, rối loạn hô hấp và tử vong sớm.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "id": "8",
+    "text": "How much do we need? This is a question that still puzzles scientists. The standard answer is seven to eight hours a night, but the truth is more complicated. As with so many things, our genes largely dictate how much sleep we need and our sensitivity to sleep deprivation. Some people can tolerate large deficits with few problems, while others struggle with the loss of a couple of hours. The key is to know your body and get the right amount of sleep for you.",
+    "vietnamese": "Chúng ta cần ngủ bao nhiêu? Đây là câu hỏi vẫn khiến các nhà khoa học bối rối. Câu trả lời chuẩn là bảy đến tám giờ mỗi đêm, nhưng sự thật phức tạp hơn. Như với nhiều thứ khác, gen của chúng ta phần lớn quyết định chúng ta cần ngủ bao nhiêu và độ nhạy cảm của chúng ta với việc thiếu ngủ. Một số người có thể chịu đựng thiếu hụt lớn mà ít gặp vấn đề, trong khi những người khác vật lộn khi mất vài giờ ngủ. Chìa khóa là hiểu cơ thể mình và ngủ đủ lượng phù hợp cho bạn.",
+    "skill": "reading",
+    "section": "sleep-on-it"
+  },
+  {
+    "id": "9",
+    "text": "At the NYU Sleep Disorders Center, New York City, Dr David Rapoport coordinates the Sleep Research Program. One test they perform has the patient pressing a button every time they see a light flash, to test their alertness and reaction time. Many of his sleep-deprived subjects perform poorly at this exercise — they stop responding and then fall asleep in the chair. While this test may sound quite straightforward, it actually illustrates something very significant. 'We don't fall asleep if we are well rested,' says Rapoport. 'If you're falling asleep in boring situations, that is a sure marker you are not getting quite enough sleep.' So the next time you fall asleep during a dull film, remember this may say more about you than the skills of the director — it could be your body's way of telling you to hit the hay more often.",
+    "vietnamese": "Tại Trung tâm Rối loạn Giấc ngủ NYU, thành phố New York, Tiến sĩ David Rapoport điều phối Chương trình Nghiên cứu Giấc ngủ. Một bài kiểm tra họ thực hiện là để bệnh nhân nhấn nút mỗi khi thấy đèn nhấp nháy, để kiểm tra sự tỉnh táo và thời gian phản ứng. Nhiều đối tượng thiếu ngủ của ông làm bài kiểm tra này kém — họ ngừng phản ứng rồi ngủ thiếp đi trên ghế. Dù bài kiểm tra nghe có vẻ đơn giản, nó thực sự minh họa điều rất quan trọng. 'Chúng ta không ngủ thiếp đi nếu đã nghỉ ngơi đầy đủ,' Rapoport nói. 'Nếu bạn ngủ gật trong những tình huống nhàm chán, đó là dấu hiệu chắc chắn bạn không ngủ đủ giấc.' Vì vậy, lần tới khi bạn ngủ gật trong một bộ phim nhàm chán, hãy nhớ điều này nói nhiều về bạn hơn là về tài năng của đạo diễn — đó có thể là cách cơ thể bạn bảo bạn hãy đi ngủ nhiều hơn.",
+    "skill": "reading",
+    "section": "sleep-on-it"
   }
 ]

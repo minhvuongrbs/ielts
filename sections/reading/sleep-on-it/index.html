@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Reading — Sleep on It</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/reading.css">
+</head>
+<body data-depth="3">
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+<div id="app"></div>
+<script>
+const CAT_LABELS={sleep:'😴 Sleep',health:'🏥 Health',cognitive:'🧠 Cognitive'};
+const IELTS_OPTIONS=['i','ii','iii','iv','v','vi','vii','viii','ix','x','xi'];
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/reading.js"></script>
+<script>
+renderReadingPage({
+  title: 'Sleep on It',
+  sub: 'IELTS General Training — Reading Section 3 — Practice 4.1',
+  passageRight: 'ielts',
+  optsLayout: 'column',
+  passageLabel: '📑 Questions 28–36: Matching Headings',
+  passageInstruction: 'Choose the correct heading for each section from the list below.',
+  ieltsInstruction: '<div style="text-align:left;margin-bottom:12px;font-size:.85rem;line-height:1.7"><strong>List of Headings</strong><br>i &nbsp;Strange behaviour<br>ii &nbsp;Possible causes of car crashes<br>iii &nbsp;Not being able to do your job properly<br>iv &nbsp;Feeling pessimistic about life<br>v &nbsp;Making us overweight<br>vi &nbsp;Not everyone needs the same amount of sleep<br>vii &nbsp;Serious consequences<br>viii &nbsp;Not enough sleep to function normally<br>ix &nbsp;Negative effects on the body<br>x &nbsp;Fast asleep yet still awake<br>xi &nbsp;If your body needs rest, you\'ll fall asleep</div>Choose the correct heading for Sections 1–9.',
+  phrasesIntro: 'Useful phrases from this passage about sleep deprivation — reuse them in IELTS Writing & Speaking.',
+  summaryCards: `
+    <div class="card">
+      <div class="sk">😴 Key Ideas by Section</div>
+      <ul class="slist">
+        <li><strong>1</strong> — Disasters linked to sleep deprivation (Challenger, Chernobyl, Exxon Valdez)</li>
+        <li><strong>2</strong> — We need sleep for cognitive function but are sleeping less</li>
+        <li><strong>3</strong> — Microsleeps: involuntary sleep while appearing awake</li>
+        <li><strong>4</strong> — Fatigue causes 20% of driver deaths in NSW</li>
+        <li><strong>5</strong> — Sleep loss reduces accuracy (+32% mistakes) and efficiency</li>
+        <li><strong>6</strong> — Sleep deprivation harms mood: stress, anxiety, depression</li>
+        <li><strong>7</strong> — Less sleep → higher BMI, hormonal changes, cardiovascular risk</li>
+        <li><strong>8</strong> — Genes determine how much sleep you need — it varies</li>
+        <li><strong>9</strong> — Sleep research: falling asleep in boring situations = not enough sleep</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">📑 IELTS Tip: Matching Headings</div>
+      <ul class="slist">
+        <li>Read the <strong>headings first</strong>, then skim each section for its main idea</li>
+        <li>The heading must match the <strong>whole section</strong>, not just one detail</li>
+        <li>Watch for <strong>distractors</strong> — some headings are not used (here: 2 extra)</li>
+        <li>If two headings seem to fit, choose the one that covers the <strong>broadest idea</strong></li>
+        <li>Cross off headings as you use them to narrow down choices</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">⚠️ Distractor Alert: Heading v vs ix</div>
+      <ul class="slist">
+        <li>Heading <strong>v</strong> ("Making us overweight") sounds like it fits Section 7 — but Section 7 covers weight, hormones, heart disease, diabetes, AND premature death</li>
+        <li>Heading <strong>ix</strong> ("Negative effects on the body") is broader and captures ALL the physical effects mentioned</li>
+        <li>IELTS tip: always choose the heading that covers the <strong>most complete</strong> summary of the section</li>
+      </ul>
+    </div>`
+});
+DataLayer.getLesson('reading','sleep-on-it').then(initReading);
+</script>
+</body>
+</html>

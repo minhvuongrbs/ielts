@@ -134,6 +134,7 @@ All lesson data lives in flat JSON table files under `data/`, like database tabl
 - `data/phrases.json` — `[{"phrase": "...", "vietnamese": "...", "usage": "...", "example": "...", "category": "...", "skill": "...", "section": "..."}]`
 - `data/fill-blanks.json` — `[{"sentence": "... ___", "answer": "word", "hint": "Vietnamese hint", "skill": "...", "section": "..."}]`
 - `data/passages.json` — `[{"id": "A", "text": "...", "vietnamese": "...", "skill": "reading", "section": "happiness"}]`
+  - Passage `text` and `vietnamese` are rendered via `innerHTML` — use `<strong>` tags to preserve bold formatting for headings, subheadings, and location lines (match the original PDF layout)
 - `data/questions.json` — IELTS questions + meta records for questionTypes/summaryQuestions
 - `data/intros.json` — listening intros with title, tips, format
 - `data/visual-vocab.json` — listening spatial vocab with SVG keys
