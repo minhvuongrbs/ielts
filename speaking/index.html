@@ -4,17 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Speaking — Coming Soon</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/styles.css">
 <style>
-:root{--accent:#d4853b;--accent-dark:#b06a28;--accent-light:#f5dfc4}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Source Sans 3',sans-serif;background:#faf6f0;color:#2c2416}
-.nav{display:flex;align-items:center;gap:16px;padding:10px 20px;background:#fff;box-shadow:0 1px 8px rgba(44,36,22,.06);position:sticky;top:0;z-index:100}
-.nav-brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--accent);text-decoration:none}
-.nav-links{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
-.nav-link{padding:6px 14px;border-radius:8px;font-size:.82rem;font-weight:600;color:#8a7a66;text-decoration:none;transition:.2s;white-space:nowrap}
-.nav-link:hover{background:var(--accent-light);color:#2c2416}
-.nav-link.active{background:var(--accent);color:#fff}
 .wrap{max-width:400px;margin:0 auto;text-align:center;padding:120px 20px}
 .icon{font-size:3rem;margin-bottom:16px}
 h1{font-family:'Fraunces',serif;font-size:1.6rem;margin-bottom:8px}
@@ -23,18 +14,9 @@ p{color:#8a7a66;font-size:.95rem;margin-bottom:24px}
 .btn:hover{background:var(--accent-dark)}
 </style>
 </head>
-<body>
-<nav class="nav">
-  <a href="../" class="nav-brand">IELTS Hub</a>
-  <div class="nav-links">
-    <a href="../" class="nav-link">Home</a>
-    <a href="../reading/" class="nav-link">📖 Reading</a>
-    <a href="../writing/" class="nav-link">✍️ Writing</a>
-    <a href="../listening/" class="nav-link">🎧 Listening</a>
-    <a href="./" class="nav-link active">🗣️ Speaking</a>
-    <a href="../revision/" class="nav-link">📝 Revision</a>
-  </div>
-</nav>
+<body data-depth="1">
+<nav id="nav"></nav>
+<script src="../shared/nav.js"></script>
 <div class="wrap">
   <div class="icon">🗣️</div>
   <h1>Speaking — Coming Soon</h1>

@@ -19,21 +19,22 @@
 
 ## Project Structure
 ```
-index.html                          # Homepage — skill sections with lesson cards
-lessons/                            # Shared lessons (linked from both skill hubs + revision)
-  form-completion/
-    index.html                      # Lesson page (tabs + interactive components)
-    data.json                       # ALL lesson content (vocab, quizzes, phrases)
+index.html                          # Homepage — skill sections + stats + lesson cards
+docs/
+  books/                            # Reference PDFs
+  audio/                            # Listening test MP3s
+lessons/                            # Shared lessons (linked from skill hubs + revision)
+  form-completion/                  # Listening S1 — also in Revision 1
+    index.html + data.json
+  sentence-completion/              # Listening S2 — also in Revision 1
+    index.html + data.json
 reading/
   index.html                        # Reading lesson hub (card grid)
-  happiness/
-    index.html                      # Lesson page
-    data.json
+  happiness/                        # Reading-only lesson
+  video-games/                      # Reading-only lesson
 listening/
   index.html                        # Listening lesson hub (card grid)
-  map-labeling/
-    index.html                      # Lesson page
-    data.json
+  map-labeling/                     # Listening-only lesson
 revision/
   index.html                        # Revision hub — mock tests (Revision 1, 2, etc.)
 writing/index.html                  # Coming soon placeholder
@@ -45,6 +46,13 @@ speaking/index.html                 # Coming soon placeholder
 - Skill hubs and revision hub link to `../lessons/<lesson>/` via relative paths
 - Lessons that are skill-specific only (e.g., `listening/map-labeling/`) stay in their skill folder
 - Shared lessons mark their **primary skill** as active in the nav
+
+### Revision structure (`revision/`)
+- Revision = collection of mock tests (Revision 1, Revision 2, etc.)
+- Each revision groups lesson cards by skill (e.g., Listening → Section 1, Section 2)
+- Uses `.rev-block` container with `.rev-skill` sub-sections
+- Cards link to `../lessons/<lesson>/` — same lessons as skill hubs
+- Color: `--revision: #7a6cc4` (purple)
 
 ## Architecture — Follow When Creating New Lessons
 
@@ -58,15 +66,27 @@ speaking/index.html                 # Coming soon placeholder
 - "Coming soon" cards for future lessons (`class="card soon"`)
 - Follow pattern in `reading/index.html`
 
-### 3. Homepage updates
-- When adding a new lesson, update the skill section in `index.html`
-- Change `<div class="card soon">` to `<a href="..." class="card">` with link
+### 3. Homepage updates — CHECKLIST (do ALL of these when adding a lesson)
+When adding a new lesson, update `index.html`:
+1. **Skill section card**: Add or activate a card in the relevant skill section (Reading, Listening, etc.)
+2. **Revision section**: If the lesson is part of a revision test, update the revision card/section
+3. **Stats bar**: Update the hero stats to reflect current totals:
+   - **Lessons**: Count all lesson folders (`lessons/*/`, `reading/*/`, `listening/*/`)
+   - **Vocabulary**: Sum `vocabulary` array lengths from ALL `data.json` files
+   - Current stats location: `index.html` → `.stats` div inside `.hero`
+4. If the lesson is shared (in `lessons/`), also update the **skill hub** page (e.g., `listening/index.html`)
 
-### 4. Navigation bar (present on ALL pages)
+### 4. Navigation bar (present on ALL pages — 10+ files)
 - Brand: links to root via relative path
-- 5 links: Home, Reading, Writing, Listening, Speaking
+- **6 links**: Home, Reading, Writing, Listening, Speaking, **Revision**
 - Active page: `.nav-link.active` class
 - Relative paths based on page depth (e.g., `../../` from lesson pages)
+- **IMPORTANT**: When adding a new nav link, update ALL pages:
+  - Root: `index.html`
+  - Skill hubs: `reading/index.html`, `listening/index.html`, `writing/index.html`, `speaking/index.html`
+  - Revision hub: `revision/index.html`
+  - All lesson pages: `reading/happiness/`, `reading/video-games/`, `listening/map-labeling/`, `lessons/form-completion/`, `lessons/sentence-completion/`
+- No shared CSS file — each page has its own `<style>` block (nav CSS is duplicated)
 
 ## Data Format Conventions
 
@@ -132,6 +152,12 @@ speaking/index.html                 # Coming soon placeholder
   - Correct: `--correct: #3a8a5c` (green)
   - Wrong: `--wrong: #c44536` (red)
   - Vietnamese: `--vi: #6b8cce` (blue)
+- **Skill colors** (used on homepage sections, hub pages, card borders):
+  - Reading: `--reading: #3a8a5c` (green)
+  - Writing: `--writing: #6b8cce` (blue)
+  - Listening: `--listening: #c47a3b` (orange)
+  - Speaking: `--speaking: #b05ca8` (purple-pink)
+  - Revision: `--revision: #7a6cc4` (purple)
 - **Cards:** white bg, `border-radius: 12px`, `box-shadow: 0 2px 16px rgba(44,36,22,0.08)`
 - **Vietnamese text:** blue (`--vi`), italic, revealed on tap/toggle
 - **SVG illustrations:** inline in JS template strings (small, no external files)
