@@ -63,5 +63,15 @@
     "section": "complete-gardening-handbook",
     "name": "The Complete Gardening Handbook",
     "skill": "reading"
+  },
+  {
+    "section": "following-directions",
+    "name": "Following Directions",
+    "skill": "listening"
+  },
+  {
+    "section": "identify-distractors",
+    "name": "Identify Distractors",
+    "skill": "listening"
   }
 ]

@@ -199,5 +199,104 @@
     ],
     "skill": "listening",
     "section": "sentence-completion"
+  },
+  {
+    "title": "Map of a Building",
+    "instruction": "Listen to Tanya's description and label the map. Choose the correct letter A–H and write the answers next to questions 1–4.",
+    "mapImage": "../../../../assets/images/Mindset_L1_51.png",
+    "options": [
+      { "letter": "A", "label": "art gallery" },
+      { "letter": "B", "label": "cinema" },
+      { "letter": "C", "label": "live music" },
+      { "letter": "D", "label": "car park" },
+      { "letter": "E", "label": "restaurants" },
+      { "letter": "F", "label": "exhibition centre" },
+      { "letter": "G", "label": "Arena" },
+      { "letter": "H", "label": "shopping centre" }
+    ],
+    "questions": [
+      { "q": 1, "answer": "F", "answerLabel": "exhibition centre" },
+      { "q": 2, "answer": "A", "answerLabel": "art gallery" },
+      { "q": 3, "answer": "H", "answerLabel": "shopping centre" },
+      { "q": 4, "answer": "G", "answerLabel": "Arena" }
+    ],
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "title": "Following Directions — Town Map",
+    "instruction": "Listen to the directions and label the map. Write the correct letter A–K next to each question.",
+    "mapImage": "../../../../assets/images/Mindset_L1_49_50.png",
+    "options": [
+      { "letter": "A", "label": "" },
+      { "letter": "B", "label": "" },
+      { "letter": "C", "label": "" },
+      { "letter": "D", "label": "" },
+      { "letter": "E", "label": "" },
+      { "letter": "F", "label": "" },
+      { "letter": "G", "label": "" },
+      { "letter": "H", "label": "" },
+      { "letter": "I", "label": "" },
+      { "letter": "J", "label": "" },
+      { "letter": "K", "label": "" }
+    ],
+    "parts": [
+      {
+        "partTitle": "Part 1 — Directions to Melissa's house",
+        "audioSrc": "../../../../assets/audio/Mindset_L1_49.mp3",
+        "questions": [
+          { "q": 1, "questionLabel": "Main Street", "answer": "G", "answerLabel": "Main Street = G" },
+          { "q": 2, "questionLabel": "Silver Street", "answer": "D", "answerLabel": "Silver Street = D" },
+          { "q": 3, "questionLabel": "Melissa's house", "answer": "C", "answerLabel": "Melissa's house = C" }
+        ]
+      },
+      {
+        "partTitle": "Part 2 — Picking up Sarah",
+        "audioSrc": "../../../../assets/audio/Mindset_L1_50.mp3",
+        "questions": [
+          { "q": 4, "questionLabel": "New Road", "answer": "K", "answerLabel": "New Road = K" },
+          { "q": 5, "questionLabel": "Sarah's house", "answer": "H", "answerLabel": "Sarah's house = H" },
+          { "q": 6, "questionLabel": "Oak Avenue", "answer": "B", "answerLabel": "Oak Avenue = B" }
+        ]
+      }
+    ],
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "title": "Identify Distractors — Consumerism",
+    "instruction": "Listen to four short recordings and answer questions 1–4. Write NO MORE THAN ONE WORD AND/OR A NUMBER for each answer. Then identify the distractors for each question.",
+    "questions": [
+      {
+        "q": 1,
+        "text": "The new sport shop is going to be located in the ___ of the town.",
+        "answer": "east",
+        "altAnswers": ["East"],
+        "distractors": ["south", "north"]
+      },
+      {
+        "q": 2,
+        "text": "What does the tour guide recommend they buy?",
+        "answer": "tea",
+        "altAnswers": ["Tea"],
+        "distractors": ["souvenirs", "cameras"]
+      },
+      {
+        "q": 3,
+        "text": "The shopping centre opens at ___ o'clock on Sundays.",
+        "answer": "eleven",
+        "altAnswers": ["11"],
+        "distractors": ["nine", "six", "five"]
+      },
+      {
+        "q": 4,
+        "text": "What is the most popular product in the shop?",
+        "answer": "trousers",
+        "altAnswers": ["Trousers"],
+        "distractors": ["shirts", "jackets"]
+      }
+    ],
+    "skill": "listening",
+    "section": "identify-distractors"
   }
 ]

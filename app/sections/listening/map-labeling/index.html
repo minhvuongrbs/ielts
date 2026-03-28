@@ -6,13 +6,35 @@
 <title>IELTS Listening — Map & Plan Labeling</title>
 <link rel="stylesheet" href="../../../shared/styles.css">
 <link rel="stylesheet" href="../../../shared/listening.css">
+<style>
+/* Map practice: letter-select buttons */
+.map-img{width:100%;max-width:600px;border-radius:var(--r);box-shadow:var(--shadow);margin:0 auto 20px;display:block}
+.map-opts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;justify-content:center}
+.map-opt{font-size:.82rem;color:#6b5e4f;background:#f5f0e8;border:1px solid #e0d6c8;border-radius:8px;padding:4px 12px}
+.map-opt strong{color:var(--accent);margin-right:4px}
+.map-q-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:500px;margin:0 auto}
+.map-q{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:14px 16px}
+.map-q-num{font-family:'Fraunces',serif;font-weight:700;color:var(--accent);font-size:.95rem;margin-bottom:8px}
+.map-q.correct{border-left:4px solid var(--correct)}
+.map-q.wrong{border-left:4px solid var(--wrong)}
+.letter-opts{display:flex;flex-wrap:wrap;gap:5px}
+.lo{width:32px;height:32px;border:2px solid #e0d6c8;border-radius:8px;background:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:.85rem;cursor:pointer;transition:.2s;color:var(--text);display:flex;align-items:center;justify-content:center}
+.lo:hover{border-color:var(--accent);background:var(--accent-light)}
+.lo.sel{border-color:var(--accent);background:var(--accent);color:#fff}
+.lo.ca{border-color:var(--correct);background:var(--correct);color:#fff}
+.lo.wa{border-color:var(--wrong);background:var(--wrong);color:#fff}
+.lo:disabled{cursor:default}
+.map-answer{display:none;font-size:.82rem;margin-top:6px;font-weight:600}
+.map-answer.show{display:block}
+@media(max-width:600px){.map-q-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body data-depth="3" data-active="listening">
 <nav id="nav"></nav>
 <script src="../../../shared/nav.js"></script>
 <div id="app"></div>
 <script>
-const CAT_LABELS={place:'📍 Place',movement:'🚶 Movement',location:'🏛️ Location',direction:'🧭 Direction'};
+const CAT_LABELS={venue:'🏛️ Venue',direction:'🧭 Direction',place:'📍 Place',movement:'🚶 Movement',location:'🏛️ Location'};
 </script>
 <script src="../../../shared/data.js"></script>
 <script src="../../../shared/lesson.js"></script>
@@ -20,13 +42,14 @@ const CAT_LABELS={place:'📍 Place',movement:'🚶 Movement',location:'🏛️ 
 <script>
 renderListeningPage({
   title: 'Map & Plan Labeling',
-  sub: 'IELTS Listening — Section 2 — Question Type',
+  sub: 'IELTS Listening — Section 2 — Map of a Building',
   guideWhat: 'Map & Plan Labeling',
+  practiceTab: { audioSrc: '../../../../assets/audio/Mindset_L1_51.mp3' },
   visualTab: true,
   phrasesIntro: "Common sentences you'll hear in map & plan labeling audio. Learn to recognize these patterns."
 });
 
-let VV=[];
+let VV=[], PRACTICE={};
 
 const SVG_MAP = {
   'turn-left': `<svg viewBox="0 0 160 120"><rect x="60" y="10" width="40" height="100" rx="4" fill="#b8d8b8"/><path d="M80 90 L80 50 Q80 35 65 35 L30 35" stroke="#c44536" stroke-width="6" fill="none" marker-end="url(#ah)"/><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c44536"/></marker></defs></svg>`,
@@ -63,10 +86,67 @@ function renderVisualVocab(){
     </div>`).join('');
 }
 
+/* ── Practice: Map of a Building ── */
+function toggleMapLetter(btn) {
+  const q = btn.dataset.q;
+  document.querySelectorAll(`#mlo-${q} .lo`).forEach(b => b.classList.remove('sel'));
+  btn.classList.add('sel');
+}
+
+function renderPractice(){
+  const P = PRACTICE; if(!P.questions) return;
+  let html = `<h3 style="font-family:'Fraunces',serif;margin-bottom:4px">${P.title}</h3>`;
+  html += `<p class="practice-instruction">${P.instruction}</p>`;
+  html += `<img class="map-img" src="${P.mapImage}" alt="Building floor plan">`;
+  html += `<div class="map-opts">${P.options.map(o => `<span class="map-opt"><strong>${o.letter}</strong>${o.label}</span>`).join('')}</div>`;
+  html += `<div class="map-q-grid">`;
+  P.questions.forEach(q => {
+    html += `<div class="map-q" id="mq-${q.q}">
+      <div class="map-q-num">Question ${q.q}</div>
+      <div class="letter-opts" id="mlo-${q.q}">
+        ${P.options.map(o => `<button class="lo" data-q="${q.q}" data-l="${o.letter}" onclick="toggleMapLetter(this)">${o.letter}</button>`).join('')}
+      </div>
+      <div class="map-answer" id="ma-${q.q}"></div>
+    </div>`;
+  });
+  html += `</div>`;
+  document.getElementById('practice-content').innerHTML = html;
+  document.getElementById('practice-score').className='practice-score';
+  document.getElementById('practice-score').textContent='';
+  document.getElementById('pcheck').style.display='inline-block';
+  document.getElementById('preset').style.display='none';
+}
+
+function checkPractice(){
+  let score = 0;
+  PRACTICE.questions.forEach(q => {
+    const ctn = document.getElementById('mlo-'+q.q);
+    const card = document.getElementById('mq-'+q.q);
+    const ans = document.getElementById('ma-'+q.q);
+    const sel = ctn.querySelector('.lo.sel');
+    const picked = sel ? sel.dataset.l : '';
+    const btns = ctn.querySelectorAll('.lo');
+    btns.forEach(b => { b.disabled=true; b.classList.remove('sel'); if(b.dataset.l===q.answer) b.classList.add('ca'); else if(b.dataset.l===picked) b.classList.add('wa'); });
+    const ok = picked === q.answer;
+    if(ok) score++;
+    card.classList.add(ok?'correct':'wrong');
+    if(!ok){ ans.textContent='✓ '+q.answer+' — '+q.answerLabel; ans.style.color=ok?'var(--correct)':'var(--wrong)'; ans.classList.add('show'); }
+  });
+  const el=document.getElementById('practice-score');
+  el.textContent=`${score} / ${PRACTICE.questions.length} correct`+(score===PRACTICE.questions.length?' 🎉':'');
+  el.className='practice-score show '+(score>=PRACTICE.questions.length*0.7?'good':'bad');
+  document.getElementById('pcheck').style.display='none';
+  document.getElementById('preset').style.display='inline-block';
+}
+
+function resetPractice(){ renderPractice(); }
+
 DataLayer.getLesson('listening','map-labeling').then(data=>{
   VV=data.visualVocab||[];
+  PRACTICE=data.practice||{};
   initListening(data);
   renderVisualVocab();
+  renderPractice();
 });
 </script>
 </body>

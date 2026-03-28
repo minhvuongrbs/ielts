@@ -8,12 +8,12 @@ function normalize(s){return s.trim().toLowerCase().replace(/[\s]+/g,' ');}
 function renderListeningPage(cfg){
   /* cfg: { title, sub, guideWhat, phrasesIntro, practiceTab:{audioSrc}, visualTab:bool } */
 
-  let secondTab = '';
-  let secondPane = '';
+  let extraTabs = '';
+  let extraPanes = '';
 
   if(cfg.practiceTab){
-    secondTab = `<button class="tab-btn" data-tab="practice">📋 Practice</button>`;
-    secondPane = `
+    extraTabs += `<button class="tab-btn" data-tab="practice">📋 Practice</button>`;
+    extraPanes += `
       <div id="practice" class="tp">
         <div class="audio-card">
           <div class="label">🔊 Listen to the audio</div>
@@ -26,9 +26,10 @@ function renderListeningPage(cfg){
           <button class="btn bs" id="preset" onclick="resetPractice()" style="display:none">Try Again</button>
         </div>
       </div>`;
-  } else if(cfg.visualTab){
-    secondTab = `<button class="tab-btn" data-tab="visual">🗺️ Visual</button>`;
-    secondPane = `
+  }
+  if(cfg.visualTab){
+    extraTabs += `<button class="tab-btn" data-tab="visual">🗺️ Visual</button>`;
+    extraPanes += `
       <div id="visual" class="tp">
         <p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.9rem">Tap a card to see the Vietnamese meaning and example sentence.</p>
         <div class="vv-grid" id="vv-grid"></div>
@@ -44,7 +45,7 @@ function renderListeningPage(cfg){
 
     <div class="tabs">
       <button class="tab-btn active" data-tab="guide">📖 Guide</button>
-      ${secondTab}
+      ${extraTabs}
       <button class="tab-btn" data-tab="vocab">📝 Vocab</button>
       <button class="tab-btn" data-tab="phrases">💬 Phrases</button>
       <button class="tab-btn" data-tab="quiz">❓ Quiz</button>
@@ -56,7 +57,7 @@ function renderListeningPage(cfg){
       <div class="card"><div class="guide-title">💡 Tips & Strategies</div><div id="guide-tips"></div></div>
     </div>
 
-    ${secondPane}
+    ${extraPanes}
 
     <div id="vocab" class="tp">
       <div class="vf" id="vocab-filter"></div>

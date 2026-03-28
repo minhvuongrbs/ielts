@@ -1051,5 +1051,202 @@
     "hint": "cắt đứt",
     "skill": "reading",
     "section": "complete-gardening-handbook"
+  },
+
+  {
+    "sentence": "The ___ is the main concert venue in the building.",
+    "answer": "Arena",
+    "hint": "nhà thi đấu / sân vận động",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "The ___ centre has exhibitions and art displays.",
+    "answer": "exhibition",
+    "hint": "triển lãm",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "As you enter, you come to a ___ with a big fountain in the middle.",
+    "answer": "square",
+    "hint": "quảng trường",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "Walk along Main ___ to reach the coffee shop at the end.",
+    "answer": "Avenue",
+    "hint": "đại lộ",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "The ___ is where people meet up before events.",
+    "answer": "fountain",
+    "hint": "đài phun nước",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "The shopping centre can be a bit ___, but it's the only way through.",
+    "answer": "tempting",
+    "hint": "hấp dẫn, cám dỗ",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "I'm calling to make ___ for the concert on Saturday.",
+    "answer": "arrangements",
+    "hint": "sự sắp xếp",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "You can go straight out into the car park, which is very ___.",
+    "answer": "convenient",
+    "hint": "thuận tiện",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "sentence": "Take a ___ right onto Main Street.",
+    "answer": "sharp",
+    "hint": "gấp, đột ngột",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "sentence": "Turn left at the ___ lights.",
+    "answer": "traffic",
+    "hint": "đèn giao thông",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "sentence": "Follow the road to the ___.",
+    "answer": "roundabout",
+    "hint": "vòng xuyến",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "sentence": "Sarah's house is the second house after the ___.",
+    "answer": "bridge",
+    "hint": "cây cầu",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "sentence": "As you ___ the crossroads, my house is the first on the corner.",
+    "answer": "approach",
+    "hint": "tiến gần đến",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "sentence": "Take the first ___ on the left onto Silver Street.",
+    "answer": "turning",
+    "hint": "lối rẽ",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "sentence": "Drive ___ New Road until you reach the bridge.",
+    "answer": "along",
+    "hint": "dọc theo",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "sentence": "After the zebra ___, take the first turning on your left.",
+    "answer": "crossing",
+    "hint": "vạch sang đường",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "sentence": "I told Sarah you would ___ her on the way.",
+    "answer": "collect",
+    "hint": "đón",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "sentence": "___ the route I just gave you — I'll give you another set of directions.",
+    "answer": "Forget",
+    "hint": "quên đi",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "sentence": "A new ___ of the sporting goods company is opening on Saturday.",
+    "answer": "branch",
+    "hint": "chi nhánh",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "sentence": "I like to ___ the clothing stalls before deciding what to buy.",
+    "answer": "browse",
+    "hint": "xem qua, lướt xem",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "sentence": "They are ___ all prices this weekend only.",
+    "answer": "reducing",
+    "hint": "giảm (giá)",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "sentence": "The tour guide ___ buying tea from the local teashops.",
+    "answer": "recommends",
+    "hint": "giới thiệu, đề xuất",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "sentence": "Many tourists ___ about the quality of the cheap cameras.",
+    "answer": "complained",
+    "hint": "phàn nàn",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "sentence": "You'll find a good ___ of styles in our footwear department.",
+    "answer": "selection",
+    "hint": "sự lựa chọn",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "sentence": "The market is very ___ because it's close to where I live.",
+    "answer": "convenient",
+    "hint": "thuận tiện",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "sentence": "I sometimes find designer shoes at very ___ prices.",
+    "answer": "reasonable",
+    "hint": "hợp lý, phải chăng",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "sentence": "I like shopping for fun and ___ gifts that nobody else has.",
+    "answer": "original",
+    "hint": "độc đáo",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "sentence": "A ___ is a word in the recording that sounds correct but is actually wrong.",
+    "answer": "distractor",
+    "hint": "thông tin gây nhiễu",
+    "skill": "listening",
+    "section": "identify-distractors"
   }
 ]

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Listening — Following Directions</title>
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/listening.css">
+<style>
+/* Map practice: letter-select buttons */
+.map-img{width:100%;max-width:600px;border-radius:var(--r);box-shadow:var(--shadow);margin:0 auto 20px;display:block}
+.map-opts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;justify-content:center}
+.map-opt{font-size:.82rem;color:#6b5e4f;background:#f5f0e8;border:1px solid #e0d6c8;border-radius:8px;padding:4px 12px}
+.map-opt strong{color:var(--accent);margin-right:4px}
+.map-q-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:500px;margin:0 auto}
+.map-q{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:14px 16px}
+.map-q-num{font-family:'Fraunces',serif;font-weight:700;color:var(--accent);font-size:.95rem;margin-bottom:8px}
+.map-q.correct{border-left:4px solid var(--correct)}
+.map-q.wrong{border-left:4px solid var(--wrong)}
+.letter-opts{display:flex;flex-wrap:wrap;gap:5px}
+.lo{width:32px;height:32px;border:2px solid #e0d6c8;border-radius:8px;background:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:.85rem;cursor:pointer;transition:.2s;color:var(--text);display:flex;align-items:center;justify-content:center}
+.lo:hover{border-color:var(--accent);background:var(--accent-light)}
+.lo.sel{border-color:var(--accent);background:var(--accent);color:#fff}
+.lo.ca{border-color:var(--correct);background:var(--correct);color:#fff}
+.lo.wa{border-color:var(--wrong);background:var(--wrong);color:#fff}
+.lo:disabled{cursor:default}
+.map-answer{display:none;font-size:.82rem;margin-top:6px;font-weight:600}
+.map-answer.show{display:block}
+.part-section{margin-bottom:28px}
+.part-title{font-family:'Fraunces',serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:12px;padding:8px 14px;background:#f5f0e8;border-radius:8px;border-left:4px solid var(--listening)}
+.part-audio{margin-bottom:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.part-audio .label{font-size:.85rem;font-weight:600;color:#6b5e4f}
+@media(max-width:600px){.map-q-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body data-depth="3" data-active="listening">
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+<div id="app"></div>
+<script>
+const CAT_LABELS={direction:'🧭 Direction',landmark:'🏪 Landmark','road-feature':'🚦 Road Feature',navigation:'🗺️ Navigation'};
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/listening.js"></script>
+<script>
+renderListeningPage({
+  title: 'Following Directions',
+  sub: 'IELTS Listening — Section 2 — Town Map (Tracks 49–50)',
+  guideWhat: 'Following Directions (Map Labeling)',
+  practiceTab: { audioSrc: '../../../../assets/audio/Mindset_L1_49.mp3' },
+  phrasesIntro: "Phrases for giving and following directions. Learn to trace a route on a map from spoken instructions."
+});
+
+let PRACTICE={};
+
+function toggleMapLetter(btn) {
+  const q = btn.dataset.q;
+  document.querySelectorAll('#mlo-'+q+' .lo').forEach(function(b){ b.classList.remove('sel'); });
+  btn.classList.add('sel');
+}
+
+function renderPractice(){
+  const P = PRACTICE; if(!P.parts) return;
+  let html = '<h3 style="font-family:\'Fraunces\',serif;margin-bottom:4px">'+P.title+'</h3>';
+  html += '<p class="practice-instruction">'+P.instruction+'</p>';
+  html += '<img class="map-img" src="'+P.mapImage+'" alt="Town map">';
+
+  P.parts.forEach(function(part, i){
+    html += '<div class="part-section">';
+    html += '<div class="part-title">'+part.partTitle+'</div>';
+    if(i > 0){
+      html += '<div class="part-audio"><span class="label">🔊 Listen:</span><audio controls src="'+part.audioSrc+'" style="flex:1;min-width:200px"></audio></div>';
+    }
+    html += '<div class="map-q-grid">';
+    part.questions.forEach(function(q){
+      html += '<div class="map-q" id="mq-'+q.q+'">';
+      html += '<div class="map-q-num">Q'+q.q+': '+q.questionLabel+'</div>';
+      html += '<div class="letter-opts" id="mlo-'+q.q+'">';
+      P.options.forEach(function(o){
+        html += '<button class="lo" data-q="'+q.q+'" data-l="'+o.letter+'" onclick="toggleMapLetter(this)">'+o.letter+'</button>';
+      });
+      html += '</div>';
+      html += '<div class="map-answer" id="ma-'+q.q+'"></div>';
+      html += '</div>';
+    });
+    html += '</div></div>';
+  });
+
+  document.getElementById('practice-content').innerHTML = html;
+  document.getElementById('practice-score').className='practice-score';
+  document.getElementById('practice-score').textContent='';
+  document.getElementById('pcheck').style.display='inline-block';
+  document.getElementById('preset').style.display='none';
+}
+
+function checkPractice(){
+  var score=0, total=0;
+  PRACTICE.parts.forEach(function(part){
+    part.questions.forEach(function(q){
+      total++;
+      var ctn=document.getElementById('mlo-'+q.q);
+      var card=document.getElementById('mq-'+q.q);
+      var ans=document.getElementById('ma-'+q.q);
+      var sel=ctn.querySelector('.lo.sel');
+      var picked=sel?sel.dataset.l:'';
+      var btns=ctn.querySelectorAll('.lo');
+      btns.forEach(function(b){ b.disabled=true; b.classList.remove('sel'); if(b.dataset.l===q.answer) b.classList.add('ca'); else if(b.dataset.l===picked) b.classList.add('wa'); });
+      var ok=picked===q.answer;
+      if(ok) score++;
+      card.classList.add(ok?'correct':'wrong');
+      if(!ok){ ans.textContent='✓ '+q.answerLabel; ans.style.color=ok?'var(--correct)':'var(--wrong)'; ans.classList.add('show'); }
+    });
+  });
+  var el=document.getElementById('practice-score');
+  el.textContent=score+' / '+total+' correct'+(score===total?' 🎉':'');
+  el.className='practice-score show '+(score>=total*0.7?'good':'bad');
+  document.getElementById('pcheck').style.display='none';
+  document.getElementById('preset').style.display='inline-block';
+}
+
+function resetPractice(){ renderPractice(); }
+
+DataLayer.getLesson('listening','following-directions').then(function(data){
+  PRACTICE=data.practice||{};
+  initListening(data);
+  renderPractice();
+});
+</script>
+</body>
+</html>

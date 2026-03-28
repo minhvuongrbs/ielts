@@ -69,5 +69,54 @@
     ],
     "skill": "listening",
     "section": "sentence-completion"
+  },
+  {
+    "title": "Following Directions — Town Map",
+    "subtitle": "IELTS Listening — Section 2 — Map Labeling (Streets & Houses)",
+    "description": "In this exercise, you listen to someone giving directions around a town and label streets and locations on a map. The speaker describes a route using landmarks, road names, and features like traffic lights, roundabouts, and crossroads. There are two separate audio tracks with different routes on the same map.",
+    "format": [
+      "You see a town map with some locations already labeled and lettered points A–K",
+      "You listen to two separate sets of directions (two audio tracks)",
+      "For each set, you match street names or house locations to the correct letter on the map",
+      "There are more lettered options than questions — some letters are distractors"
+    ],
+    "tips": [
+      "Study the map BEFORE the audio — identify all labeled features (streets, landmarks, traffic lights, roundabout)",
+      "Find the starting point — both routes begin from Tanya's house (marked with X)",
+      "Follow the route step by step — trace the path with your finger on the map",
+      "Listen for turning words: 'turn right', 'turn left', 'sharp right', 'straight on'",
+      "Watch for distractors — the speaker may mention an alternative route then say 'but usually I drive down...'",
+      "In the second audio, listen for 'forget the first route' — this changes the direction completely",
+      "Pay attention to 'on your left' vs 'on your right' — this tells you which side of the road a place is",
+      "The questions follow the audio order — if you miss one, move on to the next"
+    ],
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "title": "Identify Distractors",
+    "subtitle": "IELTS Listening — Section 2 — Multiple Choice",
+    "description": "In Section 2 of the Listening test, you hear a recording spoken by one speaker on a topic of general interest. Multiple-choice questions give you three options (A, B or C) and you must choose the correct one. Distractors are words and phrases in the recording that are incorrect answers to a question — they sound relevant but do not actually answer what is being asked. Learning to identify distractors helps you choose the correct answer.",
+    "format": [
+      "Section 2 features one speaker (or mainly one speaker) on a general interest topic",
+      "The recording is played in two parts, with questions on each part",
+      "Multiple-choice questions have three options: A, B or C — only one is correct",
+      "Two types: (1) a question followed by three options, (2) an unfinished statement followed by three possible endings",
+      "The questions follow the order of the recording",
+      "Distractors are mentioned in the audio but do not answer the question correctly",
+      "The correct answer is often paraphrased — the exact words from the question may not appear in the audio"
+    ],
+    "tips": [
+      "Read all questions and options BEFORE the audio plays — underline key words in each question",
+      "Think about what TYPE of information each question asks for (a place? a time? a reason?)",
+      "Think of synonyms and paraphrases for the key words — the audio will use different words",
+      "Be aware of distractors — don't choose an option just because you hear those exact words in the recording",
+      "Listen for SIGNAL phrases that introduce the correct answer: 'they have finally decided to...', 'but actually...', 'the real reason is...'",
+      "Listen for phrases that introduce distractors: 'There was talk of... but...', 'you might think... however...'",
+      "If you hear all three options mentioned, focus on the CONTEXT — which one actually answers the question?",
+      "The questions follow the order of the audio — if you miss one, move on to the next question immediately"
+    ],
+    "skill": "listening",
+    "section": "identify-distractors"
   }
 ]

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Listening — Identify Distractors — Consumerism</title>
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/listening.css">
+<style>
+.dist-table{width:100%;border-collapse:separate;border-spacing:0 8px}
+.dist-table th{text-align:left;font-size:.82rem;font-weight:700;color:#8a7a66;padding:0 8px 4px;text-transform:uppercase;letter-spacing:.03em}
+.dist-row{background:#fff;border-radius:var(--r);box-shadow:var(--shadow)}
+.dist-row td{padding:12px 10px;vertical-align:top}
+.dist-row td:first-child{width:36px;text-align:center;font-weight:700;color:var(--listening);border-radius:var(--r) 0 0 var(--r)}
+.dist-row td:last-child{border-radius:0 var(--r) var(--r) 0}
+.dist-qtext{font-size:.92rem;line-height:1.5;margin-bottom:6px}
+.dist-label{font-size:.75rem;font-weight:600;color:#8a7a66;margin-bottom:4px}
+.dist-inputs{display:flex;gap:6px;flex-wrap:wrap}
+.dist-input{border:2px solid #e0d8cc;border-radius:8px;padding:6px 10px;font-size:.88rem;font-family:inherit;width:100px;transition:border-color .2s}
+.dist-input:focus{outline:none;border-color:var(--listening)}
+.dist-input.pc{border-color:var(--correct);background:var(--correct-bg)}
+.dist-input.pw{border-color:var(--wrong);background:var(--wrong-bg)}
+.dist-ans{font-size:.82rem;font-weight:600;color:var(--correct);display:none;margin-top:4px}
+.dist-ans.show{display:block}
+.dist-row.pc{background:var(--correct-bg)}
+.dist-row.pw{background:var(--wrong-bg)}
+@media(max-width:600px){.dist-input{width:80px}}
+</style>
+</head>
+<body data-depth="3" data-active="listening">
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+<div id="app"></div>
+<script>
+const CAT_LABELS={shopping:'🛒 Shopping',consumer:'💳 Consumer',paraphrase:'🔄 Paraphrase',exam:'📝 Exam'};
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/listening.js"></script>
+<script>
+renderListeningPage({
+  title: 'Identify Distractors — Consumerism',
+  sub: 'IELTS Listening — Section 2 — Mindset Unit 5',
+  guideWhat: 'Identify Distractors',
+  practiceTab: { audioSrc: '../../../../assets/audio/Mindset_L1_41.mp3' },
+  phrasesIntro: "Learn to spot signal phrases that introduce correct answers vs distractors. These patterns repeat across all IELTS listening tests."
+});
+
+let PRACTICE={};
+
+function renderPractice(){
+  const P=PRACTICE;if(!P.questions)return;
+  let html=`<div class="card">
+    <div class="practice-title">${P.title}</div>
+    <p class="practice-instruction">${P.instruction}</p>
+  </div>
+  <table class="dist-table">
+    <thead><tr><th></th><th>Question</th><th>Your Answer</th><th>Distractors</th></tr></thead>
+    <tbody>`;
+  P.questions.forEach(q=>{
+    const nDist=q.distractors.length;
+    html+=`<tr class="dist-row" id="dr-${q.q}">
+      <td>${q.q}</td>
+      <td><div class="dist-qtext">${q.text}</div></td>
+      <td>
+        <input class="dist-input" id="pa-${q.q}" autocomplete="off" spellcheck="false" placeholder="answer">
+        <div class="dist-ans" id="pans-${q.q}"></div>
+      </td>
+      <td>
+        <div class="dist-inputs">`;
+    for(let i=0;i<nDist;i++){
+      html+=`<input class="dist-input" id="pd-${q.q}-${i}" autocomplete="off" spellcheck="false" placeholder="distractor ${i+1}">`;
+    }
+    html+=`</div>
+        <div class="dist-ans" id="dans-${q.q}"></div>
+      </td>
+    </tr>`;
+  });
+  html+=`</tbody></table>`;
+  document.getElementById('practice-content').innerHTML=html;
+  document.getElementById('practice-score').className='practice-score';
+  document.getElementById('practice-score').textContent='';
+  document.getElementById('pcheck').style.display='inline-block';
+  document.getElementById('preset').style.display='none';
+}
+
+function checkPractice(){
+  const allQ=PRACTICE.questions;
+  let score=0,total=0;
+  allQ.forEach(q=>{
+    const row=document.getElementById(`dr-${q.q}`);
+    const inp=document.getElementById(`pa-${q.q}`);
+    const ansEl=document.getElementById(`pans-${q.q}`);
+    const dansEl=document.getElementById(`dans-${q.q}`);
+    // Check answer
+    total++;
+    const val=normalize(inp.value);
+    const correct=normalize(q.answer);
+    const alts=(q.altAnswers||[]).map(a=>normalize(a));
+    const ok=val===correct||alts.includes(val);
+    if(ok)score++;
+    inp.disabled=true;
+    inp.classList.add(ok?'pc':'pw');
+    if(!ok){ansEl.textContent='✓ '+q.answer;ansEl.classList.add('show');}
+    // Check distractors
+    let dOk=true;
+    const userDist=[];
+    for(let i=0;i<q.distractors.length;i++){
+      const di=document.getElementById(`pd-${q.q}-${i}`);
+      if(di){userDist.push(normalize(di.value));di.disabled=true;}
+    }
+    const expectedDist=q.distractors.map(d=>normalize(d));
+    // Match any order
+    const matched=new Set();
+    userDist.forEach((ud,i)=>{
+      const di=document.getElementById(`pd-${q.q}-${i}`);
+      const idx=expectedDist.findIndex((ed,j)=>!matched.has(j)&&ud===ed);
+      if(idx>=0){matched.add(idx);di.classList.add('pc');score++;} else {di.classList.add('pw');dOk=false;}
+      total++;
+    });
+    if(!dOk||matched.size<expectedDist.length){
+      dansEl.textContent='✓ '+q.distractors.join(', ');dansEl.classList.add('show');
+    }
+    row.classList.add((ok&&matched.size===expectedDist.length)?'pc':'pw');
+  });
+  const el=document.getElementById('practice-score');
+  el.textContent=`${score} / ${total} correct`+(score===total?' 🎉':'');
+  el.className='practice-score show '+(score>=total*0.7?'good':'bad');
+  document.getElementById('pcheck').style.display='none';
+  document.getElementById('preset').style.display='inline-block';
+}
+
+function resetPractice(){renderPractice();}
+
+DataLayer.getLesson('listening','identify-distractors').then(data=>{
+  PRACTICE=data.practice||{};
+  initListening(data);
+  renderPractice();
+});
+</script>
+</body>
+</html>

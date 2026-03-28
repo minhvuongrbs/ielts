@@ -3031,5 +3031,556 @@
     "category": "propagation",
     "skill": "reading",
     "section": "complete-gardening-handbook"
+  },
+
+  {
+    "word": "arena",
+    "pos": "noun",
+    "vietnamese": "sân vận động, nhà thi đấu",
+    "definition": "A large enclosed area used for sports events or concerts.",
+    "example": "The Arena is the main concert venue in the building.",
+    "category": "venue",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "exhibition centre",
+    "pos": "noun",
+    "vietnamese": "trung tâm triển lãm",
+    "definition": "A large building used for public displays of art, products, or information.",
+    "example": "There used to be a cinema here, but they moved it and finished building the exhibition centre.",
+    "category": "venue",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "venue",
+    "pos": "noun",
+    "vietnamese": "địa điểm tổ chức",
+    "definition": "A place where an event or activity takes place.",
+    "example": "The Arena isn't just a concert venue — there are also shops and restaurants.",
+    "category": "venue",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "fountain",
+    "pos": "noun",
+    "vietnamese": "đài phun nước",
+    "definition": "A decorative structure that sends water into the air.",
+    "example": "As you walk through the main entrance, you come to a square with a big fountain.",
+    "category": "venue",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "square",
+    "pos": "noun",
+    "vietnamese": "quảng trường",
+    "definition": "An open public area in a town, usually with buildings around it.",
+    "example": "The square with the fountain is where people usually arrange to meet up.",
+    "category": "venue",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "convenient",
+    "pos": "adjective",
+    "vietnamese": "thuận tiện",
+    "definition": "Easy to use or well-suited for a purpose; causing no difficulty.",
+    "example": "You can go straight out into the car park, which is very convenient.",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "tempting",
+    "pos": "adjective",
+    "vietnamese": "hấp dẫn, cám dỗ",
+    "definition": "Attractive or appealing, making you want to do something.",
+    "example": "The shopping centre can be a bit tempting, but there's no other way to get to the Arena.",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "arrangements",
+    "pos": "noun",
+    "vietnamese": "sự sắp xếp, kế hoạch",
+    "definition": "Plans or preparations made for a future event.",
+    "example": "I'm calling to make arrangements for the concert on Saturday.",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "distractor",
+    "pos": "noun",
+    "vietnamese": "thông tin gây nhiễu",
+    "definition": "Wrong information designed to confuse you in a listening test.",
+    "example": "Watch out for distractors like 'there used to be a cinema here' — the cinema has moved.",
+    "category": "direction",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "avenue",
+    "pos": "noun",
+    "vietnamese": "đại lộ",
+    "definition": "A wide street or road, often with trees on each side.",
+    "example": "Walk along Main Avenue to reach the coffee shop at the end.",
+    "category": "venue",
+    "skill": "listening",
+    "section": "map-labeling"
+  },
+  {
+    "word": "sharp right",
+    "pos": "noun phrase",
+    "vietnamese": "rẽ phải gấp",
+    "definition": "A sudden or tight turn to the right.",
+    "example": "Take a sharp right onto Main Street.",
+    "category": "direction",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "first turning",
+    "pos": "noun phrase",
+    "vietnamese": "lối rẽ đầu tiên",
+    "definition": "The first road or junction where you can turn off the current road.",
+    "example": "Take the first turning on the left onto Silver Street.",
+    "category": "direction",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "straight ahead",
+    "pos": "adverb phrase",
+    "vietnamese": "đi thẳng phía trước",
+    "definition": "Continuing forward without turning.",
+    "example": "Go straight ahead until you reach the roundabout.",
+    "category": "direction",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "drive along",
+    "pos": "phrasal verb",
+    "vietnamese": "lái xe dọc theo",
+    "definition": "To travel in a vehicle along a road for some distance.",
+    "example": "Drive along New Road until you reach the bridge.",
+    "category": "direction",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "go past",
+    "pos": "phrasal verb",
+    "vietnamese": "đi qua",
+    "definition": "To continue beyond something without stopping.",
+    "example": "Go past the supermarket on your left.",
+    "category": "direction",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "roundabout",
+    "pos": "noun",
+    "vietnamese": "vòng xuyến, bùng binh",
+    "definition": "A circular junction where roads meet and traffic flows around a central island.",
+    "example": "Follow the road to the roundabout, then go straight ahead.",
+    "category": "road-feature",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "crossroads",
+    "pos": "noun",
+    "vietnamese": "ngã tư",
+    "definition": "A place where two or more roads cross each other.",
+    "example": "As you approach the crossroads, my house is the first on the corner.",
+    "category": "road-feature",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "zebra crossing",
+    "pos": "noun",
+    "vietnamese": "vạch sang đường (vạch ngựa vằn)",
+    "definition": "A marked area of road with black and white stripes where pedestrians have priority to cross.",
+    "example": "After the zebra crossing, take the first turning on your left.",
+    "category": "road-feature",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "traffic lights",
+    "pos": "noun",
+    "vietnamese": "đèn giao thông",
+    "definition": "Coloured signals (red, amber, green) at a road junction that control traffic flow.",
+    "example": "Turn left at the traffic lights and then take a sharp right.",
+    "category": "road-feature",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "bridge",
+    "pos": "noun",
+    "vietnamese": "cây cầu",
+    "definition": "A structure carrying a road or path over a river, railway, or other obstacle.",
+    "example": "Drive along New Road until you reach the bridge.",
+    "category": "landmark",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "surgery",
+    "pos": "noun",
+    "vietnamese": "phòng khám (Anh-Anh)",
+    "definition": "A doctor's office or clinic (British English).",
+    "example": "You can also go straight on here, past the surgery.",
+    "category": "landmark",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "corner",
+    "pos": "noun",
+    "vietnamese": "góc đường, ngã rẽ",
+    "definition": "The point where two streets or sides of a building meet.",
+    "example": "My house is number 1. It's on the corner.",
+    "category": "road-feature",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "route",
+    "pos": "noun",
+    "vietnamese": "tuyến đường, lộ trình",
+    "definition": "A way or course taken to get from one place to another.",
+    "example": "Forget the route I just gave you, I'll give you another set of directions.",
+    "category": "navigation",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "collect",
+    "pos": "verb",
+    "vietnamese": "đón (ai đó)",
+    "definition": "To go somewhere to pick someone up.",
+    "example": "I told Sarah you would collect her on the way.",
+    "category": "navigation",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "approach",
+    "pos": "verb",
+    "vietnamese": "tiến gần đến",
+    "definition": "To come near or nearer to a place.",
+    "example": "As you approach the crossroads, my house is the first on the corner.",
+    "category": "navigation",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "distractor",
+    "pos": "noun",
+    "vietnamese": "thông tin gây nhiễu",
+    "definition": "Information in a listening test designed to mislead you from the correct answer.",
+    "example": "The speaker said 'You can also go straight on here' — that was a distractor.",
+    "category": "navigation",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "label",
+    "pos": "verb",
+    "vietnamese": "ghi nhãn, đánh dấu",
+    "definition": "To write a name or description on a map or diagram.",
+    "example": "Listen to the directions and label the map with the correct letters.",
+    "category": "navigation",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "pond",
+    "pos": "noun",
+    "vietnamese": "ao nước",
+    "definition": "A small body of still water, often found in parks or gardens.",
+    "example": "There's a small pond near the school on the map.",
+    "category": "landmark",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "on your left",
+    "pos": "prepositional phrase",
+    "vietnamese": "ở bên trái của bạn",
+    "definition": "Located to the left side of the direction you are facing or moving.",
+    "example": "Turn right, with the park on your left.",
+    "category": "direction",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "on your right",
+    "pos": "prepositional phrase",
+    "vietnamese": "ở bên phải của bạn",
+    "definition": "Located to the right side of the direction you are facing or moving.",
+    "example": "Sarah's house is the second house after the bridge, on the right.",
+    "category": "direction",
+    "skill": "listening",
+    "section": "following-directions"
+  },
+  {
+    "word": "supermarket",
+    "pos": "noun",
+    "vietnamese": "siêu thị",
+    "definition": "A large shop selling food, drinks, and household goods.",
+    "example": "I do my weekly shopping at the supermarket near my house.",
+    "category": "shopping",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "shopping centre",
+    "pos": "noun",
+    "vietnamese": "trung tâm mua sắm",
+    "definition": "A large building or group of buildings containing many different shops.",
+    "example": "The shopping centre has over fifty different shops under one roof.",
+    "category": "shopping",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "department store",
+    "pos": "noun",
+    "vietnamese": "cửa hàng bách hóa",
+    "definition": "A large shop divided into departments, each selling different types of goods.",
+    "example": "You can buy clothes, furniture, and electronics all in the department store.",
+    "category": "shopping",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "outdoor market",
+    "pos": "noun",
+    "vietnamese": "chợ ngoài trời",
+    "definition": "A market where goods are sold from open stalls, usually outside.",
+    "example": "I love buying fresh vegetables from the outdoor market on Saturdays.",
+    "category": "shopping",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "branch",
+    "pos": "noun",
+    "vietnamese": "chi nhánh",
+    "definition": "A local office or shop that is part of a larger company or organisation.",
+    "example": "A new branch of Sports World is opening in the east of the town.",
+    "category": "shopping",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "browse",
+    "pos": "verb",
+    "vietnamese": "xem qua, lướt xem",
+    "definition": "To look at goods in a shop without intending to buy immediately.",
+    "example": "I like to browse the clothing stalls at the market before deciding what to buy.",
+    "category": "consumer",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "purchase",
+    "pos": "verb",
+    "vietnamese": "mua, tậu",
+    "definition": "To buy something, especially something expensive or important.",
+    "example": "She decided to purchase a new pair of designer shoes at the sale.",
+    "category": "consumer",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "reduce",
+    "pos": "verb",
+    "vietnamese": "giảm (giá)",
+    "definition": "To make something smaller or less, especially a price.",
+    "example": "They are reducing all prices this weekend only.",
+    "category": "consumer",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "recommend",
+    "pos": "verb",
+    "vietnamese": "giới thiệu, đề xuất",
+    "definition": "To suggest that something is good or suitable for a purpose.",
+    "example": "The tour guide recommends buying tea from the local teashops.",
+    "category": "consumer",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "complain",
+    "pos": "verb",
+    "vietnamese": "phàn nàn, khiếu nại",
+    "definition": "To say that you are not satisfied with something.",
+    "example": "Many tourists complained about the quality of the cheap cameras.",
+    "category": "consumer",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "selection",
+    "pos": "noun",
+    "vietnamese": "sự lựa chọn, bộ sưu tập",
+    "definition": "A range of different things available to choose from.",
+    "example": "You'll find a good selection of styles and colours in our footwear department.",
+    "category": "paraphrase",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "footwear",
+    "pos": "noun",
+    "vietnamese": "giày dép",
+    "definition": "Things worn on the feet, such as shoes and boots.",
+    "example": "There is a whole hall devoted to footwear — every kind of shoe and boot you can imagine.",
+    "category": "paraphrase",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "convenient",
+    "pos": "adjective",
+    "vietnamese": "thuận tiện",
+    "definition": "Easy to use, near, or suitable for what you need.",
+    "example": "The market is very convenient because it's not far from where I live.",
+    "category": "paraphrase",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "atmosphere",
+    "pos": "noun",
+    "vietnamese": "bầu không khí",
+    "definition": "The feeling or mood of a place.",
+    "example": "I love the atmosphere at Covent Garden — there are cafés and street performers.",
+    "category": "paraphrase",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "reasonable",
+    "pos": "adjective",
+    "vietnamese": "hợp lý, phải chăng",
+    "definition": "Not too expensive; fair in price.",
+    "example": "I sometimes find great designer shoes at very reasonable prices.",
+    "category": "paraphrase",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "affordable",
+    "pos": "adjective",
+    "vietnamese": "có thể chi trả được",
+    "definition": "Cheap enough for most people to buy.",
+    "example": "Seoul has wonderful original designs at affordable prices.",
+    "category": "paraphrase",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "original",
+    "pos": "adjective",
+    "vietnamese": "độc đáo, nguyên bản",
+    "definition": "New and different from anything done before; not a copy.",
+    "example": "I like shopping for really fun and original gifts for my friends.",
+    "category": "paraphrase",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "distractor",
+    "pos": "noun",
+    "vietnamese": "thông tin gây nhiễu",
+    "definition": "In IELTS listening, a word or phrase in the recording that sounds like a correct answer but is actually wrong.",
+    "example": "The speaker mentions 'north' and 'south' as distractors before giving the real answer: 'east'.",
+    "category": "exam",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "paraphrase",
+    "pos": "noun",
+    "vietnamese": "cách diễn đạt lại",
+    "definition": "A way of expressing the same meaning using different words.",
+    "example": "The question says 'shoes' but the recording uses the paraphrase 'footwear'.",
+    "category": "exam",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "synonym",
+    "pos": "noun",
+    "vietnamese": "từ đồng nghĩa",
+    "definition": "A word that has the same or similar meaning as another word.",
+    "example": "'Selection' and 'choice' are synonyms — they mean the same thing.",
+    "category": "exam",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "souvenir",
+    "pos": "noun",
+    "vietnamese": "quà lưu niệm",
+    "definition": "Something you buy or keep to remind you of a holiday or special event.",
+    "example": "If you want to buy souvenirs, you might find them cheaper near the hotel.",
+    "category": "shopping",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "special offer",
+    "pos": "noun",
+    "vietnamese": "ưu đãi đặc biệt",
+    "definition": "A product sold at a lower price than usual for a limited time.",
+    "example": "T-shirts and swimwear are on special offer this weekend.",
+    "category": "consumer",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "popular",
+    "pos": "adjective",
+    "vietnamese": "phổ biến, được ưa chuộng",
+    "definition": "Liked or enjoyed by many people.",
+    "example": "The jackets and shirts are still really popular, especially online.",
+    "category": "consumer",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "keen on",
+    "pos": "phrasal adjective",
+    "vietnamese": "thích, đam mê",
+    "definition": "Very interested in or enthusiastic about something.",
+    "example": "I'm keen on fashion and like to go clothes shopping whenever I can.",
+    "category": "paraphrase",
+    "skill": "listening",
+    "section": "identify-distractors"
+  },
+  {
+    "word": "out-of-the-way",
+    "pos": "adjective",
+    "vietnamese": "xa xôi, hẻo lánh",
+    "definition": "Far from the places where most people go; remote or hard to reach.",
+    "example": "I avoid the big malls because they're often out-of-the-way — you need a car to get to them.",
+    "category": "paraphrase",
+    "skill": "listening",
+    "section": "identify-distractors"
   }
 ]

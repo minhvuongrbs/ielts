@@ -1294,5 +1294,276 @@
     "section": "complete-gardening-handbook",
     "category": "planting",
     "vietnamese": "phát triển ổn định, bén rễ vững chắc"
+  },
+
+  {
+    "phrase": "As you walk through the [place]…",
+    "usage": "Giving directions by describing what someone will pass through — very common in IELTS Listening map tasks.",
+    "example": "As you walk through the main entrance, you come to a square with a big fountain.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "Khi bạn đi qua [nơi]…"
+  },
+  {
+    "phrase": "beyond the [place], on your [left/right]",
+    "usage": "Describing what is past a landmark, on a specific side — key for map labeling.",
+    "example": "Beyond the square, on your right, there are several restaurants.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "phía sau [nơi], bên [trái/phải] của bạn"
+  },
+  {
+    "phrase": "opposite these on your [left/right]",
+    "usage": "Describing something on the other side, facing the place just mentioned.",
+    "example": "On Main Avenue, there are restaurants, and opposite these on your left is an exhibition centre.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "đối diện chúng, bên [trái/phải] của bạn"
+  },
+  {
+    "phrase": "there used to be [X] here, but…",
+    "usage": "A distractor phrase — the speaker mentions a past feature that has changed. Don't choose the old answer!",
+    "example": "There used to be a cinema here, but they moved it when they finished building the arena.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "distractor",
+    "vietnamese": "trước đây có [X] ở đây, nhưng… (cẩn thận: thông tin gây nhiễu!)"
+  },
+  {
+    "phrase": "it's right at the end, after you pass [X]",
+    "usage": "Giving a location by describing what comes before it — a final position description.",
+    "example": "It's right at the end, after you pass the art gallery on the right.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "nó ngay ở cuối, sau khi bạn đi qua [X]"
+  },
+  {
+    "phrase": "there's no other way to get there",
+    "usage": "Indicating there is only one route — useful for understanding building layouts.",
+    "example": "You need to go through the shopping centre — there's no other way to get to the Arena.",
+    "skill": "listening",
+    "section": "map-labeling",
+    "category": "direction",
+    "vietnamese": "không có cách nào khác để đến đó"
+  },
+  {
+    "phrase": "Turn right onto [street name].",
+    "usage": "Giving directions to change direction and enter a named street.",
+    "example": "Turn right onto Maple Avenue and drive to the bottom of the road.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "direction",
+    "vietnamese": "Rẽ phải vào [tên đường]."
+  },
+  {
+    "phrase": "Drive to the bottom of the road.",
+    "usage": "Telling someone to continue to the end of a road.",
+    "example": "Turn right onto Maple Avenue and drive to the bottom of the road.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "direction",
+    "vietnamese": "Lái xe đến cuối đường."
+  },
+  {
+    "phrase": "Pass the [landmark] on your left/right.",
+    "usage": "Describing a landmark you will see on one side as you travel.",
+    "example": "Drive to the bottom of the road, passing the supermarket on your left.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "direction",
+    "vietnamese": "Đi qua [địa điểm] ở bên trái/phải của bạn."
+  },
+  {
+    "phrase": "Turn left at the traffic lights.",
+    "usage": "Using traffic lights as a reference point for changing direction.",
+    "example": "Turn left at the traffic lights and then take a sharp right onto Main Street.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "direction",
+    "vietnamese": "Rẽ trái ở đèn giao thông."
+  },
+  {
+    "phrase": "Follow the road to the roundabout.",
+    "usage": "Telling someone to stay on the current road until they reach a roundabout.",
+    "example": "Follow this road until you reach a roundabout — you'll pass a park and some shops.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "direction",
+    "vietnamese": "Đi theo con đường đến vòng xuyến."
+  },
+  {
+    "phrase": "Take the first turning on the left/right.",
+    "usage": "Directing someone to turn at the next available side road.",
+    "example": "When you get to the roundabout, take the first turning on the left, onto Silver Street.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "direction",
+    "vietnamese": "Rẽ ở lối rẽ đầu tiên bên trái/phải."
+  },
+  {
+    "phrase": "It's the second house after the bridge, on the right.",
+    "usage": "Identifying a specific house by its position relative to a landmark.",
+    "example": "Drive along New Road until you reach the bridge. Sarah's house is the second house after the bridge. That's on the right.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "direction",
+    "vietnamese": "Đó là ngôi nhà thứ hai sau cây cầu, bên phải."
+  },
+  {
+    "phrase": "Instead of turning left here, turn right.",
+    "usage": "Correcting a direction — a common distractor pattern in IELTS listening.",
+    "example": "Instead of turning left here, turn right, with the park on your left.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "distractor",
+    "vietnamese": "Thay vì rẽ trái ở đây, hãy rẽ phải."
+  },
+  {
+    "phrase": "Forget the route I just gave you.",
+    "usage": "The speaker corrects themselves and gives new directions — listen carefully for the updated information.",
+    "example": "Sorry, I've just remembered I told Sarah you would collect her. Forget the route I just gave you.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "distractor",
+    "vietnamese": "Quên đường đi tôi vừa chỉ cho bạn."
+  },
+  {
+    "phrase": "You can also go straight on here.",
+    "usage": "The speaker mentions an alternative route — this is often a distractor, not the answer.",
+    "example": "You can also go straight on here, past the surgery, but I usually drive down Main Street.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "distractor",
+    "vietnamese": "Bạn cũng có thể đi thẳng ở đây."
+  },
+  {
+    "phrase": "Go straight ahead at the roundabout.",
+    "usage": "Telling someone to pass through a roundabout without turning.",
+    "example": "Go straight ahead until you reach the roundabout. Go straight ahead at the roundabout.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "direction",
+    "vietnamese": "Đi thẳng qua vòng xuyến."
+  },
+  {
+    "phrase": "My house is number 1. It's on the corner.",
+    "usage": "Identifying a house by its number and position at a corner.",
+    "example": "Take the first turning on the right, Oak Avenue. My house is number 1. It's on the corner.",
+    "skill": "listening",
+    "section": "following-directions",
+    "category": "direction",
+    "vietnamese": "Nhà tôi số 1. Nó ở góc đường."
+  },
+  {
+    "phrase": "they have finally decided to...",
+    "usage": "Signals the correct answer after distractors have been mentioned.",
+    "example": "There was talk of opening in the north, but they have finally decided to open in the east.",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "answer-signal",
+    "vietnamese": "cuối cùng họ đã quyết định..."
+  },
+  {
+    "phrase": "There was talk of... but...",
+    "usage": "Introduces a distractor (something considered but not chosen). The correct answer comes after 'but'.",
+    "example": "There was talk of them opening in the north, but they have finally decided to open in the east.",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "distractor-signal",
+    "vietnamese": "Có bàn luận về... nhưng..."
+  },
+  {
+    "phrase": "A word of warning...",
+    "usage": "The speaker gives a caution. The item mentioned after this is usually NOT the correct answer.",
+    "example": "A word of warning, you'll find cheap cameras at really low prices, but we've had complaints.",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "distractor-signal",
+    "vietnamese": "Xin lưu ý..."
+  },
+  {
+    "phrase": "but in the shop itself...",
+    "usage": "Contrasts online vs in-store. Signals a shift to the correct answer about what sells most in-store.",
+    "example": "Jackets and shirts are popular online, but in the shop itself, we sell trousers more than any other item.",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "answer-signal",
+    "vietnamese": "nhưng ở trong cửa hàng thì..."
+  },
+  {
+    "phrase": "you might find... but...",
+    "usage": "Introduces an option that is NOT the best one. The real recommendation comes after 'but'.",
+    "example": "You might find souvenirs cheaper near the hotel, but there are plenty of teashops nearby.",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "distractor-signal",
+    "vietnamese": "bạn có thể tìm thấy... nhưng..."
+  },
+  {
+    "phrase": "Don't miss our... sale!",
+    "usage": "A common phrase in shopping announcements about discounts.",
+    "example": "Whatever you do, don't miss our Summer Sale. This weekend only!",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "shopping",
+    "vietnamese": "Đừng bỏ lỡ đợt giảm giá... của chúng tôi!"
+  },
+  {
+    "phrase": "we're reducing all our prices",
+    "usage": "Announces a sale event. Useful for understanding shopping context in Section 2.",
+    "example": "This weekend only, we're reducing all our prices right across our store.",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "shopping",
+    "vietnamese": "chúng tôi đang giảm tất cả giá"
+  },
+  {
+    "phrase": "but we've had a lot of complaints",
+    "usage": "Signals a warning — the item mentioned before this phrase is NOT recommended.",
+    "example": "Cameras at really low prices, but we've had a lot of complaints from tourists.",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "distractor-signal",
+    "vietnamese": "nhưng chúng tôi đã nhận được nhiều phàn nàn"
+  },
+  {
+    "phrase": "it's very convenient because...",
+    "usage": "Explains why a place is easy to visit. Common when describing shopping locations.",
+    "example": "The market is very convenient because it isn't far from where I live.",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "shopping",
+    "vietnamese": "rất thuận tiện vì..."
+  },
+  {
+    "phrase": "under one roof",
+    "usage": "Means everything is in the same building. Paraphrase for 'in one building'.",
+    "example": "There were at least fifty different shops all under one roof.",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "paraphrase",
+    "vietnamese": "dưới một mái nhà (trong cùng một tòa nhà)"
+  },
+  {
+    "phrase": "at really low prices",
+    "usage": "Describes cheap items, but can be a warning signal — cheap may mean low quality.",
+    "example": "You'll find cameras at really low prices, but we've had a lot of complaints.",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "shopping",
+    "vietnamese": "với giá rất thấp"
+  },
+  {
+    "phrase": "more than any other item",
+    "usage": "Signals the most popular product. Directly answers 'what is the most popular?' questions.",
+    "example": "In the shop itself, we sell trousers more than any other item.",
+    "skill": "listening",
+    "section": "identify-distractors",
+    "category": "answer-signal",
+    "vietnamese": "nhiều hơn bất kỳ mặt hàng nào khác"
   }
 ]
