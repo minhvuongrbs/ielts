@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7 Reading Skills — IELTS Hub</title>
+<link rel="stylesheet" href="../../shared/styles.css">
+<style>
+.container{max-width:800px}
+
+/* Hero */
+.page-hero{text-align:center;padding:48px 20px 24px}
+.page-hero .icon{font-size:2.4rem;margin-bottom:12px}
+.page-hero h1{font-family:'Fraunces',serif;font-weight:700;font-size:2rem;letter-spacing:-.02em;margin-bottom:8px}
+.page-hero h1 span{color:var(--reading)}
+.page-hero p{font-size:.95rem;color:#8a7a66;max-width:540px;margin:0 auto}
+
+/* Progress bar */
+.progress-wrap{margin:20px auto 0;max-width:360px;text-align:center}
+.progress-bar{height:8px;background:#e8e2d8;border-radius:4px;overflow:hidden;margin-top:8px}
+.progress-fill{height:100%;background:var(--reading);border-radius:4px;width:0;transition:width .5s ease}
+.progress-text{font-size:.82rem;font-weight:600;color:var(--reading)}
+
+/* Sticky nav */
+.skill-nav{position:sticky;top:48px;z-index:90;background:var(--bg);padding:10px 0;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;border-bottom:1px solid rgba(0,0,0,.06)}
+.snav-btn{width:38px;height:38px;border-radius:50%;border:2px solid #ddd;background:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:.85rem;cursor:pointer;transition:all .2s;color:#999;display:flex;align-items:center;justify-content:center}
+.snav-btn:hover{border-color:var(--reading);color:var(--reading)}
+.snav-btn.active{border-color:var(--reading);background:var(--reading);color:#fff}
+.snav-btn.done{border-color:var(--correct);background:var(--correct-bg);color:var(--correct)}
+
+/* Skill sections */
+.skill-block{margin:36px 0;padding:32px 28px;background:#fff;border-radius:var(--r);box-shadow:var(--shadow);border-left:5px solid var(--reading)}
+.skill-head{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.skill-num{width:42px;height:42px;border-radius:50%;background:var(--reading);color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.skill-emoji{font-size:1.6rem}
+.skill-info{flex:1}
+.skill-info h2{font-family:'Fraunces',serif;font-weight:700;font-size:1.35rem;margin:0;line-height:1.2}
+.skill-info .tagline{font-size:.85rem;color:#8a7a66;font-style:italic;margin-top:2px}
+.skill-section-tag{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 8px;border-radius:8px;background:var(--reading);color:#fff;opacity:.7;margin-left:auto;white-space:nowrap}
+
+/* Vietnamese toggle */
+.vi-toggle{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;color:var(--vi);cursor:pointer;margin-bottom:12px;user-select:none;font-weight:600}
+.vi-toggle input{display:none}
+.vi-dot{width:32px;height:18px;background:#ddd;border-radius:9px;position:relative;transition:background .2s}
+.vi-dot::after{content:'';position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#fff;transition:transform .2s}
+.vi-toggle input:checked~.vi-dot{background:var(--vi)}
+.vi-toggle input:checked~.vi-dot::after{transform:translateX(14px)}
+
+/* Content */
+.skill-what{font-size:.92rem;line-height:1.65;color:#4a3f30;margin-bottom:14px}
+.skill-vi{font-size:.88rem;color:var(--vi);font-style:italic;line-height:1.6;margin-bottom:14px;display:none}
+.show-vi .skill-vi{display:block}
+
+/* Why section */
+.why-list{list-style:none;padding:0;margin:0 0 16px}
+.why-list li{padding:6px 0 6px 28px;position:relative;font-size:.88rem;line-height:1.5}
+.why-list li::before{content:'💡';position:absolute;left:0;top:6px;font-size:.75rem}
+.why-list .vi{color:var(--vi);font-style:italic;font-size:.82rem;display:none}
+.show-vi .why-list .vi{display:block}
+
+/* Steps */
+.steps-title{font-family:'Fraunces',serif;font-weight:700;font-size:1rem;margin:18px 0 10px;color:var(--reading)}
+.step-list{list-style:none;padding:0;margin:0 0 16px;counter-reset:step}
+.step-list li{counter-increment:step;padding:8px 0 8px 40px;position:relative;font-size:.88rem;line-height:1.5}
+.step-list li::before{content:counter(step);position:absolute;left:0;top:6px;width:26px;height:26px;border-radius:50%;background:var(--reading-bg);color:var(--reading);font-weight:700;font-size:.78rem;display:flex;align-items:center;justify-content:center}
+.step-list .vi{color:var(--vi);font-style:italic;font-size:.82rem;display:none}
+.show-vi .step-list .vi{display:block}
+
+/* Exam tip */
+.exam-tip{background:var(--reading-bg);border-radius:10px;padding:14px 18px;margin:16px 0;border-left:4px solid var(--reading)}
+.exam-tip-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--reading);margin-bottom:4px}
+.exam-tip p{font-size:.85rem;line-height:1.55;margin:0;color:#3a5a3a}
+.exam-tip .vi{color:var(--vi);font-style:italic;font-size:.82rem;display:none;margin-top:6px}
+.show-vi .exam-tip .vi{display:block}
+
+/* Practice area */
+.practice-area{margin-top:24px;padding:20px;background:#fef9f3;border-radius:10px;border:2px dashed var(--accent-light)}
+.practice-label{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;color:var(--accent);margin-bottom:4px}
+.practice-instruction{font-size:.85rem;color:#6b5e4f;line-height:1.5;margin-bottom:14px}
+.practice-instruction .vi{color:var(--vi);font-style:italic;display:none}
+.show-vi .practice-instruction .vi{display:block}
+
+/* Buttons */
+.btn-start{padding:10px 24px;border-radius:20px;border:none;background:var(--reading);color:#fff;font-weight:700;font-size:.88rem;cursor:pointer;transition:all .2s}
+.btn-start:hover{background:#2d6e49;transform:scale(1.03)}
+.btn-check{padding:8px 20px;border-radius:16px;border:2px solid var(--reading);background:#fff;color:var(--reading);font-weight:700;font-size:.85rem;cursor:pointer;transition:all .2s;margin-top:12px}
+.btn-check:hover{background:var(--reading);color:#fff}
+.btn-reset{padding:6px 14px;border-radius:12px;border:1px solid #ddd;background:#fff;color:#999;font-size:.78rem;cursor:pointer;margin-left:8px}
+.btn-reset:hover{border-color:#999;color:#666}
+
+/* Timer */
+.timer-bar{height:6px;background:#e8e2d8;border-radius:3px;margin:12px 0;overflow:hidden}
+.timer-fill{height:100%;background:var(--reading);border-radius:3px;transition:width .1s linear}
+.timer-text{font-size:.78rem;font-weight:700;color:var(--reading);text-align:center}
+
+/* Passage display */
+.passage-box{background:#fff;border-radius:8px;padding:16px;font-size:.88rem;line-height:1.7;margin:12px 0;border:1px solid #e8e2d8;max-height:300px;overflow-y:auto}
+
+/* MCQ options */
+.mcq-list{list-style:none;padding:0;margin:12px 0}
+.mcq-item{padding:10px 14px;margin:6px 0;border-radius:10px;border:2px solid #e8e2d8;background:#fff;cursor:pointer;font-size:.85rem;transition:all .2s;line-height:1.4}
+.mcq-item:hover{border-color:var(--reading);background:var(--reading-bg)}
+.mcq-item.selected{border-color:var(--reading);background:var(--reading-bg);font-weight:600}
+.mcq-item.correct{border-color:var(--correct);background:var(--correct-bg);color:var(--correct)}
+.mcq-item.wrong{border-color:var(--wrong);background:var(--wrong-bg);color:var(--wrong)}
+.mcq-item .vi{color:var(--vi);font-style:italic;font-size:.8rem;display:none}
+.show-vi .mcq-item .vi{display:block}
+
+/* Explanation popup */
+.explanation{display:none;padding:10px 14px;border-radius:8px;font-size:.82rem;line-height:1.5;margin-top:8px}
+.explanation.show{display:block}
+.explanation.right{background:var(--correct-bg);color:#2d6e3a;border-left:3px solid var(--correct)}
+.explanation.wrong-exp{background:var(--wrong-bg);color:#993328;border-left:3px solid var(--wrong)}
+.explanation .vi{color:var(--vi);font-style:italic;display:none}
+.show-vi .explanation .vi{display:block}
+
+/* Odd-one-out items */
+.ooo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;margin:12px 0}
+.ooo-item{padding:10px 14px;border-radius:10px;border:2px solid #e8e2d8;background:#fff;cursor:pointer;font-size:.84rem;transition:all .2s;text-align:center}
+.ooo-item:hover{border-color:var(--reading)}
+.ooo-item.selected{border-color:var(--accent);background:var(--accent-light);font-weight:600}
+.ooo-item.correct{border-color:var(--correct);background:var(--correct-bg)}
+.ooo-item.wrong{border-color:var(--wrong);background:var(--wrong-bg)}
+.ooo-item .vi{color:var(--vi);font-size:.78rem;font-style:italic;display:none}
+.show-vi .ooo-item .vi{display:block}
+
+/* Fill-in scanning */
+.scan-q{margin:10px 0;font-size:.85rem}
+.scan-q label{font-weight:600}
+.scan-input{border:none;border-bottom:2px solid var(--accent);padding:4px 8px;font-size:.85rem;font-family:inherit;width:200px;background:transparent;margin-left:6px}
+.scan-input.correct{border-color:var(--correct);color:var(--correct)}
+.scan-input.wrong{border-color:var(--wrong);color:var(--wrong)}
+
+/* Sort game */
+.sort-passage{background:#fff;border-radius:8px;padding:12px;font-size:.85rem;line-height:1.6;margin-bottom:14px;border:1px solid #e8e2d8}
+.sort-items{display:flex;flex-direction:column;gap:8px;margin:12px 0}
+.sort-item{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:2px solid #e8e2d8;background:#fff;cursor:pointer;font-size:.84rem;transition:all .2s}
+.sort-item:hover{border-color:var(--reading)}
+.sort-badge{padding:3px 10px;border-radius:12px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;min-width:60px;text-align:center;transition:all .2s}
+.sort-badge.main{background:var(--reading-bg);color:var(--reading)}
+.sort-badge.detail{background:var(--accent-light);color:var(--accent)}
+.sort-badge.unset{background:#f0ebe3;color:#999}
+.sort-item.correct{border-color:var(--correct);background:var(--correct-bg)}
+.sort-item.wrong{border-color:var(--wrong);background:var(--wrong-bg)}
+.sort-item .vi{color:var(--vi);font-size:.78rem;font-style:italic;display:none;margin-left:auto}
+.show-vi .sort-item .vi{display:block}
+
+/* Fact/Opinion items */
+.fo-item{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:2px solid #e8e2d8;background:#fff;margin:8px 0;font-size:.84rem;transition:all .2s;flex-wrap:wrap}
+.fo-btns{display:flex;gap:4px;margin-left:auto;flex-shrink:0}
+.fo-btn{padding:4px 10px;border-radius:10px;border:1px solid #ddd;background:#fff;font-size:.72rem;font-weight:700;cursor:pointer;transition:all .2s;text-transform:uppercase}
+.fo-btn:hover{border-color:var(--reading)}
+.fo-btn.active-fact{background:var(--reading-bg);color:var(--reading);border-color:var(--reading)}
+.fo-btn.active-opinion{background:#fef3e6;color:var(--listening);border-color:var(--listening)}
+.fo-btn.active-ng{background:#f0ebe3;color:#8a7a66;border-color:#8a7a66}
+.fo-item.correct{border-color:var(--correct);background:var(--correct-bg)}
+.fo-item.wrong{border-color:var(--wrong);background:var(--wrong-bg)}
+.fo-item .vi{width:100%;color:var(--vi);font-size:.78rem;font-style:italic;display:none}
+.show-vi .fo-item .vi{display:block}
+
+/* Match headings */
+.mh-para{background:#fff;border-radius:8px;padding:12px;margin:10px 0;border:1px solid #e8e2d8;font-size:.85rem;line-height:1.6}
+.mh-para-label{font-weight:700;color:var(--reading);margin-right:6px}
+.mh-select{padding:6px 10px;border:2px solid #e8e2d8;border-radius:8px;font-size:.82rem;font-family:inherit;cursor:pointer;margin-top:6px;max-width:100%}
+.mh-select.correct{border-color:var(--correct);background:var(--correct-bg)}
+.mh-select.wrong{border-color:var(--wrong);background:var(--wrong-bg)}
+
+/* Score */
+.score-bar{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;padding:10px;border-radius:10px;font-size:.88rem;font-weight:700}
+.score-bar.perfect{background:var(--correct-bg);color:var(--correct)}
+.score-bar.good{background:#fef3e6;color:var(--listening)}
+.score-bar.try{background:var(--wrong-bg);color:var(--wrong)}
+
+/* Mastered badge */
+.mastered{display:none;align-items:center;justify-content:center;gap:6px;padding:8px 16px;border-radius:20px;background:var(--correct-bg);color:var(--correct);font-weight:700;font-size:.85rem;margin-top:12px}
+.mastered.show{display:flex}
+
+/* Responsive */
+@media(max-width:600px){
+  .skill-block{padding:22px 18px}
+  .skill-head{flex-wrap:wrap;gap:8px}
+  .skill-section-tag{margin-left:0}
+  .ooo-grid{grid-template-columns:1fr}
+  .fo-item{flex-direction:column;align-items:flex-start}
+  .fo-btns{margin-left:0;margin-top:6px}
+  .page-hero h1{font-size:1.6rem}
+  .snav-btn{width:34px;height:34px;font-size:.78rem}
+}
+</style>
+</head>
+<body data-depth="2" data-active="reading">
+<nav id="nav"></nav>
+<script src="../../shared/nav.js"></script>
+
+<div class="page-hero">
+  <div class="icon">📖</div>
+  <h1><span>7 Reading</span> Skills</h1>
+  <p>Master these essential IELTS reading skills — from speed-reading to understanding what the writer really thinks.</p>
+  <div class="progress-wrap">
+    <span class="progress-text" id="progText">0 / 7 skills practised</span>
+    <div class="progress-bar"><div class="progress-fill" id="progFill"></div></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="skill-nav" id="skillNav"></div>
+
+  <label class="vi-toggle" style="display:flex;justify-content:flex-end;margin:8px 0">
+    <input type="checkbox" id="viToggle"> <span>🇻🇳 Tiếng Việt</span> <span class="vi-dot"></span>
+  </label>
+
+  <div id="skillsContainer"></div>
+</div>
+
+<script>
+/* State */
+let DATA = null;
+const completed = new Set();
+
+/* Vietnamese toggle */
+document.getElementById('viToggle').addEventListener('change', e => {
+  document.body.classList.toggle('show-vi', e.target.checked);
+});
+
+/* Progress */
+function updateProgress() {
+  const n = completed.size, t = DATA ? DATA.skills.length : 7;
+  document.getElementById('progText').textContent = n + ' / ' + t + ' skills practised';
+  document.getElementById('progFill').style.width = (n / t * 100) + '%';
+  // Update nav
+  document.querySelectorAll('.snav-btn').forEach(b => {
+    if (completed.has(+b.dataset.n)) b.classList.add('done');
+  });
+}
+
+/* Render nav */
+function renderNav(skills) {
+  const nav = document.getElementById('skillNav');
+  nav.innerHTML = skills.map(s =>
+    `<button class="snav-btn" data-n="${s.number}" onclick="document.getElementById('skill-${s.id}').scrollIntoView({behavior:'smooth',block:'start'})" title="${s.title}">${s.number}</button>`
+  ).join('');
+}
+
+/* Scroll spy */
+function initScrollSpy() {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        document.querySelectorAll('.snav-btn').forEach(b => b.classList.remove('active'));
+        const n = e.target.dataset.skillNum;
+        const btn = document.querySelector(`.snav-btn[data-n="${n}"]`);
+        if (btn) btn.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-100px 0px -60% 0px' });
+  document.querySelectorAll('.skill-block').forEach(el => obs.observe(el));
+}
+
+/* Render a skill section */
+function renderSkill(s) {
+  const el = document.createElement('section');
+  el.className = 'skill-block';
+  el.id = 'skill-' + s.id;
+  el.dataset.skillNum = s.number;
+
+  let html = `
+    <div class="skill-head">
+      <div class="skill-num">${s.number}</div>
+      <span class="skill-emoji">${s.emoji}</span>
+      <div class="skill-info">
+        <h2>${s.title}</h2>
+        <div class="tagline">${s.tagline} <span class="vi" style="display:none"> — ${s.taglineVi}</span></div>
+      </div>
+      <span class="skill-section-tag">${s.section}</span>
+    </div>
+
+    <div class="skill-what">${s.what}</div>
+    <div class="skill-vi">${s.whatVi}</div>
+
+    <ul class="why-list">
+      ${s.why.map(w => `<li>${w.en}<div class="vi">${w.vi}</div></li>`).join('')}
+    </ul>
+
+    <div class="steps-title">📋 IELTS Strategy</div>
+    <ol class="step-list">
+      ${s.steps.map(st => `<li>${st.en}<div class="vi">${st.vi}</div></li>`).join('')}
+    </ol>
+
+    <div class="exam-tip">
+      <div class="exam-tip-label">🎯 Exam Tip</div>
+      <p>${s.examTip}</p>
+      <div class="vi">${s.examTipVi}</div>
+    </div>
+
+    <div class="practice-area" id="practice-${s.id}">
+      <div class="practice-label">🎮 Practice Time!</div>
+      <div class="practice-instruction">${s.practice.instruction}<div class="vi">${s.practice.instructionVi || ''}</div></div>
+      <div class="practice-content"></div>
+    </div>
+
+    <div class="mastered" id="mastered-${s.id}">✅ Skill practised!</div>
+  `;
+  el.innerHTML = html;
+  document.getElementById('skillsContainer').appendChild(el);
+
+  // Render practice
+  const container = el.querySelector('.practice-content');
+  const p = s.practice;
+  switch (p.type) {
+    case 'timed-skim': renderTimedSkim(container, p, s); break;
+    case 'odd-one-out': renderOddOneOut(container, p, s); break;
+    case 'context-clue': renderContextClue(container, p, s); break;
+    case 'heading-match': renderHeadingMatch(container, p, s); break;
+    case 'match-headings': renderMatchHeadings(container, p, s); break;
+    case 'sort-statements': renderSortStatements(container, p, s); break;
+    case 'fact-opinion': renderFactOpinion(container, p, s); break;
+  }
+}
+
+/* === PRACTICE RENDERERS === */
+
+/* 1. Timed Skim */
+function renderTimedSkim(el, p, skill) {
+  el.innerHTML = `<button class="btn-start" id="skim-start">⏱ Start Timer (${p.timerSeconds}s)</button>
+    <div id="skim-content" style="display:none">
+      <div class="timer-text" id="skim-timer">${p.timerSeconds}s</div>
+      <div class="timer-bar"><div class="timer-fill" id="skim-bar" style="width:100%"></div></div>
+      <div class="passage-box" id="skim-passage">${p.passage.replace(/\n/g,'<br><br>')}</div>
+      <div id="skim-questions" style="display:none"></div>
+    </div>`;
+
+  let timer, timeLeft;
+  document.getElementById('skim-start').onclick = () => {
+    document.getElementById('skim-start').style.display = 'none';
+    document.getElementById('skim-content').style.display = 'block';
+    timeLeft = p.timerSeconds;
+    timer = setInterval(() => {
+      timeLeft--;
+      document.getElementById('skim-timer').textContent = timeLeft + 's';
+      document.getElementById('skim-bar').style.width = (timeLeft / p.timerSeconds * 100) + '%';
+      if (timeLeft <= 10) document.getElementById('skim-timer').style.color = 'var(--wrong)';
+      if (timeLeft <= 0) { clearInterval(timer); showSkimQuestions(); }
+    }, 1000);
+    // Also allow early finish
+    const doneBtn = document.createElement('button');
+    doneBtn.className = 'btn-check';
+    doneBtn.textContent = "✋ I'm done skimming!";
+    doneBtn.onclick = () => { clearInterval(timer); showSkimQuestions(); doneBtn.remove(); };
+    document.getElementById('skim-content').appendChild(doneBtn);
+  };
+
+  function showSkimQuestions() {
+    document.getElementById('skim-passage').style.maxHeight = '150px';
+    document.getElementById('skim-passage').style.opacity = '.5';
+    document.getElementById('skim-timer').textContent = "⏰ Time's up! Now answer:";
+    document.getElementById('skim-timer').style.color = 'var(--reading)';
+    document.getElementById('skim-bar').parentElement.style.display = 'none';
+    const qDiv = document.getElementById('skim-questions');
+    qDiv.style.display = 'block';
+    renderMCQSequence(qDiv, p.questions, skill);
+  }
+}
+
+/* MCQ sequence helper */
+function renderMCQSequence(container, questions, skill) {
+  let current = 0, score = 0;
+
+  function showQ(idx) {
+    if (idx >= questions.length) {
+      const pct = score / questions.length;
+      const cls = pct === 1 ? 'perfect' : pct >= 0.5 ? 'good' : 'try';
+      const msgs = { perfect: '🎉 Perfect!', good: '👍 Good job!', try: '💪 Keep practising!' };
+      container.innerHTML = `<div class="score-bar ${cls}">${msgs[cls]} ${score}/${questions.length} correct</div>`;
+      markDone(skill);
+      return;
+    }
+    const q = questions[idx];
+    container.innerHTML = `
+      <p style="font-weight:700;font-size:.9rem;margin:12px 0 4px">${q.q}</p>
+      <p class="vi" style="display:none;color:var(--vi);font-style:italic;font-size:.82rem">${q.qVi || ''}</p>
+      <ul class="mcq-list" id="mcq-list">
+        ${q.options.map((o, i) => `<li class="mcq-item" data-i="${i}">${o}${q.optionsVi ? '<div class="vi">' + q.optionsVi[i] + '</div>' : ''}</li>`).join('')}
+      </ul>
+      <div class="explanation" id="mcq-exp"></div>`;
+    container.querySelectorAll('.mcq-item').forEach(item => {
+      item.onclick = () => {
+        if (container.querySelector('.mcq-item.correct,.mcq-item.wrong')) return;
+        const chosen = +item.dataset.i;
+        if (chosen === q.answer) {
+          item.classList.add('correct');
+          score++;
+        } else {
+          item.classList.add('wrong');
+          container.querySelector(`.mcq-item[data-i="${q.answer}"]`).classList.add('correct');
+        }
+        if (q.explanation) {
+          const exp = document.getElementById('mcq-exp');
+          exp.className = 'explanation show ' + (chosen === q.answer ? 'right' : 'wrong-exp');
+          exp.innerHTML = (chosen === q.answer ? '✅ ' : '❌ ') + q.explanation + (q.explanationVi ? '<div class="vi">' + q.explanationVi + '</div>' : '');
+        }
+        setTimeout(() => showQ(idx + 1), 1800);
+      };
+    });
+  }
+  showQ(0);
+}
+
+/* 2. Odd One Out */
+function renderOddOneOut(el, p, skill) {
+  el.innerHTML = `
+    <div class="ooo-grid" id="ooo-grid">
+      ${p.items.map((it, i) => `<div class="ooo-item" data-i="${i}">${it.text}<div class="vi">${it.textVi}</div></div>`).join('')}
+    </div>
+    <button class="btn-check" id="ooo-check" disabled>Check Answer</button>
+    <div class="explanation" id="ooo-exp"></div>
+    ${p.bonus ? `<div id="ooo-bonus" style="display:none;margin-top:18px;padding-top:14px;border-top:1px dashed #ddd">
+      <div style="font-weight:700;font-size:.9rem;margin-bottom:8px">🔍 Bonus: ${p.bonus.instruction}</div>
+      <div class="vi" style="font-size:.82rem;color:var(--vi);font-style:italic;margin-bottom:10px">${p.bonus.instructionVi || ''}</div>
+      <div id="ooo-bonus-qs"></div>
+    </div>` : ''}`;
+
+  let selected = -1;
+  el.querySelectorAll('.ooo-item').forEach(item => {
+    item.onclick = () => {
+      el.querySelectorAll('.ooo-item').forEach(x => x.classList.remove('selected'));
+      item.classList.add('selected');
+      selected = +item.dataset.i;
+      document.getElementById('ooo-check').disabled = false;
+    };
+  });
+
+  document.getElementById('ooo-check').onclick = () => {
+    const oddIdx = p.items.findIndex(it => !it.isScan);
+    el.querySelectorAll('.ooo-item').forEach((item, i) => {
+      if (i === oddIdx) item.classList.add('correct');
+      else if (i === selected && i !== oddIdx) item.classList.add('wrong');
+    });
+    const exp = document.getElementById('ooo-exp');
+    exp.className = 'explanation show ' + (selected === oddIdx ? 'right' : 'wrong-exp');
+    exp.innerHTML = (selected === oddIdx ? '✅ Correct! ' : '❌ Not quite. ') + p.explanation + '<div class="vi">' + p.explanationVi + '</div>';
+    document.getElementById('ooo-check').disabled = true;
+
+    // Show bonus if exists
+    if (p.bonus) {
+      setTimeout(() => {
+        document.getElementById('ooo-bonus').style.display = 'block';
+        renderScanBonus(document.getElementById('ooo-bonus-qs'), p.bonus, skill);
+      }, 1200);
+    } else {
+      markDone(skill);
+    }
+  };
+}
+
+/* Scan bonus */
+function renderScanBonus(el, bonus, skill) {
+  el.innerHTML = bonus.questions.map((q, i) => `
+    <div class="scan-q">
+      <label>${q.q} <span class="vi" style="display:none;color:var(--vi);font-style:italic;font-size:.8rem">${q.qVi}</span></label>
+      <input class="scan-input" data-i="${i}" data-a="${q.answer}" placeholder="Type your answer...">
+    </div>
+  `).join('') + '<button class="btn-check" id="scan-check">Check Answers</button><div id="scan-score"></div>';
+
+  document.getElementById('scan-check').onclick = () => {
+    let score = 0;
+    el.querySelectorAll('.scan-input').forEach(inp => {
+      const val = inp.value.trim().toLowerCase();
+      const ans = inp.dataset.a.toLowerCase();
+      if (ans.includes(val) && val.length > 2) { inp.classList.add('correct'); score++; }
+      else { inp.classList.add('wrong'); inp.value = inp.dataset.a; }
+    });
+    const n = bonus.questions.length;
+    const pct = score / n;
+    const cls = pct === 1 ? 'perfect' : pct >= 0.5 ? 'good' : 'try';
+    document.getElementById('scan-score').innerHTML = `<div class="score-bar ${cls}">${score}/${n} found! ${pct === 1 ? '🎉' : '🔍'}</div>`;
+    markDone(skill);
+  };
+}
+
+/* 3. Context Clue */
+function renderContextClue(el, p, skill) {
+  renderMCQWithSentences(el, p.questions, skill);
+}
+
+function renderMCQWithSentences(container, questions, skill) {
+  let current = 0, score = 0;
+
+  function showQ(idx) {
+    if (idx >= questions.length) {
+      const pct = score / questions.length;
+      const cls = pct === 1 ? 'perfect' : pct >= 0.5 ? 'good' : 'try';
+      const msgs = { perfect: '🎉 Amazing! You cracked all the codes!', good: '👍 Good detective work!', try: '💪 Context clues take practice!' };
+      container.innerHTML = `<div class="score-bar ${cls}">${msgs[cls]} ${score}/${questions.length} correct</div>`;
+      markDone(skill);
+      return;
+    }
+    const q = questions[idx];
+    container.innerHTML = `
+      <div style="font-size:.82rem;color:#999;margin-bottom:6px">Question ${idx+1} of ${questions.length}</div>
+      <div class="passage-box" style="max-height:none">${q.sentence}</div>
+      <p style="font-weight:700;font-size:.9rem;margin:10px 0 4px">${q.q}</p>
+      <p class="vi" style="display:none;color:var(--vi);font-style:italic;font-size:.82rem">${q.qVi}</p>
+      <ul class="mcq-list" id="ctx-list">
+        ${q.options.map((o, i) => `<li class="mcq-item" data-i="${i}">${o}<div class="vi">${q.optionsVi[i]}</div></li>`).join('')}
+      </ul>
+      <div class="explanation" id="ctx-exp"></div>`;
+    container.querySelectorAll('.mcq-item').forEach(item => {
+      item.onclick = () => {
+        if (container.querySelector('.mcq-item.correct,.mcq-item.wrong')) return;
+        const chosen = +item.dataset.i;
+        if (chosen === q.answer) { item.classList.add('correct'); score++; }
+        else { item.classList.add('wrong'); container.querySelector(`.mcq-item[data-i="${q.answer}"]`).classList.add('correct'); }
+        const exp = document.getElementById('ctx-exp');
+        exp.className = 'explanation show ' + (chosen === q.answer ? 'right' : 'wrong-exp');
+        exp.innerHTML = (chosen === q.answer ? '✅ ' : '❌ ') + q.explanation + '<div class="vi">' + q.explanationVi + '</div>';
+        setTimeout(() => showQ(idx + 1), 2200);
+      };
+    });
+  }
+  showQ(0);
+}
+
+/* 4. Heading Match (choose correct heading per paragraph) */
+function renderHeadingMatch(el, p, skill) {
+  let current = 0, score = 0;
+  const rounds = p.rounds;
+
+  function showRound(idx) {
+    if (idx >= rounds.length) {
+      const pct = score / rounds.length;
+      const cls = pct === 1 ? 'perfect' : pct >= 0.5 ? 'good' : 'try';
+      el.innerHTML = `<div class="score-bar ${cls}">${pct === 1 ? '🎉 Perfect!' : pct >= 0.5 ? '👍 Nice!' : '💪 Keep going!'} ${score}/${rounds.length}</div>`;
+      markDone(skill);
+      return;
+    }
+    const r = rounds[idx];
+    el.innerHTML = `
+      <div style="font-size:.82rem;color:#999;margin-bottom:6px">Round ${idx+1} of ${rounds.length}</div>
+      <div class="passage-box" style="max-height:none">${r.passage}</div>
+      <p style="font-weight:700;font-size:.88rem;margin:10px 0 6px">Which heading captures the MAIN IDEA?</p>
+      <ul class="mcq-list" id="hm-list">
+        ${r.options.map((o, i) => `<li class="mcq-item" data-i="${i}">${o.text}<div class="vi">${o.textVi}</div></li>`).join('')}
+      </ul>
+      <div class="explanation" id="hm-exp"></div>`;
+    el.querySelectorAll('.mcq-item').forEach(item => {
+      item.onclick = () => {
+        if (el.querySelector('.mcq-item.correct,.mcq-item.wrong')) return;
+        const chosen = +item.dataset.i;
+        if (chosen === r.answer) { item.classList.add('correct'); score++; }
+        else { item.classList.add('wrong'); el.querySelector(`.mcq-item[data-i="${r.answer}"]`).classList.add('correct'); }
+        const exp = document.getElementById('hm-exp');
+        exp.className = 'explanation show ' + (chosen === r.answer ? 'right' : 'wrong-exp');
+        exp.innerHTML = (chosen === r.answer ? '✅ ' : '❌ ') + r.explanation + '<div class="vi">' + r.explanationVi + '</div>';
+        setTimeout(() => showRound(idx + 1), 2200);
+      };
+    });
+  }
+  showRound(0);
+}
+
+/* 5. Match Headings to Paragraphs */
+function renderMatchHeadings(el, p, skill) {
+  el.innerHTML = p.paragraphs.map(para => `
+    <div class="mh-para">
+      <span class="mh-para-label">Paragraph ${para.label}</span>
+      ${para.text}
+      <div class="vi" style="display:none;color:var(--vi);font-style:italic;font-size:.82rem;margin-top:4px">${para.textVi}</div>
+      <br><select class="mh-select" data-label="${para.label}">
+        <option value="">— Choose a heading —</option>
+        ${p.headings.map(h => `<option value="${h.id}">${h.id}. ${h.text}</option>`).join('')}
+      </select>
+    </div>
+  `).join('') + '<button class="btn-check" id="mh-check">Check Answers</button><div id="mh-score"></div>';
+
+  document.getElementById('mh-check').onclick = () => {
+    let score = 0;
+    el.querySelectorAll('.mh-select').forEach(sel => {
+      const label = sel.dataset.label;
+      const correct = p.answers[label];
+      if (sel.value === correct) { sel.classList.add('correct'); score++; }
+      else { sel.classList.add('wrong'); sel.value = correct; }
+    });
+    const n = p.paragraphs.length;
+    const pct = score / n;
+    const cls = pct === 1 ? 'perfect' : pct >= 0.5 ? 'good' : 'try';
+    // Show explanations
+    let expHtml = '';
+    for (const [label, ans] of Object.entries(p.answers)) {
+      const e = p.explanations[label];
+      expHtml += `<div style="font-size:.82rem;margin:4px 0"><strong>${label}→${ans}:</strong> ${e.en} <span class="vi" style="display:none;color:var(--vi);font-style:italic">${e.vi}</span></div>`;
+    }
+    document.getElementById('mh-score').innerHTML = `<div class="score-bar ${cls}">${pct === 1 ? '🎉 Perfect match!' : '🔗 ' + score + '/' + n + ' matched'}</div>${expHtml}`;
+    markDone(skill);
+  };
+}
+
+/* 6. Sort Statements */
+function renderSortStatements(el, p, skill) {
+  const states = p.items.map(() => 'unset');
+
+  function render() {
+    el.innerHTML = `
+      <div class="sort-passage">${p.contextPassage}</div>
+      <p style="font-size:.82rem;color:#999">Tap each statement, then click the badge to toggle between Main Idea / Detail:</p>
+      <div class="sort-items" id="sort-items">
+        ${p.items.map((it, i) => `
+          <div class="sort-item" data-i="${i}">
+            <span class="sort-badge ${states[i]}" onclick="event.stopPropagation();toggleSort(${i})">${states[i] === 'main' ? 'Main' : states[i] === 'detail' ? 'Detail' : '???'}</span>
+            <span>${it.text}</span>
+            <span class="vi">${it.textVi}</span>
+          </div>
+        `).join('')}
+      </div>
+      <button class="btn-check" id="sort-check">Check Answers</button>
+      <div id="sort-score"></div>`;
+    document.getElementById('sort-check').onclick = checkSort;
+  }
+
+  window.toggleSort = (i) => {
+    if (states[i] === 'unset') states[i] = 'main';
+    else if (states[i] === 'main') states[i] = 'detail';
+    else states[i] = 'unset';
+    render();
+  };
+
+  function checkSort() {
+    let score = 0;
+    el.querySelectorAll('.sort-item').forEach((item, i) => {
+      if (states[i] === p.items[i].type) { item.classList.add('correct'); score++; }
+      else item.classList.add('wrong');
+    });
+    const n = p.items.length;
+    const pct = score / n;
+    const cls = pct === 1 ? 'perfect' : pct >= 0.5 ? 'good' : 'try';
+    let expHtml = p.items.map((it, i) =>
+      `<div style="font-size:.82rem;margin:3px 0">${states[i] === it.type ? '✅' : '❌'} <strong>${it.type === 'main' ? 'Main Idea' : 'Detail'}:</strong> ${it.explanation}<span class="vi" style="display:none;color:var(--vi);font-style:italic"> ${it.explanationVi}</span></div>`
+    ).join('');
+    document.getElementById('sort-score').innerHTML = `<div class="score-bar ${cls}">${pct === 1 ? '🎉 Perfect sorting!' : score + '/' + n + ' correct'}</div>${expHtml}`;
+    document.getElementById('sort-check').disabled = true;
+    markDone(skill);
+  }
+
+  render();
+}
+
+/* 7. Fact / Opinion */
+function renderFactOpinion(el, p, skill) {
+  const states = p.items.map(() => '');
+
+  function render() {
+    el.innerHTML = `
+      <div class="passage-box" style="max-height:none">${p.passage}</div>
+      <div class="vi passage-box" style="display:none;border-color:var(--vi);max-height:none">${p.passageVi}</div>
+      <p style="font-size:.82rem;color:#999;margin:10px 0 6px">Classify each statement:</p>
+      ${p.items.map((it, i) => `
+        <div class="fo-item" data-i="${i}">
+          <span>${it.text}</span>
+          <span class="vi">${it.textVi}</span>
+          <div class="fo-btns">
+            <button class="fo-btn ${states[i]==='fact'?'active-fact':''}" onclick="setFO(${i},'fact')">Fact</button>
+            <button class="fo-btn ${states[i]==='opinion'?'active-opinion':''}" onclick="setFO(${i},'opinion')">Opinion</button>
+            <button class="fo-btn ${states[i]==='not-given'?'active-ng':''}" onclick="setFO(${i},'not-given')">Not Given</button>
+          </div>
+        </div>
+      `).join('')}
+      <button class="btn-check" id="fo-check">Check Answers</button>
+      <div id="fo-score"></div>`;
+    document.getElementById('fo-check').onclick = checkFO;
+  }
+
+  window.setFO = (i, val) => { states[i] = val; render(); };
+
+  function checkFO() {
+    let score = 0;
+    el.querySelectorAll('.fo-item').forEach((item, i) => {
+      if (states[i] === p.items[i].type) { item.classList.add('correct'); score++; }
+      else item.classList.add('wrong');
+    });
+    const n = p.items.length;
+    const pct = score / n;
+    const cls = pct === 1 ? 'perfect' : pct >= 0.5 ? 'good' : 'try';
+    let expHtml = p.items.map((it, i) =>
+      `<div style="font-size:.82rem;margin:3px 0">${states[i] === it.type ? '✅' : '❌'} <strong>${it.type}:</strong> ${it.explanation}<span class="vi" style="display:none;color:var(--vi);font-style:italic"> ${it.explanationVi}</span></div>`
+    ).join('');
+    document.getElementById('fo-score').innerHTML = `<div class="score-bar ${cls}">${pct === 1 ? '🎉 Expert analyst!' : score + '/' + n + ' correct'}</div>${expHtml}`;
+    document.getElementById('fo-check').disabled = true;
+    markDone(skill);
+  }
+
+  render();
+}
+
+/* Mark skill as done */
+function markDone(skill) {
+  completed.add(skill.number);
+  updateProgress();
+  const badge = document.getElementById('mastered-' + skill.id);
+  if (badge) badge.classList.add('show');
+}
+
+/* Init */
+fetch('data.json').then(r => r.json()).then(data => {
+  DATA = data;
+  renderNav(data.skills);
+  data.skills.forEach(renderSkill);
+  initScrollSpy();
+  updateProgress();
+});
+</script>
+</body>
+</html>

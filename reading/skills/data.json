@@ -1,0 +1,436 @@
+{
+  "title": "7 Reading Skills",
+  "titleVi": "7 Kỹ Năng Đọc Hiểu",
+  "description": "Master these essential IELTS reading skills — from skimming to understanding the writer's viewpoint.",
+  "descriptionVi": "Nắm vững 7 kỹ năng đọc hiểu thiết yếu cho IELTS — từ đọc lướt đến hiểu quan điểm tác giả.",
+  "skills": [
+    {
+      "id": "skimming",
+      "number": 1,
+      "title": "Skimming",
+      "titleVi": "Đọc lướt",
+      "emoji": "⚡",
+      "tagline": "Speed-read like a pro",
+      "taglineVi": "Đọc nhanh như chuyên gia",
+      "section": "Section 1",
+      "what": "To skim means to 'read quickly' or to 'glance through' a text. When we skim a text we read only the parts that we consider to be important, and do not read other parts. We look at the total organisation of the text — headings, subheadings, and how the text is organised into sections or paragraphs.",
+      "whatVi": "Đọc lướt nghĩa là 'đọc nhanh' hoặc 'liếc qua' một bài đọc. Khi đọc lướt, ta chỉ đọc những phần quan trọng và bỏ qua phần còn lại. Ta nhìn vào cấu trúc tổng thể — tiêu đề, phụ đề, và cách bài viết được chia thành các đoạn.",
+      "why": [
+        {"en": "What the text is mainly about (the topic and main message)", "vi": "Bài đọc chủ yếu nói về gì (chủ đề và thông điệp chính)"},
+        {"en": "The purpose of the writer", "vi": "Mục đích của tác giả"},
+        {"en": "The information the sections or paragraphs might hold", "vi": "Thông tin mà các phần hoặc đoạn văn có thể chứa"}
+      ],
+      "steps": [
+        {"en": "Skim every text before you read to get an idea of the text", "vi": "Đọc lướt mọi bài đọc trước khi đọc kỹ để nắm ý chung"},
+        {"en": "Skim the questions so you have an idea of what you will need to answer", "vi": "Đọc lướt câu hỏi để biết cần trả lời gì"}
+      ],
+      "examTip": "In the IELTS reading exam you have limited time. You should skim-read to save time and to maximise your understanding of the text and the questions.",
+      "examTipVi": "Trong bài thi IELTS Reading, bạn có thời gian hạn chế. Hãy đọc lướt để tiết kiệm thời gian và tối đa hóa khả năng hiểu bài đọc và câu hỏi.",
+      "practice": {
+        "type": "timed-skim",
+        "instruction": "You have 90 seconds to skim this passage. Don't read every word — just get the big picture! Then answer the questions.",
+        "instructionVi": "Bạn có 90 giây để đọc lướt đoạn văn này. Đừng đọc từng chữ — chỉ cần nắm ý chính! Sau đó trả lời câu hỏi.",
+        "timerSeconds": 90,
+        "passage": "The Acton Community Health Centre seeks to assist the local community and businesses with their health-care needs. The centre offers high standards of care in general practice as well as specialists in travel medicine and occupational health.\n\nServices available include preventative services such as immunisations, well woman examinations and physicals, blood tests, treatment of chronic medical conditions such as diabetes, asthma, hypertension and heart disease, pregnancy testing and antenatal care, and specialised medicals for diving, commercial drivers, aviation and insurance.\n\nNew patients may schedule an appointment by calling (317) 555-2611, extension 3310. Office hours are 8:30 am to 5:00 pm, Monday to Friday, although some doctors may see patients as early as 7:30 am.\n\nPatients needing urgent medical attention when the centre is closed may contact their physician by calling the main clinic telephone number. The clinic's answering service will then contact the physician on call. While it is not usual for doctors to make home visits, in an emergency, such a visit is possible.",
+        "questions": [
+          {
+            "q": "What is this text mainly about?",
+            "qVi": "Bài viết chủ yếu nói về gì?",
+            "options": [
+              "A hospital emergency department",
+              "A community health centre and its services",
+              "How to become a doctor",
+              "Insurance and medical costs"
+            ],
+            "optionsVi": [
+              "Khoa cấp cứu bệnh viện",
+              "Trung tâm y tế cộng đồng và các dịch vụ",
+              "Cách trở thành bác sĩ",
+              "Bảo hiểm và chi phí y tế"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "How is the text organised?",
+            "qVi": "Bài viết được tổ chức như thế nào?",
+            "options": [
+              "Chronologically (by time)",
+              "By topic: intro → services → appointments → after-hours",
+              "As a story with beginning, middle, end",
+              "As a comparison of different health centres"
+            ],
+            "optionsVi": [
+              "Theo thời gian",
+              "Theo chủ đề: giới thiệu → dịch vụ → lịch hẹn → ngoài giờ",
+              "Như một câu chuyện có mở, thân, kết",
+              "So sánh các trung tâm y tế khác nhau"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "What is the writer's purpose?",
+            "qVi": "Mục đích của tác giả là gì?",
+            "options": [
+              "To persuade people to exercise more",
+              "To inform the community about available health services",
+              "To complain about the healthcare system",
+              "To advertise a new doctor"
+            ],
+            "optionsVi": [
+              "Thuyết phục mọi người tập thể dục nhiều hơn",
+              "Thông tin cho cộng đồng về các dịch vụ y tế",
+              "Phàn nàn về hệ thống y tế",
+              "Quảng cáo một bác sĩ mới"
+            ],
+            "answer": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "scanning",
+      "number": 2,
+      "title": "Scanning",
+      "titleVi": "Đọc quét",
+      "emoji": "🔍",
+      "tagline": "Find the needle in the haystack",
+      "taglineVi": "Tìm kim trong đống rơm",
+      "section": "Section 1",
+      "what": "To 'scan' means to look over a text to find a particular piece of information — for example, a particular date, time, place or name. We do not read the whole text because we are only interested in particular information, even if that is just one word or number.",
+      "whatVi": "Đọc quét nghĩa là lướt qua một bài đọc để tìm một thông tin cụ thể — ví dụ một ngày tháng, thời gian, địa điểm hoặc tên. Ta không đọc toàn bộ bài vì chỉ quan tâm đến thông tin cụ thể, dù chỉ là một từ hay một con số.",
+      "why": [
+        {"en": "Scanning is what we do in all languages — reading a bus timetable, a restaurant menu, a movie-guide page", "vi": "Đọc quét là điều ta làm trong mọi ngôn ngữ — đọc lịch xe buýt, menu nhà hàng, lịch chiếu phim"},
+        {"en": "We are not interested in the whole text, just the information we need", "vi": "Ta không quan tâm toàn bộ bài đọc, chỉ cần thông tin mình cần"},
+        {"en": "Section 1 of IELTS frequently contains texts that require you to scan", "vi": "Section 1 của IELTS thường chứa các bài cần đọc quét"}
+      ],
+      "steps": [
+        {"en": "Identify exactly what information you're looking for (a number? a name? a date?)", "vi": "Xác định chính xác thông tin bạn cần tìm (số? tên? ngày?)"},
+        {"en": "Move your eyes quickly over the text — don't read every word", "vi": "Lướt mắt nhanh qua bài — đừng đọc từng chữ"},
+        {"en": "Look for visual clues: capital letters, numbers, special formatting", "vi": "Tìm manh mối trực quan: chữ hoa, số, định dạng đặc biệt"}
+      ],
+      "examTip": "Section 1 question types frequently require you to find a specific number, word or phrase in the text. As you do not need to read the whole text, you should scan.",
+      "examTipVi": "Câu hỏi Section 1 thường yêu cầu tìm một số, từ hoặc cụm từ cụ thể trong bài. Vì không cần đọc toàn bộ, bạn nên đọc quét.",
+      "practice": {
+        "type": "odd-one-out",
+        "instruction": "Most of these texts we scan — we look for specific info and don't read the whole thing. But ONE of them we usually read fully. Which is the odd one out?",
+        "instructionVi": "Hầu hết các loại văn bản dưới đây ta chỉ đọc quét — tìm thông tin cụ thể mà không đọc hết. Nhưng CÓ MỘT loại ta thường đọc đầy đủ. Đó là loại nào?",
+        "items": [
+          {"text": "A telephone directory", "textVi": "Danh bạ điện thoại", "isScan": true},
+          {"text": "Online exam results", "textVi": "Kết quả thi trực tuyến", "isScan": true},
+          {"text": "A grocery advertisement page", "textVi": "Trang quảng cáo tạp hóa", "isScan": true},
+          {"text": "A letter to say whether you got the job", "textVi": "Thư thông báo kết quả xin việc", "isScan": true},
+          {"text": "A weather forecast for tomorrow", "textVi": "Dự báo thời tiết ngày mai", "isScan": true},
+          {"text": "An email from your sister overseas", "textVi": "Email từ chị gái ở nước ngoài", "isScan": false},
+          {"text": "A museum brochure — you want opening hours and entry fee", "textVi": "Tờ rơi bảo tàng — bạn muốn biết giờ mở cửa và giá vé", "isScan": true}
+        ],
+        "explanation": "We read an email from a sister or close family member fully because we care about everything they say. For all the others, we only need specific information!",
+        "explanationVi": "Ta đọc đầy đủ email từ chị gái hoặc người thân vì ta quan tâm mọi điều họ nói. Với các loại khác, ta chỉ cần thông tin cụ thể!",
+        "bonus": {
+          "instruction": "Now scan the health centre text from Skill 1 to find these specific details:",
+          "instructionVi": "Bây giờ hãy quét lại bài đọc về trung tâm y tế ở Kỹ năng 1 để tìm các chi tiết cụ thể:",
+          "questions": [
+            {"q": "What is the phone number?", "qVi": "Số điện thoại là gì?", "answer": "(317) 555-2611"},
+            {"q": "What extension for new patients?", "qVi": "Số máy lẻ cho bệnh nhân mới?", "answer": "3310"},
+            {"q": "What are the office hours?", "qVi": "Giờ làm việc là mấy giờ?", "answer": "8:30 am to 5:00 pm"},
+            {"q": "What is the earliest a doctor may see patients?", "qVi": "Bác sĩ có thể khám sớm nhất lúc mấy giờ?", "answer": "7:30 am"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "vocabulary-context",
+      "number": 3,
+      "title": "Understanding Vocabulary from Context",
+      "titleVi": "Hiểu từ vựng qua ngữ cảnh",
+      "emoji": "🧩",
+      "tagline": "Crack the code — no dictionary needed",
+      "taglineVi": "Giải mã từ vựng — không cần từ điển",
+      "section": "Section 2",
+      "what": "When you take an IELTS reading text, you do not have access to a dictionary. What can you do when you encounter a word or phrase you have not seen before? Use the context — the words and phrases near and around it in the same sentence or paragraph — to guess the meaning.",
+      "whatVi": "Khi làm bài đọc IELTS, bạn không được dùng từ điển. Bạn làm gì khi gặp một từ lạ? Hãy dùng ngữ cảnh — các từ và cụm từ xung quanh trong cùng câu hoặc đoạn — để đoán nghĩa.",
+      "why": [
+        {"en": "Decide whether the word is important to understanding the text or answering questions", "vi": "Quyết định xem từ đó có quan trọng để hiểu bài hoặc trả lời câu hỏi không"},
+        {"en": "If it is important, guess the meaning from surrounding words and phrases", "vi": "Nếu quan trọng, đoán nghĩa từ các từ xung quanh"},
+        {"en": "You will be more likely than not to be correct when you guess from context!", "vi": "Bạn có khả năng đoán đúng nhiều hơn sai khi dùng ngữ cảnh!"}
+      ],
+      "steps": [
+        {"en": "Don't panic when you see an unknown word — it might not be important!", "vi": "Đừng hoảng khi gặp từ lạ — có thể nó không quan trọng!"},
+        {"en": "Read the whole sentence and paragraph around the word", "vi": "Đọc cả câu và đoạn văn xung quanh từ đó"},
+        {"en": "Look for clues: synonyms, examples, contrasts, or definitions nearby", "vi": "Tìm manh mối: từ đồng nghĩa, ví dụ, đối lập, hoặc định nghĩa gần đó"},
+        {"en": "Make your best guess and move on — don't waste time!", "vi": "Đoán tốt nhất có thể và đi tiếp — đừng mất thời gian!"}
+      ],
+      "examTip": "Using the context when you read to help decide the meaning of unknown vocabulary will give you confidence. It is a reading 'attack' skill — you will find that you are more likely than not to be correct when you guess the meaning of a word!",
+      "examTipVi": "Dùng ngữ cảnh để đoán nghĩa từ vựng lạ sẽ giúp bạn tự tin hơn. Đây là kỹ năng 'tấn công' khi đọc — bạn sẽ thấy mình đoán đúng nhiều hơn sai!",
+      "practice": {
+        "type": "context-clue",
+        "instruction": "Read each sentence and guess the meaning of the highlighted word from context. No dictionary allowed!",
+        "instructionVi": "Đọc mỗi câu và đoán nghĩa từ in đậm dựa vào ngữ cảnh. Không được dùng từ điển!",
+        "questions": [
+          {
+            "sentence": "When Mary hit her **shin bone** against the metal bumper bar of her car, the pain was so excruciating that she hopped around on one foot screaming for quite a long time.",
+            "sentenceVi": "Khi Mary đập xương ống chân vào thanh cản xe, cơn đau dữ dội đến nỗi cô nhảy lò cò la hét suốt một lúc lâu.",
+            "word": "shin bone",
+            "q": "What is a 'shin bone'?",
+            "qVi": "'Shin bone' là gì?",
+            "options": ["A bone in the lower arm", "A bone in the lower leg", "A bone near the shoulder"],
+            "optionsVi": ["Xương ở cẳng tay", "Xương ở cẳng chân", "Xương gần vai"],
+            "answer": 1,
+            "explanation": "Context clue: 'hopped around on one foot' — the shin bone must be in the leg!",
+            "explanationVi": "Manh mối: 'nhảy lò cò' — shin bone phải ở chân!"
+          },
+          {
+            "sentence": "When Mary hit her shin bone against the metal **bumper bar** of her car, the pain was so excruciating that she hopped around on one foot screaming for quite a long time.",
+            "sentenceVi": "Khi Mary đập xương ống chân vào thanh cản kim loại của xe, cơn đau dữ dội đến nỗi cô nhảy lò cò la hét suốt một lúc lâu.",
+            "word": "bumper bar",
+            "q": "What is a 'bumper bar'?",
+            "qVi": "'Bumper bar' là gì?",
+            "options": ["A bar underneath the car to stop bumps", "A bar above the roof of the car to carry long items", "A bar at the back of the car to stop damage from bumping into other vehicles"],
+            "optionsVi": ["Thanh dưới gầm xe để giảm xóc", "Thanh trên nóc xe để chở đồ dài", "Thanh cản ở phía sau xe để tránh va chạm"],
+            "answer": 2,
+            "explanation": "Context clue: 'hit her shin bone against the metal bumper bar' — it's at shin height, at the edge of the car. A bumper bar protects the car from bumping into things.",
+            "explanationVi": "Manh mối: 'đập xương ống chân vào thanh cản kim loại' — nó ngang tầm ống chân, ở mép xe. Thanh cản bảo vệ xe khỏi va chạm."
+          },
+          {
+            "sentence": "When Mary hit her shin bone against the metal bumper bar of her car, the pain was so **excruciating** that she hopped around on one foot screaming for quite a long time.",
+            "sentenceVi": "Khi Mary đập xương ống chân vào thanh cản xe, cơn đau cực kỳ dữ dội đến nỗi cô nhảy lò cò la hét suốt một lúc lâu.",
+            "word": "excruciating",
+            "q": "What does 'excruciating' mean?",
+            "qVi": "'Excruciating' nghĩa là gì?",
+            "options": ["Extremely painful", "Comical", "Very surprising"],
+            "optionsVi": ["Cực kỳ đau đớn", "Hài hước", "Rất bất ngờ"],
+            "answer": 0,
+            "explanation": "Context clue: 'hopped around screaming for quite a long time' — the pain must be EXTREME!",
+            "explanationVi": "Manh mối: 'nhảy lò cò la hét suốt một lúc lâu' — cơn đau phải CỰC KỲ dữ dội!"
+          },
+          {
+            "sentence": "It was extremely **tho dan dmihu** that afternoon, so that even with the air-conditioner on at its maximum speed and lots of drinking water, we could not get cool.",
+            "sentenceVi": "Buổi chiều hôm đó cực kỳ nóng và ẩm, ngay cả khi bật điều hòa hết cỡ và uống nhiều nước, chúng tôi vẫn không thể mát được.",
+            "word": "tho dan dmihu",
+            "q": "Unscramble: 'tho dan dmihu' means...",
+            "qVi": "Giải mã: 'tho dan dmihu' nghĩa là...",
+            "options": ["hot and humid", "cold and windy", "dark and cloudy"],
+            "optionsVi": ["nóng và ẩm", "lạnh và gió", "tối và nhiều mây"],
+            "answer": 0,
+            "explanation": "Context clue: 'air-conditioner on maximum', 'could not get cool' — it must be hot and humid! The jumbled letters rearrange to 'hot and humid'.",
+            "explanationVi": "Manh mối: 'bật điều hòa hết cỡ', 'không thể mát' — chắc chắn là nóng và ẩm! Các chữ cái xáo trộn thành 'hot and humid'."
+          }
+        ]
+      }
+    },
+    {
+      "id": "main-ideas",
+      "number": 4,
+      "title": "Main Ideas and Details",
+      "titleVi": "Ý chính và chi tiết",
+      "emoji": "🎯",
+      "tagline": "See the forest, not just the trees",
+      "taglineVi": "Nhìn cả khu rừng, không chỉ từng cái cây",
+      "section": "Section 2",
+      "what": "Every text has a 'topic' and a 'main idea' or 'main message' about the topic that the writer wishes to pass to the reader. The main idea is really what the writer wants to tell us — it's the writer's purpose. Details are facts, experiences, or examples that support the main idea.",
+      "whatVi": "Mỗi bài đọc có một 'chủ đề' và một 'ý chính' hoặc 'thông điệp chính' mà tác giả muốn truyền tải. Ý chính là điều tác giả thực sự muốn nói. Chi tiết là các sự kiện, trải nghiệm, hoặc ví dụ hỗ trợ ý chính.",
+      "why": [
+        {"en": "The main idea can be in the introductory paragraph, the concluding paragraph, or even in between", "vi": "Ý chính có thể ở đoạn mở đầu, đoạn kết, hoặc thậm chí ở giữa"},
+        {"en": "Each paragraph also has its own main idea, supported by details", "vi": "Mỗi đoạn văn cũng có ý chính riêng, được hỗ trợ bởi chi tiết"},
+        {"en": "Details support the main idea but are NOT the most important thing the writer wants to tell us", "vi": "Chi tiết hỗ trợ ý chính nhưng KHÔNG phải điều quan trọng nhất tác giả muốn nói"}
+      ],
+      "steps": [
+        {"en": "Read the paragraph and ask: 'What is the writer really trying to tell me?'", "vi": "Đọc đoạn văn và hỏi: 'Tác giả thực sự muốn nói gì?'"},
+        {"en": "The main idea is often in the first (topic) sentence", "vi": "Ý chính thường ở câu đầu (câu chủ đề)"},
+        {"en": "Details = specific examples, names, numbers, facts that illustrate the main idea", "vi": "Chi tiết = ví dụ cụ thể, tên, số, sự kiện minh họa cho ý chính"},
+        {"en": "Ask: 'Could I remove this sentence and still understand the main point?' If yes, it's a detail!", "vi": "Hỏi: 'Bỏ câu này đi có còn hiểu ý chính không?' Nếu có, đó là chi tiết!"}
+      ],
+      "examTip": "IELTS question types that test main ideas: multiple choice, matching headings to paragraphs. Question types that test details: sentence completion, summary completion, short-answer questions.",
+      "examTipVi": "Dạng câu hỏi IELTS kiểm tra ý chính: trắc nghiệm, nối tiêu đề với đoạn. Dạng kiểm tra chi tiết: hoàn thành câu, hoàn thành tóm tắt, trả lời ngắn.",
+      "practice": {
+        "type": "heading-match",
+        "instruction": "Read each paragraph, then choose the heading that captures the MAIN IDEA (not just a detail).",
+        "instructionVi": "Đọc mỗi đoạn, sau đó chọn tiêu đề thể hiện Ý CHÍNH (không phải chỉ một chi tiết).",
+        "rounds": [
+          {
+            "passage": "A very big part of the history of the modern world is the history of spices, and the story starts with an unprepossessing vine that once grew only on the coast of south-west India. The vine is called 'piper nigrum'. If presented with it in its natural state you would almost certainly struggle to guess its importance, but it is the source of all three 'true' peppers — black, white and green.",
+            "passageVi": "Một phần rất lớn trong lịch sử thế giới hiện đại là lịch sử các loại gia vị, và câu chuyện bắt đầu từ một loại dây leo khiêm tốn từng chỉ mọc ở bờ biển tây nam Ấn Độ.",
+            "options": [
+              {"text": "Pepper was the first spice to become important in the world", "textVi": "Tiêu là gia vị đầu tiên trở nên quan trọng trên thế giới"},
+              {"text": "The pepper that we know today has come from a vine originally found in India", "textVi": "Tiêu mà ta biết ngày nay có nguồn gốc từ một loại dây leo ở Ấn Độ"}
+            ],
+            "answer": 1,
+            "explanation": "Heading 2 captures the main idea — the paragraph introduces where pepper comes from. 'First spice' is not mentioned — that's an assumption!",
+            "explanationVi": "Tiêu đề 2 nắm bắt ý chính — đoạn văn giới thiệu nguồn gốc của tiêu. 'Gia vị đầu tiên' không được đề cập — đó là suy đoán!"
+          },
+          {
+            "passage": "Pepper has been appreciated since time immemorial in its native territory, but it was the Romans who made it an international commodity. They even peppered their desserts. Romans loved pepper. Their attachment to it kept the price high and gave it a lasting value. Spice traders from the distant east couldn't believe their luck. 'They arrive with gold and depart with pepper,' one Tamil trader remarked in wonder.",
+            "passageVi": "Tiêu đã được ưa chuộng từ thuở xa xưa ở vùng đất bản địa, nhưng chính người La Mã đã biến nó thành hàng hóa quốc tế.",
+            "options": [
+              {"text": "Pepper became important in the world because the Romans made it an international commodity", "textVi": "Tiêu trở nên quan trọng vì người La Mã biến nó thành hàng hóa quốc tế"},
+              {"text": "Pepper fetched a high price for eastern traders", "textVi": "Tiêu mang lại giá cao cho thương nhân phương đông"}
+            ],
+            "answer": 0,
+            "explanation": "The main idea is about Romans making pepper internationally important. The high price is just a supporting detail!",
+            "explanationVi": "Ý chính là người La Mã biến tiêu thành hàng hóa quốc tế. Giá cao chỉ là chi tiết hỗ trợ!"
+          },
+          {
+            "passage": "Many people love watching romantic films such as Pride and Prejudice because they enjoy happy endings. These films attract a lot of followers. However, research shows that most people prefer horror films such as Alien and The Exorcist. In a recent study 66 per cent preferred these films while only 29 per cent said they liked romances.",
+            "passageVi": "Nhiều người thích xem phim tình cảm như Pride and Prejudice vì thích kết thúc có hậu. Tuy nhiên, nghiên cứu cho thấy hầu hết mọi người thích phim kinh dị hơn.",
+            "options": [
+              {"text": "Horror films are the most popular films", "textVi": "Phim kinh dị là thể loại phim được yêu thích nhất"},
+              {"text": "Many people enjoy romantic films like Pride and Prejudice", "textVi": "Nhiều người thích phim tình cảm như Pride and Prejudice"}
+            ],
+            "answer": 0,
+            "explanation": "'Horror films are most popular' is the main idea. The specific film names (Pride and Prejudice, Alien, The Exorcist) and the statistics (66%, 29%) are all details that support this main point.",
+            "explanationVi": "'Phim kinh dị được yêu thích nhất' là ý chính. Tên phim cụ thể và số liệu thống kê đều là chi tiết hỗ trợ ý chính."
+          }
+        ]
+      }
+    },
+    {
+      "id": "main-ideas-longer",
+      "number": 5,
+      "title": "Identifying Main Ideas in a Longer Text",
+      "titleVi": "Xác định ý chính trong bài dài",
+      "emoji": "📐",
+      "tagline": "Each paragraph has its own story to tell",
+      "taglineVi": "Mỗi đoạn văn có câu chuyện riêng",
+      "section": "Section 3",
+      "what": "Section 3 texts are longer (500–700 words) with multiple paragraphs. You need to find the main idea of EACH paragraph, not just the whole text. Main ideas are tested mainly through paragraph heading matching questions.",
+      "whatVi": "Bài đọc Section 3 dài hơn (500–700 từ) với nhiều đoạn. Bạn cần tìm ý chính của MỖI đoạn, không chỉ toàn bài. Ý chính được kiểm tra chủ yếu qua dạng nối tiêu đề với đoạn văn.",
+      "why": [
+        {"en": "Most discursive texts contain paragraphs with a main idea supported by examples or further evidence", "vi": "Hầu hết bài nghị luận có các đoạn với ý chính được hỗ trợ bằng ví dụ hoặc bằng chứng"},
+        {"en": "In Section 3, headings of paragraphs are often removed — you need to find and distinguish the main idea from supporting detail", "vi": "Trong Section 3, tiêu đề đoạn thường bị xóa — bạn cần tìm và phân biệt ý chính với chi tiết hỗ trợ"},
+        {"en": "The main idea is often in a topic sentence at the beginning of a paragraph", "vi": "Ý chính thường ở câu chủ đề đầu đoạn"}
+      ],
+      "steps": [
+        {"en": "Quickly survey the text — look at the title, read the first and last paragraph", "vi": "Khảo sát nhanh bài đọc — nhìn tiêu đề, đọc đoạn đầu và đoạn cuối"},
+        {"en": "Skim the paragraphs first and locate topic sentences. Note key words that seem related", "vi": "Đọc lướt các đoạn và tìm câu chủ đề. Ghi nhận từ khóa liên quan"},
+        {"en": "Scan the list of headings to find the one that matches the section — it is not necessary to read every word", "vi": "Quét danh sách tiêu đề để tìm cái phù hợp — không cần đọc từng chữ"}
+      ],
+      "examTip": "There are more headings than paragraphs in the heading list — some headings are there to distract you! Look for synonyms between the heading and the topic sentence.",
+      "examTipVi": "Có nhiều tiêu đề hơn số đoạn văn — một số tiêu đề là để đánh lạc hướng! Tìm từ đồng nghĩa giữa tiêu đề và câu chủ đề.",
+      "practice": {
+        "type": "match-headings",
+        "instruction": "Match each paragraph to its best heading. Watch out — there are extra headings to trick you!",
+        "instructionVi": "Nối mỗi đoạn văn với tiêu đề phù hợp nhất. Cẩn thận — có tiêu đề thừa để đánh lạc hướng!",
+        "paragraphs": [
+          {
+            "label": "A",
+            "text": "It is important that you find ways to help yourself survive — and indeed thrive — as a tertiary student. Plenty of research has shown that the best way to have a valuable and enjoyable learning experience is to become familiar with the essential aspects of academic life.",
+            "textVi": "Điều quan trọng là bạn tìm cách để tồn tại — và thậm chí phát triển — với tư cách sinh viên đại học."
+          },
+          {
+            "label": "B",
+            "text": "Become familiar with your faculty. Where is the main office for your faculty or department? Where are your lecturers' offices? Does your faculty have a special first-year coordinator? You should get to know this information as soon as possible.",
+            "textVi": "Làm quen với khoa của bạn. Văn phòng chính ở đâu? Phòng giảng viên ở đâu? Hãy tìm hiểu sớm nhất có thể."
+          },
+          {
+            "label": "C",
+            "text": "Don't underestimate the importance of the university library to your success as a student. Although you may currently feel more comfortable conducting your research through the internet, you must start becoming familiar with the library as early as you can.",
+            "textVi": "Đừng đánh giá thấp tầm quan trọng của thư viện đại học. Dù bạn quen nghiên cứu qua internet, hãy bắt đầu làm quen với thư viện sớm."
+          },
+          {
+            "label": "D",
+            "text": "Every campus has a place for students to get free support for their studies, such as one-on-one help with study problems and seminars on subjects such as study techniques and writing and note-taking skills.",
+            "textVi": "Mỗi trường đều có nơi hỗ trợ học tập miễn phí, như trợ giúp 1-1 về vấn đề học tập và hội thảo về kỹ năng học."
+          }
+        ],
+        "headings": [
+          {"id": "i", "text": "A brief overview of the semester", "textVi": "Tổng quan ngắn về học kỳ"},
+          {"id": "ii", "text": "Student learning support centres", "textVi": "Trung tâm hỗ trợ học tập sinh viên"},
+          {"id": "iii", "text": "Lectures, tutorials and seminars", "textVi": "Bài giảng, hướng dẫn và hội thảo"},
+          {"id": "iv", "text": "Study plans and timetables", "textVi": "Kế hoạch học tập và thời khóa biểu"},
+          {"id": "v", "text": "Your faculty", "textVi": "Khoa của bạn"},
+          {"id": "vi", "text": "The library", "textVi": "Thư viện"},
+          {"id": "ix", "text": "Your first weeks on campus", "textVi": "Những tuần đầu ở trường"}
+        ],
+        "answers": {"A": "ix", "B": "v", "C": "vi", "D": "ii"},
+        "explanations": {
+          "A": {"en": "The paragraph is about surviving and thriving as a new student — 'first weeks on campus'", "vi": "Đoạn văn nói về tồn tại và phát triển khi mới vào đại học — 'những tuần đầu ở trường'"},
+          "B": {"en": "The paragraph is entirely about getting to know your faculty offices and staff", "vi": "Đoạn văn hoàn toàn về việc làm quen với khoa và nhân viên"},
+          "C": {"en": "The paragraph focuses on the library's importance for academic success", "vi": "Đoạn văn tập trung vào tầm quan trọng của thư viện"},
+          "D": {"en": "The paragraph describes campus support services for students", "vi": "Đoạn văn mô tả dịch vụ hỗ trợ học tập trong trường"}
+        }
+      }
+    },
+    {
+      "id": "details-vs-main",
+      "number": 6,
+      "title": "Distinguishing Details from Main Ideas",
+      "titleVi": "Phân biệt chi tiết và ý chính",
+      "emoji": "⚖️",
+      "tagline": "Is it the headline or the footnote?",
+      "taglineVi": "Đó là tiêu đề hay chú thích?",
+      "section": "Section 3",
+      "what": "Details are the examples and ideas used to support and illustrate main ideas in a paragraph or text. They may be facts, experiences of the writer, or other references. Details are not the most important things the writer wishes to tell us, but they do support the writer's main idea overall.",
+      "whatVi": "Chi tiết là các ví dụ và ý tưởng dùng để hỗ trợ và minh họa cho ý chính. Chúng có thể là sự kiện, trải nghiệm của tác giả, hoặc tham chiếu khác. Chi tiết không phải điều quan trọng nhất tác giả muốn nói, nhưng chúng hỗ trợ ý chính.",
+      "why": [
+        {"en": "IELTS uses True/False/Not Given questions to test your ability to distinguish details from main ideas", "vi": "IELTS dùng câu hỏi Đúng/Sai/Không có thông tin để kiểm tra khả năng phân biệt chi tiết và ý chính"},
+        {"en": "Details are often found as supporting sentences to the main idea in each paragraph", "vi": "Chi tiết thường là các câu hỗ trợ cho ý chính trong mỗi đoạn"},
+        {"en": "A detail might be interesting, but it's not the writer's main point", "vi": "Chi tiết có thể thú vị, nhưng không phải ý chính của tác giả"}
+      ],
+      "steps": [
+        {"en": "Quickly survey the text — title, first and last paragraphs, first line of every paragraph", "vi": "Khảo sát nhanh — tiêu đề, đoạn đầu và cuối, câu đầu mỗi đoạn"},
+        {"en": "Identify key words in the question", "vi": "Xác định từ khóa trong câu hỏi"},
+        {"en": "Scan the reading for the relevant part", "vi": "Quét bài đọc tìm phần liên quan"},
+        {"en": "Identify key words in the reading", "vi": "Xác định từ khóa trong bài đọc"},
+        {"en": "Match by finding synonyms, antonyms, or parallel phrases", "vi": "So khớp bằng cách tìm từ đồng nghĩa, trái nghĩa, hoặc cụm từ tương đương"},
+        {"en": "Decide whether the answer is True, False or Not Given", "vi": "Quyết định câu trả lời là Đúng, Sai hay Không có thông tin"}
+      ],
+      "examTip": "When you look for an equivalent statement in the reading, you will usually not find the exact words but a paraphrase (rewording) or synonym (word with similar meaning), or word with an opposite meaning (antonym).",
+      "examTipVi": "Khi tìm câu tương đương trong bài đọc, bạn thường không tìm thấy nguyên văn mà là cách diễn đạt lại (paraphrase) hoặc từ đồng nghĩa, hoặc từ trái nghĩa.",
+      "practice": {
+        "type": "sort-statements",
+        "instruction": "Sort these statements into 'Main Idea' or 'Detail'. Remember: main idea = the big picture; detail = specific examples, names, numbers.",
+        "instructionVi": "Phân loại các phát biểu thành 'Ý chính' hoặc 'Chi tiết'. Nhớ: ý chính = bức tranh tổng thể; chi tiết = ví dụ cụ thể, tên, số.",
+        "context": "Based on the paragraph about film preferences:",
+        "contextVi": "Dựa trên đoạn văn về sở thích phim:",
+        "contextPassage": "Many people love watching romantic films such as Pride and Prejudice because they enjoy happy endings. These films attract a lot of followers. However, research shows that most people prefer horror films such as Alien and The Exorcist. In a recent study 66 per cent preferred these films while only 29 per cent said they liked romances.",
+        "items": [
+          {"text": "Horror films are more popular than romantic films", "textVi": "Phim kinh dị phổ biến hơn phim tình cảm", "type": "main", "explanation": "This is the writer's main message — the overall conclusion.", "explanationVi": "Đây là thông điệp chính — kết luận tổng thể."},
+          {"text": "Pride and Prejudice is mentioned as a romantic film", "textVi": "Pride and Prejudice được nhắc đến như phim tình cảm", "type": "detail", "explanation": "A specific film name = a detail used as an example.", "explanationVi": "Tên phim cụ thể = chi tiết dùng làm ví dụ."},
+          {"text": "66% of people preferred horror films", "textVi": "66% người thích phim kinh dị", "type": "detail", "explanation": "A specific statistic = a detail that supports the main idea.", "explanationVi": "Số liệu thống kê cụ thể = chi tiết hỗ trợ ý chính."},
+          {"text": "Alien and The Exorcist are examples of horror films", "textVi": "Alien và The Exorcist là ví dụ về phim kinh dị", "type": "detail", "explanation": "Specific film names = details/examples.", "explanationVi": "Tên phim cụ thể = chi tiết/ví dụ."},
+          {"text": "Only 29% said they liked romances", "textVi": "Chỉ 29% nói thích phim tình cảm", "type": "detail", "explanation": "Another specific statistic supporting the main point.", "explanationVi": "Một số liệu cụ thể khác hỗ trợ ý chính."},
+          {"text": "Research shows most people prefer horror films", "textVi": "Nghiên cứu cho thấy hầu hết mọi người thích phim kinh dị", "type": "main", "explanation": "This restates the main idea — the research conclusion.", "explanationVi": "Đây là cách diễn đạt lại ý chính — kết luận nghiên cứu."}
+        ]
+      }
+    },
+    {
+      "id": "writers-viewpoint",
+      "number": 7,
+      "title": "Understanding the Writer's Viewpoint",
+      "titleVi": "Hiểu quan điểm tác giả",
+      "emoji": "🧠",
+      "tagline": "Fact or opinion? You decide!",
+      "taglineVi": "Sự thật hay quan điểm? Bạn quyết định!",
+      "section": "Section 3",
+      "what": "Many general-interest articles are written by writers who give their viewpoint and opinion on a topic. While many texts in the General Training module are factual or informational, some texts in IELTS test your ability to understand the opinions and ideas presented.",
+      "whatVi": "Nhiều bài báo phổ thông được viết bởi tác giả trình bày quan điểm và ý kiến về một chủ đề. Dù nhiều bài trong General Training mang tính thông tin, một số bài IELTS kiểm tra khả năng hiểu quan điểm và ý tưởng được trình bày.",
+      "why": [
+        {"en": "Question types used to test this are usually multiple choice and True/False/Not Given or Yes/No/Not Given", "vi": "Dạng câu hỏi kiểm tra thường là trắc nghiệm và Đúng/Sai/Không cho hoặc Có/Không/Không cho"},
+        {"en": "You need to distinguish between what the passage SAYS and what it does NOT say", "vi": "Bạn cần phân biệt giữa điều bài đọc NÓI và điều nó KHÔNG nói"},
+        {"en": "Watch for qualifying words like 'definitely', 'always', 'some', 'might' — they change the meaning!", "vi": "Chú ý các từ hạn định như 'chắc chắn', 'luôn luôn', 'một số', 'có thể' — chúng thay đổi ý nghĩa!"}
+      ],
+      "steps": [
+        {"en": "Quickly survey the text — title, first and last paragraph, first line of every paragraph", "vi": "Khảo sát nhanh — tiêu đề, đoạn đầu và cuối, câu đầu mỗi đoạn"},
+        {"en": "Identify key words in the question — especially qualifying words like 'definitely' or 'always'", "vi": "Xác định từ khóa trong câu hỏi — đặc biệt từ hạn định như 'chắc chắn' hoặc 'luôn luôn'"},
+        {"en": "Locate the part of the text the question refers to by scanning", "vi": "Tìm phần bài đọc liên quan bằng cách quét"},
+        {"en": "Identify a similarly expressed idea that exactly matches one of the options", "vi": "Tìm ý tưởng được diễn đạt tương tự khớp chính xác với một đáp án"},
+        {"en": "Check the other options to be completely sure they do not also express the idea", "vi": "Kiểm tra các đáp án khác để chắc chắn chúng không cùng diễn đạt ý đó"}
+      ],
+      "examTip": "Multiple-choice questions offer a choice of answers. Often they are similar, but only one will be correct beyond a doubt. Some options are there to distract. These questions usually follow the order of the text — this saves you time searching.",
+      "examTipVi": "Câu trắc nghiệm cho nhiều đáp án lựa chọn. Thường chúng giống nhau nhưng chỉ một đáp án đúng chắc chắn. Một số đáp án để đánh lạc hướng. Câu hỏi thường theo thứ tự bài đọc — giúp bạn tiết kiệm thời gian.",
+      "practice": {
+        "type": "fact-opinion",
+        "instruction": "Read the passage excerpt and decide: Is each statement a FACT stated in the text, the WRITER'S OPINION, or NOT GIVEN in the text?",
+        "instructionVi": "Đọc đoạn trích và quyết định: Mỗi phát biểu là SỰ THẬT trong bài, QUAN ĐIỂM TÁC GIẢ, hay KHÔNG CÓ THÔNG TIN?",
+        "passage": "After years of focusing on the bad — and there are still legitimate concerns, for instance, about the psychological effects of certain violent games — scientists are increasingly examining the potential benefits of video games. Their studies are revealing that a wide variety of games can boost mental function, improving everything from vision to memory. Still unclear is whether these gains are long-lasting and can be applied to non-game tasks. But video games, it seems, might actually be good for the brain.",
+        "passageVi": "Sau nhiều năm tập trung vào mặt tiêu cực — và vẫn còn lo ngại chính đáng về tác động tâm lý của một số trò chơi bạo lực — các nhà khoa học đang ngày càng nghiên cứu lợi ích tiềm năng của trò chơi điện tử.",
+        "items": [
+          {"text": "Scientists are now studying the benefits of video games", "textVi": "Các nhà khoa học đang nghiên cứu lợi ích của trò chơi điện tử", "type": "fact", "explanation": "Directly stated: 'scientists are increasingly examining the potential benefits'", "explanationVi": "Nói trực tiếp: 'các nhà khoa học đang ngày càng nghiên cứu lợi ích tiềm năng'"},
+          {"text": "Video games are definitely good for the brain", "textVi": "Trò chơi điện tử chắc chắn tốt cho não", "type": "opinion", "explanation": "The text says 'might actually be good' — the word 'definitely' makes this the writer's interpretation, not a proven fact. Watch qualifying words!", "explanationVi": "Bài viết nói 'có thể thực sự tốt' — từ 'chắc chắn' biến đây thành diễn giải, không phải sự thật. Chú ý từ hạn định!"},
+          {"text": "All violent games have negative psychological effects", "textVi": "Tất cả trò chơi bạo lực đều có tác động tâm lý tiêu cực", "type": "not-given", "explanation": "The text says 'certain violent games' — not ALL. This statement goes beyond what the text says.", "explanationVi": "Bài viết nói 'một số trò chơi bạo lực' — không phải TẤT CẢ. Phát biểu này vượt quá nội dung bài đọc."},
+          {"text": "Games can improve vision and memory", "textVi": "Trò chơi có thể cải thiện thị lực và trí nhớ", "type": "fact", "explanation": "Directly stated: 'improving everything from vision to memory'", "explanationVi": "Nói trực tiếp: 'cải thiện mọi thứ từ thị lực đến trí nhớ'"},
+          {"text": "It is clear that the benefits of video games last a long time", "textVi": "Rõ ràng lợi ích của trò chơi kéo dài lâu", "type": "not-given", "explanation": "The OPPOSITE is stated: 'Still unclear is whether these gains are long-lasting'. This is actually FALSE, not just not given!", "explanationVi": "Điều NGƯỢC LẠI được nói: 'Vẫn chưa rõ liệu những lợi ích này có kéo dài không'. Thực tế đây là SAI, không chỉ không có thông tin!"}
+        ]
+      }
+    }
+  ]
+}
