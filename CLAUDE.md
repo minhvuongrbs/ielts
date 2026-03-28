@@ -27,35 +27,36 @@ shared/
 docs/
   books/                            # Reference PDFs
   audio/                            # Listening test MP3s
-lessons/                            # Shared lessons (linked from skill hubs + revision)
-  form-completion/                  # Listening S1 — also in Revision 1
-    index.html + data.json
-  sentence-completion/              # Listening S2 — also in Revision 1
-    index.html + data.json
-reading/
-  index.html                        # Reading lesson hub (card grid)
-  happiness/                        # Reading-only lesson
-  video-games/                      # Reading-only lesson
-listening/
-  index.html                        # Listening lesson hub (card grid)
-  map-labeling/                     # Listening-only lesson
-revision/
-  index.html                        # Revision hub — mock tests (Revision 1, 2, etc.)
-writing/index.html                  # Coming soon placeholder
-speaking/index.html                 # Coming soon placeholder
+sections/                           # ALL lessons — organized by skill
+  listening/
+    form-completion/                # S1: Form completion (Furniture Ordering)
+    map-labeling/                   # S2: Map & plan labeling
+    sentence-completion/            # S2: Sentence completion (Marathon Tips)
+  reading/
+    happiness/                      # S3: What is Happiness?
+    video-games/                    # S3: How Video Games Are Good for the Brain
+hubs/                               # ALL hub/index pages — organized by skill
+  listening/index.html              # Listening hub — section-organized (S1–S4)
+  reading/
+    index.html                      # Reading hub — section-organized (S1, S2, S3)
+    skills/                         # Skills guide (not a section lesson)
+  writing/index.html                # Coming soon placeholder
+  speaking/index.html               # Coming soon placeholder
+  quiz/index.html                   # Vocabulary quiz hub
+  revision/index.html               # Revision hub — mock tests
 ```
 
-### Shared lessons (`lessons/`)
-- Lessons that appear in **both** a skill hub and revision live in `lessons/`
-- Skill hubs and revision hub link to `../lessons/<lesson>/` via relative paths
-- Lessons that are skill-specific only (e.g., `listening/map-labeling/`) stay in their skill folder
-- Shared lessons mark their **primary skill** as active in the nav
+### Lesson location (`sections/`)
+- ALL lessons live in `sections/<skill>/<lesson>/` — this is the single source of truth
+- Skill hubs, revision hub, quiz, and homepage all link to `sections/<skill>/<lesson>/`
+- Lessons at depth=3: use `../../../shared/` and `data-depth="3"` on `<body>`
+- Exception: `hubs/reading/skills/` stays in the reading hub folder (it's a skills guide, not a section lesson)
 
-### Revision structure (`revision/`)
+### Revision structure (`hubs/revision/`)
 - Revision = collection of mock tests (Revision 1, Revision 2, etc.)
 - Each revision groups lesson cards by skill (e.g., Listening → Section 1, Section 2)
 - Uses `.rev-block` container with `.rev-skill` sub-sections
-- Cards link to `../lessons/<lesson>/` — same lessons as skill hubs
+- Cards link to `../../sections/<skill>/<lesson>/` — same lessons as skill hubs
 - Color: `--revision: #7a6cc4` (purple)
 
 ## Architecture — Follow When Creating New Lessons
@@ -65,7 +66,7 @@ speaking/index.html                 # Coming soon placeholder
 - `index.html` fetches `data.json` at runtime and renders client-side
 - Never hardcode lesson content in HTML
 
-### 2. Skill hub pages (`reading/index.html`, `listening/index.html`)
+### 2. Skill hub pages (`hubs/reading/index.html`, `hubs/listening/index.html`)
 - Grid of lesson cards linking to individual lessons
 - "Coming soon" cards for future lessons (`class="card soon"`)
 - Follow pattern in `reading/index.html`
@@ -75,10 +76,10 @@ When adding a new lesson, update `index.html`:
 1. **Skill section card**: Add or activate a card in the relevant skill section (Reading, Listening, etc.)
 2. **Revision section**: If the lesson is part of a revision test, update the revision card/section
 3. **Stats bar**: Update the hero stats to reflect current totals:
-   - **Lessons**: Count all lesson folders (`lessons/*/`, `reading/*/`, `listening/*/`)
+   - **Lessons**: Count all lesson folders under `sections/listening/*/` and `sections/reading/*/`
    - **Vocabulary**: Sum `vocabulary` array lengths from ALL `data.json` files
    - Current stats location: `index.html` → `.stats` div inside `.hero`
-4. If the lesson is shared (in `lessons/`), also update the **skill hub** page (e.g., `listening/index.html`)
+4. Also update the **skill hub** page (e.g., `listening/index.html`) — add a card in the correct section block
 
 ### 4. Shared files (included on ALL pages)
 Every page includes:
@@ -87,13 +88,14 @@ Every page includes:
 <nav id="nav"></nav>
 <script src="[depth]shared/nav.js"></script>
 ```
-Where `[depth]` = `./` (root), `../` (hub pages), `../../` (lesson pages).
+Where `[depth]` = `./` (root), `../../` (hub pages in `hubs/`), `../../../` (skills guide + lesson pages in `sections/`).
 
 **Navigation** is generated by `shared/nav.js` — edit once, applies everywhere:
 - Brand + **6 links**: Home, Reading, Writing, Listening, Speaking, Revision
 - Auto-detects active link from current URL
-- For shared lessons (in `lessons/`): set `data-active="listening"` (or reading/etc.) on `<body>` to force the correct nav highlight
-- Depth set via `data-depth="N"` on `<body>`: `0` = root, `1` = hub pages, `2` = lesson pages
+- Nav uses `key`-based matching (not path-based) — `data-active="listening"` matches the link with `key: 'listening'`
+- For pages under `sections/` or `hubs/`, the URL contains the skill keyword so active nav is auto-detected
+- Depth set via `data-depth="N"` on `<body>`: `0` = root, `2` = hub pages (in `hubs/`), `3` = skills guide + lesson pages (in `sections/`)
 
 **Lesson JS** (`shared/lesson.js`) — included on all lesson pages:
 - Contains all shared interactive components (IPA, vocab grid, flashcard, fill-blank, match)
@@ -188,7 +190,8 @@ Each lesson page must set `CAT_LABELS` (category label map) and call `renderVoca
 - **Reading passage layout**: Show IELTS questions next to the passage (side-by-side on desktop, stacked on mobile) so learners can read and answer simultaneously
   - Use `.passage-split` flex container: `.passage-left` (flex:1) + `.passage-right` (sticky, 400px, scrollable)
   - Breakpoint at 900px: stacks vertically on mobile
-  - Reference implementation: `reading/video-games/index.html`
+  - Reference implementation: `sections/reading/video-games/index.html`
+  - Hub page reference: `hubs/listening/index.html` (section-organized)
 - **Question type metadata**: Each reading lesson includes `questionTypes` in `data.json` with active types (description, tips, Vietnamese) and a reference checklist of all 11 IELTS types
 
 ## IELTS Reading Question Types (reference)

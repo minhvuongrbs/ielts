@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quiz — IELTS Vocabulary Practice</title>
-<link rel="stylesheet" href="../shared/styles.css">
+<link rel="stylesheet" href="../../shared/styles.css">
 <style>
 .container{max-width:720px;margin:0 auto;padding:20px 20px 80px}
 
@@ -124,9 +124,9 @@
 }
 </style>
 </head>
-<body data-depth="1">
+<body data-depth="2">
 <nav id="nav"></nav>
-<script src="../shared/nav.js"></script>
+<script src="../../shared/nav.js"></script>
 
 <div class="page-hero">
   <div class="icon">🧠</div>
@@ -248,11 +248,11 @@ function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Mat
 
 /* ======================== DATA LOADING ======================== */
 const LESSONS=[
-  {name:'Happiness',path:'../reading/happiness/data.json',skill:'reading'},
-  {name:'Video Games',path:'../reading/video-games/data.json',skill:'reading'},
-  {name:'Map Labeling',path:'../listening/map-labeling/data.json',skill:'listening'},
-  {name:'Form Completion',path:'../lessons/form-completion/data.json',skill:'listening'},
-  {name:'Sentence Completion',path:'../lessons/sentence-completion/data.json',skill:'listening'},
+  {name:'Happiness',path:'../../sections/reading/happiness/data.json',skill:'reading'},
+  {name:'Video Games',path:'../../sections/reading/video-games/data.json',skill:'reading'},
+  {name:'Map Labeling',path:'../../sections/listening/map-labeling/data.json',skill:'listening'},
+  {name:'Form Completion',path:'../../sections/listening/form-completion/data.json',skill:'listening'},
+  {name:'Sentence Completion',path:'../../sections/listening/sentence-completion/data.json',skill:'listening'},
 ];
 let allVocab=[],allFB=[];
 
