@@ -70,9 +70,9 @@ a.sec-block.accent::after{color:var(--accent)}
     </div>
     <div class="sec-title">On the City Doorstep</div>
     <div class="sec-desc">7 West Australian national parks described as short texts (A–G). Practice matching descriptions to parks — a real Section 1 skill.</div>
-    <div class="sec-meta">
-      <span>📝 20 vocabulary words</span>
-      <span>❓ 5 IELTS questions</span>
+    <div class="sec-meta" data-section="on-the-city-doorstep">
+      <span class="vocab-count">📝 … vocabulary words</span>
+      <span class="q-count">❓ … IELTS questions</span>
       <span>🃏 4 quiz types</span>
     </div>
   </a>
@@ -85,9 +85,9 @@ a.sec-block.accent::after{color:var(--accent)}
     </div>
     <div class="sec-title">Bees Neez Apiaries</div>
     <div class="sec-desc">A honey apiary gift shop advertisement. Practice scanning for specific details and answering True/False/Not Given questions.</div>
-    <div class="sec-meta">
-      <span>📝 15 vocabulary words</span>
-      <span>❓ 5 IELTS questions</span>
+    <div class="sec-meta" data-section="bees-neez">
+      <span class="vocab-count">📝 … vocabulary words</span>
+      <span class="q-count">❓ … IELTS questions</span>
       <span>🃏 4 quiz types</span>
     </div>
   </a>
@@ -100,9 +100,9 @@ a.sec-block.accent::after{color:var(--accent)}
     </div>
     <div class="sec-title">Travel This Summer</div>
     <div class="sec-desc">An advertisement for International Student Volunteers combining volunteer projects and adventure travel. Practice True/False/Not Given with a focus on detail and exact wording.</div>
-    <div class="sec-meta">
-      <span>📝 15 vocabulary words</span>
-      <span>❓ 6 IELTS questions</span>
+    <div class="sec-meta" data-section="travel-this-summer">
+      <span class="vocab-count">📝 … vocabulary words</span>
+      <span class="q-count">❓ … IELTS questions</span>
       <span>🃏 4 quiz types</span>
     </div>
   </a>
@@ -115,9 +115,9 @@ a.sec-block.accent::after{color:var(--accent)}
     </div>
     <div class="sec-title">What is Happiness?</div>
     <div class="sec-desc">"The happiness equation" — 50% genes, 8–15% circumstances, 42% up to you. 11 paragraphs + paragraph matching questions.</div>
-    <div class="sec-meta">
-      <span>📝 28 vocabulary words</span>
-      <span>❓ 7 IELTS questions</span>
+    <div class="sec-meta" data-section="happiness">
+      <span class="vocab-count">📝 … vocabulary words</span>
+      <span class="q-count">❓ … IELTS questions</span>
       <span>🃏 4 quiz types</span>
     </div>
   </a>
@@ -130,14 +130,31 @@ a.sec-block.accent::after{color:var(--accent)}
     </div>
     <div class="sec-title">How Video Games Are Good for the Brain</div>
     <div class="sec-desc">Scientists discover games boost vision, memory, and reasoning. Multiple-choice questions + collocations.</div>
-    <div class="sec-meta">
-      <span>📝 26 vocabulary words</span>
-      <span>❓ 6 IELTS questions</span>
+    <div class="sec-meta" data-section="video-games">
+      <span class="vocab-count">📝 … vocabulary words</span>
+      <span class="q-count">❓ … IELTS questions</span>
       <span>🃏 4 quiz types</span>
     </div>
   </a>
 
 </div>
 
+<script src="../../shared/data.js"></script>
+<script>
+DataLayer.preloadAll().then(function() {
+  document.querySelectorAll('.sec-meta[data-section]').forEach(function(meta) {
+    var sec = meta.dataset.section;
+    var vc = meta.querySelector('.vocab-count');
+    var qc = meta.querySelector('.q-count');
+
+    DataLayer.getVocabulary({skill:'reading',section:sec}).then(function(rows) {
+      if (vc) vc.textContent = '📝 ' + rows.length + ' vocabulary words';
+    });
+    DataLayer.getQuestions({skill:'reading',section:sec}).then(function(rows) {
+      if (qc) qc.textContent = '❓ ' + rows.length + ' IELTS questions';
+    });
+  });
+});
+</script>
 </body>
 </html>

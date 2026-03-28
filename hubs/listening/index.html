@@ -56,10 +56,10 @@ a.sec-block:hover::after{transform:translateX(4px)}
     </div>
     <div class="sec-title">📋 Form Completion — Furniture Ordering</div>
     <div class="sec-desc">Practice form and table completion: company names, phone numbers, product codes. Interactive IELTS practice form + ordering vocabulary.</div>
-    <div class="sec-meta">
+    <div class="sec-meta" data-section="form-completion">
       <span>🔊 Audio included</span>
-      <span>📝 34 vocabulary words</span>
-      <span>📋 10-question practice</span>
+      <span class="vocab-count">📝 … vocabulary words</span>
+      <span class="practice-count">📋 … practice</span>
     </div>
   </a>
 
@@ -71,9 +71,9 @@ a.sec-block:hover::after{transform:translateX(4px)}
     </div>
     <div class="sec-title">🗺️ Map & Plan Labeling</div>
     <div class="sec-desc">Learn directional vocabulary, prepositions of place, and movement verbs. Visual diagrams + interactive quizzes.</div>
-    <div class="sec-meta">
-      <span>📝 56 vocabulary words</span>
-      <span>🗺️ 17 visual cards</span>
+    <div class="sec-meta" data-section="map-labeling">
+      <span class="vocab-count">📝 … vocabulary words</span>
+      <span class="vv-count">🗺️ … visual cards</span>
       <span>🃏 3 quiz types</span>
     </div>
   </a>
@@ -86,14 +86,35 @@ a.sec-block:hover::after{transform:translateX(4px)}
     </div>
     <div class="sec-title">Sentence Completion — Marathon Tips</div>
     <div class="sec-desc">Complete sentences about marathon viewing tips. Listen to the audio and fill in the missing words (7 questions).</div>
-    <div class="sec-meta">
+    <div class="sec-meta" data-section="sentence-completion">
       <span>🔊 Audio included</span>
-      <span>📝 26 vocabulary words</span>
-      <span>📋 7-question practice</span>
+      <span class="vocab-count">📝 … vocabulary words</span>
+      <span class="practice-count">📋 … practice</span>
     </div>
   </a>
 
 </div>
 
+<script src="../../shared/data.js"></script>
+<script>
+DataLayer.preloadAll().then(function() {
+  document.querySelectorAll('.sec-meta[data-section]').forEach(function(meta) {
+    var sec = meta.dataset.section;
+    var vc = meta.querySelector('.vocab-count');
+    var pc = meta.querySelector('.practice-count');
+    var vv = meta.querySelector('.vv-count');
+
+    DataLayer.getVocabulary({skill:'listening',section:sec}).then(function(rows) {
+      if (vc) vc.textContent = '📝 ' + rows.length + ' vocabulary words';
+    });
+    DataLayer.getFillBlanks({skill:'listening',section:sec}).then(function(rows) {
+      if (pc) pc.textContent = '📋 ' + rows.length + '-question practice';
+    });
+    DataLayer.getVisualVocab({skill:'listening',section:sec}).then(function(rows) {
+      if (vv) vv.textContent = '🗺️ ' + rows.length + ' visual cards';
+    });
+  });
+});
+</script>
 </body>
 </html>

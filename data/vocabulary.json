@@ -545,7 +545,7 @@
     "vietnamese": "nổi bật, đặc trưng",
     "definition": "having a quality or characteristic that makes something different from others",
     "example": "The distinctive feature of this park is undoubtedly the spectacular Pinnacles.",
-    "category": "A",
+    "category": "landscape",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -555,7 +555,7 @@
     "vietnamese": "đá vôi",
     "definition": "a hard white or grey rock used as a building material and in making cement",
     "example": "Thousands of huge limestone pillars rise from yellow sands.",
-    "category": "A",
+    "category": "landscape",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -565,7 +565,7 @@
     "vietnamese": "trông giống, có vẻ giống",
     "definition": "to look like or be similar to someone or something",
     "example": "The limestone pillars rise to resemble the science fiction movie E.T.",
-    "category": "A",
+    "category": "landscape",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -575,7 +575,7 @@
     "vietnamese": "loạt, một dải",
     "definition": "an impressive display or range of a particular type of thing",
     "example": "The park has an array of attractions, including a koala boardwalk.",
-    "category": "B",
+    "category": "visitor",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -585,7 +585,7 @@
     "vietnamese": "số lượng lớn, sự phong phú",
     "definition": "a very large quantity of something",
     "example": "The park has an abundance of Western Grey Kangaroos.",
-    "category": "B",
+    "category": "wildlife",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -595,7 +595,7 @@
     "vietnamese": "ngoạn mục, làm choáng ngợp",
     "definition": "extremely impressive, surprising, or exciting",
     "example": "The Echidna Trail boasts breathtaking panoramas across the Swan and Avon valleys.",
-    "category": "C",
+    "category": "landscape",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -605,7 +605,7 @@
     "vietnamese": "cảnh toàn cảnh, cảnh rộng lớn",
     "definition": "an unobstructed and wide view of an extensive area in all directions",
     "example": "The trail boasts breathtaking panoramas across the valleys and the whole breadth of the park.",
-    "category": "C",
+    "category": "landscape",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -615,7 +615,7 @@
     "vietnamese": "sự bảo tồn",
     "definition": "the protection of plants, animals, and natural areas",
     "example": "John Forrest is one of Australia's oldest conservation areas.",
-    "category": "D",
+    "category": "wildlife",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -625,7 +625,7 @@
     "vietnamese": "hướng thẳng, sự sắp thẳng hàng",
     "definition": "a position of agreement or alliance, or a route that something follows",
     "example": "The Railway Heritage Trail follows the alignment of the old railway line to York.",
-    "category": "D",
+    "category": "visitor",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -635,7 +635,7 @@
     "vietnamese": "tầm nhìn đẹp, cảnh quan",
     "definition": "a pleasing view, especially one seen through a long, narrow opening",
     "example": "There are many magnificent vistas of the Swan coastal plain.",
-    "category": "D",
+    "category": "landscape",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -645,7 +645,7 @@
     "vietnamese": "mang tính diễn giải, giải thích",
     "definition": "providing information to help people understand something",
     "example": "There are environmental interpretive activity programs during school holidays.",
-    "category": "E",
+    "category": "visitor",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -655,7 +655,7 @@
     "vietnamese": "toàn cảnh, bao quát",
     "definition": "with a wide view over a large area",
     "example": "The Golden View Lookout provides panoramic views over the lake and valley.",
-    "category": "E",
+    "category": "landscape",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -665,7 +665,7 @@
     "vietnamese": "chảy xuống, đổ xuống như thác",
     "definition": "to flow or fall in large quantities",
     "example": "In winter, the white waters of the Serpentine River cascade over the falls.",
-    "category": "F",
+    "category": "landscape",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -675,7 +675,7 @@
     "vietnamese": "xoáy tròn, cuộn tròn",
     "definition": "moving in twisting or spinning patterns",
     "example": "The white waters cascade into a swirling pool below.",
-    "category": "F",
+    "category": "landscape",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -685,7 +685,7 @@
     "vietnamese": "điểm thu hút, tâm điểm",
     "definition": "the centre of interest or activity; the most important part",
     "example": "The falls have been one of the focal points of the area since the early European settlers.",
-    "category": "F",
+    "category": "visitor",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -695,7 +695,7 @@
     "vietnamese": "có thể tiếp cận được, dễ đến",
     "definition": "able to be reached or entered, especially by people with disabilities",
     "example": "The 500 m walk trail along the Serpentine River is accessible by wheelchair.",
-    "category": "F",
+    "category": "visitor",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -705,7 +705,7 @@
     "vietnamese": "đa dạng, phong phú",
     "definition": "showing a great deal of variety; very different from each other",
     "example": "Penguin Island is home to a diverse array of wildlife.",
-    "category": "G",
+    "category": "wildlife",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -715,7 +715,7 @@
     "vietnamese": "đàn, quần thể (động vật)",
     "definition": "a group of animals or plants of the same type living together",
     "example": "The island boasts the largest colony of penguins in Western Australia.",
-    "category": "G",
+    "category": "wildlife",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -725,7 +725,7 @@
     "vietnamese": "khu bảo tồn, nơi trú ẩn an toàn",
     "definition": "an area where animals are protected and kept safe",
     "example": "Fishing is allowed outside sanctuary zones only.",
-    "category": "G",
+    "category": "wildlife",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
@@ -735,7 +735,7 @@
     "vietnamese": "được chỉ định, quy định",
     "definition": "officially chosen for a particular purpose",
     "example": "Diving may be enjoyed in designated areas.",
-    "category": "G",
+    "category": "visitor",
     "skill": "reading",
     "section": "on-the-city-doorstep"
   },
