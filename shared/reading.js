@@ -7,14 +7,14 @@ const pia={};
 
 /* ======================== HTML TEMPLATE ======================== */
 function renderReadingPage(cfg){
-  /* cfg: { title, sub, passageRight:'ielts'|'summary-q'|'none', passageLabel, ieltsInstruction, optsLayout:'wrap'|'column', summaryCards } */
-  const optsClass = cfg.optsLayout==='column' ? 'opts-col' : '';
+  /* cfg: { title, sub, passageRight:'ielts'|'summary-q'|'none', passageLabel, summaryCards } */
   const stClass = cfg.stPreline ? 'st-preline' : '';
 
   let passageRightHTML = '';
   if(cfg.passageRight==='ielts'){
     passageRightHTML = `
       <div class="passage-right">
+        <div id="qt-info-ctn" style="margin-bottom:12px"></div>
         <div class="card">
           <div style="font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--accent);margin-bottom:4px">${cfg.passageLabel||''}</div>
           <p style="font-size:.85rem;color:#8a7a66;font-style:italic;margin-bottom:12px">${cfg.passageInstruction||''}</p>
@@ -65,22 +65,11 @@ function renderReadingPage(cfg){
 
     <div id="quiz" class="tp">
       <div class="stabs">
-        <button class="stab active" data-sub="ielts">📋 IELTS</button>
-        <button class="stab" data-sub="flashcard">🃏 Flashcard</button>
+        <button class="stab active" data-sub="flashcard">🃏 Flashcard</button>
         <button class="stab" data-sub="fillblank">✏️ Fill in Blank</button>
         <button class="stab" data-sub="match">🔗 Matching</button>
       </div>
-      <div id="ielts" class="sp active">
-        <div id="qt-info-ctn"></div>
-        ${cfg.ieltsInstruction ? `<p style="text-align:center;color:#8a7a66;margin-bottom:16px;font-size:.88rem">${cfg.ieltsInstruction}</p>` : ''}
-        <div id="ielts-banner" class="banner"></div>
-        <div id="ielts-ctn" class="${optsClass}"></div>
-        <div class="ctrls">
-          <button class="btn bp" id="ic" onclick="checkIELTS()">Check</button>
-          <button class="btn bs" id="ir" onclick="resetIELTS()" style="display:none">Redo</button>
-        </div>
-      </div>
-      <div id="flashcard" class="sp">
+      <div id="flashcard" class="sp active">
         <div class="fcc">
           <div class="fcpg"><div class="fcpgb" id="fc-bar"></div></div>
           <div class="fc" id="fc-card" onclick="flipCard()">
@@ -152,51 +141,6 @@ function renderPassage(){
 
 function toggleVI(){const show=document.getElementById('vi-toggle').checked;document.querySelectorAll('[data-vi]').forEach(e=>e.classList.toggle('show',show));}
 
-/* ======================== IELTS QUIZ ======================== */
-function renderIELTS(){
-  const optsClass = window._readingCfg && window._readingCfg.optsLayout==='column' ? ' opts-col' : '';
-  document.getElementById('ielts-ctn').innerHTML=IQ.map((q,i)=>{
-    let optsHtml;
-    if(typeof IELTS_OPTIONS!=='undefined' && IELTS_OPTIONS){
-      // Fixed option set (T/F/NG or letter matching)
-      optsHtml = IELTS_OPTIONS.map(o=>`<button class="ob" data-q="${i}" data-v="${o}" onclick="selI(this)">${o}</button>`).join('');
-    } else if(q.options){
-      // Per-question options (multiple choice)
-      optsHtml = q.options.map(o=>`<button class="ob" data-q="${i}" data-v="${o.v}" onclick="selI(this)"><strong>${o.v}</strong>&nbsp; ${o.t}</button>`).join('');
-    }
-    return `<div class="card" id="iq-${i}"><div class="qn">Question ${q.number}</div><div class="qtx">${q.text}</div>
-    <div class="opts${optsClass}">${optsHtml}</div>
-    <div class="exp" id="ie-${i}"></div></div>`;
-  }).join('');
-}
-
-function selI(b){const q=b.dataset.q;document.querySelectorAll(`.ob[data-q="${q}"]`).forEach(x=>x.classList.remove('sel'));b.classList.add('sel');ia[q]=b.dataset.v;}
-
-function checkIELTS(){
-  let sc=0;IQ.forEach((q,i)=>{
-    const c=document.getElementById(`iq-${i}`),e=document.getElementById(`ie-${i}`);
-    document.querySelectorAll(`.ob[data-q="${i}"]`).forEach(b=>{b.disabled=true;if(b.dataset.v===q.answer)b.classList.add('ca');if(b.classList.contains('sel')&&b.dataset.v!==q.answer)b.classList.add('wa');});
-    const ok=ia[i]===q.answer;if(ok)sc++;c.classList.add(ok?'correct':'wrong');
-    e.innerHTML=`<strong>${ok?'✅':'❌'} Answer: ${q.answer}</strong><br>${q.explanation}<br><em style="color:var(--vi)">${q.vietnamese}</em>`;
-    e.classList.add('show',ok?'ce':'we');
-  });
-  const t=IQ.length, pct=sc/t;
-  const b=document.getElementById('ielts-banner');b.style.display='block';
-  b.style.background=pct>=.7?'var(--correct-bg)':pct>=.4?'var(--accent-light)':'var(--wrong-bg)';
-  b.style.color=pct>=.7?'var(--correct)':pct>=.4?'var(--accent)':'var(--wrong)';
-  b.textContent=`${sc} / ${t} correct`;b.classList.add('show');
-  document.getElementById('ic').style.display='none';document.getElementById('ir').style.display='inline-block';
-}
-
-function resetIELTS(){
-  Object.keys(ia).forEach(k=>delete ia[k]);
-  document.querySelectorAll('#ielts-ctn .card').forEach(c=>c.classList.remove('correct','wrong'));
-  document.querySelectorAll('#ielts-ctn .ob').forEach(b=>{b.disabled=false;b.classList.remove('sel','ca','wa');});
-  document.querySelectorAll('#ielts-ctn .exp').forEach(e=>{e.classList.remove('show','ce','we');e.innerHTML='';});
-  document.getElementById('ielts-banner').style.display='none';
-  document.getElementById('ic').style.display='inline-block';document.getElementById('ir').style.display='none';
-}
-
 /* ======================== PASSAGE-SIDE IELTS ======================== */
 function renderPassageIELTS(){
   const ctn=document.getElementById('passage-ielts-ctn');
@@ -245,29 +189,16 @@ function resetPassageIELTS(){
 }
 
 /* ======================== QUESTION TYPE INFO ======================== */
+function qtSlug(name){return name.toLowerCase().replace(/\s*\/\s*/g,'-').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');}
 function renderQTInfo(){
   if(!QT)return;
   const ctn=document.getElementById('qt-info-ctn');
   if(!ctn)return;
-  let html='';
-  QT.active.forEach(qt=>{
-    html+=`<div class="qt-info open" onclick="this.classList.toggle('open')">
-      <div class="qt-info-header">
-        <span class="qt-info-type">${qt.icon} Question Type: ${qt.name}</span>
-        <span class="qt-info-toggle">▼</span>
-      </div>
-      <div class="qt-info-body">
-        <div class="qt-info-desc">${qt.description}</div>
-        <div class="qt-info-vi">🇻🇳 ${qt.vi}</div>
-        <ul class="qt-info-tips">${qt.tips.map(t=>'<li>'+t+'</li>').join('')}</ul>
-        <div class="qt-types-title">All IELTS Reading Question Types</div>
-        <div class="qt-checklist">${QT.allTypes.map(t=>
-          `<div class="qt-check-item${t.practiced?' practiced':''}"><span class="qt-mark">${t.practiced?'✅':'○'}</span>${t.name}</div>`
-        ).join('')}</div>
-      </div>
-    </div>`;
-  });
-  ctn.innerHTML=html;
+  const depth = document.body.dataset.depth || '0';
+  const prefix = depth==='3' ? '../../../' : depth==='2' ? '../../' : '';
+  ctn.innerHTML=`<div class="qt-tags">${QT.active.map(qt=>
+    `<a class="qt-tag" href="${prefix}hubs/tips/#${qtSlug(qt.name)}">${qt.icon||''} ${qt.name}</a>`
+  ).join('')}</div>`;
 }
 
 /* ======================== SUMMARY QUESTIONS (video-games style) ======================== */
@@ -352,15 +283,10 @@ function initReading(data){
 
   renderPassage();
   renderVF(); renderVocab();
-  renderIELTS();
   renderFC(); renderFB2(); renderMatch(); renderPhrases();
   if(QT) renderQTInfo();
   if(document.getElementById('passage-ielts-ctn')) renderPassageIELTS();
   if(SQ && document.getElementById('sq-card')) renderSummaryQ();
-  if(SQ && !IQ.length){
-    document.getElementById('ielts-ctn').innerHTML='<div class="card" style="text-align:center;padding:32px"><p style="font-size:1rem;margin-bottom:12px">✏️ Sentence completion questions are shown alongside the passage.</p><button class="btn bp" onclick="document.querySelector(\'[data-tab=passage]\').click()">Go to Passage</button></div>';
-    document.getElementById('ic').style.display='none';
-  }
 
   Promise.all(V.map(v=>fetchIPA(v.word))).then(()=>{renderVocab();renderFC();});
 }
