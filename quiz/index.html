@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz — IELTS Vocabulary Practice</title>
+<link rel="stylesheet" href="../shared/styles.css">
+<style>
+.container{max-width:720px;margin:0 auto;padding:20px 20px 80px}
+
+/* Page hero */
+.page-hero{text-align:center;padding:40px 20px 28px}
+.page-hero .icon{font-size:2.4rem;margin-bottom:10px}
+.page-hero h1{font-family:'Fraunces',serif;font-weight:700;font-size:2rem;letter-spacing:-.02em;margin-bottom:6px}
+.page-hero p{font-size:.92rem;color:#8a7a66;max-width:480px;margin:0 auto}
+
+/* Setup screen */
+.setup-label{font-family:'Fraunces',serif;font-weight:700;font-size:1rem;margin:28px 0 12px;color:var(--text)}
+.type-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.type-card{background:#fff;border:2px solid #e8e0d4;border-radius:var(--r);padding:20px 16px;text-align:center;cursor:pointer;transition:.2s}
+.type-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.type-card.selected{border-color:var(--accent);background:var(--accent-light);box-shadow:0 0 0 2px var(--accent)}
+.type-card .tc-icon{font-size:1.8rem;margin-bottom:6px}
+.type-card .tc-name{font-family:'Fraunces',serif;font-weight:700;font-size:.95rem}
+.type-card .tc-desc{font-size:.78rem;color:#8a7a66;margin-top:4px}
+
+.preset-row{display:flex;gap:8px;flex-wrap:wrap}
+.preset-btn{padding:10px 22px;border:2px solid #e8e0d4;border-radius:8px;background:#fff;font-weight:600;font-size:.9rem;cursor:pointer;transition:.2s}
+.preset-btn:hover{border-color:var(--accent)}
+.preset-btn.selected{border-color:var(--accent);background:var(--accent);color:#fff}
+
+.filter-row{display:flex;gap:8px;flex-wrap:wrap}
+.filter-btn{padding:8px 18px;border:2px solid #e8e0d4;border-radius:8px;background:#fff;font-size:.85rem;font-weight:600;cursor:pointer;transition:.2s}
+.filter-btn:hover{border-color:var(--accent)}
+.filter-btn.selected{border-color:var(--accent);background:var(--accent);color:#fff}
+
+.start-btn{display:block;width:100%;padding:16px;margin-top:32px;background:var(--accent);color:#fff;border:none;border-radius:var(--r);font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;cursor:pointer;transition:.2s}
+.start-btn:hover{background:var(--accent-dark)}
+.start-btn:disabled{opacity:.4;cursor:not-allowed}
+
+/* Active quiz screen */
+.quiz-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;font-size:.85rem;font-weight:600;color:#8a7a66}
+.quiz-progress{width:100%;height:6px;background:#e8e0d4;border-radius:3px;margin-bottom:20px}
+.quiz-progress-fill{height:100%;background:var(--accent);border-radius:3px;transition:width .3s}
+.quiz-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:32px 28px;min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.quiz-word{font-family:'Fraunces',serif;font-weight:700;font-size:1.8rem;margin-bottom:4px}
+.quiz-pos{font-size:.82rem;color:#8a7a66;margin-bottom:2px}
+.quiz-ipa{font-size:.85rem;color:var(--accent);margin-bottom:16px}
+.quiz-audio{background:none;border:none;font-size:1.3rem;cursor:pointer;margin-bottom:12px}
+.quiz-hint{font-size:.82rem;color:var(--vi);font-style:italic;margin-bottom:16px}
+
+/* Multiple choice */
+.mc-options{display:grid;gap:10px;width:100%;max-width:440px;margin-top:16px}
+.mc-opt{padding:14px 18px;border:2px solid #e8e0d4;border-radius:10px;background:#fff;font-size:.95rem;cursor:pointer;transition:.2s;text-align:left}
+.mc-opt:hover{border-color:var(--accent);background:#fdf8f3}
+.mc-opt.correct{border-color:var(--correct);background:#e8f5e9;color:var(--correct);font-weight:600}
+.mc-opt.wrong{border-color:var(--wrong);background:#fdecea;color:var(--wrong)}
+.mc-opt.disabled{pointer-events:none}
+
+/* Fill blank in quiz */
+.qfb-sentence{font-size:1.05rem;line-height:1.7;margin-bottom:16px}
+.qfb-input{padding:8px 14px;border:2px solid #e8e0d4;border-radius:8px;font-size:1rem;width:180px;text-align:center;outline:none;transition:.2s}
+.qfb-input:focus{border-color:var(--accent)}
+.qfb-input.correct{border-color:var(--correct);background:#e8f5e9}
+.qfb-input.wrong{border-color:var(--wrong);background:#fdecea}
+.qfb-check{margin-top:14px;padding:10px 28px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer}
+.qfb-feedback{margin-top:12px;font-weight:600;font-size:.92rem}
+
+/* Flashcard in quiz */
+.qfc{perspective:600px;width:100%;max-width:380px;height:220px;cursor:pointer;margin:0 auto 16px}
+.qfc-inner{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.qfc.flipped .qfc-inner{transform:rotateY(180deg)}
+.qfc-front,.qfc-back{position:absolute;inset:0;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;border-radius:var(--r);box-shadow:var(--shadow)}
+.qfc-front{background:#fff}
+.qfc-back{background:#fdf8f3;transform:rotateY(180deg)}
+.qfc-word{font-family:'Fraunces',serif;font-weight:700;font-size:1.6rem}
+.qfc-pos{font-size:.82rem;color:#8a7a66;margin-top:4px}
+.qfc-ipa{font-size:.85rem;color:var(--accent);margin-top:2px}
+.qfc-def{font-size:1rem;margin-bottom:6px}
+.qfc-vi{color:var(--vi);font-style:italic;font-size:.95rem}
+.qfc-tap{font-size:.78rem;color:#b0a48e;margin-top:12px}
+.fc-actions{display:flex;gap:12px;justify-content:center}
+.fc-know,.fc-dont{padding:12px 28px;border:none;border-radius:8px;font-weight:700;font-size:.9rem;cursor:pointer}
+.fc-know{background:var(--correct);color:#fff}
+.fc-dont{background:var(--wrong);color:#fff}
+
+/* Match in quiz */
+.qm-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:480px}
+.qm-item{padding:14px 12px;border:2px solid #e8e0d4;border-radius:10px;background:#fff;font-size:.9rem;cursor:pointer;transition:.2s;text-align:center;word-break:break-word}
+.qm-item:hover{border-color:var(--accent)}
+.qm-item.selected{border-color:var(--accent);background:var(--accent-light)}
+.qm-item.matched{border-color:var(--correct);background:#e8f5e9;pointer-events:none;opacity:.6}
+.qm-item.wrong-flash{border-color:var(--wrong);background:#fdecea}
+.qm-round{font-size:.85rem;color:#8a7a66;margin-bottom:12px;font-weight:600}
+
+/* Results */
+.result-score{text-align:center;padding:32px 20px}
+.result-pct{font-family:'Fraunces',serif;font-weight:700;font-size:3rem}
+.result-pct.great{color:var(--correct)}
+.result-pct.ok{color:var(--accent)}
+.result-pct.low{color:var(--wrong)}
+.result-label{font-size:1rem;color:#8a7a66;margin-top:4px}
+.result-msg{font-family:'Fraunces',serif;font-size:1.2rem;margin-top:10px}
+.result-time{font-size:.85rem;color:#8a7a66;margin-top:6px}
+.result-actions{display:flex;gap:12px;justify-content:center;margin-top:24px}
+.result-actions button{padding:12px 28px;border:none;border-radius:8px;font-weight:700;font-size:.9rem;cursor:pointer}
+.btn-retry{background:var(--accent);color:#fff}
+.btn-new{background:#e8e0d4;color:var(--text)}
+
+.review-title{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;margin:28px 0 14px}
+.review-list{display:flex;flex-direction:column;gap:8px}
+.review-item{display:flex;align-items:center;gap:12px;background:#fff;border-radius:10px;padding:12px 16px;box-shadow:var(--shadow);font-size:.88rem}
+.review-icon{font-size:1.1rem;flex-shrink:0}
+.review-word{font-weight:700;min-width:100px}
+.review-answer{flex:1;color:#8a7a66}
+.review-lesson{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 8px;border-radius:6px;background:#f0ebe3;color:#8a7a66;flex-shrink:0}
+
+@media(max-width:480px){
+  .type-grid{grid-template-columns:1fr}
+  .page-hero h1{font-size:1.5rem}
+  .quiz-word,.qfc-word{font-size:1.4rem}
+  .qm-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .qm-item{padding:10px 8px;font-size:.82rem}
+}
+</style>
+</head>
+<body data-depth="1">
+<nav id="nav"></nav>
+<script src="../shared/nav.js"></script>
+
+<div class="page-hero">
+  <div class="icon">🧠</div>
+  <h1>Vocabulary Quiz</h1>
+  <p>Practice vocabulary from all lessons. Choose your quiz type, pick how many words, and test yourself.</p>
+</div>
+
+<div class="container">
+  <!-- ===== SETUP SCREEN ===== -->
+  <div id="setup">
+    <div class="setup-label">Choose quiz type</div>
+    <div class="type-grid">
+      <div class="type-card selected" data-type="mc" onclick="selType(this)">
+        <div class="tc-icon">🔤</div>
+        <div class="tc-name">Multiple Choice</div>
+        <div class="tc-desc">Pick the correct Vietnamese</div>
+      </div>
+      <div class="type-card" data-type="fc" onclick="selType(this)">
+        <div class="tc-icon">🃏</div>
+        <div class="tc-name">Flashcard</div>
+        <div class="tc-desc">Flip & self-grade</div>
+      </div>
+      <div class="type-card" data-type="fb" onclick="selType(this)">
+        <div class="tc-icon">✏️</div>
+        <div class="tc-name">Fill in Blank</div>
+        <div class="tc-desc">Type the missing word</div>
+      </div>
+      <div class="type-card" data-type="match" onclick="selType(this)">
+        <div class="tc-icon">🔗</div>
+        <div class="tc-name">Match</div>
+        <div class="tc-desc">Pair English ↔ Vietnamese</div>
+      </div>
+    </div>
+
+    <div class="setup-label">How many questions?</div>
+    <div class="preset-row">
+      <button class="preset-btn selected" data-n="10" onclick="selCount(this)">10</button>
+      <button class="preset-btn" data-n="20" onclick="selCount(this)">20</button>
+      <button class="preset-btn" data-n="30" onclick="selCount(this)">30</button>
+      <button class="preset-btn" data-n="all" onclick="selCount(this)">All</button>
+    </div>
+
+    <div class="setup-label">Filter by skill</div>
+    <div class="filter-row">
+      <button class="filter-btn selected" data-f="all" onclick="selFilter(this)">All Lessons</button>
+      <button class="filter-btn" data-f="reading" onclick="selFilter(this)">📖 Reading</button>
+      <button class="filter-btn" data-f="listening" onclick="selFilter(this)">🎧 Listening</button>
+    </div>
+
+    <button class="start-btn" id="start-btn" onclick="startQuiz()">Loading vocab...</button>
+  </div>
+
+  <!-- ===== ACTIVE QUIZ SCREEN ===== -->
+  <div id="active" style="display:none">
+    <div class="quiz-bar">
+      <span id="q-counter">1 / 10</span>
+      <span id="q-timer">0:00</span>
+    </div>
+    <div class="quiz-progress"><div class="quiz-progress-fill" id="q-bar"></div></div>
+    <div id="q-area"></div>
+  </div>
+
+  <!-- ===== RESULTS SCREEN ===== -->
+  <div id="results" style="display:none">
+    <div class="result-score">
+      <div class="result-pct" id="r-pct"></div>
+      <div class="result-label" id="r-label"></div>
+      <div class="result-msg" id="r-msg"></div>
+      <div class="result-time" id="r-time"></div>
+      <div class="result-actions">
+        <button class="btn-retry" onclick="retry()">Try Again</button>
+        <button class="btn-new" onclick="newQuiz()">New Quiz</button>
+      </div>
+    </div>
+    <div class="review-title">Review</div>
+    <div class="review-list" id="r-review"></div>
+  </div>
+</div>
+
+<script>
+/* ======================== AUDIO & IPA (from shared/lesson.js) ======================== */
+function speak(text){
+  if(!('speechSynthesis' in window))return;
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);
+  u.lang='en-US';u.rate=0.85;
+  speechSynthesis.speak(u);
+}
+const ipaCache={};
+function stemWord(w){
+  w=w.toLowerCase();
+  if(w.endsWith('ishes'))return w.slice(0,-2);
+  if(w.endsWith('ates'))return w.slice(0,-1);
+  if(w.endsWith('ies')&&w.length>4)return w.slice(0,-3)+'y';
+  if(w.endsWith('ving'))return w.slice(0,-4)+'ve';
+  if(w.endsWith('ming')&&w.length>5)return w.slice(0,-4)+'me';
+  if(w.endsWith('ning')&&w.length>5)return w.slice(0,-4)+'ne';
+  if(w.endsWith('ting')&&w.length>5)return w.slice(0,-4)+'te';
+  if(w.endsWith('ing')&&w.length>4)return w.slice(0,-3);
+  if(w.endsWith('tion'))return w;
+  if(w.endsWith('es')&&w.length>3)return w.slice(0,-1);
+  if(w.endsWith('ed')&&w.length>3)return w.slice(0,-2);
+  if(w.endsWith('s')&&w.length>3)return w.slice(0,-1);
+  return w;
+}
+async function tryFetchIPA(term){
+  try{const r=await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(term)}`);
+  if(!r.ok)return '';const d=await r.json();return d[0]?.phonetic||d[0]?.phonetics?.find(p=>p.text)?.text||'';}catch{return '';}
+}
+async function fetchIPA(word){
+  const key=word.toLowerCase().replace(/[^a-z]/g,'');
+  if(ipaCache[key]!==undefined)return ipaCache[key];
+  let ipa=await tryFetchIPA(word);
+  if(!ipa&&!word.includes(' ')){const base=stemWord(word);if(base!==word.toLowerCase())ipa=await tryFetchIPA(base);}
+  ipaCache[key]=ipa;return ipa;
+}
+function getIPA(word){return ipaCache[word.toLowerCase().replace(/[^a-z]/g,'')]||'';}
+
+/* ======================== UTILS ======================== */
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+/* ======================== DATA LOADING ======================== */
+const LESSONS=[
+  {name:'Happiness',path:'../reading/happiness/data.json',skill:'reading'},
+  {name:'Video Games',path:'../reading/video-games/data.json',skill:'reading'},
+  {name:'Map Labeling',path:'../listening/map-labeling/data.json',skill:'listening'},
+  {name:'Form Completion',path:'../lessons/form-completion/data.json',skill:'listening'},
+  {name:'Sentence Completion',path:'../lessons/sentence-completion/data.json',skill:'listening'},
+];
+let allVocab=[],allFB=[];
+
+async function loadData(){
+  const results=await Promise.all(LESSONS.map(async l=>{
+    try{const r=await fetch(l.path);return{...l,data:await r.json()};}catch{return{...l,data:null};}
+  }));
+  results.forEach(l=>{
+    if(!l.data)return;
+    (l.data.vocabulary||[]).forEach(v=>{allVocab.push({...v,_lesson:l.name,_skill:l.skill});});
+    (l.data.fillBlanks||[]).forEach(f=>{allFB.push({...f,_lesson:l.name,_skill:l.skill});});
+  });
+  document.getElementById('start-btn').textContent=`Start Quiz (${allVocab.length} words available)`;
+  document.getElementById('start-btn').disabled=false;
+  // prefetch IPA in background
+  allVocab.forEach(v=>fetchIPA(v.w));
+}
+loadData();
+
+/* ======================== SETUP STATE ======================== */
+let cfg={type:'mc',count:10,filter:'all'};
+
+function selType(el){
+  document.querySelectorAll('.type-card').forEach(c=>c.classList.remove('selected'));
+  el.classList.add('selected');cfg.type=el.dataset.type;
+  updateStartBtn();
+}
+function selCount(el){
+  document.querySelectorAll('.preset-btn').forEach(b=>b.classList.remove('selected'));
+  el.classList.add('selected');cfg.count=el.dataset.n==='all'?'all':parseInt(el.dataset.n);
+  updateStartBtn();
+}
+function selFilter(el){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('selected'));
+  el.classList.add('selected');cfg.filter=el.dataset.f;
+  updateStartBtn();
+}
+function updateStartBtn(){
+  const pool=getPool();
+  const n=cfg.count==='all'?pool.length:Math.min(cfg.count,pool.length);
+  document.getElementById('start-btn').textContent=`Start Quiz (${n} questions)`;
+}
+function getPool(){
+  const src=cfg.type==='fb'?allFB:allVocab;
+  return cfg.filter==='all'?src:src.filter(v=>v._skill===cfg.filter);
+}
+
+/* ======================== QUIZ STATE ======================== */
+let Q=[],qi=0,score=0,answers=[],timer=null,startTime=0;
+// match-specific state
+let mRound=[],mSel=null,mMatched=0,mRoundIdx=0,mTotalRounds=0,mFirstTryCount=0,mAttempted=false;
+
+function startQuiz(){
+  const pool=getPool();
+  if(!pool.length)return;
+  const n=cfg.count==='all'?pool.length:Math.min(cfg.count,pool.length);
+  Q=shuffle(pool).slice(0,n);qi=0;score=0;answers=[];
+  mRoundIdx=0;mTotalRounds=Math.ceil(n/6);mFirstTryCount=0;
+  document.getElementById('setup').style.display='none';
+  document.getElementById('active').style.display='';
+  document.getElementById('results').style.display='none';
+  startTime=Date.now();
+  timer=setInterval(updateTimer,1000);
+  updateTimer();
+  renderQ();
+}
+
+function updateTimer(){
+  const s=Math.floor((Date.now()-startTime)/1000);
+  document.getElementById('q-timer').textContent=`${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;
+}
+
+function renderQ(){
+  const total=Q.length;
+  const cur=Math.min(qi+1,total);
+  document.getElementById('q-counter').textContent=`${cur} / ${total}`;
+  document.getElementById('q-bar').style.width=((cur)/total*100)+'%';
+  if(cfg.type==='mc')renderMC();
+  else if(cfg.type==='fc')renderFCQ();
+  else if(cfg.type==='fb')renderFBQ();
+  else if(cfg.type==='match')renderMatchQ();
+}
+
+/* ======================== MULTIPLE CHOICE ======================== */
+function renderMC(){
+  const v=Q[qi];
+  const ipa=getIPA(v.w);
+  // pick 3 distractors
+  const others=allVocab.filter(x=>x.w!==v.w);
+  const distractors=shuffle(others).slice(0,3).map(x=>x.vi);
+  const opts=shuffle([v.vi,...distractors]);
+  document.getElementById('q-area').innerHTML=`
+    <div class="quiz-card">
+      <button class="quiz-audio" onclick="event.stopPropagation();speak('${v.w.replace(/'/g,"\\'")}')" title="Listen">🔊</button>
+      <div class="quiz-word">${v.w}</div>
+      <div class="quiz-pos">${v.p}</div>
+      <div class="quiz-ipa">${ipa}</div>
+      <div class="mc-options">
+        ${opts.map((o,i)=>`<div class="mc-opt" onclick="checkMC(this,'${o.replace(/'/g,"\\'")}')">${o}</div>`).join('')}
+      </div>
+    </div>`;
+}
+function checkMC(el,chosen){
+  const v=Q[qi];
+  const correct=v.vi;
+  const ok=chosen===correct;
+  if(ok)score++;
+  answers.push({word:v.w,given:chosen,correct,ok,lesson:v._lesson});
+  document.querySelectorAll('.mc-opt').forEach(o=>{
+    o.classList.add('disabled');
+    if(o.textContent===correct)o.classList.add('correct');
+  });
+  if(!ok)el.classList.add('wrong');
+  setTimeout(()=>{qi++;qi<Q.length?renderQ():showResults();},800);
+}
+
+/* ======================== FLASHCARD ======================== */
+function renderFCQ(){
+  const v=Q[qi];
+  const ipa=getIPA(v.w);
+  document.getElementById('q-area').innerHTML=`
+    <div class="qfc" id="qfc" onclick="document.getElementById('qfc').classList.toggle('flipped')">
+      <div class="qfc-inner">
+        <div class="qfc-front">
+          <div class="qfc-word">${v.w}</div>
+          <div class="qfc-pos">${v.p}</div>
+          <div class="qfc-ipa">${ipa}</div>
+          <div class="qfc-tap">tap to flip</div>
+        </div>
+        <div class="qfc-back">
+          <div class="qfc-def">${v.en}</div>
+          <div class="qfc-vi">🇻🇳 ${v.vi}</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:4px">
+      <button class="quiz-audio" onclick="event.stopPropagation();speak('${v.w.replace(/'/g,"\\'")}')" title="Listen">🔊</button>
+    </div>
+    <div class="fc-actions">
+      <button class="fc-dont" onclick="fcGrade(false)">Still Learning</button>
+      <button class="fc-know" onclick="fcGrade(true)">Know It!</button>
+    </div>`;
+}
+function fcGrade(know){
+  const v=Q[qi];
+  if(know)score++;
+  answers.push({word:v.w,given:know?'Know':'Still learning',correct:v.vi,ok:know,lesson:v._lesson});
+  qi++;qi<Q.length?renderQ():showResults();
+}
+
+/* ======================== FILL BLANK ======================== */
+function renderFBQ(){
+  const q=Q[qi];
+  const parts=q.s.split('___');
+  document.getElementById('q-area').innerHTML=`
+    <div class="quiz-card" style="text-align:left;align-items:stretch">
+      <div class="quiz-hint">${q.h}</div>
+      <div class="qfb-sentence">${parts[0]}<input class="qfb-input" id="qfb-inp" autocomplete="off" spellcheck="false" placeholder="...">${parts[1]||''}</div>
+      <div style="text-align:center">
+        <button class="qfb-check" onclick="checkFBQ()">Check</button>
+        <div class="qfb-feedback" id="qfb-fb"></div>
+      </div>
+    </div>`;
+  setTimeout(()=>document.getElementById('qfb-inp')?.focus(),100);
+  document.getElementById('qfb-inp')?.addEventListener('keydown',e=>{if(e.key==='Enter')checkFBQ();});
+}
+function checkFBQ(){
+  const q=Q[qi];
+  const inp=document.getElementById('qfb-inp');
+  if(!inp||inp.disabled)return;
+  const val=inp.value.trim().toLowerCase().replace(/[-\s]+/g,' ');
+  const ans=q.a.toLowerCase().replace(/[-\s]+/g,' ');
+  const alts=(q.altAnswers||[]).map(a=>a.toLowerCase().replace(/[-\s]+/g,' '));
+  const ok=val===ans||alts.includes(val);
+  if(ok)score++;
+  inp.disabled=true;inp.classList.add(ok?'correct':'wrong');
+  document.getElementById('qfb-fb').innerHTML=ok?'<span style="color:var(--correct)">✅ Correct!</span>':`<span style="color:var(--wrong)">❌ Answer: <strong>${q.a}</strong></span>`;
+  answers.push({word:q.a,given:inp.value.trim()||'(blank)',correct:q.a,ok,lesson:q._lesson});
+  setTimeout(()=>{qi++;qi<Q.length?renderQ():showResults();},1200);
+}
+
+/* ======================== MATCH ======================== */
+function renderMatchQ(){
+  const perRound=6;
+  const startIdx=mRoundIdx*perRound;
+  const roundItems=Q.slice(startIdx,startIdx+perRound);
+  if(!roundItems.length){showResults();return;}
+  mRound=roundItems.map((v,i)=>({id:i,w:v.w,vi:v.vi,_lesson:v._lesson}));
+  mSel=null;mMatched=0;mAttempted=false;
+  const L=shuffle([...mRound]),R=shuffle([...mRound]);
+  const roundLabel=mTotalRounds>1?`<div class="qm-round">Round ${mRoundIdx+1} / ${mTotalRounds}</div>`:'';
+  document.getElementById('q-area').innerHTML=`
+    ${roundLabel}
+    <div class="qm-grid" id="qm-grid">
+      ${L.map(p=>`<div class="qm-item" data-id="${p.id}" data-side="l" onclick="hMatchQ(this)">${p.w}</div>`).join('')}
+      ${R.map(p=>`<div class="qm-item" data-id="${p.id}" data-side="r" onclick="hMatchQ(this)">${p.vi}</div>`).join('')}
+    </div>`;
+  // update counter to reflect match progress
+  const total=Q.length;
+  const answered=startIdx+mMatched;
+  document.getElementById('q-counter').textContent=`${answered} / ${total}`;
+  document.getElementById('q-bar').style.width=(answered/total*100)+'%';
+}
+function hMatchQ(el){
+  if(el.classList.contains('matched'))return;
+  if(!mSel){
+    document.querySelectorAll('.qm-item').forEach(e=>e.classList.remove('selected'));
+    el.classList.add('selected');mSel=el;mAttempted=false;return;
+  }
+  if(el===mSel||el.dataset.side===mSel.dataset.side){
+    document.querySelectorAll('.qm-item').forEach(e=>e.classList.remove('selected'));
+    el.classList.add('selected');mSel=el;mAttempted=false;return;
+  }
+  const id1=el.dataset.id,id2=mSel.dataset.id;
+  if(id1===id2){
+    el.classList.add('matched');el.classList.remove('selected');
+    mSel.classList.add('matched');mSel.classList.remove('selected');
+    const item=mRound[parseInt(id1)];
+    if(!mAttempted)mFirstTryCount++;
+    answers.push({word:item.w,given:item.vi,correct:item.vi,ok:true,lesson:item._lesson});
+    mMatched++;
+    // update progress
+    const startIdx=mRoundIdx*6;
+    const answered=startIdx+mMatched;
+    document.getElementById('q-counter').textContent=`${answered} / ${Q.length}`;
+    document.getElementById('q-bar').style.width=(answered/Q.length*100)+'%';
+    mSel=null;
+    if(mMatched===mRound.length){
+      mRoundIdx++;
+      setTimeout(()=>{
+        if(mRoundIdx*6<Q.length)renderMatchQ();
+        else showResults();
+      },500);
+    }
+  }else{
+    mAttempted=true;
+    el.classList.add('wrong-flash');mSel.classList.add('wrong-flash');
+    const s=mSel;
+    setTimeout(()=>{el.classList.remove('wrong-flash','selected');s.classList.remove('wrong-flash','selected');mSel=null;},500);
+  }
+}
+
+/* ======================== RESULTS ======================== */
+function showResults(){
+  clearInterval(timer);
+  const elapsed=Math.floor((Date.now()-startTime)/1000);
+  const total=cfg.type==='match'?answers.length:Q.length;
+  const pct=Math.round(score/total*100)||0;
+  document.getElementById('active').style.display='none';
+  document.getElementById('results').style.display='';
+  const pctEl=document.getElementById('r-pct');
+  pctEl.textContent=pct+'%';
+  pctEl.className='result-pct '+(pct>=80?'great':pct>=50?'ok':'low');
+  document.getElementById('r-label').textContent=`${score} / ${total} correct`;
+  document.getElementById('r-msg').textContent=pct>=80?'Great job!':pct>=50?'Good effort, keep practicing!':'Keep going, you\'ll improve!';
+  document.getElementById('r-time').textContent=`Time: ${Math.floor(elapsed/60)}m ${elapsed%60}s`;
+  // review list
+  document.getElementById('r-review').innerHTML=answers.map(a=>`
+    <div class="review-item">
+      <div class="review-icon">${a.ok?'✅':'❌'}</div>
+      <div class="review-word">${a.word}</div>
+      <div class="review-answer">${a.ok?a.correct:`Your answer: ${a.given} → ${a.correct}`}</div>
+      <div class="review-lesson">${a.lesson}</div>
+    </div>`).join('');
+}
+
+function retry(){
+  Q=shuffle(Q);qi=0;score=0;answers=[];
+  mRoundIdx=0;mFirstTryCount=0;
+  document.getElementById('results').style.display='none';
+  document.getElementById('active').style.display='';
+  startTime=Date.now();timer=setInterval(updateTimer,1000);updateTimer();
+  renderQ();
+}
+function newQuiz(){
+  document.getElementById('results').style.display='none';
+  document.getElementById('active').style.display='none';
+  document.getElementById('setup').style.display='';
+  updateStartBtn();
+}
+</script>
+</body>
+</html>

@@ -8,6 +8,7 @@
     { label: 'Writing',      path: 'writing/',   icon: '✍️ ' },
     { label: 'Listening',    path: 'listening/',  icon: '🎧 ' },
     { label: 'Speaking',     path: 'speaking/',   icon: '🗣️ ' },
+    { label: 'Quiz',         path: 'quiz/',       icon: '🧠 ' },
     { label: 'Revision',     path: 'revision/',   icon: '📝 ' },
   ];
 
