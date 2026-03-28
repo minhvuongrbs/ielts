@@ -5,8 +5,8 @@
   const links = [
     { label: 'Home',         path: '',           icon: '' },
     { label: 'Reading',      path: 'reading/',   icon: '📖 ' },
-    { label: 'Writing',      path: 'writing/',   icon: '✍️ ' },
     { label: 'Listening',    path: 'listening/',  icon: '🎧 ' },
+    { label: 'Writing',      path: 'writing/',   icon: '✍️ ' },
     { label: 'Speaking',     path: 'speaking/',   icon: '🗣️ ' },
     { label: 'Quiz',         path: 'quiz/',       icon: '🧠 ' },
     { label: 'Revision',     path: 'revision/',   icon: '📝 ' },

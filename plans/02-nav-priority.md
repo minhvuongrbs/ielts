@@ -1,10 +1,11 @@
 # Nav / Homepage Priority
 
-**Status:** Not started
+**Status:** Done
 
 ## Goal
-Prioritize showing the 4 core skills (Reading, Listening, Writing, Speaking) in both the navigation bar and the homepage, over Revision.
+Reorder nav links and homepage sections to match the standard IELTS test order: Listening → Reading → Writing → Speaking, with Quiz and Revision last.
 
-## Scope
-- `shared/nav.js` — reorder nav links
-- `index.html` — reorder homepage skill sections
+## Changes
+- [x] `shared/nav.js` — Reorder links: Listening before Reading
+- [x] `index.html` — Move Listening section above Reading section
+- [x] Update plan status and check off in README
