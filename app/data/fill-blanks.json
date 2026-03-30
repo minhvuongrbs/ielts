@@ -1248,5 +1248,131 @@
     "hint": "thông tin gây nhiễu",
     "skill": "listening",
     "section": "identify-distractors"
+  },
+  {
+    "sentence": "A ___ is a famous person, especially in entertainment or sport.",
+    "answer": "celebrity",
+    "hint": "người nổi tiếng",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "You should study the ___ and try to learn as much as possible from them.",
+    "answer": "experts",
+    "hint": "chuyên gia",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "Nobody is going to come to you — you have to create ___ for yourself.",
+    "answer": "opportunities",
+    "hint": "cơ hội",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "Don't be afraid of ___ — you can learn from the experience.",
+    "answer": "failure",
+    "hint": "thất bại",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "What makes them ___ is that they kept on trying regardless.",
+    "answer": "successful",
+    "hint": "thành công",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "Many people use ___ ___ to market themselves these days.",
+    "answer": "social media",
+    "hint": "mạng xã hội",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "Find people you ___ in your area of interest and observe them carefully.",
+    "answer": "admire",
+    "hint": "ngưỡng mộ",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "___ on being good at something rather than trying to become famous.",
+    "answer": "Focus",
+    "hint": "tập trung",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "Justin Bieber's ___ to fame is an interesting story.",
+    "answer": "rise",
+    "hint": "con đường (nổi tiếng)",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "He ___ himself how to play musical instruments.",
+    "answer": "taught",
+    "hint": "tự học",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "He was clearly ___, and his mother arranged competitions for him.",
+    "answer": "gifted",
+    "hint": "có năng khiếu bẩm sinh",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "He not only learnt the piano, but also ___ the drums.",
+    "answer": "mastered",
+    "hint": "thành thạo",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "His clips attracted a number of ___ who started following him.",
+    "answer": "fans",
+    "hint": "người hâm mộ",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "A music ___ came across his videos by accident.",
+    "answer": "executive",
+    "hint": "giám đốc điều hành",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "He gave the teenager a ___ with his recording company.",
+    "answer": "contract",
+    "hint": "hợp đồng",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "His first record was a ___ hit.",
+    "answer": "worldwide",
+    "hint": "toàn cầu",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "He is now a global ___, one of the most well-known performers.",
+    "answer": "superstar",
+    "hint": "siêu sao",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "Very few teenagers ___ in the effort needed to be successful.",
+    "answer": "put",
+    "hint": "bỏ (công sức)",
+    "skill": "listening",
+    "section": "flow-chart-completion"
   }
 ]

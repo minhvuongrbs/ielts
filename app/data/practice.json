@@ -298,5 +298,64 @@
     ],
     "skill": "listening",
     "section": "identify-distractors"
+  },
+  {
+    "type": "flow-chart",
+    "instruction": "Complete the flow-chart below. Write NO MORE THAN TWO WORDS for each answer.",
+    "parts": [
+      {
+        "partTitle": "Part 1 — Justin Bieber's Rise to Fame",
+        "audioSrc": "../../../../assets/audio/Mindset_L1_59.mp3",
+        "steps": [
+          {
+            "text": "He learnt how to play a variety of instruments: {1}, guitar, drums and trumpet.",
+            "blanks": [{ "q": 1, "answer": "piano", "altAnswers": ["Piano", "the piano"] }]
+          },
+          {
+            "text": "He entered talent {2} in his home town and his mother posted some videos on YouTube.",
+            "blanks": [{ "q": 2, "answer": "competitions", "altAnswers": ["Competitions"] }]
+          },
+          {
+            "text": "The YouTube clips brought him a lot of {3}.",
+            "blanks": [{ "q": 3, "answer": "fans", "altAnswers": ["Fans"] }]
+          },
+          {
+            "text": "He was discovered by a {4}.",
+            "blanks": [{ "q": 4, "answer": "music executive", "altAnswers": ["Music executive", "Music Executive"] }]
+          },
+          {
+            "text": "He signed a recording {5} and became a {6}.",
+            "blanks": [
+              { "q": 5, "answer": "contract", "altAnswers": ["Contract"] },
+              { "q": 6, "answer": "global superstar", "altAnswers": ["Global superstar", "superstar", "Superstar"] }
+            ]
+          }
+        ]
+      },
+      {
+        "partTitle": "Part 2 — How to Become Famous",
+        "audioSrc": "../../../../assets/audio/Mindset_L1_61.mp3",
+        "steps": [
+          {
+            "text": "Find something you like doing and {1} at becoming the best in that particular skill.",
+            "blanks": [{ "q": 1, "answer": "work hard", "altAnswers": ["work"] }]
+          },
+          {
+            "text": "Study {2} and try to learn as much as possible.",
+            "blanks": [{ "q": 2, "answer": "the experts", "altAnswers": ["experts"] }]
+          },
+          {
+            "text": "Create {3} and market yourself. You need to be able to sell yourself. Social media is a great way to do this these days.",
+            "blanks": [{ "q": 3, "answer": "opportunities", "altAnswers": ["Opportunities"] }]
+          },
+          {
+            "text": "Don't worry if sometimes you {4}. You can learn from the experience.",
+            "blanks": [{ "q": 4, "answer": "fail", "altAnswers": ["Fail"] }]
+          }
+        ]
+      }
+    ],
+    "skill": "listening",
+    "section": "flow-chart-completion"
   }
 ]

@@ -1565,5 +1565,176 @@
     "section": "identify-distractors",
     "category": "answer-signal",
     "vietnamese": "nhiều hơn bất kỳ mặt hàng nào khác"
+  },
+  {
+    "phrase": "focus on being good at something",
+    "usage": "Advising someone to develop a skill instead of chasing fame directly.",
+    "example": "Instead of trying to become famous, focus on being good at something you enjoy.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "advice",
+    "vietnamese": "tập trung vào việc giỏi một thứ gì đó"
+  },
+  {
+    "phrase": "learn from the experts",
+    "usage": "Suggesting that the best way to improve is to study those who are already successful.",
+    "example": "A good way to be the best is to learn from the experts in your field.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "advice",
+    "vietnamese": "học hỏi từ các chuyên gia"
+  },
+  {
+    "phrase": "create opportunities for yourself",
+    "usage": "Emphasising that success requires initiative — no one will come to you.",
+    "example": "Nobody is going to come to you. You have to create opportunities for yourself.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "success",
+    "vietnamese": "tự tạo cơ hội cho bản thân"
+  },
+  {
+    "phrase": "don't be afraid to experiment",
+    "usage": "Encouraging someone to try new things without fear.",
+    "example": "Try to learn from the experts, but don't be afraid to experiment and try something new.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "advice",
+    "vietnamese": "đừng ngại thử nghiệm"
+  },
+  {
+    "phrase": "learn from failure / learn from the experience",
+    "usage": "Encouraging a positive attitude towards making mistakes.",
+    "example": "People who fail often say that the experience has been a great lesson.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "success",
+    "vietnamese": "học hỏi từ thất bại / học từ trải nghiệm"
+  },
+  {
+    "phrase": "kept on trying regardless",
+    "usage": "Describing persistence despite repeated failure.",
+    "example": "The most successful people have often failed countless times, but they kept on trying regardless.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "success",
+    "vietnamese": "tiếp tục cố gắng bất chấp"
+  },
+  {
+    "phrase": "have a product to sell",
+    "usage": "Explaining that self-promotion is necessary — you must market yourself like a product.",
+    "example": "You have a product to sell and the product is you.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "success",
+    "vietnamese": "có sản phẩm để bán (tự quảng bá bản thân)"
+  },
+  {
+    "phrase": "the last thing I would say is…",
+    "usage": "Signposting phrase that introduces the final point in a series of advice.",
+    "example": "The last thing I would say is, if you want to be really successful, you will experience failure.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "signpost",
+    "vietnamese": "điều cuối cùng tôi muốn nói là…"
+  },
+  {
+    "phrase": "one thing is for sure",
+    "usage": "Emphasising that something is definitely true.",
+    "example": "One thing is for sure, nobody is going to come to you.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "signpost",
+    "vietnamese": "có một điều chắc chắn là"
+  },
+  {
+    "phrase": "my first piece of advice is…",
+    "usage": "Introducing the first suggestion in a series. A common signposting phrase in IELTS Listening.",
+    "example": "My first piece of advice is — don't try and become famous.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "signpost",
+    "vietnamese": "lời khuyên đầu tiên của tôi là…"
+  },
+  {
+    "phrase": "rise to fame",
+    "usage": "Describing how someone became famous, often used to introduce a celebrity's story.",
+    "example": "Justin Bieber's rise to fame is an interesting story.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "fame",
+    "vietnamese": "con đường nổi tiếng"
+  },
+  {
+    "phrase": "shot to fame",
+    "usage": "Becoming famous very quickly and suddenly.",
+    "example": "He shot to fame in just two years.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "fame",
+    "vietnamese": "nổi tiếng nhanh chóng"
+  },
+  {
+    "phrase": "taught himself how to…",
+    "usage": "Describing someone who learned a skill without a teacher (self-taught).",
+    "example": "He taught himself how to play a whole selection of musical instruments.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "music",
+    "vietnamese": "tự học cách…"
+  },
+  {
+    "phrase": "put in the effort",
+    "usage": "Describing someone who works hard to achieve something.",
+    "example": "Very few teenagers put in the effort needed to be successful.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "success",
+    "vietnamese": "bỏ công sức, nỗ lực"
+  },
+  {
+    "phrase": "came across … by accident",
+    "usage": "Finding something unexpectedly, without looking for it.",
+    "example": "A music executive came across his videos by accident.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "fame",
+    "vietnamese": "tình cờ tìm thấy"
+  },
+  {
+    "phrase": "recognised his talent",
+    "usage": "Noticing and appreciating someone's natural ability.",
+    "example": "He immediately recognised Bieber's talent and gave him a contract.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "fame",
+    "vietnamese": "nhận ra tài năng của anh ấy"
+  },
+  {
+    "phrase": "a worldwide hit",
+    "usage": "Describing a song, album, or product that is hugely successful around the world.",
+    "example": "His first record was a worldwide hit.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "music",
+    "vietnamese": "bản hit toàn cầu"
+  },
+  {
+    "phrase": "on the other hand",
+    "usage": "Introducing a contrast — showing the opposite side or a different perspective.",
+    "example": "Very few teenagers put in the effort. Bieber, on the other hand, mastered multiple instruments.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "signpost",
+    "vietnamese": "mặt khác, ngược lại"
+  },
+  {
+    "phrase": "not only … but also",
+    "usage": "Adding extra information that is surprising or impressive.",
+    "example": "He not only learnt how to play the piano, but also mastered the drums.",
+    "skill": "listening",
+    "section": "flow-chart-completion",
+    "category": "signpost",
+    "vietnamese": "không chỉ… mà còn"
   }
 ]

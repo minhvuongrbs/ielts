@@ -3582,5 +3582,315 @@
     "category": "paraphrase",
     "skill": "listening",
     "section": "identify-distractors"
+  },
+  {
+    "word": "celebrity",
+    "pos": "noun",
+    "vietnamese": "người nổi tiếng",
+    "definition": "A famous person, especially in entertainment or sport.",
+    "example": "Many celebrities use social media to connect with their fans.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "famous",
+    "pos": "adjective",
+    "vietnamese": "nổi tiếng",
+    "definition": "Known about by many people.",
+    "example": "She became famous after her first album was a worldwide hit.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "well-known",
+    "pos": "adjective",
+    "vietnamese": "nổi tiếng, ai cũng biết",
+    "definition": "Known or recognized by many people. A synonym of 'famous'.",
+    "example": "He is now a well-known performer around the world.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "talented",
+    "pos": "adjective",
+    "vietnamese": "tài năng, có năng khiếu",
+    "definition": "Having a natural ability to do something well.",
+    "example": "She is an incredibly talented singer who can play five instruments.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "popular",
+    "pos": "adjective",
+    "vietnamese": "phổ biến, được yêu thích",
+    "definition": "Liked or admired by many people.",
+    "example": "The song became popular after it was shared on social media.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "expert",
+    "pos": "noun",
+    "vietnamese": "chuyên gia",
+    "definition": "A person with extensive knowledge or skill in a particular area.",
+    "example": "Study the experts and try to learn as much as possible from them.",
+    "category": "success",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "opportunity",
+    "pos": "noun",
+    "vietnamese": "cơ hội",
+    "definition": "A chance or occasion for doing something; a favourable situation.",
+    "example": "You have to create opportunities for yourself — nobody will come to you.",
+    "category": "success",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "failure",
+    "pos": "noun",
+    "vietnamese": "thất bại",
+    "definition": "Lack of success; an unsuccessful attempt.",
+    "example": "Don't be afraid of failure — you can learn from the experience.",
+    "category": "success",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "successful",
+    "pos": "adjective",
+    "vietnamese": "thành công",
+    "definition": "Achieving the results wanted or hoped for.",
+    "example": "Some of the most successful people have failed countless times.",
+    "category": "success",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "achieve",
+    "pos": "verb",
+    "vietnamese": "đạt được",
+    "definition": "To successfully reach a goal or result through effort.",
+    "example": "She achieved fame through years of hard work and dedication.",
+    "category": "success",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "social media",
+    "pos": "noun",
+    "vietnamese": "mạng xã hội",
+    "definition": "Websites and apps that allow people to create and share content or participate in social networking.",
+    "example": "Many people use social media to market themselves these days.",
+    "category": "media",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "journalist",
+    "pos": "noun",
+    "vietnamese": "nhà báo",
+    "definition": "A person who writes for newspapers, magazines, or news websites.",
+    "example": "You will hear a journalist talk about how this artist became famous.",
+    "category": "media",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "paparazzi",
+    "pos": "noun",
+    "vietnamese": "phóng viên ảnh (săn người nổi tiếng)",
+    "definition": "Photographers who follow famous people to take their photographs and sell them to newspapers.",
+    "example": "Your children may have paparazzi following them everywhere.",
+    "category": "media",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "experiment",
+    "pos": "verb",
+    "vietnamese": "thử nghiệm, thí nghiệm",
+    "definition": "To try out a new idea or method to see what happens.",
+    "example": "Don't be afraid to experiment — try something new.",
+    "category": "advice",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "observe",
+    "pos": "verb",
+    "vietnamese": "quan sát",
+    "definition": "To watch someone or something carefully.",
+    "example": "Find people you admire and observe them carefully.",
+    "category": "advice",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "focus",
+    "pos": "verb",
+    "vietnamese": "tập trung",
+    "definition": "To concentrate attention or effort on a particular thing.",
+    "example": "Focus on being good at something rather than trying to become famous.",
+    "category": "advice",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "regardless",
+    "pos": "adverb",
+    "vietnamese": "bất chấp, không kể",
+    "definition": "Without being affected by something; despite everything.",
+    "example": "What makes them successful is that they kept on trying regardless.",
+    "category": "advice",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "admire",
+    "pos": "verb",
+    "vietnamese": "ngưỡng mộ",
+    "definition": "To respect and approve of someone or their behaviour.",
+    "example": "Find people you admire in your area of interest.",
+    "category": "advice",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "wealthy",
+    "pos": "adjective",
+    "vietnamese": "giàu có",
+    "definition": "Having a lot of money or possessions; rich.",
+    "example": "If you are well-known you might also be wealthy.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "private life",
+    "pos": "noun",
+    "vietnamese": "cuộc sống riêng tư",
+    "definition": "The part of someone's life that is personal and not public.",
+    "example": "Celebrities do not have a private life — journalists follow them everywhere.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "gifted",
+    "pos": "adjective",
+    "vietnamese": "có năng khiếu, tài năng bẩm sinh",
+    "definition": "Having a great natural ability or talent.",
+    "example": "He was clearly gifted, and his mother arranged for him to enter competitions.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "mastered",
+    "pos": "verb",
+    "vietnamese": "thành thạo, nắm vững",
+    "definition": "Learned or understood something completely; became very skilled at it.",
+    "example": "He not only learnt the piano, but also mastered the drums and even the trumpet.",
+    "category": "music",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "recording",
+    "pos": "noun",
+    "vietnamese": "bản thu âm",
+    "definition": "A piece of music or speech that has been recorded.",
+    "example": "His first recording was a worldwide hit.",
+    "category": "music",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "contract",
+    "pos": "noun",
+    "vietnamese": "hợp đồng",
+    "definition": "A written legal agreement between two parties.",
+    "example": "He immediately gave the teenager a contract with his recording company.",
+    "category": "success",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "superstar",
+    "pos": "noun",
+    "vietnamese": "siêu sao",
+    "definition": "An extremely famous and successful performer or sports player.",
+    "example": "He is now a global superstar, one of the most well-known performers ever.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "fortune",
+    "pos": "noun",
+    "vietnamese": "tài sản lớn, gia tài",
+    "definition": "A large amount of money or wealth.",
+    "example": "Many celebrities have made a fortune from their music and films.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "performer",
+    "pos": "noun",
+    "vietnamese": "người biểu diễn, nghệ sĩ",
+    "definition": "A person who entertains an audience, especially by acting, singing, or dancing.",
+    "example": "He is one of the most well-known performers the world has ever seen.",
+    "category": "music",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "competition",
+    "pos": "noun",
+    "vietnamese": "cuộc thi",
+    "definition": "An event in which people try to win by being the best at something.",
+    "example": "His mother arranged for him to take part in local competitions.",
+    "category": "success",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "fan",
+    "pos": "noun",
+    "vietnamese": "người hâm mộ",
+    "definition": "A person who admires and supports a performer, team, or public figure.",
+    "example": "Soon these clips attracted a number of fans who started following him.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "worldwide",
+    "pos": "adjective",
+    "vietnamese": "toàn cầu, trên toàn thế giới",
+    "definition": "Happening or existing in all parts of the world.",
+    "example": "His first record was a worldwide hit.",
+    "category": "fame",
+    "skill": "listening",
+    "section": "flow-chart-completion"
+  },
+  {
+    "word": "reporter",
+    "pos": "noun",
+    "vietnamese": "phóng viên",
+    "definition": "A person who reports news for a newspaper, television, or radio.",
+    "example": "Reporters follow celebrities everywhere and take photos of them.",
+    "category": "media",
+    "skill": "listening",
+    "section": "flow-chart-completion"
   }
 ]

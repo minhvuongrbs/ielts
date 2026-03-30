@@ -118,5 +118,30 @@
     ],
     "skill": "listening",
     "section": "identify-distractors"
+  },
+  {
+    "title": "Flow-chart Completion",
+    "subtitle": "IELTS Listening — Section 3 — Question Type",
+    "description": "In flow-chart completion tasks, you listen to a recording and fill in missing words in a flow-chart that shows a process or sequence of steps. The answers come in the same order as the recording. This task tests your ability to follow a logical sequence while listening.",
+    "format": [
+      "You see a flow-chart with boxes connected by arrows showing a process or sequence",
+      "Some boxes have gaps (missing words) that you need to fill in",
+      "The word limit is stated clearly (e.g., 'NO MORE THAN TWO WORDS')",
+      "The answers follow the order of the recording",
+      "You may be given a word list to choose from, or you may need to use words from the recording",
+      "The flow-chart may contain technical or scientific language — don't panic, focus on the words you DO understand"
+    ],
+    "tips": [
+      "Read the ENTIRE flow-chart before the audio plays — understand the overall process first",
+      "For each gap, predict the TYPE of word needed (noun, verb, adjective) based on the grammar around it",
+      "Read the words BEFORE and AFTER each gap — they give strong clues about the missing word",
+      "Listen for signposting words that signal a new step: 'first', 'next', 'then', 'finally', 'the last thing'",
+      "The recording may use synonyms or paraphrases for words in the flow-chart — don't expect exact matches",
+      "If the flow-chart uses technical language, the speaker will often explain the terms — listen for the explanation",
+      "Check your spelling and word count — writing too many words means the answer is marked WRONG",
+      "If you miss an answer, move on — the next step in the flow-chart will be coming soon"
+    ],
+    "skill": "listening",
+    "section": "flow-chart-completion"
   }
 ]

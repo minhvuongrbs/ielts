@@ -73,5 +73,10 @@
     "section": "identify-distractors",
     "name": "Identify Distractors",
     "skill": "listening"
+  },
+  {
+    "section": "flow-chart-completion",
+    "name": "Flow-chart Completion",
+    "skill": "listening"
   }
 ]

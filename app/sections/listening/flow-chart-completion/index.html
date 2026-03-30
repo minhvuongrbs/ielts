@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flow-chart Completion — IELTS Listening</title>
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/listening.css">
+<style>
+.flow-part{margin-bottom:28px}
+.flow-part-title{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;margin-bottom:10px;color:var(--listening)}
+.flow-audio{margin-bottom:14px}
+.flow-audio audio{width:100%}
+.flow-steps{display:flex;flex-direction:column;align-items:center;gap:0}
+.flow-step{background:#fff;border:2px solid var(--accent-light);border-radius:var(--r);padding:14px 18px;width:100%;max-width:560px;font-size:.92rem;line-height:1.6;text-align:center;position:relative}
+.flow-step.pc{border-color:var(--correct);background:var(--correct-bg)}
+.flow-step.pw{border-color:var(--wrong);background:var(--wrong-bg)}
+.flow-arrow{font-size:1.4rem;color:var(--accent);line-height:1;padding:4px 0}
+.flow-input{border:none;border-bottom:2px solid var(--accent);background:transparent;font-family:inherit;font-size:.92rem;font-weight:600;color:var(--accent-dark);text-align:center;width:110px;padding:2px 4px;outline:none;transition:border-color .2s}
+.flow-input:focus{border-bottom-color:var(--listening)}
+.flow-input.pc{border-bottom-color:var(--correct);color:var(--correct)}
+.flow-input.pw{border-bottom-color:var(--wrong);color:var(--wrong);text-decoration:line-through}
+.flow-answer{display:none;font-weight:600;color:var(--correct);font-size:.85rem}
+.flow-answer.show{display:inline}
+#practice .audio-card{display:none}
+</style>
+</head>
+<body data-depth="3" data-active="listening">
+
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+
+<div id="app"></div>
+
+<script>
+const CAT_LABELS = {
+  fame:    '🌟 Fame',
+  success: '🏆 Success',
+  media:   '📱 Media',
+  music:   '🎵 Music',
+  advice:  '💡 Advice',
+  signpost:'🔗 Signpost'
+};
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/listening.js"></script>
+<script>
+renderListeningPage({
+  title: 'Flow-chart Completion',
+  sub: 'IELTS Listening — Section 3 — Fame & the Media',
+  guideWhat: 'Flow-chart Completion',
+  practiceTab: { audioSrc: '../../../../assets/audio/Mindset_L1_59.mp3' },
+  phrasesIntro: "Key phrases from the interview about becoming famous. Learn signposting words and advice expressions for IELTS."
+});
+
+let PRACTICE = {};
+
+function renderPractice() {
+  const P = PRACTICE; if (!P.parts) return;
+  let html = '';
+  P.parts.forEach((part, pi) => {
+    html += `<div class="flow-part">
+      <div class="flow-part-title">${part.partTitle}</div>
+      <div class="flow-audio">
+        <audio controls src="${part.audioSrc}" style="width:100%"></audio>
+      </div>
+      <p class="practice-instruction" style="text-align:center;margin-bottom:14px">${P.instruction}</p>
+      <div class="flow-steps" id="flow-steps-${pi}">`;
+    part.steps.forEach((step, si) => {
+      if (si > 0) html += `<div class="flow-arrow">\u2193</div>`;
+      let txt = step.text;
+      step.blanks.forEach(b => {
+        txt = txt.replace(`{${b.q}}`,
+          `<input class="flow-input" id="pq-${pi}-${b.q}" autocomplete="off" spellcheck="false" placeholder="(${b.q})"> <span class="flow-answer" id="pa-${pi}-${b.q}"></span>`);
+      });
+      html += `<div class="flow-step" id="fs-${pi}-${si}">${txt}</div>`;
+    });
+    html += `</div></div>`;
+  });
+  document.getElementById('practice-content').innerHTML = html;
+  document.getElementById('practice-score').className = 'practice-score';
+  document.getElementById('practice-score').textContent = '';
+  document.getElementById('pcheck').style.display = 'inline-block';
+  document.getElementById('preset').style.display = 'none';
+}
+
+function checkPractice() {
+  const P = PRACTICE; if (!P.parts) return;
+  let score = 0, total = 0;
+  P.parts.forEach((part, pi) => {
+    part.steps.forEach((step, si) => {
+      let stepOk = true;
+      step.blanks.forEach(b => {
+        total++;
+        const inp = document.getElementById(`pq-${pi}-${b.q}`);
+        const ans = document.getElementById(`pa-${pi}-${b.q}`);
+        if (!inp) return;
+        const val = normalize(inp.value);
+        const correct = normalize(b.answer);
+        const alts = (b.altAnswers || []).map(a => normalize(a));
+        const ok = val === correct || alts.includes(val);
+        if (ok) score++; else stepOk = false;
+        inp.disabled = true;
+        inp.classList.add(ok ? 'pc' : 'pw');
+        if (!ok) { ans.textContent = '\u2713 ' + b.answer; ans.classList.add('show'); }
+      });
+      const card = document.getElementById(`fs-${pi}-${si}`);
+      if (card) card.classList.add(stepOk ? 'pc' : 'pw');
+    });
+  });
+  const el = document.getElementById('practice-score');
+  el.textContent = `${score} / ${total} correct` + (score === total ? ' \uD83C\uDF89' : '');
+  el.className = 'practice-score show ' + (score >= total * 0.7 ? 'good' : 'bad');
+  document.getElementById('pcheck').style.display = 'none';
+  document.getElementById('preset').style.display = 'inline-block';
+}
+
+function resetPractice() { renderPractice(); }
+
+DataLayer.getLesson('listening', 'flow-chart-completion').then(data => {
+  PRACTICE = data.practice || {};
+  initListening(data);
+  renderPractice();
+});
+</script>
+</body>
+</html>
