@@ -1,6 +1,15 @@
 /* ======================== LISTENING LESSON STYLES ======================== */
 /* Practice-type CSS for all listening lessons — extracted from inline <style> blocks */
 
+/* ======================== SOURCE BADGE ======================== */
+.source-badge{display:inline-block;margin-top:10px;padding:5px 14px;background:#f5f0e8;border:1px solid #e0d6c8;border-radius:20px;font-size:.8rem;font-weight:600;color:#8a7a66;letter-spacing:.01em}
+
+/* ======================== SCRIPT TOGGLE ======================== */
+.script-toggle.disabled{opacity:.4;cursor:not-allowed}
+.script-box{display:none;margin-top:12px;padding:16px 20px;background:#fef8f0;border:1px solid #e8ddd0;border-radius:var(--r);font-size:.88rem;line-height:1.7;color:var(--text);max-height:400px;overflow-y:auto}
+.script-box.open{display:block}
+.script-box strong{color:var(--listening)}
+
 /* ======================== FORM COMPLETION ======================== */
 .ielts-form{background:#fef8f0;border:2px solid #e8ddd0;border-radius:var(--r);padding:28px 28px 20px;margin-bottom:20px}
 .ielts-form-header{text-align:center;margin-bottom:20px}

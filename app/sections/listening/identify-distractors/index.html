@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IELTS Listening — Identify Distractors — Consumerism</title>
 <link rel="stylesheet" href="../../../shared/styles.css">
-<link rel="stylesheet" href="../../../shared/listening.css">
+<link rel="stylesheet" href="../../../shared/listening.css?v=2">
 <style>
 .dist-table{width:100%;border-collapse:separate;border-spacing:0 8px}
 .dist-table th{text-align:left;font-size:.82rem;font-weight:700;color:#8a7a66;padding:0 8px 4px;text-transform:uppercase;letter-spacing:.03em}
@@ -36,11 +36,12 @@ const CAT_LABELS={shopping:'🛒 Shopping',consumer:'💳 Consumer',paraphrase:'
 </script>
 <script src="../../../shared/data.js"></script>
 <script src="../../../shared/lesson.js"></script>
-<script src="../../../shared/listening.js"></script>
+<script src="../../../shared/listening.js?v=2"></script>
 <script>
 renderListeningPage({
   title: 'Identify Distractors — Consumerism',
   sub: 'IELTS Listening — Section 2 — Mindset Unit 5',
+  source: 'Mindset for IELTS L1 — Unit 5: Consumerism — Audio 41',
   guideWhat: 'Identify Distractors',
   practiceTab: { audioSrc: '../../../../assets/audio/Mindset_L1_41.mp3' },
   phrasesIntro: "Learn to spot signal phrases that introduce correct answers vs distractors. These patterns repeat across all IELTS listening tests."
@@ -128,14 +129,16 @@ function checkPractice(){
   el.className='practice-score show '+(score>=total*0.7?'good':'bad');
   document.getElementById('pcheck').style.display='none';
   document.getElementById('preset').style.display='inline-block';
+  enableScript();
 }
 
-function resetPractice(){renderPractice();}
+function resetPractice(){renderPractice();disableScript();}
 
 DataLayer.getLesson('listening','identify-distractors').then(data=>{
   PRACTICE=data.practice||{};
   initListening(data);
   renderPractice();
+  setupScript(PRACTICE.transcript);
 });
 </script>
 </body>

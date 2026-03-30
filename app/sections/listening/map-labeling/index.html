@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IELTS Listening — Map & Plan Labeling</title>
 <link rel="stylesheet" href="../../../shared/styles.css">
-<link rel="stylesheet" href="../../../shared/listening.css">
+<link rel="stylesheet" href="../../../shared/listening.css?v=2">
 <style>
 /* Map practice: letter-select buttons */
 .map-img{width:100%;max-width:600px;border-radius:var(--r);box-shadow:var(--shadow);margin:0 auto 20px;display:block}
@@ -38,11 +38,12 @@ const CAT_LABELS={venue:'🏛️ Venue',direction:'🧭 Direction',place:'📍 P
 </script>
 <script src="../../../shared/data.js"></script>
 <script src="../../../shared/lesson.js"></script>
-<script src="../../../shared/listening.js"></script>
+<script src="../../../shared/listening.js?v=2"></script>
 <script>
 renderListeningPage({
   title: 'Map & Plan Labeling',
   sub: 'IELTS Listening — Section 2 — Map of a Building',
+  source: 'Mindset for IELTS L1 — Unit 6: Leisure Time — Audio 51',
   guideWhat: 'Map & Plan Labeling',
   practiceTab: { audioSrc: '../../../../assets/audio/Mindset_L1_51.mp3' },
   visualTab: true,
@@ -137,9 +138,10 @@ function checkPractice(){
   el.className='practice-score show '+(score>=PRACTICE.questions.length*0.7?'good':'bad');
   document.getElementById('pcheck').style.display='none';
   document.getElementById('preset').style.display='inline-block';
+  enableScript();
 }
 
-function resetPractice(){ renderPractice(); }
+function resetPractice(){ renderPractice(); disableScript(); }
 
 DataLayer.getLesson('listening','map-labeling').then(data=>{
   VV=data.visualVocab||[];
@@ -147,6 +149,7 @@ DataLayer.getLesson('listening','map-labeling').then(data=>{
   initListening(data);
   renderVisualVocab();
   renderPractice();
+  setupScript(PRACTICE.transcript);
 });
 </script>
 </body>

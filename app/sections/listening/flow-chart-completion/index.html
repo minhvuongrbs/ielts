@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flow-chart Completion — IELTS Listening</title>
 <link rel="stylesheet" href="../../../shared/styles.css">
-<link rel="stylesheet" href="../../../shared/listening.css">
+<link rel="stylesheet" href="../../../shared/listening.css?v=2">
 <style>
 .flow-part{margin-bottom:28px}
 .flow-part-title{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;margin-bottom:10px;color:var(--listening)}
@@ -23,6 +23,7 @@
 .flow-answer{display:none;font-weight:600;color:var(--correct);font-size:.85rem}
 .flow-answer.show{display:inline}
 #practice .audio-card{display:none}
+/* script styles are in shared/listening.css */
 </style>
 </head>
 <body data-depth="3" data-active="listening">
@@ -44,11 +45,12 @@ const CAT_LABELS = {
 </script>
 <script src="../../../shared/data.js"></script>
 <script src="../../../shared/lesson.js"></script>
-<script src="../../../shared/listening.js"></script>
+<script src="../../../shared/listening.js?v=2"></script>
 <script>
 renderListeningPage({
   title: 'Flow-chart Completion',
   sub: 'IELTS Listening — Section 3 — Fame & the Media',
+  source: 'Mindset for IELTS L1 — Unit 7: Fame — Audio 59–60',
   guideWhat: 'Flow-chart Completion',
   practiceTab: { audioSrc: '../../../../assets/audio/Mindset_L1_59.mp3' },
   phrasesIntro: "Key phrases from the interview about becoming famous. Learn signposting words and advice expressions for IELTS."
@@ -60,7 +62,7 @@ function renderPractice() {
   const P = PRACTICE; if (!P.parts) return;
   let html = '';
   P.parts.forEach((part, pi) => {
-    html += `<div class="flow-part">
+    html += `<div class="flow-part" id="flow-part-${pi}">
       <div class="flow-part-title">${part.partTitle}</div>
       <div class="flow-audio">
         <audio controls src="${part.audioSrc}" style="width:100%"></audio>
@@ -76,46 +78,85 @@ function renderPractice() {
       });
       html += `<div class="flow-step" id="fs-${pi}-${si}">${txt}</div>`;
     });
-    html += `</div></div>`;
+    html += `</div>
+      <div class="practice-score" id="part-score-${pi}"></div>
+      <div class="ctrls" style="margin-top:12px">
+        <button class="btn bp" id="part-check-${pi}" onclick="checkPart(${pi})">Check Answers</button>
+        <button class="btn bs" id="part-reset-${pi}" onclick="resetPart(${pi})" style="display:none">Try Again</button>
+        ${part.transcript ? `<button class="btn bs script-toggle disabled" id="script-btn-${pi}" onclick="toggleScript(${pi})" disabled>📜 Show Script</button>` : ''}
+      </div>
+      ${part.transcript ? `<div class="script-box" id="script-box-${pi}">${part.transcript.replace(/\n/g,'<br>')}</div>` : ''}
+    </div>`;
   });
   document.getElementById('practice-content').innerHTML = html;
-  document.getElementById('practice-score').className = 'practice-score';
-  document.getElementById('practice-score').textContent = '';
-  document.getElementById('pcheck').style.display = 'inline-block';
+  // Hide global buttons — each part has its own
+  document.getElementById('practice-score').style.display = 'none';
+  document.getElementById('pcheck').style.display = 'none';
   document.getElementById('preset').style.display = 'none';
 }
 
-function checkPractice() {
-  const P = PRACTICE; if (!P.parts) return;
+function checkPart(pi) {
+  const part = PRACTICE.parts[pi]; if (!part) return;
   let score = 0, total = 0;
-  P.parts.forEach((part, pi) => {
-    part.steps.forEach((step, si) => {
-      let stepOk = true;
-      step.blanks.forEach(b => {
-        total++;
-        const inp = document.getElementById(`pq-${pi}-${b.q}`);
-        const ans = document.getElementById(`pa-${pi}-${b.q}`);
-        if (!inp) return;
-        const val = normalize(inp.value);
-        const correct = normalize(b.answer);
-        const alts = (b.altAnswers || []).map(a => normalize(a));
-        const ok = val === correct || alts.includes(val);
-        if (ok) score++; else stepOk = false;
-        inp.disabled = true;
-        inp.classList.add(ok ? 'pc' : 'pw');
-        if (!ok) { ans.textContent = '\u2713 ' + b.answer; ans.classList.add('show'); }
-      });
-      const card = document.getElementById(`fs-${pi}-${si}`);
-      if (card) card.classList.add(stepOk ? 'pc' : 'pw');
+  part.steps.forEach((step, si) => {
+    let stepOk = true;
+    step.blanks.forEach(b => {
+      total++;
+      const inp = document.getElementById(`pq-${pi}-${b.q}`);
+      const ans = document.getElementById(`pa-${pi}-${b.q}`);
+      if (!inp) return;
+      const val = normalize(inp.value);
+      const correct = normalize(b.answer);
+      const alts = (b.altAnswers || []).map(a => normalize(a));
+      const ok = val === correct || alts.includes(val);
+      if (ok) score++; else stepOk = false;
+      inp.disabled = true;
+      inp.classList.add(ok ? 'pc' : 'pw');
+      if (!ok) { ans.textContent = '\u2713 ' + b.answer; ans.classList.add('show'); }
     });
+    const card = document.getElementById(`fs-${pi}-${si}`);
+    if (card) card.classList.add(stepOk ? 'pc' : 'pw');
   });
-  const el = document.getElementById('practice-score');
+  const el = document.getElementById(`part-score-${pi}`);
   el.textContent = `${score} / ${total} correct` + (score === total ? ' \uD83C\uDF89' : '');
   el.className = 'practice-score show ' + (score >= total * 0.7 ? 'good' : 'bad');
-  document.getElementById('pcheck').style.display = 'none';
-  document.getElementById('preset').style.display = 'inline-block';
+  document.getElementById(`part-check-${pi}`).style.display = 'none';
+  document.getElementById(`part-reset-${pi}`).style.display = 'inline-block';
+  const sb = document.getElementById(`script-btn-${pi}`);
+  if (sb) { sb.disabled = false; sb.classList.remove('disabled'); }
 }
 
+function resetPart(pi) {
+  const part = PRACTICE.parts[pi]; if (!part) return;
+  part.steps.forEach((step, si) => {
+    step.blanks.forEach(b => {
+      const inp = document.getElementById(`pq-${pi}-${b.q}`);
+      const ans = document.getElementById(`pa-${pi}-${b.q}`);
+      if (inp) { inp.value = ''; inp.disabled = false; inp.classList.remove('pc','pw'); }
+      if (ans) { ans.textContent = ''; ans.classList.remove('show'); }
+    });
+    const card = document.getElementById(`fs-${pi}-${si}`);
+    if (card) card.classList.remove('pc','pw');
+  });
+  const el = document.getElementById(`part-score-${pi}`);
+  el.className = 'practice-score'; el.textContent = '';
+  document.getElementById(`part-check-${pi}`).style.display = 'inline-block';
+  document.getElementById(`part-reset-${pi}`).style.display = 'none';
+  const sb = document.getElementById(`script-btn-${pi}`);
+  const sbox = document.getElementById(`script-box-${pi}`);
+  if (sb) { sb.disabled = true; sb.classList.add('disabled'); sb.textContent = '📜 Show Script'; }
+  if (sbox) sbox.classList.remove('open');
+}
+
+function toggleScript(pi) {
+  const box = document.getElementById(`script-box-${pi}`);
+  const btn = document.getElementById(`script-btn-${pi}`);
+  const open = box.classList.toggle('open');
+  btn.textContent = open ? '📜 Hide Script' : '📜 Show Script';
+}
+
+/* Legacy global functions (called by shared template buttons) */
+function checkPractice() { PRACTICE.parts.forEach((_, i) => { if (!document.getElementById(`part-check-${i}`).style.display || document.getElementById(`part-check-${i}`).style.display !== 'none') checkPart(i); }); }
 function resetPractice() { renderPractice(); }
 
 DataLayer.getLesson('listening', 'flow-chart-completion').then(data => {

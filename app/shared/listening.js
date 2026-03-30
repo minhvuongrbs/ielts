@@ -6,7 +6,7 @@ function normalize(s){return s.trim().toLowerCase().replace(/[\s]+/g,' ');}
 
 /* ======================== HTML TEMPLATE ======================== */
 function renderListeningPage(cfg){
-  /* cfg: { title, sub, guideWhat, phrasesIntro, practiceTab:{audioSrc}, visualTab:bool } */
+  /* cfg: { title, sub, source, guideWhat, phrasesIntro, practiceTab:{audioSrc}, visualTab:bool } */
 
   let extraTabs = '';
   let extraPanes = '';
@@ -24,7 +24,9 @@ function renderListeningPage(cfg){
         <div class="ctrls">
           <button class="btn bp" id="pcheck" onclick="checkPractice()">Check Answers</button>
           <button class="btn bs" id="preset" onclick="resetPractice()" style="display:none">Try Again</button>
+          <button class="btn bs script-toggle disabled" id="script-btn" onclick="toggleScript()" disabled style="display:none">📜 Show Script</button>
         </div>
+        <div class="script-box" id="script-box"></div>
       </div>`;
   }
   if(cfg.visualTab){
@@ -41,6 +43,7 @@ function renderListeningPage(cfg){
     <header>
       <h1>${cfg.title}</h1>
       <div class="sub">${cfg.sub}</div>
+      ${cfg.source?`<div class="source-badge">📖 ${cfg.source}</div>`:''}
     </header>
 
     <div class="tabs">
@@ -120,6 +123,51 @@ function renderListeningPage(cfg){
     document.querySelectorAll('.sp').forEach(x=>x.classList.remove('active'));
     b.classList.add('active');document.getElementById(b.dataset.sub).classList.add('active');
   }));
+}
+
+/* ======================== SCRIPT TOGGLE (shared) ======================== */
+function setupScript(transcript){
+  if(!transcript) return;
+  var ctrls=document.querySelector('#practice .ctrls');
+  if(!ctrls) return;
+  /* Create button if not already in template */
+  var btn=document.getElementById('script-btn');
+  if(!btn){
+    btn=document.createElement('button');
+    btn.id='script-btn';
+    btn.className='btn bs script-toggle disabled';
+    btn.disabled=true;
+    btn.textContent='📜 Show Script';
+    btn.onclick=function(){toggleScript();};
+    ctrls.appendChild(btn);
+  }
+  btn.style.display='inline-block';
+  /* Create script box if not already in template */
+  var box=document.getElementById('script-box');
+  if(!box){
+    box=document.createElement('div');
+    box.id='script-box';
+    box.className='script-box';
+    ctrls.parentNode.insertBefore(box,ctrls.nextSibling);
+  }
+  box.innerHTML=transcript.replace(/\n/g,'<br>');
+}
+function toggleScript(pi){
+  var box=document.getElementById(pi!=null?'script-box-'+pi:'script-box');
+  var btn=document.getElementById(pi!=null?'script-btn-'+pi:'script-btn');
+  if(!box||!btn) return;
+  var open=box.classList.toggle('open');
+  btn.textContent=open?'📜 Hide Script':'📜 Show Script';
+}
+function enableScript(){
+  var btn=document.getElementById('script-btn');
+  if(btn){btn.disabled=false;btn.classList.remove('disabled');}
+}
+function disableScript(){
+  var btn=document.getElementById('script-btn');
+  var box=document.getElementById('script-box');
+  if(btn){btn.disabled=true;btn.classList.add('disabled');btn.textContent='📜 Show Script';}
+  if(box) box.classList.remove('open');
 }
 
 /* ======================== INIT LISTENING ======================== */
