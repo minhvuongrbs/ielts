@@ -1736,5 +1736,113 @@
     "section": "flow-chart-completion",
     "category": "signpost",
     "vietnamese": "không chỉ… mà còn"
+  },
+  {
+    "phrase": "suitable for all seasons except…",
+    "usage": "When describing something that works most of the time but not always.",
+    "example": "This double sleeping bag is suitable for all seasons except winter.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "description",
+    "vietnamese": "phù hợp cho mọi mùa trừ…"
+  },
+  {
+    "phrase": "in association with",
+    "usage": "When describing a partnership or collaboration between organisations.",
+    "example": "The Spread the Word Life Writing Prize in association with Goldsmiths Writers' Centre.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "formal",
+    "vietnamese": "phối hợp với"
+  },
+  {
+    "phrase": "no more than X words",
+    "usage": "When setting a maximum limit on word count or quantity.",
+    "example": "Entries should be original works of no more than 5,000 words.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "rules",
+    "vietnamese": "không quá X từ"
+  },
+  {
+    "phrase": "be excluded from",
+    "usage": "When someone is not allowed to participate or is removed from consideration.",
+    "example": "Writers who have previously won are excluded from entering.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "rules",
+    "vietnamese": "bị loại trừ khỏi"
+  },
+  {
+    "phrase": "result in",
+    "usage": "When describing the consequence of an action.",
+    "example": "Multiple entries will result in only the first entry being considered.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "cause-effect",
+    "vietnamese": "dẫn đến"
+  },
+  {
+    "phrase": "opt for something",
+    "usage": "When making a deliberate choice between options.",
+    "example": "If you want a budget sleeping bag, opt for this.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "choice",
+    "vietnamese": "chọn cái gì đó"
+  },
+  {
+    "phrase": "ideal for",
+    "usage": "When something is perfectly suited for a purpose.",
+    "example": "The pack size makes it ideal for backpacking.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "description",
+    "vietnamese": "lý tưởng cho"
+  },
+  {
+    "phrase": "what's more",
+    "usage": "When adding an extra positive point to strengthen an argument.",
+    "example": "What's more, it packs up compactly and is easy to get back in the bag.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "linking",
+    "vietnamese": "hơn nữa"
+  },
+  {
+    "phrase": "give yourself a bit of time to…",
+    "usage": "When warning that something requires patience or effort.",
+    "example": "Give yourself a bit of time to fit it back in the bag.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "advice",
+    "vietnamese": "hãy dành một chút thời gian để…"
+  },
+  {
+    "phrase": "based on a significant portion of",
+    "usage": "When describing that something draws heavily from a source.",
+    "example": "Life Writing should be based on a significant portion from the author's own experience.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "formal",
+    "vietnamese": "dựa trên phần lớn của"
+  },
+  {
+    "phrase": "as soon as possible",
+    "usage": "When requesting that something be done quickly without delay.",
+    "example": "Please let us know as soon as possible if your piece has won another prize.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "formal",
+    "vietnamese": "sớm nhất có thể"
+  },
+  {
+    "phrase": "enable somebody to do something",
+    "usage": "When describing how something makes an action possible.",
+    "example": "This sleeping bag enables you to undo some zips and turn it into a coat.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2",
+    "category": "description",
+    "vietnamese": "cho phép ai đó làm gì"
   }
 ]

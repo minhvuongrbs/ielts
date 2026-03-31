@@ -3892,5 +3892,255 @@
     "category": "media",
     "skill": "listening",
     "section": "flow-chart-completion"
+  },
+  {
+    "word": "synthetic",
+    "pos": "adjective",
+    "vietnamese": "tổng hợp",
+    "definition": "Made by chemical processes rather than produced naturally.",
+    "example": "As it's synthetic, it's very easy to maintain.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "fibre",
+    "pos": "noun",
+    "vietnamese": "sợi",
+    "definition": "A thread or strand from which a textile is formed.",
+    "example": "This sleeping bag combines natural duck down and a new synthetic fibre.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "water-resistant",
+    "pos": "adjective",
+    "vietnamese": "chống nước",
+    "definition": "Able to resist the penetration of water to some degree.",
+    "example": "There's a water-resistant finish to protect it from moisture.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "insulation",
+    "pos": "noun",
+    "vietnamese": "cách nhiệt",
+    "definition": "Material used to prevent heat loss.",
+    "example": "We like the extra insulation around the areas that tend to feel the cold.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "moisture",
+    "pos": "noun",
+    "vietnamese": "độ ẩm",
+    "definition": "Water or other liquid diffused in a small quantity as vapour or condensation.",
+    "example": "There's a water-resistant finish to protect it from moisture.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "lifespan",
+    "pos": "noun",
+    "vietnamese": "tuổi thọ",
+    "definition": "The length of time for which something exists or functions.",
+    "example": "Natural duck down has a longer lifespan and is easier to pack up.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "rucksack",
+    "pos": "noun",
+    "vietnamese": "ba lô",
+    "definition": "A bag with shoulder straps carried on the back, used by walkers and travellers.",
+    "example": "It's light but too big for a rucksack.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "no-frills",
+    "pos": "adjective",
+    "vietnamese": "không rườm rà",
+    "definition": "Without extra features or luxuries; basic but functional.",
+    "example": "If you want a no-frills, budget sleeping bag, opt for this.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "innovative",
+    "pos": "adjective",
+    "vietnamese": "sáng tạo",
+    "definition": "Introducing new ideas; original and creative in thinking.",
+    "example": "This innovative, high-quality kids' sleeping bag enables you to turn it into a coat.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "compactly",
+    "pos": "adverb",
+    "vietnamese": "gọn gàng",
+    "definition": "In a way that takes up little space.",
+    "example": "It packs up compactly and is easy to get back in the bag.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "integrated",
+    "pos": "adjective",
+    "vietnamese": "tích hợp",
+    "definition": "Combined or incorporated as part of a whole.",
+    "example": "This sleeping bag has an integrated down duvet and lots of space.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "backpacking",
+    "pos": "noun",
+    "vietnamese": "đi bụi",
+    "definition": "Travelling with only a backpack, usually on a budget.",
+    "example": "The pack size is just 13x20cm, which makes it ideal for backpacking.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "trekking",
+    "pos": "noun",
+    "vietnamese": "đi bộ đường dài",
+    "definition": "Walking a long distance, usually on trails or in the mountains.",
+    "example": "It will work perfectly for summer trekking.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "non-fiction",
+    "pos": "noun",
+    "vietnamese": "phi hư cấu",
+    "definition": "Writing that is based on real facts and events, not imagined ones.",
+    "example": "Life Writing is defined as non-fiction and should be based on the author's own experience.",
+    "category": "writing",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "biography",
+    "pos": "noun",
+    "vietnamese": "tiểu sử",
+    "definition": "A written account of someone's life by another person.",
+    "example": "Traditional biographies, where the piece is only about the experience of someone else, are excluded.",
+    "category": "writing",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "commended",
+    "pos": "adjective",
+    "vietnamese": "được khen ngợi",
+    "definition": "Praised formally or officially for an achievement.",
+    "example": "Two highly commended entries will receive £500.",
+    "category": "competition",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "entrant",
+    "pos": "noun",
+    "vietnamese": "thí sinh",
+    "definition": "A person who enters a competition or examination.",
+    "example": "Previous entrants may submit again if they did not win.",
+    "category": "competition",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "disqualified",
+    "pos": "adjective",
+    "vietnamese": "bị loại",
+    "definition": "Eliminated from a competition for breaking a rule.",
+    "example": "Entries longer than 5,000 words will be disqualified.",
+    "category": "competition",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "manuscript",
+    "pos": "noun",
+    "vietnamese": "bản thảo",
+    "definition": "The original text of a book or article before publication.",
+    "example": "Writers must submit their manuscript before the deadline.",
+    "category": "writing",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "emerging",
+    "pos": "adjective",
+    "vietnamese": "mới nổi",
+    "definition": "In the early stages of development; becoming known.",
+    "example": "The Prize is open to emerging writers who have not previously published a full-length work.",
+    "category": "writing",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "self-contained",
+    "pos": "adjective",
+    "vietnamese": "hoàn chỉnh, độc lập",
+    "definition": "Complete in itself; not requiring anything else.",
+    "example": "Entries can be self-contained pieces of life writing.",
+    "category": "writing",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "mentoring",
+    "pos": "noun",
+    "vietnamese": "cố vấn",
+    "definition": "Guidance provided by an experienced person to help someone develop.",
+    "example": "Two highly commended entries will receive mentoring sessions.",
+    "category": "competition",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "opt for",
+    "pos": "phrasal verb",
+    "vietnamese": "chọn, lựa",
+    "definition": "To make a choice or decision in favour of something.",
+    "example": "If you want a budget sleeping bag, opt for this.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "simultaneously",
+    "pos": "adverb",
+    "vietnamese": "đồng thời",
+    "definition": "At the same time.",
+    "example": "Entries that are simultaneously submitted elsewhere are welcome.",
+    "category": "competition",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "cosy",
+    "pos": "adjective",
+    "vietnamese": "ấm cúng",
+    "definition": "Warm and comfortable; giving a feeling of comfort.",
+    "example": "This double sleeping bag is soft and cosy.",
+    "category": "outdoor",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
   }
 ]

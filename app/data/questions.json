@@ -1581,5 +1581,190 @@
     },
     "skill": "reading",
     "section": "complete-gardening-handbook"
+  },
+  {
+    "number": 1,
+    "text": "This sleeping bag is not very easy to pack up.",
+    "answer": "D",
+    "qtype": "matching",
+    "explanation": "The Big Sleep 250GSM: 'Give yourself a bit of time to fit it back in the bag' — meaning it's not easy to pack up.",
+    "vietnamese": "The Big Sleep 250GSM: 'Hãy dành một chút thời gian để nhét nó lại vào túi' — nghĩa là không dễ gấp gọn.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 2,
+    "text": "People can use this sleeping bag in any season.",
+    "answer": "A",
+    "qtype": "matching",
+    "explanation": "Vango Fuse -12: 'This all-year-round sleeping bag' — all-year-round means any season.",
+    "vietnamese": "Vango Fuse -12: 'Túi ngủ dùng quanh năm này' — quanh năm nghĩa là mọi mùa.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 3,
+    "text": "This sleeping bag has been designed to ensure certain parts of the body are warm.",
+    "answer": "E",
+    "qtype": "matching",
+    "explanation": "Jack Wolfskin Smoozip +3: 'extra insulation around the areas that tend to feel the cold (head, chest and feet)' — designed for specific body parts.",
+    "vietnamese": "Jack Wolfskin Smoozip +3: 'cách nhiệt bổ sung ở những vùng dễ bị lạnh (đầu, ngực và chân)' — thiết kế cho các bộ phận cơ thể cụ thể.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 4,
+    "text": "This sleeping bag contains a useful storage area.",
+    "answer": "B",
+    "qtype": "matching",
+    "explanation": "Outwell Campion Lux Double: 'a handy pocket for essentials, located inside near the top' — a pocket is a storage area.",
+    "vietnamese": "Outwell Campion Lux Double: 'một túi tiện dụng cho đồ thiết yếu, nằm bên trong gần đỉnh' — túi là khu vực lưu trữ.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 5,
+    "text": "People who do not want to spend much on a sleeping bag will find this one suits their needs.",
+    "answer": "D",
+    "qtype": "matching",
+    "explanation": "The Big Sleep 250GSM: 'no-frills, budget sleeping bag' — budget means affordable, suits people who don't want to spend much.",
+    "vietnamese": "The Big Sleep 250GSM: 'túi ngủ giá rẻ, không rườm rà' — giá rẻ phù hợp với người không muốn chi nhiều.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 6,
+    "text": "This sleeping bag can also keep the user warm during the daytime.",
+    "answer": "F",
+    "qtype": "matching",
+    "explanation": "Vango Starwalker Dragon: 'undo some zips and turn it into a fun, animal-themed coat' — converts to a coat you can wear during the day.",
+    "vietnamese": "Vango Starwalker Dragon: 'mở khóa kéo và biến thành áo khoác hình động vật' — biến thành áo khoác mặc ban ngày.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 7,
+    "text": "People who wish to avoid carrying heavy weights should try this sleeping bag.",
+    "answer": "C",
+    "qtype": "matching",
+    "explanation": "Nordisk Oscar +10: 'At just 350g, this sleeping bag is remarkably light' — the lightest option for weight-conscious travellers.",
+    "vietnamese": "Nordisk Oscar +10: 'Chỉ nặng 350g, túi ngủ này nhẹ đáng kinh ngạc' — lựa chọn nhẹ nhất cho du khách quan tâm đến trọng lượng.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 8,
+    "text": "This sleeping bag contains two different types of material.",
+    "answer": "A",
+    "qtype": "matching",
+    "explanation": "Vango Fuse -12: 'combines natural duck down and a new synthetic fibre' — two different materials: down + synthetic.",
+    "vietnamese": "Vango Fuse -12: 'kết hợp lông vịt tự nhiên và sợi tổng hợp mới' — hai loại chất liệu khác nhau: lông vũ + tổng hợp.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 9,
+    "text": "Writers can submit an entry of fewer than 5,000 words for the Life Writing Prize.",
+    "answer": "TRUE",
+    "explanation": "TRUE — The passage states 'no more than 5,000 words' and 'There is no minimum word count', so entries under 5,000 words are allowed.",
+    "vietnamese": "ĐÚNG — Bài viết 'không quá 5.000 từ' và 'Không có số từ tối thiểu', nên bài dưới 5.000 từ được chấp nhận.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 10,
+    "text": "Writers can choose to write about the life of a person they know.",
+    "answer": "FALSE",
+    "explanation": "FALSE — The passage says Life Writing 'should be based on a significant portion from the author's own experience' and 'Traditional biographies, where the piece is only about the experience of someone else, are excluded.'",
+    "vietnamese": "SAI — Bài viết 'phải dựa trên phần lớn trải nghiệm của chính tác giả' và 'Tiểu sử truyền thống, chỉ về trải nghiệm của người khác, bị loại trừ.'",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 11,
+    "text": "People who have entered an earlier Life Writing competition without achieving any success may enter again.",
+    "answer": "TRUE",
+    "explanation": "TRUE — 'Writers who have previously won or been highly commended... are excluded from entering; otherwise, previous entrants may submit.' — unsuccessful entrants can re-enter.",
+    "vietnamese": "ĐÚNG — 'Tác giả đã từng đoạt giải hoặc được khen ngợi cao... không được tham gia; ngoài ra, người đã từng dự thi có thể nộp bài.' — người không thành công có thể tham gia lại.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 12,
+    "text": "Writers who are between 19 and 25 years old and in full-time education have won the prize in previous years.",
+    "answer": "NOT GIVEN",
+    "explanation": "NOT GIVEN — The passage mentions the age requirement (over 18) but says nothing about the ages or education status of previous winners.",
+    "vietnamese": "KHÔNG CÓ THÔNG TIN — Bài viết đề cập yêu cầu tuổi (trên 18) nhưng không nói gì về tuổi hay tình trạng học tập của người đoạt giải trước đây.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 13,
+    "text": "Only one prize is awarded at the end of the Life Writing competition.",
+    "answer": "FALSE",
+    "explanation": "FALSE — 'The winner will receive £1,500...' AND 'Two highly commended entries will receive £500...' — there are three prizes total, not just one.",
+    "vietnamese": "SAI — 'Người thắng nhận £1.500...' VÀ 'Hai bài được khen ngợi cao nhận £500...' — có tổng cộng ba giải, không phải chỉ một.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "number": 14,
+    "text": "Previous winners of the Life Writing Prize have gone on to become successful published writers.",
+    "answer": "NOT GIVEN",
+    "explanation": "NOT GIVEN — The passage describes the prizes but does not mention what happened to previous winners after winning.",
+    "vietnamese": "KHÔNG CÓ THÔNG TIN — Bài viết mô tả các giải thưởng nhưng không đề cập chuyện gì xảy ra với người đoạt giải trước đây sau khi thắng.",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "Matching Information",
+          "icon": "🔗",
+          "description": "Match statements to the correct sleeping bag review (A–G). You may use any letter more than once.",
+          "tips": [
+            "Skim all 7 reviews first to build a mental map of each product's key features.",
+            "Underline keywords in each statement, then hunt for synonyms/paraphrases in the reviews.",
+            "IELTS never copies exact words — 'not very easy to pack up' = 'give yourself a bit of time to fit it back in the bag'.",
+            "Letters CAN repeat — don't assume each letter is used only once.",
+            "Eliminate quickly: if a review doesn't mention anything related, cross it out."
+          ],
+          "vi": "Nối thông tin — Khớp các phát biểu với đánh giá túi ngủ đúng (A–G). Bạn có thể dùng một chữ cái nhiều lần.",
+          "practiced": true
+        },
+        {
+          "name": "True / False / Not Given",
+          "icon": "✅",
+          "description": "Decide if the statement agrees with (TRUE), contradicts (FALSE), or is not mentioned in (NOT GIVEN) the text.",
+          "tips": [
+            "TRUE means the passage CONFIRMS it, possibly using different words.",
+            "FALSE means the passage says the OPPOSITE — not just 'different', but contradicts.",
+            "NOT GIVEN means the passage is SILENT — don't infer or use outside knowledge.",
+            "Watch for absolute words: 'only', 'all', 'every' — they often make a statement FALSE.",
+            "Read the EXACT claim: every word matters. 'Without achieving any success' is the key phrase in Q11."
+          ],
+          "vi": "Đúng / Sai / Không có thông tin — Xác định phát biểu có đúng (TRUE), trái ngược (FALSE), hay không được đề cập (NOT GIVEN).",
+          "practiced": true
+        }
+      ],
+      "allTypes": [
+        {"name": "Multiple Choice", "practiced": false},
+        {"name": "Matching Information", "practiced": true},
+        {"name": "Matching Headings", "practiced": false},
+        {"name": "Matching Features", "practiced": false},
+        {"name": "Matching Sentence Endings", "practiced": false},
+        {"name": "Sentence Completion", "practiced": false},
+        {"name": "Summary Completion", "practiced": false},
+        {"name": "Note / Table / Flow-chart Completion", "practiced": false},
+        {"name": "Short Answer Questions", "practiced": false},
+        {"name": "True / False / Not Given", "practiced": true},
+        {"name": "Yes / No / Not Given", "practiced": false}
+      ]
+    },
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
   }
 ]

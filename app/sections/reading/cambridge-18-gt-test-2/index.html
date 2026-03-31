@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Reading — Cambridge 18 GT Test 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/reading.css">
+<style>
+/* Sleeping bag review cards */
+.sb-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sb-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:18px 20px;border-left:4px solid var(--accent)}
+.sb-card.highlight{background:var(--accent-light)}
+.sb-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px}
+.sb-badge{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:#fff;background:var(--accent);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;transition:transform .15s}
+.sb-badge:hover{transform:scale(1.1)}
+.sb-name{font-family:'Fraunces',serif;font-weight:700;font-size:.98rem;line-height:1.3}
+.sb-text{font-size:.85rem;line-height:1.6;color:var(--text)}
+.sb-vi{display:none;font-size:.83rem;color:var(--vi);font-style:italic;margin-top:8px;padding:8px 12px;background:var(--vi-bg);border-radius:6px;border-left:3px solid var(--vi)}
+.sb-vi.show{display:block}
+/* Part 2: Life Writing Prize — full-width section below passage-split */
+.part2-section{margin-top:32px;padding:28px 0 0;border-top:3px solid var(--accent-light)}
+.part2-header{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--accent);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.part2-split{display:flex;gap:24px}
+.part2-left{flex:1;min-width:0}
+.part2-right{width:400px;flex-shrink:0;position:sticky;top:80px;align-self:flex-start;max-height:calc(100vh - 100px);overflow-y:auto}
+.lwp-text{font-size:.88rem;line-height:1.75;white-space:pre-line}
+.lwp-vi{display:none;font-size:.85rem;color:var(--vi);font-style:italic;line-height:1.7;white-space:pre-line;margin-top:12px;padding:12px 16px;background:var(--vi-bg);border-radius:8px;border-left:3px solid var(--vi)}
+.lwp-vi.show{display:block}
+@media(max-width:900px){.part2-split{flex-direction:column}.part2-right{width:100%;position:static;max-height:none}}
+/* Letter select buttons for matching */
+.letter-opts{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.lo{width:36px;height:36px;border:2px solid #e0d6c8;border-radius:8px;background:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;cursor:pointer;transition:.2s;color:var(--text);display:flex;align-items:center;justify-content:center}
+.lo:hover{border-color:var(--accent);background:var(--accent-light)}
+.lo.sel{border-color:var(--accent);background:var(--accent);color:#fff}
+.lo.ca{border-color:var(--correct);background:var(--correct);color:#fff}
+.lo.wa{border-color:var(--wrong);background:var(--wrong);color:#fff}
+.lo:disabled{cursor:default}
+@media(max-width:900px){.sb-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body data-depth="3">
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+<div id="app"></div>
+<script>
+const CAT_LABELS={outdoor:'🏕️ Outdoor & Gear',writing:'✍️ Writing & Literary',competition:'🏆 Competition'};
+const IELTS_OPTIONS=['TRUE','FALSE','NOT GIVEN'];
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/reading.js"></script>
+<script>
+/* ── Config ── */
+renderReadingPage({
+  title: 'Cambridge 18 GT Test 2',
+  sub: 'IELTS General Training — Reading Section 1 — Cambridge 18 Practice',
+  passageRight: 'ielts',
+  passageLabel: '📝 Questions 1–8: Matching Information',
+  passageInstruction: '',
+  phrasesIntro: 'Useful phrases from product reviews and competition rules that you can reuse in IELTS Writing & Speaking.',
+  summaryCards: `
+    <div class="card">
+      <div class="sk">🏕️ Sleeping Bags at a Glance</div>
+      <ul class="slist">
+        <li><strong>A — Vango Fuse -12:</strong> All-year-round, duck down + synthetic, 1.5kg, water-resistant</li>
+        <li><strong>B — Outwell Campion Lux Double:</strong> All seasons except winter, pocket inside, folds small</li>
+        <li><strong>C — Nordisk Oscar +10:</strong> 350g, synthetic, 13×20cm pack, summer trekking</li>
+        <li><strong>D — The Big Sleep 250GSM:</strong> Budget, hard to repack, spring/summer/autumn</li>
+        <li><strong>E — Jack Wolfskin Smoozip +3:</strong> Extra insulation (head, chest, feet), hood as pillow</li>
+        <li><strong>F — Vango Starwalker Dragon:</strong> Kids', converts to coat, 8–20°C</li>
+        <li><strong>G — Outwell Conqueror:</strong> Down duvet, spacious, packs compactly, too big for rucksack</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">🧠 Mindset: Matching Information (Q1–8)</div>
+      <ul class="slist">
+        <li><strong>Scan, don't read:</strong> Skim all 7 reviews first to build a mental map of each product</li>
+        <li><strong>Paraphrase detection:</strong> IELTS never copies exact words. "not very easy to pack up" = "give yourself a bit of time to fit it back in the bag" (D)</li>
+        <li><strong>Letters CAN repeat:</strong> Here Q1 and Q5 → D, Q2 and Q8 → A. Don't assume each letter is used only once</li>
+        <li><strong>Watch for traps:</strong> "all seasons" — B says "all seasons except winter" (not all!), A says "all-year-round" (= all)</li>
+        <li><strong>Eliminate quickly:</strong> If a review doesn't mention anything related, cross it out and move on</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">🧠 Mindset: True / False / Not Given (Q9–14)</div>
+      <ul class="slist">
+        <li><strong>TRUE ≠ obvious:</strong> TRUE means the passage CONFIRMS it. Q9: "fewer than 5,000 words" = TRUE because "no minimum word count"</li>
+        <li><strong>FALSE = the passage says the OPPOSITE:</strong> Q10: "write about a person they know" = FALSE because the text says "author's own experience" and biographies are "excluded"</li>
+        <li><strong>NOT GIVEN = the passage is SILENT:</strong> Q12 mentions "19-25 in full-time education" — the passage says nothing about this</li>
+        <li><strong>Beware absolute words:</strong> "only one prize" (Q13) — the passage mentions a winner AND two highly commended entries → FALSE</li>
+        <li><strong>Don't use outside knowledge:</strong> Q14 asks if winners became published writers. Even if likely, the passage doesn't say → NOT GIVEN</li>
+        <li><strong>Read the EXACT claim:</strong> "without achieving any success" (Q11) is key — only winners/highly commended are excluded, so unsuccessful entrants can re-enter</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">⚠️ Common Traps</div>
+      <ul class="slist">
+        <li><strong>Absolute words</strong> ("only", "all", "every", "always", "never") — often make a statement FALSE</li>
+        <li><strong>Qualification words</strong> ("except", "unless", "other than") — limit scope and change meaning</li>
+        <li><strong>Inference vs information:</strong> If you're thinking "well, it probably means..." → it's likely NOT GIVEN</li>
+        <li><strong>Paraphrase traps:</strong> "useful storage area" = "handy pocket" (B), "keep warm during daytime" = "turn it into a coat" (F)</li>
+      </ul>
+    </div>`
+});
+
+/* ── Split questions: matching (Q1–8) vs T/F/NG (Q9–14) ── */
+let MQ = [], TFQ = [], tfAnswers = {};
+
+function highlightSB(id) {
+  document.querySelectorAll('.sb-card').forEach(c => c.classList.remove('highlight'));
+  var el = document.getElementById('sb-' + id);
+  if (el) { el.classList.add('highlight'); el.scrollIntoView({behavior:'smooth',block:'nearest'}); setTimeout(function(){ el.classList.remove('highlight'); }, 2000); }
+}
+
+/* ── Custom passage: sleeping bag cards only (Part 1) ── */
+function renderPassage() {
+  var intro = sections.find(function(p){ return p.id === 'intro'; });
+  var bags = sections.filter(function(p){ return p.id !== 'intro' && p.id !== 'LWP'; });
+
+  document.getElementById('passage-card').innerHTML =
+    '<div style="padding:0 0 12px;margin-bottom:12px;border-bottom:1px solid var(--accent-light)">' +
+      '<div style="font-family:\'Fraunces\',serif;font-weight:700;font-size:1.1rem;color:var(--accent);margin-bottom:4px">CHOOSING THE BEST SLEEPING BAG</div>' +
+      (intro ? '<div style="font-size:.85rem;color:#6b5e4f;line-height:1.6;margin-bottom:12px">' + intro.text.replace(/<strong>.*?<\/strong>\n\n/, '') + '</div>' +
+      '<div class="sb-vi" data-vi>' + intro.vietnamese.replace(/<strong>.*?<\/strong>\n\n/, '') + '</div>' : '') +
+    '</div>' +
+    '<div class="sb-grid">' + bags.map(function(p) {
+      return '<div class="sb-card" id="sb-' + p.id + '">' +
+        '<div class="sb-header">' +
+          '<div class="sb-badge" onclick="highlightSB(\'' + p.id + '\')">' + p.id + '</div>' +
+          '<div class="sb-name">' + p.name + '</div>' +
+        '</div>' +
+        '<div class="sb-text">' + p.text + '</div>' +
+        '<div class="sb-vi" data-vi>' + p.vietnamese + '</div>' +
+      '</div>';
+    }).join('') + '</div>';
+}
+
+/* ── Part 2: Life Writing Prize passage + T/F/NG Q9–14 ── */
+function renderPart2() {
+  var lwp = sections.find(function(p){ return p.id === 'LWP'; });
+  if (!lwp || !TFQ.length) return;
+  var tfOpts = ['TRUE','FALSE','NOT GIVEN'];
+  var el = document.createElement('div');
+  el.className = 'part2-section';
+  el.innerHTML =
+    '<div class="part2-header">📝 Part 2: The Spread the Word Life Writing Prize</div>' +
+    '<div style="margin-bottom:12px">' +
+      '<label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:.85rem;color:var(--vi);font-weight:600">' +
+        '<span>🇻🇳 Show Vietnamese</span>' +
+        '<input type="checkbox" id="lwp-vi-toggle" onchange="toggleLWPvi(this.checked)" style="accent-color:var(--vi)">' +
+      '</label>' +
+    '</div>' +
+    '<div class="part2-split">' +
+      '<div class="part2-left">' +
+        '<div class="lwp-text">' + lwp.text + '</div>' +
+        '<div class="lwp-vi" id="lwp-vi-block">' + lwp.vietnamese + '</div>' +
+      '</div>' +
+      '<div class="part2-right">' +
+        '<div style="background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:20px 22px">' +
+          '<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin-bottom:8px">Questions 9–14: True / False / Not Given</div>' +
+          '<p style="font-size:.82rem;color:#8a7a66;font-style:italic;margin-bottom:10px">Do the following statements agree with the information given in the text? Write TRUE, FALSE, or NOT GIVEN.</p>' +
+          '<div id="tfng-ctn">' +
+          TFQ.map(function(q) {
+            return '<div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-' + q.number + '">' +
+              '<div class="qn">Q' + q.number + '</div>' +
+              '<div class="qtx" style="font-size:.88rem">' + q.text + '</div>' +
+              '<div class="opts" style="flex-direction:row;flex-wrap:wrap;gap:6px;margin-top:8px">' +
+                tfOpts.map(function(o){ return '<button class="ob" style="padding:6px 12px;font-size:.82rem" data-q="' + q.number + '" data-v="' + o + '" onclick="selTF(this)">' + o + '</button>'; }).join('') +
+              '</div>' +
+              '<div class="exp" id="piexp-' + q.number + '"></div>' +
+            '</div>';
+          }).join('') +
+          '</div>' +
+          '<div id="tfng-banner" class="banner" style="margin:10px 0"></div>' +
+          '<div style="display:flex;gap:8px;margin-top:10px">' +
+            '<button class="btn" id="tfc" onclick="checkTFNG()">Check Answers</button>' +
+            '<button class="btn btn-o" id="tfr" style="display:none" onclick="resetTFNG()">Redo</button>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  /* Insert after the passage-split section */
+  var passageSplit = document.querySelector('.passage-split');
+  if (passageSplit) passageSplit.parentNode.insertBefore(el, passageSplit.nextSibling);
+}
+
+/* ── Passage-side: matching Q1–8 with letter buttons + T/F/NG Q9–14 ── */
+function toggleLetter(btn) {
+  if (btn.classList.contains('sel')) btn.classList.remove('sel');
+  else {
+    var q = btn.dataset.q;
+    document.querySelectorAll('#pilo-' + q + ' .lo').forEach(function(b){ b.classList.remove('sel'); });
+    btn.classList.add('sel');
+  }
+}
+
+function selTF(btn) {
+  var q = btn.dataset.q;
+  document.querySelectorAll('.ob[data-q="' + q + '"]').forEach(function(b){ b.classList.remove('sel'); });
+  btn.classList.add('sel');
+  tfAnswers[q] = btn.dataset.v;
+}
+
+/* ── Passage-side: only matching Q1–8 ── */
+function renderPassageIELTS() {
+  document.getElementById('passage-ielts-ctn').innerHTML =
+    '<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin-bottom:8px">Questions 1–8: Matching Information</div>' +
+    '<p style="font-size:.82rem;color:#8a7a66;font-style:italic;margin-bottom:10px">Look at the seven reviews of sleeping bags, A–G. For which sleeping bag are the following statements true? Write the correct letter, <strong>A–G</strong>, in boxes on your answer sheet.</p>' +
+    MQ.map(function(q) {
+      return '<div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-' + q.number + '">' +
+        '<div class="qn">Q' + q.number + '</div>' +
+        '<div class="qtx" style="font-size:.88rem">' + q.text + '</div>' +
+        '<div class="letter-opts" id="pilo-' + q.number + '">' +
+          ['A','B','C','D','E','F','G'].map(function(l){ return '<button class="lo" data-q="' + q.number + '" data-l="' + l + '" onclick="toggleLetter(this)">' + l + '</button>'; }).join('') +
+        '</div>' +
+        '<div class="exp" id="piexp-' + q.number + '"></div>' +
+      '</div>';
+    }).join('');
+}
+
+/* ── Check/Reset for matching Q1–8 only ── */
+function checkPassageIELTS() {
+  var correct = 0, total = MQ.length;
+  MQ.forEach(function(q) {
+    var ctn = document.getElementById('pilo-'+q.number), card = document.getElementById('piq-'+q.number), exp = document.getElementById('piexp-'+q.number);
+    var btns = ctn.querySelectorAll('.lo'), sel = ctn.querySelector('.lo.sel');
+    var picked = sel ? sel.dataset.l : '';
+    btns.forEach(function(b){ b.disabled=true; b.classList.remove('sel'); if(b.dataset.l===q.answer) b.classList.add('ca'); else if(b.dataset.l===picked) b.classList.add('wa'); });
+    var ok = picked === q.answer;
+    if(ok) correct++;
+    card.classList.add(ok?'correct':'wrong');
+    exp.className = 'exp show ' + (ok?'ce':'we');
+    exp.innerHTML = '<strong>' + (ok?'✓ Correct':'✗ Incorrect') + '</strong> — ' + q.explanation + '<br><span style="color:var(--vi)">' + q.vietnamese + '</span>';
+  });
+  var b = document.getElementById('passage-ielts-banner');
+  b.className='banner show';
+  var pct = correct/total;
+  b.style.background = pct>=.7?'var(--correct-bg)':pct>=.4?'#fffbe6':'var(--wrong-bg)';
+  b.style.color = pct>=.7?'var(--correct)':pct>=.4?'#7a6200':'var(--wrong)';
+  b.textContent = correct + '/' + total + ' correct';
+  document.getElementById('pic').style.display='none'; document.getElementById('pir').style.display='';
+}
+
+function resetPassageIELTS() {
+  renderPassageIELTS();
+  document.getElementById('passage-ielts-banner').className='banner';
+  document.getElementById('pic').style.display=''; document.getElementById('pir').style.display='none';
+}
+
+/* ── Vietnamese toggle for Life Writing Prize ── */
+function toggleLWPvi(on) {
+  var el = document.getElementById('lwp-vi-block');
+  if (el) el.classList.toggle('show', on);
+}
+
+/* ── Check/Reset for T/F/NG Q9–14 ── */
+function checkTFNG() {
+  var correct = 0, total = TFQ.length;
+  TFQ.forEach(function(q) {
+    var card = document.getElementById('piq-'+q.number), exp = document.getElementById('piexp-'+q.number);
+    var picked = tfAnswers[q.number] || '';
+    document.querySelectorAll('.ob[data-q="' + q.number + '"]').forEach(function(b){ b.disabled=true; b.classList.remove('sel'); if(b.dataset.v===q.answer) b.classList.add('ca'); else if(b.dataset.v===picked) b.classList.add('wa'); });
+    var ok = picked === q.answer;
+    if(ok) correct++;
+    card.classList.add(ok?'correct':'wrong');
+    exp.className = 'exp show ' + (ok?'ce':'we');
+    exp.innerHTML = '<strong>' + (ok?'✓ Correct':'✗ Incorrect') + '</strong> — ' + q.explanation + '<br><span style="color:var(--vi)">' + q.vietnamese + '</span>';
+  });
+  var b = document.getElementById('tfng-banner');
+  b.className='banner show';
+  var pct = correct/total;
+  b.style.background = pct>=.7?'var(--correct-bg)':pct>=.4?'#fffbe6':'var(--wrong-bg)';
+  b.style.color = pct>=.7?'var(--correct)':pct>=.4?'#7a6200':'var(--wrong)';
+  b.textContent = correct + '/' + total + ' correct';
+  document.getElementById('tfc').style.display='none'; document.getElementById('tfr').style.display='';
+}
+
+function resetTFNG() {
+  tfAnswers = {};
+  renderPart2Reset();
+  document.getElementById('tfng-banner').className='banner';
+  document.getElementById('tfc').style.display=''; document.getElementById('tfr').style.display='none';
+}
+
+function renderPart2Reset() {
+  var tfOpts = ['TRUE','FALSE','NOT GIVEN'];
+  document.getElementById('tfng-ctn').innerHTML = TFQ.map(function(q) {
+    return '<div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-' + q.number + '">' +
+      '<div class="qn">Q' + q.number + '</div>' +
+      '<div class="qtx" style="font-size:.88rem">' + q.text + '</div>' +
+      '<div class="opts" style="flex-direction:row;flex-wrap:wrap;gap:6px;margin-top:8px">' +
+        tfOpts.map(function(o){ return '<button class="ob" style="padding:6px 12px;font-size:.82rem" data-q="' + q.number + '" data-v="' + o + '" onclick="selTF(this)">' + o + '</button>'; }).join('') +
+      '</div>' +
+      '<div class="exp" id="piexp-' + q.number + '"></div>' +
+    '</div>';
+  }).join('');
+}
+
+/* ── Init: split matching vs T/F/NG, render all ── */
+DataLayer.getLesson('reading','cambridge-18-gt-test-2').then(function(data) {
+  var allQ = data.ieltsQuestions || [];
+  MQ = allQ.filter(function(q){ return q.qtype === 'matching'; });
+  TFQ = allQ.filter(function(q){ return !q.qtype; });
+  initReading(data);
+  renderPart2();
+});
+</script>
+</body>
+</html>

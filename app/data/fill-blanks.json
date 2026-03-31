@@ -1374,5 +1374,110 @@
     "hint": "bỏ (công sức)",
     "skill": "listening",
     "section": "flow-chart-completion"
+  },
+  {
+    "sentence": "This sleeping bag combines natural duck down and a new ___ fibre.",
+    "answer": "synthetic",
+    "hint": "tổng hợp",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "There's a water-resistant finish to protect it from ___.",
+    "answer": "moisture",
+    "hint": "độ ẩm",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "The pack size is just 13x20cm, which makes it ideal for ___.",
+    "answer": "backpacking",
+    "hint": "đi bụi",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "We like the extra ___ around the areas that tend to feel the cold.",
+    "answer": "insulation",
+    "hint": "cách nhiệt",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "Natural duck down has a longer ___ and is easier to pack up.",
+    "answer": "lifespan",
+    "hint": "tuổi thọ",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "Life Writing is defined as ___ and should be based on the author's own experience.",
+    "answer": "non-fiction",
+    "hint": "phi hư cấu",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "Traditional ___, where the piece is only about the experience of someone else, are excluded.",
+    "answer": "biographies",
+    "hint": "tiểu sử",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "Two highly ___ entries will receive £500 and two mentoring sessions.",
+    "answer": "commended",
+    "hint": "được khen ngợi",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "The Prize is open to ___ writers who have not previously published a full-length work.",
+    "answer": "emerging",
+    "hint": "mới nổi",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "Entries longer than 5,000 words will be ___.",
+    "answer": "disqualified",
+    "hint": "bị loại",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "Find the synonym in the text: very light → ___",
+    "answer": "remarkably light",
+    "hint": "nhẹ đáng kinh ngạc (xem review C)",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "Find the synonym in the text: easy to take care of → ___",
+    "answer": "easy to maintain",
+    "hint": "dễ bảo quản (xem review C)",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "Find the synonym in the text: very small when packed → ___",
+    "answer": "compactly",
+    "hint": "gọn gàng (xem review G)",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "Find the synonym in the text: simple / basic → ___",
+    "answer": "no-frills",
+    "hint": "không rườm rà (xem review D)",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "Find the synonym in the text: suitable → ___",
+    "answer": "ideal",
+    "hint": "lý tưởng (xem review C)",
+    "skill": "reading",
+    "section": "cambridge-18-gt-test-2"
   }
 ]

@@ -78,5 +78,10 @@
     "section": "flow-chart-completion",
     "name": "Flow-chart Completion",
     "skill": "listening"
+  },
+  {
+    "section": "cambridge-18-gt-test-2",
+    "name": "Cambridge 18 GT Test 2",
+    "skill": "reading"
   }
 ]
