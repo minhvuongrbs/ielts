@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Listening — Cambridge 16 Test 1</title>
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/listening.css?v=2">
+<style>
+/* Note completion layout */
+.note-section{margin-bottom:20px}
+.note-heading{font-family:'Fraunces',serif;font-weight:700;font-size:1rem;color:var(--accent);margin-bottom:4px}
+.note-subheading{font-size:.82rem;font-weight:600;color:#8a7a66;margin-bottom:10px}
+.note-item{display:flex;align-items:baseline;gap:6px;margin-bottom:12px;font-size:.9rem;line-height:1.6;flex-wrap:wrap}
+.note-item .qn{font-family:'Fraunces',serif;font-weight:700;font-size:.85rem;color:#fff;background:var(--accent);width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.note-input{border:none;border-bottom:2px solid var(--accent);background:transparent;font-size:.9rem;font-family:inherit;padding:2px 6px;width:140px;text-align:center;outline:none;transition:.2s}
+.note-input:focus{border-bottom-color:var(--accent-dark);background:var(--accent-light)}
+.note-input.pc{border-bottom-color:var(--correct);color:var(--correct);background:var(--correct-bg)}
+.note-input.pw{border-bottom-color:var(--wrong);color:var(--wrong);background:var(--wrong-bg)}
+.note-answer{display:none;font-size:.82rem;color:var(--correct);font-weight:600;margin-left:4px}
+.note-answer.show{display:inline}
+.note-bullet{color:var(--accent);font-weight:700}
+</style>
+</head>
+<body data-depth="3" data-active="listening">
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+<div id="app"></div>
+<script>
+const CAT_LABELS={education:'📚 Education',engineering:'🔧 Engineering',location:'📍 Location'};
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/listening.js?v=2"></script>
+<script>
+renderListeningPage({
+  title: '📋 Cambridge 16 Listening Test 1',
+  sub: 'IELTS Listening — Section 1 — Cambridge 16 Practice',
+  source: 'Cambridge IELTS 16 Academic — Listening Test 1',
+  guideWhat: 'Note Completion',
+  practiceTab: { audioSrc: '../../../../assets/audio/cambridge-ielts-16-academic-listening-1-audio-1.mp3' },
+  phrasesIntro: "Common phrases from Section 1 conversations about activities, schedules, and locations. Learn to recognize these patterns."
+});
+
+let PRACTICE={};
+
+function renderPractice(){
+  var P=PRACTICE; if(!P.sections) return;
+  var html='<div class="ielts-form"><div class="ielts-form-header"><h3>'+P.title+'</h3></div>';
+  html+='<p class="practice-instruction">'+P.instruction+'</p>';
+  P.sections.forEach(function(sec){
+    html+='<div class="note-section">';
+    if(sec.heading) html+='<div class="note-heading">'+sec.heading+'</div>';
+    if(sec.subheading) html+='<div class="note-subheading">'+sec.subheading+'</div>';
+    sec.items.forEach(function(item){
+      html+='<div class="note-item"><span class="note-bullet">•</span> <span class="qn">'+item.q+'</span> ';
+      if(item.before) html+='<span>'+item.before.replace(/\n/g,'<br>')+'</span> ';
+      html+='<input class="note-input" id="pq-'+item.q+'" data-q="'+item.q+'" autocomplete="off" spellcheck="false">';
+      html+='<span class="note-answer" id="pa-'+item.q+'"></span> ';
+      if(item.after) html+='<span>'+item.after+'</span>';
+      html+='</div>';
+    });
+    html+='</div>';
+  });
+  html+='</div>';
+  document.getElementById('practice-content').innerHTML=html;
+  document.getElementById('practice-score').className='practice-score';
+  document.getElementById('practice-score').textContent='';
+  document.getElementById('pcheck').style.display='inline-block';
+  document.getElementById('preset').style.display='none';
+}
+
+function checkPractice(){
+  var allQ=[];
+  PRACTICE.sections.forEach(function(sec){ sec.items.forEach(function(item){ allQ.push(item); }); });
+  var score=0;
+  allQ.forEach(function(q){
+    var inp=document.getElementById('pq-'+q.q);
+    var ans=document.getElementById('pa-'+q.q);
+    if(!inp) return;
+    var val=normalize(inp.value);
+    var correct=normalize(q.answer);
+    var alts=(q.altAnswers||[]).map(function(a){ return normalize(a); });
+    var ok=val===correct||alts.indexOf(val)!==-1;
+    if(ok) score++;
+    inp.disabled=true;
+    inp.classList.add(ok?'pc':'pw');
+    if(!ok){ans.textContent='✓ '+q.answer;ans.classList.add('show');}
+  });
+  var el=document.getElementById('practice-score');
+  el.textContent=score+' / '+allQ.length+' correct'+(score===allQ.length?' 🎉':'');
+  el.className='practice-score show '+(score>=allQ.length*0.7?'good':'bad');
+  document.getElementById('pcheck').style.display='none';
+  document.getElementById('preset').style.display='inline-block';
+  enableScript();
+}
+
+function resetPractice(){renderPractice();disableScript();}
+
+DataLayer.getLesson('listening','cambridge-16-test-1').then(function(data){
+  PRACTICE=data.practice||{};
+  initListening(data);
+  renderPractice();
+  setupScript(PRACTICE.transcript);
+});
+</script>
+</body>
+</html>

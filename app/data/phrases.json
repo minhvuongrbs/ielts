@@ -1844,5 +1844,77 @@
     "section": "cambridge-18-gt-test-2",
     "category": "description",
     "vietnamese": "cho phép ai đó làm gì"
+  },
+  {
+    "phrase": "take part in a competition",
+    "usage": "When describing participating in a contest or challenge.",
+    "example": "Take part in a competition to build the tallest tower.",
+    "skill": "listening",
+    "section": "cambridge-16-test-1",
+    "category": "activity",
+    "vietnamese": "tham gia cuộc thi"
+  },
+  {
+    "phrase": "powered by something",
+    "usage": "When describing the energy source of a machine or device.",
+    "example": "Make a car powered by a balloon.",
+    "skill": "listening",
+    "section": "cambridge-16-test-1",
+    "category": "description",
+    "vietnamese": "chạy bằng cái gì đó"
+  },
+  {
+    "phrase": "learn how to do something",
+    "usage": "When describing gaining a new skill through instruction.",
+    "example": "Learn how to program them so they can move.",
+    "skill": "listening",
+    "section": "cambridge-16-test-1",
+    "category": "education",
+    "vietnamese": "học cách làm gì đó"
+  },
+  {
+    "phrase": "drop it from a height",
+    "usage": "When describing releasing something from an elevated position.",
+    "example": "Create a cover for an egg so they can drop it from a height without breaking it.",
+    "skill": "listening",
+    "section": "cambridge-16-test-1",
+    "category": "description",
+    "vietnamese": "thả từ trên cao"
+  },
+  {
+    "phrase": "plenty of something is available",
+    "usage": "When reassuring there is enough of something.",
+    "example": "Plenty of parking is available.",
+    "skill": "listening",
+    "section": "cambridge-16-test-1",
+    "category": "location",
+    "vietnamese": "có nhiều/dồi dào cái gì đó"
+  },
+  {
+    "phrase": "a five-week block",
+    "usage": "When describing a fixed period of scheduled sessions.",
+    "example": "Cost for a five-week block: £50.",
+    "skill": "listening",
+    "section": "cambridge-16-test-1",
+    "category": "education",
+    "vietnamese": "một đợt năm tuần"
+  },
+  {
+    "phrase": "create a short film/movie",
+    "usage": "When describing making a brief video production.",
+    "example": "Create a short movie with special software.",
+    "skill": "listening",
+    "section": "cambridge-16-test-1",
+    "category": "activity",
+    "vietnamese": "tạo một bộ phim ngắn"
+  },
+  {
+    "phrase": "build model cars and trucks",
+    "usage": "When describing constructing miniature versions of vehicles.",
+    "example": "Build model cars, trucks and animals and learn how to program them.",
+    "skill": "listening",
+    "section": "cambridge-16-test-1",
+    "category": "activity",
+    "vietnamese": "xây dựng mô hình xe ô tô và xe tải"
   }
 ]

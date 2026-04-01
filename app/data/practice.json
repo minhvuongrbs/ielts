@@ -362,5 +362,40 @@
     ],
     "skill": "listening",
     "section": "flow-chart-completion"
+  },
+  {
+    "title": "Children's Engineering Workshops",
+    "instruction": "Complete the notes below. Write <strong>ONE WORD AND/OR A NUMBER</strong> for each answer.",
+    "sections": [
+      {
+        "heading": "Tiny Engineers (ages 4–5)",
+        "subheading": "Activities",
+        "items": [
+          {"q": 1, "before": "Create a cover for an", "after": "so they can drop it from a height without breaking it.", "answer": "egg", "altAnswers": ["Egg"]},
+          {"q": 2, "before": "Take part in a competition to build the tallest", "after": ".", "answer": "tower", "altAnswers": ["Tower"]},
+          {"q": 3, "before": "Make a", "after": "powered by a balloon.", "answer": "car", "altAnswers": ["Car"]}
+        ]
+      },
+      {
+        "heading": "Junior Engineers (ages 6–8)",
+        "subheading": "Activities",
+        "items": [
+          {"q": 4, "before": "Build model cars, trucks and", "after": "and learn how to program them so they can move.", "answer": "animals", "altAnswers": ["Animals"]},
+          {"q": 5, "before": "Take part in a competition to build the longest", "after": "using card and wood.", "answer": "bridge", "altAnswers": ["Bridge"]},
+          {"q": 6, "before": "Create a short", "after": "with special software.", "answer": "movie", "altAnswers": ["Movie", "film", "Film"]},
+          {"q": 7, "before": "Build,", "after": "and program a humanoid robot.", "answer": "decorate", "altAnswers": ["Decorate"]}
+        ]
+      },
+      {
+        "heading": "Details",
+        "items": [
+          {"q": 8, "before": "Cost for a five-week block: £50\nHeld on", "after": "from 10 am to 11 am", "answer": "Wednesdays", "altAnswers": ["wednesdays", "Wednesday", "wednesday"]},
+          {"q": 9, "before": "Location\nBuilding 10A,", "after": "Industrial Estate, Grasford", "answer": "Fradstone", "altAnswers": ["fradstone", "FRADSTONE"]},
+          {"q": 10, "before": "Plenty of", "after": "is available.", "answer": "parking", "altAnswers": ["Parking"]}
+        ]
+      }
+    ],
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
   }
 ]

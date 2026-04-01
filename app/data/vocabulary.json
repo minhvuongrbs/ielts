@@ -4142,5 +4142,155 @@
     "category": "outdoor",
     "skill": "reading",
     "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "word": "workshop",
+    "pos": "noun",
+    "vietnamese": "hội thảo, lớp thực hành",
+    "definition": "A meeting where people learn a skill by practising it together.",
+    "example": "The children's engineering workshops run every Wednesday.",
+    "category": "education",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "competition",
+    "pos": "noun",
+    "vietnamese": "cuộc thi",
+    "definition": "An event in which people try to win by being the best.",
+    "example": "Take part in a competition to build the tallest tower.",
+    "category": "education",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "humanoid",
+    "pos": "adjective",
+    "vietnamese": "hình người",
+    "definition": "Having a human-like shape or appearance.",
+    "example": "Build, decorate and program a humanoid robot.",
+    "category": "engineering",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "program",
+    "pos": "verb",
+    "vietnamese": "lập trình",
+    "definition": "To give a computer or machine a set of instructions to follow.",
+    "example": "Learn how to program them so they can move.",
+    "category": "engineering",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "powered by",
+    "pos": "phrase",
+    "vietnamese": "chạy bằng",
+    "definition": "Using a particular source of energy to work or move.",
+    "example": "Make a car powered by a balloon.",
+    "category": "engineering",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "industrial estate",
+    "pos": "noun",
+    "vietnamese": "khu công nghiệp",
+    "definition": "An area of land used for factories and other industrial businesses.",
+    "example": "Building 10A, Fradstone Industrial Estate, Grasford.",
+    "category": "location",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "block",
+    "pos": "noun",
+    "vietnamese": "đợt, khóa",
+    "definition": "A set period or unit of time grouped together.",
+    "example": "Cost for a five-week block: £50.",
+    "category": "education",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "height",
+    "pos": "noun",
+    "vietnamese": "độ cao",
+    "definition": "The distance from the bottom to the top of something.",
+    "example": "Drop it from a height without breaking it.",
+    "category": "engineering",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "model",
+    "pos": "noun",
+    "vietnamese": "mô hình",
+    "definition": "A small copy of something, used for learning or display.",
+    "example": "Build model cars, trucks and animals.",
+    "category": "engineering",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "software",
+    "pos": "noun",
+    "vietnamese": "phần mềm",
+    "definition": "Programs and applications used by a computer.",
+    "example": "Create a short movie with special software.",
+    "category": "engineering",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "cover",
+    "pos": "noun",
+    "vietnamese": "vỏ bọc",
+    "definition": "Something that protects by going over or around something else.",
+    "example": "Create a cover for an egg so they can drop it safely.",
+    "category": "engineering",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "take part in",
+    "pos": "phrasal verb",
+    "vietnamese": "tham gia",
+    "definition": "To be involved in an activity or event.",
+    "example": "Take part in a competition to build the longest bridge.",
+    "category": "education",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "plenty of",
+    "pos": "phrase",
+    "vietnamese": "nhiều, dồi dào",
+    "definition": "A large amount; more than enough.",
+    "example": "Plenty of parking is available.",
+    "category": "location",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "decorate",
+    "pos": "verb",
+    "vietnamese": "trang trí",
+    "definition": "To make something look more attractive by adding colour, patterns, or objects.",
+    "example": "Build, decorate and program a humanoid robot.",
+    "category": "engineering",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "balloon",
+    "pos": "noun",
+    "vietnamese": "bóng bay",
+    "definition": "A small bag made of thin rubber that is filled with air or gas.",
+    "example": "Make a car powered by a balloon.",
+    "category": "engineering",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
   }
 ]

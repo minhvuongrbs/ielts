@@ -1479,5 +1479,47 @@
     "hint": "lý tưởng (xem review C)",
     "skill": "reading",
     "section": "cambridge-18-gt-test-2"
+  },
+  {
+    "sentence": "Take part in a ___ to build the tallest tower.",
+    "answer": "competition",
+    "hint": "cuộc thi",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "sentence": "Build, decorate and program a ___ robot.",
+    "answer": "humanoid",
+    "hint": "hình người",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "sentence": "Create a short movie with special ___.",
+    "answer": "software",
+    "hint": "phần mềm",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "sentence": "Make a car ___ by a balloon.",
+    "answer": "powered",
+    "hint": "chạy bằng",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "sentence": "Building 10A is located at Fradstone ___ Estate.",
+    "answer": "Industrial",
+    "hint": "công nghiệp",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
+  },
+  {
+    "sentence": "___ of parking is available at the venue.",
+    "answer": "Plenty",
+    "hint": "nhiều, dồi dào",
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
   }
 ]

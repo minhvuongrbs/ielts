@@ -143,5 +143,27 @@
     ],
     "skill": "listening",
     "section": "flow-chart-completion"
+  },
+  {
+    "title": "Cambridge 16 Listening Test 1 — Part 1",
+    "subtitle": "IELTS Listening — Section 1 — Note Completion",
+    "description": "In this Section 1 task, you listen to a conversation about Children's Engineering Workshops and complete the notes with ONE WORD AND/OR A NUMBER. The notes are organized into sections — read ahead before the audio starts to predict what kind of information is missing.",
+    "format": [
+      "You see notes with gaps numbered 1–10",
+      "The notes are organized by topic (age groups, activities, logistics)",
+      "You write ONE WORD AND/OR A NUMBER for each answer",
+      "Answers come in the same order as the questions",
+      "Some information is already filled in to help you follow along"
+    ],
+    "tips": [
+      "Read ALL the notes before the audio starts — predict what type of word is missing (noun? number? day?)",
+      "The words before and after each gap are your signposts — listen for them in the audio",
+      "Answers are usually everyday words — don't overthink spelling",
+      "If you hear a number, check whether the gap expects a number or a word (e.g., 'five' vs '5')",
+      "Section 1 is the easiest — use it to build confidence and get into the rhythm",
+      "If you miss an answer, move on immediately — the next question is coming"
+    ],
+    "skill": "listening",
+    "section": "cambridge-16-test-1"
   }
 ]
