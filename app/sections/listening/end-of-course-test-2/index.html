@@ -113,7 +113,7 @@ function renderMCQ(questions,instruction,title,prefix){
   return html;
 }
 
-function renderMatch(part){
+function renderPracticeMatch(part){
   var html='<div class="match-block">';
   html+='<div class="mcq-title">'+part.matchTitle+'</div>';
   html+='<p class="practice-instruction">'+part.matchInstruction+'</p>';
@@ -147,7 +147,7 @@ function renderPractice(){
       html+=renderNotes(part);
     } else if(part.type==='mixed'){
       if(part.mcQuestions) html+=renderMCQ(part.mcQuestions,part.mcInstruction,part.mcTitle,'mcq');
-      if(part.matchQuestions) html+=renderMatch(part);
+      if(part.matchQuestions) html+=renderPracticeMatch(part);
       if(part.mc2Questions) html+=renderMCQ(part.mc2Questions,part.mc2Instruction,'','mc2');
     }
   });
