@@ -4292,5 +4292,1035 @@
     "category": "engineering",
     "skill": "listening",
     "section": "cambridge-16-test-1"
+  },
+  {
+    "word": "hectare",
+    "pos": "noun",
+    "vietnamese": "héc-ta",
+    "definition": "A unit of area equal to 10,000 square metres.",
+    "example": "The park covers 69 hectares of land.",
+    "category": "nature",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "wetland",
+    "pos": "noun",
+    "vietnamese": "vùng đất ngập nước",
+    "definition": "An area of land that is covered with shallow water or where the ground is very wet.",
+    "example": "The wetland habitats include lakes, ponds and a stream.",
+    "category": "nature",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "habitat",
+    "pos": "noun",
+    "vietnamese": "môi trường sống",
+    "definition": "The natural environment where a plant or animal lives.",
+    "example": "The park has three main habitats: wetland, grassland and woodland.",
+    "category": "nature",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "compass",
+    "pos": "noun",
+    "vietnamese": "la bàn",
+    "definition": "An instrument for finding direction, with a needle that always points north.",
+    "example": "Geography includes learning to use a map and compass.",
+    "category": "education",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "leisure",
+    "pos": "noun",
+    "vietnamese": "giải trí, thời gian rảnh",
+    "definition": "Time when you are free from work or duties and can relax.",
+    "example": "Leisure and tourism mostly concentrates on the park's visitors.",
+    "category": "education",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "self-confidence",
+    "pos": "noun",
+    "vietnamese": "sự tự tin",
+    "definition": "A feeling of trust in your own abilities and qualities.",
+    "example": "Children learn new skills and gain self-confidence.",
+    "category": "education",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "twinning",
+    "pos": "noun",
+    "vietnamese": "kết nghĩa (giữa hai thành phố)",
+    "definition": "The practice of making a formal link between two towns in different countries.",
+    "example": "The Stanthorpe Twinning Association celebrates its 25th anniversary.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "anniversary",
+    "pos": "noun",
+    "vietnamese": "kỷ niệm, ngày lễ hằng năm",
+    "definition": "A date on which something special happened in a previous year.",
+    "example": "They will plant a tree to mark the 25th anniversary.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "fundraising",
+    "pos": "noun",
+    "vietnamese": "gây quỹ",
+    "definition": "The activity of collecting money for a particular purpose.",
+    "example": "The pancake evening was the most successful fundraising event.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "host family",
+    "pos": "noun",
+    "vietnamese": "gia đình chủ nhà",
+    "definition": "A family that provides accommodation for visitors or exchange students.",
+    "example": "Host families are advised to have a meal at home on the first evening.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "grassland",
+    "pos": "noun",
+    "vietnamese": "đồng cỏ",
+    "definition": "A large area of land covered with grass, with few or no trees.",
+    "example": "The park's grassland is home to many wildflowers and butterflies.",
+    "category": "nature",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "woodland",
+    "pos": "noun",
+    "vietnamese": "rừng cây",
+    "definition": "Land that is covered with trees.",
+    "example": "Woodland covers a large part of the country park.",
+    "category": "nature",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "stream",
+    "pos": "noun",
+    "vietnamese": "dòng suối",
+    "definition": "A small, narrow river.",
+    "example": "The wetland area includes lakes, ponds and a stream.",
+    "category": "nature",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "wildlife",
+    "pos": "noun",
+    "vietnamese": "động vật hoang dã",
+    "definition": "Animals and plants that live and grow in natural conditions.",
+    "example": "Wildlife in the park includes birds, insects and animals.",
+    "category": "nature",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "insects",
+    "pos": "noun",
+    "vietnamese": "côn trùng",
+    "definition": "Small animals with six legs and usually wings, such as bees and ants.",
+    "example": "The park is an important area for insects including butterflies and dragonflies.",
+    "category": "nature",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "rhythm",
+    "pos": "noun",
+    "vietnamese": "nhịp điệu",
+    "definition": "A strong regular repeated pattern of sounds or movements.",
+    "example": "Children experiment with rhythm and speed using natural materials.",
+    "category": "education",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "land use",
+    "pos": "noun",
+    "vietnamese": "sử dụng đất",
+    "definition": "The way in which an area of land is used, for example for farming or building.",
+    "example": "In History, children learn about changes in land use over time.",
+    "category": "education",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "outdoor",
+    "pos": "adjective",
+    "vietnamese": "ngoài trời",
+    "definition": "Done, happening, or used outside rather than inside a building.",
+    "example": "Outdoor educational visits give children a feeling of freedom.",
+    "category": "education",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "freedom",
+    "pos": "noun",
+    "vietnamese": "sự tự do",
+    "definition": "The state of being able to act or move without being controlled.",
+    "example": "The visits give children a feeling of freedom that they may not have elsewhere.",
+    "category": "education",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "theme park",
+    "pos": "noun",
+    "vietnamese": "công viên giải trí",
+    "definition": "A large park with rides and entertainment based on a particular subject.",
+    "example": "During the visit to Malatte, members especially enjoyed going to a theme park.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "cookery demonstration",
+    "pos": "noun",
+    "vietnamese": "trình diễn nấu ăn",
+    "definition": "An event where someone shows how to prepare and cook food.",
+    "example": "The cookery demonstration raised less money than the pancake evening.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "concert",
+    "pos": "noun",
+    "vietnamese": "buổi hòa nhạc",
+    "definition": "A public performance of music.",
+    "example": "On Saturday evening there will be the chance to listen to a concert.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "adventure playground",
+    "pos": "noun",
+    "vietnamese": "sân chơi phiêu lưu",
+    "definition": "A play area for children with climbing structures and challenging equipment.",
+    "example": "The adventure playground is located near the entrance of Farley House.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "kitchen garden",
+    "pos": "noun",
+    "vietnamese": "vườn rau",
+    "definition": "A garden where vegetables, fruit and herbs are grown for cooking.",
+    "example": "The kitchen gardens at Farley House grow vegetables and herbs.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "farm shop",
+    "pos": "noun",
+    "vietnamese": "cửa hàng nông sản",
+    "definition": "A shop on a farm or in a rural area selling local produce.",
+    "example": "You can buy fresh local produce at the farm shop.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "disabled entry",
+    "pos": "noun",
+    "vietnamese": "lối vào cho người khuyết tật",
+    "definition": "An entrance designed to be accessible for people with disabilities.",
+    "example": "The disabled entry is on the west side of the building.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "footbridge",
+    "pos": "noun",
+    "vietnamese": "cầu đi bộ",
+    "definition": "A narrow bridge designed for people to walk across.",
+    "example": "One suggestion was to build a footbridge to mark the anniversary.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "exchange",
+    "pos": "noun",
+    "vietnamese": "trao đổi, giao lưu",
+    "definition": "An arrangement where people visit each other's countries or homes.",
+    "example": "The twinning exchange brings French visitors to stay with local families.",
+    "category": "community",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "word": "footwear",
+    "pos": "noun",
+    "vietnamese": "giày dép",
+    "definition": "Things that people wear on their feet, such as shoes and boots.",
+    "example": "Don thought the topic of recycling footwear might be too limited in scope.",
+    "category": "recycling",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "recycle",
+    "pos": "verb",
+    "vietnamese": "tái chế",
+    "definition": "To process used materials so they can be used again.",
+    "example": "Less footwear is recycled now than in the past.",
+    "category": "recycling",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "dispose of",
+    "pos": "phrasal verb",
+    "vietnamese": "vứt bỏ, loại bỏ",
+    "definition": "To get rid of something that you no longer want or need.",
+    "example": "People dispose of more footwear than they used to.",
+    "category": "recycling",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "fade",
+    "pos": "verb",
+    "vietnamese": "phai màu",
+    "definition": "To become lighter in colour over time.",
+    "example": "The ankle boots were rejected because the colour of one shoe had faded.",
+    "category": "recycling",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "stitching",
+    "pos": "noun",
+    "vietnamese": "đường khâu, mũi chỉ",
+    "definition": "A line of thread that has been sewn in a piece of material.",
+    "example": "One reason for rejecting shoes is that the stitching is broken.",
+    "category": "recycling",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "hygienic",
+    "pos": "adjective",
+    "vietnamese": "hợp vệ sinh",
+    "definition": "Clean and unlikely to cause illness or disease.",
+    "example": "People believed the 'new' pairs of shoes were unhygienic.",
+    "category": "recycling",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "tardigrade",
+    "pos": "noun",
+    "vietnamese": "bọ gấu nước (sinh vật siêu nhỏ)",
+    "definition": "A microscopic animal (0.05–1.2mm) also known as a water bear or moss piglet.",
+    "example": "There are more than 1,000 species of tardigrades.",
+    "category": "biology",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "species",
+    "pos": "noun",
+    "vietnamese": "loài",
+    "definition": "A group of animals or plants that are similar and can produce young together.",
+    "example": "There are more than 1,000 species of tardigrades.",
+    "category": "biology",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "resilient",
+    "pos": "adjective",
+    "vietnamese": "kiên cường, có sức chống chịu",
+    "definition": "Able to recover quickly from difficult conditions.",
+    "example": "Tardigrades are very resilient and can exist in very low or high temperatures.",
+    "category": "biology",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "metabolism",
+    "pos": "noun",
+    "vietnamese": "sự trao đổi chất",
+    "definition": "The chemical processes in living things that convert food into energy.",
+    "example": "They stay alive with a much lower metabolism than usual.",
+    "category": "biology",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "respiratory",
+    "pos": "adjective",
+    "vietnamese": "thuộc hô hấp",
+    "definition": "Relating to breathing or the organs used for breathing.",
+    "example": "Tardigrades have an absence of respiratory organs.",
+    "category": "biology",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "cryptobiosis",
+    "pos": "noun",
+    "vietnamese": "trạng thái ngủ đông sinh học",
+    "definition": "A state in which an organism's metabolic activities are reduced to an undetectable level.",
+    "example": "In dry conditions, tardigrades enter cryptobiosis by rolling into a ball called a 'tun'.",
+    "category": "biology",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "protein",
+    "pos": "noun",
+    "vietnamese": "protein, chất đạm",
+    "definition": "A substance found in food and living things that is essential for growth.",
+    "example": "A type of protein ensures their DNA is not damaged.",
+    "category": "biology",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "endangered",
+    "pos": "adjective",
+    "vietnamese": "có nguy cơ tuyệt chủng",
+    "definition": "At risk of no longer existing because very few are alive.",
+    "example": "Tardigrades are not considered to be endangered.",
+    "category": "biology",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "scope",
+    "pos": "noun",
+    "vietnamese": "phạm vi",
+    "definition": "The range of things that a subject or activity deals with.",
+    "example": "Don thought the topic might be too limited in scope.",
+    "category": "recycling",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "word": "campsite",
+    "pos": "noun",
+    "vietnamese": "khu cắm trại",
+    "definition": "A place used for camping, typically with facilities.",
+    "example": "This well-known campsite in the wild near Browbourne is a winner.",
+    "category": "camping",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "pitches",
+    "pos": "noun",
+    "vietnamese": "khu vực cắm trại",
+    "definition": "Designated spaces for tents or caravans at a campsite.",
+    "example": "The site, with its large tent pitches, is an ideal base.",
+    "category": "camping",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "motorhomes",
+    "pos": "noun",
+    "vietnamese": "xe nhà di động",
+    "definition": "Large vehicles equipped for living in.",
+    "example": "You'll see quite a lot of motorhomes when you hit the clifftop.",
+    "category": "camping",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "back-to-basics",
+    "pos": "adjective",
+    "vietnamese": "quay về cơ bản",
+    "definition": "Simple and fundamental, without modern extras.",
+    "example": "The emphasis at this site is on back-to-basics camping.",
+    "category": "camping",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "rockfaces",
+    "pos": "noun",
+    "vietnamese": "vách đá",
+    "definition": "Bare vertical surfaces of natural rock.",
+    "example": "The 20-metre high rockfaces that surround this site.",
+    "category": "camping",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "scaffolding",
+    "pos": "noun",
+    "vietnamese": "giàn giáo",
+    "definition": "A temporary structure of poles and platforms for workers.",
+    "example": "Scaffolding will be put up on the middle section.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "brickwork",
+    "pos": "noun",
+    "vietnamese": "phần xây gạch",
+    "definition": "The bricks in a wall or building.",
+    "example": "The brickwork there will be sealed temporarily.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "waterproof",
+    "pos": "adjective",
+    "vietnamese": "chống nước",
+    "definition": "Impervious to water.",
+    "example": "Sealed temporarily with a waterproof covering.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "leaseholders",
+    "pos": "noun",
+    "vietnamese": "người thuê dài hạn",
+    "definition": "People who hold a lease on a property.",
+    "example": "While most leaseholders observe the regulations on noise.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "caretaker",
+    "pos": "noun",
+    "vietnamese": "người quản lý tòa nhà",
+    "definition": "A person employed to look after a building.",
+    "example": "Collection and disposal by the caretaker.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "elderly",
+    "pos": "adjective",
+    "vietnamese": "người cao tuổi",
+    "definition": "Old or aging, typically past middle age.",
+    "example": "Care workers provide elderly and disabled people with the opportunity to remain independent.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "hoovering",
+    "pos": "noun",
+    "vietnamese": "hút bụi",
+    "definition": "Cleaning with a vacuum cleaner (British English).",
+    "example": "Hoovering the living room, which can make a huge difference.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "wellbeing",
+    "pos": "noun",
+    "vietnamese": "sự an lành, hạnh phúc",
+    "definition": "The state of being comfortable, healthy, or happy.",
+    "example": "An improvement in their general health and wellbeing.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "ergonomic",
+    "pos": "adjective",
+    "vietnamese": "công thái học",
+    "definition": "Designed for efficiency and comfort in the working environment.",
+    "example": "An ergonomic desk and chair, proper lighting.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "prioritise",
+    "pos": "verb",
+    "vietnamese": "ưu tiên",
+    "definition": "To arrange items in order of importance.",
+    "example": "Learning to prioritise your tasks effectively.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "delegate",
+    "pos": "verb",
+    "vietnamese": "giao phó, ủy quyền",
+    "definition": "To give a task or responsibility to another person.",
+    "example": "Don't be afraid to delegate when possible.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "productivity",
+    "pos": "noun",
+    "vietnamese": "năng suất",
+    "definition": "The effectiveness of productive effort.",
+    "example": "Short breaks actually increase productivity.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "obesity",
+    "pos": "noun",
+    "vietnamese": "béo phì",
+    "definition": "The condition of being grossly overweight.",
+    "example": "Leeds has become the first city to report a reduction in childhood obesity.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "deprived",
+    "pos": "adjective",
+    "vietnamese": "thiếu thốn, khó khăn",
+    "definition": "Suffering a lack of basic material and cultural benefits.",
+    "example": "Among the most deprived families, the figure fell from 11.5% to 10.5%.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "intervene",
+    "pos": "verb",
+    "vietnamese": "can thiệp",
+    "definition": "To take action to improve or prevent a situation.",
+    "example": "The early years were a particularly good time to intervene.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "authoritative",
+    "pos": "adjective",
+    "vietnamese": "có thẩm quyền, uy quyền",
+    "definition": "Commanding and confident; inspiring respect.",
+    "example": "The programme encourages authoritative parenting.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "authoritarian",
+    "pos": "adjective",
+    "vietnamese": "độc đoán",
+    "definition": "Demanding strict obedience to authority at the expense of personal freedom.",
+    "example": "Rather than authoritarian or permissive approaches.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "permissive",
+    "pos": "adjective",
+    "vietnamese": "dễ dãi, cho phép",
+    "definition": "Allowing great freedom of behaviour.",
+    "example": "Permissive parenting, where children decide everything.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "boundaries",
+    "pos": "noun",
+    "vietnamese": "ranh giới, giới hạn",
+    "definition": "Limits that define acceptable behaviour.",
+    "example": "We help parents set clear boundaries for their children.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "policymakers",
+    "pos": "noun",
+    "vietnamese": "nhà hoạch định chính sách",
+    "definition": "People responsible for making policy, especially in government.",
+    "example": "A feat that has attracted considerable attention from policymakers.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "facilities",
+    "pos": "noun",
+    "vietnamese": "cơ sở vật chất, tiện nghi",
+    "definition": "Buildings, services, or equipment provided for a particular purpose.",
+    "example": "Despite its limited facilities, the site is an ideal base.",
+    "category": "camping",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "spacious",
+    "pos": "adjective",
+    "vietnamese": "rộng rãi",
+    "definition": "Having ample space; large and roomy.",
+    "example": "There's still plenty of room for tents on the spacious lawn.",
+    "category": "camping",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "steep",
+    "pos": "adjective",
+    "vietnamese": "dốc đứng",
+    "definition": "Rising or falling sharply; almost vertical.",
+    "example": "The beaches can be accessed by steep, narrow cliff steps.",
+    "category": "camping",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "exposed",
+    "pos": "adjective",
+    "vietnamese": "trống trải, không che chắn",
+    "definition": "Not sheltered or protected from weather conditions.",
+    "example": "The area is rather exposed, and in periods of bad weather it can't be reached.",
+    "category": "camping",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "attempt",
+    "pos": "verb",
+    "vietnamese": "cố gắng, thử",
+    "definition": "To make an effort to achieve or complete something.",
+    "example": "Rock climbers come here so that they can attempt the climb.",
+    "category": "camping",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "splendid",
+    "pos": "adjective",
+    "vietnamese": "tuyệt đẹp, lộng lẫy",
+    "definition": "Magnificent; very impressive.",
+    "example": "It offers splendid views over some of the country's most attractive beaches.",
+    "category": "camping",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "penetration",
+    "pos": "noun",
+    "vietnamese": "sự thấm, xâm nhập",
+    "definition": "The action of entering or passing through something.",
+    "example": "Water penetration — water has seeped through the walls.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "seeped",
+    "pos": "verb",
+    "vietnamese": "thấm, rỉ",
+    "definition": "Flowed or leaked slowly through small openings.",
+    "example": "Water has seeped through the walls of some flats.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "inspection",
+    "pos": "noun",
+    "vietnamese": "kiểm tra, thanh tra",
+    "definition": "An official visit to check that rules are being obeyed.",
+    "example": "Following our fire safety inspection, the front doors were upgraded.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "regulations",
+    "pos": "noun",
+    "vietnamese": "quy định, quy tắc",
+    "definition": "Official rules made by a government or authority.",
+    "example": "The front doors were upgraded to satisfy fire safety regulations.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "incorporated",
+    "pos": "verb",
+    "vietnamese": "kết hợp, đưa vào",
+    "definition": "Included as part of a whole.",
+    "example": "The decoration will be incorporated into the Fire Safety Project.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "disposal",
+    "pos": "noun",
+    "vietnamese": "sự xử lý, vứt bỏ",
+    "definition": "The action of getting rid of something.",
+    "example": "Seal rubbish bags for collection and disposal by the caretaker.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "undertake",
+    "pos": "verb",
+    "vietnamese": "đảm nhận, tiến hành",
+    "definition": "To commit oneself to begin and carry out a task.",
+    "example": "If you are planning to undertake such work during these hours.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "corridor",
+    "pos": "noun",
+    "vietnamese": "hành lang",
+    "definition": "A long passage in a building with doors leading into rooms.",
+    "example": "We have received complaints about smells in the corridors.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "independent",
+    "pos": "adjective",
+    "vietnamese": "độc lập, tự chủ",
+    "definition": "Able to do things without needing help from others.",
+    "example": "Provide elderly people with the opportunity to remain independent at home.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "varied",
+    "pos": "adjective",
+    "vietnamese": "đa dạng, phong phú",
+    "definition": "Involving many different types or forms.",
+    "example": "The work of a care worker can be extremely varied.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "accompany",
+    "pos": "verb",
+    "vietnamese": "đi cùng, đồng hành",
+    "definition": "To go somewhere with someone as a companion.",
+    "example": "The care worker often accompanies the client on a shopping trip.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "medication",
+    "pos": "noun",
+    "vietnamese": "thuốc",
+    "definition": "Medicine used to treat an illness or condition.",
+    "example": "The care worker may help with medication reminders.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "beneficial",
+    "pos": "adjective",
+    "vietnamese": "có lợi, có ích",
+    "definition": "Resulting in good; favourable or advantageous.",
+    "example": "A good work-life balance is beneficial to everyone.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "devoting",
+    "pos": "verb",
+    "vietnamese": "dành cho, cống hiến",
+    "definition": "Giving time or resources to a person or activity.",
+    "example": "Take a serious look at the amount of time you are devoting to work.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "minimise",
+    "pos": "verb",
+    "vietnamese": "giảm thiểu",
+    "definition": "To reduce something to the smallest possible amount.",
+    "example": "Help to minimise the chance of any injuries caused by long hours at a desk.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "accomplish",
+    "pos": "verb",
+    "vietnamese": "hoàn thành, đạt được",
+    "definition": "To achieve or complete successfully.",
+    "example": "When it comes to the tasks you have to accomplish each day.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "overload",
+    "pos": "verb",
+    "vietnamese": "quá tải",
+    "definition": "To give too much of something; to burden excessively.",
+    "example": "If you consistently overload yourself, you are likely to feel stressed.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "manageable",
+    "pos": "adjective",
+    "vietnamese": "dễ quản lý, khả thi",
+    "definition": "Able to be managed or controlled without difficulty.",
+    "example": "Breaking large tasks down into manageable steps is a good approach.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "entitled",
+    "pos": "adjective",
+    "vietnamese": "có quyền được",
+    "definition": "Having a right to something.",
+    "example": "Many people fail to take all the days they are entitled to.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "recharging",
+    "pos": "verb",
+    "vietnamese": "nạp lại năng lượng",
+    "definition": "Restoring energy or strength after a period of activity.",
+    "example": "Regular time away from work is essential for recharging your energy levels.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "unwind",
+    "pos": "verb",
+    "vietnamese": "thư giãn",
+    "definition": "To relax after a period of work or tension.",
+    "example": "Spending time with the ones you love is the best way to unwind fully.",
+    "category": "work",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "reduction",
+    "pos": "noun",
+    "vietnamese": "sự giảm",
+    "definition": "The action of making something smaller or less in amount.",
+    "example": "Leeds has become the first city to report a reduction in childhood obesity.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "feat",
+    "pos": "noun",
+    "vietnamese": "kỳ công, thành tựu",
+    "definition": "An achievement that requires great skill or strength.",
+    "example": "A feat that has attracted considerable attention from health professionals.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "considerable",
+    "pos": "adjective",
+    "vietnamese": "đáng kể",
+    "definition": "Notably large in size, amount, or importance.",
+    "example": "A feat that has attracted considerable attention.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "affluent",
+    "pos": "adjective",
+    "vietnamese": "giàu có, sung túc",
+    "definition": "Having a great deal of money; wealthy.",
+    "example": "In more affluent areas it decreased from 6.8% to 6%.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "startling",
+    "pos": "adjective",
+    "vietnamese": "đáng kinh ngạc",
+    "definition": "Very surprising or remarkable.",
+    "example": "The improvement in the most deprived children in Leeds is startling.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "establish",
+    "pos": "verb",
+    "vietnamese": "thiết lập, hình thành",
+    "definition": "To set up or create something on a permanent basis.",
+    "example": "You can help them establish healthy habits that last a lifetime.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "evidence-based",
+    "pos": "adjective",
+    "vietnamese": "dựa trên bằng chứng",
+    "definition": "Based on scientific evidence rather than opinion.",
+    "example": "A creative and evidence-based approach to tackling childhood obesity.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "word": "tackling",
+    "pos": "verb",
+    "vietnamese": "giải quyết, đối phó",
+    "definition": "Making determined efforts to deal with a problem.",
+    "example": "An evidence-based approach to tackling childhood obesity.",
+    "category": "health",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
   }
 ]

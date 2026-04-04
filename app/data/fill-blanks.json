@@ -1521,5 +1521,131 @@
     "hint": "nhiều, dồi dào",
     "skill": "listening",
     "section": "cambridge-16-test-1"
+  },
+  {
+    "sentence": "The park covers 69 ___ of land.",
+    "answer": "hectares",
+    "hint": "đơn vị đo diện tích (= 10,000 m²)",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "sentence": "The wetland includes lakes, ponds and a ___.",
+    "answer": "stream",
+    "hint": "dòng suối",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "sentence": "Tardigrades are very ___ and can survive extreme conditions.",
+    "answer": "resilient",
+    "hint": "kiên cường, có sức chống chịu",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "sentence": "A type of ___ ensures tardigrades' DNA is not damaged.",
+    "answer": "protein",
+    "hint": "chất đạm",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "sentence": "People ___ of more footwear than they used to.",
+    "answer": "dispose",
+    "hint": "vứt bỏ (dispose ___)",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "sentence": "The ankle boots were rejected because the colour had ___.",
+    "answer": "faded",
+    "hint": "phai màu",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "sentence": "Children learn new skills and gain ___.",
+    "answer": "self-confidence",
+    "hint": "sự tự tin",
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "sentence": "Tardigrades are not considered to be ___.",
+    "answer": "endangered",
+    "hint": "có nguy cơ tuyệt chủng",
+    "skill": "listening",
+    "section": "end-of-course-test-2"
+  },
+  {
+    "sentence": "The site has large tent _____ for camping.",
+    "answer": "pitches",
+    "hint": "khu vực cắm trại",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "sentence": "Workers put up _____ on the wall to reach the high areas.",
+    "answer": "scaffolding",
+    "hint": "giàn giáo",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "sentence": "Most _____ observe the noise regulations.",
+    "answer": "leaseholders",
+    "hint": "người thuê dài hạn",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "sentence": "Care workers help the _____ remain independent at home.",
+    "answer": "elderly",
+    "hint": "người cao tuổi",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "sentence": "An _____ desk and chair can prevent injuries.",
+    "answer": "ergonomic",
+    "hint": "công thái học",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "sentence": "Learning to _____ your tasks is an important skill.",
+    "answer": "prioritise",
+    "hint": "ưu tiên",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "sentence": "Short breaks can increase your _____.",
+    "answer": "productivity",
+    "hint": "năng suất",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "sentence": "Childhood _____ rates fell in Leeds after the programme.",
+    "answer": "obesity",
+    "hint": "béo phì",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "sentence": "The programme encourages _____ parenting rather than authoritarian.",
+    "answer": "authoritative",
+    "hint": "có thẩm quyền",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "sentence": "Parents should set clear _____ for their children.",
+    "answer": "boundaries",
+    "hint": "ranh giới",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
   }
 ]

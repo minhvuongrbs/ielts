@@ -107,7 +107,7 @@
         "colour": {
           "q": 9,
           "answer": "yellow",
-          "altAnswers": []
+          "altAn  swers": []
         },
         "quantity": "1"
       },
@@ -397,5 +397,236 @@
     ],
     "skill": "listening",
     "section": "cambridge-16-test-1"
+  },
+  {
+    "type": "full-test",
+    "title": "End-of-Course Test — Part 1",
+    "instruction": "Sections 1 & 2 (Questions 1–20)",
+    "parts": [
+      {
+        "partTitle": "Section 1 — Hinchingbrooke Country Park (Questions 1–10)",
+        "type": "notes",
+        "noteInstruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+        "sections": [
+          {
+            "heading": "The park",
+            "items": [
+              {"q": 1, "before": "Area:", "after": "hectares", "answer": "69", "altAnswers": ["sixty-nine"]},
+              {"q": 2, "before": "Habitats: wetland, grassland and woodland\nWetland: lakes, ponds and a", "after": "", "answer": "stream", "altAnswers": ["Stream"]},
+              {"info": "Wildlife includes birds, insects and animals"}
+            ]
+          },
+          {
+            "heading": "Subjects studied in educational visits",
+            "items": [
+              {"q": 3, "before": "Science: Children look at", "after": "about plants, etc.", "answer": "data", "altAnswers": ["Data"]},
+              {"q": 4, "before": "Geography: includes learning to use a", "after": "and compass", "answer": "map", "altAnswers": ["Map"]},
+              {"info": "History: changes in land use"},
+              {"q": 5, "before": "Leisure and tourism: mostly concentrates on the park's", "after": "", "answer": "visitors", "altAnswers": ["Visitors"]},
+              {"q": 6, "before": "Music: Children make", "after": "with natural materials, and experiment with rhythm and speed.", "answer": "sounds", "altAnswers": ["Sounds"]}
+            ]
+          },
+          {
+            "heading": "Benefits of outdoor educational visits",
+            "items": [
+              {"q": 7, "before": "They give children a feeling of", "after": "that they may not have elsewhere.", "answer": "freedom", "altAnswers": ["Freedom"]},
+              {"q": 8, "before": "Children learn new", "after": "and gain self-confidence.", "answer": "skills", "altAnswers": ["Skills"]}
+            ]
+          },
+          {
+            "heading": "Practical issues",
+            "items": [
+              {"q": 9, "before": "Cost per child: £", "after": "", "answer": "4.95", "altAnswers": ["4.95"]},
+              {"q": 10, "before": "Adults, such as", "after": ", free", "answer": "leaders", "altAnswers": ["Leaders"]}
+            ]
+          }
+        ]
+      },
+      {
+        "partTitle": "Section 2 — Stanthorpe Twinning Association & Farley House (Questions 11–20)",
+        "type": "mixed",
+        "mcInstruction": "Choose the correct letter, A, B or C.",
+        "mcTitle": "Stanthorpe Twinning Association",
+        "mcQuestions": [
+          {
+            "q": 11,
+            "text": "During the visit to Malatte, in France, members especially enjoyed",
+            "options": ["going to a theme park.", "experiencing a river trip.", "visiting a cheese factory."],
+            "answer": "B"
+          },
+          {
+            "q": 12,
+            "text": "What will happen in Stanthorpe to mark the 25th anniversary of the Twinning Association?",
+            "options": ["A tree will be planted.", "A garden seat will be bought.", "A footbridge will be built."],
+            "answer": "A"
+          },
+          {
+            "q": 13,
+            "text": "Which event raised most funds this year?",
+            "options": ["the film show", "the pancake evening", "the cookery demonstration"],
+            "answer": "B"
+          },
+          {
+            "q": 14,
+            "text": "For the first evening with the French visitors host families are advised to",
+            "options": ["take them for a walk round the town.", "go to a local restaurant.", "have a meal at home."],
+            "answer": "C"
+          },
+          {
+            "q": 15,
+            "text": "On Saturday evening there will be the chance to",
+            "options": ["listen to a concert.", "watch a match.", "take part in a competition."],
+            "answer": "A"
+          }
+        ],
+        "mapInstruction": "Label the map below. Write the correct letter, A–H, next to Questions 16–20.",
+        "mapTitle": "Farley House",
+        "mapImage": "../../../../assets/images/farley_house_map.png",
+        "mapOptions": [
+          {"letter": "A", "label": ""},
+          {"letter": "B", "label": ""},
+          {"letter": "C", "label": ""},
+          {"letter": "D", "label": ""},
+          {"letter": "E", "label": ""},
+          {"letter": "F", "label": ""},
+          {"letter": "G", "label": ""},
+          {"letter": "H", "label": ""}
+        ],
+        "mapQuestions": [
+          {"q": 16, "questionLabel": "Farm shop", "answer": "G"},
+          {"q": 17, "questionLabel": "Disabled entry", "answer": "C"},
+          {"q": 18, "questionLabel": "Adventure playground", "answer": "B"},
+          {"q": 19, "questionLabel": "Kitchen gardens", "answer": "D"},
+          {"q": 20, "questionLabel": "The Temple of the Four Winds", "answer": "A"}
+        ]
+      }
+    ],
+    "skill": "listening",
+    "section": "end-of-course-test-1"
+  },
+  {
+    "type": "full-test",
+    "title": "End-of-Course Test — Part 2",
+    "instruction": "Sections 3 & 4 (Questions 21–40)",
+    "parts": [
+      {
+        "partTitle": "Section 3 — Recycling Footwear (Questions 21–30)",
+        "type": "mixed",
+        "mcInstruction": "Choose the correct letter, A, B or C.",
+        "mcTitle": "Recycling Footwear Discussion",
+        "mcQuestions": [
+          {
+            "q": 21,
+            "text": "At first, Don thought the topic of recycling footwear might be too",
+            "options": ["limited in scope.", "hard to research.", "boring for listeners."],
+            "answer": "A"
+          },
+          {
+            "q": 22,
+            "text": "When discussing trainers, Bella and Don disagree about",
+            "options": ["how popular they are among young people.", "how suitable they are for school.", "how quickly they wear out."],
+            "answer": "B"
+          },
+          {
+            "q": 23,
+            "text": "Bella says that she sometimes recycles shoes because",
+            "options": ["they no longer fit.", "she no longer likes them.", "they are no longer in fashion."],
+            "answer": "B"
+          },
+          {
+            "q": 24,
+            "text": "What did the article say that confused Don?",
+            "options": ["Public consumption of footwear has risen.", "Less footwear is recycled now than in the past.", "People dispose of more footwear than they used to."],
+            "answer": "B"
+          }
+        ],
+        "matchInstruction": "What reasons did the recycling manager give for rejecting footwear, according to the students? Choose four answers from the box and write the correct letter, A–F.",
+        "matchTitle": "Reasons for Rejecting Footwear",
+        "matchReasons": [
+          {"letter": "A", "label": "one shoe was missing"},
+          {"letter": "B", "label": "the colour of one shoe had faded"},
+          {"letter": "C", "label": "one shoe had a hole in it"},
+          {"letter": "D", "label": "the shoes were brand new"},
+          {"letter": "E", "label": "the shoes were too dirty"},
+          {"letter": "F", "label": "the stitching on the shoes was broken"}
+        ],
+        "matchQuestions": [
+          {"q": 25, "questionLabel": "the high-heeled shoes", "answer": "E"},
+          {"q": 26, "questionLabel": "the ankle boots", "answer": "B"},
+          {"q": 27, "questionLabel": "the baby shoes", "answer": "A"},
+          {"q": 28, "questionLabel": "the trainers", "answer": "C"}
+        ],
+        "mc2Instruction": "Choose the correct letter, A, B or C.",
+        "mc2Questions": [
+          {
+            "q": 29,
+            "text": "Why did the project to make 'new' shoes out of old shoes fail?",
+            "options": ["People believed the 'new' pairs of shoes were unhygienic.", "There were not enough good parts to use in the old shoes.", "The shoes in the 'new' pairs were not completely alike."],
+            "answer": "C"
+          },
+          {
+            "q": 30,
+            "text": "Bella and Don agree that they can present their topic",
+            "options": ["from a new angle.", "with relevant images.", "in a straightforward way."],
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "partTitle": "Section 4 — Tardigrades (Questions 31–40)",
+        "type": "notes",
+        "noteInstruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+        "sections": [
+          {
+            "heading": "Tardigrades",
+            "subheading": "more than 1,000 species, 0.05–1.2 millimetres long — also known as water 'bears' and 'moss piglets'",
+            "items": [
+              {"q": 31, "before": "also known as water 'bears' (due to how they", "after": ") and 'moss piglets'", "answer": "move", "altAnswers": ["Move"]}
+            ]
+          },
+          {
+            "heading": "Physical appearance",
+            "items": [
+              {"q": 32, "before": "a", "after": "round body and four pairs of legs", "answer": "short", "altAnswers": ["Short"]},
+              {"q": 33, "before": "claws or", "after": "for gripping", "answer": "discs", "altAnswers": ["Discs", "disks", "Disks"]},
+              {"info": "absence of respiratory organs"},
+              {"q": 34, "before": "body filled with a liquid that carries both", "after": "and blood", "answer": "oxygen", "altAnswers": ["Oxygen"]},
+              {"q": 35, "before": "mouth shaped like a", "after": "with teeth called stylets", "answer": "tube", "altAnswers": ["Tube"]}
+            ]
+          },
+          {
+            "heading": "Habitat",
+            "items": [
+              {"info": "often found at the bottom of a lake or on plants"},
+              {"q": 36, "before": "very resilient and can exist in very low or high", "after": "", "answer": "temperatures", "altAnswers": ["Temperatures"]}
+            ]
+          },
+          {
+            "heading": "Cryptobiosis",
+            "items": [
+              {"info": "In dry conditions, they roll into a ball called a 'tun'."},
+              {"info": "They stay alive with a much lower metabolism than usual."},
+              {"q": 37, "before": "A type of", "after": "ensures their DNA is not damaged.", "answer": "protein", "altAnswers": ["Protein"]},
+              {"q": 38, "before": "Research is underway to find out how many days they can stay alive in", "after": "", "answer": "space", "altAnswers": ["Space"]}
+            ]
+          },
+          {
+            "heading": "Feeding",
+            "items": [
+              {"q": 39, "before": "consume liquids, e.g., those found in moss or", "after": "", "answer": "seaweed", "altAnswers": ["Seaweed"]},
+              {"info": "may eat other tardigrades"}
+            ]
+          },
+          {
+            "heading": "Conservation status",
+            "items": [
+              {"q": 40, "before": "They are not considered to be", "after": ".", "answer": "endangered", "altAnswers": ["Endangered"]}
+            ]
+          }
+        ]
+      }
+    ],
+    "skill": "listening",
+    "section": "end-of-course-test-2"
   }
 ]

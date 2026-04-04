@@ -36,6 +36,13 @@
 .card.soon{opacity:.5;pointer-events:none;border-left-color:#ccc !important}
 .card.soon::after{content:'🔒'}
 
+/* Reading skill modifier */
+.rev-skill.reading .rev-skill-label{border-bottom-color:var(--reading-bg)}
+.rev-skill.reading .rev-skill-icon{background:var(--reading-bg);color:var(--reading)}
+.rev-skill.reading .rev-skill-name{color:var(--reading)}
+.rev-skill.reading .card{border-left-color:var(--reading)}
+.rev-skill.reading .card::after{color:var(--reading)}
+
 .card-tags{display:flex;gap:5px;flex-wrap:wrap}
 .tag{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 8px;border-radius:8px}
 .tag-type{background:#f0ebe3;color:#8a7a66}
@@ -98,6 +105,65 @@
             <span>🔊 Audio</span>
             <span>📝 26 vocab</span>
             <span>📋 7 questions</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FINAL TEST ==================== -->
+  <div class="rev-block">
+    <div class="rev-header">
+      <div class="rev-num">Final Test — 4/4/2026</div>
+      <span class="rev-badge">3 tests</span>
+    </div>
+
+    <div class="rev-skill reading">
+      <div class="rev-skill-label">
+        <div class="rev-skill-icon">📖</div>
+        <div class="rev-skill-name">Reading</div>
+      </div>
+      <div class="rev-cards">
+        <a href="../../sections/reading/cambridge-19-gt-test-2/" class="card">
+          <div class="card-tags">
+            <span class="tag tag-type">Full Test</span>
+          </div>
+          <div class="card-title">📖 Cambridge 19 GT Test 2</div>
+          <div class="card-desc">Full 40-question reading test — Matching Information, True/False/Not Given, Sentence Completion, Multiple Choice &amp; Matching People.</div>
+          <div class="card-meta">
+            <span>📋 40 questions</span>
+            <span>📄 5 passages</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="rev-skill">
+      <div class="rev-skill-label">
+        <div class="rev-skill-icon">🎧</div>
+        <div class="rev-skill-name">Listening</div>
+      </div>
+      <div class="rev-cards">
+        <a href="../../sections/listening/end-of-course-test-1/" class="card">
+          <div class="card-tags">
+            <span class="tag tag-type">Full Test</span>
+          </div>
+          <div class="card-title">🎧 End-of-Course Test — Part 1</div>
+          <div class="card-desc">Sections 1 &amp; 2 (Questions 1–20) — Note completion &amp; Multiple choice + Map labeling.</div>
+          <div class="card-meta">
+            <span>🔊 Audio</span>
+            <span>📋 20 questions</span>
+          </div>
+        </a>
+        <a href="../../sections/listening/end-of-course-test-2/" class="card">
+          <div class="card-tags">
+            <span class="tag tag-type">Full Test</span>
+          </div>
+          <div class="card-title">🎧 End-of-Course Test — Part 2</div>
+          <div class="card-desc">Sections 3 &amp; 4 (Questions 21–40) — Multiple choice, Matching &amp; Note completion.</div>
+          <div class="card-meta">
+            <span>🔊 Audio</span>
+            <span>📋 20 questions</span>
           </div>
         </a>
       </div>

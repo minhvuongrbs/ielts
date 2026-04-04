@@ -13,12 +13,18 @@ function renderListeningPage(cfg){
 
   if(cfg.practiceTab){
     extraTabs += `<button class="tab-btn" data-tab="practice">📋 Practice</button>`;
+    /* Support single audioSrc string or array of {src,label} */
+    let audioHTML = '';
+    if(Array.isArray(cfg.practiceTab.audioSrc)){
+      cfg.practiceTab.audioSrc.forEach(function(a){
+        audioHTML += `<div class="audio-card"><div class="label">🔊 ${a.label||'Listen to the audio'}</div><audio controls src="${a.src}" style="flex:1;min-width:200px"></audio></div>`;
+      });
+    } else {
+      audioHTML = `<div class="audio-card"><div class="label">🔊 Listen to the audio</div><audio controls src="${cfg.practiceTab.audioSrc}" style="flex:1;min-width:200px"></audio></div>`;
+    }
     extraPanes += `
       <div id="practice" class="tp">
-        <div class="audio-card">
-          <div class="label">🔊 Listen to the audio</div>
-          <audio controls src="${cfg.practiceTab.audioSrc}" style="flex:1;min-width:200px"></audio>
-        </div>
+        ${audioHTML}
         <div id="practice-content"></div>
         <div class="practice-score" id="practice-score"></div>
         <div class="ctrls">

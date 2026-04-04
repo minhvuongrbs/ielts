@@ -1766,5 +1766,463 @@
     },
     "skill": "reading",
     "section": "cambridge-18-gt-test-2"
+  },
+
+  {
+    "number": 1,
+    "text": "The site is impossible to get to at certain times.",
+    "answer": "D",
+    "explanation": "D (South Turnbull) — 'in periods of bad weather it can't be reached at all'",
+    "vietnamese": "D — trong thời tiết xấu, không thể đến được.",
+    "qtype": "matching",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 2,
+    "text": "It is in a convenient place for going by car to various tourist spots.",
+    "answer": "A",
+    "explanation": "A (Prettycoat Farm) — 'an ideal base for exploring the area and driving to the rock museum, the craft workshops or Gaydon Castle'",
+    "vietnamese": "A — là nơi lý tưởng để lái xe đến bảo tàng đá, xưởng thủ công và lâu đài Gaydon.",
+    "qtype": "matching",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 3,
+    "text": "You should camp somewhere inside the marked zone.",
+    "answer": "C",
+    "explanation": "C (Oakerly Estate) — 'pitch your tent within the white line around the cliff edge'",
+    "vietnamese": "C — cắm trại trong vạch trắng quanh mép vách đá.",
+    "qtype": "matching",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 4,
+    "text": "Campers who enjoy a particular physical challenge come here.",
+    "answer": "E",
+    "explanation": "E (Boxer Trepis) — rock climbers come 'from hundreds of miles away' to 'attempt the climb'",
+    "vietnamese": "E — những người leo núi đến từ hàng trăm dặm để thử thách.",
+    "qtype": "matching",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 5,
+    "text": "The difficult journey to the site is worth the effort.",
+    "answer": "C",
+    "explanation": "C (Oakerly Estate) — 'You won't be disappointed when you reach Oakerly, despite the problems of getting there'",
+    "vietnamese": "C — bạn sẽ không thất vọng khi đến Oakerly, dù đường đi khó khăn.",
+    "qtype": "matching",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 6,
+    "text": "Few people have heard of this site.",
+    "answer": "B",
+    "explanation": "B (Newgammon Wild) — 'the handful of campers who know about it so far'",
+    "vietnamese": "B — chỉ có một nhóm nhỏ người cắm trại biết đến nơi này.",
+    "qtype": "matching",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 7,
+    "text": "The campsite has received positive feedback online.",
+    "answer": "B",
+    "explanation": "B (Newgammon Wild) — 'the website has some very positive reviews'",
+    "vietnamese": "B — trang web có nhiều đánh giá rất tích cực.",
+    "qtype": "matching",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+
+  {
+    "number": 8,
+    "text": "The water penetration in some flats is being treated as an emergency.",
+    "answer": "TRUE",
+    "explanation": "TRUE — 'reached a critical level' and 'A decision has been taken to deal with this immediately'",
+    "vietnamese": "ĐÚNG — nước đã đạt mức nghiêm trọng và quyết định xử lý ngay lập tức.",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 9,
+    "text": "The southern wall will undergo a permanent repair this year.",
+    "answer": "FALSE",
+    "explanation": "FALSE — The wall will be 'sealed temporarily with a waterproof covering' — not permanent, and major works are 'next year'",
+    "vietnamese": "SAI — tường sẽ được bịt tạm thời, công trình lớn sẽ vào năm sau.",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 10,
+    "text": "Some people have failed to pay attention to 'wet paint' signs.",
+    "answer": "NOT GIVEN",
+    "explanation": "NOT GIVEN — The newsletter mentions redecorations but says nothing about 'wet paint' signs being ignored",
+    "vietnamese": "KHÔNG CÓ THÔNG TIN — bản tin đề cập trang trí lại nhưng không nói gì về biển 'sơn ướt'.",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 11,
+    "text": "Air fresheners have caused some damage in the past.",
+    "answer": "TRUE",
+    "explanation": "TRUE — 'the liquid in their spray stained the carpets'",
+    "vietnamese": "ĐÚNG — chất lỏng trong bình xịt làm ố thảm.",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 12,
+    "text": "Residents are responsible for removing their own rubbish from the building.",
+    "answer": "FALSE",
+    "explanation": "FALSE — Rubbish is collected by 'the caretaker' — residents just need to seal bags and put them in the corridor",
+    "vietnamese": "SAI — rác được người quản lý thu gom, cư dân chỉ cần đóng kín túi rác và đặt ở hành lang.",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 13,
+    "text": "Some residents have reported problems with noisy neighbours.",
+    "answer": "TRUE",
+    "explanation": "TRUE — 'we have received complaints from others about out-of-hours drilling'",
+    "vietnamese": "ĐÚNG — ban quản lý nhận được khiếu nại về tiếng khoan ngoài giờ.",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 14,
+    "text": "DIY can take place outside the stated hours if your neighbour agrees.",
+    "answer": "FALSE",
+    "explanation": "FALSE — 'There can be no exceptions to this rule' — neighbour agreement does not override the time restrictions",
+    "vietnamese": "SAI — không có ngoại lệ nào cho quy tắc này, dù hàng xóm đồng ý.",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+
+  {
+    "number": 15,
+    "text": "The work of a care worker is varied because clients have different needs depending on their _____.",
+    "answer": "condition",
+    "explanation": "The passage states: 'clients may have very different needs depending on their condition'",
+    "vietnamese": "Bài đọc nói: khách hàng có nhu cầu rất khác nhau tùy thuộc vào tình trạng của họ.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 16,
+    "text": "Cooking breakfast provides a good opportunity for a _____.",
+    "answer": "conversation",
+    "explanation": "The passage says: 'this is often a good time to enjoy a conversation'",
+    "vietnamese": "Bài đọc nói: đây là thời điểm tốt để trò chuyện.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 17,
+    "text": "An example of basic housework that the care worker does is _____.",
+    "answer": "hoovering",
+    "explanation": "The passage mentions: 'hoovering the living room, which can make a huge difference'",
+    "vietnamese": "Bài đọc đề cập: hút bụi phòng khách có thể tạo sự khác biệt lớn.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 18,
+    "text": "At lunchtime the care worker prepares a _____ meal for the client.",
+    "answer": "healthy",
+    "explanation": "The passage says: 'the care worker may prepare a healthy meal'",
+    "vietnamese": "Bài đọc nói: nhân viên chăm sóc chuẩn bị bữa ăn lành mạnh.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 19,
+    "text": "In the afternoon, the care worker may assist the client with _____.",
+    "answer": "shopping",
+    "explanation": "The passage says: 'the care worker often accompanies the client on a shopping trip'",
+    "vietnamese": "Bài đọc nói: nhân viên thường đi mua sắm cùng khách hàng.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 20,
+    "text": "Later in the day, there may be _____ to take care of.",
+    "answer": "laundry",
+    "explanation": "The passage states: 'there may be laundry to take care of'",
+    "vietnamese": "Bài đọc nói: có thể có việc giặt giũ cần xử lý.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+
+  {
+    "number": 21,
+    "text": "Reducing work hours leads to improved health and _____.",
+    "answer": "wellbeing",
+    "explanation": "Section A: 'an improvement in their general health and wellbeing'",
+    "vietnamese": "Phần A: cải thiện sức khỏe tổng thể và sự an lành.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 22,
+    "text": "A properly set up workstation can minimise the chance of _____.",
+    "answer": "injuries",
+    "explanation": "Section B: 'minimise the chance of any injuries caused by long hours at a desk'",
+    "vietnamese": "Phần B: giảm thiểu nguy cơ chấn thương do ngồi lâu.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 23,
+    "text": "It is important to set _____ goals to avoid feeling stressed.",
+    "answer": "realistic",
+    "explanation": "Section C: 'it is essential to set realistic goals'",
+    "vietnamese": "Phần C: cần thiết đặt mục tiêu thực tế.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 24,
+    "text": "Learning to _____ your tasks helps you manage your workload.",
+    "answer": "prioritise",
+    "explanation": "Section D: 'Learning to prioritise your tasks effectively is also very important'",
+    "vietnamese": "Phần D: học cách ưu tiên công việc hiệu quả rất quan trọng.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 25,
+    "text": "Taking regular breaks can actually increase _____.",
+    "answer": "productivity",
+    "explanation": "Section E: 'short breaks actually increase productivity rather than reducing it'",
+    "vietnamese": "Phần E: nghỉ ngắn thực tế tăng năng suất thay vì giảm.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 26,
+    "text": "You should make full use of your _____ allowance.",
+    "answer": "holiday",
+    "explanation": "Section F: 'make full use of your holiday allowance'",
+    "vietnamese": "Phần F: tận dụng hết số ngày nghỉ phép.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 27,
+    "text": "Family, friends and favourite _____ help you to relax.",
+    "answer": "pets",
+    "explanation": "Section G: 'family, friends and favourite pets are the ultimate life enhancers'",
+    "vietnamese": "Phần G: gia đình, bạn bè và thú cưng yêu thích là yếu tố nâng cao cuộc sống.",
+    "qtype": "completion",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+
+  {
+    "number": 28,
+    "text": "What is the main focus of the first two paragraphs?",
+    "answer": "D",
+    "explanation": "D — The first two paragraphs introduce Leeds' achievement in reducing childhood obesity and present the key statistics",
+    "vietnamese": "D — Hai đoạn đầu giới thiệu thành tựu của Leeds trong việc giảm béo phì trẻ em và trình bày số liệu chính.",
+    "qtype": "mc",
+    "options": ["A:the history of childhood obesity in Leeds", "B:a comparison between Leeds and other UK cities", "C:the role of primary schools in fighting obesity", "D:an achievement in reducing childhood obesity in Leeds"],
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 29,
+    "text": "What did Susan Jebb find particularly significant?",
+    "answer": "B",
+    "explanation": "B — Susan Jebb said 'The improvement in the most deprived children in Leeds is startling'",
+    "vietnamese": "B — Susan Jebb nói sự cải thiện ở trẻ em nghèo nhất Leeds rất đáng kinh ngạc.",
+    "qtype": "mc",
+    "options": ["A:the overall reduction in obesity across Leeds", "B:the impact on children from the poorest backgrounds", "C:the speed at which obesity rates declined", "D:the cost-effectiveness of the Henry programme"],
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 30,
+    "text": "What does Janice Burberry say about the timing of the programme?",
+    "answer": "D",
+    "explanation": "D — She said 'the early years were a particularly good time to intervene to support families'",
+    "vietnamese": "D — Bà nói những năm đầu đời là thời điểm tốt để can thiệp hỗ trợ gia đình.",
+    "qtype": "mc",
+    "options": ["A:it should have been introduced sooner", "B:it took several years to show results", "C:its success depends on long-term commitment", "D:working with young children's parents is ideal timing"],
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 31,
+    "text": "What is the purpose of the Henry programme according to Kim Roberts?",
+    "answer": "C",
+    "explanation": "C — Kim Roberts explained that the programme encourages authoritative parenting and helps parents set clear boundaries while giving children choices",
+    "vietnamese": "C — Kim Roberts giải thích chương trình khuyến khích nuôi dạy có thẩm quyền, giúp cha mẹ đặt ranh giới rõ ràng đồng thời cho trẻ lựa chọn.",
+    "qtype": "mc",
+    "options": ["A:to eliminate unhealthy food from children's diets", "B:to train health professionals in nutrition advice", "C:to help parents adopt a balanced approach to parenting", "D:to reduce the cost of treating childhood obesity"],
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+
+  {
+    "number": 32,
+    "text": "Intervening early in a child's life can have lasting positive effects.",
+    "answer": "C",
+    "explanation": "C (Janice Burberry) — 'If you can work with parents when their children are very young, you can help them establish healthy habits that last a lifetime'",
+    "vietnamese": "C (Janice Burberry) — làm việc với phụ huynh khi con nhỏ giúp tạo thói quen lành mạnh suốt đời.",
+    "qtype": "matching-people",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 33,
+    "text": "The results among disadvantaged children are impressive.",
+    "answer": "A",
+    "explanation": "A (Susan Jebb) — 'The improvement in the most deprived children in Leeds is startling'",
+    "vietnamese": "A (Susan Jebb) — sự cải thiện ở trẻ em nghèo nhất Leeds rất đáng kinh ngạc.",
+    "qtype": "matching-people",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 34,
+    "text": "The programme demonstrates what local government can accomplish.",
+    "answer": "D",
+    "explanation": "D (Seema Kennedy) — 'shows what can be achieved when local authorities take a creative and evidence-based approach'",
+    "vietnamese": "D (Seema Kennedy) — cho thấy chính quyền địa phương có thể đạt được gì khi tiếp cận sáng tạo và dựa trên bằng chứng.",
+    "qtype": "matching-people",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 35,
+    "text": "Young children are the right group to focus on.",
+    "answer": "C",
+    "explanation": "C (Janice Burberry) — 'the early years were a particularly good time to intervene'",
+    "vietnamese": "C (Janice Burberry) — những năm đầu đời là thời điểm tốt để can thiệp.",
+    "qtype": "matching-people",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+
+  {
+    "number": 36,
+    "text": "Henry helps parents set clear _____ for their children.",
+    "answer": "boundaries",
+    "explanation": "'We help parents set clear boundaries for their children'",
+    "vietnamese": "'Chúng tôi giúp phụ huynh đặt ranh giới rõ ràng cho con cái.'",
+    "qtype": "fill",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 37,
+    "text": "The programme promotes _____ parenting, where parents are in charge but also responsive.",
+    "answer": "authoritative",
+    "explanation": "'the programme encourages what is known as authoritative parenting'",
+    "vietnamese": "Chương trình khuyến khích nuôi dạy có thẩm quyền.",
+    "qtype": "fill",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 38,
+    "text": "In _____ parenting, children are asked what they want and decide everything themselves.",
+    "answer": "permissive",
+    "explanation": "'permissive parenting, where children are asked what they want and are allowed to decide everything'",
+    "vietnamese": "Nuôi dạy dễ dãi — trẻ được hỏi muốn gì và tự quyết định mọi thứ.",
+    "qtype": "fill",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "number": 39,
+    "text": "A Henry-trained parent might read a _____ about vegetables to encourage a reluctant child.",
+    "answer": "story",
+    "explanation": "'a Henry-trained parent might read a story about vegetables'",
+    "vietnamese": "Phụ huynh được đào tạo Henry có thể đọc truyện về rau cho trẻ.",
+    "qtype": "fill",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+
+  {
+    "number": 40,
+    "text": "Which of the following is the most suitable title for the passage?",
+    "answer": "A",
+    "explanation": "A — The passage focuses on the achievements of the Henry programme in Leeds, including statistics and expert opinions",
+    "vietnamese": "A — Bài đọc tập trung vào thành tựu của chương trình Henry ở Leeds.",
+    "qtype": "title",
+    "options": ["A:A look at what 'Henry' has achieved in Leeds", "B:How 'Henry' is transforming children's diets across the UK", "C:The origins of the 'Henry' approach to child-rearing", "D:Why Leeds chose 'Henry' over other health programmes"],
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+
+  {
+    "type": "meta",
+    "key": "questionTypes",
+    "value": {
+      "active": [
+        {
+          "name": "Matching Information",
+          "icon": "🔗",
+          "description": "Match statements to descriptions (A–E). Letters may repeat.",
+          "tips": ["Skim all descriptions first", "Look for paraphrases, not exact words", "Letters CAN repeat"],
+          "vi": "Ghép thông tin — nối câu với mô tả A–E. Chữ cái có thể lặp lại."
+        },
+        {
+          "name": "True / False / Not Given",
+          "icon": "✅",
+          "description": "Decide if the statement agrees with, contradicts, or is not mentioned in the text.",
+          "tips": ["TRUE = passage confirms it", "FALSE = passage says the opposite", "NOT GIVEN = passage is silent"],
+          "vi": "Đúng / Sai / Không có thông tin — xác định câu phù hợp, mâu thuẫn, hay không được đề cập."
+        },
+        {
+          "name": "Sentence Completion",
+          "icon": "✏️",
+          "description": "Complete the sentence using words from the text.",
+          "tips": ["Use exact words from the passage", "Check word limits", "Read the sentence carefully for grammar clues"],
+          "vi": "Hoàn thành câu — dùng từ chính xác từ bài đọc."
+        },
+        {
+          "name": "Multiple Choice",
+          "icon": "🔘",
+          "description": "Choose the correct answer from four options.",
+          "tips": ["Read all options before choosing", "Eliminate obviously wrong answers", "Look for paraphrases of the correct answer"],
+          "vi": "Trắc nghiệm — chọn đáp án đúng từ bốn lựa chọn."
+        }
+      ],
+      "allTypes": [
+        {"name": "Multiple Choice", "practiced": true},
+        {"name": "Matching Information", "practiced": true},
+        {"name": "True / False / Not Given", "practiced": true},
+        {"name": "Sentence Completion", "practiced": true},
+        {"name": "Matching Headings", "practiced": false},
+        {"name": "Summary Completion", "practiced": false},
+        {"name": "Short Answer", "practiced": false},
+        {"name": "Diagram Labeling", "practiced": false},
+        {"name": "Table Completion", "practiced": false},
+        {"name": "Flow-chart Completion", "practiced": false},
+        {"name": "Matching Sentence Endings", "practiced": false}
+      ]
+    },
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
   }
 ]

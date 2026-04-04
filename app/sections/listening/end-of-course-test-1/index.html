@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Listening — End-of-Course Test Part 1</title>
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/listening.css?v=2">
+<style>
+/* Note completion layout */
+.note-section{margin-bottom:20px}
+.note-heading{font-family:'Fraunces',serif;font-weight:700;font-size:1rem;color:var(--accent);margin-bottom:4px}
+.note-subheading{font-size:.82rem;font-weight:600;color:#8a7a66;margin-bottom:10px}
+.note-item{display:flex;align-items:baseline;gap:6px;margin-bottom:12px;font-size:.9rem;line-height:1.6;flex-wrap:wrap}
+.note-item .qn{font-family:'Fraunces',serif;font-weight:700;font-size:.85rem;color:#fff;background:var(--accent);width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.note-input{border:none;border-bottom:2px solid var(--accent);background:transparent;font-size:.9rem;font-family:inherit;padding:2px 6px;width:140px;text-align:center;outline:none;transition:.2s}
+.note-input:focus{border-bottom-color:var(--accent-dark);background:var(--accent-light)}
+.note-input.pc{border-bottom-color:var(--correct);color:var(--correct);background:var(--correct-bg)}
+.note-input.pw{border-bottom-color:var(--wrong);color:var(--wrong);background:var(--wrong-bg)}
+.note-answer{display:none;font-size:.82rem;color:var(--correct);font-weight:600;margin-left:4px}
+.note-answer.show{display:inline}
+.note-bullet{color:var(--accent);font-weight:700}
+/* Part divider */
+.part-divider{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--text);margin:28px 0 16px;padding:10px 16px;background:var(--accent-light);border-radius:var(--r);border-left:4px solid var(--accent)}
+/* MCQ layout */
+.mcq-block{margin-bottom:24px}
+.mcq-title{font-family:'Fraunces',serif;font-weight:700;font-size:1rem;color:var(--accent);margin-bottom:12px}
+.mcq-q{margin-bottom:16px;font-size:.9rem;line-height:1.6}
+.mcq-q .qn{font-family:'Fraunces',serif;font-weight:700;font-size:.85rem;color:#fff;background:var(--accent);width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;margin-right:6px}
+.mcq-text{font-weight:600;margin-bottom:8px}
+.mcq-opt{display:block;margin:4px 0 4px 32px;cursor:pointer;padding:4px 8px;border-radius:6px;transition:.15s}
+.mcq-opt:hover{background:var(--accent-light)}
+.mcq-opt input{margin-right:6px}
+.mcq-opt.pc{background:var(--correct-bg);color:var(--correct)}
+.mcq-opt.pw{background:var(--wrong-bg);color:var(--wrong)}
+/* Map labeling */
+.map-block{margin-bottom:24px}
+.map-img{max-width:100%;border-radius:var(--r);margin-bottom:16px;box-shadow:var(--shadow)}
+.map-q{display:flex;align-items:center;gap:8px;margin-bottom:10px;font-size:.9rem}
+.map-q .qn{font-family:'Fraunces',serif;font-weight:700;font-size:.85rem;color:#fff;background:var(--accent);width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.map-select{border:2px solid var(--accent);border-radius:6px;padding:4px 8px;font-size:.9rem;font-family:inherit;background:#fff;min-width:60px;outline:none}
+.map-select:focus{border-color:var(--accent-dark)}
+.map-select.pc{border-color:var(--correct);color:var(--correct);background:var(--correct-bg)}
+.map-select.pw{border-color:var(--wrong);color:var(--wrong);background:var(--wrong-bg)}
+.map-answer{display:none;font-size:.82rem;color:var(--correct);font-weight:600}
+.map-answer.show{display:inline}
+</style>
+</head>
+<body data-depth="3" data-active="listening">
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+<div id="app"></div>
+<script>
+const CAT_LABELS={nature:'🌿 Nature',education:'📚 Education',community:'🤝 Community'};
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/listening.js?v=2"></script>
+<script>
+renderListeningPage({
+  title: '📋 End-of-Course Test — Part 1',
+  sub: 'IELTS Listening — Sections 1 & 2 (Questions 1–20)',
+  source: 'Cambridge IELTS 19 — Test 1',
+  guideWhat: 'Full Listening Test (Part 1)',
+  practiceTab: { audioSrc: [
+    { src: '../../../../assets/audio/cam19-test1-part1.m4a', label: 'Section 1 — Country Park' },
+    { src: '../../../../assets/audio/cam19-test1-part2.m4a', label: 'Section 2 — Twinning Association' }
+  ] },
+  phrasesIntro: "Useful phrases from the country park and twinning association topics."
+});
+
+var PRACTICE={};
+
+function renderNotes(sec){
+  var html='';
+  sec.sections.forEach(function(s){
+    html+='<div class="note-section">';
+    if(s.heading) html+='<div class="note-heading">'+s.heading+'</div>';
+    if(s.subheading) html+='<div class="note-subheading">'+s.subheading+'</div>';
+    s.items.forEach(function(item){
+      if(item.info){
+        html+='<div class="note-item"><span class="note-bullet">•</span> <span>'+item.info+'</span></div>';
+        return;
+      }
+      html+='<div class="note-item"><span class="note-bullet">•</span> <span class="qn">'+item.q+'</span> ';
+      if(item.before) html+='<span>'+item.before.replace(/\n/g,'<br>')+'</span> ';
+      html+='<input class="note-input" id="pq-'+item.q+'" data-q="'+item.q+'" autocomplete="off" spellcheck="false">';
+      html+='<span class="note-answer" id="pa-'+item.q+'"></span> ';
+      if(item.after) html+='<span>'+item.after+'</span>';
+      html+='</div>';
+    });
+    html+='</div>';
+  });
+  return html;
+}
+
+function renderMCQ(part){
+  var html='<div class="mcq-block">';
+  if(part.mcTitle) html+='<div class="mcq-title">'+part.mcTitle+'</div>';
+  html+='<p class="practice-instruction">'+part.mcInstruction+'</p>';
+  part.mcQuestions.forEach(function(q){
+    html+='<div class="mcq-q"><div class="mcq-text"><span class="qn">'+q.q+'</span> '+q.text+'</div>';
+    var letters=['A','B','C'];
+    q.options.forEach(function(opt,i){
+      html+='<label class="mcq-opt" id="mo-'+q.q+'-'+letters[i]+'"><input type="radio" name="mcq-'+q.q+'" value="'+letters[i]+'"> <strong>'+letters[i]+'</strong> '+opt+'</label>';
+    });
+    html+='</div>';
+  });
+  html+='</div>';
+  return html;
+}
+
+function renderMap(part){
+  var html='<div class="map-block">';
+  html+='<div class="mcq-title">'+part.mapTitle+'</div>';
+  html+='<p class="practice-instruction">'+part.mapInstruction+'</p>';
+  if(part.mapImage) html+='<img class="map-img" src="'+part.mapImage+'" alt="Map">';
+  var opts=['','A','B','C','D','E','F','G','H'];
+  part.mapQuestions.forEach(function(q){
+    html+='<div class="map-q"><span class="qn">'+q.q+'</span> <span>'+q.questionLabel+'</span> ';
+    html+='<select class="map-select" id="pq-'+q.q+'" data-q="'+q.q+'">';
+    opts.forEach(function(o){html+='<option value="'+o+'">'+o+'</option>';});
+    html+='</select>';
+    html+='<span class="map-answer" id="pa-'+q.q+'"></span>';
+    html+='</div>';
+  });
+  html+='</div>';
+  return html;
+}
+
+function renderPractice(){
+  var P=PRACTICE; if(!P.parts) return;
+  var html='<div class="ielts-form"><div class="ielts-form-header"><h3>'+P.title+'</h3></div>';
+  html+='<p class="practice-instruction">'+P.instruction+'</p>';
+  P.parts.forEach(function(part){
+    html+='<div class="part-divider">'+part.partTitle+'</div>';
+    if(part.type==='notes'){
+      html+='<p class="practice-instruction">'+part.noteInstruction+'</p>';
+      html+=renderNotes(part);
+    } else if(part.type==='mixed'){
+      html+=renderMCQ(part);
+      if(part.mapQuestions) html+=renderMap(part);
+    }
+  });
+  html+='</div>';
+  document.getElementById('practice-content').innerHTML=html;
+  document.getElementById('practice-score').className='practice-score';
+  document.getElementById('practice-score').textContent='';
+  document.getElementById('pcheck').style.display='inline-block';
+  document.getElementById('preset').style.display='none';
+}
+
+function checkPractice(){
+  var score=0,total=0;
+  PRACTICE.parts.forEach(function(part){
+    if(part.type==='notes'){
+      part.sections.forEach(function(sec){sec.items.forEach(function(q){
+        if(q.info) return;
+        total++;
+        var inp=document.getElementById('pq-'+q.q);
+        var ans=document.getElementById('pa-'+q.q);
+        if(!inp)return;
+        var val=normalize(inp.value),correct=normalize(q.answer);
+        var alts=(q.altAnswers||[]).map(function(a){return normalize(a);});
+        var ok=val===correct||alts.indexOf(val)!==-1;
+        if(ok)score++;
+        inp.disabled=true;inp.classList.add(ok?'pc':'pw');
+        if(!ok){ans.textContent='✓ '+q.answer;ans.classList.add('show');}
+      });});
+    }
+    if(part.mcQuestions){
+      part.mcQuestions.forEach(function(q){
+        total++;
+        var sel=document.querySelector('input[name="mcq-'+q.q+'"]:checked');
+        var val=sel?sel.value:'';
+        var ok=val===q.answer;
+        if(ok)score++;
+        document.querySelectorAll('input[name="mcq-'+q.q+'"]').forEach(function(r){r.disabled=true;});
+        if(ok){var el=document.getElementById('mo-'+q.q+'-'+val);if(el)el.classList.add('pc');}
+        else{
+          if(val){var el=document.getElementById('mo-'+q.q+'-'+val);if(el)el.classList.add('pw');}
+          var cel=document.getElementById('mo-'+q.q+'-'+q.answer);if(cel)cel.classList.add('pc');
+        }
+      });
+    }
+    if(part.mapQuestions){
+      part.mapQuestions.forEach(function(q){
+        total++;
+        var sel=document.getElementById('pq-'+q.q);
+        var ans=document.getElementById('pa-'+q.q);
+        if(!sel)return;
+        var val=sel.value,ok=val===q.answer;
+        if(ok)score++;
+        sel.disabled=true;sel.classList.add(ok?'pc':'pw');
+        if(!ok){ans.textContent='✓ '+q.answer;ans.classList.add('show');}
+      });
+    }
+  });
+  var el=document.getElementById('practice-score');
+  el.textContent=score+' / '+total+' correct'+(score===total?' 🎉':'');
+  el.className='practice-score show '+(score>=total*0.7?'good':'bad');
+  document.getElementById('pcheck').style.display='none';
+  document.getElementById('preset').style.display='inline-block';
+  enableScript();
+}
+
+function resetPractice(){renderPractice();disableScript();}
+
+DataLayer.getLesson('listening','end-of-course-test-1').then(function(data){
+  PRACTICE=data.practice||{};
+  initListening(data);
+  renderPractice();
+});
+</script>
+</body>
+</html>

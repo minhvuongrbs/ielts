@@ -88,5 +88,20 @@
     "section": "cambridge-16-test-1",
     "name": "Cambridge 16 Listening Test 1",
     "skill": "listening"
+  },
+  {
+    "section": "end-of-course-test-1",
+    "name": "End-of-Course Test — Part 1",
+    "skill": "listening"
+  },
+  {
+    "section": "end-of-course-test-2",
+    "name": "End-of-Course Test — Part 2",
+    "skill": "listening"
+  },
+  {
+    "section": "cambridge-19-gt-test-2",
+    "name": "Cambridge 19 GT Test 2",
+    "skill": "reading"
   }
 ]

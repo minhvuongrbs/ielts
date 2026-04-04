@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Reading — Cambridge 19 GT Test 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../shared/styles.css">
+<link rel="stylesheet" href="../../../shared/reading.css">
+<style>
+/* Campsite cards */
+.cs-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cs-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:18px 20px;border-left:4px solid var(--accent)}
+.cs-card.highlight{background:var(--accent-light)}
+.cs-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px}
+.cs-badge{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:#fff;background:var(--accent);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;transition:transform .15s}
+.cs-badge:hover{transform:scale(1.1)}
+.cs-name{font-family:'Fraunces',serif;font-weight:700;font-size:.98rem;line-height:1.3}
+.cs-text{font-size:.85rem;line-height:1.6;color:var(--text)}
+.cs-vi{display:none;font-size:.83rem;color:var(--vi);font-style:italic;margin-top:8px;padding:8px 12px;background:var(--vi-bg);border-radius:6px;border-left:3px solid var(--vi)}
+.cs-vi.show{display:block}
+/* Letter select buttons */
+.letter-opts{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.lo{width:36px;height:36px;border:2px solid #e0d6c8;border-radius:8px;background:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;cursor:pointer;transition:.2s;color:var(--text);display:flex;align-items:center;justify-content:center}
+.lo:hover{border-color:var(--accent);background:var(--accent-light)}
+.lo.sel{border-color:var(--accent);background:var(--accent);color:#fff}
+.lo.ca{border-color:var(--correct);background:var(--correct);color:#fff}
+.lo.wa{border-color:var(--wrong);background:var(--wrong);color:#fff}
+.lo:disabled{cursor:default}
+/* Part sections */
+.part-section{margin-top:32px;padding:28px 0 0;border-top:3px solid var(--accent-light)}
+.part-header{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--accent);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.part-split{display:flex;gap:24px}
+.part-left{flex:1;min-width:0}
+.part-right{width:400px;flex-shrink:0;position:sticky;top:80px;align-self:flex-start;max-height:calc(100vh - 100px);overflow-y:auto}
+.part-text{font-size:.88rem;line-height:1.75;white-space:pre-line}
+.part-vi{display:none;font-size:.85rem;color:var(--vi);font-style:italic;line-height:1.7;white-space:pre-line;margin-top:12px;padding:12px 16px;background:var(--vi-bg);border-radius:8px;border-left:3px solid var(--vi)}
+.part-vi.show{display:block}
+/* Sentence completion inputs */
+.sc-input{width:140px;padding:6px 10px;border:2px solid #e0d6c8;border-radius:8px;font-size:.88rem;font-family:inherit;transition:.2s}
+.sc-input:focus{border-color:var(--accent);outline:none}
+.sc-input.ca{border-color:var(--correct);background:var(--correct-bg)}
+.sc-input.wa{border-color:var(--wrong);background:var(--wrong-bg)}
+/* MC radio buttons */
+.mc-opt{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;border-radius:8px;cursor:pointer;transition:.15s;border:2px solid transparent;font-size:.88rem;line-height:1.5}
+.mc-opt:hover{background:var(--accent-light)}
+.mc-opt.sel{border-color:var(--accent);background:var(--accent-light)}
+.mc-opt.ca{border-color:var(--correct);background:var(--correct-bg)}
+.mc-opt.wa{border-color:var(--wrong);background:var(--wrong-bg)}
+.mc-label{font-family:'Fraunces',serif;font-weight:700;min-width:24px;color:var(--accent)}
+@media(max-width:900px){.cs-grid{grid-template-columns:1fr}.part-split{flex-direction:column}.part-right{width:100%;position:static;max-height:none}}
+</style>
+</head>
+<body data-depth="3">
+<nav id="nav"></nav>
+<script src="../../../shared/nav.js"></script>
+<div id="app"></div>
+<script>
+const CAT_LABELS={camping:'🏕️ Camping & Outdoors',building:'🏢 Building & Housing',work:'💼 Work & Life',health:'🏥 Health & Parenting'};
+const IELTS_OPTIONS=['TRUE','FALSE','NOT GIVEN'];
+</script>
+<script src="../../../shared/data.js"></script>
+<script src="../../../shared/lesson.js"></script>
+<script src="../../../shared/reading.js"></script>
+<script>
+/* ── Config ── */
+renderReadingPage({
+  title: 'Cambridge 19 GT Test 2',
+  sub: 'IELTS General Training — Full Reading Test — Cambridge 19 Practice',
+  passageRight: 'ielts',
+  passageLabel: '📝 Questions 1–7: Matching Information',
+  passageInstruction: '',
+  phrasesIntro: 'Useful phrases from Cambridge 19 GT Reading Test 2 that you can reuse in IELTS Writing & Speaking.',
+  summaryCards: `
+    <div class="card">
+      <div class="sk">🏕️ Local Campsites at a Glance</div>
+      <ul class="slist">
+        <li><strong>A — Prettycoat Farm:</strong> Near Browbourne, large pitches, ideal for driving to attractions</li>
+        <li><strong>B — Newgammon Wild:</strong> New, positive reviews, beach views, steep cliff steps</li>
+        <li><strong>C — Oakerly Estate:</strong> Clifftop, motorhomes + tents, camp kitchen/restaurant/bar, stay within white line</li>
+        <li><strong>D — South Turnbull:</strong> Back-to-basics, group visits, unreachable in bad weather</li>
+        <li><strong>E — Boxer Trepis:</strong> 20m rockfaces, attracts rock climbers</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">🧠 Mindset: Matching Information (Q1–7)</div>
+      <ul class="slist">
+        <li><strong>Scan all descriptions first:</strong> Build a mental map of each campsite before looking at statements</li>
+        <li><strong>Paraphrase detection:</strong> "impossible to get to" = "can't be reached at all" (D)</li>
+        <li><strong>Letters CAN repeat:</strong> Here B appears twice (Q6 & Q7) and C appears twice (Q3 & Q5)</li>
+        <li><strong>Watch for traps:</strong> "convenient place for driving" — only A mentions driving to specific attractions</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">🧠 Mindset: True / False / Not Given (Q8–14)</div>
+      <ul class="slist">
+        <li><strong>TRUE:</strong> "treated as an emergency" = "reached a critical level" + "deal with this immediately" (Q8)</li>
+        <li><strong>FALSE = opposite:</strong> "permanent repair" but text says "sealed temporarily" (Q9)</li>
+        <li><strong>NOT GIVEN = silent:</strong> "wet paint signs" — never mentioned in the newsletter (Q10)</li>
+        <li><strong>Beware absolutes:</strong> "no exceptions to this rule" makes Q14 FALSE — neighbour agreement doesn't override</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">🧠 Mindset: Sentence Completion (Q15–27)</div>
+      <ul class="slist">
+        <li><strong>Use exact words:</strong> Copy words directly from the passage — don't paraphrase</li>
+        <li><strong>Check word limits:</strong> Usually ONE or TWO words only</li>
+        <li><strong>Grammar clues:</strong> "a _____ meal" needs an adjective (healthy), "assist with _____" needs a noun (shopping)</li>
+        <li><strong>Follow text order:</strong> Q15–20 follow the care worker passage in order, Q21–27 follow A–G sections in order</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sk">🧠 Mindset: Section 3 — Multiple Question Types (Q28–40)</div>
+      <ul class="slist">
+        <li><strong>Multiple Choice:</strong> Read all options before choosing — eliminate obviously wrong ones first</li>
+        <li><strong>Matching People:</strong> Identify who said what — look for quotation marks and reporting verbs</li>
+        <li><strong>Fill-in:</strong> Use exact words from the passage</li>
+        <li><strong>Title:</strong> Choose the title that covers the WHOLE passage, not just one part</li>
+      </ul>
+    </div>`
+});
+
+/* ── Question groups ── */
+var MQ=[], TFQ=[], SCQ1=[], SCQ2=[], MCQ=[], MPQ=[], FQ=[], TQ=[];
+var tfAnswers={}, scAnswers1={}, scAnswers2={}, mcAnswers={}, mpAnswers={}, fAnswers={}, tAnswers={};
+
+function highlightCS(id){
+  document.querySelectorAll('.cs-card').forEach(function(c){c.classList.remove('highlight')});
+  var el=document.getElementById('cs-'+id);
+  if(el){el.classList.add('highlight');el.scrollIntoView({behavior:'smooth',block:'nearest'});setTimeout(function(){el.classList.remove('highlight')},2000)}
+}
+
+/* ── Part 1: Campsite cards ── */
+function renderPassage(){
+  var camps=sections.filter(function(p){return /^[A-E]$/.test(p.id)});
+  document.getElementById('passage-card').innerHTML=
+    '<div style="padding:0 0 12px;margin-bottom:12px;border-bottom:1px solid var(--accent-light)">'+
+      '<div style="font-family:\'Fraunces\',serif;font-weight:700;font-size:1.1rem;color:var(--accent);margin-bottom:4px">LOCAL CAMPSITES</div>'+
+      '<p style="font-size:.85rem;color:#6b5e4f;line-height:1.5">Read the five descriptions of campsites, A–E.</p>'+
+    '</div>'+
+    '<div class="cs-grid">'+camps.map(function(p){
+      return '<div class="cs-card" id="cs-'+p.id+'">'+
+        '<div class="cs-header">'+
+          '<div class="cs-badge" onclick="highlightCS(\''+p.id+'\')">'+p.id+'</div>'+
+          '<div class="cs-name">'+p.name+'</div>'+
+        '</div>'+
+        '<div class="cs-text">'+p.text+'</div>'+
+        '<div class="cs-vi" data-vi>'+p.vietnamese+'</div>'+
+      '</div>';
+    }).join('')+'</div>';
+}
+
+/* ── Passage-side: matching Q1–7 ── */
+function renderPassageIELTS(){
+  document.getElementById('passage-ielts-ctn').innerHTML=
+    '<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin-bottom:8px">Questions 1–7: Matching Information</div>'+
+    '<p style="font-size:.82rem;color:#8a7a66;font-style:italic;margin-bottom:10px">Look at the five descriptions of campsites, A–E. For which campsite are the following statements true? Write the correct letter, <strong>A–E</strong>. You may use any letter more than once.</p>'+
+    MQ.map(function(q){
+      return '<div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-'+q.number+'">'+
+        '<div class="qn">Q'+q.number+'</div>'+
+        '<div class="qtx" style="font-size:.88rem">'+q.text+'</div>'+
+        '<div class="letter-opts" id="pilo-'+q.number+'">'+
+          ['A','B','C','D','E'].map(function(l){return '<button class="lo" data-q="'+q.number+'" data-l="'+l+'" onclick="toggleLetter(this)">'+l+'</button>'}).join('')+
+        '</div>'+
+        '<div class="exp" id="piexp-'+q.number+'"></div>'+
+      '</div>';
+    }).join('');
+}
+
+function toggleLetter(btn){
+  if(btn.classList.contains('sel'))btn.classList.remove('sel');
+  else{var q=btn.dataset.q;document.querySelectorAll('#pilo-'+q+' .lo').forEach(function(b){b.classList.remove('sel')});btn.classList.add('sel')}
+}
+
+function checkPassageIELTS(){
+  var correct=0,total=MQ.length;
+  MQ.forEach(function(q){
+    var ctn=document.getElementById('pilo-'+q.number),card=document.getElementById('piq-'+q.number),exp=document.getElementById('piexp-'+q.number);
+    var btns=ctn.querySelectorAll('.lo'),sel=ctn.querySelector('.lo.sel');
+    var picked=sel?sel.dataset.l:'';
+    btns.forEach(function(b){b.disabled=true;b.classList.remove('sel');if(b.dataset.l===q.answer)b.classList.add('ca');else if(b.dataset.l===picked)b.classList.add('wa')});
+    var ok=picked===q.answer;if(ok)correct++;
+    card.classList.add(ok?'correct':'wrong');
+    exp.className='exp show '+(ok?'ce':'we');
+    exp.innerHTML='<strong>'+(ok?'✓ Correct':'✗ Incorrect')+'</strong> — '+q.explanation+'<br><span style="color:var(--vi)">'+q.vietnamese+'</span>';
+  });
+  showBanner('passage-ielts-banner',correct,total);
+  document.getElementById('pic').style.display='none';document.getElementById('pir').style.display='';
+}
+function resetPassageIELTS(){renderPassageIELTS();document.getElementById('passage-ielts-banner').className='banner';document.getElementById('pic').style.display='';document.getElementById('pir').style.display='none'}
+
+/* ── Part 2: Newsletter T/F/NG ── */
+function renderPart2(){
+  var dh=sections.find(function(p){return p.id==='DH'});
+  if(!dh||!TFQ.length)return;
+  var el=document.createElement('div');el.className='part-section';
+  el.innerHTML=
+    '<div class="part-header">📝 Part 2: Durridge Heights (OH) Newsletter — Questions 8–14</div>'+
+    '<div style="margin-bottom:12px"><label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:.85rem;color:var(--vi);font-weight:600"><span>🇻🇳 Show Vietnamese</span><input type="checkbox" id="dh-vi-toggle" onchange="togglePartVi(\'dh-vi-block\',this.checked)" style="accent-color:var(--vi)"></label></div>'+
+    '<div class="part-split"><div class="part-left">'+
+      '<div class="part-text">'+dh.text+'</div>'+
+      '<div class="part-vi" id="dh-vi-block">'+dh.vietnamese+'</div>'+
+    '</div><div class="part-right">'+
+      '<div style="background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:20px 22px">'+
+        '<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin-bottom:8px">Questions 8–14: True / False / Not Given</div>'+
+        '<p style="font-size:.82rem;color:#8a7a66;font-style:italic;margin-bottom:10px">Do the following statements agree with the information given in the text?</p>'+
+        '<div id="tfng-ctn">'+renderTFButtons(TFQ)+'</div>'+
+        '<div id="tfng-banner" class="banner" style="margin:10px 0"></div>'+
+        '<div style="display:flex;gap:8px;margin-top:10px"><button class="btn" id="tfc" onclick="checkTFNG()">Check Answers</button><button class="btn btn-o" id="tfr" style="display:none" onclick="resetTFNG()">Redo</button></div>'+
+      '</div>'+
+    '</div></div>';
+  var ps=document.querySelector('.passage-split');
+  if(ps)ps.parentNode.insertBefore(el,ps.nextSibling);
+}
+
+function renderTFButtons(qs){
+  return qs.map(function(q){
+    return '<div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-'+q.number+'">'+
+      '<div class="qn">Q'+q.number+'</div><div class="qtx" style="font-size:.88rem">'+q.text+'</div>'+
+      '<div class="opts" style="flex-direction:row;flex-wrap:wrap;gap:6px;margin-top:8px">'+
+        ['TRUE','FALSE','NOT GIVEN'].map(function(o){return '<button class="ob" style="padding:6px 12px;font-size:.82rem" data-q="'+q.number+'" data-v="'+o+'" onclick="selTF(this)">'+o+'</button>'}).join('')+
+      '</div><div class="exp" id="piexp-'+q.number+'"></div></div>';
+  }).join('');
+}
+function selTF(btn){var q=btn.dataset.q;document.querySelectorAll('.ob[data-q="'+q+'"]').forEach(function(b){b.classList.remove('sel')});btn.classList.add('sel');tfAnswers[q]=btn.dataset.v}
+function checkTFNG(){checkGroup(TFQ,tfAnswers,'tfng-banner','tfc','tfr')}
+function resetTFNG(){tfAnswers={};document.getElementById('tfng-ctn').innerHTML=renderTFButtons(TFQ);document.getElementById('tfng-banner').className='banner';document.getElementById('tfc').style.display='';document.getElementById('tfr').style.display='none'}
+
+/* ── Part 3: Care Worker Sentence Completion ── */
+function renderPart3(){
+  var cw=sections.find(function(p){return p.id==='CW'});
+  if(!cw||!SCQ1.length)return;
+  var el=document.createElement('div');el.className='part-section';
+  el.innerHTML=
+    '<div class="part-header">📝 Part 3: A Day in the Life of a Care Worker — Questions 15–20</div>'+
+    '<div style="margin-bottom:12px"><label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:.85rem;color:var(--vi);font-weight:600"><span>🇻🇳 Show Vietnamese</span><input type="checkbox" onchange="togglePartVi(\'cw-vi-block\',this.checked)" style="accent-color:var(--vi)"></label></div>'+
+    '<div class="part-split"><div class="part-left">'+
+      '<div class="part-text">'+cw.text+'</div>'+
+      '<div class="part-vi" id="cw-vi-block">'+cw.vietnamese+'</div>'+
+    '</div><div class="part-right">'+
+      '<div style="background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:20px 22px">'+
+        '<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin-bottom:8px">Questions 15–20: Sentence Completion</div>'+
+        '<p style="font-size:.82rem;color:#8a7a66;font-style:italic;margin-bottom:10px">Complete each sentence with <strong>ONE WORD ONLY</strong> from the text.</p>'+
+        '<div id="sc1-ctn">'+renderSCInputs(SCQ1,'sc1')+'</div>'+
+        '<div id="sc1-banner" class="banner" style="margin:10px 0"></div>'+
+        '<div style="display:flex;gap:8px;margin-top:10px"><button class="btn" id="sc1c" onclick="checkSC(SCQ1,\'sc1\')">Check Answers</button><button class="btn btn-o" id="sc1r" style="display:none" onclick="resetSC(SCQ1,\'sc1\')">Redo</button></div>'+
+      '</div>'+
+    '</div></div>';
+  var prev=document.querySelectorAll('.part-section');
+  var last=prev[prev.length-1];
+  if(last)last.parentNode.insertBefore(el,last.nextSibling);
+}
+
+/* ── Part 4: Work-Life Balance Sentence Completion ── */
+function renderPart4(){
+  var wlb=sections.find(function(p){return p.id==='WLB'});
+  if(!wlb||!SCQ2.length)return;
+  var el=document.createElement('div');el.className='part-section';
+  el.innerHTML=
+    '<div class="part-header">📝 Part 4: Work-Life Balance — Questions 21–27</div>'+
+    '<div style="margin-bottom:12px"><label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:.85rem;color:var(--vi);font-weight:600"><span>🇻🇳 Show Vietnamese</span><input type="checkbox" onchange="togglePartVi(\'wlb-vi-block\',this.checked)" style="accent-color:var(--vi)"></label></div>'+
+    '<div class="part-split"><div class="part-left">'+
+      '<div class="part-text">'+wlb.text+'</div>'+
+      '<div class="part-vi" id="wlb-vi-block">'+wlb.vietnamese+'</div>'+
+    '</div><div class="part-right">'+
+      '<div style="background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:20px 22px">'+
+        '<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin-bottom:8px">Questions 21–27: Sentence Completion</div>'+
+        '<p style="font-size:.82rem;color:#8a7a66;font-style:italic;margin-bottom:10px">Complete each sentence with <strong>ONE WORD ONLY</strong> from the text.</p>'+
+        '<div id="sc2-ctn">'+renderSCInputs(SCQ2,'sc2')+'</div>'+
+        '<div id="sc2-banner" class="banner" style="margin:10px 0"></div>'+
+        '<div style="display:flex;gap:8px;margin-top:10px"><button class="btn" id="sc2c" onclick="checkSC(SCQ2,\'sc2\')">Check Answers</button><button class="btn btn-o" id="sc2r" style="display:none" onclick="resetSC(SCQ2,\'sc2\')">Redo</button></div>'+
+      '</div>'+
+    '</div></div>';
+  var prev=document.querySelectorAll('.part-section');
+  var last=prev[prev.length-1];
+  if(last)last.parentNode.insertBefore(el,last.nextSibling);
+}
+
+/* ── Part 5: Henry Programme — MC + Matching People + Fill + Title ── */
+function renderPart5(){
+  var henry=sections.find(function(p){return p.id==='HENRY'});
+  if(!henry)return;
+  var el=document.createElement('div');el.className='part-section';
+  var html='<div class="part-header">📝 Part 5: City\'s \'Henry\' Programme — Questions 28–40</div>'+
+    '<div style="margin-bottom:12px"><label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:.85rem;color:var(--vi);font-weight:600"><span>🇻🇳 Show Vietnamese</span><input type="checkbox" onchange="togglePartVi(\'henry-vi-block\',this.checked)" style="accent-color:var(--vi)"></label></div>'+
+    '<div class="part-split"><div class="part-left">'+
+      '<div class="part-text">'+henry.text+'</div>'+
+      '<div class="part-vi" id="henry-vi-block">'+henry.vietnamese+'</div>'+
+    '</div><div class="part-right">'+
+      '<div style="background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:20px 22px">';
+
+  /* MC Q28-31 */
+  html+='<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin-bottom:8px">Questions 28–31: Multiple Choice</div>'+
+    '<p style="font-size:.82rem;color:#8a7a66;font-style:italic;margin-bottom:10px">Choose the correct letter, A, B, C or D.</p>';
+  html+=MCQ.map(function(q){
+    var opts=q.options||[];
+    return '<div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-'+q.number+'">'+
+      '<div class="qn">Q'+q.number+'</div><div class="qtx" style="font-size:.88rem;margin-bottom:8px">'+q.text+'</div>'+
+      '<div id="mc-'+q.number+'">'+opts.map(function(o){
+        var parts=o.split(':');var letter=parts[0];var txt=parts.slice(1).join(':');
+        return '<div class="mc-opt" data-q="'+q.number+'" data-v="'+letter+'" onclick="selMC(this)"><span class="mc-label">'+letter+'</span><span>'+txt+'</span></div>';
+      }).join('')+'</div>'+
+      '<div class="exp" id="piexp-'+q.number+'"></div></div>';
+  }).join('');
+
+  /* Matching People Q32-35 */
+  html+='<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin:16px 0 8px">Questions 32–35: Matching People</div>'+
+    '<p style="font-size:.82rem;color:#8a7a66;font-style:italic;margin-bottom:10px">Match each statement with the correct person.<br><strong>A</strong> Susan Jebb &nbsp; <strong>B</strong> Kim Roberts &nbsp; <strong>C</strong> Janice Burberry &nbsp; <strong>D</strong> Seema Kennedy</p>';
+  html+=MPQ.map(function(q){
+    return '<div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-'+q.number+'">'+
+      '<div class="qn">Q'+q.number+'</div><div class="qtx" style="font-size:.88rem">'+q.text+'</div>'+
+      '<div class="letter-opts" id="mp-'+q.number+'">'+
+        ['A','B','C','D'].map(function(l){return '<button class="lo" data-q="'+q.number+'" data-l="'+l+'" onclick="toggleMP(this)">'+l+'</button>'}).join('')+
+      '</div><div class="exp" id="piexp-'+q.number+'"></div></div>';
+  }).join('');
+
+  /* Fill Q36-39 */
+  html+='<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin:16px 0 8px">Questions 36–39: Complete the Sentences</div>'+
+    '<p style="font-size:.82rem;color:#8a7a66;font-style:italic;margin-bottom:10px">Complete each sentence with <strong>ONE WORD ONLY</strong> from the text.</p>';
+  html+=renderSCInputs(FQ,'fq');
+
+  /* Title Q40 */
+  html+='<div style="font-weight:600;font-size:.88rem;color:var(--accent);margin:16px 0 8px">Question 40: Choose the Best Title</div>';
+  html+=TQ.map(function(q){
+    var opts=q.options||[];
+    return '<div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-'+q.number+'">'+
+      '<div class="qn">Q'+q.number+'</div><div class="qtx" style="font-size:.88rem;margin-bottom:8px">'+q.text+'</div>'+
+      '<div id="mc-'+q.number+'">'+opts.map(function(o){
+        var parts=o.split(':');var letter=parts[0];var txt=parts.slice(1).join(':');
+        return '<div class="mc-opt" data-q="'+q.number+'" data-v="'+letter+'" onclick="selMC(this)"><span class="mc-label">'+letter+'</span><span>'+txt+'</span></div>';
+      }).join('')+'</div>'+
+      '<div class="exp" id="piexp-'+q.number+'"></div></div>';
+  }).join('');
+
+  html+='<div id="s3-banner" class="banner" style="margin:10px 0"></div>'+
+    '<div style="display:flex;gap:8px;margin-top:10px"><button class="btn" id="s3c" onclick="checkS3()">Check All Section 3</button><button class="btn btn-o" id="s3r" style="display:none" onclick="resetS3()">Redo</button></div>'+
+    '</div></div></div>';
+  el.innerHTML=html;
+  var prev=document.querySelectorAll('.part-section');
+  var last=prev[prev.length-1];
+  if(last)last.parentNode.insertBefore(el,last.nextSibling);
+}
+
+/* ── Shared helpers ── */
+function togglePartVi(id,on){var el=document.getElementById(id);if(el)el.classList.toggle('show',on)}
+
+function renderSCInputs(qs,prefix){
+  return qs.map(function(q){
+    return '<div class="card" style="margin-bottom:10px;padding:14px 16px" id="piq-'+q.number+'">'+
+      '<div class="qn">Q'+q.number+'</div><div class="qtx" style="font-size:.88rem">'+q.text.replace('_____','<input class="sc-input" id="'+prefix+'-'+q.number+'" data-q="'+q.number+'" placeholder="...">')+'</div>'+
+      '<div class="exp" id="piexp-'+q.number+'"></div></div>';
+  }).join('');
+}
+
+function showBanner(id,correct,total){
+  var b=document.getElementById(id);b.className='banner show';
+  var pct=correct/total;
+  b.style.background=pct>=.7?'var(--correct-bg)':pct>=.4?'#fffbe6':'var(--wrong-bg)';
+  b.style.color=pct>=.7?'var(--correct)':pct>=.4?'#7a6200':'var(--wrong)';
+  b.textContent=correct+'/'+total+' correct';
+}
+
+function checkGroup(qs,answers,bannerId,checkId,resetId){
+  var correct=0,total=qs.length;
+  qs.forEach(function(q){
+    var card=document.getElementById('piq-'+q.number),exp=document.getElementById('piexp-'+q.number);
+    var picked=answers[q.number]||'';
+    document.querySelectorAll('.ob[data-q="'+q.number+'"]').forEach(function(b){b.disabled=true;b.classList.remove('sel');if(b.dataset.v===q.answer)b.classList.add('ca');else if(b.dataset.v===picked)b.classList.add('wa')});
+    var ok=picked===q.answer;if(ok)correct++;
+    card.classList.add(ok?'correct':'wrong');
+    exp.className='exp show '+(ok?'ce':'we');
+    exp.innerHTML='<strong>'+(ok?'✓ Correct':'✗ Incorrect')+'</strong> — '+q.explanation+'<br><span style="color:var(--vi)">'+q.vietnamese+'</span>';
+  });
+  showBanner(bannerId,correct,total);
+  document.getElementById(checkId).style.display='none';document.getElementById(resetId).style.display='';
+}
+
+function normalize(s){return s.trim().toLowerCase().replace(/['']/g,"'").replace(/\s+/g,' ')}
+
+function checkSC(qs,prefix){
+  var correct=0,total=qs.length;
+  qs.forEach(function(q){
+    var inp=document.getElementById(prefix+'-'+q.number);
+    var card=document.getElementById('piq-'+q.number);
+    var exp=document.getElementById('piexp-'+q.number);
+    var val=normalize(inp.value);
+    var ans=q.answer.split('/').map(normalize);
+    var ok=ans.indexOf(val)!==-1;
+    if(ok)correct++;
+    inp.disabled=true;inp.classList.add(ok?'ca':'wa');
+    card.classList.add(ok?'correct':'wrong');
+    exp.className='exp show '+(ok?'ce':'we');
+    exp.innerHTML='<strong>'+(ok?'✓ Correct':'✗ Answer: '+q.answer)+'</strong> — '+q.explanation+'<br><span style="color:var(--vi)">'+q.vietnamese+'</span>';
+  });
+  showBanner(prefix+'-banner',correct,total);
+  document.getElementById(prefix+'c').style.display='none';document.getElementById(prefix+'r').style.display='';
+}
+
+function resetSC(qs,prefix){
+  var ctn=document.getElementById(prefix+'-ctn');
+  ctn.innerHTML=renderSCInputs(qs,prefix);
+  document.getElementById(prefix+'-banner').className='banner';
+  document.getElementById(prefix+'c').style.display='';document.getElementById(prefix+'r').style.display='none';
+}
+
+/* MC + title selection */
+function selMC(el){
+  var q=el.dataset.q;
+  document.querySelectorAll('#mc-'+q+' .mc-opt').forEach(function(o){o.classList.remove('sel')});
+  el.classList.add('sel');mcAnswers[q]=el.dataset.v;
+}
+function toggleMP(btn){
+  if(btn.classList.contains('sel'))btn.classList.remove('sel');
+  else{var q=btn.dataset.q;document.querySelectorAll('#mp-'+q+' .lo').forEach(function(b){b.classList.remove('sel')});btn.classList.add('sel');mpAnswers[q]=btn.dataset.l}
+}
+
+/* Section 3 check/reset */
+function checkS3(){
+  var correct=0,total=MCQ.length+MPQ.length+FQ.length+TQ.length;
+  /* MC */
+  MCQ.concat(TQ).forEach(function(q){
+    var picked=mcAnswers[q.number]||'';
+    var opts=document.querySelectorAll('#mc-'+q.number+' .mc-opt');
+    opts.forEach(function(o){o.style.pointerEvents='none';o.classList.remove('sel');if(o.dataset.v===q.answer)o.classList.add('ca');else if(o.dataset.v===picked)o.classList.add('wa')});
+    var ok=picked===q.answer;if(ok)correct++;
+    var card=document.getElementById('piq-'+q.number),exp=document.getElementById('piexp-'+q.number);
+    card.classList.add(ok?'correct':'wrong');
+    exp.className='exp show '+(ok?'ce':'we');
+    exp.innerHTML='<strong>'+(ok?'✓ Correct':'✗ Incorrect')+'</strong> — '+q.explanation+'<br><span style="color:var(--vi)">'+q.vietnamese+'</span>';
+  });
+  /* Matching People */
+  MPQ.forEach(function(q){
+    var picked=mpAnswers[q.number]||'';
+    var ctn=document.getElementById('mp-'+q.number);
+    ctn.querySelectorAll('.lo').forEach(function(b){b.disabled=true;b.classList.remove('sel');if(b.dataset.l===q.answer)b.classList.add('ca');else if(b.dataset.l===picked)b.classList.add('wa')});
+    var ok=picked===q.answer;if(ok)correct++;
+    var card=document.getElementById('piq-'+q.number),exp=document.getElementById('piexp-'+q.number);
+    card.classList.add(ok?'correct':'wrong');
+    exp.className='exp show '+(ok?'ce':'we');
+    exp.innerHTML='<strong>'+(ok?'✓ Correct':'✗ Incorrect')+'</strong> — '+q.explanation+'<br><span style="color:var(--vi)">'+q.vietnamese+'</span>';
+  });
+  /* Fill */
+  FQ.forEach(function(q){
+    var inp=document.getElementById('fq-'+q.number);
+    var val=normalize(inp.value);var ans=q.answer.split('/').map(normalize);
+    var ok=ans.indexOf(val)!==-1;if(ok)correct++;
+    inp.disabled=true;inp.classList.add(ok?'ca':'wa');
+    var card=document.getElementById('piq-'+q.number),exp=document.getElementById('piexp-'+q.number);
+    card.classList.add(ok?'correct':'wrong');
+    exp.className='exp show '+(ok?'ce':'we');
+    exp.innerHTML='<strong>'+(ok?'✓ Correct':'✗ Answer: '+q.answer)+'</strong> — '+q.explanation+'<br><span style="color:var(--vi)">'+q.vietnamese+'</span>';
+  });
+  showBanner('s3-banner',correct,total);
+  document.getElementById('s3c').style.display='none';document.getElementById('s3r').style.display='';
+}
+function resetS3(){mcAnswers={};mpAnswers={};renderPart5Redo()}
+function renderPart5Redo(){
+  /* Just re-render the whole Part 5 */
+  var old=document.querySelectorAll('.part-section');
+  var last=old[old.length-1];
+  if(last)last.remove();
+  renderPart5();
+  document.getElementById('s3-banner').className='banner';
+  document.getElementById('s3c').style.display='';document.getElementById('s3r').style.display='none';
+}
+
+/* ── Init ── */
+DataLayer.getLesson('reading','cambridge-19-gt-test-2').then(function(data){
+  var allQ=data.ieltsQuestions||[];
+  MQ=allQ.filter(function(q){return q.qtype==='matching'});
+  TFQ=allQ.filter(function(q){return !q.qtype&&q.number>=8&&q.number<=14});
+  SCQ1=allQ.filter(function(q){return q.qtype==='completion'&&q.number<=20});
+  SCQ2=allQ.filter(function(q){return q.qtype==='completion'&&q.number>=21});
+  MCQ=allQ.filter(function(q){return q.qtype==='mc'});
+  MPQ=allQ.filter(function(q){return q.qtype==='matching-people'});
+  FQ=allQ.filter(function(q){return q.qtype==='fill'});
+  TQ=allQ.filter(function(q){return q.qtype==='title'});
+  initReading(data);
+  renderPart2();
+  renderPart3();
+  renderPart4();
+  renderPart5();
+});
+</script>
+</body>
+</html>

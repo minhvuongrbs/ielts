@@ -1916,5 +1916,230 @@
     "section": "cambridge-16-test-1",
     "category": "activity",
     "vietnamese": "xây dựng mô hình xe ô tô và xe tải"
+  },
+  {
+    "phrase": "limited in scope",
+    "usage": "When something covers only a narrow range of topics or is too specific.",
+    "example": "Don thought the topic of recycling footwear might be too limited in scope.",
+    "skill": "listening",
+    "section": "end-of-course-test-2",
+    "category": "academic",
+    "vietnamese": "hạn chế về phạm vi"
+  },
+  {
+    "phrase": "gain self-confidence",
+    "usage": "When someone develops a stronger belief in their own abilities.",
+    "example": "Children learn new skills and gain self-confidence through outdoor visits.",
+    "skill": "listening",
+    "section": "end-of-course-test-1",
+    "category": "education",
+    "vietnamese": "đạt được sự tự tin"
+  },
+  {
+    "phrase": "dispose of",
+    "usage": "When getting rid of something you no longer need or want.",
+    "example": "People dispose of more footwear than they used to.",
+    "skill": "listening",
+    "section": "end-of-course-test-2",
+    "category": "recycling",
+    "vietnamese": "vứt bỏ, loại bỏ"
+  },
+  {
+    "phrase": "mark the anniversary",
+    "usage": "When celebrating or commemorating a special date.",
+    "example": "A tree will be planted to mark the 25th anniversary of the Twinning Association.",
+    "skill": "listening",
+    "section": "end-of-course-test-1",
+    "category": "community",
+    "vietnamese": "đánh dấu ngày kỷ niệm"
+  },
+  {
+    "phrase": "raise funds",
+    "usage": "When collecting money for a particular cause or purpose.",
+    "example": "The pancake evening was the event that raised most funds this year.",
+    "skill": "listening",
+    "section": "end-of-course-test-1",
+    "category": "community",
+    "vietnamese": "gây quỹ, quyên góp"
+  },
+  {
+    "phrase": "from a new angle",
+    "usage": "When approaching or presenting something in a fresh or different way.",
+    "example": "Bella and Don agree that they can present their topic from a new angle.",
+    "skill": "listening",
+    "section": "end-of-course-test-2",
+    "category": "academic",
+    "vietnamese": "từ một góc nhìn mới"
+  },
+  {
+    "phrase": "no longer in fashion",
+    "usage": "When something is outdated and not trendy anymore.",
+    "example": "She sometimes recycles shoes because they are no longer in fashion.",
+    "skill": "listening",
+    "section": "end-of-course-test-2",
+    "category": "recycling",
+    "vietnamese": "không còn hợp thời trang"
+  },
+  {
+    "phrase": "experiment with",
+    "usage": "When trying different methods or ideas to see what happens.",
+    "example": "Children make sounds with natural materials, and experiment with rhythm and speed.",
+    "skill": "listening",
+    "section": "end-of-course-test-1",
+    "category": "education",
+    "vietnamese": "thử nghiệm với"
+  },
+  {
+    "phrase": "stay alive",
+    "usage": "When continuing to live, especially in difficult conditions.",
+    "example": "Research is underway to find out how many days tardigrades can stay alive in space.",
+    "skill": "listening",
+    "section": "end-of-course-test-2",
+    "category": "biology",
+    "vietnamese": "duy trì sự sống"
+  },
+  {
+    "phrase": "land use",
+    "usage": "When describing how an area of land is managed or utilized.",
+    "example": "History: changes in land use over time.",
+    "skill": "listening",
+    "section": "end-of-course-test-1",
+    "category": "education",
+    "vietnamese": "sử dụng đất"
+  },
+  {
+    "phrase": "time out from",
+    "vietnamese": "nghỉ ngơi khỏi",
+    "usage": "To take a break from something.",
+    "example": "Campers looking for time out from their fast-paced jobs.",
+    "category": "leisure",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "back-to-basics",
+    "vietnamese": "quay về cơ bản",
+    "usage": "Returning to simple, fundamental things.",
+    "example": "The emphasis is on back-to-basics camping.",
+    "category": "lifestyle",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "on a rolling basis",
+    "vietnamese": "theo chu kỳ luân phiên",
+    "usage": "Done continuously in cycles.",
+    "example": "The corridors are redecorated every three years on a rolling basis.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "in due course",
+    "vietnamese": "đúng lúc, khi thích hợp",
+    "usage": "At the appropriate time in the future.",
+    "example": "The decoration will be carried out in due course.",
+    "category": "formal",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "out-of-hours",
+    "vietnamese": "ngoài giờ quy định",
+    "usage": "Outside normal working or permitted hours.",
+    "example": "Complaints about out-of-hours drilling.",
+    "category": "building",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "catch up on",
+    "vietnamese": "cập nhật, nắm bắt",
+    "usage": "To find out about recent events.",
+    "example": "A good time to catch up on how they are feeling.",
+    "category": "social",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "make a huge difference",
+    "vietnamese": "tạo ra sự khác biệt lớn",
+    "usage": "To have a very significant impact.",
+    "example": "Hoovering can make a huge difference to a client's day.",
+    "category": "impact",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "set about",
+    "vietnamese": "bắt đầu làm",
+    "usage": "To begin doing something with purpose.",
+    "example": "Set about reducing the amount of time you devote to work.",
+    "category": "action",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "make full use of",
+    "vietnamese": "tận dụng hết",
+    "usage": "To use something to the greatest possible extent.",
+    "example": "Make full use of your holiday allowance.",
+    "category": "efficiency",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "in the driving seat",
+    "vietnamese": "ở vị trí kiểm soát",
+    "usage": "In control of a situation.",
+    "example": "Helping parents stay in the driving seat.",
+    "category": "control",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "evidence-based approach",
+    "vietnamese": "phương pháp dựa trên bằng chứng",
+    "usage": "An approach supported by scientific evidence.",
+    "example": "A creative and evidence-based approach to tackling obesity.",
+    "category": "academic",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "last a lifetime",
+    "vietnamese": "kéo dài cả đời",
+    "usage": "To endure for a very long time.",
+    "example": "Help them establish healthy habits that last a lifetime.",
+    "category": "impact",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "within boundaries",
+    "vietnamese": "trong giới hạn",
+    "usage": "Within set limits or rules.",
+    "example": "Giving children choices within boundaries.",
+    "category": "parenting",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "take a serious look at",
+    "vietnamese": "xem xét nghiêm túc",
+    "usage": "To examine something carefully.",
+    "example": "Take a serious look at the amount of time you devote to work.",
+    "category": "analysis",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "no exceptions to this rule",
+    "vietnamese": "không có ngoại lệ cho quy tắc này",
+    "usage": "The rule must always be followed.",
+    "example": "There can be no exceptions to this rule.",
+    "category": "rules",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
   }
 ]
