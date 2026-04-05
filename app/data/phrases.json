@@ -2141,5 +2141,68 @@
     "category": "rules",
     "skill": "reading",
     "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "be followed by",
+    "vietnamese": "được tiếp theo bởi",
+    "usage": "Describing a sequence of events.",
+    "example": "Lunch may be followed by some shopping.",
+    "category": "sequence",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "do some shopping",
+    "vietnamese": "đi mua sắm",
+    "usage": "Talking about shopping as an activity.",
+    "example": "The care worker often accompanies the client to do some shopping.",
+    "category": "daily-life",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "remain independent",
+    "vietnamese": "duy trì sự độc lập",
+    "usage": "Staying self-sufficient without relying on others.",
+    "example": "Elderly people have the opportunity to remain independent at home.",
+    "category": "lifestyle",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "take the opportunity to",
+    "vietnamese": "tranh thủ, tận dụng cơ hội để",
+    "usage": "Using a chance to do something.",
+    "example": "The care worker may take the opportunity to do some basic housework.",
+    "category": "action",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "accompany someone on",
+    "vietnamese": "đi cùng ai đó",
+    "usage": "Going with someone to help or keep them company.",
+    "example": "The care worker often accompanies the client on a shopping trip.",
+    "category": "social",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "take care of",
+    "vietnamese": "lo liệu, chăm sóc",
+    "usage": "Managing or handling something.",
+    "example": "There may be laundry to take care of.",
+    "category": "daily-life",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
+  },
+  {
+    "phrase": "manage on one's own",
+    "vietnamese": "tự xoay xở",
+    "usage": "Doing something without help from others.",
+    "example": "Many clients are unable to manage this on their own.",
+    "category": "independence",
+    "skill": "reading",
+    "section": "cambridge-19-gt-test-2"
   }
 ]
